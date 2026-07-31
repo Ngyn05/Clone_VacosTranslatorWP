@@ -36,7 +36,7 @@ get_header();
 													<p class="hero-subtitle">Vasco Translator Q1 với công nghệ nhân bản
 														giọng nói.</p>
 												</div>
-												<a class="btn btn-2xl btn-primary" href="<?php echo esc_url( home_url( "/" ) ); ?>" id="btn-change">
+												<a class="btn btn-2xl btn-primary" href="<?php echo esc_url( home_url( "/all-products/" ) ); ?>" id="btn-change">
 													<img alt="" aria-hidden="true"
 														src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/right-arrow.svg" ); ?>" />
 													Xem máy phiên dịch của chúng tôi
