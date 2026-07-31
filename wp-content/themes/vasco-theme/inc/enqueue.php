@@ -64,5 +64,23 @@ function vasco_theme_enqueue_all_assets() {
 	wp_enqueue_script( 'vasco-js-23', VASCO_THEME_URI . '/assets/themes/vasco-theme/modules/ps_emailsubscription/views/js/ps_emailsubscription.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
 	wp_enqueue_script( 'vasco-js-24', VASCO_THEME_URI . '/assets/themes/vasco-theme/modules/ps_shoppingcart/ps_shoppingcart.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
 
+	// Inline DOM fix for tab menu links
+	$custom_js = "
+		document.addEventListener('DOMContentLoaded', function() {
+			document.body.addEventListener('click', function(e) {
+				var link = e.target.closest('.tab-menu a.menu-link');
+				if (link) {
+					var href = link.getAttribute('href');
+					if (href && href !== '#') {
+						e.preventDefault();
+						e.stopPropagation();
+						window.location.href = href;
+					}
+				}
+			}, true);
+		});
+	";
+	wp_add_inline_script( 'jquery', $custom_js );
 }
 add_action( 'wp_enqueue_scripts', 'vasco_theme_enqueue_all_assets' );
+
