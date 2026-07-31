@@ -37,7 +37,7 @@ get_header();
 <div class="menu-container">
 <div class="container">
 <nav class="tab-menu">
-<a aria-label="Máy dịch" class="menu-link" href="<?php echo esc_url( home_url( "/translators/" ) ); ?>">Máy dịch</a><a aria-label="Bộ sản phẩm" class="menu-link" href="<?php echo esc_url( home_url( "/bundles/" ) ); ?>">Bộ sản phẩm</a><a aria-label="Phụ kiện" class="menu-link current" href="<?php echo esc_url( home_url( "/" ) ); ?>">Phụ kiện</a><a aria-label="Tất cả sản phẩm" class="menu-link" href="<?php echo esc_url( home_url( "/all-products/" ) ); ?>">Tất cả sản phẩm</a><a aria-label="Gói sản phẩm" class="menu-link" href="<?php echo esc_url( home_url( "/packages/" ) ); ?>">Gói sản phẩm</a>
+<a aria-label="Máy dịch" class="menu-link" href="<?php echo esc_url( home_url( "/translators/" ) ); ?>">Máy dịch</a><a aria-label="Bộ sản phẩm" class="menu-link" href="<?php echo esc_url( home_url( "/bundles/" ) ); ?>">Bộ sản phẩm</a><a aria-label="Phụ kiện" class="menu-link current" href="<?php echo esc_url( home_url( "/accessories/" ) ); ?>">Phụ kiện</a><a aria-label="Tất cả sản phẩm" class="menu-link" href="<?php echo esc_url( home_url( "/all-products/" ) ); ?>">Tất cả sản phẩm</a><a aria-label="Gói sản phẩm" class="menu-link" href="<?php echo esc_url( home_url( "/packages/" ) ); ?>">Gói sản phẩm</a>
 </nav>
 </div>
 </div>
