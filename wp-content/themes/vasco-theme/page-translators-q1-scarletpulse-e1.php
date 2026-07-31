@@ -1,0 +1,21 @@
+<?php
+/**
+ * Template Name: Clean Page page-translators-q1-scarletpulse-e1.php
+ *
+ * @package VascoTheme
+ */
+
+get_header();
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="refresh" content="0; url=../q1-scarletpulse-e1.html" />
+<script>window.location.replace("../q1-scarletpulse-e1.html");</script>
+</head>
+<body></body>
+</html>
+
+<?php
+get_footer();

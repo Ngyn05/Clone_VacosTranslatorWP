@@ -1,0 +1,42 @@
+#product .font-10 {
+	font-size: 10px;
+}
+
+#product .font-12 {
+	font-size: 12px;
+}
+
+#product .fw-500 {
+	font-weight: 500;
+}
+
+#product .notify {
+	width: 100%;
+	color: #fff;
+	text-transform: uppercase;
+	background: #4ca927;
+	border-color: #4ca927;
+	padding: 15px;
+	border-radius: 7px;
+	font-weight: 600;
+}
+
+#product button.notify {
+	white-space: normal;
+}
+
+#product #main p.notify-text {
+	color: #cb2e63;
+	font-weight: 600;
+}
+
+#product .asterisk {
+	color: red;
+}
+
+#product .custom-checkbox input[type=checkbox]+span .checkbox-checked {
+	margin: -1px -1px;
+}
+#product .pl-15{
+	padding-left: 15px;
+}

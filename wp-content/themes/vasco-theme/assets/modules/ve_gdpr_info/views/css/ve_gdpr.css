@@ -1,0 +1,28 @@
+#ve_gdpr_info {
+	width: 500px;
+	font-family: Noto Sans;
+}
+@media screen and (max-width: 550px) {
+	#ve_gdpr_info {
+		width: 100%;
+	}
+}
+#ve_gdpr_info .btn-box {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+#ve_gdpr_info h2 {
+	font-weight: 500;
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+	font-family: Old Standard TT;
+}
+
+#ve_gdpr_info .btn-box button {
+	background-color: #4966FF;
+	border: #4966FF;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}

@@ -1,0 +1,12 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <style>
+		@media (prefers-color-scheme: light) {
+      path { fill: black; }
+    }
+    @media (prefers-color-scheme: dark) {
+      path { fill: white; }
+    }
+  </style>
+<path d="M0 4.63916H1.68746L3.86276 9.6728H3.882L6.04743 4.63916H7.74426L4.92476 10.8308C4.73779 11.2336 4.31833 11.4991 3.86818 11.4995C3.4177 11.4989 2.99815 11.2327 2.81161 10.8293L0 4.63916Z" fill="black"/>
+<path d="M12.1231 4.5C12.5728 4.49992 12.9922 4.76461 13.1796 5.16682L16.0001 11.3579H14.3043L12.1388 6.32477H12.1191L9.94284 11.3579H8.25488L11.0665 5.16779C11.2538 4.76528 11.6731 4.50022 12.1231 4.5Z" fill="black"/>
+</svg>
