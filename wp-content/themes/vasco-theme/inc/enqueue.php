@@ -66,21 +66,32 @@ function vasco_theme_enqueue_all_assets() {
 
 	// Inline DOM fix for tab menu links
 	$custom_js = "
-		document.addEventListener('DOMContentLoaded', function() {
-			document.body.addEventListener('click', function(e) {
+		(function() {
+			var style = document.createElement('style');
+			style.innerHTML = '.tab-menu a.menu-link { pointer-events: auto !important; cursor: pointer !important; position: relative !important; z-index: 9999 !important; }';
+			document.head.appendChild(style);
+
+			function handleTabClick(e) {
 				var link = e.target.closest('.tab-menu a.menu-link');
 				if (link) {
 					var href = link.getAttribute('href');
-					if (href && href !== '#') {
+					if (href && href !== '#' && href !== 'javascript:void(0)') {
 						e.preventDefault();
 						e.stopPropagation();
 						window.location.href = href;
 					}
 				}
-			}, true);
-		});
+			}
+			document.addEventListener('click', handleTabClick, true);
+			window.addEventListener('load', function() {
+				document.querySelectorAll('.tab-menu a.menu-link').forEach(function(el) {
+					el.addEventListener('click', handleTabClick, true);
+				});
+			});
+		})();
 	";
 	wp_add_inline_script( 'jquery', $custom_js );
 }
 add_action( 'wp_enqueue_scripts', 'vasco_theme_enqueue_all_assets' );
+
 
