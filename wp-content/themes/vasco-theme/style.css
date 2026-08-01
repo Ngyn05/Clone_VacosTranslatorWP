@@ -7,3 +7,19 @@ Description: Custom WordPress Classic Theme cloned and converted from Vasco Elec
 Version: 1.0.0
 Text Domain: vasco-theme
 */
+
+/* Product Tab & FAQ Accordion Overrides */
+.tab-content > .tab.active-tab {
+    display: block !important;
+}
+.tab-content > .tab:not(.active-tab) {
+    display: none !important;
+}
+.accordion-single .accordion-hidden.show {
+    display: block !important;
+}
+.accordion-single svg.rotate {
+    transform: rotate(180deg) !important;
+    transition: transform 0.2s ease !important;
+}
+

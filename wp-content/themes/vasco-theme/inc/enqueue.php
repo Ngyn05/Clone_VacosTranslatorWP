@@ -65,12 +65,7 @@ function vasco_theme_enqueue_all_assets() {
 	wp_enqueue_script( 'vasco-js-24', VASCO_THEME_URI . '/assets/themes/vasco-theme/modules/ps_shoppingcart/ps_shoppingcart.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
 
 	// Inline DOM fix for product tab menus (About / Specification / Languages / FAQ)
-	// The real markup is <button class="menu-link" data-id="product-xxx"> inside
-	// <nav class="tab-menu">, with matching <div class="tab" id="product-xxx"> panes
-	// inside <div class="tab-content">. The theme's own tab JS (a code-split Vite
-	// chunk) is missing from the deployed build, so tab clicks never do anything.
-	// This delegated listener restores that behavior without depending on the
-	// missing chunk.
+	// and FAQ accordions.
 	$custom_js = "
 		(function() {
 			function activateTab(menu, targetId) {
@@ -83,22 +78,72 @@ function vasco_theme_enqueue_all_assets() {
 				menu.querySelectorAll('.menu-link').forEach(function(btn) {
 					btn.classList.toggle('current', btn.getAttribute('data-id') === targetId);
 				});
-				content.querySelectorAll(':scope > .tab').forEach(function(pane) {
+				content.querySelectorAll(':scope > .tab, .tab-content > .tab').forEach(function(pane) {
 					if (pane.id === targetId) {
-						pane.style.display = '';
+						pane.classList.add('active-tab');
+						pane.style.setProperty('display', 'block', 'important');
 					} else {
-						pane.style.display = 'none';
+						pane.classList.remove('active-tab');
+						pane.style.setProperty('display', 'none', 'important');
 					}
 				});
 			}
 
+			function initTabs() {
+				var menus = document.querySelectorAll('.tab-menu');
+				menus.forEach(function(menu) {
+					var currentBtn = menu.querySelector('.menu-link.current') || menu.querySelector('.menu-link[data-id]');
+					if (currentBtn) {
+						var targetId = currentBtn.getAttribute('data-id');
+						if (targetId) {
+							activateTab(menu, targetId);
+						}
+					}
+				});
+			}
+
+			if (document.readyState === 'loading') {
+				document.addEventListener('DOMContentLoaded', initTabs);
+			} else {
+				initTabs();
+			}
+
 			document.addEventListener('click', function(e) {
 				var btn = e.target.closest('.tab-menu .menu-link[data-id]');
-				if (!btn) return;
-				var menu = btn.closest('.tab-menu');
-				var targetId = btn.getAttribute('data-id');
-				if (menu && targetId) {
-					activateTab(menu, targetId);
+				if (btn) {
+					var menu = btn.closest('.tab-menu');
+					var targetId = btn.getAttribute('data-id');
+					if (menu && targetId) {
+						activateTab(menu, targetId);
+					}
+					return;
+				}
+
+				// FAQ Accordion click toggle
+				var accordionHeader = e.target.closest('.accordion-visible-wrapper, .accordion-single');
+				if (accordionHeader && !e.target.closest('.accordion-hidden')) {
+					var single = accordionHeader.closest('.accordion-single');
+					if (!single) return;
+
+					var hiddenContent = single.querySelector('.accordion-hidden');
+					var svgIcon = single.querySelector('svg');
+					var visibleTitle = single.querySelector('.accordion-visible');
+					var visibleWrapper = single.querySelector('.accordion-visible-wrapper');
+
+					if (hiddenContent) {
+						var isHidden = window.getComputedStyle(hiddenContent).display === 'none';
+						if (isHidden) {
+							hiddenContent.style.setProperty('display', 'block', 'important');
+							if (svgIcon) svgIcon.classList.add('rotate');
+							if (visibleTitle) visibleTitle.classList.add('active');
+							if (visibleWrapper) visibleWrapper.classList.add('active');
+						} else {
+							hiddenContent.style.setProperty('display', 'none', 'important');
+							if (svgIcon) svgIcon.classList.remove('rotate');
+							if (visibleTitle) visibleTitle.classList.remove('active');
+							if (visibleWrapper) visibleWrapper.classList.remove('active');
+						}
+					}
 				}
 			});
 		})();
