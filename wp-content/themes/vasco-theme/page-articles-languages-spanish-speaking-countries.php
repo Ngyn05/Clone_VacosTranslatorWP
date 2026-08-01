@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-articles-languages-spanish-speaking-countries.php
  *
@@ -6,6 +6,63 @@
  */
 
 get_header();
+?>
+<style>
+#et-main-area {
+    background: #f4f5f7 !important;
+    padding: 40px 15px !important;
+}
+.et_pb_section_0_tb_body, .et_pb_section_1_tb_body {
+    max-width: 920px !important;
+    margin: 0 auto 24px auto !important;
+    background: #ffffff !important;
+    padding: 35px 45px !important;
+    border-radius: 16px !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04) !important;
+}
+.et_pb_section_0_tb_body {
+    padding-bottom: 10px !important;
+}
+.et_pb_code_inner {
+    font-size: 14px !important;
+    color: #6c757d !important;
+    margin-bottom: 15px !important;
+}
+.et_pb_code_inner a {
+    color: #111111 !important;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+}
+.et_pb_text_inner h1 {
+    font-size: 34px !important;
+    line-height: 1.3 !important;
+    font-weight: 700 !important;
+    color: #111111 !important;
+    margin: 10px 0 !important;
+}
+.et_pb_image_0_tb_body img {
+    width: 100% !important;
+    max-height: 480px !important;
+    object-fit: cover !important;
+    border-radius: 16px !important;
+    margin-bottom: 25px !important;
+    display: block !important;
+}
+.et_pb_post_content p, .et_pb_post_content li {
+    font-size: 16px !important;
+    line-height: 1.75 !important;
+    color: #2c3e50 !important;
+    margin-bottom: 18px !important;
+}
+.et_pb_post_content img {
+    max-width: 100% !important;
+    height: auto !important;
+    border-radius: 12px !important;
+    margin: 25px auto !important;
+    display: block !important;
+}
+</style>
+<?php
 ?>
 
  <!-- #main-header -->
@@ -26,13 +83,7 @@ get_header();
 </div><div class="et_pb_section et_pb_section_1_tb_body et_pb_with_background et_section_regular">
 <div class="et_pb_row et_pb_row_1_tb_body">
 <div class="et_pb_column et_pb_column_3_4 et_pb_column_1_tb_body et_pb_css_mix_blend_mode_passthrough">
-<div class="et_pb_module et_pb_image et_pb_image_0_tb_body">
-<span class="et_pb_image_wrap"><picture class="wp-image-3804" decoding="async" title="J1.1">
-<source sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1200px, 100vw" type="image/avif"/>
-<img alt="Hình ảnh các nhân vật nam và nữ từ nhiều quốc gia khác nhau." data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1200px, 100vw" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/06/J1.1.png" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2023/06/J1.1.png 1200w, ./articles/wp-content/uploads/2023/06/J1.1-980x513.png 980w, ./articles/wp-content/uploads/2023/06/J1.1-480x251.png 480w" decoding="async" fetchpriority="high" height="628" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20628'%3E%3C/svg%3E" width="1200"/><noscript><img alt="A picture of male and female characters from different countries." decoding="async" fetchpriority="high" height="628" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1200px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/06/J1.1.png" ); ?>" width="1200"/></noscript>
-</picture>
-</span>
-</div><div class="et_pb_module et_pb_text et_pb_text_1_tb_body et_pb_text_align_left et_pb_bg_layout_light">
+<div class="et_pb_module et_pb_image et_pb_image_0_tb_body"><img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/07/spanish_official_language.webp" ); ?>" style="width:100%; max-height:450px; object-fit:cover; border-radius:16px; margin-bottom:20px; display:block;" /></div><div class="et_pb_module et_pb_text et_pb_text_1_tb_body et_pb_text_align_left et_pb_bg_layout_light">
 <div class="et_pb_text_inner">16 tháng 6, 2023</div>
 </div><div class="et_pb_module et_pb_post_content et_pb_post_content_0_tb_body">
 <span class="vrt-reading-time" content="PT14M" itemprop="timeRequired"><svg aria-hidden="true" class="vrt-icon" focusable="false" height="16" role="img" viewbox="0 0 24 24" width="16"><path d="M12 1.75a10.25 10.25 0 1 0 0 20.5 10.25 10.25 0 0 0 0-20.5Zm0 18.5a8.25 8.25 0 1 1 0-16.5 8.25 8.25 0 0 1 0 16.5Zm.75-13.5a.75.75 0 0 0-1.5 0v6c0 .2.08.39.22.53l3.5 3.5a.75.75 0 1 0 1.06-1.06l-3.28-3.28V6.75Z"></path></svg><span class="vrt-text">14 phút đọc</span></span>
@@ -92,7 +143,7 @@ get_header();
 <p>Vậy,<span data-color="var(--blue-10)">hầu hết các quốc gia có tiếng Tây Ban Nha là ngôn ngữ quốc gia chính thức nằm ở đâu</span>?</p>
 <p><picture class="alignnone size-full wp-image-1910" decoding="async" fetchpriority="high">
 <source sizes="(max-width: 1200px) 100vw, 1200px" type="image/avif"/>
-<img alt="Hai người đàn ông đang nói chuyện với nhau tại một làng ven biển Địa Trung Hải." data-lazy-sizes="(max-width: 1200px) 100vw, 1200px" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/07/J1.png" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2023/07/J1.png 1200w, ./articles/wp-content/uploads/2023/07/J1-300x157.png 300w, ./articles/wp-content/uploads/2023/07/J1-1024x536.png 1024w, ./articles/wp-content/uploads/2023/07/J1-768x402.png 768w" decoding="async" fetchpriority="high" height="628" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20628'%3E%3C/svg%3E" width="1200"/><noscript><img alt="Two men are speaking with each other in a Mediterranean village." decoding="async" fetchpriority="high" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/07/J1.png" ); ?>" width="1200"/></noscript>
+<img alt="Hai người đàn ông đang nói chuyện với nhau tại một làng ven biển Địa Trung Hải."  src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/07/J1.png" ); ?>"  decoding="async" fetchpriority="high" height="628"  width="1200"/><noscript><img alt="Two men are speaking with each other in a Mediterranean village." decoding="async" fetchpriority="high" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/07/J1.png" ); ?>" width="1200"/></noscript>
 </picture>
 </p>
 <h3 data-pm-slice="1 1 []"><span class="ez-toc-section" id="Which_countries_in_South_America_speak_Spanish"></span><span data-color="var(--blue-10)">Những quốc gia nào ở Nam Mỹ nói tiếng Tây Ban Nha</span>?<span class="ez-toc-section-end"></span></h3>
@@ -126,7 +177,7 @@ get_header();
 <p>Khi nói đến<span data-color="var(--blue-10)">các quốc gia Mỹ Latinh nói tiếng Tây Ban Nha</span>, ngôn ngữ này chủ yếu được nói ở hầu hết mọi quốc gia Mỹ Latinh, ngoại trừ Brazil, Suriname và Guyana thuộc Pháp.</p>
 <p><picture class="alignnone size-full wp-image-1911" decoding="async">
 <source sizes="(max-width: 1200px) 100vw, 1200px" type="image/avif"/>
-<img alt="Một lá cờ của Guinea Xích Đạo." data-lazy-sizes="(max-width: 1200px) 100vw, 1200px" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/07/J2.png" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2023/07/J2.png 1200w, ./articles/wp-content/uploads/2023/07/J2-300x157.png 300w, ./articles/wp-content/uploads/2023/07/J2-1024x536.png 1024w, ./articles/wp-content/uploads/2023/07/J2-768x402.png 768w" decoding="async" height="628" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20628'%3E%3C/svg%3E" width="1200"/><noscript><img alt="A flag of Equatorial Guinea." decoding="async" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/07/J2.png" ); ?>" width="1200"/></noscript>
+<img alt="Một lá cờ của Guinea Xích Đạo."  src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/07/J2.png" ); ?>"  decoding="async" height="628"  width="1200"/><noscript><img alt="A flag of Equatorial Guinea." decoding="async" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/07/J2.png" ); ?>" width="1200"/></noscript>
 </picture>
 </p>
 <h3 data-pm-slice="1 1 []"><span class="ez-toc-section" id="Which_African_countries_speak_Spanish"></span><span data-color="var(--blue-10)">Những quốc gia châu Phi nào nói tiếng Tây Ban Nha</span>?<span class="ez-toc-section-end"></span></h3>
@@ -135,7 +186,7 @@ get_header();
 <p>Quốc gia này giành được độc lập vào năm 1968.</p>
 <p><picture class="alignnone size-full wp-image-1912" decoding="async">
 <source sizes="(max-width: 1200px) 100vw, 1200px" type="image/avif"/>
-<img alt="Hai người cao tuổi đang nói chuyện với nhau trên bãi biển." data-lazy-sizes="(max-width: 1200px) 100vw, 1200px" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/07/J3.png" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2023/07/J3.png 1200w, ./articles/wp-content/uploads/2023/07/J3-300x157.png 300w, ./articles/wp-content/uploads/2023/07/J3-1024x536.png 1024w, ./articles/wp-content/uploads/2023/07/J3-768x402.png 768w" decoding="async" height="628" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20628'%3E%3C/svg%3E" width="1200"/><noscript><img alt="Two senior citizens are talking with each other on a beach." decoding="async" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/07/J3.png" ); ?>" width="1200"/></noscript>
+<img alt="Hai người cao tuổi đang nói chuyện với nhau trên bãi biển."  src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/07/J3.png" ); ?>"  decoding="async" height="628"  width="1200"/><noscript><img alt="Two senior citizens are talking with each other on a beach." decoding="async" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/07/J3.png" ); ?>" width="1200"/></noscript>
 </picture>
 </p>
 <h3 data-pm-slice="1 1 []"><span class="ez-toc-section" id="The_Spanish_language_in_Asia"></span>Tiếng Tây Ban Nha ở châu Á?<span class="ez-toc-section-end"></span></h3>
@@ -174,7 +225,7 @@ get_header();
 <p>Từ cội nguồn lịch sử đến ảnh hưởng hiện tại, ngôn ngữ này kết nối các khoảng cách, tạo điều kiện cho các kết nối và tôn vinh các cộng đồng đa dạng đóng góp vào bản sắc Hoa Kỳ sôi động và đang phát triển.</p>
 <p>Khi dân số nói tiếng Tây Ban Nha tiếp tục tăng và khả năng sử dụng tiếng Tây Ban Nha ngày càng trở nên có giá trị,<strong><a href="..">tác động của ngôn ngữ này</a>sẽ chỉ tiếp tục mở rộng</strong>.</p>
 <p>Đón nhận tiếng Tây Ban Nha nghĩa là đón nhận sự phong phú của di sản văn hóa, sự đa dạng và sự kết nối định hình nên Hoa Kỳ.</p>
-<p><img alt="Bản đồ toàn thế giới." class="alignnone size-full wp-image-1913" data-lazy-sizes="(max-width: 1200px) 100vw, 1200px" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/07/j4.png" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2023/07/j4.png 1200w, ./articles/wp-content/uploads/2023/07/j4-300x157.png 300w, ./articles/wp-content/uploads/2023/07/j4-1024x536.png 1024w, ./articles/wp-content/uploads/2023/07/j4-768x402.png 768w" decoding="async" height="628" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20628'%3E%3C/svg%3E" width="1200"/><noscript><img alt="A map of the entire world." class="alignnone size-full wp-image-1913" decoding="async" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/07/j4.png" ); ?>" width="1200"/></noscript></p>
+<p><img alt="Bản đồ toàn thế giới." class="alignnone size-full wp-image-1913"  src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/07/j4.png" ); ?>"  decoding="async" height="628"  width="1200"/><noscript><img alt="A map of the entire world." class="alignnone size-full wp-image-1913" decoding="async" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/07/j4.png" ); ?>" width="1200"/></noscript></p>
 <h2 data-pm-slice="1 1 []"><span class="ez-toc-section" id="So_how_many_countries_are_there_in_the_world_that_have_Spanish_as_the_official_language"></span>Vậy,<span data-color="var(--blue-10)">có bao nhiêu quốc gia trên thế giới có tiếng Tây Ban Nha là ngôn ngữ chính thức</span>?<span class="ez-toc-section-end"></span></h2>
 <p>Về mặt chính thức,<strong>tiếng Tây Ban Nha là ngôn ngữ chính thức của 20 quốc gia</strong>trên thế giới.</p>
 <p>Đó là rất nhiều và điều này có nghĩa là tiếng Tây Ban Nha có thể là ngôn ngữ phổ biến nhất trên Trái Đất.</p>
@@ -185,7 +236,7 @@ get_header();
 <p>Tiếng Tây Ban Nha chỉ có thể được xếp là ngôn ngữ được nói nhiều thứ tư trên thế giới.</p>
 <p><picture class="alignnone wp-image-3803 size-full" decoding="async">
 <source sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1200px, 100vw" type="image/avif"/>
-<img alt="Một lá cờ Tây Ban Nha trên một tòa nhà." data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1200px, 100vw" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/06/J5.png" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2023/06/J5.png 1200w, ./articles/wp-content/uploads/2023/06/J5-980x513.png 980w, ./articles/wp-content/uploads/2023/06/J5-480x251.png 480w" decoding="async" height="628" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20628'%3E%3C/svg%3E" width="1200"/><noscript><img alt="A Spanish flag on a building." decoding="async" height="628" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1200px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/06/J5.png" ); ?>" width="1200"/></noscript>
+<img alt="Một lá cờ Tây Ban Nha trên một tòa nhà."  src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/06/J5.png" ); ?>"  decoding="async" height="628"  width="1200"/><noscript><img alt="A Spanish flag on a building." decoding="async" height="628" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1200px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/06/J5.png" ); ?>" width="1200"/></noscript>
 </picture>
 </p>
 <h2 data-pm-slice="1 1 []"><span class="ez-toc-section" id="What_are_the_largest_Spanish-speaking_countries_in_the_world"></span>Đâu là<span data-color="var(--blue-10)">những quốc gia nói tiếng Tây Ban Nha lớn nhất trên thế giới</span>?<span class="ez-toc-section-end"></span></h2>
@@ -225,7 +276,7 @@ get_header();
 <p>Hãy nhớ rằng bạn có thể giao tiếp tốt ở tất cả các nơi trên với sự trợ giúp của Vasco<strong><a href="../../../translators/vasco-translator-m3.html"><u>thiết bị dịch thời gian thực</u></a></strong>.</p>
 <p><picture class="alignnone size-full wp-image-1915" decoding="async">
 <source sizes="(max-width: 1200px) 100vw, 1200px" type="image/avif"/>
-<img alt="Hình ảnh những cuốn sách cũ trên kệ." data-lazy-sizes="(max-width: 1200px) 100vw, 1200px" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/07/J6.png" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2023/07/J6.png 1200w, ./articles/wp-content/uploads/2023/07/J6-300x157.png 300w, ./articles/wp-content/uploads/2023/07/J6-1024x536.png 1024w, ./articles/wp-content/uploads/2023/07/J6-768x402.png 768w" decoding="async" height="628" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20628'%3E%3C/svg%3E" width="1200"/><noscript><img alt="A picture showing old books on a shelf." decoding="async" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/07/J6.png" ); ?>" width="1200"/></noscript>
+<img alt="Hình ảnh những cuốn sách cũ trên kệ."  src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/07/J6.png" ); ?>"  decoding="async" height="628"  width="1200"/><noscript><img alt="A picture showing old books on a shelf." decoding="async" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/07/J6.png" ); ?>" width="1200"/></noscript>
 </picture>
 </p>
 <h2 data-pm-slice="1 1 []"><span class="ez-toc-section" id="Diversity_of_the_Spanish_language"></span>Sự đa dạng của tiếng Tây Ban Nha<a href="..">ngôn ngữ</a><span class="ez-toc-section-end"></span></h2>
@@ -330,7 +381,7 @@ get_header();
 <div class="et_pb_blurb_content">
 <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><picture class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2088" decoding="async">
 <source sizes="(max-width: 1024px) 100vw, 1024px" type="image/avif"/>
-<img alt="Robert Faber tác giả" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/09/Robert_bio.jpg" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2023/09/Robert_bio.jpg 1024w, ./articles/wp-content/uploads/2023/09/Robert_bio-300x300.jpg 300w, ./articles/wp-content/uploads/2023/09/Robert_bio-150x150.jpg 150w, ./articles/wp-content/uploads/2023/09/Robert_bio-768x768.jpg 768w, ./articles/wp-content/uploads/2023/09/Robert_bio-60x60.jpg 60w" decoding="async" height="1024" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%201024'%3E%3C/svg%3E" width="1024"/><noscript><img alt="Robert Faber autor" decoding="async" height="1024" sizes="(max-width: 1024px) 100vw, 1024px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/09/Robert_bio.jpg" ); ?>" width="1024"/></noscript>
+<img alt="Robert Faber tác giả"  src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/09/Robert_bio.jpg" ); ?>"  decoding="async" height="1024"  width="1024"/><noscript><img alt="Robert Faber autor" decoding="async" height="1024" sizes="(max-width: 1024px) 100vw, 1024px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/09/Robert_bio.jpg" ); ?>" width="1024"/></noscript>
 </picture>
 </span></div>
 <div class="et_pb_blurb_container">
@@ -357,7 +408,7 @@ get_header();
 <article class="et_pb_post clearfix et_pb_blog_item_0_0 post-25748 post type-post status-publish format-standard has-post-thumbnail hentry category-travel tag-w-gorecka" id="post-25748">
 <div class="et_pb_image_container"><a class="entry-featured-image-url" href="../../travel/how-to-choose-the-right-translator-for-travel"><picture class="" decoding="async">
 <source sizes="(max-width:479px) 479px, 100vw" type="image/avif"/>
-<img alt="Cách chọn máy dịch phù hợp cho du lịch: Hướng dẫn thực tế" data-lazy-sizes="(max-width:479px) 479px, 100vw" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/07/2026_07-Blog-Travel_1200x750_01-400x250.jpg" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2026/07/2026_07-Blog-Travel_1200x750_01.jpg 479w, ./articles/wp-content/uploads/2026/07/2026_07-Blog-Travel_1200x750_01-400x250.jpg 480w" decoding="async" height="250" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20250'%3E%3C/svg%3E" width="400"/><noscript><img alt="How to Choose the Right Translator for Travel: A Practical Guide" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/07/2026_07-Blog-Travel_1200x750_01-400x250.jpg" ); ?>" width="400"/></noscript>
+<img alt="Cách chọn máy dịch phù hợp cho du lịch: Hướng dẫn thực tế"  src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/07/2026_07-Blog-Travel_1200x750_01-400x250.jpg" ); ?>"  decoding="async" height="250"  width="400"/><noscript><img alt="How to Choose the Right Translator for Travel: A Practical Guide" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/07/2026_07-Blog-Travel_1200x750_01-400x250.jpg" ); ?>" width="400"/></noscript>
 </picture>
 </a></div>
 <h2 class="entry-title"><a href="../../travel/how-to-choose-the-right-translator-for-travel">Cách chọn máy dịch phù hợp cho du lịch: Hướng dẫn thực tế</a></h2>
@@ -365,7 +416,7 @@ get_header();
 </div><a class="more-link" href="../../travel/how-to-choose-the-right-translator-for-travel">đọc thêm</a></div>
 </article>
 <article class="et_pb_post clearfix et_pb_blog_item_0_1 post-21441 post type-post status-publish format-standard has-post-thumbnail hentry category-vasco tag-m-lew" id="post-21441">
-<div class="et_pb_image_container"><a class="entry-featured-image-url" href="../../vasco/how-do-translation-earbuds-work"><img alt="Tai nghe dịch hoạt động thế nào? Từ công nghệ đến hiệu suất thực tế" class="" data-lazy-sizes="(max-width:479px) 479px, 100vw " data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/03/9f7ede54-5052-4e6f-b446-837a6b834a3f-400x250.jpg" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2026/03/9f7ede54-5052-4e6f-b446-837a6b834a3f.jpg 479w, ./articles/wp-content/uploads/2026/03/9f7ede54-5052-4e6f-b446-837a6b834a3f-400x250.jpg 480w " decoding="async" height="250" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20250'%3E%3C/svg%3E" width="400"/><noscript><img alt="How Do Translation Earbuds Work? From Technology to Real-World Performance" class="" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw " src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/03/9f7ede54-5052-4e6f-b446-837a6b834a3f-400x250.jpg" ); ?>" width="400"/></noscript></a></div>
+<div class="et_pb_image_container"><a class="entry-featured-image-url" href="../../vasco/how-do-translation-earbuds-work"><img alt="Tai nghe dịch hoạt động thế nào? Từ công nghệ đến hiệu suất thực tế" class=""  src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/03/9f7ede54-5052-4e6f-b446-837a6b834a3f-400x250.jpg" ); ?>"  decoding="async" height="250"  width="400"/><noscript><img alt="How Do Translation Earbuds Work? From Technology to Real-World Performance" class="" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw " src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/03/9f7ede54-5052-4e6f-b446-837a6b834a3f-400x250.jpg" ); ?>" width="400"/></noscript></a></div>
 <h2 class="entry-title"><a href="../../vasco/how-do-translation-earbuds-work">Tai nghe dịch hoạt động thế nào? Từ công nghệ đến hiệu suất thực tế</a></h2>
 <p class="post-meta">bởi<span class="author vcard"><a href="../../author/mlewandowski" rel="author" title="Bài viết của Mateusz Lewandowski">Mateusz Lewandowski</a></span> | <span class="published">Mar 26, 2026</span> | <a href="../../vasco" rel="tag">Vasco</a></p><div class="post-content"><div class="post-content-inner"><p><span class="vrt-reading-time" content="PT14M" itemprop="timeRequired"><svg aria-hidden="true" class="vrt-icon" focusable="false" height="16" role="img" viewbox="0 0 24 24" width="16"><path d="M12 1.75a10.25 10.25 0 1 0 0 20.5 10.25 10.25 0 0 0 0-20.5Zm0 18.5a8.25 8.25 0 1 1 0-16.5 8.25 8.25 0 0 1 0 16.5Zm.75-13.5a.75.75 0 0 0-1.5 0v6c0 .2.08.39.22.53l3.5 3.5a.75.75 0 1 0 1.06-1.06l-3.28-3.28V6.75Z"></path></svg><span class="vrt-text">14 phút đọc</span></span><br/>Khi đi du lịch nước ngoài hoặc làm việc với đồng nghiệp quốc tế, rào cản ngôn ngữ không chỉ làm chậm cuộc trò chuyện: chúng còn gây ra hiểu lầm, giảm hiệu quả công việc, và đôi khi dẫn đến những sai sót tốn kém. May mắn là có một giải pháp giúp giao tiếp đa ngôn ngữ trở nên chính xác và chân thực hơn: tai nghe dịch. Tai nghe dịch là gì? Đó là loại tai nghe không dây sử dụng công nghệ nhận diện giọng nói, dịch máy, và…</p>
 </div><a class="more-link" href="../../vasco/how-do-translation-earbuds-work">đọc thêm</a></div>
@@ -373,7 +424,7 @@ get_header();
 <article class="et_pb_post clearfix et_pb_blog_item_0_2 post-20687 post type-post status-publish format-standard has-post-thumbnail hentry category-travel tag-w-gorecka" id="post-20687">
 <div class="et_pb_image_container"><a class="entry-featured-image-url" href="../../travel/best-time-to-visit-japan"><picture class="" decoding="async">
 <source sizes="(max-width:479px) 479px, 100vw" type="image/avif"/>
-<img alt="Thời điểm tốt nhất để đến Nhật Bản: Hướng dẫn toàn diện về các mùa, lễ hội và du lịch tiết kiệm" data-lazy-sizes="(max-width:479px) 479px, 100vw" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/03/d2b6d218-e526-4862-aeca-d12ecdc4c9cc-400x250.jpeg" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2026/03/d2b6d218-e526-4862-aeca-d12ecdc4c9cc.jpeg 479w, ./articles/wp-content/uploads/2026/03/d2b6d218-e526-4862-aeca-d12ecdc4c9cc-400x250.jpeg 480w" decoding="async" height="250" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20250'%3E%3C/svg%3E" width="400"/><noscript><img alt="Best Time to Visit Japan: Your Ultimate Guide to Seasons, Festivals, and Budget Travel" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/03/d2b6d218-e526-4862-aeca-d12ecdc4c9cc-400x250.jpeg" ); ?>" width="400"/></noscript>
+<img alt="Thời điểm tốt nhất để đến Nhật Bản: Hướng dẫn toàn diện về các mùa, lễ hội và du lịch tiết kiệm"  src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/03/d2b6d218-e526-4862-aeca-d12ecdc4c9cc-400x250.jpeg" ); ?>"  decoding="async" height="250"  width="400"/><noscript><img alt="Best Time to Visit Japan: Your Ultimate Guide to Seasons, Festivals, and Budget Travel" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/03/d2b6d218-e526-4862-aeca-d12ecdc4c9cc-400x250.jpeg" ); ?>" width="400"/></noscript>
 </picture>
 </a></div>
 <h2 class="entry-title"><a href="../../travel/best-time-to-visit-japan">Thời điểm tốt nhất để đến Nhật Bản: Hướng dẫn toàn diện về các mùa, lễ hội và du lịch tiết kiệm</a></h2>

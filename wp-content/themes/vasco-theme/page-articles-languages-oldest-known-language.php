@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-articles-languages-oldest-known-language.php
  *
@@ -6,6 +6,63 @@
  */
 
 get_header();
+?>
+<style>
+#et-main-area {
+    background: #f4f5f7 !important;
+    padding: 40px 15px !important;
+}
+.et_pb_section_0_tb_body, .et_pb_section_1_tb_body {
+    max-width: 920px !important;
+    margin: 0 auto 24px auto !important;
+    background: #ffffff !important;
+    padding: 35px 45px !important;
+    border-radius: 16px !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04) !important;
+}
+.et_pb_section_0_tb_body {
+    padding-bottom: 10px !important;
+}
+.et_pb_code_inner {
+    font-size: 14px !important;
+    color: #6c757d !important;
+    margin-bottom: 15px !important;
+}
+.et_pb_code_inner a {
+    color: #111111 !important;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+}
+.et_pb_text_inner h1 {
+    font-size: 34px !important;
+    line-height: 1.3 !important;
+    font-weight: 700 !important;
+    color: #111111 !important;
+    margin: 10px 0 !important;
+}
+.et_pb_image_0_tb_body img {
+    width: 100% !important;
+    max-height: 480px !important;
+    object-fit: cover !important;
+    border-radius: 16px !important;
+    margin-bottom: 25px !important;
+    display: block !important;
+}
+.et_pb_post_content p, .et_pb_post_content li {
+    font-size: 16px !important;
+    line-height: 1.75 !important;
+    color: #2c3e50 !important;
+    margin-bottom: 18px !important;
+}
+.et_pb_post_content img {
+    max-width: 100% !important;
+    height: auto !important;
+    border-radius: 12px !important;
+    margin: 25px auto !important;
+    display: block !important;
+}
+</style>
+<?php
 ?>
 
  <!-- #main-header -->
@@ -26,13 +83,7 @@ get_header();
 </div><div class="et_pb_section et_pb_section_1_tb_body et_pb_with_background et_section_regular">
 <div class="et_pb_row et_pb_row_1_tb_body">
 <div class="et_pb_column et_pb_column_3_4 et_pb_column_1_tb_body et_pb_css_mix_blend_mode_passthrough">
-<div class="et_pb_module et_pb_image et_pb_image_0_tb_body">
-<span class="et_pb_image_wrap"><picture class="wp-image-2055" decoding="async" title="Một văn bản cổ nằm trên mặt gỗ.">
-<source sizes="(max-width: 1200px) 100vw, 1200px" type="image/avif"/>
-<img alt="Một văn bản cổ nằm trên mặt gỗ." data-lazy-sizes="(max-width: 1200px) 100vw, 1200px" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/07/script.png" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2023/07/script.png 1200w, ./articles/wp-content/uploads/2023/07/script-300x157.png 300w, ./articles/wp-content/uploads/2023/07/script-1024x536.png 1024w, ./articles/wp-content/uploads/2023/07/script-768x402.png 768w" decoding="async" fetchpriority="high" height="628" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20628'%3E%3C/svg%3E" width="1200"/><noscript><img alt="An old script laying on the wooden surface." decoding="async" fetchpriority="high" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/07/script.png" ); ?>" width="1200"/></noscript>
-</picture>
-</span>
-</div><div class="et_pb_module et_pb_text et_pb_text_1_tb_body et_pb_text_align_left et_pb_bg_layout_light">
+<div class="et_pb_module et_pb_image et_pb_image_0_tb_body"><img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/07/oldest_language.webp" ); ?>" style="width:100%; max-height:450px; object-fit:cover; border-radius:16px; margin-bottom:20px; display:block;" /></div><div class="et_pb_module et_pb_text et_pb_text_1_tb_body et_pb_text_align_left et_pb_bg_layout_light">
 <div class="et_pb_text_inner">31 July 2023</div>
 </div><div class="et_pb_module et_pb_post_content et_pb_post_content_0_tb_body">
 <span class="vrt-reading-time" content="PT14M" itemprop="timeRequired"><svg aria-hidden="true" class="vrt-icon" focusable="false" height="16" role="img" viewbox="0 0 24 24" width="16"><path d="M12 1.75a10.25 10.25 0 1 0 0 20.5 10.25 10.25 0 0 0 0-20.5Zm0 18.5a8.25 8.25 0 1 1 0-16.5 8.25 8.25 0 0 1 0 16.5Zm.75-13.5a.75.75 0 0 0-1.5 0v6c0 .2.08.39.22.53l3.5 3.5a.75.75 0 1 0 1.06-1.06l-3.28-3.28V6.75Z"></path></svg><span class="vrt-text">14 phút đọc</span></span>
@@ -67,7 +118,7 @@ get_header();
 </div>
 <p><picture class="alignnone size-full wp-image-2041" decoding="async" fetchpriority="high">
 <source sizes="(max-width: 1200px) 100vw, 1200px" type="image/avif"/>
-<img alt="Thiết kế trừu tượng với hình nền chữ cái." data-lazy-sizes="(max-width: 1200px) 100vw, 1200px" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/abstract.png" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2023/08/abstract.png 1200w, ./articles/wp-content/uploads/2023/08/abstract-300x157.png 300w, ./articles/wp-content/uploads/2023/08/abstract-1024x536.png 1024w, ./articles/wp-content/uploads/2023/08/abstract-768x402.png 768w" decoding="async" fetchpriority="high" height="628" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20628'%3E%3C/svg%3E" width="1200"/><noscript><img alt="Abstract design with letters background." decoding="async" fetchpriority="high" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/abstract.png" ); ?>" width="1200"/></noscript>
+<img alt="Thiết kế trừu tượng với hình nền chữ cái."  src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/abstract.png" ); ?>"  decoding="async" fetchpriority="high" height="628"  width="1200"/><noscript><img alt="Abstract design with letters background." decoding="async" fetchpriority="high" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/abstract.png" ); ?>" width="1200"/></noscript>
 </picture>
 </p>
 <div class="ez-toc-v2_0_85 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction" id="ez-toc-container">
@@ -80,14 +131,14 @@ get_header();
 <p>Nó tuân theo các quy tắc cụ thể về cấu trúc và cú pháp, cho phép người nói tương tác một cách có ý nghĩa. Trong quá trình khám phá ngôn ngữ cổ nhất được biết đến, chúng ta sẽ đi sâu vào cả ngôn ngữ nói và ngôn ngữ viết cổ đại.</p>
 <p><picture class="alignnone size-full wp-image-2042" decoding="async">
 <source sizes="(max-width: 1200px) 100vw, 1200px" type="image/avif"/>
-<img alt="Từ ngôn ngữ học bên cạnh một cuốn sách mở." data-lazy-sizes="(max-width: 1200px) 100vw, 1200px" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/word-linguistics.png" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2023/08/word-linguistics.png 1200w, ./articles/wp-content/uploads/2023/08/word-linguistics-300x157.png 300w, ./articles/wp-content/uploads/2023/08/word-linguistics-1024x536.png 1024w, ./articles/wp-content/uploads/2023/08/word-linguistics-768x402.png 768w" decoding="async" height="628" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20628'%3E%3C/svg%3E" width="1200"/><noscript><img alt="Word linguistics next to an open book." decoding="async" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/word-linguistics.png" ); ?>" width="1200"/></noscript>
+<img alt="Từ ngôn ngữ học bên cạnh một cuốn sách mở."  src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/word-linguistics.png" ); ?>"  decoding="async" height="628"  width="1200"/><noscript><img alt="Word linguistics next to an open book." decoding="async" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/word-linguistics.png" ); ?>" width="1200"/></noscript>
 </picture>
 </p>
 <h2 data-pm-slice="1 1 []"><span class="ez-toc-section" id="The_Importance_of_Studying_Ancient_Languages"></span>Tầm quan trọng của việc nghiên cứu các ngôn ngữ cổ<span class="ez-toc-section-end"></span></h2>
 <p>Nghiên cứu các ngôn ngữ viết cổ như tiếng Sumer hay chữ tượng hình Ai Cập mang lại một cái nhìn về quá khứ. Những ngôn ngữ này, một trong những ngôn ngữ được ghi chép sớm nhất trong lịch sử nhân loại, đóng vai trò nền tảng trong việc tìm hiểu các xã hội đã sản sinh ra chúng. Hơn nữa, chúng còn là chìa khóa để truy tìm nguồn gốc và sự phát triển của các ngôn ngữ hiện đại.</p>
 <p><picture class="alignnone size-full wp-image-2043" decoding="async">
 <source sizes="(max-width: 1200px) 100vw, 1200px" type="image/avif"/>
-<img alt="Cuốn sách cổ với kính lúp." data-lazy-sizes="(max-width: 1200px) 100vw, 1200px" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/old-book.png" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2023/08/old-book.png 1200w, ./articles/wp-content/uploads/2023/08/old-book-300x157.png 300w, ./articles/wp-content/uploads/2023/08/old-book-1024x536.png 1024w, ./articles/wp-content/uploads/2023/08/old-book-768x402.png 768w" decoding="async" height="628" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20628'%3E%3C/svg%3E" width="1200"/><noscript><img alt="The old book with magnifying glass." decoding="async" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/old-book.png" ); ?>" width="1200"/></noscript>
+<img alt="Cuốn sách cổ với kính lúp."  src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/old-book.png" ); ?>"  decoding="async" height="628"  width="1200"/><noscript><img alt="The old book with magnifying glass." decoding="async" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/old-book.png" ); ?>" width="1200"/></noscript>
 </picture>
 </p>
 <h2 data-pm-slice="1 1 []"><span class="ez-toc-section" id="The_Complexities_of_Defining_%E2%80%9COldest%E2%80%9D"></span>Sự phức tạp trong việc định nghĩa “cổ nhất”<span class="ez-toc-section-end"></span></h2>
@@ -98,7 +149,7 @@ get_header();
 <p>Vậy làm thế nào để xác định tuổi của một ngôn ngữ? Đối với ngôn ngữ viết, chúng ta thường có thể xác định niên đại của các văn bản còn tồn tại sớm nhất, từ đó trả lời câu hỏi đâu là ngôn ngữ được ghi chép đầu tiên. Tuy nhiên, đối với ngôn ngữ nói, việc này phức tạp hơn nhiều. Các nhà ngôn ngữ học sử dụng một phương pháp gọi là ngôn ngữ học so sánh, xem xét các ngôn ngữ mà chúng ta biết có liên quan, và truy tìm ngược lại các từ và âm để tìm ra tổ tiên chung. Càng truy được xa về trước, ngôn ngữ đó càng cổ.</p>
 <div style="clear:both; margin-top:2em; margin-bottom:2em;"><a class="u4df5c53967eca0849e9ee839285da868" href="../../vasco/japanese-translation-tips-for-multiple-languages" rel="dofollow" target="_blank"><!-- INLINE RELATED POSTS 1/2 //--><style> .u4df5c53967eca0849e9ee839285da868 { padding:0px; margin: 0; padding-top:1em!important; padding-bottom:1em!important; width:100%; display: block; font-weight:bold; background-color:#eaeaea; border:0!important; border-left:4px solid #34495E!important; text-decoration:none; } .u4df5c53967eca0849e9ee839285da868:active, .u4df5c53967eca0849e9ee839285da868:hover { opacity: 1; transition: opacity 250ms; webkit-transition: opacity 250ms; text-decoration:none; } .u4df5c53967eca0849e9ee839285da868 { transition: background-color 250ms; webkit-transition: background-color 250ms; opacity: 1; transition: opacity 250ms; webkit-transition: opacity 250ms; } .u4df5c53967eca0849e9ee839285da868 .ctaText { font-weight:bold; color:#464646; text-decoration:none; font-size: 16px; } .u4df5c53967eca0849e9ee839285da868 .postTitle { color:#000000; text-decoration: underline!important; font-size: 16px; } .u4df5c53967eca0849e9ee839285da868:hover .postTitle { text-decoration: underline!important; } </style><div style="padding-left:1em; padding-right:1em;"><span class="ctaText">Xem thêm:</span>  <span class="postTitle">Các mẹo dịch tiếng Nhật hàng đầu cho nhiều ngôn ngữ</span></div></a></div><p><picture class="alignnone size-full wp-image-2044" decoding="async">
 <source sizes="(max-width: 1200px) 100vw, 1200px" type="image/avif"/>
-<img alt="Người tiền sử mặc da động vật cầm đá nhọn và làm công cụ nguyên thủy đầu tiên để săn con mồi" data-lazy-sizes="(max-width: 1200px) 100vw, 1200px" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/caveman.png" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2023/08/caveman.png 1200w, ./articles/wp-content/uploads/2023/08/caveman-300x157.png 300w, ./articles/wp-content/uploads/2023/08/caveman-1024x536.png 1024w, ./articles/wp-content/uploads/2023/08/caveman-768x402.png 768w" decoding="async" height="628" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20628'%3E%3C/svg%3E" width="1200"/><noscript><img alt="Primeval Caveman Wearing Animal Skin Holds Sharp Stone and Makes First Primitive Tool for Hunting Animal Prey" decoding="async" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/caveman.png" ); ?>" width="1200"/></noscript>
+<img alt="Người tiền sử mặc da động vật cầm đá nhọn và làm công cụ nguyên thủy đầu tiên để săn con mồi"  src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/caveman.png" ); ?>"  decoding="async" height="628"  width="1200"/><noscript><img alt="Primeval Caveman Wearing Animal Skin Holds Sharp Stone and Makes First Primitive Tool for Hunting Animal Prey" decoding="async" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/caveman.png" ); ?>" width="1200"/></noscript>
 </picture>
 </p>
 <h2 data-pm-slice="1 1 []"><span class="ez-toc-section" id="Earliest_Evidence_of_Spoken_Languages_in_the_world"></span>Bằng chứng sớm nhất về ngôn ngữ nói<a href="..">Ngôn ngữ</a>trên thế giới<span class="ez-toc-section-end"></span></h2>
@@ -116,7 +167,7 @@ get_header();
 <p>Trong phần tiếp theo, chúng ta sẽ đi sâu vào thế giới hấp dẫn của các ngôn ngữ viết cổ đại. Hãy sẵn sàng cho một chuyến hành trình qua chữ hình nêm, chữ tượng hình Ai Cập và các loại chữ viết khác đã định hình lịch sử nhân loại.</p>
 <p><picture class="alignnone size-full wp-image-2045" decoding="async">
 <source sizes="(max-width: 1200px) 100vw, 1200px" type="image/avif"/>
-<img alt="Đất sét cổ có khắc chữ." data-lazy-sizes="(max-width: 1200px) 100vw, 1200px" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/ancient-clay.png" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2023/08/ancient-clay.png 1200w, ./articles/wp-content/uploads/2023/08/ancient-clay-300x157.png 300w, ./articles/wp-content/uploads/2023/08/ancient-clay-1024x536.png 1024w, ./articles/wp-content/uploads/2023/08/ancient-clay-768x402.png 768w" decoding="async" height="628" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20628'%3E%3C/svg%3E" width="1200"/><noscript><img alt="Ancient clay with inscriptions." decoding="async" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/ancient-clay.png" ); ?>" width="1200"/></noscript>
+<img alt="Đất sét cổ có khắc chữ."  src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/ancient-clay.png" ); ?>"  decoding="async" height="628"  width="1200"/><noscript><img alt="Ancient clay with inscriptions." decoding="async" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/ancient-clay.png" ); ?>" width="1200"/></noscript>
 </picture>
 </p>
 <h2 data-pm-slice="1 1 []"><span class="ez-toc-section" id="Earliest_Evidence_of_Written_Languages"></span>Bằng chứng sớm nhất về ngôn ngữ viết<span class="ez-toc-section-end"></span></h2>
@@ -141,7 +192,7 @@ get_header();
 <h2><span class="ez-toc-section" id="Case_Studies_of_Ancient_Languages"></span>Nghiên cứu điển hình về các ngôn ngữ cổ<span class="ez-toc-section-end"></span></h2>
 <p><picture class="alignnone size-full wp-image-2046" decoding="async">
 <source sizes="(max-width: 1200px) 100vw, 1200px" type="image/avif"/>
-<img alt="Bàn đá Sumer cổ đại." data-lazy-sizes="(max-width: 1200px) 100vw, 1200px" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/ancient-rock.png" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2023/08/ancient-rock.png 1200w, ./articles/wp-content/uploads/2023/08/ancient-rock-300x157.png 300w, ./articles/wp-content/uploads/2023/08/ancient-rock-1024x536.png 1024w, ./articles/wp-content/uploads/2023/08/ancient-rock-768x402.png 768w" decoding="async" height="628" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20628'%3E%3C/svg%3E" width="1200"/><noscript><img alt="Ancient Sumerian Rock Table." decoding="async" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/ancient-rock.png" ); ?>" width="1200"/></noscript>
+<img alt="Bàn đá Sumer cổ đại."  src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/ancient-rock.png" ); ?>"  decoding="async" height="628"  width="1200"/><noscript><img alt="Ancient Sumerian Rock Table." decoding="async" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/ancient-rock.png" ); ?>" width="1200"/></noscript>
 </picture>
 </p>
 <h3 data-pm-slice="1 3 []"><span class="ez-toc-section" id="Ancient_sumerian_languages_A_Peek_into_Ancient_Mesopotamia"></span>Tiếng Sumer cổ đại<a href="..">ngôn ngữ</a>: Cái nhìn về Lưỡng Hà cổ đại<span class="ez-toc-section-end"></span></h3>
@@ -153,7 +204,7 @@ get_header();
 </ol>
 <p><picture class="alignnone size-full wp-image-2048" decoding="async">
 <source sizes="(max-width: 1200px) 100vw, 1200px" type="image/avif"/>
-<img alt="Chi tiết chữ tượng hình Ai Cập ở Luxor." data-lazy-sizes="(max-width: 1200px) 100vw, 1200px" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/hieroglyphs-1.png" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2023/08/hieroglyphs-1.png 1200w, ./articles/wp-content/uploads/2023/08/hieroglyphs-1-300x157.png 300w, ./articles/wp-content/uploads/2023/08/hieroglyphs-1-1024x536.png 1024w, ./articles/wp-content/uploads/2023/08/hieroglyphs-1-768x402.png 768w" decoding="async" height="628" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20628'%3E%3C/svg%3E" width="1200"/><noscript><img alt="Detail of Egyptian hieroglyphs in Luxor." decoding="async" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/hieroglyphs-1.png" ); ?>" width="1200"/></noscript>
+<img alt="Chi tiết chữ tượng hình Ai Cập ở Luxor."  src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/hieroglyphs-1.png" ); ?>"  decoding="async" height="628"  width="1200"/><noscript><img alt="Detail of Egyptian hieroglyphs in Luxor." decoding="async" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/hieroglyphs-1.png" ); ?>" width="1200"/></noscript>
 </picture>
 </p>
 <h3 data-pm-slice="1 1 []"><span class="ez-toc-section" id="Egyptian_Hieroglyphs_The_Official_Language_of_the_Pharaohs"></span>Chữ tượng hình Ai Cập: Ngôn ngữ chính thức của các Pharaoh<span class="ez-toc-section-end"></span></h3>
@@ -165,7 +216,7 @@ get_header();
 </ol>
 <div style="clear:both; margin-top:2em; margin-bottom:2em;"><a class="ua494059e26affa98237fb890ff6125b5" href="../../vasco/quick-and-accurate-ways-to-translate-to-german" rel="dofollow" target="_blank"><!-- INLINE RELATED POSTS 2/2 //--><style> .ua494059e26affa98237fb890ff6125b5 { padding:0px; margin: 0; padding-top:1em!important; padding-bottom:1em!important; width:100%; display: block; font-weight:bold; background-color:#eaeaea; border:0!important; border-left:4px solid #34495E!important; text-decoration:none; } .ua494059e26affa98237fb890ff6125b5:active, .ua494059e26affa98237fb890ff6125b5:hover { opacity: 1; transition: opacity 250ms; webkit-transition: opacity 250ms; text-decoration:none; } .ua494059e26affa98237fb890ff6125b5 { transition: background-color 250ms; webkit-transition: background-color 250ms; opacity: 1; transition: opacity 250ms; webkit-transition: opacity 250ms; } .ua494059e26affa98237fb890ff6125b5 .ctaText { font-weight:bold; color:#464646; text-decoration:none; font-size: 16px; } .ua494059e26affa98237fb890ff6125b5 .postTitle { color:#000000; text-decoration: underline!important; font-size: 16px; } .ua494059e26affa98237fb890ff6125b5:hover .postTitle { text-decoration: underline!important; } </style><div style="padding-left:1em; padding-right:1em;"><span class="ctaText">Xem thêm:</span>  <span class="postTitle">Cách dịch tiếng Đức nhanh và chính xác</span></div></a></div><p><picture class="alignnone size-full wp-image-2050" decoding="async">
 <source sizes="(max-width: 1200px) 100vw, 1200px" type="image/avif"/>
-<img alt="Sách y học cổ từ triều đại Thanh." data-lazy-sizes="(max-width: 1200px) 100vw, 1200px" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/old-medicine-book-1.png" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2023/08/old-medicine-book-1.png 1200w, ./articles/wp-content/uploads/2023/08/old-medicine-book-1-300x157.png 300w, ./articles/wp-content/uploads/2023/08/old-medicine-book-1-1024x536.png 1024w, ./articles/wp-content/uploads/2023/08/old-medicine-book-1-768x402.png 768w" decoding="async" height="628" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20628'%3E%3C/svg%3E" width="1200"/><noscript><img alt="Old medicine book from Qing Dynasty." decoding="async" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/old-medicine-book-1.png" ); ?>" width="1200"/></noscript>
+<img alt="Sách y học cổ từ triều đại Thanh."  src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/old-medicine-book-1.png" ); ?>"  decoding="async" height="628"  width="1200"/><noscript><img alt="Old medicine book from Qing Dynasty." decoding="async" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/old-medicine-book-1.png" ); ?>" width="1200"/></noscript>
 </picture>
 </p>
 <h3 data-pm-slice="1 3 []"><span class="ez-toc-section" id="Ancient_Chinese_The_Seeds_of_Modern_Chinese"></span>Tiếng Trung cổ đại: Nền tảng của tiếng Trung hiện đại<span class="ez-toc-section-end"></span></h3>
@@ -177,7 +228,7 @@ get_header();
 </ol>
 <p><picture class="alignnone size-full wp-image-2051" decoding="async">
 <source sizes="(max-width: 1200px) 100vw, 1200px" type="image/avif"/>
-<img alt="Chữ Sanskrit từ đền Lolei." data-lazy-sizes="(max-width: 1200px) 100vw, 1200px" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/sanskrit-1.png" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2023/08/sanskrit-1.png 1200w, ./articles/wp-content/uploads/2023/08/sanskrit-1-300x157.png 300w, ./articles/wp-content/uploads/2023/08/sanskrit-1-1024x536.png 1024w, ./articles/wp-content/uploads/2023/08/sanskrit-1-768x402.png 768w" decoding="async" height="628" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20628'%3E%3C/svg%3E" width="1200"/><noscript><img alt="Sanskrit From The Lolei Temple." decoding="async" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/sanskrit-1.png" ); ?>" width="1200"/></noscript>
+<img alt="Chữ Sanskrit từ đền Lolei."  src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/sanskrit-1.png" ); ?>"  decoding="async" height="628"  width="1200"/><noscript><img alt="Sanskrit From The Lolei Temple." decoding="async" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/sanskrit-1.png" ); ?>" width="1200"/></noscript>
 </picture>
 </p>
 <h2 data-pm-slice="1 1 []"><span class="ez-toc-section" id="The_Impact_and_Influence_of_Ancient_Languages_on_Modern_Society"></span>Tác động và ảnh hưởng của các ngôn ngữ cổ<a href="..">Ngôn ngữ</a>đối với xã hội hiện đại<span class="ez-toc-section-end"></span></h2>
@@ -196,7 +247,7 @@ get_header();
 <p>Tiếng Tamil và tiếng Trung cũng được xem là một trong những ngôn ngữ cổ nhất trên thế giới vẫn còn được sử dụng ngày nay. Tiếng Tamil, chủ yếu được nói ở miền Nam Ấn Độ và Sri Lanka, có ghi chép viết đầu tiên có từ hơn hai nghìn năm trước. Trong khi đó, tiếng Trung tự hào có sự liên tục về ghi chép viết và việc sử dụng nói bền vững có từ triều đại Thương.</p>
 <p><picture class="alignnone size-full wp-image-2052" decoding="async">
 <source sizes="(max-width: 1200px) 100vw, 1200px" type="image/avif"/>
-<img alt="Văn khắc chữ Hy Lạp trên đá tại Delphi, Hy Lạp cổ đại." data-lazy-sizes="(max-width: 1200px) 100vw, 1200px" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/greek-inscription-1.png" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2023/08/greek-inscription-1.png 1200w, ./articles/wp-content/uploads/2023/08/greek-inscription-1-300x157.png 300w, ./articles/wp-content/uploads/2023/08/greek-inscription-1-1024x536.png 1024w, ./articles/wp-content/uploads/2023/08/greek-inscription-1-768x402.png 768w" decoding="async" height="628" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20628'%3E%3C/svg%3E" width="1200"/><noscript><img alt="Greek Text Inscription on a rock in Delphi Ancient Greece." decoding="async" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/greek-inscription-1.png" ); ?>" width="1200"/></noscript>
+<img alt="Văn khắc chữ Hy Lạp trên đá tại Delphi, Hy Lạp cổ đại."  src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/greek-inscription-1.png" ); ?>"  decoding="async" height="628"  width="1200"/><noscript><img alt="Greek Text Inscription on a rock in Delphi Ancient Greece." decoding="async" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/08/greek-inscription-1.png" ); ?>" width="1200"/></noscript>
 </picture>
 </p>
 <h2 data-pm-slice="1 1 []"><span class="ez-toc-section" id="Conclusion_Unraveling_the_Oldest_Spoken_Language_in_the_world"></span>Kết luận: Khám phá ngôn ngữ nói cổ nhất trên thế giới<span class="ez-toc-section-end"></span></h2>
@@ -261,7 +312,7 @@ get_header();
 <div class="et_pb_blurb_content">
 <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><picture class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2088" decoding="async">
 <source sizes="(max-width: 1024px) 100vw, 1024px" type="image/avif"/>
-<img alt="Robert Faber tác giả" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/09/Robert_bio.jpg" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2023/09/Robert_bio.jpg 1024w, ./articles/wp-content/uploads/2023/09/Robert_bio-300x300.jpg 300w, ./articles/wp-content/uploads/2023/09/Robert_bio-150x150.jpg 150w, ./articles/wp-content/uploads/2023/09/Robert_bio-768x768.jpg 768w, ./articles/wp-content/uploads/2023/09/Robert_bio-60x60.jpg 60w" decoding="async" height="1024" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%201024'%3E%3C/svg%3E" width="1024"/><noscript><img alt="Robert Faber autor" decoding="async" height="1024" sizes="(max-width: 1024px) 100vw, 1024px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/09/Robert_bio.jpg" ); ?>" width="1024"/></noscript>
+<img alt="Robert Faber tác giả"  src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/09/Robert_bio.jpg" ); ?>"  decoding="async" height="1024"  width="1024"/><noscript><img alt="Robert Faber autor" decoding="async" height="1024" sizes="(max-width: 1024px) 100vw, 1024px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/09/Robert_bio.jpg" ); ?>" width="1024"/></noscript>
 </picture>
 </span></div>
 <div class="et_pb_blurb_container">
@@ -286,7 +337,7 @@ get_header();
 <div class="et_pb_ajax_pagination_container">
 <div class="et_pb_salvattore_content" data-columns="">
 <article class="et_pb_post clearfix et_pb_blog_item_0_0 post-21441 post type-post status-publish format-standard has-post-thumbnail hentry category-vasco tag-m-lew" id="post-21441">
-<div class="et_pb_image_container"><a class="entry-featured-image-url" href="../../vasco/how-do-translation-earbuds-work"><img alt="Tai nghe dịch hoạt động thế nào? Từ công nghệ đến hiệu suất thực tế" class="" data-lazy-sizes="(max-width:479px) 479px, 100vw " data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/03/9f7ede54-5052-4e6f-b446-837a6b834a3f-400x250.jpg" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2026/03/9f7ede54-5052-4e6f-b446-837a6b834a3f.jpg 479w, ./articles/wp-content/uploads/2026/03/9f7ede54-5052-4e6f-b446-837a6b834a3f-400x250.jpg 480w " decoding="async" height="250" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20250'%3E%3C/svg%3E" width="400"/><noscript><img alt="How Do Translation Earbuds Work? From Technology to Real-World Performance" class="" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw " src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/03/9f7ede54-5052-4e6f-b446-837a6b834a3f-400x250.jpg" ); ?>" width="400"/></noscript></a></div>
+<div class="et_pb_image_container"><a class="entry-featured-image-url" href="../../vasco/how-do-translation-earbuds-work"><img alt="Tai nghe dịch hoạt động thế nào? Từ công nghệ đến hiệu suất thực tế" class=""  src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/03/9f7ede54-5052-4e6f-b446-837a6b834a3f-400x250.jpg" ); ?>"  decoding="async" height="250"  width="400"/><noscript><img alt="How Do Translation Earbuds Work? From Technology to Real-World Performance" class="" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw " src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/03/9f7ede54-5052-4e6f-b446-837a6b834a3f-400x250.jpg" ); ?>" width="400"/></noscript></a></div>
 <h2 class="entry-title"><a href="../../vasco/how-do-translation-earbuds-work">Tai nghe dịch hoạt động thế nào? Từ công nghệ đến hiệu suất thực tế</a></h2>
 <p class="post-meta">bởi<span class="author vcard"><a href="../../author/mlewandowski" rel="author" title="Bài viết của Mateusz Lewandowski">Mateusz Lewandowski</a></span> | <span class="published">Mar 26, 2026</span> | <a href="../../vasco" rel="tag">Vasco</a></p><div class="post-content"><div class="post-content-inner"><p><span class="vrt-reading-time" content="PT14M" itemprop="timeRequired"><svg aria-hidden="true" class="vrt-icon" focusable="false" height="16" role="img" viewbox="0 0 24 24" width="16"><path d="M12 1.75a10.25 10.25 0 1 0 0 20.5 10.25 10.25 0 0 0 0-20.5Zm0 18.5a8.25 8.25 0 1 1 0-16.5 8.25 8.25 0 0 1 0 16.5Zm.75-13.5a.75.75 0 0 0-1.5 0v6c0 .2.08.39.22.53l3.5 3.5a.75.75 0 1 0 1.06-1.06l-3.28-3.28V6.75Z"></path></svg><span class="vrt-text">14 phút đọc</span></span><br/>Khi đi du lịch nước ngoài hoặc làm việc với đồng nghiệp quốc tế, rào cản ngôn ngữ không chỉ làm chậm cuộc trò chuyện: chúng còn gây ra hiểu lầm, giảm hiệu quả công việc, và đôi khi dẫn đến những sai sót tốn kém. May mắn là có một giải pháp giúp giao tiếp đa ngôn ngữ trở nên chính xác và chân thực hơn: tai nghe dịch. Tai nghe dịch là gì? Đó là loại tai nghe không dây sử dụng công nghệ nhận diện giọng nói, dịch máy, và…</p>
 </div><a class="more-link" href="../../vasco/how-do-translation-earbuds-work">đọc thêm</a></div>
@@ -294,7 +345,7 @@ get_header();
 <article class="et_pb_post clearfix et_pb_blog_item_0_1 post-20052 post type-post status-publish format-standard has-post-thumbnail hentry category-languages tag-m-lew" id="post-20052">
 <div class="et_pb_image_container"><a class="entry-featured-image-url" href="../exploring-the-celtic-languages-from-the-irish-language-to-the-manx-gaelic"><picture class="" decoding="async">
 <source sizes="(max-width:479px) 479px, 100vw" type="image/avif"/>
-<img alt="Khám phá các ngôn ngữ Celtic: Từ tiếng Ireland đến tiếng Manx Gaelic" data-lazy-sizes="(max-width:479px) 479px, 100vw" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/02/2c3e4a23-822c-475e-bb34-dc6da32fb8e7-400x250.jpeg" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2026/02/2c3e4a23-822c-475e-bb34-dc6da32fb8e7.jpeg 479w, ./articles/wp-content/uploads/2026/02/2c3e4a23-822c-475e-bb34-dc6da32fb8e7-400x250.jpeg 480w" decoding="async" height="250" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20250'%3E%3C/svg%3E" width="400"/><noscript><img alt="Exploring the Celtic Languages: From the Irish Language to the Manx Gaelic" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/02/2c3e4a23-822c-475e-bb34-dc6da32fb8e7-400x250.jpeg" ); ?>" width="400"/></noscript>
+<img alt="Khám phá các ngôn ngữ Celtic: Từ tiếng Ireland đến tiếng Manx Gaelic"  src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/02/2c3e4a23-822c-475e-bb34-dc6da32fb8e7-400x250.jpeg" ); ?>"  decoding="async" height="250"  width="400"/><noscript><img alt="Exploring the Celtic Languages: From the Irish Language to the Manx Gaelic" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/02/2c3e4a23-822c-475e-bb34-dc6da32fb8e7-400x250.jpeg" ); ?>" width="400"/></noscript>
 </picture>
 </a></div>
 <h2 class="entry-title"><a href="../exploring-the-celtic-languages-from-the-irish-language-to-the-manx-gaelic">Khám phá các ngôn ngữ Celtic: Từ tiếng Ireland đến tiếng Manx Gaelic</a></h2>
@@ -304,7 +355,7 @@ get_header();
 <article class="et_pb_post clearfix et_pb_blog_item_0_2 post-18635 post type-post status-publish format-standard has-post-thumbnail hentry category-languages tag-m-lew" id="post-18635">
 <div class="et_pb_image_container"><a class="entry-featured-image-url" href="../thank-you-in-different-languages"><picture class="" decoding="async">
 <source sizes="(max-width:479px) 479px, 100vw" type="image/avif"/>
-<img alt="Cách nói lời cảm ơn bằng các ngôn ngữ khác nhau: Hướng dẫn đầy đủ" data-lazy-sizes="(max-width:479px) 479px, 100vw" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/01/da3844b1-96d4-4e46-a1a3-6ae7a9b676bc-400x250.jpeg" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2026/01/da3844b1-96d4-4e46-a1a3-6ae7a9b676bc.jpeg 479w, ./articles/wp-content/uploads/2026/01/da3844b1-96d4-4e46-a1a3-6ae7a9b676bc-400x250.jpeg 480w" decoding="async" height="250" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20250'%3E%3C/svg%3E" width="400"/><noscript><img alt="How to Say Thank You in Different Languages: A Complete Guide" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/01/da3844b1-96d4-4e46-a1a3-6ae7a9b676bc-400x250.jpeg" ); ?>" width="400"/></noscript>
+<img alt="Cách nói lời cảm ơn bằng các ngôn ngữ khác nhau: Hướng dẫn đầy đủ"  src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/01/da3844b1-96d4-4e46-a1a3-6ae7a9b676bc-400x250.jpeg" ); ?>"  decoding="async" height="250"  width="400"/><noscript><img alt="How to Say Thank You in Different Languages: A Complete Guide" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/01/da3844b1-96d4-4e46-a1a3-6ae7a9b676bc-400x250.jpeg" ); ?>" width="400"/></noscript>
 </picture>
 </a></div>
 <h2 class="entry-title"><a href="../thank-you-in-different-languages">Cách nói lời cảm ơn bằng các ngôn ngữ khác nhau: Hướng dẫn đầy đủ</a></h2>

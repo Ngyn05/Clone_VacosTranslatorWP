@@ -1100,9 +1100,8 @@ get_header();
 							<div>
 								<a class="link-blog" href="<?php echo esc_url( home_url( "/articles-languages-least-spoken-language-in-the-world/" ) ); ?>">
 									<img alt="Ngôn ngữ ít người nói nhất trên thế giới là gì?"
-										height="400px"
-										src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/street.webp" ); ?>"
-										width="640px" />
+										src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/07/least_spoken_language.webp" ); ?>"
+										style="width: 100% !important; height: 180px !important; object-fit: cover !important; border-radius: 16px !important; display: block !important;" />
 									<h3 class="h2 blog-title">Ngôn ngữ ít người nói nhất trên thế giới là gì?</h3>
 								</a>
 							</div>
@@ -1115,9 +1114,9 @@ get_header();
 						<div class="box">
 							<div>
 								<a class="link-blog" href="<?php echo esc_url( home_url( "/articles-languages-oldest-known-language/" ) ); ?>">
-									<img alt="Ngôn ngữ cổ nhất được biết đến là gì?" height="400px"
-										src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/card3.webp" ); ?>"
-										width="640px" />
+									<img alt="Ngôn ngữ cổ nhất được biết đến là gì?"
+										src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/07/oldest_language.webp" ); ?>"
+										style="width: 100% !important; height: 180px !important; object-fit: cover !important; border-radius: 16px !important; display: block !important;" />
 									<h3 class="h2 blog-title">Ngôn ngữ cổ nhất được biết đến là gì?</h3>
 								</a>
 							</div>
@@ -1133,8 +1132,8 @@ get_header();
 								<div>
 									<a class="link-blog" href="<?php echo esc_url( home_url( "/articles-languages-how-many-people-speak-more-than-one-language/" ) ); ?>">
 										<img alt="Có bao nhiêu người nói được nhiều hơn một ngôn ngữ?"
-											height="400px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/card1.webp" ); ?>"
-											width="640px" />
+											src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/07/bilingualism.webp" ); ?>"
+											style="width: 100% !important; height: 180px !important; object-fit: cover !important; border-radius: 16px !important; display: block !important;" />
 										<h3 class="h2 blog-title">Có bao nhiêu người nói được nhiều hơn một ngôn ngữ?
 										</h3>
 									</a>
@@ -1148,9 +1147,8 @@ get_header();
 								<div>
 									<a class="link-blog" href="<?php echo esc_url( home_url( "/articles-languages-spanish-speaking-countries/" ) ); ?>">
 										<img alt="Những quốc gia nào sử dụng tiếng Tây Ban Nha là ngôn ngữ chính thức?"
-											height="400px"
-											src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/card5.webp" ); ?>"
-											width="640px" />
+											src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/07/spanish_official_language.webp" ); ?>"
+											style="width: 100% !important; height: 180px !important; object-fit: cover !important; border-radius: 16px !important; display: block !important;" />
 										<h3 class="h2 blog-title">Những quốc gia nào sử dụng tiếng Tây Ban Nha là ngôn
 											ngữ chính thức?</h3>
 									</a>
