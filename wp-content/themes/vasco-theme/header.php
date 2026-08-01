@@ -1475,7 +1475,7 @@
 									Về Chúng Tôi
 									<img alt="" aria-hidden="true" class="arrow-rotate"
 										src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/dropdown-arrow.svg" ); ?>" />
-								</button>
+								</a>
 								<div class="megamenu-childs-wrapper" hidden="" id="submenu-about_us" role="menu">
 									<div class="megamenu-container">
 										<div class="megamenu-grid-section">
@@ -1567,7 +1567,7 @@
 									Cách Hoạt Động
 									<img alt="" aria-hidden="true" class="arrow-rotate"
 										src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/dropdown-arrow.svg" ); ?>" />
-								</button>
+								</a>
 								<div class="megamenu-childs-wrapper" hidden="" id="submenu-how_it_works" role="menu">
 									<div class="megamenu-container">
 										<div class="megamenu-grid-section">
@@ -1665,7 +1665,7 @@
 									Cho Doanh Nghiệp
 									<img alt="" aria-hidden="true" class="arrow-rotate"
 										src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/dropdown-arrow.svg" ); ?>" />
-								</button>
+								</a>
 								<div class="megamenu-childs-wrapper" hidden="" id="submenu-for_business" role="menu">
 									<div class="megamenu-container">
 										<div class="megamenu-grid-section">
