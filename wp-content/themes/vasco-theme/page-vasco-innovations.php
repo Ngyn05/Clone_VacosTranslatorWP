@@ -23,11 +23,11 @@ get_header();
 <div class="container">
 <div class="doublebox-content">
 <h1 class="h1">
-							Shaping the Future of Communication, Today
+							Kiến Tạo Tương Lai Của Giao Tiếp, Ngay Hôm Nay
 						</h1>
 <p class="subtitle"></p>
-<p>How do you make the world speak as one? It’s a question that drives everything we do, which later becomes the roadmap for the entire industry, and every success is just the beginning for what comes next.</p>
-<p>For 18 years, we’ve been crossing the boundaries of communication—revolution after revolution. Discover the technologies we turned from vision into reality.</p>
+<p>Làm thế nào để cả thế giới nói cùng một tiếng nói? Đó là câu hỏi thúc đẩy mọi việc chúng tôi làm, để rồi trở thành kim chỉ nam cho cả ngành công nghiệp, và mỗi thành công chỉ là khởi đầu cho những điều tiếp theo.</p>
+<p>Suốt 18 năm qua, chúng tôi không ngừng vượt qua các rào cản giao tiếp—hết cuộc cách mạng này đến cuộc cách mạng khác. Khám phá những công nghệ mà chúng tôi đã biến từ tầm nhìn thành hiện thực.</p>
 <div>
 </div>
 <div class="box-btn-wrapper">
@@ -46,18 +46,18 @@ get_header();
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/ces/hero-top.webm" ); ?>" type="video/webm"/>
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/ces/hero-top.mp4" ); ?>" type="video/mp4"/>
 <p class="vjs-no-js">
-								To view this video please enable JavaScript, and consider upgrading to a
-								web browser that
+								Để xem video này, vui lòng bật JavaScript và cân nhắc nâng cấp lên
+								trình duyệt web
 								<a href="#" target="_blank">
-									supports HTML5 video
+									có hỗ trợ video HTML5
 								</a>
 </p>
 </video>
-<button aria-controls="the-new-hero-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
+<button aria-controls="the-new-hero-video" aria-label="Phát video" aria-pressed="true" class="video-toggle" data-play="Phát video" data-stop="Tạm dừng video">
+<img alt="Phát video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
 </button>
 <p class="sr-only" id="video-desc-hero">
-							Animated Vasco logo featuring rotating ‘VA’ initials; the animation ends with the tagline: ‘Vượt rào cản. Vượt ngôn từ. Vượt mọi giới hạn.'
+							Logo Vasco chuyển động với chữ cái ‘VA’ xoay vòng; đoạn hoạt hình kết thúc bằng thông điệp: ‘Vượt rào cản. Vượt ngôn từ. Vượt mọi giới hạn.'
 						</p>
 </div>
 </div>
@@ -65,9 +65,9 @@ get_header();
 </section>
 </section>
 <section class="trustedby-logo-carousel-wrapper">
-<h2 class="h2-notosans trustedby-logo-carousel-title">Trusted by 500,000+ customers globally</h2>
-<div aria-label="a carousel presenting the logos of companies that have trusted us" aria-roledescription="carousel" class="trustedby-logo-carousel" role="region">
-<a class="sr-only focusable" href="#after-trustedby-logo-carousel">Skip carousel</a>
+<h2 class="h2-notosans trustedby-logo-carousel-title">Được hơn 500.000 khách hàng trên toàn thế giới tin dùng</h2>
+<div aria-label="băng chuyền hiển thị logo của các công ty đã tin tưởng chúng tôi" aria-roledescription="carousel" class="trustedby-logo-carousel" role="region">
+<a class="sr-only focusable" href="#after-trustedby-logo-carousel">Bỏ qua băng chuyền</a>
 <div aria-hidden="true" class="trustedby-logo-carousel-rows">
 <div class="swiper autoplay loop carousel-logo-marquee carousel-trustedby-logo" data-carousel-speed="5500">
 <div class="swiper-wrapper" role="list">
@@ -191,8 +191,8 @@ get_header();
 </div>
 </div>
 <div class="stop-autoplay-carousel container">
-<button class="btn btn-md btn-stop-autoplay" data-text-button-pause="stop carousel autoplay" data-text-button-resume="resume carousel autoplay">
-<span data-text-pause="Pause" data-text-resume="Resume">Pause</span>
+<button class="btn btn-md btn-stop-autoplay" data-text-button-pause="tạm dừng tự động chạy băng chuyền" data-text-button-resume="tiếp tục tự động chạy băng chuyền">
+<span data-text-pause="Tạm dừng" data-text-resume="Tiếp tục">Tạm dừng</span>
 <img alt="" aria-hidden="true" height="24" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/pause.svg" ); ?>" width="24"/>
 </button>
 </div>
@@ -201,7 +201,7 @@ get_header();
 </section>
 <section class="db-containerized-section db-containerized-section-expandable" id="the-new-side-by-side">
 <div class="container">
-<h2 class="h2-notosans section-title">What’s new</h2>
+<h2 class="h2-notosans section-title">Có gì mới</h2>
 <div class="db-container-wrapper">
 <div class="media">
 <div class="assets-wrapper">
@@ -209,31 +209,31 @@ get_header();
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/the_new/q1_animation_vasco_assistant.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/the_new/q1_animation_vasco_assistant.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
-								To view this video please enable JavaScript, and consider upgrading to a
-								web browser that
+								Để xem video này, vui lòng bật JavaScript và cân nhắc nâng cấp lên
+								trình duyệt web
 								<a href="#" target="_blank">
-									supports HTML5 video
+									có hỗ trợ video HTML5
 								</a>
 </p>
 </video>
-<button aria-controls="vasco-assistant-mode" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
+<button aria-controls="vasco-assistant-mode" aria-label="Phát video" aria-pressed="true" class="video-toggle" data-play="Phát video" data-stop="Tạm dừng video">
+<img alt="Phát video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
 </button>
 </div>
 </div>
 <div class="db-container-text-right">
 <h2 class="h1">Vasco Assistant</h2>
-<p class="plain-text">See the Story Behind the Words</p>
+<p class="plain-text">Khám phá câu chuyện đằng sau từng câu chữ</p>
 <div class="db-container-expandable">
 <div class="db-container-expandable-content">
-<p>Discover a tool that bridges the gap between words and meanings. Powered by advanced AI, Vasco Assistant doesn’t just translate—it explains the cultural nuance and context behind what you see, eliminating the need for extra lookups.</p>
-<p><b>Contextual analysis solves travel problems before they even happen:</b></p>
+<p>Khám phá công cụ giúp thu hẹp khoảng cách giữa ngôn từ và ý nghĩa. Được vận hành bởi AI tiên tiến, Vasco Assistant không chỉ dịch thuật—mà còn giải thích sắc thái văn hóa và bối cảnh đằng sau những gì bạn nhìn thấy, giúp bạn không cần tra cứu thêm.</p>
+<p><b>Phân tích theo ngữ cảnh giúp giải quyết các vấn đề khi du lịch trước khi chúng xảy ra:</b></p>
 <ul>
-<li><b>Foreign Parking:</b> Take a photo of unfamiliar road markings or curbs. Vasco Assistant interprets local parking zones on the spot, helping you avoid costly fines or being towed.</li>
-<li><b>Safety Signs:</b> Snap a photo of beach or trail warnings to instantly find out if you need to watch out for dangerous currents, stinging jellyfish, or local wildlife.</li>
-<li><b>Local Markets:</b> Scan souvenir labels and unique items to ensure a stunning souvenir doesn’t accidentally turn you from a curious traveler into an unwitting smuggler.</li>
+<li><b>Đỗ xe ở nước ngoài:</b> Chụp ảnh các vạch kẻ đường hoặc lề đường xa lạ. Vasco Assistant sẽ giải thích ngay khu vực đỗ xe của địa phương, giúp bạn tránh bị phạt tiền hoặc kéo xe tốn kém.</li>
+<li><b>Biển báo an toàn:</b> Chụp ảnh các biển cảnh báo trên bãi biển hay đường mòn để biết ngay liệu bạn có cần đề phòng dòng nước nguy hiểm, sứa độc, hay động vật hoang dã tại địa phương hay không.</li>
+<li><b>Chợ địa phương:</b> Quét nhãn quà lưu niệm và các món đồ đặc biệt để đảm bảo món quà tuyệt đẹp đó không vô tình biến bạn từ một du khách tò mò thành một người buôn lậu bất đắc dĩ.</li>
 </ul>
-<p>Vasco Assistant will launch as a free update to the photo translation feature on the Vasco Translator Q1, available for both new and existing devices.</p>
+<p>Vasco Assistant sẽ ra mắt dưới dạng bản cập nhật miễn phí cho tính năng dịch hình ảnh trên Vasco Translator Q1, dành cho cả thiết bị mới và thiết bị hiện có.</p>
 </div>
 <div class="db-container-expandable-toggle-wrapper">
 <button class="db-container-expandable-toggle" type="button">
@@ -251,13 +251,13 @@ get_header();
 <div class="db-container-wrapper">
 <div class="db-container-text-left">
 <h2 class="h1">Vasco Translator M4</h2>
-<p class="plain-text">Your shortcut to a seamless journey</p>
+<p class="plain-text">Lối tắt cho một hành trình liền mạch</p>
 <div class="db-container-expandable">
 <div class="db-container-expandable-content">
-							p&gt;Passport, toothbrush... Vasco Translator M4. This pocket-sized companion is the ultimate essential for your next adventure. Built with free lifetime internet, it eliminates travel friction worldwide.
-<p>Tactile buttons ensure you are never slowed down by rain, cold weather, or gloves. High-output speakers and a targeted microphone guarantee crystal-clear conversations anywhere, packed into a lightweight, durable design.</p>
-<p>Vasco Translator M4 Phiên dịch 86 ngôn ngữ via voice with a hands-free automatic mode, alongside a Dịch hình ảnh (113 Ngôn ngữ) and text scanner (108 languages). Its zero-setup interface lets you focus entirely on your journey.</p>
-<p>The standout edge? The M4 leverages 10 AI translation engines for 99% accuracy. By translating directly between language pairs without an intermediate language, it removes errors so you always say exactly what you mean.</p>
+							p&gt;Hộ chiếu, bàn chải đánh răng... và Vasco Translator M4. Người bạn đồng hành nhỏ gọn này là vật dụng thiết yếu nhất cho chuyến phiêu lưu tiếp theo của bạn. Được trang bị internet miễn phí trọn đời, nó loại bỏ mọi trở ngại giao tiếp khi đi du lịch trên toàn thế giới.
+<p>Các nút bấm vật lý đảm bảo bạn không bao giờ bị chậm trễ bởi mưa, thời tiết lạnh hay găng tay. Loa công suất lớn và micro định hướng đảm bảo các cuộc trò chuyện rõ ràng như pha lê ở bất cứ đâu, tất cả gói gọn trong thiết kế nhẹ và bền bỉ.</p>
+<p>Vasco Translator M4 Phiên dịch 86 ngôn ngữ qua giọng nói với chế độ tự động rảnh tay, cùng với Dịch hình ảnh (113 Ngôn ngữ) và quét văn bản (108 ngôn ngữ). Giao diện không cần thiết lập giúp bạn tập trung hoàn toàn vào hành trình của mình.</p>
+<p>Điểm nổi bật? M4 tận dụng 10 công cụ dịch AI để đạt độ chính xác 99%. Bằng cách dịch trực tiếp giữa các cặp ngôn ngữ mà không qua ngôn ngữ trung gian, thiết bị loại bỏ sai sót để bạn luôn nói đúng điều mình muốn.</p>
 </div>
 <div class="db-container-expandable-toggle-wrapper">
 <button class="db-container-expandable-toggle" type="button">
@@ -277,15 +277,15 @@ get_header();
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/the_new/m4_animation_closeups.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/the_new/m4_animation_closeups.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
-								To view this video please enable JavaScript, and consider upgrading to a
-								web browser that
+								Để xem video này, vui lòng bật JavaScript và cân nhắc nâng cấp lên
+								trình duyệt web
 								<a href="#" target="_blank">
-									supports HTML5 video
+									có hỗ trợ video HTML5
 								</a>
 </p>
 </video>
-<button aria-controls="animation-closeups" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
+<button aria-controls="animation-closeups" aria-label="Phát video" aria-pressed="true" class="video-toggle" data-play="Phát video" data-stop="Tạm dừng video">
+<img alt="Phát video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
 </button>
 </div>
 </div>
@@ -297,27 +297,27 @@ get_header();
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/the_new/q1_animation_vasco_offline.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/the_new/q1_animation_vasco_offline.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
-								To view this video please enable JavaScript, and consider upgrading to a
-								web browser that
+								Để xem video này, vui lòng bật JavaScript và cân nhắc nâng cấp lên
+								trình duyệt web
 								<a href="#" target="_blank">
-									supports HTML5 video
+									có hỗ trợ video HTML5
 								</a>
 </p>
 </video>
-<button aria-controls="vasco-offline" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
+<button aria-controls="vasco-offline" aria-label="Phát video" aria-pressed="true" class="video-toggle" data-play="Phát video" data-stop="Tạm dừng video">
+<img alt="Phát video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
 </button>
 </div>
 </div>
 <div class="db-container-text-right">
-<h2 class="h1">Translation Without the Internet</h2>
-<p class="plain-text">The next generation of offline translation</p>
+<h2 class="h1">Dịch Thuật Không Cần Internet</h2>
+<p class="plain-text">Thế hệ dịch thuật ngoại tuyến tiếp theo</p>
 <div class="db-container-expandable">
 <div class="db-container-expandable-content">
-<p>It pays to be ready for anything. We are the only brand on the market offering free, unlimited lifetime internet across nearly 200 countries—ensuring pinpoint precision worldwide. But what happens when you are truly off the grid?</p>
-<p>The Vasco Translator Q1 delivers seamless voice and text translation in any environment. Simply download your required languages before you leave, and guarantee that zero connectivity never means a barrier to your adventure.</p>
-<p>Our offline mode is powered by proprietary, in-house technology built right here at Vasco. Unlike competitors who rely on generic public engines, we train our unique models on specialized datasets. This provides exceptional resilience against strong accents, background noise, and slang. Better yet, it is optimized specifically for European languages—a rare edge in the industry.</p>
-<p>Prepare for a whole new level of travel independence. Offline mode for the Vasco Translator Q1 is coming soon.</p>
+<p>Luôn sẵn sàng cho mọi tình huống là điều đáng giá. Chúng tôi là thương hiệu duy nhất trên thị trường cung cấp internet miễn phí, không giới hạn trọn đời tại gần 200 quốc gia—đảm bảo độ chính xác tuyệt đối trên toàn thế giới. Nhưng điều gì sẽ xảy ra khi bạn thực sự không có kết nối mạng?</p>
+<p>Vasco Translator Q1 mang đến khả năng dịch giọng nói và văn bản liền mạch trong mọi môi trường. Chỉ cần tải xuống các ngôn ngữ cần thiết trước khi khởi hành, và đảm bảo rằng việc không có kết nối mạng sẽ không bao giờ là rào cản cho chuyến phiêu lưu của bạn.</p>
+<p>Chế độ ngoại tuyến của chúng tôi được vận hành bởi công nghệ độc quyền, tự phát triển ngay tại Vasco. Khác với các đối thủ dựa vào các công cụ công cộng thông thường, chúng tôi huấn luyện các mô hình độc quyền của mình trên những bộ dữ liệu chuyên biệt. Điều này mang lại khả năng chống chịu vượt trội trước giọng địa phương nặng, tiếng ồn xung quanh và tiếng lóng. Hơn thế nữa, công nghệ này được tối ưu hóa riêng cho các ngôn ngữ châu Âu—một lợi thế hiếm có trong ngành.</p>
+<p>Hãy chuẩn bị cho một cấp độ hoàn toàn mới của sự tự do khi du lịch. Chế độ ngoại tuyến cho Vasco Translator Q1 sẽ sớm ra mắt.</p>
 </div>
 <div class="db-container-expandable-toggle-wrapper">
 <button class="db-container-expandable-toggle" type="button">
@@ -327,7 +327,7 @@ get_header();
 </div>
 <div class="box-btn-wrapper">
 <a class="btn btn-black-filled btn-md the-new-newsletter-btn" href="#the-new-newsletter">
-							I want to stay updated
+							Tôi muốn nhận thông tin mới nhất
 						</a>
 </div>
 </div>
@@ -338,79 +338,79 @@ get_header();
 <div class="container">
 <div id="awards-section">
 <h2 class="h2-notosans">Truyền thông nói về chúng tôi</h2>
-<div aria-label="carousel with quotes" aria-roledescription="carousel" class="swiper swiper-carousel autoplay loop carousel-media">
-<a class="sr-only focusable" href="#after-media-carousel">Skip carousel</a>
+<div aria-label="băng chuyền các câu trích dẫn" aria-roledescription="carousel" class="swiper swiper-carousel autoplay loop carousel-media">
+<a class="sr-only focusable" href="#after-media-carousel">Bỏ qua băng chuyền</a>
 <div class="swiper-wrapper">
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-zd_net" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-zd_net">quote from zd_net</h3>
+<h3 class="sr-only" id="slide-label-zd_net">trích dẫn từ zd_net</h3>
 <img alt="zd net icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/zd_net.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Một trong những buổi demo ấn tượng nhất của tôi tại CES 2024 là với đội ngũ Vasco Translator E1, tai nghe sử dụng AI và ứng dụng để dịch 49 ngôn ngữ theo thời gian thực.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-fox_business" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-fox_business">quote from fox_business</h3>
+<h3 class="sr-only" id="slide-label-fox_business">trích dẫn từ fox_business</h3>
 <img alt="fox business icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/fox_business.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Vasco mong muốn các công cụ dịch thuật đáp ứng nhu cầu của những khách hàng thường xuyên du lịch, người sống ở nước ngoài, người làm việc trong đội ngũ quốc tế hoặc gia đình có rào cản ngôn ngữ do người thân đến từ nhiều quốc gia khác nhau.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-cbs_news" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-cbs_news">quote from cbs_news</h3>
+<h3 class="sr-only" id="slide-label-cbs_news">trích dẫn từ cbs_news</h3>
 <img alt="cbs news icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/cbs_news.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Bạn có thể đi du lịch khắp thế giới, sử dụng thiết bị này để di chuyển mà không bao giờ cảm thấy bỡ ngỡ hay lạc lỏng tại bất kỳ quốc gia nào.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-conde_nast_traveler" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-conde_nast_traveler">quote from conde_nast_traveler</h3>
+<h3 class="sr-only" id="slide-label-conde_nast_traveler">trích dẫn từ conde_nast_traveler</h3>
 <img alt="conde nest traveller icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/conde_nast_traveler.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Thiết bị dịch ngôn ngữ này là phao cứu sinh của tôi khi sống ở nước ngoài. Nó cho phép cuộc trò chuyện qua lại mượt mà gần như không có độ trễ.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-forbes" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-forbes">quote from forbes</h3>
+<h3 class="sr-only" id="slide-label-forbes">trích dẫn từ forbes</h3>
 <img alt="forbes icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/forbes.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Trong khi hầu hết các máy dịch chỉ dùng 1 công cụ dịch đơn lẻ, thiết bị của Vasco sử dụng tới 12 công cụ dịch thuật cùng đội ngũ chuyên gia ngôn ngữ đảm bảo kết quả kết nối hoàn hảo.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-the_strategist" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-the_strategist">quote from the_strategist</h3>
+<h3 class="sr-only" id="slide-label-the_strategist">trích dẫn từ the_strategist</h3>
 <img alt="the strategist icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/the_strategist.webp" ); ?>"/>
-<blockquote class="awards-text" tabindex="0">I think Vasco is the best of the bunch because it comes with unlimited lifetime data (no need to find Wi-Fi!) and Phiên dịch 108 ngôn ngữ in 200 different countries.</blockquote>
+<blockquote class="awards-text" tabindex="0">Tôi nghĩ Vasco là lựa chọn tốt nhất trong số các thiết bị hiện có vì đi kèm dữ liệu di động không giới hạn trọn đời (không cần tìm Wi-Fi!) và Phiên dịch 108 ngôn ngữ tại 200 quốc gia khác nhau.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-business_insider" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-business_insider">quote from business_insider</h3>
+<h3 class="sr-only" id="slide-label-business_insider">trích dẫn từ business_insider</h3>
 <img alt="business insider icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/business_insider.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Now HIPAA-compliant, Vasco’s handheld translation devices can provide up to 108 language translations that are secure, making them safe to use in any Y tế facility by any Y tế professional to break down language barriers between patients and medical personnel.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-vancouver_sun" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-vancouver_sun">quote from vancouver_sun</h3>
+<h3 class="sr-only" id="slide-label-vancouver_sun">trích dẫn từ vancouver_sun</h3>
 <img alt="vancouver sun icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/vancouver_sun.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Vasco’s innovative technology allows users to communicate with one another through its translators, connecting 90% of the world’s population through the power of language.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-techradar" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-techradar">quote from techradar</h3>
+<h3 class="sr-only" id="slide-label-techradar">trích dẫn từ techradar</h3>
 <img alt="tech radar icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/techradar.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">The Vasco Translator V4 offers reliable voice translation, speedy photo translation, and free lifetime global coverage in a pocket-sized package that’s perfect for your next holiday or business trip.</blockquote>
 </a>
 </div>
 </div>
-<div class="swiper-button-prev btn-carousel-prev" data-label-prev="Previous slide"></div>
-<div class="swiper-button-next btn-carousel-next" data-label-next="Next slide"></div>
+<div class="swiper-button-prev btn-carousel-prev" data-label-prev="Slide trước"></div>
+<div class="swiper-button-next btn-carousel-next" data-label-next="Slide sau"></div>
 </div>
 <div class="stop-autoplay-carousel">
-<button class="btn btn-md btn-stop-autoplay" data-text-button-pause="stop carousel autoplay" data-text-button-resume="resume carousel autoplay">
-<span data-text-pause="Pause" data-text-resume="Resume">Pause</span>
+<button class="btn btn-md btn-stop-autoplay" data-text-button-pause="tạm dừng tự động chạy băng chuyền" data-text-button-resume="tiếp tục tự động chạy băng chuyền">
+<span data-text-pause="Tạm dừng" data-text-resume="Tiếp tục">Tạm dừng</span>
 <img alt="" aria-hidden="true" height="24" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/pause.svg" ); ?>" width="24"/>
 </button>
 </div>
@@ -526,15 +526,15 @@ get_header();
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/vasco_my_voice.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/vasco_my_voice.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
-								To view this video please enable JavaScript, and consider upgrading to a
-								web browser that
+								Để xem video này, vui lòng bật JavaScript và cân nhắc nâng cấp lên
+								trình duyệt web
 								<a href="#" target="_blank">
-									supports HTML5 video
+									có hỗ trợ video HTML5
 								</a>
 </p>
 </video>
-<button aria-controls="vasco-my-voice-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
+<button aria-controls="vasco-my-voice-video" aria-label="Phát video" aria-pressed="true" class="video-toggle" data-play="Phát video" data-stop="Tạm dừng video">
+<img alt="Phát video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
 </button>
 </div>
 <div class="tech-info">
@@ -550,15 +550,15 @@ get_header();
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/internet.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/internet.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
-								To view this video please enable JavaScript, and consider upgrading to a
-								web browser that
+								Để xem video này, vui lòng bật JavaScript và cân nhắc nâng cấp lên
+								trình duyệt web
 								<a href="#" target="_blank">
-									supports HTML5 video
+									có hỗ trợ video HTML5
 								</a>
 </p>
 </video>
-<button aria-controls="free-internet-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
+<button aria-controls="free-internet-video" aria-label="Phát video" aria-pressed="true" class="video-toggle" data-play="Phát video" data-stop="Tạm dừng video">
+<img alt="Phát video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
 </button>
 </div>
 <div class="tech-info">
@@ -574,15 +574,15 @@ get_header();
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/call_translator.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/call_translator.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
-								To view this video please enable JavaScript, and consider upgrading to a
-								web browser that
+								Để xem video này, vui lòng bật JavaScript và cân nhắc nâng cấp lên
+								trình duyệt web
 								<a href="#" target="_blank">
-									supports HTML5 video
+									có hỗ trợ video HTML5
 								</a>
 </p>
 </video>
-<button aria-controls="call-translator-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
+<button aria-controls="call-translator-video" aria-label="Phát video" aria-pressed="true" class="video-toggle" data-play="Phát video" data-stop="Tạm dừng video">
+<img alt="Phát video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
 </button>
 </div>
 <div class="tech-info">
@@ -598,15 +598,15 @@ get_header();
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/automatic_mode.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/automatic_mode.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
-								To view this video please enable JavaScript, and consider upgrading to a
-								web browser that
+								Để xem video này, vui lòng bật JavaScript và cân nhắc nâng cấp lên
+								trình duyệt web
 								<a href="#" target="_blank">
-									supports HTML5 video
+									có hỗ trợ video HTML5
 								</a>
 </p>
 </video>
-<button aria-controls="automatic-mode-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
+<button aria-controls="automatic-mode-video" aria-label="Phát video" aria-pressed="true" class="video-toggle" data-play="Phát video" data-stop="Tạm dừng video">
+<img alt="Phát video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
 </button>
 </div>
 <div class="tech-info">
@@ -737,8 +737,8 @@ The beauty of simplicity</p>
 </div>
 </div>
 <div class="custom-navigation">
-<div class="swiper-button-prev btn-events-prev" data-label-prev="Previous slide"></div>
-<div class="swiper-button-next btn-events-next" data-label-next="Next slide"></div>
+<div class="swiper-button-prev btn-events-prev" data-label-prev="Slide trước"></div>
+<div class="swiper-button-next btn-events-next" data-label-next="Slide sau"></div>
 </div>
 </div>
 </div>
@@ -804,8 +804,8 @@ The beauty of simplicity</p>
 </div>
 </div>
 <div class="custom-navigation">
-<div class="swiper-button-prev btn-product-prev" data-label-prev="Previous slide"></div>
-<div class="swiper-button-next btn-product-next" data-label-next="Next slide"></div>
+<div class="swiper-button-prev btn-product-prev" data-label-prev="Slide trước"></div>
+<div class="swiper-button-next btn-product-next" data-label-next="Slide sau"></div>
 </div>
 </div>
 </div>

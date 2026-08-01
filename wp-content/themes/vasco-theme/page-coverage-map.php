@@ -35,9 +35,9 @@ get_header();
 </div>
 </div>
 <div class="container content">
-<h2 class="h2-notosans">See where the Vasco universal translator works</h2>
-<p>Don't worry about the extra costs abroad. Vasco provides free lifetime Internet access for all translations.
-Click on the map to confirm Vasco Translator connects for free in the country of your destination.</p>
+<h2 class="h2-notosans">Xem nơi máy phiên dịch đa năng Vasco hoạt động</h2>
+<p>Đừng lo về chi phí phát sinh khi ở nước ngoài. Vasco cung cấp Internet miễn phí trọn đời cho mọi bản dịch.
+Nhấp vào bản đồ để xác nhận Vasco Translator kết nối miễn phí tại quốc gia bạn đến.</p>
 <form id="product-switcher">
 <label>
 <input name="product_id" type="radio" value="14"/>
@@ -55,7 +55,7 @@ Click on the map to confirm Vasco Translator connects for free in the country of
 <div id="map-wrapper">
 <div class="map-search-container">
 <div class="map-search-wrapper">
-<input class="map-search" id="autocomplete" name="country-search" placeholder="Enter country" type="text"/>
+<input class="map-search" id="autocomplete" name="country-search" placeholder="Nhập quốc gia" type="text"/>
 <div class="nothing-found">
 <svg fill="none" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_55593_3536)">
@@ -69,7 +69,7 @@ Click on the map to confirm Vasco Translator connects for free in the country of
 </clippath>
 </defs>
 </svg>
-<p>Nothing found</p>
+<p>Không tìm thấy kết quả</p>
 </div>
 </div>
 </div>

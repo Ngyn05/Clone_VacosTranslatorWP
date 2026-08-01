@@ -21,14 +21,14 @@ get_header();
 <div class="container">
 <div class="doublebox-content">
 <h1 class="h1">
-					Stay connected with the world
+					Luôn kết nối với thế giới
 				</h1>
-<p>Imagine having a problem that could be solved with a single phone call—but in a foreign language. With the phone Dịch cuộc gọi available in Vasco Translator Q1, you can feel confident and secure even in the most unexpected situations. This feature provides real-time phone call translation, allowing you to understand 50+ languages. Supported by our technology partners, you can call 160 countries—that’s more than 80% of the world! And the best part? Both you and the person you’re speaking with receive real-time translation.</p>
-<p>Give your voice a global reach.</p>
+<p>Hãy tưởng tượng bạn gặp một vấn đề có thể giải quyết chỉ bằng một cuộc gọi điện thoại—nhưng lại bằng một ngôn ngữ nước ngoài. Với tính năng Dịch cuộc gọi có trên Vasco Translator Q1, bạn có thể cảm thấy tự tin và an tâm ngay cả trong những tình huống bất ngờ nhất. Tính năng này mang đến khả năng dịch cuộc gọi điện thoại theo thời gian thực, giúp bạn hiểu hơn 50 ngôn ngữ. Với sự hỗ trợ từ các đối tác công nghệ của chúng tôi, bạn có thể gọi đến 160 quốc gia—tương đương hơn 80% thế giới! Và điều tuyệt vời nhất? Cả bạn và người bạn đang trò chuyện đều nhận được bản dịch theo thời gian thực.</p>
+<p>Hãy để giọng nói của bạn vươn xa toàn cầu.</p>
 <div class="box-btn-wrapper">
 <a class="btn btn-md btn-primary" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>">
-<img alt="cart" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>
-						GET VASCO TRANSLATOR Q1
+<img alt="Giỏ hàng" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>
+						MUA VASCO TRANSLATOR Q1
 					</a>
 </div>
 <svg class="svg-pseudo" color="" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -37,15 +37,15 @@ get_header();
 </div>
 </div>
 <div class="doublebox-absolute" id="img-change">
-<img alt="Two people stand inside a bright airport terminal looking at an open paper map and a small red handheld electronic device. The person on the left has straight orange hair with bangs, sunglasses, and a black t-shirt. The person on the right has curly brown hair, glasses, a yellow t-shirt, and a pink skirt. In the background, large windows overlook an airfield with an airplane and a control tower, while a digital departures board displays flight destinations next to rows of empty terminal seating." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/call_lp/hero.webp" ); ?>"/>
+<img alt="Hai người đứng trong một nhà ga sân bay sáng sủa, nhìn vào một tấm bản đồ giấy và một thiết bị điện tử cầm tay nhỏ màu đỏ. Người bên trái có tóc thẳng màu cam, đeo kính râm và mặc áo thun đen. Người bên phải có tóc xoăn màu nâu, đeo kính, mặc áo thun vàng và váy hồng. Phía sau là những ô cửa kính lớn nhìn ra sân bay với một chiếc máy bay và tháp kiểm soát không lưu, cùng bảng thông tin chuyến bay kỹ thuật số bên cạnh hàng ghế chờ trống." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/call_lp/hero.webp" ); ?>"/>
 </div>
 </div>
 </section>
 <section class="yt">
 <div class="container">
 <div aria-labelledby="yt-title" class="youtube-section">
-<h2 class="h1" id="yt-title">Hello, who’s calling?</h2>
-<p>There are moments where every word matters—especially when the person on the other end of the line is speaking a language you don’t understand at all. When you can’t see gestures or facial expressions, professional language support can make all the difference. Luckily, with the phone call translation feature, every conversation becomes crystal clear. You speak your language, and your caller speaks theirs. Everything happens through the Vasco Translator Q1.</p>
+<h2 class="h1" id="yt-title">Xin chào, ai đang gọi vậy?</h2>
+<p>Có những khoảnh khắc mà từng lời nói đều quan trọng—đặc biệt khi người ở đầu dây bên kia nói một ngôn ngữ bạn hoàn toàn không hiểu. Khi không thể nhìn thấy cử chỉ hay biểu cảm khuôn mặt, sự hỗ trợ ngôn ngữ chuyên nghiệp có thể tạo nên khác biệt lớn. May mắn thay, với tính năng dịch cuộc gọi điện thoại, mọi cuộc trò chuyện đều trở nên rõ ràng tuyệt đối. Bạn nói ngôn ngữ của mình, còn người gọi nói ngôn ngữ của họ. Tất cả đều diễn ra thông qua Vasco Translator Q1.</p>
 </div>
 </div>
 </section>
@@ -58,7 +58,7 @@ get_header();
 <h3 class="number" id="lang-number">160</h3>
 </div>
 <p class="number-description" id="lang-desc">
-					countries you can connect with</p>
+					quốc gia bạn có thể kết nối</p>
 </div>
 <div class="vasco-numbers-single-wrapper" role="listitem" tabindex="0">
 <div class="number-paragraph">
@@ -72,8 +72,8 @@ get_header();
 <h3 class="number" id="engines-number">42</h3>
 </div>
 <p class="number-description" id="engines-desc">
-					area codes
-enabling access to the feature</p>
+					mã quốc gia
+cho phép sử dụng tính năng này</p>
 </div>
 <div class="vasco-numbers-single-wrapper" role="listitem" tabindex="0">
 <div class="number-paragraph">
@@ -92,26 +92,26 @@ enabling access to the feature</p>
 <div class="card">
 <picture>
 <source media="(min-width: 700px)"/>
-<img alt='A photograph of a man and a woman stranded on the shoulder of an empty desert highway next to a prominent "ROUTE US 66" shield sign. The man, wearing a denim shirt and jeans, stands talking on a electronic device, while the woman, in a plaid shirt, stands with her arms crossed, looking slightly impatient. Behind them is their classic dark teal muscle car with a clearly visible flat front tire. The long road stretches into a distant landscape of low mountains under a partly cloudy sky.' height="129px" width="300px"/>
+<img alt='Ảnh chụp một người đàn ông và một người phụ nữ mắc kẹt bên lề một xa lộ sa mạc vắng vẻ, cạnh biển báo nổi bật "ROUTE US 66". Người đàn ông mặc áo sơ mi denim và quần jeans, đứng nói chuyện qua một thiết bị điện tử, trong khi người phụ nữ mặc áo kẻ sọc đứng khoanh tay, trông có vẻ hơi sốt ruột. Phía sau họ là chiếc xe cơ bắp cổ điển màu xanh đậm với một bánh trước bị xẹp rõ rệt. Con đường dài trải dài đến những ngọn núi thấp phía xa dưới bầu trời nhiều mây.' height="129px" width="300px"/>
 </picture>
 <h3 class="h2">Khi đi du lịch</h3>
-<p>Even the best-planned trip can be full of surprises. Whether you're calling roadside assistance for a flat tire on Route 66, or trying to book the last surfboard on a crowded beach in Portugal—with the real-time phone call translation feature, you’ll feel confident no matter where you are.</p>
+<p>Ngay cả chuyến đi được lên kế hoạch kỹ lưỡng nhất cũng có thể đầy bất ngờ. Dù bạn đang gọi cứu hộ vì thủng lốp trên Route 66, hay cố gắng đặt tấm ván lướt sóng cuối cùng trên một bãi biển đông đúc ở Bồ Đào Nha—với tính năng dịch cuộc gọi điện thoại theo thời gian thực, bạn sẽ luôn tự tin dù ở bất cứ đâu.</p>
 </div>
 <div class="card card-bottom">
 <picture>
 <source media="(min-width: 700px)"/>
-<img alt="A photograph from a side profile of a man in a light blue button-down shirt sitting at a wooden desk in a modern office. He is holding and using a small, dark handheld device with an interface on the screen. In front of him on the desk sits a large desktop computer monitor with a blank screen, a white keyboard, and some papers. Large windows in the background reveal a blurred city skyline and hold a few small potted plants, creating a bright and professional workspace." height="129px" width="300px"/>
+<img alt="Ảnh chụp góc nghiêng một người đàn ông mặc áo sơ mi cài nút màu xanh nhạt, ngồi tại bàn làm việc bằng gỗ trong một văn phòng hiện đại. Anh đang cầm và sử dụng một thiết bị cầm tay nhỏ, màu tối với giao diện hiển thị trên màn hình. Trước mặt anh trên bàn là một màn hình máy tính để bàn lớn đang tắt, một bàn phím trắng và một số giấy tờ. Những ô cửa sổ lớn phía sau cho thấy đường chân trời thành phố mờ ảo cùng vài chậu cây nhỏ, tạo nên không gian làm việc sáng sủa và chuyên nghiệp." height="129px" width="300px"/>
 </picture>
 <h3 class="h2">Tại nơi làm việc</h3>
-<p>Get things done with a single call. Vasco Translator Q1 excels in environments where time is money. Contact a supplier from China, a driver from Romania, or a seller from Argentina. Speak freely and keep your business moving without delays. From now on, international trade is within your reach.</p>
+<p>Hoàn thành công việc chỉ với một cuộc gọi. Vasco Translator Q1 phát huy tối đa hiệu quả trong những môi trường mà thời gian là tiền bạc. Liên hệ với nhà cung cấp từ Trung Quốc, tài xế từ Romania, hay người bán hàng từ Argentina. Trò chuyện tự do và giữ cho công việc kinh doanh của bạn luôn suôn sẻ, không bị trì hoãn. Từ giờ trở đi, thương mại quốc tế nằm trong tầm tay bạn.</p>
 </div>
 <div class="card">
 <picture>
 <source media="(min-width: 700px)"/>
-<img alt="A close-up photograph focusing on a person's hand holding a dark blue handheld device with a VA logo on the back. In the softly blurred background, a smiling young man wearing a black and white striped t-shirt lies relaxed on a light-colored couch. The setting is a bright, modern living room with soft lighting and a hint of indoor greenery in the background." height="129px" width="300px"/>
+<img alt="Ảnh cận cảnh bàn tay một người đang cầm thiết bị cầm tay màu xanh đậm có logo VA ở mặt sau. Phía sau, trong nền mờ nhẹ, một chàng trai trẻ tươi cười mặc áo thun kẻ sọc đen trắng đang nằm thư giãn trên ghế sofa màu sáng. Bối cảnh là một phòng khách hiện đại, sáng sủa với ánh sáng dịu nhẹ và thấp thoáng cây xanh trong nhà." height="129px" width="300px"/>
 </picture>
 <h3 class="h2">Trong cuộc sống hàng ngày</h3>
-<p>When distance doesn’t matter, language shouldn’t either. Stay in touch with family spread across the world, schedule an appointment with a specialist abroad, or contact public offices. Feel the freedom to talk about what matters most to you, without anything getting lost in translation</p>
+<p>Khi khoảng cách không còn là vấn đề, ngôn ngữ cũng không nên là rào cản. Giữ liên lạc với người thân ở khắp nơi trên thế giới, đặt lịch hẹn với chuyên gia ở nước ngoài, hoặc liên hệ với các cơ quan công quyền. Cảm nhận sự tự do khi nói về những điều quan trọng nhất với bạn, mà không có gì bị hiểu sai trong quá trình dịch thuật.</p>
 </div>
 </div>
 <a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>">
@@ -120,14 +120,14 @@ enabling access to the feature</p>
 <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 <path d="M1 1H5L7.7 14.4C7.9 15.4 8.7 16 9.7 16H19.4C20.4 16 21.2 15.3 21.4 14.4L23 6H6" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
-			GET VASCO TRANSLATOR Q1
+			MUA VASCO TRANSLATOR Q1
 		</a>
 </div>
 </section>
 <section class="how-vasco-section bottom">
 <div class="how-vasco-flex container">
 <h2 class="h1">Xem tính năng dịch cuộc gọi hoạt động như thế nào</h2>
-<p class="subtitle">A new level of international communication in 3 simple steps</p>
+<p class="subtitle">Một cấp độ giao tiếp quốc tế hoàn toàn mới chỉ trong 3 bước đơn giản</p>
 <div class="grid-section">
 <div class="card">
 <picture>

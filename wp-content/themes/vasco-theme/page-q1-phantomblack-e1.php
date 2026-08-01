@@ -21,7 +21,7 @@ get_header();
 <ol>
 <li>
 <a href="../index.html">
-<span class="breadcrumb-link">Home</span>
+<span class="breadcrumb-link">Trang chủ</span>
 </a>
 <span class="breadcrumb-divider">&gt;</span>
 </li>
@@ -54,7 +54,7 @@ get_header();
 <div class="product-cover product-cover-one">
 <div class="product-flags js-product-flags">
 <div class="product-flag-wrapper promotion-theme-yellow">
-<div aria-label="Cheaper in a set" class="body-base product-flag">Cheaper in a set</div>
+<div aria-label="Rẻ hơn khi mua theo bộ" class="body-base product-flag">Rẻ hơn khi mua theo bộ</div>
 </div>
 </div>
 <img alt="Vasco Translator Q1 Phantom Black + E1" itemprop="image" sizes="(min-width: 1440px) 400px, (min-width: 700px) 320px, 260px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/426-pdt_400/q1-phantomblack-e1.jpg" ); ?>"/>
@@ -89,12 +89,12 @@ get_header();
 <div aria-hidden="true" class="trustpilot-widget" color="#2D3139" data-businessunit-id="64cbd5206cac53316ece59d0" data-font-family="Noto Sans" data-font-weight="normal" data-locale="en-us" data-no-reviews="show" data-scroll-to-list="false" data-sku="Q1-PB-E1-CB" data-star-color="#5E976A" data-style-alignment="left" data-style-height="24px" data-style-width="100%" data-template-id="54d39695764ea907c0f34825" data-theme="light" tabindex="-1">
 <a href="#" rel="noopener" target="_blank">Trustpilot</a>
 </div>
-<button aria-controls="trustpilot-secttion-bottom" aria-label="Customers’ opinions" class="trustpilot-top-scroll" data-trustpilot-placement="product" data-trustpilot-scroll-target="trustpilot-secttion-bottom-anchor" tabindex="-1" type="button">
-<span class="sr-only">Customers’ opinions</span>
+<button aria-controls="trustpilot-secttion-bottom" aria-label="Ý kiến khách hàng" class="trustpilot-top-scroll" data-trustpilot-placement="product" data-trustpilot-scroll-target="trustpilot-secttion-bottom-anchor" tabindex="-1" type="button">
+<span class="sr-only">Ý kiến khách hàng</span>
 </button>
-<button aria-controls="trustpilot-secttion-bottom" aria-label="Customers’ opinions" class="trustpilot-top-logo" type="button">
+<button aria-controls="trustpilot-secttion-bottom" aria-label="Ý kiến khách hàng" class="trustpilot-top-logo" type="button">
 <img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/trustpilot.svg" ); ?>"/>
-<span class="sr-only">Customers’ opinions</span>
+<span class="sr-only">Ý kiến khách hàng</span>
 </button>
 <!-- End TrustBox widget -->
 </div>
@@ -233,39 +233,39 @@ get_header();
 <div class="tab product-about" id="product-about">
 <div class="container">
 <div class="youtube-section">
-<h2 class="h1">The ultimate translation duo</h2>
-<p>Technological synergy that gives you complete freedom in communication. The combination of Vasco Translator E1 and Vasco Translator Q1 takes international conversations to a whole new level. Discover the benefits of pairing the earpiece with Vasco’s latest translator.</p>
+<h2 class="h1">Bộ đôi phiên dịch hoàn hảo</h2>
+<p>Sự cộng hưởng công nghệ mang đến cho bạn sự tự do tuyệt đối trong giao tiếp. Sự kết hợp giữa Vasco Translator E1 và Vasco Translator Q1 đưa những cuộc trò chuyện quốc tế lên một tầm cao hoàn toàn mới. Khám phá lợi ích khi kết hợp tai nghe với chiếc máy phiên dịch mới nhất của Vasco.</p>
 </div>
 </div>
 <section class="doubleboxes">
 <div class="doublebox left" style="background-color: #E0E2F2; color: #E0E2F2;">
 <div class="container">
 <div class="doublebox-content">
-<h3 class="h2">E1 Translation Earpiece + Vasco Translator Q1 in One Set</h3>
-<p>Get the best of both worlds.</p>
-<p>Pairing the Vasco Translator E1 earpiece with our most advanced device – the Vasco Translator Q1 – gives you ultimate freedom in communication. An expanded language database, unlimited Internet data package, and hands-free mode turn translations into natural conversations. Together, they form a powerful duo that’s perfect for travel, business meetings, and everyday interactions.</p>
-<p> See how these two devices join forces to crash language barriers.</p>
-<div class="doublebox-button-wrapper doublebox-button-wrapper-left"><button class="btn btn-md btn-black" data-id="product-description-bundle-e1">Tìm hiểu thêm about Vasco Translator E1</button></div>
-<div class="doublebox-button-wrapper doublebox-button-wrapper-left"><button class="btn btn-md btn-black" data-id="product-description-bundle-q1">Tìm hiểu thêm about Vasco Translator Q1</button></div>
+<h3 class="h2">Tai nghe phiên dịch E1 + Vasco Translator Q1 trong một bộ</h3>
+<p>Sở hữu trọn vẹn những điều tốt nhất của cả hai thế giới.</p>
+<p>Kết hợp tai nghe Vasco Translator E1 với thiết bị tiên tiến nhất của chúng tôi – Vasco Translator Q1 – mang đến cho bạn sự tự do tuyệt đối trong giao tiếp. Cơ sở dữ liệu ngôn ngữ mở rộng, gói dữ liệu Internet không giới hạn và chế độ rảnh tay biến các bản dịch thành những cuộc trò chuyện tự nhiên. Cùng nhau, chúng tạo thành một bộ đôi mạnh mẽ, hoàn hảo cho du lịch, họp hành và giao tiếp hàng ngày.</p>
+<p> Khám phá cách hai thiết bị này kết hợp để xóa bỏ rào cản ngôn ngữ.</p>
+<div class="doublebox-button-wrapper doublebox-button-wrapper-left"><button class="btn btn-md btn-black" data-id="product-description-bundle-e1">Tìm hiểu thêm về Vasco Translator E1</button></div>
+<div class="doublebox-button-wrapper doublebox-button-wrapper-left"><button class="btn btn-md btn-black" data-id="product-description-bundle-q1">Tìm hiểu thêm về Vasco Translator Q1</button></div>
 <svg class="svg-pseudo" color="" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
 </svg>
 </div>
 </div>
 <div class="doublebox-absolute">
-<img alt="Man clicking settings of the translation headphones in Vasco V4 device" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1-bundle/e1-q1-bundle-doublebox1.webp" ); ?>"/>
+<img alt="Người đàn ông đang chỉnh cài đặt tai nghe phiên dịch trên thiết bị Vasco V4" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1-bundle/e1-q1-bundle-doublebox1.webp" ); ?>"/>
 </div>
 </div>
 <div class="doublebox right" style="background-color: #E2F3DF; color: #E2F3DF;">
 <div class="doublebox-absolute">
-<img alt="Couple sitting on the stairs and communicating with translating headphones. Man points at something in the distance." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1-bundle/e1-bundle-doublebox2.webp" ); ?>"/>
+<img alt="Một cặp đôi ngồi trên bậc thang trò chuyện bằng tai nghe phiên dịch. Người đàn ông chỉ tay về phía xa." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1-bundle/e1-bundle-doublebox2.webp" ); ?>"/>
 </div>
 <div class="container">
 <div class="doublebox-content">
-<h3 class="h2">Let tech do the talking</h3>
-<p>The Vasco Translator Q1 and E1 earpiece set delivers translation in its most intuitive form. With hands-free mode, you can engage in conversations without pressing buttons or constantly looking at a screen. Just set the languages, put on the earpiece, and start talking – the technology automatically detects who’s speaking and instantly delivers translation.</p>
-<p>Take turns speaking and let Vasco ensure smooth, accurate communication.</p>
-<p>The result? The most natural conversation: even when it happens in multiple languages.</p>
+<h3 class="h2">Để công nghệ thay bạn "nói chuyện"</h3>
+<p>Bộ tai nghe Vasco Translator Q1 và E1 mang đến trải nghiệm phiên dịch trực quan nhất từ trước đến nay. Với chế độ rảnh tay, bạn có thể trò chuyện thoải mái mà không cần bấm nút hay liên tục nhìn vào màn hình. Chỉ cần chọn ngôn ngữ, đeo tai nghe vào và bắt đầu nói – công nghệ sẽ tự động nhận diện người đang nói và dịch ngay lập tức.</p>
+<p>Lần lượt trò chuyện và để Vasco đảm bảo giao tiếp diễn ra suôn sẻ, chính xác.</p>
+<p>Kết quả là gì? Cuộc trò chuyện tự nhiên nhất: ngay cả khi diễn ra bằng nhiều ngôn ngữ khác nhau.</p>
 <svg class="svg-pseudo" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
 </svg>
@@ -282,25 +282,25 @@ get_header();
 <p><strong>Vasco Translator Q1</strong></p>
 <ul>
 <li>Vasco Translator Q1</li>
-<li>SIM tích hợp sẵn with free unlimited internet</li>
-<li>USB-C cable</li>
-<li>Lanyard</li>
-<li>Warranty and user manual</li>
+<li>SIM tích hợp sẵn với internet miễn phí không giới hạn</li>
+<li>Cáp USB-C</li>
+<li>Dây đeo</li>
+<li>Bảo hành và hướng dẫn sử dụng</li>
 </ul>
 <p><strong>Vasco Translator E1</strong></p>
-<ul><li>Two earbuds (right ear)</li>
-<li>Charging case</li>
-<li>USB Type-C cable</li>
-<li>Quick start guide and online manual in English and many other languages</li></ul>
+<ul><li>Hai tai nghe (dành cho tai phải)</li>
+<li>Hộp sạc</li>
+<li>Cáp USB Type-C</li>
+<li>Hướng dẫn nhanh và tài liệu trực tuyến bằng tiếng Anh và nhiều ngôn ngữ khác</li></ul>
 </div>
 <div class="include-box-right"><img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1-bundle/bu_q1-e1_set1.webp" ); ?>"/></div>
 </div>
 </div>
 <ol class="terms-addition" type="1"><li>
-The Promotion consists of granting a discount on the purchase of devices bought as part of the Promotional Set. Devices included in the Promotional Set that are purchased separately (in two separate transactions) or are added to the cart other than by selecting a product marked as a Promotional Set in the Online Store will not be subject to discounting.
+Chương trình khuyến mãi bao gồm việc áp dụng chiết khấu khi mua các thiết bị trong Bộ sản phẩm khuyến mãi. Các thiết bị thuộc Bộ sản phẩm khuyến mãi nếu được mua riêng lẻ (trong hai giao dịch riêng biệt) hoặc được thêm vào giỏ hàng theo cách khác ngoài việc chọn sản phẩm được đánh dấu là Bộ sản phẩm khuyến mãi trên Cửa hàng trực tuyến sẽ không được áp dụng chiết khấu.
 </li>
 <li>
-The Participant may exercise the right to withdraw from the sales contract within 14 days from the date of receiving the Promotional Set. The withdrawal may apply to the entire Promotional Set or a part of it. In case of partial withdrawal from the contract (return of one of the products included in the Promotional Set), the Participant loses the right to the applied discount. In such a case, the amount subject to refund will be reduced by the value of the applied discount in such a way that the price paid for the product that is not subject to return corresponds to the price of this product in the Online Store, excluding the promotion established on the day of purchase by the Participant.<br/><br/><a class="underline" href="../terms-and-conditions-of-the-promotion-cheaper-in-a-set.html" style="color:#4966FF" target="_blank">Điều khoản và điều kiện of the promotion cheaper in a set</a>
+Người tham gia có quyền rút khỏi hợp đồng mua bán trong vòng 14 ngày kể từ ngày nhận được Bộ sản phẩm khuyến mãi. Việc rút khỏi hợp đồng có thể áp dụng cho toàn bộ Bộ sản phẩm khuyến mãi hoặc một phần trong đó. Trong trường hợp rút khỏi hợp đồng một phần (trả lại một trong các sản phẩm thuộc Bộ sản phẩm khuyến mãi), Người tham gia sẽ mất quyền hưởng chiết khấu đã áp dụng. Trong trường hợp đó, số tiền được hoàn lại sẽ bị giảm trừ theo giá trị chiết khấu đã áp dụng, sao cho giá đã thanh toán cho sản phẩm không được trả lại tương ứng với giá của sản phẩm đó tại Cửa hàng trực tuyến, không bao gồm chương trình khuyến mãi được thiết lập vào ngày Người tham gia mua hàng.<br/><br/><a class="underline" href="../terms-and-conditions-of-the-promotion-cheaper-in-a-set.html" style="color:#4966FF" target="_blank">Điều khoản và điều kiện của chương trình khuyến mãi rẻ hơn khi mua theo bộ</a>
 </li></ol>
 </div>
 </section>
@@ -308,8 +308,8 @@ The Participant may exercise the right to withdraw from the sales contract withi
 <div class="product-description-bundle-e1 tab" id="product-description-bundle-e1">
 <div class="container">
 <div class="youtube-section">
-<h2 class="h1">Speak in 50+ languages—hands-free</h2>
-<p>Would you like to explore the world on your own terms? Our language translator earbuds give you the freedom to communicate in over 50 languages. Discover how to make the most of this device and unlock everything the Vasco Translator E1 has to offer.</p>
+<h2 class="h1">Nói chuyện bằng hơn 50 ngôn ngữ—rảnh tay hoàn toàn</h2>
+<p>Bạn muốn khám phá thế giới theo cách của riêng mình? Tai nghe phiên dịch của chúng tôi mang đến cho bạn sự tự do giao tiếp bằng hơn 50 ngôn ngữ. Khám phá cách tận dụng tối đa thiết bị này và mở khóa mọi tính năng mà Vasco Translator E1 mang lại.</p>
 
 </div>
 </div>
@@ -317,79 +317,79 @@ The Participant may exercise the right to withdraw from the sales contract withi
 <section class="media-awards">
 <div class="container">
 <div id="awards-section">
-<h2 class="h2-notosans">awards</h2>
+<h2 class="h2-notosans">Giải thưởng</h2>
 <div aria-label="carousel with awards" aria-roledescription="carousel" class="swiper swiper-carousel autoplay loop carousel-award" role="region">
 <a class="sr-only focusable" href="#after-award-carousel">Bỏ qua vòng lặp</a>
 <div class="swiper-wrapper" role="list">
 <div aria-labelledby="slide-label-muse_silver" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-muse_silver">muse_silver logo</h3>
+<h3 class="sr-only" id="slide-label-muse_silver">Logo giải thưởng MUSE Silver</h3>
 <img alt="MUSE SILVER" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/muse_silver.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-european_product_design_award" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-european_product_design_award">european_product_design_award logo</h3>
+<h3 class="sr-only" id="slide-label-european_product_design_award">Logo giải thưởng European Product Design Award</h3>
 <img alt="European Product Design Award" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/european_product_design_award.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-produkte_disq" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-produkte_disq">produkte_disq logo</h3>
+<h3 class="sr-only" id="slide-label-produkte_disq">Logo giải thưởng PRODUKTE - DISQ</h3>
 <img alt="PRODUKTE - DISQ" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/produkte_disq.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-red_dot_2025" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-red_dot_2025">red_dot_2025 logo</h3>
+<h3 class="sr-only" id="slide-label-red_dot_2025">Logo giải thưởng Red Dot 2025</h3>
 <img alt="reddot 2025" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/red_dot_2025.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-muse_design" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-muse_design">muse_design logo</h3>
+<h3 class="sr-only" id="slide-label-muse_design">Logo giải thưởng MUSE Design</h3>
 <img alt="muse design" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/muse_design.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-red_dot_2022" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-red_dot_2022">red_dot_2022 logo</h3>
+<h3 class="sr-only" id="slide-label-red_dot_2022">Logo giải thưởng Red Dot 2022</h3>
 <img alt="red dot winner 2022" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/red_dot_2022.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-new_york_product_design" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-new_york_product_design">new_york_product_design logo</h3>
+<h3 class="sr-only" id="slide-label-new_york_product_design">Logo giải thưởng New York Product Design Awards</h3>
 <img alt="New York product design awards" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/new_york_product_design.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-good_design" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-good_design">good_design logo</h3>
+<h3 class="sr-only" id="slide-label-good_design">Logo giải thưởng Good Design Award</h3>
 <img alt="good design award" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/good_design.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-japan_good_design" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-japan_good_design">japan_good_design logo</h3>
+<h3 class="sr-only" id="slide-label-japan_good_design">Logo giải thưởng Japan Good Design Award</h3>
 <img alt="Japan good design award" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/japan_good_design.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-red_dot_2021" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-red_dot_2021">red_dot_2021 logo</h3>
+<h3 class="sr-only" id="slide-label-red_dot_2021">Logo giải thưởng Red Dot 2021</h3>
 <img alt="red dot winner 2021" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/red_dot_2021.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-glomo" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-glomo">glomo logo</h3>
+<h3 class="sr-only" id="slide-label-glomo">Logo giải thưởng GLOMO</h3>
 <img alt="glomo global mobile awards" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/glomo.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-red_dot_2026" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-red_dot_2026">red_dot_2026 logo</h3>
+<h3 class="sr-only" id="slide-label-red_dot_2026">Logo giải thưởng Red Dot 2026</h3>
 <img alt="red dot winner 2026" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/red_dot_2026.webp" ); ?>"/>
 </a>
 </div>
@@ -408,10 +408,10 @@ The Participant may exercise the right to withdraw from the sales contract withi
 </div>
 </section>
 <section class="technologies-section sec-1" data-section-id="product_features_wow_click">
-<h2 class="h2-notosans">Explore the Vasco Translator E1 modes</h2>
+<h2 class="h2-notosans">Khám phá các chế độ của Vasco Translator E1</h2>
 <div class="btn-wrapper">
-<button class="btn btn-md btn-white active" data-feature="Headphone mode" data-section="product_features_wow_click">Earbuds Mode</button>
-<button class="btn btn-md btn-white" data-feature="Hands-free mode" data-section="product_features_wow_click">Loudspeaker Mode</button>
+<button class="btn btn-md btn-white active" data-feature="Headphone mode" data-section="product_features_wow_click">Chế độ tai nghe</button>
+<button class="btn btn-md btn-white" data-feature="Hands-free mode" data-section="product_features_wow_click">Chế độ loa ngoài</button>
 </div>
 <div class="section-scroll-wrapper">
 <div class="slide s1">
@@ -421,21 +421,21 @@ The Participant may exercise the right to withdraw from the sales contract withi
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1/headphone_mode.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1/headphone_mode.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
-							To view this video please enable JavaScript, and consider upgrading to a
-							web browser that
+							Để xem video này, vui lòng bật JavaScript, và cân nhắc nâng cấp lên
+							trình duyệt web
 							<a href="#" target="_blank">
-								supports HTML5 video
+								hỗ trợ video HTML5
 							</a>
 </p>
 </video>
 <button aria-controls="headphone-mode-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Tạm dừng video">
 <img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
 </button>
-<p class="sr-only" id="video-desc1">Two Vasco Translator E1 earbuds rise from their charging case, and their LED indicators light up. </p>
+<p class="sr-only" id="video-desc1">Hai tai nghe Vasco Translator E1 nhô lên từ hộp sạc, đèn LED báo hiệu bật sáng. </p>
 </div>
 <div class="tech-info">
-<h3>One for you, one for sharing</h3>
-<p>Enjoy natural, ear-to-ear conversations without pressing any buttons. Simply pair the translation earpieces with your phone or Vasco Translator, select your languages, and start talking.</p>
+<h3>Một chiếc cho bạn, một chiếc để chia sẻ</h3>
+<p>Tận hưởng những cuộc trò chuyện tự nhiên, tai kề tai mà không cần bấm bất kỳ nút nào. Chỉ cần ghép nối tai nghe phiên dịch với điện thoại hoặc Vasco Translator, chọn ngôn ngữ và bắt đầu nói chuyện.</p>
 </div>
 </div>
 </div>
@@ -446,21 +446,21 @@ The Participant may exercise the right to withdraw from the sales contract withi
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1/hands_free_mode.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1/hands_free_mode.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
-							To view this video please enable JavaScript, and consider upgrading to a
-							web browser that
+							Để xem video này, vui lòng bật JavaScript, và cân nhắc nâng cấp lên
+							trình duyệt web
 							<a href="#" target="_blank">
-								supports HTML5 video
+								hỗ trợ video HTML5
 							</a>
 </p>
 </video>
 <button aria-controls="hands-free-mode-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Tạm dừng video">
 <img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
 </button>
-<p class="sr-only" id="video-desc2">A Vasco Translator E1 earbud connects to the mobile app on a smartphone, while its LED indicator flashes. </p>
+<p class="sr-only" id="video-desc2">Một chiếc tai nghe Vasco Translator E1 kết nối với ứng dụng di động trên điện thoại thông minh, trong khi đèn LED của nó nhấp nháy. </p>
 </div>
 <div class="tech-info">
-<h3>Seamlessly connect the earpiece to your phone or Vasco Translator</h3>
-<p>Pair your earpiece with your phone using the free Vasco Connect app or connect it to one of the Vasco handheld translators. That’s it! In loudspeaker mode, your conversation partner hears the translation through the phone or translator speaker, while you hear it in your earpiece.</p>
+<h3>Kết nối liền mạch tai nghe với điện thoại hoặc Vasco Translator</h3>
+<p>Ghép nối tai nghe với điện thoại của bạn bằng ứng dụng Vasco Connect miễn phí, hoặc kết nối với một trong các máy phiên dịch cầm tay của Vasco. Vậy là xong! Ở chế độ loa ngoài, người trò chuyện cùng bạn sẽ nghe bản dịch qua loa điện thoại hoặc máy phiên dịch, trong khi bạn nghe qua tai nghe của mình.</p>
 </div>
 </div>
 </div>
@@ -468,8 +468,8 @@ The Participant may exercise the right to withdraw from the sales contract withi
 </section>
 <section class="how-vasco-section bottom">
 <div class="how-vasco-flex container">
-<h2 class="h1">Getting started is easy</h2>
-<p class="subtitle">We’ve created a series of short video guides to show you just how simple it is to set up your device, pair it with the app, and begin your first conversation. In just a few moments, you’ll be ready to go.</p>
+<h2 class="h1">Bắt đầu thật dễ dàng</h2>
+<p class="subtitle">Chúng tôi đã tạo ra một loạt video hướng dẫn ngắn gọn để cho bạn thấy việc thiết lập thiết bị, ghép nối với ứng dụng và bắt đầu cuộc trò chuyện đầu tiên đơn giản như thế nào. Chỉ trong vài phút, bạn đã sẵn sàng sử dụng.</p>
 <div class="grid-section">
 <div class="card">
 
@@ -866,65 +866,65 @@ The Participant may exercise the right to withdraw from the sales contract withi
 <div class="swiper-wrapper">
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-zd_net" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-zd_net">quote from zd_net</h3>
+<h3 class="sr-only" id="slide-label-zd_net">Trích dẫn từ ZD Net</h3>
 <img alt="zd net icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/zd_net.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Một trong những buổi demo ấn tượng nhất của tôi tại CES 2024 là với đội ngũ Vasco Translator E1, tai nghe sử dụng AI và ứng dụng để dịch 49 ngôn ngữ theo thời gian thực.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-fox_business" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-fox_business">quote from fox_business</h3>
+<h3 class="sr-only" id="slide-label-fox_business">Trích dẫn từ Fox Business</h3>
 <img alt="fox business icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/fox_business.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Vasco mong muốn các công cụ dịch thuật đáp ứng nhu cầu của những khách hàng thường xuyên du lịch, người sống ở nước ngoài, người làm việc trong đội ngũ quốc tế hoặc gia đình có rào cản ngôn ngữ do người thân đến từ nhiều quốc gia khác nhau.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-cbs_news" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-cbs_news">quote from cbs_news</h3>
+<h3 class="sr-only" id="slide-label-cbs_news">Trích dẫn từ CBS News</h3>
 <img alt="cbs news icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/cbs_news.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Bạn có thể đi du lịch khắp thế giới, sử dụng thiết bị này để di chuyển mà không bao giờ cảm thấy bỡ ngỡ hay lạc lỏng tại bất kỳ quốc gia nào.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-conde_nast_traveler" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-conde_nast_traveler">quote from conde_nast_traveler</h3>
+<h3 class="sr-only" id="slide-label-conde_nast_traveler">Trích dẫn từ Condé Nast Traveler</h3>
 <img alt="conde nest traveller icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/conde_nast_traveler.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Thiết bị dịch ngôn ngữ này là phao cứu sinh của tôi khi sống ở nước ngoài. Nó cho phép cuộc trò chuyện qua lại mượt mà gần như không có độ trễ.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-forbes" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-forbes">quote from forbes</h3>
+<h3 class="sr-only" id="slide-label-forbes">Trích dẫn từ Forbes</h3>
 <img alt="forbes icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/forbes.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Trong khi hầu hết các máy dịch chỉ dùng 1 công cụ dịch đơn lẻ, thiết bị của Vasco sử dụng tới 12 công cụ dịch thuật cùng đội ngũ chuyên gia ngôn ngữ đảm bảo kết quả kết nối hoàn hảo.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-the_strategist" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-the_strategist">quote from the_strategist</h3>
-<img alt="the strategist icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/the_strategist.webp" ); ?>"/>
-<blockquote class="awards-text" tabindex="0">I think Vasco is the best of the bunch because it comes with unlimited lifetime data (no need to find Wi-Fi!) and Phiên dịch 108 ngôn ngữ in 200 different countries.</blockquote>
+<h3 class="sr-only" id="slide-label-the_strategist">Trích dẫn từ The Strategist</h3>
+<img alt="biểu tượng the strategist" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/the_strategist.webp" ); ?>"/>
+<blockquote class="awards-text" tabindex="0">Tôi cho rằng Vasco là lựa chọn tốt nhất trong số các thiết bị hiện có vì đi kèm dữ liệu trọn đời không giới hạn (không cần tìm WiFi!) và có thể phiên dịch 108 ngôn ngữ tại 200 quốc gia khác nhau.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-business_insider" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-business_insider">quote from business_insider</h3>
+<h3 class="sr-only" id="slide-label-business_insider">Trích dẫn từ Business Insider</h3>
 <img alt="business insider icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/business_insider.webp" ); ?>"/>
-<blockquote class="awards-text" tabindex="0">Now HIPAA-compliant, Vasco’s handheld translation devices can provide up to 108 language translations that are secure, making them safe to use in any Y tế facility by any Y tế professional to break down language barriers between patients and medical personnel.</blockquote>
+<blockquote class="awards-text" tabindex="0">Nay đã đạt chuẩn HIPAA, các thiết bị phiên dịch cầm tay của Vasco có thể cung cấp bản dịch bảo mật cho tới 108 ngôn ngữ, giúp chúng an toàn khi sử dụng tại bất kỳ cơ sở y tế nào, bởi bất kỳ nhân viên y tế nào, nhằm xóa bỏ rào cản ngôn ngữ giữa bệnh nhân và đội ngũ y tế.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-vancouver_sun" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-vancouver_sun">quote from vancouver_sun</h3>
+<h3 class="sr-only" id="slide-label-vancouver_sun">Trích dẫn từ Vancouver Sun</h3>
 <img alt="vancouver sun icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/vancouver_sun.webp" ); ?>"/>
-<blockquote class="awards-text" tabindex="0">Vasco’s innovative technology allows users to communicate with one another through its translators, connecting 90% of the world’s population through the power of language.</blockquote>
+<blockquote class="awards-text" tabindex="0">Công nghệ đột phá của Vasco cho phép người dùng giao tiếp với nhau thông qua các thiết bị phiên dịch, kết nối 90% dân số thế giới nhờ sức mạnh của ngôn ngữ.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-techradar" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-techradar">quote from techradar</h3>
+<h3 class="sr-only" id="slide-label-techradar">Trích dẫn từ TechRadar</h3>
 <img alt="tech radar icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/techradar.webp" ); ?>"/>
-<blockquote class="awards-text" tabindex="0">The Vasco Translator V4 offers reliable voice translation, speedy photo translation, and free lifetime global coverage in a pocket-sized package that’s perfect for your next holiday or business trip.</blockquote>
+<blockquote class="awards-text" tabindex="0">Vasco Translator V4 mang đến khả năng dịch giọng nói đáng tin cậy, dịch hình ảnh nhanh chóng và vùng phủ sóng toàn cầu miễn phí trọn đời, gói gọn trong một thiết bị nhỏ gọn bỏ túi, hoàn hảo cho kỳ nghỉ hay chuyến công tác tiếp theo của bạn.</blockquote>
 </a>
 </div>
 </div>
@@ -1048,10 +1048,10 @@ The Participant may exercise the right to withdraw from the sales contract withi
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/vasco_assistant.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/vasco_assistant.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
-							To view this video please enable JavaScript, and consider upgrading to a
-							web browser that
+							Để xem video này, vui lòng bật JavaScript, và cân nhắc nâng cấp lên
+							trình duyệt web
 							<a href="#" target="_blank">
-								supports HTML5 video
+								hỗ trợ video HTML5
 							</a>
 </p>
 </video>
@@ -1072,10 +1072,10 @@ The Participant may exercise the right to withdraw from the sales contract withi
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/vasco_my_voice.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/vasco_my_voice.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
-							To view this video please enable JavaScript, and consider upgrading to a
-							web browser that
+							Để xem video này, vui lòng bật JavaScript, và cân nhắc nâng cấp lên
+							trình duyệt web
 							<a href="#" target="_blank">
-								supports HTML5 video
+								hỗ trợ video HTML5
 							</a>
 </p>
 </video>
@@ -1096,10 +1096,10 @@ The Participant may exercise the right to withdraw from the sales contract withi
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/call_translator.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/call_translator.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
-							To view this video please enable JavaScript, and consider upgrading to a
-							web browser that
+							Để xem video này, vui lòng bật JavaScript, và cân nhắc nâng cấp lên
+							trình duyệt web
 							<a href="#" target="_blank">
-								supports HTML5 video
+								hỗ trợ video HTML5
 							</a>
 </p>
 </video>
@@ -1197,10 +1197,10 @@ The Participant may exercise the right to withdraw from the sales contract withi
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/free_internet.webm" ); ?>" type="video/webm"/>
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/free_internet.mp4" ); ?>" type="video/mp4"/>
 <p class="vjs-no-js">
-						To view this video please enable JavaScript, and consider upgrading to a
-						web browser that
+						Để xem video này, vui lòng bật JavaScript, và cân nhắc nâng cấp lên
+						trình duyệt web
 						<a href="#" target="_blank">
-							supports HTML5 video
+							hỗ trợ video HTML5
 						</a>
 </p>
 </video>
@@ -1539,65 +1539,65 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 <div class="swiper-wrapper">
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-zd_net" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-zd_net">quote from zd_net</h3>
+<h3 class="sr-only" id="slide-label-zd_net">Trích dẫn từ ZD Net</h3>
 <img alt="zd net icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/zd_net.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Một trong những buổi demo ấn tượng nhất của tôi tại CES 2024 là với đội ngũ Vasco Translator E1, tai nghe sử dụng AI và ứng dụng để dịch 49 ngôn ngữ theo thời gian thực.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-fox_business" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-fox_business">quote from fox_business</h3>
+<h3 class="sr-only" id="slide-label-fox_business">Trích dẫn từ Fox Business</h3>
 <img alt="fox business icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/fox_business.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Vasco mong muốn các công cụ dịch thuật đáp ứng nhu cầu của những khách hàng thường xuyên du lịch, người sống ở nước ngoài, người làm việc trong đội ngũ quốc tế hoặc gia đình có rào cản ngôn ngữ do người thân đến từ nhiều quốc gia khác nhau.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-cbs_news" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-cbs_news">quote from cbs_news</h3>
+<h3 class="sr-only" id="slide-label-cbs_news">Trích dẫn từ CBS News</h3>
 <img alt="cbs news icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/cbs_news.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Bạn có thể đi du lịch khắp thế giới, sử dụng thiết bị này để di chuyển mà không bao giờ cảm thấy bỡ ngỡ hay lạc lỏng tại bất kỳ quốc gia nào.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-conde_nast_traveler" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-conde_nast_traveler">quote from conde_nast_traveler</h3>
+<h3 class="sr-only" id="slide-label-conde_nast_traveler">Trích dẫn từ Condé Nast Traveler</h3>
 <img alt="conde nest traveller icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/conde_nast_traveler.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Thiết bị dịch ngôn ngữ này là phao cứu sinh của tôi khi sống ở nước ngoài. Nó cho phép cuộc trò chuyện qua lại mượt mà gần như không có độ trễ.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-forbes" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-forbes">quote from forbes</h3>
+<h3 class="sr-only" id="slide-label-forbes">Trích dẫn từ Forbes</h3>
 <img alt="forbes icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/forbes.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Trong khi hầu hết các máy dịch chỉ dùng 1 công cụ dịch đơn lẻ, thiết bị của Vasco sử dụng tới 12 công cụ dịch thuật cùng đội ngũ chuyên gia ngôn ngữ đảm bảo kết quả kết nối hoàn hảo.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-the_strategist" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-the_strategist">quote from the_strategist</h3>
-<img alt="the strategist icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/the_strategist.webp" ); ?>"/>
-<blockquote class="awards-text" tabindex="0">I think Vasco is the best of the bunch because it comes with unlimited lifetime data (no need to find Wi-Fi!) and Phiên dịch 108 ngôn ngữ in 200 different countries.</blockquote>
+<h3 class="sr-only" id="slide-label-the_strategist">Trích dẫn từ The Strategist</h3>
+<img alt="biểu tượng the strategist" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/the_strategist.webp" ); ?>"/>
+<blockquote class="awards-text" tabindex="0">Tôi cho rằng Vasco là lựa chọn tốt nhất trong số các thiết bị hiện có vì đi kèm dữ liệu trọn đời không giới hạn (không cần tìm WiFi!) và có thể phiên dịch 108 ngôn ngữ tại 200 quốc gia khác nhau.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-business_insider" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-business_insider">quote from business_insider</h3>
+<h3 class="sr-only" id="slide-label-business_insider">Trích dẫn từ Business Insider</h3>
 <img alt="business insider icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/business_insider.webp" ); ?>"/>
-<blockquote class="awards-text" tabindex="0">Now HIPAA-compliant, Vasco’s handheld translation devices can provide up to 108 language translations that are secure, making them safe to use in any Y tế facility by any Y tế professional to break down language barriers between patients and medical personnel.</blockquote>
+<blockquote class="awards-text" tabindex="0">Nay đã đạt chuẩn HIPAA, các thiết bị phiên dịch cầm tay của Vasco có thể cung cấp bản dịch bảo mật cho tới 108 ngôn ngữ, giúp chúng an toàn khi sử dụng tại bất kỳ cơ sở y tế nào, bởi bất kỳ nhân viên y tế nào, nhằm xóa bỏ rào cản ngôn ngữ giữa bệnh nhân và đội ngũ y tế.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-vancouver_sun" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-vancouver_sun">quote from vancouver_sun</h3>
+<h3 class="sr-only" id="slide-label-vancouver_sun">Trích dẫn từ Vancouver Sun</h3>
 <img alt="vancouver sun icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/vancouver_sun.webp" ); ?>"/>
-<blockquote class="awards-text" tabindex="0">Vasco’s innovative technology allows users to communicate with one another through its translators, connecting 90% of the world’s population through the power of language.</blockquote>
+<blockquote class="awards-text" tabindex="0">Công nghệ đột phá của Vasco cho phép người dùng giao tiếp với nhau thông qua các thiết bị phiên dịch, kết nối 90% dân số thế giới nhờ sức mạnh của ngôn ngữ.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-techradar" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-techradar">quote from techradar</h3>
+<h3 class="sr-only" id="slide-label-techradar">Trích dẫn từ TechRadar</h3>
 <img alt="tech radar icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/techradar.webp" ); ?>"/>
-<blockquote class="awards-text" tabindex="0">The Vasco Translator V4 offers reliable voice translation, speedy photo translation, and free lifetime global coverage in a pocket-sized package that’s perfect for your next holiday or business trip.</blockquote>
+<blockquote class="awards-text" tabindex="0">Vasco Translator V4 mang đến khả năng dịch giọng nói đáng tin cậy, dịch hình ảnh nhanh chóng và vùng phủ sóng toàn cầu miễn phí trọn đời, gói gọn trong một thiết bị nhỏ gọn bỏ túi, hoàn hảo cho kỳ nghỉ hay chuyến công tác tiếp theo của bạn.</blockquote>
 </a>
 </div>
 </div>
@@ -1616,79 +1616,79 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 <hr/>
 <div class="container">
 <div class="flex flex-col media vasco-awards">
-<h2 class="h2-notosans text-center">awards</h2>
+<h2 class="h2-notosans text-center">Giải thưởng</h2>
 <div aria-label="carousel with awards" aria-roledescription="carousel" class="swiper swiper-carousel autoplay loop carousel-award" role="region">
 <a class="sr-only focusable" href="#after-award-carousel">Bỏ qua vòng lặp</a>
 <div class="swiper-wrapper" role="list">
 <div aria-labelledby="slide-label-muse_silver" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-muse_silver">muse_silver logo</h3>
+<h3 class="sr-only" id="slide-label-muse_silver">Logo giải thưởng MUSE Silver</h3>
 <img alt="MUSE SILVER" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/muse_silver.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-european_product_design_award" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-european_product_design_award">european_product_design_award logo</h3>
+<h3 class="sr-only" id="slide-label-european_product_design_award">Logo giải thưởng European Product Design Award</h3>
 <img alt="European Product Design Award" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/european_product_design_award.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-produkte_disq" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-produkte_disq">produkte_disq logo</h3>
+<h3 class="sr-only" id="slide-label-produkte_disq">Logo giải thưởng PRODUKTE - DISQ</h3>
 <img alt="PRODUKTE - DISQ" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/produkte_disq.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-red_dot_2025" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-red_dot_2025">red_dot_2025 logo</h3>
+<h3 class="sr-only" id="slide-label-red_dot_2025">Logo giải thưởng Red Dot 2025</h3>
 <img alt="reddot 2025" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/red_dot_2025.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-muse_design" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-muse_design">muse_design logo</h3>
+<h3 class="sr-only" id="slide-label-muse_design">Logo giải thưởng MUSE Design</h3>
 <img alt="muse design" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/muse_design.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-red_dot_2022" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-red_dot_2022">red_dot_2022 logo</h3>
+<h3 class="sr-only" id="slide-label-red_dot_2022">Logo giải thưởng Red Dot 2022</h3>
 <img alt="red dot winner 2022" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/red_dot_2022.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-new_york_product_design" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-new_york_product_design">new_york_product_design logo</h3>
+<h3 class="sr-only" id="slide-label-new_york_product_design">Logo giải thưởng New York Product Design Awards</h3>
 <img alt="New York product design awards" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/new_york_product_design.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-good_design" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-good_design">good_design logo</h3>
+<h3 class="sr-only" id="slide-label-good_design">Logo giải thưởng Good Design Award</h3>
 <img alt="good design award" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/good_design.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-japan_good_design" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-japan_good_design">japan_good_design logo</h3>
+<h3 class="sr-only" id="slide-label-japan_good_design">Logo giải thưởng Japan Good Design Award</h3>
 <img alt="Japan good design award" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/japan_good_design.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-red_dot_2021" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-red_dot_2021">red_dot_2021 logo</h3>
+<h3 class="sr-only" id="slide-label-red_dot_2021">Logo giải thưởng Red Dot 2021</h3>
 <img alt="red dot winner 2021" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/red_dot_2021.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-glomo" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-glomo">glomo logo</h3>
+<h3 class="sr-only" id="slide-label-glomo">Logo giải thưởng GLOMO</h3>
 <img alt="glomo global mobile awards" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/glomo.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-red_dot_2026" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-red_dot_2026">red_dot_2026 logo</h3>
+<h3 class="sr-only" id="slide-label-red_dot_2026">Logo giải thưởng Red Dot 2026</h3>
 <img alt="red dot winner 2026" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/red_dot_2026.webp" ); ?>"/>
 </a>
 </div>

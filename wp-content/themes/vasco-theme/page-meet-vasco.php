@@ -20,9 +20,9 @@ get_header();
 <nav aria-label="Breadcrumbs" class="breadcrumb">
 <ol>
 <li class="body-16">
-<a href="<?php echo esc_url( home_url( "/" ) ); ?>"><span class="breadcrumb-link">Home</span></a><span class="breadcrumb-divider">&gt;</span>
+<a href="<?php echo esc_url( home_url( "/" ) ); ?>"><span class="breadcrumb-link">Trang chủ</span></a><span class="breadcrumb-divider">&gt;</span>
 </li>
-<li><span aria-current="page" class="breadcrumb-current body-16">Meet Vasco</span></li>
+<li><span aria-current="page" class="breadcrumb-current body-16">Gặp Gỡ Vasco</span></li>
 </ol>
 </nav>
 </div>
@@ -30,15 +30,15 @@ get_header();
 <div class="js-content-wrapper" id="content-wrapper">
 <div class="meet-vasco-title-wrapper">
 <div class="container">
-<h1 class="h1">Meet Vasco</h1>
+<h1 class="h1">Gặp Gỡ Vasco</h1>
 </div>
 </div>
 <section class="doubleboxes">
 <div class="doublebox left" id="box-color-random" style="background-color: #E0E2F2; color: #E0E2F2;">
 <div class="container">
 <div class="doublebox-content">
-<h2 class="h1">Communication Without Barriers in 110+ Languages</h2>
-<p>Vasco Translator is the world’s No. 1 real-time translation device. It combines cutting-edge technology with 18 years of experience, giving you the confidence to communicate freely around the world. Small enough to carry everywhere, smart enough to understand almost every language – it's your key to seamless communication.</p>
+<h2 class="h1">Giao Tiếp Không Rào Cản Với Hơn 110 Ngôn Ngữ</h2>
+<p>Vasco Translator là thiết bị phiên dịch trực tiếp số 1 thế giới. Sản phẩm kết hợp công nghệ tiên tiến với 18 năm kinh nghiệm, mang lại cho bạn sự tự tin để giao tiếp tự do khắp thế giới. Nhỏ gọn để mang theo mọi nơi, thông minh để hiểu hầu hết mọi ngôn ngữ – đây chính là chìa khóa cho giao tiếp liền mạch của bạn.</p>
 <div class="box-btn-wrapper">
 <button class="btn btn-md btn-black-filled scrollToMoreInfo">
 						Tìm hiểu thêm
@@ -60,17 +60,17 @@ get_header();
 <button aria-controls="meet-vasco-hero-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
 <img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
 </button>
-<p class="sr-only" id="video-desc1">The video opens with a man hitchhiking and using the Vasco Translator to communicate with a driver. Next, we see a woman at a market using the device to talk to a vendor. In the following scene, a man is having a conversation with a local fisherman. Then, an older couple is shown in a restaurant using the photo translation feature to read the menu. The next moment features a woman speaking with a taxi driver using the translator. The video ends with a couple translating text from an information board.</p>
+<p class="sr-only" id="video-desc1">Video mở đầu với cảnh một người đàn ông xin đi nhờ xe và sử dụng Vasco Translator để giao tiếp với tài xế. Tiếp theo, một người phụ nữ tại khu chợ dùng thiết bị để trò chuyện với người bán hàng. Ở cảnh sau, một người đàn ông đang trò chuyện với một ngư dân địa phương. Sau đó, một cặp vợ chồng lớn tuổi được thấy trong nhà hàng, sử dụng tính năng dịch hình ảnh để đọc thực đơn. Khoảnh khắc tiếp theo là một người phụ nữ nói chuyện với tài xế taxi bằng máy phiên dịch. Video kết thúc với cảnh một cặp đôi dịch văn bản từ một bảng thông tin.</p>
 </div>
 </div>
 </div>
 </section>
 <section class="doublebox-features" id="more-info">
 <div class="container">
-<h2 class="h2-notosans" id="benefits-title">WHAT SETS VASCO TRANSLATOR APART FROM OTHER TRANSLATORS AND APPS</h2>
+<h2 class="h2-notosans" id="benefits-title">ĐIỀU GÌ KHIẾN VASCO TRANSLATOR KHÁC BIỆT SO VỚI CÁC MÁY PHIÊN DỊCH VÀ ỨNG DỤNG KHÁC</h2>
 <div aria-labelledby="benefits-title" class="box-grid" role="group">
 <div class="box-left-wrapper">
-<img alt="Side view of Vasco devices: Vasco Translators V4, Q1, M4, and E1 displayed next to each other." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/translators.webp" ); ?>"/>
+<img alt="Hình ảnh nhìn nghiêng các thiết bị Vasco: Vasco Translator V4, Q1, M4 và E1 được trưng bày cạnh nhau." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/translators.webp" ); ?>"/>
 </div>
 <div class="box-right-wrapper">
 <div aria-describedby="benefit-desc-1" aria-expanded="false" aria-labelledby="benefit-title-1" class="box" tabindex="0">
@@ -79,7 +79,7 @@ get_header();
 </div>
 <div class="description">
 <h3 id="benefit-title-1">Internet miễn phí Forever</h3>
-<p id="benefit-desc-1">Stop worrying about roaming charges or searching for WiFi. Unlike apps, Vasco works tại gần 200 quốc gia with built-in, free, lifetime internet for translations—all with no monthly fees!</p>
+<p id="benefit-desc-1">Không còn phải lo lắng về cước roaming hay tìm kiếm WiFi. Khác với các ứng dụng, Vasco hoạt động tại gần 200 quốc gia với internet miễn phí, trọn đời được tích hợp sẵn cho việc phiên dịch—hoàn toàn không phí hàng tháng!</p>
 </div>
 </div>
 <div aria-describedby="benefit-desc-2" aria-expanded="false" aria-labelledby="benefit-title-2" class="box" tabindex="0">
@@ -105,9 +105,9 @@ get_header();
 <img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/clonedvoice.svg" ); ?>"/>
 </div>
 <div class="description">
-<h3 id="benefit-title-4">Voice Cloning</h3>
-<p id="benefit-desc-4">The revolutionary voice cloning feature captures your unique voice characteristics in many languages. Now you can be truly yourself in every conversation.
-meet vasco
+<h3 id="benefit-title-4">Nhân Bản Giọng Nói</h3>
+<p id="benefit-desc-4">Tính năng nhân bản giọng nói mang tính cách mạng này ghi lại đặc điểm giọng nói riêng của bạn bằng nhiều ngôn ngữ. Giờ đây, bạn có thể thực sự là chính mình trong mọi cuộc trò chuyện.
+gặp gỡ vasco
 </p>
 </div>
 </div>
@@ -135,7 +135,7 @@ meet vasco
 </div>
 <div class="description">
 <h3 id="benefit-title-7">Dịch cuộc gọi</h3>
-<p id="benefit-desc-7">Translate phone calls in real time. Perfect for emergencies, international business, or staying in touch with people around the world.</p>
+<p id="benefit-desc-7">Dịch cuộc gọi điện thoại theo thời gian thực. Hoàn hảo cho các tình huống khẩn cấp, công việc kinh doanh quốc tế, hoặc giữ liên lạc với mọi người trên khắp thế giới.</p>
 </div>
 </div>
 <div aria-describedby="benefit-desc-8" aria-expanded="false" aria-labelledby="benefit-title-8" class="box" tabindex="0">
@@ -143,8 +143,8 @@ meet vasco
 <img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/mic.svg" ); ?>"/>
 </div>
 <div class="description">
-<h3 id="benefit-title-8">Dedicated microphone</h3>
-<p id="benefit-desc-8">The noise-cancelling microphone precisely captures every word and eliminates background noise, ensuring instant and flawless speech recognition.</p>
+<h3 id="benefit-title-8">Micro chuyên dụng</h3>
+<p id="benefit-desc-8">Micro khử tiếng ồn thu âm chính xác từng từ và loại bỏ tạp âm xung quanh, đảm bảo nhận diện giọng nói tức thì và hoàn hảo.</p>
 </div>
 </div>
 <div aria-describedby="benefit-desc-9" aria-expanded="false" aria-labelledby="benefit-title-9" class="box" tabindex="0">
@@ -153,7 +153,7 @@ meet vasco
 </div>
 <div class="description">
 <h3 id="benefit-title-9">Loa công suất lớn</h3>
-<p id="benefit-desc-9">Forget about asking people to repeat themselves. Vasco translators are equipped with speakers that guarantee crystal-clear translations, even in noisy environments.</p>
+<p id="benefit-desc-9">Không còn phải nhờ người khác nhắc lại lời nói. Máy phiên dịch Vasco được trang bị loa đảm bảo bản dịch rõ ràng, kể cả trong môi trường ồn ào.</p>
 </div>
 </div>
 </div>
@@ -164,67 +164,67 @@ meet vasco
 <div class="container">
 <h2 class="h2-notosans">Truyền thông nói về chúng tôi</h2>
 <div aria-label="carousel with quotes" aria-roledescription="carousel" class="swiper swiper-carousel autoplay loop carousel-media">
-<a class="sr-only focusable" href="#after-media-carousel">Skip carousel</a>
+<a class="sr-only focusable" href="#after-media-carousel">Bỏ qua carousel</a>
 <div class="swiper-wrapper">
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-zd_net" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-zd_net">quote from zd_net</h3>
+<h3 class="sr-only" id="slide-label-zd_net">Trích dẫn từ zd_net</h3>
 <img alt="zd net icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/zd_net.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Một trong những buổi demo ấn tượng nhất của tôi tại CES 2024 là với đội ngũ Vasco Translator E1, tai nghe sử dụng AI và ứng dụng để dịch 49 ngôn ngữ theo thời gian thực.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-fox_business" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-fox_business">quote from fox_business</h3>
+<h3 class="sr-only" id="slide-label-fox_business">Trích dẫn từ fox_business</h3>
 <img alt="fox business icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/fox_business.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Vasco mong muốn các công cụ dịch thuật đáp ứng nhu cầu của những khách hàng thường xuyên du lịch, người sống ở nước ngoài, người làm việc trong đội ngũ quốc tế hoặc gia đình có rào cản ngôn ngữ do người thân đến từ nhiều quốc gia khác nhau.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-cbs_news" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-cbs_news">quote from cbs_news</h3>
+<h3 class="sr-only" id="slide-label-cbs_news">Trích dẫn từ cbs_news</h3>
 <img alt="cbs news icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/cbs_news.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Bạn có thể đi du lịch khắp thế giới, sử dụng thiết bị này để di chuyển mà không bao giờ cảm thấy bỡ ngỡ hay lạc lỏng tại bất kỳ quốc gia nào.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-conde_nast_traveler" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-conde_nast_traveler">quote from conde_nast_traveler</h3>
+<h3 class="sr-only" id="slide-label-conde_nast_traveler">Trích dẫn từ conde_nast_traveler</h3>
 <img alt="conde nest traveller icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/conde_nast_traveler.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Thiết bị dịch ngôn ngữ này là phao cứu sinh của tôi khi sống ở nước ngoài. Nó cho phép cuộc trò chuyện qua lại mượt mà gần như không có độ trễ.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-forbes" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-forbes">quote from forbes</h3>
+<h3 class="sr-only" id="slide-label-forbes">Trích dẫn từ forbes</h3>
 <img alt="forbes icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/forbes.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Trong khi hầu hết các máy dịch chỉ dùng 1 công cụ dịch đơn lẻ, thiết bị của Vasco sử dụng tới 12 công cụ dịch thuật cùng đội ngũ chuyên gia ngôn ngữ đảm bảo kết quả kết nối hoàn hảo.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-the_strategist" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-the_strategist">quote from the_strategist</h3>
+<h3 class="sr-only" id="slide-label-the_strategist">Trích dẫn từ the_strategist</h3>
 <img alt="the strategist icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/the_strategist.webp" ); ?>"/>
-<blockquote class="awards-text" tabindex="0">I think Vasco is the best of the bunch because it comes with unlimited lifetime data (no need to find Wi-Fi!) and Phiên dịch 108 ngôn ngữ in 200 different countries.</blockquote>
+<blockquote class="awards-text" tabindex="0">Tôi cho rằng Vasco là lựa chọn tốt nhất trong số các thiết bị dịch, vì nó đi kèm dữ liệu không giới hạn trọn đời (không cần tìm Wi-Fi!) và có thể phiên dịch 108 ngôn ngữ tại 200 quốc gia khác nhau.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-business_insider" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-business_insider">quote from business_insider</h3>
+<h3 class="sr-only" id="slide-label-business_insider">Trích dẫn từ business_insider</h3>
 <img alt="business insider icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/business_insider.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Now HIPAA-compliant, Vasco’s handheld translation devices can provide up to 108 language translations that are secure, making them safe to use in any Y tế facility by any Y tế professional to break down language barriers between patients and medical personnel.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-vancouver_sun" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-vancouver_sun">quote from vancouver_sun</h3>
+<h3 class="sr-only" id="slide-label-vancouver_sun">Trích dẫn từ vancouver_sun</h3>
 <img alt="vancouver sun icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/vancouver_sun.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Vasco’s innovative technology allows users to communicate with one another through its translators, connecting 90% of the world’s population through the power of language.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-techradar" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-techradar">quote from techradar</h3>
+<h3 class="sr-only" id="slide-label-techradar">Trích dẫn từ techradar</h3>
 <img alt="tech radar icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/techradar.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">The Vasco Translator V4 offers reliable voice translation, speedy photo translation, and free lifetime global coverage in a pocket-sized package that’s perfect for your next holiday or business trip.</blockquote>
 </a>
@@ -886,7 +886,7 @@ with other Vasco devices" data-product-name="E1">
 <section class="trustedby-logo-carousel-wrapper">
 <h2 class="h2-notosans trustedby-logo-carousel-title">Trusted by 500,000+ customers globally</h2>
 <div aria-label="a carousel presenting the logos of companies that have trusted us" aria-roledescription="carousel" class="trustedby-logo-carousel" role="region">
-<a class="sr-only focusable" href="#after-trustedby-logo-carousel">Skip carousel</a>
+<a class="sr-only focusable" href="#after-trustedby-logo-carousel">Bỏ qua carousel</a>
 <div aria-hidden="true" class="trustedby-logo-carousel-rows">
 <div class="swiper autoplay loop carousel-logo-marquee carousel-trustedby-logo" data-carousel-speed="5500">
 <div class="swiper-wrapper" role="list">
@@ -1024,7 +1024,7 @@ with other Vasco devices" data-product-name="E1">
 </div>
 <div class="features-wrapper">
 <div aria-roledescription="carousel" class="swiper swiper-features-cards" role="region">
-<a class="sr-only focusable" href="#after-features-cards-carousel">Skip carousel</a>
+<a class="sr-only focusable" href="#after-features-cards-carousel">Bỏ qua carousel</a>
 <div class="swiper-wrapper" role="list">
 <div aria-describedby="card1-desc" aria-expanded="false" aria-labelledby="card1-title" class="swiper-slide" role="listitem" tabindex="0">
 <div class="img-wrapper">
@@ -1250,7 +1250,7 @@ with other Vasco devices" data-product-name="E1">
 <div class="flex flex-col media vasco-awards" id="awards-section">
 <h2 class="h2-notosans text-center">awards</h2>
 <div aria-label="carousel with awards" aria-roledescription="carousel" class="swiper swiper-carousel autoplay loop carousel-award" role="region">
-<a class="sr-only focusable" href="#after-award-carousel">Skip carousel</a>
+<a class="sr-only focusable" href="#after-award-carousel">Bỏ qua carousel</a>
 <div class="swiper-wrapper" role="list">
 <div aria-labelledby="slide-label-muse_silver" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
