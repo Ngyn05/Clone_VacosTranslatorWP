@@ -64,29 +64,42 @@ function vasco_theme_enqueue_all_assets() {
 	wp_enqueue_script( 'vasco-js-23', VASCO_THEME_URI . '/assets/themes/vasco-theme/modules/ps_emailsubscription/views/js/ps_emailsubscription.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
 	wp_enqueue_script( 'vasco-js-24', VASCO_THEME_URI . '/assets/themes/vasco-theme/modules/ps_shoppingcart/ps_shoppingcart.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
 
-	// Inline DOM fix for tab menu links
+	// Inline DOM fix for product tab menus (About / Specification / Languages / FAQ)
+	// The real markup is <button class="menu-link" data-id="product-xxx"> inside
+	// <nav class="tab-menu">, with matching <div class="tab" id="product-xxx"> panes
+	// inside <div class="tab-content">. The theme's own tab JS (a code-split Vite
+	// chunk) is missing from the deployed build, so tab clicks never do anything.
+	// This delegated listener restores that behavior without depending on the
+	// missing chunk.
 	$custom_js = "
 		(function() {
-			var style = document.createElement('style');
-			style.innerHTML = '.tab-menu a.menu-link { pointer-events: auto !important; cursor: pointer !important; position: relative !important; z-index: 9999 !important; }';
-			document.head.appendChild(style);
-
-			function handleTabClick(e) {
-				var link = e.target.closest('.tab-menu a.menu-link');
-				if (link) {
-					var href = link.getAttribute('href');
-					if (href && href !== '#' && href !== 'javascript:void(0)') {
-						e.preventDefault();
-						e.stopPropagation();
-						window.location.href = href;
-					}
+			function activateTab(menu, targetId) {
+				var content = menu.parentElement ? menu.parentElement.querySelector('.tab-content') : null;
+				if (!content) {
+					content = document.getElementById('tab-content');
 				}
-			}
-			document.addEventListener('click', handleTabClick, true);
-			window.addEventListener('load', function() {
-				document.querySelectorAll('.tab-menu a.menu-link').forEach(function(el) {
-					el.addEventListener('click', handleTabClick, true);
+				if (!content) return;
+
+				menu.querySelectorAll('.menu-link').forEach(function(btn) {
+					btn.classList.toggle('current', btn.getAttribute('data-id') === targetId);
 				});
+				content.querySelectorAll(':scope > .tab').forEach(function(pane) {
+					if (pane.id === targetId) {
+						pane.style.display = '';
+					} else {
+						pane.style.display = 'none';
+					}
+				});
+			}
+
+			document.addEventListener('click', function(e) {
+				var btn = e.target.closest('.tab-menu .menu-link[data-id]');
+				if (!btn) return;
+				var menu = btn.closest('.tab-menu');
+				var targetId = btn.getAttribute('data-id');
+				if (menu && targetId) {
+					activateTab(menu, targetId);
+				}
 			});
 		})();
 	";

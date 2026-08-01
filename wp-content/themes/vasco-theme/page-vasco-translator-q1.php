@@ -17,7 +17,7 @@ get_header();
 <div>
 <div class="breadcrumb-container">
 <div class="container">
-<nav aria-label="Breadcrumbs" class="breadcrumb" data-depth="3">
+<nav aria-label="Đường dẫn điều hướng" class="breadcrumb" data-depth="3">
 <ol>
 <li>
 <a href="../index.html">
@@ -46,7 +46,7 @@ get_header();
 <div class="product-container js-product-container">
 <div class="product-header-wrapper">
 <div class="number-one">
-<img alt="number one" class="nr-one" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/icons/no1-badge.svg" ); ?>"/>
+<img alt="số một" class="nr-one" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/icons/no1-badge.svg" ); ?>"/>
 </div>
 <div class="product-header container">
 <div class="product-cover-thumbnail-section">
@@ -223,12 +223,12 @@ get_header();
 <div aria-hidden="true" class="trustpilot-widget" color="#2D3139" data-businessunit-id="64cbd5206cac53316ece59d0" data-font-family="Noto Sans" data-font-weight="normal" data-locale="en-us" data-no-reviews="show" data-scroll-to-list="false" data-sku="5906516647508,5906516647409,5906516647515,5906516647522" data-star-color="#5E976A" data-style-alignment="left" data-style-height="24px" data-style-width="100%" data-template-id="54d39695764ea907c0f34825" data-theme="light" tabindex="-1">
 <a href="#" rel="noopener" target="_blank">Trustpilot</a>
 </div>
-<button aria-controls="trustpilot-secttion-bottom" aria-label="Customers’ opinions" class="trustpilot-top-scroll" data-trustpilot-placement="product" data-trustpilot-scroll-target="trustpilot-secttion-bottom-anchor" tabindex="-1" type="button">
-<span class="sr-only">Customers’ opinions</span>
+<button aria-controls="trustpilot-secttion-bottom" aria-label="Ý kiến khách hàng" class="trustpilot-top-scroll" data-trustpilot-placement="product" data-trustpilot-scroll-target="trustpilot-secttion-bottom-anchor" tabindex="-1" type="button">
+<span class="sr-only">Ý kiến khách hàng</span>
 </button>
-<button aria-controls="trustpilot-secttion-bottom" aria-label="Customers’ opinions" class="trustpilot-top-logo" type="button">
+<button aria-controls="trustpilot-secttion-bottom" aria-label="Ý kiến khách hàng" class="trustpilot-top-logo" type="button">
 <img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/trustpilot.svg" ); ?>"/>
-<span class="sr-only">Customers’ opinions</span>
+<span class="sr-only">Ý kiến khách hàng</span>
 </button>
 <!-- End TrustBox widget -->
 </div>
@@ -284,7 +284,7 @@ get_header();
 <div class="product-prices js-product-prices">
 <div class="product-price">
 <div class="current-price">
-<p aria-label="Price $549" class="current-price-value product-price" content="549">
+<p aria-label="Giá $549" class="current-price-value product-price" content="549">
 																		$549											</p>
 </div>
 </div>
@@ -366,15 +366,15 @@ get_header();
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/vasco_assistant.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/vasco_assistant.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
-							To view this video please enable JavaScript, and consider upgrading to a
-							web browser that
+							Để xem video này, vui lòng bật JavaScript, và cân nhắc nâng cấp lên
+							trình duyệt web
 							<a href="#" target="_blank">
-								supports HTML5 video
+								hỗ trợ video HTML5
 							</a>
 </p>
 </video>
-<button aria-controls="vasco-assistant" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Tạm dừng video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
+<button aria-controls="vasco-assistant" aria-label="Phát video" aria-pressed="true" class="video-toggle" data-play="Phát video" data-stop="Tạm dừng video">
+<img alt="Phát video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
 </button>
 </div>
 <div class="tech-info">
@@ -390,15 +390,15 @@ get_header();
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/vasco_my_voice.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/vasco_my_voice.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
-							To view this video please enable JavaScript, and consider upgrading to a
-							web browser that
+							Để xem video này, vui lòng bật JavaScript, và cân nhắc nâng cấp lên
+							trình duyệt web
 							<a href="#" target="_blank">
-								supports HTML5 video
+								hỗ trợ video HTML5
 							</a>
 </p>
 </video>
-<button aria-controls="vasco-my-voice-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Tạm dừng video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
+<button aria-controls="vasco-my-voice-video" aria-label="Phát video" aria-pressed="true" class="video-toggle" data-play="Phát video" data-stop="Tạm dừng video">
+<img alt="Phát video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
 </button>
 </div>
 <div class="tech-info">
@@ -414,15 +414,15 @@ get_header();
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/call_translator.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/call_translator.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
-							To view this video please enable JavaScript, and consider upgrading to a
-							web browser that
+							Để xem video này, vui lòng bật JavaScript, và cân nhắc nâng cấp lên
+							trình duyệt web
 							<a href="#" target="_blank">
-								supports HTML5 video
+								hỗ trợ video HTML5
 							</a>
 </p>
 </video>
-<button aria-controls="call-translator-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Tạm dừng video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
+<button aria-controls="call-translator-video" aria-label="Phát video" aria-pressed="true" class="video-toggle" data-play="Phát video" data-stop="Tạm dừng video">
+<img alt="Phát video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
 </button>
 </div>
 <div class="tech-info">
@@ -439,7 +439,7 @@ get_header();
 <button class="btn btn-md btn-black active" data-feature="Dịch giọng nói" data-section="product_features_click">Dịch giọng nói</button>
 <button class="btn btn-md btn-black" data-feature="Dịch hình ảnh" data-section="product_features_click">Dịch hình ảnh</button>
 <button class="btn btn-md btn-black" data-feature="Dịch văn bản" data-section="product_features_click">Dịch văn bản</button>
-<button class="btn btn-md btn-black" data-feature="Group translator" data-section="product_features_click">Group translator</button>
+<button class="btn btn-md btn-black" data-feature="Group translator" data-section="product_features_click">Dịch nhóm</button>
 </div>
 <div class="section-scroll-wrapper">
 <div class="slide s1">
@@ -471,7 +471,7 @@ get_header();
 </div>
 <div class="tech-info">
 <h3>Dịch văn bản</h3>
-<p>116 languages at your fingertips, whenever you need them. Looking up a word mid-conversation? Reading a novel in its original language? This feature delivers understanding without breaking the flow. Your translation history syncs across devices, so your language skills travel with you.</p>
+<p>116 ngôn ngữ luôn sẵn sàng trong tầm tay bạn, bất cứ khi nào bạn cần. Cần tra một từ giữa cuộc trò chuyện? Muốn đọc một cuốn tiểu thuyết bằng ngôn ngữ gốc? Tính năng này mang lại sự thấu hiểu mà không làm gián đoạn mạch trò chuyện. Lịch sử dịch của bạn được đồng bộ trên mọi thiết bị, để vốn ngôn ngữ của bạn luôn đồng hành cùng bạn.</p>
 </div>
 </div>
 </div>
@@ -481,8 +481,8 @@ get_header();
 <img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/group.webp" ); ?>"/>
 </div>
 <div class="tech-info">
-<h3>Group translator</h3>
-<p>With MultiTalk, the more, the merrier. Create a chat, invite people by sharing a QR code, and watch real-time conversations unfold with up to 100 users across 107 languages. Perfect for group meetings, international conferences, or any moment when everyone deserves to be heard.</p>
+<h3>Dịch nhóm</h3>
+<p>Với MultiTalk, càng đông càng vui. Tạo một cuộc trò chuyện, mời mọi người tham gia bằng cách chia sẻ mã QR, và theo dõi các cuộc trò chuyện theo thời gian thực với tối đa 100 người dùng, hỗ trợ 107 ngôn ngữ. Hoàn hảo cho các cuộc họp nhóm, hội nghị quốc tế, hoặc bất kỳ khoảnh khắc nào mà mọi tiếng nói đều xứng đáng được lắng nghe.</p>
 </div>
 </div>
 </div>
@@ -492,16 +492,16 @@ get_header();
 <div class="doublebox left" style="background-color: #D9ECEF; color: #D9ECEF;">
 <div class="container">
 <div class="doublebox-content">
-<h3 class="h2">Internet miễn phí trọn đời tại gần 200 quốc gia. Forever.</h3>
-<p>Say goodbye to WiFi hunting while travelling. Vasco Translator Q1 comes with a built-in SIM card that gives you free lifetime internet – no hotspots, Không phí chuyển vùng, no prepaid cards. Step off the train in Myanmar, the campervan in Ankara, or the plane in Bangkok, and start talking. Simple, seamless, and cost-free.</p>
+<h3 class="h2">Internet miễn phí trọn đời tại gần 200 quốc gia.</h3>
+<p>Nói lời tạm biệt với việc tìm kiếm WiFi khi đi du lịch. Vasco Translator Q1 được trang bị SIM tích hợp sẵn, mang lại internet miễn phí trọn đời – không cần điểm phát sóng, không phí chuyển vùng, không cần thẻ trả trước. Bước xuống tàu ở Myanmar, lên xe cắm trại ở Ankara, hay xuống máy bay ở Bangkok, và bắt đầu trò chuyện ngay. Đơn giản, liền mạch và hoàn toàn miễn phí.</p>
 <div class="doublebox-button-wrapper doublebox-button-wrapper-left">
 <button class="btn btn-black btn-md" id="internet-coverage-map">Xem bản đồ phủ sóng Internet</button>
 </div>
 <dialog class="basic-dialog internet-coverage-dialog" id="internet-coverage-dialog">
 <div class="basic-dialog-header">
 <h2>Bản đồ phủ sóng Internet</h2>
-<button aria-label="Close" class="close-dialog-icon" data-dismiss="modal" type="button">
-<img alt="Close" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/close-icon.svg" ); ?>"/>
+<button aria-label="Đóng" class="close-dialog-icon" data-dismiss="modal" type="button">
+<img alt="Đóng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/close-icon.svg" ); ?>"/>
 </button>
 </div>
 <div class="basic-dialog-body">
@@ -562,15 +562,15 @@ get_header();
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/free_internet.webm" ); ?>" type="video/webm"/>
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/free_internet.mp4" ); ?>" type="video/mp4"/>
 <p class="vjs-no-js">
-						To view this video please enable JavaScript, and consider upgrading to a
-						web browser that
+						Để xem video này, vui lòng bật JavaScript, và cân nhắc nâng cấp lên
+						trình duyệt web
 						<a href="#" target="_blank">
-							supports HTML5 video
+							hỗ trợ video HTML5
 						</a>
 </p>
 </video>
-<button aria-controls="q1-free-internet-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Tạm dừng video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
+<button aria-controls="q1-free-internet-video" aria-label="Phát video" aria-pressed="true" class="video-toggle" data-play="Phát video" data-stop="Tạm dừng video">
+<img alt="Phát video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
 </button>
 </div>
 </div>
@@ -578,7 +578,7 @@ get_header();
 </section>
 <section class="trustedby-logo-carousel-wrapper">
 <h2 class="h2-notosans trustedby-logo-carousel-title">Được tin dùng bởi hơn 500.000+ khách hàng trên toàn thế giới</h2>
-<div aria-label="a carousel presenting the logos of companies that have trusted us" aria-roledescription="carousel" class="trustedby-logo-carousel" role="region">
+<div aria-label="vòng lặp giới thiệu logo các công ty đã tin dùng chúng tôi" aria-roledescription="carousel" class="trustedby-logo-carousel" role="region">
 <a class="sr-only focusable" href="#after-trustedby-logo-carousel">Bỏ qua vòng lặp</a>
 <div aria-hidden="true" class="trustedby-logo-carousel-rows">
 <div class="swiper autoplay loop carousel-logo-marquee carousel-trustedby-logo" data-carousel-speed="5500">
@@ -703,7 +703,7 @@ get_header();
 </div>
 </div>
 <div class="stop-autoplay-carousel container">
-<button class="btn btn-md btn-stop-autoplay" data-text-button-pause="stop carousel autoplay" data-text-button-resume="resume carousel autoplay">
+<button class="btn btn-md btn-stop-autoplay" data-text-button-pause="dừng tự động chạy vòng lặp" data-text-button-resume="tiếp tục tự động chạy vòng lặp">
 <span data-text-pause="Tạm dừng" data-text-resume="Tiếp tục">Tạm dừng</span>
 <img alt="" aria-hidden="true" height="24" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/pause.svg" ); ?>"/>
 </button>
@@ -714,18 +714,18 @@ get_header();
 <section class="doubleboxes">
 <div class="doublebox right" style="background-color: #E0E2F2; color: #E0E2F2;">
 <div class="doublebox-absolute">
-<img alt="A hand holding a purple Vasco electronic translator. The Vasco Assistant app is visible on the device's screen, showing a photo of a warning sign with an image of a wombat and a description about these animals. In the background, behind the hand holding the device, is a road and the same yellow road sign with a wombat, which appears on the translator's screen." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/q1-vasco-assistant-en.webp" ); ?>"/>
+<img alt="Một bàn tay đang cầm máy phiên dịch điện tử Vasco màu tím. Ứng dụng Vasco Assistant hiển thị trên màn hình thiết bị, cho thấy ảnh chụp một biển cảnh báo có hình con wombat kèm mô tả về loài vật này. Phía sau bàn tay cầm thiết bị là một con đường và tấm biển báo màu vàng có hình con wombat tương tự, cũng chính là hình ảnh đang hiển thị trên màn hình máy phiên dịch." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/q1-vasco-assistant-en.webp" ); ?>"/>
 </div>
 <div class="container">
 <div class="doublebox-content">
 <h3 class="h2">Vasco Assistant</h3>
-<p class="subtitle">Discover the meaning beyond words.</p>
-<p><p> Discover the technology that builds a bridge between the world of words and the world of meanings. Powered by an advanced AI engine and context-aware intelligence, Vasco Assistant doesn’t just translate words—it explains the cultural nuances behind them. This feature independently delivers complete, situation-specific information, eliminating the need for additional searches or explanations.<br/><br/>
-Thanks to contextual analysis, travel problems are solved before they even arise:<br/><br/>
-Driving in a foreign country? Don’t let a simple mistake turn into a costly misunderstanding. Take a photo of the road markings or curb, and Vasco Assistant will interpret local parking zones for you—helping you avoid unexpected fines or the stress of being towed.<br/><br/>
-On the trip of a lifetime in Australia? Snap a photo of beach signs or flags to find out if you need to be extra cautious of stinging jellyfish, venomous spiders, or sharks nearby.<br/><br/>
-Exploring a local market in the Philippines? Make sure that this stunning shell lamp doesn’t accidentally turn you from a curious traveler into an unwitting smuggler.<br/><br/>
-Vasco Assistant recognizes symbols, regional cuisine, customs, and even local regulations—significantly enhancing your travel comfort. Curious about the world? Your limit of 100 queries refreshes every 30 days.</p></p>
+<p class="subtitle">Khám phá ý nghĩa đằng sau từng câu chữ.</p>
+<p><p> Khám phá công nghệ xây dựng cầu nối giữa thế giới ngôn từ và thế giới ý nghĩa. Được vận hành bởi công cụ AI tiên tiến và khả năng nhận biết ngữ cảnh, Vasco Assistant không chỉ dịch từ ngữ—mà còn giải thích những sắc thái văn hóa ẩn sau chúng. Tính năng này tự cung cấp thông tin đầy đủ, phù hợp với từng tình huống cụ thể, giúp bạn không cần tìm kiếm hay giải thích thêm.<br/><br/>
+Nhờ khả năng phân tích ngữ cảnh, những rắc rối trong chuyến đi được giải quyết trước cả khi chúng xảy ra:<br/><br/>
+Lái xe ở một đất nước xa lạ? Đừng để một sai lầm nhỏ biến thành hiểu lầm tốn kém. Chỉ cần chụp ảnh vạch kẻ đường hoặc lề đường, Vasco Assistant sẽ giúp bạn hiểu quy định đỗ xe tại địa phương—tránh những khoản phạt bất ngờ hay nỗi lo bị kéo xe.<br/><br/>
+Đang có chuyến đi để đời tại Australia? Chụp nhanh một tấm ảnh biển báo hay cờ hiệu trên bãi biển để biết liệu bạn có cần đề phòng sứa độc, nhện độc hay cá mập gần đó hay không.<br/><br/>
+Khám phá một khu chợ địa phương ở Philippines? Hãy chắc chắn rằng chiếc đèn vỏ sò tuyệt đẹp kia không vô tình biến bạn từ một du khách tò mò thành một người buôn lậu bất đắc dĩ.<br/><br/>
+Vasco Assistant nhận diện được các biểu tượng, ẩm thực vùng miền, phong tục và cả quy định địa phương—giúp nâng cao đáng kể sự thoải mái cho chuyến đi của bạn. Tò mò về thế giới? Giới hạn 100 truy vấn của bạn sẽ được làm mới sau mỗi 30 ngày.</p></p>
 <svg class="svg-pseudo" color="" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
 </svg>
@@ -736,17 +736,17 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 <section class="key-features-section">
 <div class="container">
 <div class="key-features-flex">
-<h2 class="h2-notosans">FOR YOUR CONVENIENCE</h2>
+<h2 class="h2-notosans">VÌ SỰ TIỆN LỢI CỦA BẠN</h2>
 <div class="grid-section">
 <div class="key" role="group" tabindex="0">
 <div>
 <img aria-hidden="true" height="100px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/fast_charging.svg" ); ?>"/>
 </div>
 <div>
-<h3 class="h2" id="icon1-title">Fast charging</h3>
+<h3 class="h2" id="icon1-title">Sạc nhanh</h3>
 </div>
 <div>
-<p id="icon1-desc">Less waiting, more translating</p>
+<p id="icon1-desc">Chờ ít hơn, phiên dịch nhiều hơn</p>
 </div>
 </div>
 <div class="key" role="group" tabindex="0">
@@ -757,7 +757,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 <h3 class="h2" id="icon2-title">Thiết kế bền bỉ</h3>
 </div>
 <div>
-<p id="icon2-desc">Dust-, splash-, and drop-resistant</p>
+<p id="icon2-desc">Chống bụi, chống nước bắn và chịu va đập</p>
 </div>
 </div>
 <div class="key" role="group" tabindex="0">
@@ -854,93 +854,93 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 <hr/>
 <button class="feature" data-event="We repair, not throw away" data-id="service">
 <img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features-new/serwis.svg" ); ?>"/>
-<h3>We repair, not throw away</h3>
+<h3>Sửa chữa, không vứt bỏ</h3>
 </button>
 </div>
 <div class="feature-boxes">
 <div class="feature-box active" data-id="automatic">
 <div class="feature-media">
-<img alt="A person holds a small red electronic device displaying a language translation app, while another person in a blue shirt stands nearby." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/automatic_mode.webp" ); ?>"/>
+<img alt="Một người đang cầm thiết bị điện tử màu đỏ nhỏ gọn hiển thị ứng dụng dịch ngôn ngữ, trong khi một người khác mặc áo xanh đứng gần đó." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/automatic_mode.webp" ); ?>"/>
 </div>
 <div class="feature-info">
 <h3 class="h2">Chế độ Tự động</h3>
-<p>Hands-free conversations</p>
-<p>When conversation flows, you don't want to break the rhythm by clicking through settings. Let technology work in the background and focus on what really matters. This translator, when automatic mode is on, detects your conversation partner's words and starts translating instantly. It’s the perfect solution when your hands are busy – whether you're driving, treating a patient, or handling tools in the workshop. Most importantly, when you simply want to talk – without thinking about translation.</p>
+<p>Trò chuyện rảnh tay</p>
+<p>Khi cuộc trò chuyện đang trôi chảy, bạn không muốn phải ngắt quãng để bấm chọn cài đặt. Hãy để công nghệ tự vận hành phía sau và tập trung vào điều thực sự quan trọng. Khi bật chế độ tự động, thiết bị này sẽ nhận diện lời nói của người đối diện và bắt đầu dịch ngay lập tức. Đây là giải pháp hoàn hảo khi tay bạn đang bận – dù là đang lái xe, khám bệnh cho bệnh nhân, hay thao tác dụng cụ trong xưởng. Quan trọng nhất, khi bạn chỉ đơn giản muốn trò chuyện – mà không cần bận tâm đến việc phiên dịch.</p>
 </div>
 </div>
 <div class="feature-box" data-id="voice_select">
 <div class="feature-media">
-<img alt="A hand holds a portable electronic device displaying a Preferred voices settings menu with options for user voice, conversation partner, and system voice. The person wears a yellow and white textured garment." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/voice_selection.webp" ); ?>"/>
+<img alt="Một bàn tay đang cầm thiết bị điện tử di động hiển thị menu cài đặt Giọng nói ưa thích với các tùy chọn giọng người dùng, giọng người đối thoại và giọng hệ thống. Người này mặc trang phục họa tiết vàng trắng." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/voice_selection.webp" ); ?>"/>
 </div>
 <div class="feature-info">
 <h3 class="h2">Tùy chọn giọng nói (Nam/Nữ)</h3>
-<p>Your conversation, your choice</p>
-<p>For those who like to have an option. Beyond the revolutionary Vasco My Voice feature, you can also choose a classic male or female voice to read the translations. This lets you match the tone to any situation. Prefer a formal tone for business meetings, or something warmer for family conversations? Your translator, your rules.</p>
+<p>Cuộc trò chuyện của bạn, lựa chọn của bạn</p>
+<p>Dành cho những ai thích có nhiều lựa chọn. Bên cạnh tính năng đột phá Vasco My Voice, bạn cũng có thể chọn giọng đọc nam hoặc nữ cổ điển cho bản dịch. Điều này giúp bạn điều chỉnh giọng điệu phù hợp với từng tình huống. Thích giọng trang trọng cho các cuộc họp công việc, hay giọng ấm áp hơn cho những cuộc trò chuyện gia đình? Máy phiên dịch của bạn, luật lệ do bạn đặt ra.</p>
 </div>
 </div>
 <div class="feature-box" data-id="profanity">
 <div class="feature-media">
-<img alt="A person holds a purple Vasco electronic translator displaying the Bộ lọc từ ngữ không phù hợp setting, with a checkered tablecloth and a glass of water with fruit slices in the background." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/profanity_filter.webp" ); ?>"/>
+<img alt="Một người đang cầm máy phiên dịch điện tử Vasco màu tím hiển thị cài đặt Bộ lọc từ ngữ không phù hợp, phía sau là khăn trải bàn caro và một ly nước có lát trái cây." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/profanity_filter.webp" ); ?>"/>
 </div>
 <div class="feature-info">
 <h3 class="h2">Bộ lọc từ ngữ không phù hợp</h3>
-<p>Some things are better left unsaid</p>
-<p>Nobody wants awkward moments. This feature detects and censors offensive language in both speech and text – perfect for professional settings. It preserves the meaning while keeping the conversation comfortable.</p>
+<p>Có những điều tốt hơn nên không nói ra</p>
+<p>Không ai muốn gặp phải những tình huống khó xử. Tính năng này phát hiện và kiểm duyệt ngôn từ thô tục trong cả lời nói và văn bản – hoàn hảo cho môi trường chuyên nghiệp. Nó giữ nguyên ý nghĩa của câu nói trong khi vẫn đảm bảo cuộc trò chuyện thoải mái.</p>
 </div>
 </div>
 <div class="feature-box" data-id="speed">
 <div class="feature-media">
-<img alt="A person holds a VASCO electronic translator, displaying a screen with a Speech rate slider set to Slow. Another persons arm rests on a wooden table nearby." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/playback_speed.webp" ); ?>"/>
+<img alt="Một người đang cầm máy phiên dịch điện tử VASCO, màn hình hiển thị thanh trượt Tốc độ phát đang đặt ở mức Chậm. Cánh tay của một người khác đặt trên bàn gỗ gần đó." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/playback_speed.webp" ); ?>"/>
 </div>
 <div class="feature-info">
 <h3 class="h2">Tốc độ phát âm thanh</h3>
-<p>Everything at your pace</p>
+<p>Mọi thứ theo nhịp độ của bạn</p>
 <p>Điều chỉnh tốc độ phát theo nhu cầu. Chậm lại để nắm bắt từng chi tiết, hoặc nhanh hơn khi vội vàng. Vasco đáp ứng nhịp độ của bạn.</p>
 </div>
 </div>
 <div class="feature-box" data-id="sharing">
 <div class="feature-media">
-<img alt="An over-the-shoulder view of a man and a woman with bright orange hair sitting at a restaurant table, looking at a menu. The man holds a black Vasco Translator Q1 displaying a 'Share' screen with an input field to send the translation via email. A white tablecloth and restaurant setting are visible in the background." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/sharing.webp" ); ?>"/>
+<img alt="Góc nhìn qua vai của một người đàn ông và một người phụ nữ tóc cam rực rỡ đang ngồi tại bàn nhà hàng, xem thực đơn. Người đàn ông cầm chiếc Vasco Translator Q1 màu đen hiển thị màn hình 'Chia sẻ' với ô nhập liệu để gửi bản dịch qua email. Phía sau là khăn trải bàn trắng và khung cảnh nhà hàng." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/sharing.webp" ); ?>"/>
 </div>
 <div class="feature-info">
 <h3 class="h2">Chia sẻ bản dịch</h3>
-<p class="not-subtitle">With Vasco, you won’t miss a thing. You can always return to saved translations or share them—for example, via email.</p>
+<p class="not-subtitle">Với Vasco, bạn sẽ không bỏ lỡ bất cứ điều gì. Bạn luôn có thể quay lại các bản dịch đã lưu hoặc chia sẻ chúng—ví dụ như qua email.</p>
 </div>
 </div>
 <div class="feature-box" data-id="updates">
 <div class="feature-media">
-<img alt="An over-the-shoulder view of a woman holding a blue Vasco Translator Q1 over a wooden table inside a train. The device screen displays a 'Software update' notification with a progress bar indicating 'Downloading update...'." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/updates.webp" ); ?>"/>
+<img alt="Góc nhìn qua vai của một người phụ nữ đang cầm chiếc Vasco Translator Q1 màu xanh phía trên bàn gỗ bên trong toa tàu. Màn hình thiết bị hiển thị thông báo 'Cập nhật phần mềm' cùng thanh tiến trình 'Đang tải bản cập nhật...'." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/updates.webp" ); ?>"/>
 </div>
 <div class="feature-info">
 <h3 class="h2">Cập nhật phần mềm liên tục</h3>
-<p class="not-subtitle">Vasco Translator Q1 is built to last for years. Not only is it durable, but it also receives regular updates—so you can enjoy the latest software improvements long after your purchase.</p>
+<p class="not-subtitle">Vasco Translator Q1 được chế tạo để bền bỉ theo năm tháng. Không chỉ có độ bền cao, thiết bị còn thường xuyên nhận các bản cập nhật—để bạn luôn tận hưởng những cải tiến phần mềm mới nhất, ngay cả sau nhiều năm sử dụng.</p>
 </div>
 </div>
 <div class="feature-box" data-id="instant_work">
 <div class="feature-media">
-<img alt="Three travelers examining a paper map spread across the hood of a classic dark blue car on a city street. A woman with vibrant orange hair stands in the middle holding a red Vasco Translator Q1, while two men next to her point at the map and discuss their route." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/instant_work.webp" ); ?>"/>
+<img alt="Ba du khách đang xem tấm bản đồ giấy trải trên nắp capo của một chiếc xe hơi màu xanh đậm cổ điển trên phố. Một người phụ nữ tóc cam rực rỡ đứng ở giữa cầm chiếc Vasco Translator Q1 màu đỏ, trong khi hai người đàn ông bên cạnh chỉ vào bản đồ và bàn về lộ trình." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/instant_work.webp" ); ?>"/>
 </div>
 <div class="feature-info">
 <h3 class="h2">Sẵn sàng sử dụng</h3>
-<p class="not-subtitle">Vasco Translator Q1 is an instant language translator that’s ready to use straight out of the box. Just turn it on. There are no complicated setups or settings to navigate. When you’re traveling, simply pull it out of your pocket and start talking.</p>
+<p class="not-subtitle">Vasco Translator Q1 là máy phiên dịch tức thì, sẵn sàng sử dụng ngay khi lấy ra khỏi hộp. Chỉ cần bật lên. Không có bước cài đặt hay tùy chỉnh phức tạp nào cả. Khi đi du lịch, bạn chỉ cần lấy máy ra khỏi túi và bắt đầu trò chuyện.</p>
 </div>
 </div>
 <div class="feature-box" data-id="polish_brand">
 <div class="feature-media">
-<img alt="Two men with beards and glasses are working together at a standing desk in a modern office or laboratory. One man in a light blue shirt is using a laptop, while the other man in a tan shirt stands beside him, gesturing toward a small electronic component in his hand. The desk is equipped with a large monitor, various electronic tools, and a camera mounted on an adjustable arm. The background shows a bright, open-plan workspace with glass partitions." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/polish_brand.webp" ); ?>"/>
+<img alt="Hai người đàn ông có râu và đeo kính đang cùng làm việc tại một chiếc bàn đứng trong văn phòng hoặc phòng thí nghiệm hiện đại. Một người mặc áo xanh nhạt đang sử dụng laptop, trong khi người còn lại mặc áo màu be đứng bên cạnh, chỉ vào một linh kiện điện tử nhỏ trên tay. Bàn làm việc được trang bị màn hình lớn, nhiều dụng cụ điện tử và một chiếc camera gắn trên cánh tay điều chỉnh được. Phía sau là không gian làm việc mở, sáng sủa với vách ngăn kính." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/polish_brand.webp" ); ?>"/>
 </div>
 <div class="feature-info">
 <h3 class="h2">Chất lượng tiêu chuẩn Châu Âu</h3>
-<p class="not-subtitle">Vasco is a brand with nearly twenty years of experience. All our devices are designed by our expert engineering team, ensuring top-tier quality. This guarantees data security and a high-performance product that will serve you for many years to come.</p>
+<p class="not-subtitle">Vasco là thương hiệu với gần hai mươi năm kinh nghiệm. Mọi thiết bị của chúng tôi đều được đội ngũ kỹ sư chuyên môn thiết kế, đảm bảo chất lượng hàng đầu. Điều này bảo đảm an toàn dữ liệu cùng một sản phẩm hiệu năng cao đồng hành cùng bạn trong nhiều năm tới.</p>
 </div>
 </div>
 <div class="feature-box" data-id="resilience">
 <div class="feature-media">
-<img alt="An overhead view of a purple Vasco Translator Q1 being held over a picnic blanket. The device screen is visibly wet, covered in water beads, demonstrating its water resistance feature for outdoor use. In the background, there is a sandwich and a person holding a glass." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/resilience.webp" ); ?>"/>
+<img alt="Góc nhìn từ trên xuống của chiếc Vasco Translator Q1 màu tím đang được cầm phía trên tấm thảm picnic. Màn hình thiết bị hiện rõ những giọt nước đọng lại, minh họa cho khả năng chống nước khi sử dụng ngoài trời. Phía sau có một chiếc bánh sandwich và một người đang cầm ly nước." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/resilience.webp" ); ?>"/>
 </div>
 <div class="feature-info">
 <h3 class="h2">Bền bỉ theo thời gian</h3>
-<p class="not-subtitle">Vasco Translator Q1 is a true travel companion, designed for real-life use on the go. The device is shock-resistant and splash-proof, so you don’t have to worry when using it by the pool or during a trip to the mountains.</p>
+<p class="not-subtitle">Vasco Translator Q1 là người bạn đồng hành thực thụ trong mọi chuyến đi, được thiết kế để sử dụng bền bỉ trong đời sống thực tế. Thiết bị có khả năng chịu va đập và chống nước bắn, nên bạn không cần lo lắng khi sử dụng bên hồ bơi hay trong chuyến đi lên núi.</p>
 </div>
 </div>
 <div class="feature-box" data-id="support">
@@ -949,34 +949,34 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </div>
 <div class="feature-info">
 <h3 class="h2">Hỗ trợ kỹ thuật bằng ngôn ngữ của bạn</h3>
-<p class="not-subtitle">We’re always by your side. You can count on us before, during, and after your purchase. If you have any questions, our specialists are ready to help—in your language.</p>
+<p class="not-subtitle">Chúng tôi luôn đồng hành cùng bạn. Bạn có thể tin tưởng vào chúng tôi trước, trong và sau khi mua hàng. Nếu có bất kỳ thắc mắc nào, đội ngũ chuyên gia của chúng tôi luôn sẵn sàng hỗ trợ—bằng chính ngôn ngữ của bạn.</p>
 </div>
 </div>
 <div class="feature-box" data-id="easy_use">
 <div class="feature-media">
-<img alt="A close-up of a person unboxing a purple Vasco Translator Q1 from its white retail box." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/easy_use.webp" ); ?>"/>
+<img alt="Cận cảnh một người đang mở hộp chiếc Vasco Translator Q1 màu tím từ vỏ hộp bán lẻ màu trắng." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/easy_use.webp" ); ?>"/>
 </div>
 <div class="feature-info">
 <h3 class="h2">Sử dụng dễ dàng & Thuận tiện</h3>
-<p class="not-subtitle">This handheld translator device requires no unnecessary steps. There’s no need for subscriptions, complicated setup, or unlocking extra features. Just buy it, unbox it, and enjoy a high-quality device—for years to come.</p>
+<p class="not-subtitle">Thiết bị phiên dịch cầm tay này không đòi hỏi bất kỳ bước rườm rà nào. Không cần đăng ký gói dịch vụ, không cần cài đặt phức tạp, cũng không cần mở khóa thêm tính năng. Chỉ cần mua, mở hộp và tận hưởng một thiết bị chất lượng cao—trong nhiều năm tới.</p>
 </div>
 </div>
 <div class="feature-box" data-id="connect">
 <div class="feature-media">
-<img alt="A man and a woman smiling and laughing while sitting together on a beige couch. The man, wearing a striped t-shirt, points at the screen of a purple handheld device while wearing a black Vasco Translator E1 translation earbud in his ear. The woman holds Vasco Translator Q1." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/connect.webp" ); ?>"/>
+<img alt="Một người đàn ông và một người phụ nữ đang cười vui vẻ khi ngồi cùng nhau trên ghế sofa màu be. Người đàn ông mặc áo thun kẻ sọc, chỉ vào màn hình của một thiết bị cầm tay màu tím trong khi đeo tai nghe phiên dịch Vasco Translator E1 màu đen. Người phụ nữ đang cầm chiếc Vasco Translator Q1." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/connect.webp" ); ?>"/>
 </div>
 <div class="feature-info">
 <h3 class="h2">Vasco Connect</h3>
-<p class="not-subtitle">Pair your Vasco Translator Q1 with Vasco Translator E1 translating earbuds and enjoy natural, hands-free conversations.</p>
+<p class="not-subtitle">Kết nối chiếc Vasco Translator Q1 của bạn với tai nghe phiên dịch Vasco Translator E1 và tận hưởng những cuộc trò chuyện tự nhiên, rảnh tay.</p>
 </div>
 </div>
 <div class="feature-box" data-id="service">
 <div class="feature-media">
-<img alt="A person with long blonde hair is focused on repairing or assembling a small electronic device at a white laboratory desk. They are using a precision tool on a component while seated next to a digital laboratory power supply with a glowing blue display. In the background, an open laptop shows technical diagrams or code, and a camera tripod is visible in the foreground on the left. The setting is a brightly lit workspace with modern, slatted wooden wall panels." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/service.webp" ); ?>"/>
+<img alt="Một người có mái tóc vàng dài đang tập trung sửa chữa hoặc lắp ráp một thiết bị điện tử nhỏ tại bàn thí nghiệm màu trắng. Họ đang dùng dụng cụ chính xác trên một linh kiện, ngồi cạnh bộ nguồn thí nghiệm kỹ thuật số có màn hình xanh phát sáng. Phía sau, một chiếc laptop đang mở hiển thị sơ đồ kỹ thuật hoặc mã lập trình, và một chân máy quay xuất hiện ở phía trước bên trái. Không gian làm việc sáng sủa với các tấm ốp tường gỗ nan hiện đại." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/service.webp" ); ?>"/>
 </div>
 <div class="feature-info">
-<h3 class="h2">We repair, not throw away</h3>
-<p class="not-subtitle">Our devices are designed to last for years. We focus not only on thoughtful design and durable build quality but also on reliable software that evolves with users’ needs. That’s why we provide comprehensive support at every stage of use. We offer professional servicing and customer care that’s always ready to help—quickly, reliably, and with dedication.</p>
+<h3 class="h2">Sửa chữa, không vứt bỏ</h3>
+<p class="not-subtitle">Thiết bị của chúng tôi được thiết kế để bền bỉ theo năm tháng. Chúng tôi không chỉ chú trọng vào thiết kế tinh tế và chất lượng chế tạo bền chắc, mà còn vào phần mềm đáng tin cậy, luôn phát triển theo nhu cầu người dùng. Đó là lý do chúng tôi cung cấp hỗ trợ toàn diện ở mọi giai đoạn sử dụng. Chúng tôi mang đến dịch vụ bảo hành chuyên nghiệp và chăm sóc khách hàng luôn sẵn sàng hỗ trợ—nhanh chóng, đáng tin cậy và tận tâm.</p>
 </div>
 </div>
 </div>
@@ -986,8 +986,8 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 <hr/>
 <section class="color-section color-section-product">
 <div class="container">
-<h2 class="h1 text-center">Choose the colour that matches you</h2>
-<p class="text-center">Vasco Translator Q1 is more than just a device – it’s your ambassador to the world. Colour isn't  just a detail; it’s your signature. Which one is yours?</p>
+<h2 class="h1 text-center">Chọn màu sắc phù hợp với bạn</h2>
+<p class="text-center">Vasco Translator Q1 không chỉ là một thiết bị – đó còn là đại sứ của bạn với thế giới. Màu sắc không chỉ là một chi tiết; đó là chữ ký cá nhân của bạn. Đâu mới là màu của bạn?</p>
 <div class="color-wrapper mt-10">
 <div class="swiper swiper-product-colors">
 <div class="swiper-wrapper">
@@ -1016,17 +1016,17 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 <p>Một màu sắc có cá tính – giống như bạn. Nổi bật với sắc đỏ năng động, sâu lắng và tận hưởng một thiết bị vừa tiện lợi vừa xinh đẹp.</p>
 </div>
 <div class="swiper-slide" tabindex="0">
-<img alt="Vasco Translator Q1 Xanh Blue" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/packshots-q1-eu.webp" ); ?>"/>
+<img alt="Vasco Translator Q1 Xanh Slate" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/packshots-q1-eu.webp" ); ?>"/>
 <div class="color-box">
 <div class="circle slate-blue" title="Slate Blue"></div>
 <span>Xanh Slate</span>
 </div>
-<p>You know yourself, and you don’t have to prove anything to anyone. It looks like this calm and cool shade of blue was made just for you. When style and confidence are on your side, all you need is a Vasco Translator to complete the look.</p>
+<p>Bạn hiểu rõ chính mình và không cần chứng minh điều gì với ai cả. Sắc xanh điềm tĩnh, mát mẻ này dường như được tạo ra chỉ dành riêng cho bạn. Khi phong cách và sự tự tin đã có sẵn, tất cả những gì bạn cần là một chiếc Vasco Translator để hoàn thiện vẻ ngoài ấy.</p>
 </div>
 </div>
 <div class="custom-navigation">
-<div class="swiper-button-prev btn-colors-prev" data-label-prev="Previous slide"></div>
-<div class="swiper-button-next btn-colors-next" data-label-next="Next slide"></div>
+<div class="swiper-button-prev btn-colors-prev" data-label-prev="Slide trước"></div>
+<div class="swiper-button-next btn-colors-next" data-label-next="Slide sau"></div>
 </div>
 </div>
 </div>
@@ -1037,78 +1037,78 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 <div class="container">
 <div class="flex flex-col media">
 <h2 class="h2-notosans text-center">Truyền thông nói về chúng tôi</h2>
-<div aria-label="carousel with quotes" aria-roledescription="carousel" class="swiper swiper-carousel autoplay loop carousel-media">
+<div aria-label="vòng lặp trích dẫn từ báo chí" aria-roledescription="carousel" class="swiper swiper-carousel autoplay loop carousel-media">
 <a class="sr-only focusable" href="#after-media-carousel">Bỏ qua vòng lặp</a>
 <div class="swiper-wrapper">
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-zd_net" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-zd_net">quote from zd_net</h3>
-<img alt="zd net icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/zd_net.webp" ); ?>"/>
+<h3 class="sr-only" id="slide-label-zd_net">Trích dẫn từ ZD Net</h3>
+<img alt="Biểu tượng ZD Net" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/zd_net.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Một trong những buổi demo ấn tượng nhất của tôi tại CES 2024 là với đội ngũ Vasco Translator E1, tai nghe sử dụng AI và ứng dụng để dịch 49 ngôn ngữ theo thời gian thực.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-fox_business" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-fox_business">quote from fox_business</h3>
-<img alt="fox business icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/fox_business.webp" ); ?>"/>
+<h3 class="sr-only" id="slide-label-fox_business">Trích dẫn từ Fox Business</h3>
+<img alt="Biểu tượng Fox Business" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/fox_business.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Vasco mong muốn các công cụ dịch thuật đáp ứng nhu cầu của những khách hàng thường xuyên du lịch, người sống ở nước ngoài, người làm việc trong đội ngũ quốc tế hoặc gia đình có rào cản ngôn ngữ do người thân đến từ nhiều quốc gia khác nhau.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-cbs_news" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-cbs_news">quote from cbs_news</h3>
-<img alt="cbs news icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/cbs_news.webp" ); ?>"/>
+<h3 class="sr-only" id="slide-label-cbs_news">Trích dẫn từ CBS News</h3>
+<img alt="Biểu tượng CBS News" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/cbs_news.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Bạn có thể đi du lịch khắp thế giới, sử dụng thiết bị này để di chuyển mà không bao giờ cảm thấy bỡ ngỡ hay lạc lỏng tại bất kỳ quốc gia nào.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-conde_nast_traveler" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-conde_nast_traveler">quote from conde_nast_traveler</h3>
-<img alt="conde nest traveller icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/conde_nast_traveler.webp" ); ?>"/>
+<h3 class="sr-only" id="slide-label-conde_nast_traveler">Trích dẫn từ Condé Nast Traveler</h3>
+<img alt="Biểu tượng Condé Nast Traveler" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/conde_nast_traveler.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Thiết bị dịch ngôn ngữ này là phao cứu sinh của tôi khi sống ở nước ngoài. Nó cho phép cuộc trò chuyện qua lại mượt mà gần như không có độ trễ.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-forbes" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-forbes">quote from forbes</h3>
-<img alt="forbes icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/forbes.webp" ); ?>"/>
+<h3 class="sr-only" id="slide-label-forbes">Trích dẫn từ Forbes</h3>
+<img alt="Biểu tượng Forbes" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/forbes.webp" ); ?>"/>
 <blockquote class="awards-text" tabindex="0">Trong khi hầu hết các máy dịch chỉ dùng 1 công cụ dịch đơn lẻ, thiết bị của Vasco sử dụng tới 12 công cụ dịch thuật cùng đội ngũ chuyên gia ngôn ngữ đảm bảo kết quả kết nối hoàn hảo.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-the_strategist" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-the_strategist">quote from the_strategist</h3>
-<img alt="the strategist icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/the_strategist.webp" ); ?>"/>
-<blockquote class="awards-text" tabindex="0">I think Vasco is the best of the bunch because it comes with unlimited lifetime data (no need to find Wi-Fi!) and Phiên dịch 108 ngôn ngữ in 200 different countries.</blockquote>
+<h3 class="sr-only" id="slide-label-the_strategist">Trích dẫn từ The Strategist</h3>
+<img alt="Biểu tượng The Strategist" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/the_strategist.webp" ); ?>"/>
+<blockquote class="awards-text" tabindex="0">Tôi cho rằng Vasco là lựa chọn tốt nhất trong số các thiết bị hiện có vì đi kèm dữ liệu trọn đời không giới hạn (không cần tìm WiFi!) và có thể phiên dịch 108 ngôn ngữ tại 200 quốc gia khác nhau.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-business_insider" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-business_insider">quote from business_insider</h3>
-<img alt="business insider icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/business_insider.webp" ); ?>"/>
-<blockquote class="awards-text" tabindex="0">Now HIPAA-compliant, Vasco’s handheld translation devices can provide up to 108 language translations that are secure, making them safe to use in any Y tế facility by any Y tế professional to break down language barriers between patients and medical personnel.</blockquote>
+<h3 class="sr-only" id="slide-label-business_insider">Trích dẫn từ Business Insider</h3>
+<img alt="Biểu tượng Business Insider" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/business_insider.webp" ); ?>"/>
+<blockquote class="awards-text" tabindex="0">Nay đã đạt chuẩn HIPAA, các thiết bị phiên dịch cầm tay của Vasco có thể cung cấp bản dịch bảo mật cho tới 108 ngôn ngữ, giúp chúng an toàn khi sử dụng tại bất kỳ cơ sở y tế nào, bởi bất kỳ nhân viên y tế nào, nhằm xóa bỏ rào cản ngôn ngữ giữa bệnh nhân và đội ngũ y tế.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-vancouver_sun" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-vancouver_sun">quote from vancouver_sun</h3>
-<img alt="vancouver sun icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/vancouver_sun.webp" ); ?>"/>
-<blockquote class="awards-text" tabindex="0">Vasco’s innovative technology allows users to communicate with one another through its translators, connecting 90% of the world’s population through the power of language.</blockquote>
+<h3 class="sr-only" id="slide-label-vancouver_sun">Trích dẫn từ Vancouver Sun</h3>
+<img alt="Biểu tượng Vancouver Sun" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/vancouver_sun.webp" ); ?>"/>
+<blockquote class="awards-text" tabindex="0">Công nghệ đột phá của Vasco cho phép người dùng giao tiếp với nhau thông qua các thiết bị phiên dịch, kết nối 90% dân số thế giới nhờ sức mạnh của ngôn ngữ.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-techradar" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-techradar">quote from techradar</h3>
-<img alt="tech radar icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/techradar.webp" ); ?>"/>
-<blockquote class="awards-text" tabindex="0">The Vasco Translator V4 offers reliable voice translation, speedy photo translation, and free lifetime global coverage in a pocket-sized package that’s perfect for your next holiday or business trip.</blockquote>
+<h3 class="sr-only" id="slide-label-techradar">Trích dẫn từ TechRadar</h3>
+<img alt="Biểu tượng TechRadar" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/techradar.webp" ); ?>"/>
+<blockquote class="awards-text" tabindex="0">Vasco Translator V4 mang đến khả năng dịch giọng nói đáng tin cậy, dịch hình ảnh nhanh chóng và vùng phủ sóng toàn cầu miễn phí trọn đời, gói gọn trong một thiết bị nhỏ gọn bỏ túi, hoàn hảo cho kỳ nghỉ hay chuyến công tác tiếp theo của bạn.</blockquote>
 </a>
 </div>
 </div>
-<div class="swiper-button-prev btn-carousel-prev" data-label-prev="Previous slide"></div>
-<div class="swiper-button-next btn-carousel-next" data-label-next="Next slide"></div>
+<div class="swiper-button-prev btn-carousel-prev" data-label-prev="Slide trước"></div>
+<div class="swiper-button-next btn-carousel-next" data-label-next="Slide sau"></div>
 </div>
 <div class="stop-autoplay-carousel">
-<button class="btn btn-md btn-stop-autoplay" data-text-button-pause="stop carousel autoplay" data-text-button-resume="resume carousel autoplay">
+<button class="btn btn-md btn-stop-autoplay" data-text-button-pause="dừng tự động chạy vòng lặp" data-text-button-resume="tiếp tục tự động chạy vòng lặp">
 <span data-text-pause="Tạm dừng" data-text-resume="Tiếp tục">Tạm dừng</span>
 <img alt="" aria-hidden="true" height="24" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/pause.svg" ); ?>"/>
 </button>
@@ -1119,88 +1119,88 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 <hr/>
 <div class="container">
 <div class="flex flex-col media vasco-awards">
-<h2 class="h2-notosans text-center">awards</h2>
-<div aria-label="carousel with awards" aria-roledescription="carousel" class="swiper swiper-carousel autoplay loop carousel-award" role="region">
+<h2 class="h2-notosans text-center">Giải thưởng</h2>
+<div aria-label="vòng lặp giải thưởng" aria-roledescription="carousel" class="swiper swiper-carousel autoplay loop carousel-award" role="region">
 <a class="sr-only focusable" href="#after-award-carousel">Bỏ qua vòng lặp</a>
 <div class="swiper-wrapper" role="list">
 <div aria-labelledby="slide-label-muse_silver" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-muse_silver">muse_silver logo</h3>
+<h3 class="sr-only" id="slide-label-muse_silver">Logo giải thưởng MUSE Silver</h3>
 <img alt="MUSE SILVER" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/muse_silver.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-european_product_design_award" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-european_product_design_award">european_product_design_award logo</h3>
+<h3 class="sr-only" id="slide-label-european_product_design_award">Logo giải thưởng European Product Design Award</h3>
 <img alt="European Product Design Award" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/european_product_design_award.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-produkte_disq" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-produkte_disq">produkte_disq logo</h3>
+<h3 class="sr-only" id="slide-label-produkte_disq">Logo giải thưởng PRODUKTE - DISQ</h3>
 <img alt="PRODUKTE - DISQ" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/produkte_disq.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-red_dot_2025" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-red_dot_2025">red_dot_2025 logo</h3>
+<h3 class="sr-only" id="slide-label-red_dot_2025">Logo giải thưởng Red Dot 2025</h3>
 <img alt="reddot 2025" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/red_dot_2025.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-muse_design" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-muse_design">muse_design logo</h3>
+<h3 class="sr-only" id="slide-label-muse_design">Logo giải thưởng MUSE Design</h3>
 <img alt="muse design" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/muse_design.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-red_dot_2022" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-red_dot_2022">red_dot_2022 logo</h3>
+<h3 class="sr-only" id="slide-label-red_dot_2022">Logo giải thưởng Red Dot 2022</h3>
 <img alt="red dot winner 2022" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/red_dot_2022.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-new_york_product_design" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-new_york_product_design">new_york_product_design logo</h3>
+<h3 class="sr-only" id="slide-label-new_york_product_design">Logo giải thưởng New York Product Design Awards</h3>
 <img alt="New York product design awards" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/new_york_product_design.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-good_design" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-good_design">good_design logo</h3>
+<h3 class="sr-only" id="slide-label-good_design">Logo giải thưởng Good Design Award</h3>
 <img alt="good design award" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/good_design.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-japan_good_design" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-japan_good_design">japan_good_design logo</h3>
+<h3 class="sr-only" id="slide-label-japan_good_design">Logo giải thưởng Japan Good Design Award</h3>
 <img alt="Japan good design award" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/japan_good_design.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-red_dot_2021" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-red_dot_2021">red_dot_2021 logo</h3>
+<h3 class="sr-only" id="slide-label-red_dot_2021">Logo giải thưởng Red Dot 2021</h3>
 <img alt="red dot winner 2021" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/red_dot_2021.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-glomo" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-glomo">glomo logo</h3>
+<h3 class="sr-only" id="slide-label-glomo">Logo giải thưởng GLOMO</h3>
 <img alt="glomo global mobile awards" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/glomo.webp" ); ?>"/>
 </a>
 </div>
 <div aria-labelledby="slide-label-red_dot_2026" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-red_dot_2026">red_dot_2026 logo</h3>
+<h3 class="sr-only" id="slide-label-red_dot_2026">Logo giải thưởng Red Dot 2026</h3>
 <img alt="red dot winner 2026" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/red_dot_2026.webp" ); ?>"/>
 </a>
 </div>
 </div>
-<div class="swiper-button-prev btn-carousel-prev" data-label-prev="Previous slide"></div>
-<div class="swiper-button-next btn-carousel-next" data-label-next="Next slide"></div>
+<div class="swiper-button-prev btn-carousel-prev" data-label-prev="Slide trước"></div>
+<div class="swiper-button-next btn-carousel-next" data-label-next="Slide sau"></div>
 </div>
 <div class="stop-autoplay-carousel">
-<button class="btn btn-md btn-stop-autoplay" data-text-button-pause="stop carousel autoplay" data-text-button-resume="resume carousel autoplay">
+<button class="btn btn-md btn-stop-autoplay" data-text-button-pause="dừng tự động chạy vòng lặp" data-text-button-resume="tiếp tục tự động chạy vòng lặp">
 <span data-text-pause="Tạm dừng" data-text-resume="Tiếp tục">Tạm dừng</span>
 <img alt="" aria-hidden="true" height="24" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/pause.svg" ); ?>"/>
 </button>
@@ -1217,10 +1217,10 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 <div class="include-box-left">
 <ul>
 <li>Vasco Translator Q1</li>
-<li>SIM tích hợp sẵn with free unlimited internet</li>
-<li>USB-C cable</li>
-<li>Lanyard</li>
-<li>Warranty and user manual</li>
+<li>SIM tích hợp sẵn với internet miễn phí không giới hạn</li>
+<li>Cáp USB-C</li>
+<li>Dây đeo cổ</li>
+<li>Phiếu bảo hành và hướng dẫn sử dụng</li>
 </ul>
 </div>
 <div class="include-box-right"><img aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/packshots-q1-eu.webp" ); ?>"/>
@@ -1237,8 +1237,8 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </div>
 <dialog class="basic-dialog gpsr-dialog responsible-person-dialog q1-translators-responsible-person-dialog" id="q1-translators-responsible-person-dialog">
 <div class="basic-dialog-header">
-<button aria-label="Close" class="close-dialog-icon" data-dismiss="modal" type="button">
-<img alt="Close" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/close-icon.svg" ); ?>"/>
+<button aria-label="Đóng" class="close-dialog-icon" data-dismiss="modal" type="button">
+<img alt="Đóng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/close-icon.svg" ); ?>"/>
 </button>
 </div>
 <div class="basic-dialog-body">
@@ -1254,8 +1254,8 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </div>
 <dialog class="basic-dialog gpsr-dialog safety-dialog q1-translators-safety-dialog" id="q1-translators-safety-dialog">
 <div class="basic-dialog-header">
-<button aria-label="Close" class="close-dialog-icon" data-dismiss="modal" type="button">
-<img alt="Close" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/close-icon.svg" ); ?>"/>
+<button aria-label="Đóng" class="close-dialog-icon" data-dismiss="modal" type="button">
+<img alt="Đóng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/close-icon.svg" ); ?>"/>
 </button>
 </div>
 <div class="basic-dialog-body">
@@ -1332,7 +1332,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </tr>
 <tr>
 <th scope="row">Hướng dẫn sử dụng</th>
-<td><a href="#" rel="nofollow" target="_blank" title="manual">tải về sách hướng dẫn</a></td>
+<td><a href="#" rel="nofollow" target="_blank" title="hướng dẫn sử dụng">tải về sách hướng dẫn</a></td>
 </tr>
 </tbody>
 </table>
@@ -1375,10 +1375,10 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 <thead>
 <tr>
 <th class="w-40 text-left languages-heading" scope="col">
-<span>Languages</span>
+<span>Ngôn ngữ</span>
 </th>
-<th scope="col"><span>Voice Input</span></th>
-<th scope="col"><span>Voice Output</span></th>
+<th scope="col"><span>Nhận diện giọng nói</span></th>
+<th scope="col"><span>Phát âm bản dịch</span></th>
 <th scope="col"><span>Dịch hình ảnh</span></th>
 <th scope="col"><span>Dịch văn bản</span></th>
 </tr>
@@ -1386,12 +1386,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 <tbody>
 <tr class="table-popular">
 <td class="w-40">
-<span>Most popular</span>
+<span>Phổ biến nhất</span>
 </td>
 </tr>
 <tr class="nothing-found-table-text">
 <td>
-<span>There are no results for that search</span>
+<span>Không tìm thấy kết quả nào phù hợp</span>
 </td>
 </tr>
 <tr>
@@ -1407,22 +1407,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="de">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -1445,22 +1445,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="pl">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -1510,22 +1510,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="en">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -1552,22 +1552,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="us">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -1591,22 +1591,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="fr">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -1623,22 +1623,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="es">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -1662,22 +1662,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="hu">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -1701,22 +1701,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="ru">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -1740,22 +1740,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="it">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -1779,22 +1779,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="cz">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -1818,28 +1818,28 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="ro">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
 <tr class="table-popular">
 <td class="w-40">
-<span>All</span>
+<span>Tất cả</span>
 </td>
 </tr>
 <tr>
@@ -1866,22 +1866,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="af">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -1905,22 +1905,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="sq">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -1954,22 +1954,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="am">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -1999,22 +1999,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="ar">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -2031,22 +2031,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="hy">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -2064,22 +2064,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="as">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -2105,22 +2105,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="az">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -2158,22 +2158,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="eu">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -2210,12 +2210,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -2231,22 +2231,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="bn">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -2270,22 +2270,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="bs">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -2309,22 +2309,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="bg">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -2349,22 +2349,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="my">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -2387,22 +2387,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="cat">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -2429,12 +2429,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -2463,22 +2463,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="zhc">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -2498,22 +2498,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="zh">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -2542,22 +2542,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="zht">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -2630,12 +2630,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -2680,22 +2680,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="hr">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -2719,22 +2719,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="cz">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -2762,22 +2762,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="da">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -2801,22 +2801,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="nl">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -2833,22 +2833,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="beNl">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -2887,22 +2887,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="enAu">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -2928,22 +2928,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="enCa">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -2968,22 +2968,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="enHi">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -3033,22 +3033,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="en">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -3075,22 +3075,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="us">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -3121,12 +3121,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -3150,22 +3150,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="et">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -3186,22 +3186,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="fl">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -3224,22 +3224,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="fi">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -3265,22 +3265,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="frk">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -3304,22 +3304,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="fr">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -3356,12 +3356,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -3401,22 +3401,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="gl">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -3443,22 +3443,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="ka">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -3475,22 +3475,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="de">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -3524,22 +3524,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="el">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -3564,22 +3564,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="gu">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -3671,12 +3671,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -3706,7 +3706,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -3759,12 +3759,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -3789,22 +3789,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="he">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -3829,22 +3829,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="hi">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -3885,7 +3885,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -3913,22 +3913,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="hu">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -3951,22 +3951,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="isl">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -3996,12 +3996,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -4024,22 +4024,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="id">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -4069,12 +4069,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -4098,22 +4098,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="it">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -4136,22 +4136,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="ja">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -4174,22 +4174,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="jv">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -4214,22 +4214,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="kn">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -4291,12 +4291,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -4321,22 +4321,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="km">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -4356,19 +4356,19 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -4410,22 +4410,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="ko">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -4456,7 +4456,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -4505,12 +4505,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -4536,22 +4536,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="lo">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -4586,12 +4586,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -4615,22 +4615,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="lv">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -4654,22 +4654,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="lt">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -4699,12 +4699,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -4738,22 +4738,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="mk">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -4783,7 +4783,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -4825,22 +4825,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="ms">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -4865,22 +4865,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="ml">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -4927,7 +4927,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -4967,12 +4967,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -4997,22 +4997,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="mr">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -5040,22 +5040,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="mn">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -5081,22 +5081,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="ne">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -5126,22 +5126,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="no">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -5189,12 +5189,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -5219,22 +5219,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="or">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -5280,22 +5280,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="ps">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -5380,22 +5380,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="fa">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -5418,22 +5418,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="pl">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -5459,22 +5459,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="ptb">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -5500,22 +5500,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="pt">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -5540,22 +5540,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="pa">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -5579,22 +5579,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="ro">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -5618,22 +5618,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="ru">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -5667,12 +5667,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -5697,12 +5697,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -5735,22 +5735,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="sr">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -5781,12 +5781,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -5824,12 +5824,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -5862,7 +5862,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -5897,22 +5897,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="si">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -5940,22 +5940,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="sk">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -5988,22 +5988,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="sl">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -6026,22 +6026,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="so">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -6066,19 +6066,19 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -6101,22 +6101,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="spa">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -6133,22 +6133,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="es">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -6173,22 +6173,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="sun">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -6226,22 +6226,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="sw">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -6317,19 +6317,19 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -6355,22 +6355,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="sv">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -6412,7 +6412,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -6447,22 +6447,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="ta">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -6487,22 +6487,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="te">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -6528,22 +6528,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="th">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -6577,7 +6577,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -6612,19 +6612,19 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -6652,19 +6652,19 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -6688,22 +6688,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="tr">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -6726,22 +6726,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="ua">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -6766,22 +6766,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="ur">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -6820,22 +6820,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="uz">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -6858,22 +6858,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="vi">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -6903,12 +6903,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -6936,19 +6936,19 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -6979,12 +6979,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -7014,12 +7014,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -7047,22 +7047,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td class="pronunciation">
 <div class="tick-icon" data-target="zu">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -7077,23 +7077,23 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 <thead>
 <tr>
 <th class="w-40 text-left languages-heading" scope="col">
-<span>Languages</span>
+<span>Ngôn ngữ</span>
 </th>
 <th scope="col"><span>Vasco My Voice</span></th>
 <th scope="col"><span>Vasco Connect</span></th>
 <th scope="col"><span>Dịch cuộc gọi</span></th>
-<th scope="col"><span>Learning</span></th>
+<th scope="col"><span>Học ngôn ngữ</span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="table-popular">
 <td class="w-40">
-<span>Most popular</span>
+<span>Phổ biến nhất</span>
 </td>
 </tr>
 <tr class="nothing-found-table-text">
 <td>
-<span>There are no results for that search</span>
+<span>Không tìm thấy kết quả nào phù hợp</span>
 </td>
 </tr>
 <tr>
@@ -7109,22 +7109,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -7147,22 +7147,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -7212,22 +7212,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -7254,22 +7254,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -7293,22 +7293,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -7325,22 +7325,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -7364,22 +7364,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -7407,17 +7407,17 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -7441,22 +7441,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -7480,22 +7480,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -7519,28 +7519,28 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
 <tr class="table-popular">
 <td class="w-40">
-<span>All</span>
+<span>Tất cả</span>
 </td>
 </tr>
 <tr>
@@ -7571,12 +7571,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -7608,7 +7608,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -7654,7 +7654,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -7696,17 +7696,17 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -7727,7 +7727,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -7757,7 +7757,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -7795,7 +7795,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -7841,12 +7841,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -7870,17 +7870,17 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -7908,12 +7908,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -7945,22 +7945,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -7989,7 +7989,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -8020,22 +8020,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -8068,12 +8068,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -8101,12 +8101,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -8143,17 +8143,17 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -8198,22 +8198,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -8237,22 +8237,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -8280,22 +8280,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -8319,22 +8319,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -8351,17 +8351,17 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -8404,17 +8404,17 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -8444,12 +8444,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -8482,17 +8482,17 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -8546,22 +8546,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -8588,22 +8588,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -8627,17 +8627,17 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -8662,17 +8662,17 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -8699,22 +8699,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -8740,17 +8740,17 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -8778,22 +8778,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -8833,12 +8833,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -8877,7 +8877,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -8902,22 +8902,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -8951,17 +8951,17 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -8994,12 +8994,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -9028,12 +9028,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -9066,17 +9066,17 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -9104,22 +9104,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -9150,7 +9150,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -9177,22 +9177,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -9216,22 +9216,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -9254,22 +9254,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -9292,12 +9292,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -9334,12 +9334,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -9372,7 +9372,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -9422,17 +9422,17 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -9466,7 +9466,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -9502,12 +9502,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -9539,12 +9539,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -9582,12 +9582,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -9633,22 +9633,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -9677,12 +9677,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -9715,7 +9715,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -9755,7 +9755,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -9789,12 +9789,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -9832,22 +9832,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -9893,12 +9893,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -9929,22 +9929,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -9970,17 +9970,17 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -10014,17 +10014,17 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -10053,12 +10053,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -10086,22 +10086,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -10129,17 +10129,17 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -10176,12 +10176,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -10220,7 +10220,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -10256,22 +10256,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -10304,12 +10304,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -10344,7 +10344,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -10375,22 +10375,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -10407,22 +10407,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -10451,7 +10451,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -10497,12 +10497,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -10536,22 +10536,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -10582,17 +10582,17 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -10621,12 +10621,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -10660,17 +10660,17 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -10698,17 +10698,17 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -10735,22 +10735,22 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 </tr>
@@ -10779,7 +10779,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -10830,7 +10830,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -10861,17 +10861,17 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -10903,12 +10903,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
 <div class="tick-icon">
-<img alt="check" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
+<img alt="đã hỗ trợ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/languages-section/soundplayer-check.svg" ); ?>"/>
 </div>
 </td>
 <td>
@@ -10934,21 +10934,21 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 <h3 class="number" id="lang-number">121</h3>
 </div>
 <p class="number-description" id="lang-desc">
-					Languages for photo translation</p>
+					Ngôn ngữ hỗ trợ dịch hình ảnh</p>
 </div>
 <div class="vasco-numbers-single-wrapper" role="listitem" tabindex="0">
 <div class="number-paragraph">
 <h3 class="number" id="country-number">95</h3>
 </div>
 <p class="number-description" id="country-desc">
-					Languages for voice translation</p>
+					Ngôn ngữ hỗ trợ dịch giọng nói</p>
 </div>
 <div class="vasco-numbers-single-wrapper" role="listitem" tabindex="0">
 <div class="number-paragraph">
 <h3 class="number" id="engines-number">116</h3>
 </div>
 <p class="number-description" id="engines-desc">
-					Languages for text translation</p>
+					Ngôn ngữ hỗ trợ dịch văn bản</p>
 </div>
 </div>
 </div>
@@ -10956,12 +10956,12 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </div>
 <div class="product-faq tab" id="product-faq">
 <div class="container">
-<h2 class="h1">FAQ</h2>
+<h2 class="h1">Hỏi đáp (FAQ)</h2>
 <section class="accordion-section">
 <div class="accordion-wrapper">
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">Does Vasco Translator Q1 work without an internet connection?</p>
+<p class="accordion-visible">Vasco Translator Q1 có hoạt động được khi không có kết nối internet không?</p>
 <div>
 <svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2"></path>
@@ -10969,106 +10969,106 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </div>
 </div>
 <div class="accordion-hidden">
-					Yes, just like other Vasco translators, the Vasco Translator Q1 comes with a built-in SIM card that provides free and unlimited internet for translations tại gần 200 quốc gia –  for life. That means Không phí chuyển vùng or prepaid cards to worry about. A full list of all supported countries is available here.
+					Có, cũng giống như các máy phiên dịch khác của Vasco, Vasco Translator Q1 được trang bị SIM tích hợp sẵn, cung cấp internet miễn phí và không giới hạn cho việc phiên dịch tại gần 200 quốc gia – trọn đời. Điều đó có nghĩa là bạn không cần lo về phí chuyển vùng hay thẻ trả trước. Danh sách đầy đủ các quốc gia được hỗ trợ có tại đây.
 				</div>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">What is the difference between Vasco Translator Q1 and V4?</p>
+<p class="accordion-visible">Sự khác biệt giữa Vasco Translator Q1 và V4 là gì?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2"></path>
 </svg></div>
 </div>
 <div class="accordion-hidden">
-					Vasco Translator Q1 is the most technologically advanced and feature-rich device in our range, designed for the most demanding users. Compared to the V4 model, it offers voice cloning, call translation, automatic mode, and a profanity filter. Additionally, Q1 introduces a variety of user-friendly options, such as choosing between a male or female voice, adjusting translation playback speed, and enabling screen lock.
+					Vasco Translator Q1 là thiết bị tiên tiến nhất về công nghệ và giàu tính năng nhất trong dòng sản phẩm của chúng tôi, được thiết kế dành cho những người dùng khó tính nhất. So với mẫu V4, thiết bị này có thêm tính năng nhân bản giọng nói, dịch cuộc gọi, chế độ tự động và bộ lọc từ ngữ không phù hợp. Ngoài ra, Q1 còn mang đến nhiều tùy chọn thân thiện với người dùng như lựa chọn giọng nam hoặc nữ, điều chỉnh tốc độ phát bản dịch và bật khóa màn hình.
 				</div>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">In which countries does the Vasco Translator Q1 work?</p>
+<p class="accordion-visible">Vasco Translator Q1 hoạt động ở những quốc gia nào?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2"></path>
 </svg></div>
 </div>
 <div class="accordion-hidden">
-					Thanks to unlimited internet access tại gần 200 quốc gia, this automatic translator allows you to communicate with nearly 90% of the world’s population.
+					Nhờ khả năng truy cập internet không giới hạn tại gần 200 quốc gia, chiếc máy phiên dịch tự động này cho phép bạn giao tiếp với gần 90% dân số thế giới.
 				</div>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">Is Vasco Translator Q1 better than Google Translate?</p>
+<p class="accordion-visible">Vasco Translator Q1 có tốt hơn Google Translate không?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2"></path>
 </svg></div>
 </div>
 <div class="accordion-hidden">
-					Yes, in addition to free unlimited internet for translations, Vasco Translator Q1 uses more than 10 specialised translation engines. Our team of linguists tests them for each language pair and selects the one that produces the best results in a given context. In comparison, Google Translate typically relies on a single universal engine and often uses an intermediary language (usually English or Chinese), which can significantly affect translation quality. Vasco''s advantage lies in direct translation between languages, preserving linguistic nuances, specialised terminology, and cultural context. With this multi-layered approach, Vasco reaches 99% translation accuracy, resulting in more natural and precise conversations.
+					Có, bên cạnh internet miễn phí không giới hạn cho việc phiên dịch, Vasco Translator Q1 còn sử dụng hơn 10 công cụ dịch thuật chuyên biệt. Đội ngũ chuyên gia ngôn ngữ của chúng tôi kiểm tra từng công cụ cho mỗi cặp ngôn ngữ và chọn ra công cụ mang lại kết quả tốt nhất trong từng ngữ cảnh cụ thể. Trong khi đó, Google Translate thường chỉ dựa vào một công cụ dịch chung và hay sử dụng một ngôn ngữ trung gian (thường là tiếng Anh hoặc tiếng Trung), điều này có thể ảnh hưởng đáng kể đến chất lượng bản dịch. Lợi thế của Vasco nằm ở việc dịch trực tiếp giữa các ngôn ngữ, giữ được các sắc thái ngôn ngữ, thuật ngữ chuyên ngành và bối cảnh văn hóa. Với phương pháp đa lớp này, Vasco đạt độ chính xác dịch thuật lên tới 99%, mang lại những cuộc trò chuyện tự nhiên và chính xác hơn.
 				</div>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">Is Vasco Translator Q1 easy to use for non-tech-savvy or older users?</p>
+<p class="accordion-visible">Vasco Translator Q1 có dễ sử dụng đối với người lớn tuổi hoặc người không rành công nghệ không?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2"></path>
 </svg></div>
 </div>
 <div class="accordion-hidden">
-					Yes! Vasco Translator Q1 is a very intuitive device, designed for users of all ages and technical skill levels. In addition to its wide range of translation options, it includes helpful accessibility features such as adjustable font size, colour inversion for users with visual impairments, and adjustable playback speed.
+					Có! Vasco Translator Q1 là thiết bị rất trực quan, được thiết kế cho người dùng ở mọi độ tuổi và trình độ công nghệ. Bên cạnh nhiều tùy chọn phiên dịch đa dạng, thiết bị còn có các tính năng hỗ trợ tiếp cận hữu ích như điều chỉnh cỡ chữ, đảo màu cho người khiếm thị và điều chỉnh tốc độ phát.
 				</div>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">What voice personalisation options are available for translations?</p>
+<p class="accordion-visible">Có những tùy chọn cá nhân hóa giọng nói nào cho bản dịch?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2"></path>
 </svg></div>
 </div>
 <div class="accordion-hidden">
-					Vasco Translator Q1 is the only translator with voice cloning technology that creates a digital version of your voice from a short recorded sample. From now on, you can sound like yourself even when speaking a foreign language. Depending on your preferences, you can also choose between male Dịch giọng nói or female Dịch giọng nói options. And if you'd like to adjust the playback speed, Vasco offers a 5-level scale. Your translator, your rules.
+					Vasco Translator Q1 là máy phiên dịch duy nhất sở hữu công nghệ nhân bản giọng nói, tạo ra phiên bản kỹ thuật số giọng nói của bạn từ một đoạn ghi âm ngắn. Giờ đây, bạn có thể nghe như chính mình ngay cả khi nói một ngôn ngữ khác. Tùy theo sở thích, bạn cũng có thể chọn giọng đọc nam hoặc nữ cho bản dịch giọng nói. Và nếu muốn điều chỉnh tốc độ phát, Vasco cung cấp thang 5 mức. Máy phiên dịch của bạn, luật lệ do bạn đặt ra.
 				</div>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">Does Vasco Translator Q1 support fast charging?</p>
+<p class="accordion-visible">Vasco Translator Q1 có hỗ trợ sạc nhanh không?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2"></path>
 </svg></div>
 </div>
 <div class="accordion-hidden">
-					Yes, this automatic translator supports fast charging, so it's always ready when you need it.
+					Có, chiếc máy phiên dịch tự động này hỗ trợ sạc nhanh, nên luôn sẵn sàng bất cứ khi nào bạn cần.
 				</div>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">Does Vasco Translator Q1 have a built-in flashlight?</p>
+<p class="accordion-visible">Vasco Translator Q1 có tích hợp đèn pin không?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2"></path>
 </svg></div>
 </div>
 <div class="accordion-hidden">
-					Yes, this automatic translator device includes a practical flashlight, which is especially useful when translating text from photos in poorly lit environments or in emergency situations.
+					Có, thiết bị phiên dịch tự động này được trang bị đèn pin tiện dụng, đặc biệt hữu ích khi dịch văn bản từ ảnh chụp trong môi trường thiếu sáng hoặc trong các tình huống khẩn cấp.
 				</div>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">Can I use my own Bluetooth headphones with Vasco Translator Q1?</p>
+<p class="accordion-visible">Tôi có thể sử dụng tai nghe Bluetooth của riêng mình với Vasco Translator Q1 không?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2"></path>
 </svg></div>
 </div>
 <div class="accordion-hidden">
-					Yes, Vasco Translator Q1 connects seamlessly with any Bluetooth headphones, allowing you to listen to translations. However, for the best experience, we highly recommend pairing it with the Vasco Translator E1 translator earbuds, which unlocks additional features and delivers truly revolutionary translation capabilities.
+					Có, Vasco Translator Q1 kết nối liền mạch với mọi tai nghe Bluetooth, cho phép bạn nghe bản dịch. Tuy nhiên, để có trải nghiệm tốt nhất, chúng tôi khuyên bạn nên kết hợp với tai nghe phiên dịch Vasco Translator E1, giúp mở khóa thêm nhiều tính năng và mang lại khả năng phiên dịch đột phá thực sự.
 				</div>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">What security options does the device offer to prevent unauthorised access?</p>
+<p class="accordion-visible">Thiết bị cung cấp những tùy chọn bảo mật nào để ngăn chặn truy cập trái phép?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2"></path>
 </svg></div>
 </div>
 <div class="accordion-hidden">
-					The device features screen lock with three security options: pattern, PIN, and password, ensuring complete protection from unauthorised access.
+					Thiết bị có tính năng khóa màn hình với ba tùy chọn bảo mật: hình mẫu, mã PIN và mật khẩu, đảm bảo bảo vệ toàn diện khỏi truy cập trái phép.
 				</div>
 </div>
 </div>
@@ -11085,7 +11085,7 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 <div class="product-prices js-product-prices">
 <div class="product-price">
 <div class="current-price">
-<p aria-label="Price $549" class="current-price-value product-price" content="549">
+<p aria-label="Giá $549" class="current-price-value product-price" content="549">
 																		$549											</p>
 </div>
 </div>
@@ -11130,13 +11130,13 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </svg>
 </div>
 </div>
-<div class="alert alert-success toast-animation cross-alert" style="display:none">Product added to your shopping cart</div>
-<div class="alert alert-danger toast-animation cross-alert-error" style="display:none">This product is currently unavailable</div>
+<div class="alert alert-success toast-animation cross-alert" style="display:none">Sản phẩm đã được thêm vào giỏ hàng</div>
+<div class="alert alert-danger toast-animation cross-alert-error" style="display:none">Sản phẩm này hiện không có sẵn</div>
 <div class="comparison-page-contact-container">
 <div class="container">
 <div class="comparison-page-link-module">
-<h2 class="h1">Are you unsure which translator to choose?</h2>
-<p>We have prepared a comparison of translators to make your choice easier.</p>
+<h2 class="h1">Bạn chưa chắc chắn nên chọn máy phiên dịch nào?</h2>
+<p>Chúng tôi đã chuẩn bị sẵn bảng so sánh các máy phiên dịch để giúp bạn dễ dàng lựa chọn hơn.</p>
 <a class="view-compare-button btn btn-md btn-black" href="../comparison-engine.html">
 					So sánh máy phiên dịch
 				</a>
@@ -11145,11 +11145,11 @@ Vasco Assistant recognizes symbols, regional cuisine, customs, and even local re
 </div>
 <div class="trustpilot-placement trustpilot-placement-bottom">
 <hr/>
-<a class="sr-only" href="#customers-opinions-after" id="customers-opinions-skip">Skip customer reviews section</a>
+<a class="sr-only" href="#customers-opinions-after" id="customers-opinions-skip">Bỏ qua phần đánh giá của khách hàng</a>
 <div class="trustpilot-scroll-anchor" id="trustpilot-secttion-bottom-anchor"></div>
 <div class="trustpilot trustpilot-bottom" id="trustpilot-secttion-bottom">
 <div class="container">
-<h2 class="h2-notosans">Customers’ opinions</h2>
+<h2 class="h2-notosans">Ý kiến khách hàng</h2>
 <div aria-hidden="true" class="trustpilot-widget" color="#2D3139" data-businessunit-id="64cbd5206cac53316ece59d0" data-font-family="Noto Sans" data-fullwidth="true" data-locale="en-us" data-name="Vasco Translator Q1" data-no-reviews="show" data-sku="5906516647508,5906516647409,5906516647515,5906516647522" data-star-color="#5E976A" data-style-height="450px" data-style-width="100%" data-template-id="5763bccae0a06d08e809ecbb" data-theme="light" tabindex="-1">
 <a href="#" rel="noopener" target="_blank">Trustpilot</a>
 </div>
