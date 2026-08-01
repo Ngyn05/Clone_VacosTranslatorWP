@@ -21,7 +21,7 @@ get_header();
 <ol>
 <li>
 <a href="../index.html">
-<span class="breadcrumb-link">Home</span>
+<span class="breadcrumb-link">Trang chủ</span>
 </a>
 <span class="breadcrumb-divider">&gt;</span>
 </li>

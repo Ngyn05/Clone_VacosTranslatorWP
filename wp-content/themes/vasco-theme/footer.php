@@ -108,7 +108,7 @@
 											</a>
 										</li>
 										<li>
-											<a class="footer-info" href="<?php echo esc_url( home_url( "/" ) ); ?>" target="_blank" title="Blog">
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/articles/" ) ); ?>" title="Blog">
 												Blog
 											</a>
 										</li>

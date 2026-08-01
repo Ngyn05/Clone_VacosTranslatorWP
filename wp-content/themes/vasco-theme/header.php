@@ -255,8 +255,7 @@
 														</a>
 													</li>
 													<li>
-														<a href="<?php echo esc_url( home_url( "/" ) ); ?>" rel="noopener noreferrer" role="menuitem"
-															target="_blank">
+														<a href="<?php echo esc_url( home_url( "/articles/" ) ); ?>" role="menuitem">
 															Blog
 														</a>
 													</li>
@@ -1509,8 +1508,7 @@
 															</a>
 														</li>
 														<li>
-															<a href="<?php echo esc_url( home_url( "/" ) ); ?>" rel="noopener noreferrer"
-																role="menuitem" target="_blank">
+															<a href="<?php echo esc_url( home_url( "/articles/" ) ); ?>" role="menuitem">
 																Blog
 															</a>
 														</li>

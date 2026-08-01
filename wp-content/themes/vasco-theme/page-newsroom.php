@@ -165,12 +165,12 @@ get_header();
 </a>
 </div>
 </div>
-<div class="swiper-button-prev btn-carousel-prev" data-label-prev="Previous slide"></div>
-<div class="swiper-button-next btn-carousel-next" data-label-next="Next slide"></div>
+<div class="swiper-button-prev btn-carousel-prev" data-label-prev="Slide trước"></div>
+<div class="swiper-button-next btn-carousel-next" data-label-next="Slide tiếp theo"></div>
 </div>
 <div class="stop-autoplay-carousel">
-<button class="btn btn-md btn-stop-autoplay" data-text-button-pause="stop carousel autoplay" data-text-button-resume="resume carousel autoplay">
-<span data-text-pause="Pause" data-text-resume="Resume">Tạm dừng</span>
+<button class="btn btn-md btn-stop-autoplay" data-text-button-pause="dừng tự phát băng chuyền" data-text-button-resume="tiếp tục tự phát băng chuyền">
+<span data-text-pause="Tạm dừng" data-text-resume="Tiếp tục">Tạm dừng</span>
 <img alt="" aria-hidden="true" height="24" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/pause.svg" ); ?>" width="24"/>
 </button>
 </div>
@@ -178,7 +178,7 @@ get_header();
 </div>
 </div>
 <div class="container Tin tức-media-btn">
-<a class="btn btn-md btn-black" href="./media-about-us.html">đọc thêm</a>
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/media-about-us/" ) ); ?>">đọc thêm</a>
 </div>
 <hr/>
 <div class="container">
@@ -260,12 +260,12 @@ get_header();
 </a>
 </div>
 </div>
-<div class="swiper-button-prev btn-carousel-prev" data-label-prev="Previous slide"></div>
-<div class="swiper-button-next btn-carousel-next" data-label-next="Next slide"></div>
+<div class="swiper-button-prev btn-carousel-prev" data-label-prev="Slide trước"></div>
+<div class="swiper-button-next btn-carousel-next" data-label-next="Slide tiếp theo"></div>
 </div>
 <div class="stop-autoplay-carousel">
-<button class="btn btn-md btn-stop-autoplay" data-text-button-pause="stop carousel autoplay" data-text-button-resume="resume carousel autoplay">
-<span data-text-pause="Pause" data-text-resume="Resume">Tạm dừng</span>
+<button class="btn btn-md btn-stop-autoplay" data-text-button-pause="dừng tự phát băng chuyền" data-text-button-resume="tiếp tục tự phát băng chuyền">
+<span data-text-pause="Tạm dừng" data-text-resume="Tiếp tục">Tạm dừng</span>
 <img alt="" aria-hidden="true" height="24" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/pause.svg" ); ?>" width="24"/>
 </button>
 </div>
