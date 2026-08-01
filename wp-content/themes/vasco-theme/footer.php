@@ -756,9 +756,8 @@
 			</svg>
 		</button>
 	</div>
-	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets/js/theme-xdI8XRYL.js" ); ?>" type="text/javascript"></script>
 	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ps_emailalerts/js/mailalerts.js" ); ?>" type="text/javascript"></script>
-	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ps_emailsubscription/views/js/ps_emailsubscription.js" ); ?>"
+	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets/themes/vasco-theme/modules/ps_emailsubscription/views/js/ps_emailsubscription.js" ); ?>"
 		type="text/javascript"></script>
 	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_custom_pages/views/assets/js/events.js" ); ?>" type="text/javascript"></script>
 	<script src="https://www.google.com/recaptcha/api.js?render=6LevRV4sAAAAANeEy-YCBKBGXi619AFoSelbsaFC"
@@ -768,7 +767,7 @@
 	<script src="https://static-na.payments-amazon.com/checkout.js" type="text/javascript"></script>
 	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets/js/jquery/plugins/fancybox/jquery.fancybox.js" ); ?>" type="text/javascript"></script>
 	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/amazonpay/views/js/button.js" ); ?>" type="text/javascript"></script>
-	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ps_shoppingcart/ps_shoppingcart.js" ); ?>" type="text/javascript"></script>
+	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets/themes/vasco-theme/modules/ps_shoppingcart/ps_shoppingcart.js" ); ?>" type="text/javascript"></script>
 	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_analytics/views/js/ve-logger.js" ); ?>" type="text/javascript"></script>
 	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_checkboxes/views/assets/js/ve_checkboxes.js" ); ?>" type="text/javascript"></script>
 	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_analytics/views/js/datalayer.9bb08a1c.js" ); ?>" type="text/javascript"></script>

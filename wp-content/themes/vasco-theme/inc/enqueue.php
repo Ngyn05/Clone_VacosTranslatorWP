@@ -36,6 +36,7 @@ function vasco_theme_enqueue_all_assets() {
 
 	// 3. Enqueue jQuery Core
 	wp_enqueue_script( 'jquery' );
+	wp_add_inline_script( 'jquery', 'window.$ = window.jQuery;' );
 
 	// 4. Enqueue ALL JavaScript files from source
 	wp_enqueue_script( 'vasco-js-0', VASCO_THEME_URI . '/assets/js/jquery/plugins/fancybox/jquery.fancybox.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
@@ -239,5 +240,23 @@ EOT;
 	wp_add_inline_script( 'jquery', $custom_js );
 }
 add_action( 'wp_enqueue_scripts', 'vasco_theme_enqueue_all_assets' );
+
+/**
+ * Add type="module" to enqueued scripts that use ES module syntax
+ */
+function vasco_theme_script_loader_tag( $tag, $handle, $src ) {
+	$module_handles = array(
+		'vasco-js-17',
+		'vasco-js-18',
+		'vasco-js-19',
+		'vasco-js-20',
+		'vasco-js-22',
+	);
+	if ( in_array( $handle, $module_handles, true ) ) {
+		return '<script type="module" src="' . esc_url( $src ) . '" id="' . esc_attr( $handle ) . '-js"></script>' . "\n";
+	}
+	return $tag;
+}
+add_filter( 'script_loader_tag', 'vasco_theme_script_loader_tag', 10, 3 );
 
 
