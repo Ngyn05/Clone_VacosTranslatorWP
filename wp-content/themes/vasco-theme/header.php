@@ -58,7 +58,7 @@
 							<a aria-controls="submenu-shop" aria-expanded="false" aria-haspopup="true"
 								class="nav-link has-child" href="<?php echo esc_url( home_url( "/translators/" ) ); ?>" id="nav-title-shop"
 								role="menuitem">
-								Cửa hàng
+								Cửa Hàng
 								<img alt="" aria-hidden="true" class="arrow-rotate"
 									src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/dropdown-arrow.svg" ); ?>" />
 							</a>
@@ -219,7 +219,7 @@
 						<div class="menu-item-wrapper" role="none">
 							<a aria-controls="submenu-about_us" aria-expanded="false" aria-haspopup="true"
 								class="nav-link has-child" id="nav-title-about_us" role="menuitem" type="button" href="<?php echo esc_url( home_url( "/about-us/" ) ); ?>">
-								Về chúng tôi
+								Về Chúng Tôi
 								<img alt="" aria-hidden="true" class="arrow-rotate"
 									src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/dropdown-arrow.svg" ); ?>" />
 							</a>
@@ -241,7 +241,7 @@
 													</li>
 													<li>
 														<a href="<?php echo esc_url( home_url( "/about-us/" ) ); ?>" role="menuitem">
-															Về chúng tôi
+															Về Chúng Tôi
 														</a>
 													</li>
 													<li>
@@ -291,7 +291,7 @@
 														decoding="async" fetchpriority="low" loading="lazy" />
 												</div>
 												<div class="text-absolute">
-													<p>Về chúng tôi</p>
+													<p>Về Chúng Tôi</p>
 													<p><svg fill="none" height="19" viewbox="0 0 11 19" width="11"
 															xmlns="http://www.w3.org/2000/svg">
 															<path d="M1.41406 17.4141L9.41406 9.41406L1.41406 1.41406"
@@ -308,7 +308,7 @@
 						<div class="menu-item-wrapper" role="none">
 							<a aria-controls="submenu-how_it_works" aria-expanded="false" aria-haspopup="true"
 								class="nav-link has-child" id="nav-title-how_it_works" role="menuitem" type="button" href="<?php echo esc_url( home_url( "/how-it-works/" ) ); ?>">
-								Cách hoạt động?
+								Cách Hoạt Động
 								<img alt="" aria-hidden="true" class="arrow-rotate"
 									src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/dropdown-arrow.svg" ); ?>" />
 							</a>
@@ -325,7 +325,7 @@
 													</li>
 													<li>
 														<a href="<?php echo esc_url( home_url( "/how-it-works/" ) ); ?>" role="menuitem">
-															Cách hoạt động?
+															Cách Hoạt Động
 														</a>
 													</li>
 													<li>
@@ -386,7 +386,7 @@
 														decoding="async" fetchpriority="low" loading="lazy" />
 												</div>
 												<div class="text-absolute">
-													<p>Cách hoạt động?</p>
+													<p>Cách Hoạt Động</p>
 													<p><svg fill="none" height="19" viewbox="0 0 11 19" width="11"
 															xmlns="http://www.w3.org/2000/svg">
 															<path d="M1.41406 17.4141L9.41406 9.41406L1.41406 1.41406"
@@ -403,7 +403,7 @@
 						<div class="menu-item-wrapper" role="none">
 							<a aria-controls="submenu-for_business" aria-expanded="false" aria-haspopup="true"
 								class="nav-link has-child" id="nav-title-for_business" role="menuitem" type="button" href="<?php echo esc_url( home_url( "/business-healthcare/" ) ); ?>">
-								Cho doanh nghiệp
+								Cho Doanh Nghiệp
 								<img alt="" aria-hidden="true" class="arrow-rotate"
 									src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/dropdown-arrow.svg" ); ?>" />
 							</a>
@@ -499,7 +499,7 @@
 						</div>
 						<div class="menu-item-wrapper" role="none">
 							<a class="nav-link" href="<?php echo esc_url( home_url( "/contact/" ) ); ?>" role="menuitem">
-								Liên hệ
+								Liên Hệ
 							</a>
 						</div>
 					</nav>
@@ -1294,7 +1294,7 @@
 								<a aria-controls="submenu-shop" aria-expanded="false" aria-haspopup="true"
 									class="nav-link has-child" href="<?php echo esc_url( home_url( "/translators/" ) ); ?>" id="nav-title-shop"
 									role="menuitem">
-									Cửa hàng
+									Cửa Hàng
 									<img alt="" aria-hidden="true" class="arrow-rotate"
 										src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/dropdown-arrow.svg" ); ?>" />
 								</a>
@@ -1472,7 +1472,7 @@
 							<div class="menu-item-wrapper" role="none">
 								<a aria-controls="submenu-about_us" aria-expanded="false" aria-haspopup="true"
 									class="nav-link has-child" id="nav-title-about_us" role="menuitem" type="button" href="<?php echo esc_url( home_url( "/about-us/" ) ); ?>">
-									Về chúng tôi
+									Về Chúng Tôi
 									<img alt="" aria-hidden="true" class="arrow-rotate"
 										src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/dropdown-arrow.svg" ); ?>" />
 								</button>
@@ -1494,7 +1494,7 @@
 														</li>
 														<li>
 															<a href="<?php echo esc_url( home_url( "/about-us/" ) ); ?>" role="menuitem">
-																Về chúng tôi
+																Về Chúng Tôi
 															</a>
 														</li>
 														<li>
@@ -1545,7 +1545,7 @@
 															decoding="async" fetchpriority="low" loading="lazy" />
 													</div>
 													<div class="text-absolute">
-														<p>Về chúng tôi</p>
+														<p>Về Chúng Tôi</p>
 														<p><svg fill="none" height="19" viewbox="0 0 11 19" width="11"
 																xmlns="http://www.w3.org/2000/svg">
 																<path
@@ -1564,7 +1564,7 @@
 								<a aria-controls="submenu-how_it_works" aria-expanded="false" aria-haspopup="true"
 									class="nav-link has-child" id="nav-title-how_it_works" role="menuitem"
 									type="button" href="<?php echo esc_url( home_url( "/how-it-works/" ) ); ?>">
-									Cách hoạt động?
+									Cách Hoạt Động
 									<img alt="" aria-hidden="true" class="arrow-rotate"
 										src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/dropdown-arrow.svg" ); ?>" />
 								</button>
@@ -1581,7 +1581,7 @@
 														</li>
 														<li>
 															<a href="<?php echo esc_url( home_url( "/how-it-works/" ) ); ?>" role="menuitem">
-																Cách hoạt động?
+																Cách Hoạt Động
 															</a>
 														</li>
 														<li>
@@ -1643,7 +1643,7 @@
 															decoding="async" fetchpriority="low" loading="lazy" />
 													</div>
 													<div class="text-absolute">
-														<p>Cách hoạt động?</p>
+														<p>Cách Hoạt Động</p>
 														<p><svg fill="none" height="19" viewbox="0 0 11 19" width="11"
 																xmlns="http://www.w3.org/2000/svg">
 																<path
@@ -1662,7 +1662,7 @@
 								<a aria-controls="submenu-for_business" aria-expanded="false" aria-haspopup="true"
 									class="nav-link has-child" id="nav-title-for_business" role="menuitem"
 									type="button" href="<?php echo esc_url( home_url( "/business-healthcare/" ) ); ?>">
-									Cho doanh nghiệp
+									Cho Doanh Nghiệp
 									<img alt="" aria-hidden="true" class="arrow-rotate"
 										src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/dropdown-arrow.svg" ); ?>" />
 								</button>
@@ -1759,7 +1759,7 @@
 							</div>
 							<div class="menu-item-wrapper" role="none">
 								<a class="nav-link" href="<?php echo esc_url( home_url( "/contact/" ) ); ?>" role="menuitem">
-									Liên hệ
+									Liên Hệ
 								</a>
 							</div>
 						</nav>

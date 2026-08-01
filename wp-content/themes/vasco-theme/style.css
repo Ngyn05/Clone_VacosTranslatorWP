@@ -306,8 +306,24 @@ Text Domain: vasco-theme
     z-index: 10 !important;
 }
 
+/* Header Navigation Menu Capitalization Fix */
+.nav-link,
+.desktop-nav .nav-link,
+.menu-item-wrapper .nav-link {
+    text-transform: none !important;
+}
 
-
-
-
-
+/* No.1 Badge - Fix bị ẩn khi hover vào menu header */
+/* Dùng position:fixed với z-index cực cao để luôn hiển thị trên tất cả */
+.number-one-floating {
+    z-index: 200000 !important;
+    position: fixed !important;
+    top: 60px !important;
+    right: 0 !important;
+    pointer-events: none !important;
+    display: block !important;
+}
+.number-one-floating img {
+    width: 94px !important;
+    max-width: 94px !important;
+}

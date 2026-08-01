@@ -19,11 +19,11 @@ get_header();
 					<section id="main">
 						<section class="page-home" id="content">
 							<section class="hero-section" style="min-height: 560px;">
+								<div class="number-one number-one-floating">
+									<img alt="number one" class="nr-one"
+										src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/icons/no1-badge.svg" ); ?>" />
+								</div>
 								<section class="doubleboxes">
-									<div class="number-one">
-										<img alt="number one" class="nr-one"
-											src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/icons/no1-badge.svg" ); ?>" />
-									</div>
 									<div class="doublebox left" id="box-color-random"
 										style="background-color: #EFECE8; color: #EFECE8;">
 										<div class="container">
@@ -1065,6 +1065,20 @@ get_header();
 			margin-bottom: 10px !important;
 			color: #222 !important;
 		}
+        /* No.1 Badge - Fix bị ẩn khi hover vào menu header */
+        /* Tách badge ra khỏi hero-section để tránh bị đè bởi stacking context của hero */
+        .page-home .number-one-floating {
+            z-index: 200000 !important;
+            position: absolute !important;
+            top: 60px !important;
+            right: 0 !important;
+            pointer-events: none;
+            display: block !important;
+        }
+        .number-one-floating img {
+            width: 94px !important;
+            max-width: 94px !important;
+        }
 		</style>
 		<section class="blogs">
 			<div class="container">
