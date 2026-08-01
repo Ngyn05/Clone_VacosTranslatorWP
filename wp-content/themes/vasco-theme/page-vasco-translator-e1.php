@@ -313,7 +313,7 @@ get_header();
 <section class="media-awards">
 <div class="container">
 <div id="awards-section">
-<h2 class="h2-notosans">awards</h2>
+<h2 class="h2-notosans">Giải thưởng</h2>
 <div aria-label="carousel with awards" aria-roledescription="carousel" class="swiper swiper-carousel autoplay loop carousel-award" role="region">
 <a class="sr-only focusable" href="#after-award-carousel">Bỏ qua vòng lặp</a>
 <div class="swiper-wrapper" role="list">

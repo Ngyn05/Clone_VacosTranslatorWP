@@ -1242,11 +1242,11 @@
 						<div class="blockcart cart-preview"
 							data-refresh-url="//vasco-translator.com/module/ps_shoppingcart/ajax">
 							<div class="header">
-								<a class="cart-link-icon" href="<?php echo esc_url( home_url( "/cart@action=show/" ) ); ?>" rel="nofollow"
+								<a class="cart-link-icon" href="<?php echo esc_url( home_url( "/cart/" ) ); ?>" rel="nofollow"
 									title="Giỏ hàng">
 									<div class="shopping_cart icon">
 										<img alt="Shopping cart" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket-dark.svg" ); ?>" />
-										<div class="cart-count">0</div>
+										<div class="cart-count cart-count-badge">0</div>
 									</div>
 								</a>
 							</div>

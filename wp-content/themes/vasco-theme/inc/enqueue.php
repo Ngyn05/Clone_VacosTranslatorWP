@@ -66,88 +66,176 @@ function vasco_theme_enqueue_all_assets() {
 
 	// Inline DOM fix for product tab menus (About / Specification / Languages / FAQ)
 	// and FAQ accordions.
-	$custom_js = "
-		(function() {
-			function activateTab(menu, targetId) {
-				var content = menu.parentElement ? menu.parentElement.querySelector('.tab-content') : null;
-				if (!content) {
-					content = document.getElementById('tab-content');
-				}
-				if (!content) return;
-
-				menu.querySelectorAll('.menu-link').forEach(function(btn) {
-					btn.classList.toggle('current', btn.getAttribute('data-id') === targetId);
-				});
-				content.querySelectorAll(':scope > .tab, .tab-content > .tab').forEach(function(pane) {
-					if (pane.id === targetId) {
-						pane.classList.add('active-tab');
-						pane.style.setProperty('display', 'block', 'important');
-					} else {
-						pane.classList.remove('active-tab');
-						pane.style.setProperty('display', 'none', 'important');
-					}
-				});
-			}
-
-			function initTabs() {
-				var menus = document.querySelectorAll('.tab-menu');
-				menus.forEach(function(menu) {
-					var currentBtn = menu.querySelector('.menu-link.current') || menu.querySelector('.menu-link[data-id]');
-					if (currentBtn) {
-						var targetId = currentBtn.getAttribute('data-id');
-						if (targetId) {
-							activateTab(menu, targetId);
-						}
-					}
-				});
-			}
-
-			if (document.readyState === 'loading') {
-				document.addEventListener('DOMContentLoaded', initTabs);
-			} else {
-				initTabs();
-			}
-
+	$cart_url = esc_url( home_url( '/cart/' ) );
+	$custom_js = <<<'EOT'
+			// Universal Carousel Navigation Arrows Click Handler (< and >)
 			document.addEventListener('click', function(e) {
-				var btn = e.target.closest('.tab-menu .menu-link[data-id]');
-				if (btn) {
-					var menu = btn.closest('.tab-menu');
-					var targetId = btn.getAttribute('data-id');
-					if (menu && targetId) {
-						activateTab(menu, targetId);
-					}
-					return;
-				}
+				var prevBtn = e.target.closest('.swiper-button-prev, .btn-carousel-prev, .btn-card-prev, .smooth-carousel-btn-prev, .btn-events-prev, .btn-timeline-prev, .btn-colors-prev, .btn-videos-prev');
+				var nextBtn = e.target.closest('.swiper-button-next, .btn-carousel-next, .btn-card-next, .smooth-carousel-btn-next, .btn-events-next, .btn-timeline-next, .btn-colors-next, .btn-videos-next');
 
-				// FAQ Accordion click toggle
-				var accordionHeader = e.target.closest('.accordion-visible-wrapper, .accordion-single');
-				if (accordionHeader && !e.target.closest('.accordion-hidden')) {
-					var single = accordionHeader.closest('.accordion-single');
-					if (!single) return;
+				if (prevBtn || nextBtn) {
+					var btn = prevBtn || nextBtn;
+					var isNext = !!nextBtn;
+					e.preventDefault();
 
-					var hiddenContent = single.querySelector('.accordion-hidden');
-					var svgIcon = single.querySelector('svg');
-					var visibleTitle = single.querySelector('.accordion-visible');
-					var visibleWrapper = single.querySelector('.accordion-visible-wrapper');
+					var container = btn.closest('.swiper-carousel, .carousel-media, .carousel-awards, .carousel-award, .key-features-section, .translators-carousel, .smooth-carousel-container, .swiper, section');
+					if (!container) return;
 
-					if (hiddenContent) {
-						var isHidden = window.getComputedStyle(hiddenContent).display === 'none';
-						if (isHidden) {
-							hiddenContent.style.setProperty('display', 'block', 'important');
-							if (svgIcon) svgIcon.classList.add('rotate');
-							if (visibleTitle) visibleTitle.classList.add('active');
-							if (visibleWrapper) visibleWrapper.classList.add('active');
+					var swiperEl = container.classList.contains('swiper') ? container : container.querySelector('.swiper');
+					if (swiperEl && swiperEl.swiper) {
+						if (isNext) {
+							swiperEl.swiper.slideNext();
 						} else {
-							hiddenContent.style.setProperty('display', 'none', 'important');
-							if (svgIcon) svgIcon.classList.remove('rotate');
-							if (visibleTitle) visibleTitle.classList.remove('active');
-							if (visibleWrapper) visibleWrapper.classList.remove('active');
+							swiperEl.swiper.slidePrev();
 						}
+						return;
+					}
+
+					var track = container.querySelector('.smooth-carousel-track, .swiper-wrapper');
+					if (track) {
+						var currentTransform = track.style.transform || '';
+						var currentX = 0;
+						var match = currentTransform.match(/translate3d\(([-0-9.]+)px/);
+						if (match) {
+							currentX = parseFloat(match[1]);
+						}
+
+						var firstSlide = track.querySelector('.swiper-slide, .smooth-carousel-slide, > div, > a');
+						var slideWidth = firstSlide ? (firstSlide.offsetWidth + 20) : 320;
+						var newX = isNext ? (currentX - slideWidth) : (currentX + slideWidth);
+
+						var maxScroll = -(track.scrollWidth - container.offsetWidth);
+						if (isNaN(maxScroll) || maxScroll > 0) maxScroll = 0;
+
+						if (newX < maxScroll) newX = 0;
+						if (newX > 0) newX = maxScroll;
+
+						track.style.transition = 'transform 0.4s cubic-bezier(0.25, 1, 0.5, 1)';
+						track.style.transform = 'translate3d(' + newX + 'px, 0, 0)';
 					}
 				}
 			});
-		})();
-	";
+
+			// Vasco E-Commerce Cart Engine
+			window.VascoCart = {
+				getCart: function() {
+					try { return JSON.parse(localStorage.getItem('vasco_cart')) || []; }
+					catch(e) { return []; }
+				},
+				saveCart: function(cart) {
+					localStorage.setItem('vasco_cart', JSON.stringify(cart));
+					this.updateBadge();
+				},
+				addItem: function(product) {
+					var cart = this.getCart();
+					var existing = cart.find(function(item) { return item.name === product.name; });
+					if (existing) {
+						existing.quantity += (product.quantity || 1);
+					} else {
+						cart.push({
+							id: product.id || 'prod-' + Date.now(),
+							name: product.name || 'Máy phiên dịch Vasco',
+							price: product.price || 9990000,
+							priceText: product.priceText || '9.990.000 đ',
+							image: product.image || '',
+							link: product.link || window.location.href,
+							quantity: product.quantity || 1
+						});
+					}
+					this.saveCart(cart);
+					this.showToast(product.name);
+				},
+				removeItem: function(id) {
+					var cart = this.getCart().filter(function(item) { return item.id !== id; });
+					this.saveCart(cart);
+				},
+				updateQuantity: function(id, qty) {
+					var cart = this.getCart();
+					var item = cart.find(function(i) { return i.id === id; });
+					if (item) {
+						item.quantity = Math.max(1, qty);
+						this.saveCart(cart);
+					}
+				},
+				clearCart: function() {
+					localStorage.removeItem('vasco_cart');
+					this.updateBadge();
+				},
+				getTotalCount: function() {
+					return this.getCart().reduce(function(sum, item) { return sum + item.quantity; }, 0);
+				},
+				getTotalPrice: function() {
+					return this.getCart().reduce(function(sum, item) {
+						var p = typeof item.price === 'number' ? item.price : parseFloat(String(item.price).replace(/[^0-9]/g, '')) || 0;
+						return sum + (p * item.quantity);
+					}, 0);
+				},
+				formatMoney: function(num) {
+					return new Intl.NumberFormat('vi-VN').format(num) + ' đ';
+				},
+				updateBadge: function() {
+					var count = this.getTotalCount();
+					var badges = document.querySelectorAll('.cart-count-badge, .header-cart-count, .cart-quantity-badge, [data-cart-count], .cart-products-count');
+					badges.forEach(function(badge) {
+						badge.textContent = count;
+						badge.style.display = count > 0 ? 'inline-flex' : 'none';
+					});
+				},
+				showToast: function(productName) {
+					var existing = document.getElementById('vasco-cart-toast');
+					if (existing) existing.remove();
+
+					var cartUrl = "<?php echo esc_url( home_url( '/cart/' ) ); ?>";
+					var toast = document.createElement('div');
+					toast.id = 'vasco-cart-toast';
+					toast.style.cssText = 'position:fixed;bottom:24px;right:24px;z-index:999999;background:#ffffff;color:#2D3139;padding:18px 24px;border-radius:14px;box-shadow:0 8px 32px rgba(0,0,0,0.18);display:flex;align-items:center;gap:16px;max-width:440px;border-left:5px solid #001480;animation:vascoSlideUp 0.35s ease;';
+					toast.innerHTML = '<div style="flex:1;"><strong style="display:block;font-size:15px;color:#001480;margin-bottom:2px;">Thành công!</strong><span style="font-size:14px;color:#555;">Đã thêm <b>' + (productName || 'Sản phẩm') + '</b> vào giỏ hàng.</span></div>' +
+						'<a href="/cart/" style="background:#001480;color:#ffffff;padding:9px 16px;border-radius:8px;text-decoration:none;font-weight:600;font-size:13px;white-space:nowrap;">Xem giỏ hàng</a>' +
+						'<button onclick="this.parentElement.remove()" style="background:none;border:none;font-size:20px;cursor:pointer;color:#999;padding:0 4px;line-height:1;">&times;</button>';
+					document.body.appendChild(toast);
+
+					setTimeout(function() {
+						if (toast && toast.parentElement) toast.remove();
+					}, 4500);
+				}
+			};
+
+			if (document.readyState === 'loading') {
+				document.addEventListener('DOMContentLoaded', function() { window.VascoCart.updateBadge(); });
+			} else {
+				window.VascoCart.updateBadge();
+			}
+
+			document.addEventListener('click', function(ev) {
+				var btn = ev.target.closest('.btn-add-to-cart, .add-to-cart, [data-button-action="add-to-cart"], .add_to_cart_button, .product-add-to-cart button, .btn-primary[href*="cart"], .btn-black[href*="cart"]');
+				if (btn) {
+					var isCartPageLink = btn.tagName === 'A' && btn.getAttribute('href') && btn.getAttribute('href').indexOf('/cart/') !== -1 && !btn.classList.contains('btn-add-to-cart');
+					if (isCartPageLink) return;
+
+					ev.preventDefault();
+					var container = btn.closest('.product-detail, .product-container, .product-single, section, body') || document;
+					var nameEl = container.querySelector('.product-title, h1, .product-name, [itemprop="name"]');
+					var priceEl = container.querySelector('.current-price, .price, .product-price, .price-new, [itemprop="price"]');
+					var imgEl = container.querySelector('.product-main-image img, .product-cover img, .gallery img, img[itemprop="image"]');
+
+					var productName = nameEl ? nameEl.textContent.trim() : 'Máy phiên dịch Vasco';
+					var priceText = priceEl ? priceEl.textContent.trim() : '9.990.000 đ';
+					var imgUrl = imgEl ? imgEl.src : '';
+					var priceNum = parseFloat(priceText.replace(/[^0-9]/g, '')) || 9990000;
+
+					window.VascoCart.addItem({
+						id: 'prod-' + productName.toLowerCase().replace(/[^a-z0-9]/gi, '-'),
+						name: productName,
+						price: priceNum,
+						priceText: priceText,
+						image: imgUrl,
+						link: window.location.href,
+						quantity: 1
+					});
+				}
+			});
+EOT;
+
 	wp_add_inline_script( 'jquery', $custom_js );
 }
 add_action( 'wp_enqueue_scripts', 'vasco_theme_enqueue_all_assets' );

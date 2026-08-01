@@ -20,9 +20,9 @@ get_header();
 <nav aria-label="Breadcrumbs" class="breadcrumb">
 <ol>
 <li class="body-16">
-<a href="<?php echo esc_url( home_url( "/" ) ); ?>"><span class="breadcrumb-link">Home</span></a><span class="breadcrumb-divider">&gt;</span>
+<a href="<?php echo esc_url( home_url( "/" ) ); ?>"><span class="breadcrumb-link">Trang chủ</span></a><span class="breadcrumb-divider">&gt;</span>
 </li>
-<li><span aria-current="page" class="breadcrumb-current body-16">Features</span></li>
+<li><span aria-current="page" class="breadcrumb-current body-16">Tính năng</span></li>
 </ol>
 </nav>
 </div>
@@ -55,7 +55,7 @@ get_header();
 </div>
 </div>
 <div class="doublebox-absolute">
-<img alt="A man and woman stand in a sunny field, engaged in a lively conversation using an electronic translator. " src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/features/features-new-1.webp" ); ?>"/>
+<img alt="A man and woman stand in a sunny field, engaged in a lively conversation using an electronic translator. " src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/how-vasco/how-vasco-section-new-1.webp" ); ?>"/>
 </div>
 </div>
 <div class="doublebox right" style="background-color: #efece8; color: #efece8;">
@@ -160,7 +160,7 @@ get_header();
 <section class="features-swiper">
 <div class="container">
 <div class="features-section-top">
-<h2 class="h2-notosans">other features</h2>
+<h2 class="h2-notosans">Các tính năng hữu ích khác</h2>
 </div>
 <div class="features-flex">
 <div class="features-miniatures">

@@ -20,10 +20,10 @@ get_header();
 <nav aria-label="Breadcrumbs" class="breadcrumb">
 <ol>
 <li class="body-16">
-<a href="<?php echo esc_url( home_url( "/" ) ); ?>"><span class="breadcrumb-link">Home</span></a><span class="breadcrumb-divider">&gt;</span>
+<a href="<?php echo esc_url( home_url( "/" ) ); ?>"><span class="breadcrumb-link">Trang chủ</span></a><span class="breadcrumb-divider">&gt;</span>
 </li>
 <li>
-<a href="<?php echo esc_url( home_url( "/" ) ); ?>"><span class="breadcrumb-link">Features</span></a><span class="breadcrumb-divider">&gt;</span>
+<a href="<?php echo esc_url( home_url( "/" ) ); ?>"><span class="breadcrumb-link">Tính năng</span></a><span class="breadcrumb-divider">&gt;</span>
 </li>
 <li><span aria-current="page" class="breadcrumb-current body-16">Dịch giọng nói</span></li>
 </ol>
@@ -34,7 +34,7 @@ get_header();
 <section class="feature-voice">
 <picture>
 <source media="(min-width: 700px)"/>
-<img alt="[fe_general.doublebox1.img1.alt]" class="img-main" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/features/features-new-1.webp" ); ?>"/>
+<img alt="[fe_general.doublebox1.img1.alt]" class="img-main" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/how-vasco/how-vasco-section-new-1.webp" ); ?>"/>
 </picture>
 <div class="container">
 <div class="heading-wrapper heading-wrapper-voice">
@@ -48,78 +48,78 @@ get_header();
 <div class="voice-box-wrapper" style="background-color: #D9ECEF;">
 <div class="voice-box-left container">
 <div class="voice-text-box">
-<h2 class="h1">Experience the world without language barriers</h2>
-<p class="voice-box-subtitle">Dreaming of traveling the world, but you find language barriers intimidating? Imagine being able to converse easily with locals in their language.</p>
-<p class="body-16 box-text-upper">With the Vasco speech translator, you can communicate in 82 languages, instantly! Speak into the mic and the device will listen and translate your words into your selected language.</p>
-<p class="body-16">Our verbal translator comes with <b>free lifetime connectivity</b>. That means no more expensive roaming data. Just reliable, accurate translation, wherever and whenever you need it!</p>
-<ul class="body-16"><li>Easily translate speech from other languages</li><li>Ask for directions, make reservations, and inquire about pricing or hotel information abroad</li>
-<li>Communicate like a native speaker anywhere in the world</li></ul>
+<h2 class="h1">Trải nghiệm thế giới không rào cản ngôn ngữ</h2>
+<p class="voice-box-subtitle">Bạn mơ ước du lịch thế giới nhưng lo lắng về rào cản ngôn ngữ? Hãy tưởng tượng bạn có thể trò chuyện dễ dàng với người bản địa bằng chính ngôn ngữ của họ.</p>
+<p class="body-16 box-text-upper">Với máy phiên dịch Vasco, bạn có thể giao tiếp tức thì bằng 82 ngôn ngữ! Chỉ cần nói vào micro, thiết bị sẽ lắng nghe và dịch lời bạn sang ngôn ngữ đã chọn.</p>
+<p class="body-16">Máy phiên dịch đi kèm <b>kết nối Internet miễn phí trọn đời</b>. Không còn lo lắng về phí chuyển vùng dữ liệu đắt đỏ. Dịch thuật chính xác và tin cậy bất cứ khi nào bạn cần!</p>
+<ul class="body-16"><li>Dịch lời nói từ các ngôn ngữ khác một cách dễ dàng</li><li>Hỏi đường, đặt phòng, hỏi giá và thông tin khách sạn ở nước ngoài</li>
+<li>Giao tiếp tự nhiên như người bản xứ ở bất kỳ đâu</li></ul>
 <div class="last-box-element">
 <a class="btn btn-md btn-black body-16 last-box-element" href="../translators/vasco-translator-v4.html#product-languages" target="_blank">
-							Tìm kiếm supported languages
+							Kiểm tra danh sách ngôn ngữ hỗ trợ
 						</a>
 </div>
 </div>
 <div class="voice-img-box">
-<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/features/voice-new-1.webp" ); ?>"/>
+<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/voice.webp" ); ?>"/>
 </div>
 </div>
 </div>
 <div class="voice-box-wrapper" style="background-color: #EFECE8;">
 <div class="voice-box-right container">
 <div class="voice-img-box">
-<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/features/voice-new-2.webp" ); ?>"/>
+<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/voice_selection.webp" ); ?>"/>
 </div>
 <div class="voice-text-box" id="translation-engines">
-<h2 class="h1">How does the Dịch giọng nói work?</h2>
-<p class="body-16 box-paragraph-gap">Translate audio to text, and then to voice again. See how verbal translator works step by step:</p>
+<h2 class="h1">Tính năng Dịch giọng nói hoạt động như thế nào?</h2>
+<p class="body-16 box-paragraph-gap">Chuyển đổi âm thanh thành văn bản, sau đó phát lại bằng giọng nói. Xem các bước hoạt động:</p>
 <div class="voice-proces-wrapper">
-<div class="proces-img-wrapper"><img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/voice-automatic.svg" ); ?>"/>
+<div class="proces-img-wrapper"><img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/key-features/key-section-1.svg" ); ?>"/>
 </div>
-<h3 class="title-step">You speak into the mic</h3>
-<p class="voice-proces-paragraph">Automatic speech recognition converts voice to text</p>
-<div class="proces-img-wrapper"><img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/voice-machine.svg" ); ?>"/>
+<h3 class="title-step">Bạn nói vào micro</h3>
+<p class="voice-proces-paragraph">Nhận diện giọng nói tự động chuyển lời nói thành văn bản</p>
+<div class="proces-img-wrapper"><img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/key-features/key-section-3.svg" ); ?>"/>
 </div>
-<h3 class="title-step">The machine translates</h3>
-<p class="voice-proces-paragraph">Powered by 10 translation engines</p>
-<div class="proces-img-wrapper"><img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/voice-text-to-speach.svg" ); ?>"/>
+<h3 class="title-step">Máy phiên dịch xử lý</h3>
+<p class="voice-proces-paragraph">Được vận hành bởi 10 công cụ dịch thuật hàng đầu</p>
+<div class="proces-img-wrapper"><img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/key-features/key-section-4.svg" ); ?>"/>
 </div>
-<h3 class="title-step">Text is converted to speech</h3>
-<p class="voice-proces-paragraph">Loud and clear text-to-voice translation</p>
+<h3 class="title-step">Văn bản chuyển thành giọng nói</h3>
+<p class="voice-proces-paragraph">Phát âm bản dịch bằng giọng nói rõ ràng, vang xa</p>
 </div>
-<p class="body-16 last-box-element">The process is easy and fast. Translate voice recording to text or to audio as per your preferences.</p>
+<p class="body-16 last-box-element">Quy trình cực kỳ nhanh chóng và dễ dàng. Dịch giọng nói thành văn bản hoặc âm thanh theo ý muốn.</p>
 </div>
 </div>
 </div>
 <div class="voice-box-wrapper" style="background-color: #FAEDE5;">
 <div class="voice-box-left container">
 <div class="voice-text-box">
-<h2 class="h1">Communicate freely with colleagues from abroad</h2>
-<p class="body-16 box-paragraph-gap">Our Dịch giọng nói device helps you break language barriers, wherever you go.</p>
-<p class="body-16">Whether you’re on a business trip, consulting with clients, or socializing with friends or colleagues, Vasco makes communication comfortable.</p>
+<h2 class="h1">Tự do giao tiếp với đối tác và đồng nghiệp quốc tế</h2>
+<p class="body-16 box-paragraph-gap">Thiết bị Dịch giọng nói Vasco giúp bạn xóa bỏ mọi rào cản ngôn ngữ.</p>
+<p class="body-16">Dù bạn đi công tác, tư vấn khách hàng hay giao lưu với bạn bè, Vasco mang lại sự an tâm tuyệt đối.</p>
 <ul class="body-16 last-box-element">
-<li>Feel confident at international job</li>
-<li>Thrive in multicultural work environments</li>
-<li>Discuss details with foreign partners confidently</li></ul>
+<li>Tự tin trong các môi trường công việc quốc tế</li>
+<li>Phát triển mạnh mẽ trong môi trường làm việc đa văn hóa</li>
+<li>Thảo luận chi tiết với các đối tác nước ngoài một cách tự tin</li></ul>
 </div>
 <div class="voice-img-box">
-<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/features/voice-new-3.webp" ); ?>"/>
+<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/the_new/target_groups_v4.webp" ); ?>"/>
 </div>
 </div>
 </div>
 <div class="voice-box-wrapper" style="background-color: #EFECE8;">
 <div class="voice-box-right container">
 <div class="voice-img-box">
-<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/features/voice-new-4.webp" ); ?>"/>
+<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/v4/packshots-v4-func-us.webp" ); ?>"/>
 </div>
 <div class="voice-text-box">
-<h2 class="h1">No more misunderstandings</h2>
-<p class="body-16 box-paragraph-gap">Vasco speech translator brings you the most accurate and thorough translations of any device on the market. Our powerful microphone reduces background noise by up to 99%, and the speakers project clearly, even in crowded places.</p>
+<h2 class="h1">Không còn nỗi lo hiểu nhầm</h2>
+<p class="body-16 box-paragraph-gap">Máy phiên dịch Vasco mang lại bản dịch chính xác nhất trên thị trường. Micro lọc tiếng ồn đến 99% và loa công suất lớn giúp âm thanh luôn rõ ràng ngay cả ở nơi đông người.</p>
 <p class="body-16">You can also translate audio with strong loudspeakers (up to 99 dB). This volume can be compared to a shouted conversation, motorcycle or busy street. </p>
 <ul class="body-16 last-box-element">
-<li>Enjoy fluent, natural conversations</li>
-<li>Accurate translations lower the chances of misunderstandings, especially during emergencies</li>
-<li>Get your message across clearly and with precision</li>
+<li>Tận hưởng cuộc trò chuyện trôi chảy và tự nhiên</li>
+<li>Bản dịch chính xác giảm thiểu nguy cơ hiểu nhầm, đặc biệt trong tình huống khẩn cấp</li>
+<li>Truyền tải thông điệp của bạn rõ ràng và chính xác</li>
 </ul>
 </div>
 </div>
@@ -127,18 +127,18 @@ get_header();
 <div class="voice-box-wrapper" style="background-color: #E2F3DF;">
 <div class="voice-box-left container">
 <div class="voice-text-box">
-<h2 class="h1">Speak 82 languages across nearly 200 countries</h2>
-<p class="voice-box-subtitle">Vasco speech translator comes with a built-in SIM card, providing free lifetime connectivity for translations.</p>
-<p class="body-16 box-text-upper">You can communicate with friends, colleagues, and business people almost anywhere in the world.</p>
+<h2 class="h1">Nói 82 ngôn ngữ trên gần 200 quốc gia</h2>
+<p class="voice-box-subtitle">Máy phiên dịch Vasco tích hợp sẵn SIM kết nối Internet miễn phí trọn đời cho dịch thuật.</p>
+<p class="body-16 box-text-upper">Bạn có thể giao tiếp với bạn bè, đồng nghiệp và đối tác ở bất kỳ đâu trên thế giới.</p>
 <ul class="body-16">
-<li>Stay connected and communicate across nearly 200 countries</li>
-<li>No data limits or any additional costs</li>
+<li>Luôn kết nối và giao tiếp tại gần 200 quốc gia</li>
+<li>Không giới hạn dữ liệu, không phí phát sinh</li>
 <li>Chìa khóa bỏ túi để thấu hiểu thế giới</li>
 </ul>
 <div class="voice-btn-wrapper last-box-element">
 <div>
 <a class="btn btn-md btn-black body-16 last-box-element" href="../translators/vasco-translator-v4.html#product-languages" target="_blank">
-								Tìm kiếm supported languages
+								Kiểm tra danh sách ngôn ngữ hỗ trợ
 							</a>
 </div>
 <div>
@@ -147,14 +147,14 @@ get_header();
 </div>
 </div>
 <div class="voice-img-box">
-<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/device-photos/features/en/v4_red.webp" ); ?>"/>
+<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/v4.webp" ); ?>"/>
 </div>
 </div>
 </div>
 <div class="voice-box-wrapper" style="background-color: #EFECE8;">
 <div class="voice-box-right container">
 <div class="voice-img-box">
-<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/device-photos/features/en/m3_mint.webp" ); ?>"/>
+<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/m4.webp" ); ?>"/>
 </div>
 <div class="voice-text-box">
 <h2 class="h1">More Than a Smart Translator</h2>
@@ -174,13 +174,13 @@ get_header();
 <section aria-labelledby="vasco-products-heading" class="vasco-products" tabindex="0">
 <div class="container">
 <div class="products-flex">
-<h2 class="h2-notosans" id="vasco-products-heading">Products with that feature</h2>
+<h2 class="h2-notosans" id="vasco-products-heading">Các sản phẩm tích hợp tính năng này</h2>
 <div class="products-wrapper">
 <div aria-roledescription="carousel" class="swiper swiper-products-slider" role="region">
 <div class="swiper-wrapper" role="list">
 <div aria-labelledby="product-38" class="swiper-slide" role="listitem" tabindex="0">
 <div class="box">
-<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/385-home_default/a.jpg" ); ?>"/>
+<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/q1.webp" ); ?>"/>
 <div class="product-description">
 <h3 aria-label="q1.name]" id="product-38" tabindex="0">
 												Vasco Translator Q1</h3>
@@ -193,7 +193,7 @@ get_header();
 </div>
 <div aria-labelledby="product-62" class="swiper-slide" role="listitem" tabindex="0">
 <div class="box">
-<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/488-home_default/a.jpg" ); ?>"/>
+<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/e1.webp" ); ?>"/>
 <div class="product-description">
 <h3 aria-label="m4.name]" id="product-62" tabindex="0">
 												Vasco Translator M4</h3>
@@ -206,7 +206,7 @@ get_header();
 </div>
 <div aria-labelledby="product-14" class="swiper-slide" role="listitem" tabindex="0">
 <div class="box">
-<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/343-home_default/a.jpg" ); ?>"/>
+<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/v4.webp" ); ?>"/>
 <div class="product-description">
 <h3 aria-label="v4.name]" id="product-14" tabindex="0">
 												Vasco Translator V4</h3>

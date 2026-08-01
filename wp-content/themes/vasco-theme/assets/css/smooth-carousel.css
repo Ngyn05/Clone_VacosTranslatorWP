@@ -44,7 +44,7 @@
   transition: opacity 300ms ease;
 }
 
-/* Navigation Arrow Buttons - Hidden as per request */
+/* Navigation Arrow Buttons - Hidden per user request */
 .smooth-carousel-btn,
 .smooth-carousel-btn-prev,
 .smooth-carousel-btn-next,
@@ -53,6 +53,9 @@
 .btn-carousel-prev,
 .btn-carousel-next {
   display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
 }
 
 /* Prevent image dragging interference */

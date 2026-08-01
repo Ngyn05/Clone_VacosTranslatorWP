@@ -162,10 +162,56 @@
       }
     });
 
-    // Hide all Previous & Next buttons
-    const existingNavBtns = container.querySelectorAll('.swiper-button-prev, .swiper-button-next, .btn-carousel-prev, .btn-carousel-next, .smooth-carousel-btn');
-    existingNavBtns.forEach(btn => {
-      btn.style.display = 'none';
+    // Show and bind Previous & Next navigation buttons
+    let parentSec = container.closest('section') || container.closest('.trustedby-logo-carousel-wrapper') || container.parentElement;
+    
+    const prevSelectors = '.swiper-button-prev, .btn-carousel-prev, .btn-card-prev, .smooth-carousel-btn-prev, .btn-events-prev, .btn-timeline-prev, .btn-colors-prev, .btn-videos-prev';
+    const nextSelectors = '.swiper-button-next, .btn-carousel-next, .btn-card-next, .smooth-carousel-btn-next, .btn-events-next, .btn-timeline-next, .btn-colors-next, .btn-videos-next';
+
+    const prevBtns = Array.from(new Set([
+      ...Array.from(container.querySelectorAll(prevSelectors)),
+      ...(parentSec ? Array.from(parentSec.querySelectorAll(prevSelectors)) : [])
+    ]));
+
+    const nextBtns = Array.from(new Set([
+      ...Array.from(container.querySelectorAll(nextSelectors)),
+      ...(parentSec ? Array.from(parentSec.querySelectorAll(nextSelectors)) : [])
+    ]));
+
+    prevBtns.forEach(btn => {
+      btn.style.setProperty('display', 'flex', 'important');
+      btn.style.setProperty('opacity', '1', 'important');
+      btn.style.setProperty('visibility', 'visible', 'important');
+      btn.style.setProperty('pointer-events', 'auto', 'important');
+      btn.classList.remove('swiper-button-disabled');
+      if (!btn.dataset.smoothBound) {
+        btn.dataset.smoothBound = 'true';
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          prevSlide();
+          stopAutoplay();
+          if (!isManuallyPaused) resumeAutoplayLater();
+        });
+      }
+    });
+
+    nextBtns.forEach(btn => {
+      btn.style.setProperty('display', 'flex', 'important');
+      btn.style.setProperty('opacity', '1', 'important');
+      btn.style.setProperty('visibility', 'visible', 'important');
+      btn.style.setProperty('pointer-events', 'auto', 'important');
+      btn.classList.remove('swiper-button-disabled');
+      if (!btn.dataset.smoothBound) {
+        btn.dataset.smoothBound = 'true';
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          nextSlide();
+          stopAutoplay();
+          if (!isManuallyPaused) resumeAutoplayLater();
+        });
+      }
     });
 
     // Mouse Drag & Touch Swipe Event Listeners

@@ -928,9 +928,9 @@
 	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets/js/smooth-carousel.js" ); ?>"></script>
 	<script id="translators-carousel-engine">
 		(function () {
-			function initTranslatorsCarouselController() {
-				var carousel = document.querySelector('.translators-carousel');
-				if (!carousel) return;
+			function initSingleCarousel(carousel) {
+				if (!carousel || carousel.dataset.initialized === 'true') return;
+				carousel.dataset.initialized = 'true';
 
 				var navButtons = carousel.querySelectorAll('.button-navigation .btn');
 				var featuresBlocks = carousel.querySelectorAll('.absolute-box-product-features [data-slide]');
@@ -946,32 +946,32 @@
 					{
 						name: 'Vasco Translator Q1',
 						desc: 'Máy phiên dịch duy nhất có tính năng nhân bản giọng nói và dịch cuộc gọi',
-						link: './translators/vasco-translator-q1.html',
+						link: '<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>',
 						id: 'Q1'
 					},
 					{
 						name: 'Vasco Translator E1',
 						desc: 'Tai nghe phiên dịch cho cuộc trò chuyện tự nhiên và mượt mà',
-						link: './translators/vasco-translator-e1.html',
+						link: '<?php echo esc_url( home_url( "/translators/vasco-translator-e1/" ) ); ?>',
 						id: 'E1'
 					},
 					{
 						name: 'Vasco Translator M4',
 						desc: 'Máy phiên dịch bỏ túi nhỏ gọn, dễ sử dụng dành cho mọi người',
-						link: './translators/vasco-translator-m4.html',
+						link: '<?php echo esc_url( home_url( "/translators/vasco-translator-m4/" ) ); ?>',
 						id: 'M4'
 					},
 					{
 						name: 'Vasco Translator V4',
 						desc: 'Máy phiên dịch tức thì màn hình lớn 5 inch sắc nét',
-						link: './translators/vasco-translator-v4.html',
+						link: '<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>',
 						id: 'V4'
 					}
 				];
 
 				var currentIndex = 0;
 				var autoPlayTimer = null;
-				var autoPlayDelay = 2500; // 2.5s per slide (Faster auto scroll)
+				var autoPlayDelay = 3500; // 3.5s smooth auto scroll
 
 				function goToSlide(index) {
 					if (index < 0) index = productsData.length - 1;
@@ -987,17 +987,25 @@
 						}
 					});
 
-					// 2. Update Features List (Left Column)
+					// 2. Update Features List (Left Column) with animation
 					featuresBlocks.forEach(function (block) {
 						var slideAttr = parseInt(block.getAttribute('data-slide'), 10);
 						if (slideAttr === currentIndex) {
 							block.classList.add('visible');
 							block.style.display = 'flex';
-							block.style.opacity = '1';
+							setTimeout(function() {
+								block.style.opacity = '1';
+								block.style.transform = 'translateX(0)';
+							}, 20);
 						} else {
 							block.classList.remove('visible');
-							block.style.display = 'none';
 							block.style.opacity = '0';
+							block.style.transform = 'translateX(-15px)';
+							setTimeout(function() {
+								if (!block.classList.contains('visible')) {
+									block.style.display = 'none';
+								}
+							}, 350);
 						}
 					});
 
@@ -1021,16 +1029,27 @@
 						productLinkEl.setAttribute('data-product-id', currentProduct.id);
 					}
 
-					// 4. Update Product Foreground Slide (Center image)
+					// 4. Update Product Foreground Slide (Center image matched by data-product-id or index)
 					fgSlides.forEach(function (slide, idx) {
-						if (idx === currentIndex) {
+						var prodId = slide.getAttribute('data-product-id');
+						var isTarget = prodId ? (prodId === currentProduct.id) : (idx === currentIndex);
+
+						if (isTarget) {
+							slide.classList.add('active-slide');
 							slide.style.display = 'flex';
-							slide.style.opacity = '1';
-							slide.style.transform = 'scale(1)';
+							setTimeout(function() {
+								slide.style.opacity = '1';
+								slide.style.transform = 'scale(1) translateY(0)';
+							}, 20);
 						} else {
-							slide.style.display = 'none';
+							slide.classList.remove('active-slide');
 							slide.style.opacity = '0';
-							slide.style.transform = 'scale(0.85)';
+							slide.style.transform = 'scale(0.88) translateY(10px)';
+							setTimeout(function() {
+								if (!slide.classList.contains('active-slide')) {
+									slide.style.display = 'none';
+								}
+							}, 350);
 						}
 					});
 
@@ -1101,10 +1120,14 @@
 				startAutoScroll();
 			}
 
+			function initAllCarousels() {
+				document.querySelectorAll('.translators-carousel').forEach(initSingleCarousel);
+			}
+
 			if (document.readyState === 'loading') {
-				document.addEventListener('DOMContentLoaded', initTranslatorsCarouselController);
+				document.addEventListener('DOMContentLoaded', initAllCarousels);
 			} else {
-				initTranslatorsCarouselController();
+				initAllCarousels();
 			}
 		})();
 	</script>

@@ -20,10 +20,10 @@ get_header();
 <nav aria-label="Breadcrumbs" class="breadcrumb">
 <ol>
 <li class="body-16">
-<a href="<?php echo esc_url( home_url( "/" ) ); ?>"><span class="breadcrumb-link">Home</span></a><span class="breadcrumb-divider">&gt;</span>
+<a href="<?php echo esc_url( home_url( "/" ) ); ?>"><span class="breadcrumb-link">Trang chủ</span></a><span class="breadcrumb-divider">&gt;</span>
 </li>
 <li>
-<a href="<?php echo esc_url( home_url( "/" ) ); ?>"><span class="breadcrumb-link">Features</span></a><span class="breadcrumb-divider">&gt;</span>
+<a href="<?php echo esc_url( home_url( "/" ) ); ?>"><span class="breadcrumb-link">Tính năng</span></a><span class="breadcrumb-divider">&gt;</span>
 </li>
 <li><span aria-current="page" class="breadcrumb-current body-16">Dịch hình ảnh</span>
 </li>
@@ -35,7 +35,7 @@ get_header();
 <section class="feature-voice">
 <picture>
 <source media="(min-width: 700px)"/>
-<img alt="[fe_general.doublebox1.img1.alt]" class="img-main" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/features/features-new-1.webp" ); ?>"/>
+<img alt="[fe_general.doublebox1.img1.alt]" class="img-main" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/how-vasco/how-vasco-section-new-1.webp" ); ?>"/>
 </picture>
 <div class="container">
 <div class="heading-wrapper heading-wrapper-photo">
@@ -56,7 +56,7 @@ get_header();
 <ul class="body-16"><li>Quick image translation</li><li>Độ chính xác 99% dựa trên 10 công cụ dịch thuật</li><li>Understand foreign alphabets through picture translation</li></ul>
 <div class="last-box-element">
 <a class="btn btn-md btn-black body-16 last-box-element" href="../translators/vasco-translator-v4.html#product-languages" target="_blank">
-							Tìm kiếm supported languages
+							Kiểm tra danh sách ngôn ngữ hỗ trợ
 						</a>
 </div>
 </div>
@@ -104,7 +104,7 @@ get_header();
 <div class="voice-btn-wrapper last-box-element">
 <div>
 <a class="btn btn-md btn-black body-16 last-box-element mt-0" href="../translators/vasco-translator-v4.html#product-languages" target="_blank">
-								Tìm kiếm supported languages
+								Kiểm tra danh sách ngôn ngữ hỗ trợ
 							</a>
 </div>
 <div>
@@ -123,7 +123,7 @@ get_header();
 <ul class="body-16"><li>Translate speech in 82 languages</li><li>Translate text in 107 languages</li><li>Learn new vocabulary in 28 languages</li><li>Translate multilingual conversations for up to 100 members</li></ul>
 </div>
 <div class="voice-img-box">
-<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/device-photos/features/en/v4_red.webp" ); ?>"/>
+<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/v4.webp" ); ?>"/>
 </div>
 </div>
 </div>
@@ -131,13 +131,13 @@ get_header();
 <section aria-labelledby="vasco-products-heading" class="vasco-products" tabindex="0">
 <div class="container">
 <div class="products-flex">
-<h2 class="h2-notosans" id="vasco-products-heading">Products with that feature</h2>
+<h2 class="h2-notosans" id="vasco-products-heading">Các sản phẩm tích hợp tính năng này</h2>
 <div class="products-wrapper">
 <div aria-roledescription="carousel" class="swiper swiper-products-slider" role="region">
 <div class="swiper-wrapper" role="list">
 <div aria-labelledby="product-38" class="swiper-slide" role="listitem" tabindex="0">
 <div class="box">
-<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/385-home_default/a.jpg" ); ?>"/>
+<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/q1.webp" ); ?>"/>
 <div class="product-description">
 <h3 aria-label="q1.name]" id="product-38" tabindex="0">
 												Vasco Translator Q1</h3>
@@ -150,7 +150,7 @@ get_header();
 </div>
 <div aria-labelledby="product-62" class="swiper-slide" role="listitem" tabindex="0">
 <div class="box">
-<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/488-home_default/a.jpg" ); ?>"/>
+<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/e1.webp" ); ?>"/>
 <div class="product-description">
 <h3 aria-label="m4.name]" id="product-62" tabindex="0">
 												Vasco Translator M4</h3>
@@ -163,7 +163,7 @@ get_header();
 </div>
 <div aria-labelledby="product-14" class="swiper-slide" role="listitem" tabindex="0">
 <div class="box">
-<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/343-home_default/a.jpg" ); ?>"/>
+<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/v4.webp" ); ?>"/>
 <div class="product-description">
 <h3 aria-label="v4.name]" id="product-14" tabindex="0">
 												Vasco Translator V4</h3>

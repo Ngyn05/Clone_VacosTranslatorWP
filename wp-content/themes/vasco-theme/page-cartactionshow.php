@@ -563,7 +563,7 @@ with other Vasco devices" data-product-name="E1">
 </div>
 <hr/>
 <div class="container" id="awards-section">
-<h2 class="h2-notosans text-center">awards</h2>
+<h2 class="h2-notosans text-center">Giải thưởng</h2>
 <div aria-label="carousel with awards" aria-roledescription="carousel" class="swiper swiper-carousel autoplay loop carousel-award" role="region">
 <a class="sr-only focusable" href="#after-award-carousel">Skip carousel</a>
 <div class="swiper-wrapper" role="list">

@@ -20,7 +20,7 @@ get_header();
 <nav aria-label="Breadcrumbs" class="breadcrumb">
 <ol>
 <li class="body-16">
-<a href="<?php echo esc_url( home_url( "/" ) ); ?>"><span class="breadcrumb-link">Home</span></a><span class="breadcrumb-divider">&gt;</span>
+<a href="<?php echo esc_url( home_url( "/" ) ); ?>"><span class="breadcrumb-link">Trang chủ</span></a><span class="breadcrumb-divider">&gt;</span>
 </li>
 <li><span aria-current="page" class="breadcrumb-current body-16">Sitemap</span></li>
 </ol>

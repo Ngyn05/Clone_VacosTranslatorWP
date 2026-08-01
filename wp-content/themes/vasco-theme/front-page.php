@@ -64,7 +64,7 @@ get_header();
 												</video>
 												<button aria-controls="index-hero-video" aria-label="Play video"
 													aria-pressed="false" class="video-toggle" data-play="Play video"
-													data-stop="Pause video" type="button">
+													data-stop="Tạm dừng video" type="button">
 													<img alt="" class="video-toggle-icon"
 														src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>" />
 												</button>
@@ -107,7 +107,7 @@ get_header();
 									class="swiper swiper-foreground" role="region">
 									<div class="swiper-wrapper">
 										<div class="swiper-slide"
-											data-product-desc="The only translator with voice cloning and call translation features"
+											data-product-desc="Máy phiên dịch duy nhất tích hợp công nghệ nhân bản giọng nói và dịch cuộc gọi"
 											data-product-id="Q1"
 											data-product-link="./translators/vasco-translator-q1.html"
 											data-product-name="Vasco Translator Q1">
@@ -121,7 +121,7 @@ get_header();
 											</a>
 										</div>
 										<div class="swiper-slide"
-											data-product-desc="Translator earbuds for seamless conversations"
+											data-product-desc="Tai nghe phiên dịch cho cuộc trò chuyện trôi chảy không gián đoạn"
 											data-product-id="E1"
 											data-product-link="./translators/vasco-translator-e1.html"
 											data-product-name="Vasco Translator E1">
@@ -135,7 +135,7 @@ get_header();
 											</a>
 										</div>
 										<div class="swiper-slide"
-											data-product-desc="Lightweight and easy-to-use pocket translator for everyone"
+											data-product-desc="Máy phiên dịch bỏ túi siêu nhẹ và dễ sử dụng cho mọi người"
 											data-product-id="M4"
 											data-product-link="./translators/vasco-translator-m4.html"
 											data-product-name="Vasco Translator M4">
@@ -149,7 +149,7 @@ get_header();
 											</a>
 										</div>
 										<div class="swiper-slide"
-											data-product-desc="Electronic instant translator device"
+											data-product-desc="Thiết bị máy phiên dịch cầm tay tức thì"
 											data-product-id="V4"
 											data-product-link="./translators/vasco-translator-v4.html"
 											data-product-name="Vasco Translator V4">
@@ -467,7 +467,7 @@ get_header();
 											<p class="number-description" id="lang-desc">
 												ngôn ngữ trong túi bạn</p>
 											<a aria-describedby="lang-number lang-desc" class="btn btn-black btn-md"
-												href="./translators/vasco-translator-v4.html#product-languages">
+												href="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>">
 												Kiểm tra ngôn ngữ
 											</a>
 										</div>
@@ -478,7 +478,7 @@ get_header();
 											<p class="number-description" id="country-desc">
 												quốc gia với kết nối miễn phí để dịch</p>
 											<a aria-describedby="country-number country-desc"
-												class="btn btn-black btn-md" href="./coverage-map.html">
+												class="btn btn-black btn-md" href="<?php echo esc_url( home_url( "/coverage-map/" ) ); ?>">
 												Xem vùng phủ sóng internet
 											</a>
 										</div>
@@ -490,7 +490,7 @@ get_header();
 												công cụ dịch thuật</p>
 											<a aria-describedby="engines-number engines-desc"
 												class="btn btn-black btn-md"
-												href="./features/translate-voice.html#translation-engines">
+												href="<?php echo esc_url( home_url( "/features/translate-voice/" ) ); ?>">
 												Tìm hiểu thêm <span class="text-sr-only">về công cụ dịch
 													thuật</span></a>
 										</div>
@@ -501,7 +501,7 @@ get_header();
 											<p class="number-description" id="awards-desc">
 												giải thưởng danh giá</p>
 											<a aria-describedby="awards-number awards-desc" class="btn btn-black btn-md"
-												href="#awards-section" id="awards-scroll">
+												href="<?php echo esc_url( home_url( "/#awards-section" ) ); ?>" id="awards-scroll">
 												Tìm hiểu thêm <span class="text-sr-only">về các giải thưởng</span></a>
 										</div>
 										<div class="vasco-numbers-single-wrapper" role="listitem" tabindex="0">
@@ -511,7 +511,7 @@ get_header();
 											<p class="number-description" id="features-desc">
 												tính năng dịch thuật hữu ích</p>
 											<a aria-describedby="features-number features-desc"
-												class="btn btn-black btn-md" href="./features/index.html">
+												class="btn btn-black btn-md" href="<?php echo esc_url( home_url( "/features/" ) ); ?>">
 												Tìm hiểu thêm <span class="text-sr-only">về các tính năng hữu ích của
 													máy phiên dịch</span></a>
 										</div>
@@ -527,8 +527,7 @@ get_header();
 											<a class="sr-only focusable" href="#after-feature-carousel">Skip
 												carousel</a>
 											<div class="swiper-wrapper">
-												<a aria-hidden="true" class="swiper-slide"
-													href="./features/translate-voice.html" tabindex="-1">
+												<a class="swiper-slide" href="<?php echo esc_url( home_url( "/features/" ) ); ?>">
 													<div class="key" role="group" tabindex="0">
 														<img aria-hidden="true" decoding="async" fetchpriority="low"
 															height="100px" loading="lazy"
@@ -539,8 +538,7 @@ get_header();
 															dịch tức thì</p>
 													</div>
 												</a>
-												<a aria-hidden="true" class="swiper-slide"
-													href="./features/translate-photos.html" tabindex="-1">
+												<a class="swiper-slide" href="<?php echo esc_url( home_url( "/features/" ) ); ?>">
 													<div class="key" role="group" tabindex="0">
 														<img aria-hidden="true" decoding="async" fetchpriority="low"
 															height="100px" loading="lazy"
@@ -551,19 +549,17 @@ get_header();
 															v.v.</p>
 													</div>
 												</a>
-												<a aria-hidden="true" class="swiper-slide" href="./features/index.html"
-													tabindex="-1">
+												<a class="swiper-slide" href="<?php echo esc_url( home_url( "/features/" ) ); ?>">
 													<div class="key" role="group" tabindex="0">
 														<img aria-hidden="true" decoding="async" fetchpriority="low"
 															height="100px" loading="lazy"
 															src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/key-features/key-section-3.svg" ); ?>"
 															width="100px" />
-														<h3 class="h2" id="icon3-title">113 <br /> languages</h3>
+														<h3 class="h2" id="icon3-title">113 <br /> Ngôn ngữ</h3>
 														<p id="icon3-desc">Kết nối với hơn 90% dân số thế giới</p>
 													</div>
 												</a>
-												<a aria-hidden="true" class="swiper-slide" href="./features/index.html"
-													tabindex="-1">
+												<a class="swiper-slide" href="<?php echo esc_url( home_url( "/features/" ) ); ?>">
 													<div class="key" role="group" tabindex="0">
 														<img aria-hidden="true" decoding="async" fetchpriority="low"
 															height="100px" loading="lazy"
@@ -575,8 +571,7 @@ get_header();
 															dịch thuật</p>
 													</div>
 												</a>
-												<a aria-hidden="true" class="swiper-slide" href="./features/index.html"
-													tabindex="-1">
+												<a class="swiper-slide" href="<?php echo esc_url( home_url( "/features/" ) ); ?>">
 													<div class="key" role="group" tabindex="0">
 														<img aria-hidden="true" decoding="async" fetchpriority="low"
 															height="100px" loading="lazy"
@@ -587,8 +582,7 @@ get_header();
 															gian thực bằng 77 ngôn ngữ.</p>
 													</div>
 												</a>
-												<a aria-hidden="true" class="swiper-slide" href="./features/index.html"
-													tabindex="-1">
+												<a class="swiper-slide" href="<?php echo esc_url( home_url( "/features/" ) ); ?>">
 													<div class="key" role="group" tabindex="0">
 														<img aria-hidden="true" decoding="async" fetchpriority="low"
 															height="100px" loading="lazy"
@@ -599,8 +593,7 @@ get_header();
 															người bản địa bằng 54 ngôn ngữ.</p>
 													</div>
 												</a>
-												<a aria-hidden="true" class="swiper-slide" href="./features/index.html"
-													tabindex="-1">
+												<a class="swiper-slide" href="<?php echo esc_url( home_url( "/features/" ) ); ?>">
 													<div class="key" role="group" tabindex="0">
 														<img aria-hidden="true" decoding="async" fetchpriority="low"
 															height="100px" loading="lazy"
@@ -618,10 +611,10 @@ get_header();
 												data-label-next="Next slide"></div>
 										</div>
 										<div class="flex-box">
-											<a class="btn btn-md btn-black" href="./features/index.html">
+											<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/features/" ) ); ?>">
 												Tìm hiểu thêm về các tính năng máy dịch
 											</a>
-											<a class="btn btn-md btn-primary" href="<?php echo esc_url( home_url( "/" ) ); ?>">
+											<a class="btn btn-md btn-primary" href="<?php echo esc_url( home_url( "/translators/" ) ); ?>">
 												Mua ngay
 											</a>
 										</div>
@@ -790,10 +783,7 @@ get_header();
 														the_strategist</h3>
 													<img alt="the strategist icon" loading="lazy"
 														src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/the_strategist.webp" ); ?>" />
-													<blockquote class="awards-text" tabindex="0">I think Vasco is the
-														best of the bunch because it comes with unlimited lifetime data
-														(no need to find Wi-Fi!) and Phiên dịch 108 ngôn ngữ in 200
-														different countries.</blockquote>
+													<blockquote class="awards-text" tabindex="0">Tôi đánh giá Vasco là thiết bị phiên dịch xuất sắc nhất vì đi kèm dữ liệu di động trọn đời miễn phí (không cần tìm Wi-Fi!) và phiên dịch 108 ngôn ngữ tại 200 quốc gia khác nhau.</blockquote>
 												</a>
 											</div>
 											<div class="swiper-slide" role="listitem">
@@ -803,11 +793,7 @@ get_header();
 														business_insider</h3>
 													<img alt="business insider icon" loading="lazy"
 														src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/business_insider.webp" ); ?>" />
-													<blockquote class="awards-text" tabindex="0">Now HIPAA-compliant,
-														Vasco’s handheld translation devices can provide up to 108
-														language translations that are secure, making them safe to use
-														in any Y tế facility by any Y tế professional to break down
-														language barriers between patients and medical personnel.
+													<blockquote class="awards-text" tabindex="0">Đạt chuẩn bảo mật Y tế HIPAA, máy phiên dịch Vasco cung cấp bản dịch bảo mật đến 108 ngôn ngữ, đảm bảo an toàn sử dụng tại mọi cơ sở y tế nhằm xóa bỏ rào cản ngôn ngữ giữa bệnh nhân và y bác sĩ.
 													</blockquote>
 												</a>
 											</div>
@@ -818,10 +804,7 @@ get_header();
 														vancouver_sun</h3>
 													<img alt="vancouver sun icon" loading="lazy"
 														src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/vancouver_sun.webp" ); ?>" />
-													<blockquote class="awards-text" tabindex="0">Vasco’s innovative
-														technology allows users to communicate with one another through
-														its translators, connecting 90% of the world’s population
-														through the power of language.</blockquote>
+													<blockquote class="awards-text" tabindex="0">Công nghệ đột phá của Vasco cho phép mọi người dễ dàng thấu hiểu lẫn nhau qua máy phiên dịch, kết nối 90% dân số thế giới bằng sức mạnh ngôn ngữ.</blockquote>
 												</a>
 											</div>
 											<div class="swiper-slide" role="listitem">
@@ -831,10 +814,7 @@ get_header();
 													</h3>
 													<img alt="tech radar icon" loading="lazy"
 														src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/techradar.webp" ); ?>" />
-													<blockquote class="awards-text" tabindex="0">The Vasco Translator V4
-														offers reliable voice translation, speedy photo translation, and
-														free lifetime global coverage in a pocket-sized package that’s
-														perfect for your next holiday or business trip.</blockquote>
+													<blockquote class="awards-text" tabindex="0">Vasco Translator V4 mang lại khả năng dịch giọng nói tin cậy, dịch hình ảnh siêu tốc và phủ sóng toàn cầu miễn phí trọn đời trong thiết bị bỏ túi hoàn hảo cho kỳ nghỉ hay chuyến công tác.</blockquote>
 												</a>
 											</div>
 										</div>
@@ -845,9 +825,9 @@ get_header();
 									</div>
 									<div class="stop-autoplay-carousel">
 										<button class="btn btn-md btn-stop-autoplay"
-											data-text-button-pause="stop carousel autoplay"
-											data-text-button-resume="resume carousel autoplay">
-											<span data-text-pause="Pause" data-text-resume="Resume">Pause</span>
+											data-text-button-pause="Dừng tự động chuyển trang"
+											data-text-button-resume="Tiếp tục tự động chuyển trang">
+											<span data-text-pause="Tạm dừng" data-text-resume="Tiếp tục">Tạm dừng</span>
 											<img alt="" aria-hidden="true" height="24"
 												src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/pause.svg" ); ?>" width="24" />
 										</button>
@@ -856,7 +836,7 @@ get_header();
 								</div>
 								<hr />
 								<div class="container" id="awards-section">
-									<h2 class="h2-notosans text-center">awards</h2>
+									<h2 class="h2-notosans text-center">Giải thưởng</h2>
 									<div aria-label="carousel with awards" aria-roledescription="carousel"
 										class="swiper swiper-carousel autoplay loop carousel-award" role="region">
 										<a class="sr-only focusable" href="#after-award-carousel">Skip carousel</a>
@@ -976,9 +956,9 @@ get_header();
 									</div>
 									<div class="stop-autoplay-carousel">
 										<button class="btn btn-md btn-stop-autoplay"
-											data-text-button-pause="stop carousel autoplay"
-											data-text-button-resume="resume carousel autoplay">
-											<span data-text-pause="Pause" data-text-resume="Resume">Pause</span>
+											data-text-button-pause="Dừng tự động chuyển trang"
+											data-text-button-resume="Tiếp tục tự động chuyển trang">
+											<span data-text-pause="Tạm dừng" data-text-resume="Tiếp tục">Tạm dừng</span>
 											<img alt="" aria-hidden="true" height="24"
 												src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/pause.svg" ); ?>" width="24" />
 										</button>
@@ -1001,9 +981,7 @@ get_header();
 							mà họ hiểu, thông điệp sẽ tới tâm trí họ. Nhưng nếu bạn nói với họ bằng chính ngôn ngữ mẹ đẻ
 							của họ, thông điệp sẽ chạm tới trái tim".</p>
 						<p class="body-16">
-							Sứ mệnh của chúng tôi is to ease the language burden, so people around the world can better
-							understand one another. Since 2008, we’ve been helping people communicate with confidence,
-							and today, Vasco is a leader in the instant translator market.
+							Sứ mệnh của chúng tôi là xóa bỏ rào cản ngôn ngữ, giúp mọi người trên khắp thế giới thấu hiểu nhau hơn. Từ năm 2008, chúng tôi đã giúp hàng triệu người tự tin giao tiếp, và ngày nay Vasco tự hào là thương hiệu dẫn đầu trong thị trường máy phiên dịch tức thì.
 						</p>
 						<div class="btn-wrapper">
 							<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/about-us/" ) ); ?>" title="Sứ mệnh của chúng tôi">
@@ -1035,10 +1013,7 @@ get_header();
 								width="300px" />
 							<h3 class="h2">Tìm chúng tôi</h3>
 							<p class="body-16">
-								The Vasco instant translator device is available in over 20 countries worldwide. You can
-								purchase the translator device online, or by visiting our brick-and-mortar shops in
-								Germany, Italy, France, Portugal, Spain, Poland, Hungary, and the United Arab Emirates.
-								More countries coming soon!
+								Thiết bị máy phiên dịch tức thì Vasco đã có mặt tại hơn 20 quốc gia trên toàn thế giới. Bạn có thể mua hàng trực tuyến hoặc ghé thăm các cửa hàng chính hãng của chúng tôi tại Đức, Ý, Pháp, Bồ Đào Nha, Tây Ban Nha, Ba Lan, Hungary và Các Tiểu vương quốc Ả Rập Thống nhất.
 							</p>
 							<div class="btn-wrapper">
 								<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/contact/" ) ); ?>" title="Tìm chúng tôi">

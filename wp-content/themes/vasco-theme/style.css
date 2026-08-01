@@ -23,3 +23,291 @@ Text Domain: vasco-theme
     transition: transform 0.2s ease !important;
 }
 
+/* Translators Product Carousel Smooth Animations */
+.translators-carousel .swiper-foreground .swiper-slide {
+    transition: opacity 0.4s ease, transform 0.4s ease !important;
+}
+.translators-carousel .absolute-box-product-features [data-slide] {
+    transition: opacity 0.35s ease, transform 0.35s ease !important;
+}
+.translators-carousel .feature {
+    transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+.translators-carousel .feature:hover {
+    transform: translateX(4px) !important;
+}
+
+/* Top Section (Tính Năng Nổi Bật) Links & Clickability Fix */
+.key-features-section a,
+.key-features-section .flex-box a,
+.key-features-section .swiper-slide {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+    position: relative !important;
+    z-index: 20 !important;
+}
+
+.key-features-section .flex-box {
+    position: relative !important;
+    z-index: 30 !important;
+    display: flex !important;
+    gap: 16px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 32px !important;
+}
+
+.key-features-section .flex-box a.btn {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+}
+
+/* Bottom Section (Ứng Dụng Của Máy Phiên Dịch): Exactly 3 Full Cards per View + Horizontal Sliding */
+@media (min-width: 992px) {
+    .how-vasco-section .floating-carousel .swiper-wrapper {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        gap: 24px !important;
+        box-sizing: border-box !important;
+        width: 100% !important;
+        transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1) !important;
+    }
+
+    .how-vasco-section .floating-carousel .swiper-slide,
+    .how-vasco-section .floating-carousel .card {
+        flex: 0 0 calc((100% - 48px) / 3) !important;
+        width: calc((100% - 48px) / 3) !important;
+        min-width: calc((100% - 48px) / 3) !important;
+        max-width: calc((100% - 48px) / 3) !important;
+        margin-right: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    .how-vasco-section .floating-carousel {
+        overflow: hidden !important;
+        width: 100% !important;
+        cursor: grab !important;
+        user-select: none !important;
+    }
+}
+
+/* Doublebox 50/50 Split Layout Fix for Features Page */
+.doubleboxes {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    overflow: hidden !important;
+}
+
+.doublebox {
+    position: relative !important;
+    display: flex !important;
+    align-items: stretch !important;
+    min-height: 480px !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+}
+
+@media (min-width: 992px) {
+    .doublebox {
+        min-height: 500px !important;
+    }
+
+    .doublebox.left {
+        flex-direction: row !important;
+    }
+
+    .doublebox.right {
+        flex-direction: row-reverse !important;
+    }
+
+    .doublebox .container {
+        width: 50% !important;
+        max-width: 50% !important;
+        flex: 0 0 50% !important;
+        padding: 50px 60px !important;
+        box-sizing: border-box !important;
+        margin: 0 !important;
+        position: relative !important;
+        z-index: 2 !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    .doublebox-content {
+        max-width: 540px !important;
+        width: 100% !important;
+        margin: 0 auto !important;
+    }
+
+    .doublebox-absolute {
+        position: relative !important;
+        width: 50% !important;
+        flex: 0 0 50% !important;
+        height: auto !important;
+        min-height: 500px !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        overflow: hidden !important;
+        z-index: 1 !important;
+    }
+
+    .doublebox-absolute img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        object-position: center !important;
+        display: block !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .doublebox {
+        flex-direction: column !important;
+        min-height: auto !important;
+    }
+
+    .doublebox .container {
+        width: 100% !important;
+        padding: 30px 20px !important;
+    }
+
+    .doublebox-absolute {
+        position: relative !important;
+        width: 100% !important;
+        height: 320px !important;
+    }
+
+    .doublebox-absolute img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+}
+
+/* Other Features Section (Các Tính Năng Hữu Ích Khác) Grid & Card Layout Fix */
+.features-swiper {
+    padding: 60px 0 !important;
+    width: 100% !important;
+    overflow: hidden !important;
+}
+
+@media (min-width: 992px) {
+    .features-flex {
+        display: flex !important;
+        align-items: flex-start !important;
+        justify-content: space-between !important;
+        gap: 40px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .features-miniatures {
+        flex: 0 0 44% !important;
+        max-width: 44% !important;
+        width: 44% !important;
+        box-sizing: border-box !important;
+    }
+
+    .features-content {
+        flex: 0 0 52% !important;
+        max-width: 52% !important;
+        width: 52% !important;
+        min-width: 0 !important;
+        overflow: hidden !important;
+        box-sizing: border-box !important;
+    }
+}
+
+/* Icon Buttons Styling */
+.description-icon {
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+    padding: 12px 16px !important;
+    border-radius: 12px !important;
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: all 0.25s ease !important;
+    text-align: left !important;
+}
+
+.description-icon.active {
+    background-color: #ffffff !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08) !important;
+}
+
+.description-icon img {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    border-radius: 50% !important;
+    background-color: transparent !important;
+    filter: none !important;
+}
+
+/* Swiper Card Inside Right Column */
+.swiper-features {
+    width: 100% !important;
+    overflow: hidden !important;
+}
+
+.swiper-features .swiper-slide {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    box-sizing: border-box !important;
+    background: #ffffff !important;
+    border-radius: 16px !important;
+    padding: 32px !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Header Cart Badge Counter */
+.shopping_cart {
+    position: relative !important;
+    display: inline-flex !important;
+    align-items: center !important;
+}
+
+.cart-count-badge {
+    position: absolute !important;
+    top: -4px !important;
+    right: -8px !important;
+    background-color: #001480 !important;
+    color: #ffffff !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    min-width: 18px !important;
+    height: 18px !important;
+    border-radius: 50% !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 4px !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) !important;
+    line-height: 1 !important;
+}
+
+/* Vasco Numbers Section (Lý Do Chọn Vasco) Clickability Fix */
+.vasco-numbers-single-wrapper,
+.vasco-numbers-single-wrapper a {
+    cursor: pointer !important;
+    pointer-events: auto !important;
+    position: relative !important;
+    z-index: 10 !important;
+}
+
+
+
+
+
+

@@ -337,7 +337,7 @@ cho phép sử dụng tính năng này</p>
 <div class="swiper-wrapper" role="list">
 <div aria-labelledby="product-38" class="swiper-slide" role="listitem" tabindex="0">
 <div class="box">
-<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/385-home_default/a.jpg" ); ?>"/>
+<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/q1.webp" ); ?>"/>
 <div class="product-description">
 <h3 aria-label="q1.name]" id="product-38" tabindex="0">
 											Vasco Translator Q1</h3>

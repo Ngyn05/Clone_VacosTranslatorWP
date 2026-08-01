@@ -1096,7 +1096,7 @@ get_header();
 <hr/>
 <div class="container">
 <div class="flex flex-col media vasco-awards">
-<h2 class="h2-notosans text-center">awards</h2>
+<h2 class="h2-notosans text-center">Giải thưởng</h2>
 <div aria-label="vòng lặp giải thưởng" aria-roledescription="carousel" class="swiper swiper-carousel autoplay loop carousel-award" role="region">
 <a class="sr-only focusable" href="#after-award-carousel">Bỏ qua vòng lặp</a>
 <div class="swiper-wrapper" role="list">
