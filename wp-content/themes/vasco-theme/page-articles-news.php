@@ -31,7 +31,7 @@ get_header();
 <article class="et_pb_post clearfix et_pb_blog_item_0_0 post-24649 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-k-ruszkowski" id="post-24649">
 <div class="et_pb_image_container"><a class="entry-featured-image-url" href="./vasco-expert-how-hotels-overcome-world-cup-language-barriers"><picture class="" decoding="async" fetchpriority="high">
 <source sizes="(max-width:479px) 479px, 100vw" type="image/avif"/>
-<img alt="Chuyên gia Vasco: Cách các khách sạn vượt qua rào cản ngôn ngữ trong World Cup" data-lazy-sizes="(max-width:479px) 479px, 100vw" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/06/Aleksanderalski-crop-400x250.jpeg" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2026/06/Aleksanderalski-crop.jpeg 479w, ./articles/wp-content/uploads/2026/06/Aleksanderalski-crop-400x250.jpeg 480w" decoding="async" fetchpriority="high" height="250" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20250'%3E%3C/svg%3E" width="400"/><noscript><img alt="Chuyên gia Vasco: Cách các khách sạn vượt qua rào cản ngôn ngữ trong World Cup" decoding="async" fetchpriority="high" height="250" sizes="(max-width:479px) 479px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/06/Aleksanderalski-crop-400x250.jpeg" ); ?>" width="400"/></noscript>
+<img alt="Chuyên gia Vasco: Cách các khách sạn vượt qua rào cản ngôn ngữ trong World Cup" decoding="async" fetchpriority="high" height="250" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/06/Aleksanderalski-crop-400x250.jpeg" ); ?>" width="400"/>
 </picture>
 </a></div>
 <h2 class="entry-title"><a href="./vasco-expert-how-hotels-overcome-world-cup-language-barriers">Chuyên gia Vasco: Cách các khách sạn vượt qua rào cản ngôn ngữ trong World Cup</a></h2>
@@ -146,7 +146,7 @@ get_header();
 <div class="et_pb_module et_pb_image et_pb_image_0_tb_body">
 <span class="et_pb_image_wrap"><picture class="wp-image-22584" decoding="async" title="Q1_blog">
 <source type="image/avif"/>
-<img alt="" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/05/Q1_blog.png" ); ?>" decoding="async" height="260" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20120%20260'%3E%3C/svg%3E" width="120"/><noscript><img alt="" decoding="async" height="260" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/05/Q1_blog.png" ); ?>" width="120"/></noscript>
+<img alt="" decoding="async" height="260" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/05/Q1_blog.png" ); ?>" width="120"/>
 </picture>
 </span>
 </div><div class="et_pb_module et_pb_text et_pb_text_3_tb_body et_pb_text_align_left et_pb_bg_layout_dark">
@@ -160,7 +160,7 @@ get_header();
 <div class="et_pb_module et_pb_image et_pb_image_1_tb_body">
 <span class="et_pb_image_wrap"><picture class="wp-image-22585" decoding="async" title="M4_blog">
 <source type="image/avif"/>
-<img alt="" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/05/M4_blog.png" ); ?>" decoding="async" height="260" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20120%20260'%3E%3C/svg%3E" width="120"/><noscript><img alt="" decoding="async" height="260" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/05/M4_blog.png" ); ?>" width="120"/></noscript>
+<img alt="" decoding="async" height="260" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/05/M4_blog.png" ); ?>" width="120"/>
 </picture>
 </span>
 </div><div class="et_pb_module et_pb_text et_pb_text_5_tb_body et_pb_text_align_left et_pb_bg_layout_dark">
@@ -174,7 +174,7 @@ get_header();
 <div class="et_pb_module et_pb_image et_pb_image_2_tb_body">
 <span class="et_pb_image_wrap"><picture class="wp-image-2102" decoding="async" title="V_blog">
 <source type="image/avif"/>
-<img alt="" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/10/V_blog.png" ); ?>" decoding="async" height="260" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20120%20260'%3E%3C/svg%3E" width="120"/><noscript><img alt="" decoding="async" height="260" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/10/V_blog.png" ); ?>" width="120"/></noscript>
+<img alt="" decoding="async" height="260" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/10/V_blog.png" ); ?>" width="120"/>
 </picture>
 </span>
 </div><div class="et_pb_module et_pb_text et_pb_text_7_tb_body et_pb_text_align_left et_pb_bg_layout_dark">

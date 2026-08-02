@@ -9,10 +9,15 @@ Text Domain: vasco-theme
 */
 
 /* Product Tab & FAQ Accordion Overrides */
-.tab-content > .tab.active-tab {
+.tab-content > .tab {
+    display: block;
+}
+.tab-content > .tab.active-tab,
+.tab-content > .tab.active,
+.tab-content > .tab.current {
     display: block !important;
 }
-.tab-content > .tab:not(.active-tab) {
+.tab-content > .tab:not(.active-tab):not(.active):not(.current) {
     display: none !important;
 }
 .accordion-single .accordion-hidden.show {
@@ -327,3 +332,127 @@ Text Domain: vasco-theme
     width: 94px !important;
     max-width: 94px !important;
 }
+
+/* Mobile Header Navigation Dropdown Fix */
+@media (max-width: 991px) {
+    #open-menu, .open-menu {
+        cursor: pointer !important;
+        pointer-events: auto !important;
+        z-index: 1000000 !important;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .desktop-nav.active,
+    .desktop-nav.open,
+    .desktop-nav.show-mobile,
+    .mobile-menu.active,
+    .mobile-menu.open {
+        display: block !important;
+        position: fixed !important;
+        top: 70px !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 100vw !important;
+        height: calc(100vh - 70px) !important;
+        background: #ffffff !important;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2) !important;
+        z-index: 999999 !important;
+        padding: 20px !important;
+        box-sizing: border-box !important;
+        overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+
+    .desktop-nav.active nav,
+    .desktop-nav.open nav,
+    .desktop-nav.show-mobile nav {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 16px !important;
+        padding-bottom: 60px !important;
+    }
+
+    .desktop-nav.active .menu-item-wrapper,
+    .desktop-nav.open .menu-item-wrapper,
+    .desktop-nav.show-mobile .menu-item-wrapper {
+        width: 100% !important;
+        border-bottom: 1px solid #eef0f5 !important;
+        padding-bottom: 12px !important;
+    }
+
+    .desktop-nav.active .nav-link,
+    .desktop-nav.open .nav-link,
+    .desktop-nav.show-mobile .nav-link {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        font-size: 18px !important;
+        font-weight: 700 !important;
+        color: #001480 !important;
+        padding: 10px 0 !important;
+        text-decoration: none !important;
+    }
+
+    .megamenu-childs-wrapper:not([hidden]) {
+        display: block !important;
+        position: relative !important;
+        box-shadow: none !important;
+        padding: 12px 16px !important;
+        background: #f4f6fa !important;
+        border-radius: 12px !important;
+        margin-top: 8px !important;
+        max-height: none !important;
+    }
+
+    .megamenu-childs-wrapper ul {
+        list-style: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .megamenu-childs-wrapper li {
+        margin-bottom: 12px !important;
+    }
+
+    .megamenu-childs-wrapper a {
+        font-size: 15px !important;
+        color: #2D3139 !important;
+        font-weight: 500 !important;
+        text-decoration: none !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 10px !important;
+    }
+}
+
+/* Hide Default Dialog & Page List Modal Overlay */
+dialog.selector-dialog:not([open]) {
+    display: none !important;
+}
+dialog.selector-dialog {
+    display: none;
+}
+dialog.selector-dialog[open] {
+    display: block !important;
+}
+
+/* Product Detail Gallery Loading Spinner Overlay Fix */
+.product-cover-thumbnail-section .loading-spinner,
+.swiper-thumbs .loading-spinner,
+.product-cover .loading-spinner {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+.product-cover .swiper-slide img,
+.swiper-thumbs .swiper-slide img {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+

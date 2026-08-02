@@ -899,20 +899,53 @@
 		(function () {
 			function initMobileMenuNav() {
 				var burger = document.querySelector('#open-menu, .open-menu, .burger-menu');
-				var mobileMenu = document.querySelector('.mobile-menu, #mobile-menu, .mobile-nav');
+				var navTarget = document.querySelector('.mobile-menu, #mobile-menu, .mobile-nav, #desktop-nav, .desktop-nav');
 
-				if (burger && mobileMenu) {
+				if (burger && navTarget) {
 					burger.addEventListener('click', function (e) {
-						mobileMenu.classList.toggle('active');
-						mobileMenu.classList.toggle('open');
+						e.preventDefault();
+						e.stopPropagation();
+						navTarget.classList.toggle('active');
+						navTarget.classList.toggle('open');
+						navTarget.classList.toggle('show-mobile');
+						burger.classList.toggle('is-active');
 					});
 				}
 
-				// Ensure all links with valid href navigate correctly
-				document.querySelectorAll('a[href]').forEach(function (link) {
-					var href = link.getAttribute('href');
-					if (href && href !== '#' && !href.startsWith('javascript:')) {
-						link.style.cursor = 'pointer';
+				// Global click handler for mobile nav dropdown toggle icons vs actual page links
+				document.addEventListener('click', function(e) {
+					var arrowBtn = e.target.closest('.arrow-rotate, .arrow-rotate-sub');
+					if (arrowBtn && window.innerWidth <= 991) {
+						e.preventDefault();
+						e.stopPropagation();
+						var link = arrowBtn.closest('.has-child, .megamenu-column-title');
+						var parentWrapper = arrowBtn.closest('.menu-item-wrapper, .megamenu-column-wrapper');
+						if (parentWrapper) {
+							var submenu = parentWrapper.querySelector('.megamenu-childs-wrapper, .megamenu-column-content, ul');
+							if (submenu) {
+								var isHidden = submenu.hasAttribute('hidden') || getComputedStyle(submenu).display === 'none';
+								if (isHidden) {
+									submenu.removeAttribute('hidden');
+									submenu.style.display = 'block';
+									if (link) link.setAttribute('aria-expanded', 'true');
+								} else {
+									submenu.setAttribute('hidden', '');
+									submenu.style.display = 'none';
+									if (link) link.setAttribute('aria-expanded', 'false');
+								}
+							}
+						}
+						return;
+					}
+
+					// Direct link navigation fix inside mobile menu
+					var link = e.target.closest('a[href]');
+					if (link) {
+						var href = link.getAttribute('href');
+						if (href && href !== '#' && !href.startsWith('javascript:')) {
+							// If it's a normal link, allow browser navigation
+							window.location.href = link.href;
+						}
 					}
 				});
 			}

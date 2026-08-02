@@ -69,6 +69,57 @@ function vasco_theme_enqueue_all_assets() {
 	// and FAQ accordions.
 	$cart_url = esc_url( home_url( '/cart/' ) );
 	$custom_js = <<<'EOT'
+			// Universal Product Tab Switcher Handler (Về sản phẩm / Thông số / Ngôn ngữ / FAQ)
+			document.addEventListener('click', function(e) {
+				var tabBtn = e.target.closest('.tab-menu .menu-link, .product-menu-container .menu-link, [data-id^="product-"]');
+				if (tabBtn) {
+					e.preventDefault();
+					var targetId = tabBtn.getAttribute('data-id') || tabBtn.getAttribute('aria-controls');
+					if (!targetId) return;
+
+					// Switch Active Button Style
+					var menuContainer = tabBtn.closest('.tab-menu, .product-menu-container, nav');
+					if (menuContainer) {
+						menuContainer.querySelectorAll('.menu-link').forEach(function(b) {
+							b.classList.remove('current', 'active', 'active-tab');
+						});
+						tabBtn.classList.add('current', 'active');
+					}
+
+					// Switch Active Tab Content
+					var tabContentContainer = document.getElementById('tab-content') || document.querySelector('.tab-content') || document;
+					var allTabs = tabContentContainer.querySelectorAll('.tab, [id^="product-"]');
+					allTabs.forEach(function(tab) {
+						if (tab.id === targetId || tab.classList.contains(targetId)) {
+							tab.classList.add('active-tab', 'active', 'current');
+							tab.style.display = 'block';
+						} else if (tab.id) {
+							tab.classList.remove('active-tab', 'active', 'current');
+							tab.style.display = 'none';
+						}
+					});
+				}
+
+				// Universal FAQ Accordion Toggle Handler
+				var faqHeader = e.target.closest('.accordion-header, .accordion-title, .faq-question, .accordion-single');
+				if (faqHeader) {
+					var parentAccordion = faqHeader.closest('.accordion-single, .accordion-item, .faq-item');
+					if (parentAccordion) {
+						var content = parentAccordion.querySelector('.accordion-hidden, .accordion-content, .faq-answer');
+						var icon = parentAccordion.querySelector('svg, .arrow, .icon');
+						if (content) {
+							content.classList.toggle('show');
+							if (getComputedStyle(content).display === 'none') {
+								content.style.display = 'block';
+							} else {
+								content.style.display = 'none';
+							}
+						}
+						if (icon) icon.classList.toggle('rotate');
+					}
+				}
+			});
+
 			// Universal Carousel Navigation Arrows Click Handler (< and >)
 			document.addEventListener('click', function(e) {
 				var prevBtn = e.target.closest('.swiper-button-prev, .btn-carousel-prev, .btn-card-prev, .smooth-carousel-btn-prev, .btn-events-prev, .btn-timeline-prev, .btn-colors-prev, .btn-videos-prev');
@@ -234,6 +285,24 @@ function vasco_theme_enqueue_all_assets() {
 						quantity: 1
 					});
 				}
+			});
+
+			// Auto Fix for Lazyloaded Images (data-lazy-src, data-src)
+			document.addEventListener('DOMContentLoaded', function() {
+				function loadLazyImages() {
+					var lazyImgs = document.querySelectorAll('img[data-lazy-src], img[data-src]');
+					lazyImgs.forEach(function(img) {
+						var realSrc = img.getAttribute('data-lazy-src') || img.getAttribute('data-src');
+						if (realSrc) {
+							img.src = realSrc;
+							img.removeAttribute('data-lazy-src');
+							img.removeAttribute('data-src');
+						}
+					});
+				}
+				loadLazyImages();
+				setTimeout(loadLazyImages, 1000);
+				setTimeout(loadLazyImages, 3000);
 			});
 EOT;
 
