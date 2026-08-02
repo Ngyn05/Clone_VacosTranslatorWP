@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-business-education.php
  *
@@ -33,7 +33,7 @@ get_header();
 </div>
 </div>
 <div class="doublebox-absolute" id="img-change">
-<img alt="Một giáo viên đang giảng bài trong lớp học, với các học sinh tò mò lắng nghe chăm chú." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/Y tế/Giáo dục-hero.webp" ); ?>"/>
+<img alt="Một giáo viên đang giảng bài trong lớp học, với các học sinh tò mò lắng nghe chăm chú." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>"/>
 </div>
 </div>
 </section>

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-business-y-t.php
  *
@@ -32,7 +32,7 @@ get_header();
 </div>
 </div>
 <div class="doublebox-absolute" id="img-change">
-<img alt="Một bác sĩ đang mỉm cười giải thích điều gì đó cho bệnh nhân đang ngồi trên bàn khám tại phòng khám." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/Y tế/b2b-Y tế-hero.webp" ); ?>"/>
+<img alt="Một bác sĩ đang mỉm cười giải thích điều gì đó cho bệnh nhân đang ngồi trên bàn khám tại phòng khám." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/paramedics-healthcare.png" ); ?>"/>
 </div>
 </div>
 </section>

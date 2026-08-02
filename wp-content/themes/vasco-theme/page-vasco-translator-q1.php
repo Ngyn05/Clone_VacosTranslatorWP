@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Product Page Template page-vasco-translator-q1.php
  *
@@ -373,9 +373,7 @@ get_header();
 							</a>
 </p>
 </video>
-<button aria-controls="vasco-assistant" aria-label="Phát video" aria-pressed="true" class="video-toggle" data-play="Phát video" data-stop="Tạm dừng video">
-<img alt="Phát video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 </div>
 <div class="tech-info">
 <h3>Vasco Assistant</h3>
@@ -397,9 +395,7 @@ get_header();
 							</a>
 </p>
 </video>
-<button aria-controls="vasco-my-voice-video" aria-label="Phát video" aria-pressed="true" class="video-toggle" data-play="Phát video" data-stop="Tạm dừng video">
-<img alt="Phát video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 </div>
 <div class="tech-info">
 <h3>Giống giọng nói của bạn trong 54 ngôn ngữ.</h3>
@@ -421,9 +417,7 @@ get_header();
 							</a>
 </p>
 </video>
-<button aria-controls="call-translator-video" aria-label="Phát video" aria-pressed="true" class="video-toggle" data-play="Phát video" data-stop="Tạm dừng video">
-<img alt="Phát video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 </div>
 <div class="tech-info">
 <h3>Luôn luôn kết nối trực tiếp</h3>
@@ -569,9 +563,7 @@ get_header();
 						</a>
 </p>
 </video>
-<button aria-controls="q1-free-internet-video" aria-label="Phát video" aria-pressed="true" class="video-toggle" data-play="Phát video" data-stop="Tạm dừng video">
-<img alt="Phát video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 </div>
 </div>
 </div>

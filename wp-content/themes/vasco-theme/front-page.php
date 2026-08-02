@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page front-page.php
  *
@@ -52,22 +52,17 @@ get_header();
 										</div>
 										<div class="doublebox-absolute">
 											<div class="video-holder" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.webp" ); ?>'); background-size: cover; background-position: center; min-height: 100%;">
-												<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.webp" ); ?>" alt="Vasco Translator Q1" style="width:100%;height:100%;object-fit:cover;display:block;" />
+												<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hitchhiker-travel.png" ); ?>" alt="Vasco Translator Q1" style="width:100%;height:100%;object-fit:cover;display:block;" />
 												<video aria-describedby="video-desc-hero" autoplay="" class="lazy"
 													id="index-hero-video" loop="" muted="" playsinline=""
-													poster="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.webp" ); ?>" preload="auto" style="display:none;">
+													poster="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hitchhiker-travel.png" ); ?>" preload="auto" style="display:none;">
 													<source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.webm" ); ?>"
 														type="video/webm" />
 													<source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.mp4" ); ?>"
 														type="video/mp4" />
 													<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.webp" ); ?>" alt="Vasco Translator" style="width:100%;height:100%;object-fit:cover;" />
 												</video>
-												<button aria-controls="index-hero-video" aria-label="Play video"
-													aria-pressed="false" class="video-toggle" data-play="Play video"
-													data-stop="Tạm dừng video" type="button">
-													<img alt="" class="video-toggle-icon"
-														src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>" />
-												</button>
+												
 												<p class="sr-only" id="video-desc-hero">
 													The video opens with a man hitchhiking and using the Vasco
 													Translator to communicate with a driver. Next, we see a woman at a
@@ -635,7 +630,7 @@ get_header();
 													<img alt="A smiling couple takes a selfie in an airport terminal; the woman holds travel documents and a passport, while sunlight streams through large windows behind them."
 														decoding="async" fetchpriority="low" height="129px"
 														loading="lazy"
-														width="300px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/how-vasco/how-vasco-section-new-1.webp" ); ?>" >
+														width="300px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hitchhiker-travel.png" ); ?>" >
 												</picture>
 												<h3 class="h2" id="panel1" tabindex="0">Du Lịch Tự Tin</h3>
 												<p tabindex="0">
@@ -652,7 +647,7 @@ get_header();
 													<img alt="A manager holding a tablet smiles while addressing a group of five employees standing together in a restaurant or café setting. Everyone appears engaged and attentive."
 														decoding="async" fetchpriority="low" height="129px"
 														loading="lazy"
-														width="300px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/how-vasco/how-vasco-section-new-2.webp" ); ?>" >
+														width="300px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>" >
 												</picture>
 												<h3 class="h2" id="panel2" tabindex="0">Kết Nối Toàn Cầu</h3>
 												<p tabindex="0">
@@ -670,7 +665,7 @@ get_header();
 													<img alt="Two workers in orange safety uniforms and white hard hats have a discussion at an industrial facility, surrounded by pipes and machinery."
 														decoding="async" fetchpriority="low" height="129px"
 														loading="lazy"
-														width="300px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/how-vasco/how-vasco-section-new-3.webp" ); ?>" >
+														width="300px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hospitality-customer-support.png" ); ?>" >
 												</picture>
 												<h3 class="h2" id="panel3" tabindex="0">Làm Việc Hiệu Quả</h3>
 												<p tabindex="0">
@@ -686,7 +681,7 @@ get_header();
 													<img alt="Two smiling paramedics in uniform stand outside, with an ambulance parked behind them."
 														decoding="async" fetchpriority="low" height="129px"
 														loading="lazy"
-														width="300px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/how-vasco/how-vasco-section-new-4n.webp" ); ?>" >
+														width="300px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/paramedics-healthcare.png" ); ?>" >
 												</picture>
 												<h3 class="h2" id="panel4" tabindex="0">Ứng Phó Nhanh Chóng</h3>
 												<p tabindex="0">

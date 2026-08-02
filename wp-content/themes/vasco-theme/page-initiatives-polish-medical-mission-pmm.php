@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-initiatives-polish-medical-mission-pmm.php
  *
@@ -51,7 +51,7 @@ get_header();
 </div>
 </div>
 <div class="doublebox-absolute">
-<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/social-impact/pmm-new-1.webp" ); ?>"/>
+<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/paramedics-healthcare.png" ); ?>"/>
 </div>
 </div>
 <div class="doublebox right" style="background-color: #efece8; color: #efece8;">

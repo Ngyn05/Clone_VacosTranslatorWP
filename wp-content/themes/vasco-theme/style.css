@@ -1,4 +1,4 @@
-/*
+﻿/*
 Theme Name: Vasco Theme
 Theme URI: https://vasco-electronics.com
 Author: Antigravity AI
@@ -495,3 +495,21 @@ dialog.selector-dialog[open] {
 }
 
 
+
+
+/* Hide video pause/play toggle button globally */
+.video-toggle,
+button.video-toggle,
+.video-toggle-icon,
+[data-play],
+button[aria-controls*="video"] {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+}

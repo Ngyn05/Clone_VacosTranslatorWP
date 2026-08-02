@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-meet-vasco.php
  *
@@ -57,9 +57,7 @@ get_header();
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.mp4" ); ?>" type="video/mp4"/>
 <img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.webp" ); ?>" alt="Vasco Translator" style="width:100%;height:100%;object-fit:cover;"/>
 </video>
-<button aria-controls="meet-vasco-hero-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 <p class="sr-only" id="video-desc1">Video mở đầu với cảnh một người đàn ông xin đi nhờ xe và sử dụng Vasco Translator để giao tiếp với tài xế. Tiếp theo, một người phụ nữ tại khu chợ dùng thiết bị để trò chuyện với người bán hàng. Ở cảnh sau, một người đàn ông đang trò chuyện với một ngư dân địa phương. Sau đó, một cặp vợ chồng lớn tuổi được thấy trong nhà hàng, sử dụng tính năng dịch hình ảnh để đọc thực đơn. Khoảnh khắc tiếp theo là một người phụ nữ nói chuyện với tài xế taxi bằng máy phiên dịch. Video kết thúc với cảnh một cặp đôi dịch văn bản từ một bảng thông tin.</p>
 </div>
 </div>
@@ -685,9 +683,7 @@ with other Vasco devices" data-product-name="E1">
 								</a>
 </p>
 </video>
-<button aria-controls="meet-vasco-speach-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 <p class="sr-only" id="video-desc1">[meet_vasco.icons_with_panel.feature1.box1.video.alt]</p>
 </div>
 <div class="feature-info">
@@ -713,9 +709,7 @@ with other Vasco devices" data-product-name="E1">
 								</a>
 </p>
 </video>
-<button aria-controls="meet-vasco-photo-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 <p class="sr-only" id="video-desc2">[meet_vasco.icons_with_panel.feature2.box1.video.alt]</p>
 </div>
 <div class="feature-info">
@@ -741,9 +735,7 @@ with other Vasco devices" data-product-name="E1">
 								</a>
 </p>
 </video>
-<button aria-controls="meet-vasco-text-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 <p class="sr-only" id="video-desc3">[meet_vasco.icons_with_panel.feature3.box1.video.alt]</p>
 </div>
 <div class="feature-info">
@@ -783,9 +775,7 @@ with other Vasco devices" data-product-name="E1">
 								</a>
 </p>
 </video>
-<button aria-controls="meet-vasco-call-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 <p class="sr-only" id="video-desc5">[meet_vasco.icons_with_panel.feature5.box1.video.alt]</p>
 </div>
 <div class="feature-info">
@@ -811,9 +801,7 @@ with other Vasco devices" data-product-name="E1">
 								</a>
 </p>
 </video>
-<button aria-controls="meet-vasco-cloning-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 <p class="sr-only" id="video-desc6">[meet_vasco.icons_with_panel.feature6.box1.video.alt]</p>
 </div>
 <div class="feature-info">
@@ -839,9 +827,7 @@ with other Vasco devices" data-product-name="E1">
 								</a>
 </p>
 </video>
-<button aria-controls="meet-vasco-ai-assistant-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 <p class="sr-only" id="video-desc7">[meet_vasco.icons_with_panel.feature7.box1.video.alt]</p>
 </div>
 <div class="feature-info">
@@ -866,9 +852,7 @@ with other Vasco devices" data-product-name="E1">
 								</a>
 </p>
 </video>
-<button aria-controls="meet-vasco-learning-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 <p class="sr-only" id="video-desc8">[meet_vasco.icons_with_panel.feature8.box1.video.alt]</p>
 </div>
 <div class="feature-info">

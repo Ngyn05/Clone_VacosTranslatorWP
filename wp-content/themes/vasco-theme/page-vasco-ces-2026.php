@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-vasco-ces-2026.php
  *
@@ -46,9 +46,7 @@ get_header();
 								</a>
 </p>
 </video>
-<button aria-controls="ces-hero-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 <p class="sr-only" id="video-desc-hero">
 							Animated Vasco logo featuring rotating ‘VA’ initials; the animation ends with the tagline: ‘Vượt rào cản. Vượt ngôn từ. Vượt mọi giới hạn.
 						</p>
@@ -318,9 +316,7 @@ The beauty of simplicity</p>
 								</a>
 </p>
 </video>
-<button aria-controls="vasco-my-voice-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 </div>
 <div class="tech-info">
 <h3>Voice Cloning</h3>
@@ -342,9 +338,7 @@ The beauty of simplicity</p>
 								</a>
 </p>
 </video>
-<button aria-controls="free-internet-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 </div>
 <div class="tech-info">
 <h3>Internet miễn phí, forever</h3>
@@ -366,9 +360,7 @@ The beauty of simplicity</p>
 								</a>
 </p>
 </video>
-<button aria-controls="call-translator-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 </div>
 <div class="tech-info">
 <h3>Phone Call Translation</h3>
@@ -390,9 +382,7 @@ The beauty of simplicity</p>
 								</a>
 </p>
 </video>
-<button aria-controls="automatic-mode-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 </div>
 <div class="tech-info">
 <h3>Chế độ Tự động</h3>

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-vasco-innovations.php
  *
@@ -53,9 +53,7 @@ get_header();
 								</a>
 </p>
 </video>
-<button aria-controls="the-new-hero-video" aria-label="Phát video" aria-pressed="true" class="video-toggle" data-play="Phát video" data-stop="Tạm dừng video">
-<img alt="Phát video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 <p class="sr-only" id="video-desc-hero">
 							Logo Vasco chuyển động với chữ cái ‘VA’ xoay vòng; đoạn hoạt hình kết thúc bằng thông điệp: ‘Vượt rào cản. Vượt ngôn từ. Vượt mọi giới hạn.'
 						</p>
@@ -216,9 +214,7 @@ get_header();
 								</a>
 </p>
 </video>
-<button aria-controls="vasco-assistant-mode" aria-label="Phát video" aria-pressed="true" class="video-toggle" data-play="Phát video" data-stop="Tạm dừng video">
-<img alt="Phát video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 </div>
 </div>
 <div class="db-container-text-right">
@@ -284,9 +280,7 @@ get_header();
 								</a>
 </p>
 </video>
-<button aria-controls="animation-closeups" aria-label="Phát video" aria-pressed="true" class="video-toggle" data-play="Phát video" data-stop="Tạm dừng video">
-<img alt="Phát video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 </div>
 </div>
 </div>
@@ -304,9 +298,7 @@ get_header();
 								</a>
 </p>
 </video>
-<button aria-controls="vasco-offline" aria-label="Phát video" aria-pressed="true" class="video-toggle" data-play="Phát video" data-stop="Tạm dừng video">
-<img alt="Phát video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 </div>
 </div>
 <div class="db-container-text-right">
@@ -533,9 +525,7 @@ get_header();
 								</a>
 </p>
 </video>
-<button aria-controls="vasco-my-voice-video" aria-label="Phát video" aria-pressed="true" class="video-toggle" data-play="Phát video" data-stop="Tạm dừng video">
-<img alt="Phát video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 </div>
 <div class="tech-info">
 <h3>Voice Cloning</h3>
@@ -557,9 +547,7 @@ get_header();
 								</a>
 </p>
 </video>
-<button aria-controls="free-internet-video" aria-label="Phát video" aria-pressed="true" class="video-toggle" data-play="Phát video" data-stop="Tạm dừng video">
-<img alt="Phát video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 </div>
 <div class="tech-info">
 <h3>Internet miễn phí, forever</h3>
@@ -581,9 +569,7 @@ get_header();
 								</a>
 </p>
 </video>
-<button aria-controls="call-translator-video" aria-label="Phát video" aria-pressed="true" class="video-toggle" data-play="Phát video" data-stop="Tạm dừng video">
-<img alt="Phát video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 </div>
 <div class="tech-info">
 <h3>Phone Call Translation</h3>
@@ -605,9 +591,7 @@ get_header();
 								</a>
 </p>
 </video>
-<button aria-controls="automatic-mode-video" aria-label="Phát video" aria-pressed="true" class="video-toggle" data-play="Phát video" data-stop="Tạm dừng video">
-<img alt="Phát video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 </div>
 <div class="tech-info">
 <h3>Chế độ Tự động</h3>

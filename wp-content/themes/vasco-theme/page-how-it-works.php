@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-how-it-works.php
  *
@@ -54,9 +54,7 @@ get_header();
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.mp4" ); ?>" type="video/mp4"/>
 <img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.webp" ); ?>" alt="Vasco Translator" style="width:100%;height:100%;object-fit:cover;"/>
 </video>
-<button aria-controls="how-it-works-hero-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 <p class="sr-only" id="video-desc1">[index.doublebox1.img1.alt]</p>
 </div>
 </div>
@@ -78,9 +76,7 @@ get_header();
 					</a>
 </p>
 </video>
-<button aria-controls="how-it-works-speach-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 </div>
 <p class="sr-only" id="video-desc2">
 			A woman is talking to a taxi driver in a car, using voice translation to communicate.
@@ -117,9 +113,7 @@ get_header();
 					</a>
 </p>
 </video>
-<button aria-controls="how-it-works-photo-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 </div>
 <p class="sr-only" id="video-desc3">
 			Two boys are using a translator device for text translation from a plaque on a sculpture.
@@ -139,9 +133,7 @@ get_header();
 					</a>
 </p>
 </video>
-<button aria-controls="how-it-works-text-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 </div>
 <p class="sr-only" id="video-desc4">
 			A translator device is being used to translate text by typing it in.

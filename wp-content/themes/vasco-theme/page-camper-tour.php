@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-camper-tour.php
  *
@@ -48,9 +48,7 @@ get_header();
 						</a>
 </p>
 </video>
-<button aria-controls="ces-hero-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 <p class="sr-only" id="video-desc-hero">
 					[ces.doublebox1.img.alt]
 				</p>

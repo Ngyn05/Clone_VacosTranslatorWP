@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-business-du-lch--khch-sn.php
  *
@@ -43,7 +43,7 @@ get_header();
 </div>
 </div>
 <div class="doublebox-absolute" id="img-change">
-<img alt="Trao quyền cho đội ngũ của bạn phục vụ khách hàng toàn cầu" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/Du lịch &amp; Khách sạn/Du lịch &amp; Khách sạn_1.webp" ); ?>"/>
+<img alt="Trao quyền cho đội ngũ của bạn phục vụ khách hàng toàn cầu" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hospitality-customer-support.png" ); ?>"/>
 </div>
 </div>
 </section>

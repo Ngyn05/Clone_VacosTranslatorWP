@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-contact.php
  *
@@ -56,7 +56,7 @@ get_header();
 </div>
 </div>
 <div class="doublebox-absolute">
-<img alt="Nhân viên hỗ trợ khách hàng Vasco tại văn phòng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/contact-top.webp" ); ?>"/>
+<img alt="Nhân viên hỗ trợ khách hàng Vasco tại văn phòng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hospitality-customer-support.png" ); ?>"/>
 </div>
 </div>
 </section>

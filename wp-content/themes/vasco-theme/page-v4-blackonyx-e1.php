@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Product Page Template page-v4-blackonyx-e1.php
  *
@@ -442,9 +442,7 @@ Người tham gia có quyền rút khỏi hợp đồng mua bán trong vòng 14 
 							</a>
 </p>
 </video>
-<button aria-controls="headphone-mode-video" aria-label="Phát video" aria-pressed="true" class="video-toggle" data-play="Phát video" data-stop="Tạm dừng video">
-<img alt="Phát video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 <p class="sr-only" id="video-desc1">Hai chiếc tai nghe Vasco Translator E1 nhô lên từ hộp sạc, đèn LED của chúng bật sáng. </p>
 </div>
 <div class="tech-info">
@@ -467,9 +465,7 @@ Người tham gia có quyền rút khỏi hợp đồng mua bán trong vòng 14 
 							</a>
 </p>
 </video>
-<button aria-controls="hands-free-mode-video" aria-label="Phát video" aria-pressed="true" class="video-toggle" data-play="Phát video" data-stop="Tạm dừng video">
-<img alt="Phát video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 <p class="sr-only" id="video-desc2">Một tai nghe Vasco Translator E1 kết nối với ứng dụng di động trên điện thoại thông minh, trong khi đèn LED của nó nhấp nháy. </p>
 </div>
 <div class="tech-info">

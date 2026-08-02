@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Product Page Template page-vasco-translator-m4.php
  *
@@ -352,9 +352,7 @@ get_header();
 							</a>
 </p>
 </video>
-<button aria-controls="always-ready" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Tạm dừng video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 </div>
 <div class="tech-info">
 <h3>Start using it straight out of the box</h3>
@@ -376,9 +374,7 @@ get_header();
 							</a>
 </p>
 </video>
-<button aria-controls="simple-easy" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Tạm dừng video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 </div>
 <div class="tech-info">
 <h3>One button to understand the whole world</h3>
@@ -458,9 +454,7 @@ get_header();
 						</a>
 </p>
 </video>
-<button aria-controls="q1-free-internet-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Tạm dừng video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 </div>
 </div>
 <div class="container">

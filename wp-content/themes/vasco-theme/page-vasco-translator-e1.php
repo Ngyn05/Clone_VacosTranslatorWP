@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Product Page Template page-vasco-translator-e1.php
  *
@@ -424,9 +424,7 @@ get_header();
 							</a>
 </p>
 </video>
-<button aria-controls="headphone-mode-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Tạm dừng video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 <p class="sr-only" id="video-desc1">Two Vasco Translator E1 earbuds rise from their charging case, and their LED indicators light up. </p>
 </div>
 <div class="tech-info">
@@ -449,9 +447,7 @@ get_header();
 							</a>
 </p>
 </video>
-<button aria-controls="hands-free-mode-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Tạm dừng video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 <p class="sr-only" id="video-desc2">A Vasco Translator E1 earbud connects to the mobile app on a smartphone, while its LED indicator flashes. </p>
 </div>
 <div class="tech-info">

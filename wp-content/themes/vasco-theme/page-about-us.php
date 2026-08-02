@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-about-us.php
  *
@@ -33,7 +33,7 @@ get_header();
 </div>
 </div>
 <div class="doublebox-absolute">
-<img alt="Một phụ nữ đứng trên sân khấu hội nghị được chiếu sáng rực rỡ, đang thuyết trình trước khán giả. Cô mặc áo khoác blazer màu nâu, áo phông trắng, và đeo thẻ ID hội nghị. Cô cầm bộ điều khiển thuyết trình ở tay phải và ra dấu bằng tay trái. Phía sau cô, một màn hình lớn hiển thị mã QR nổi bật cho dịch vụ 'Vasco Assistance' và một hình minh họa nhỏ về điện thoại đang quét mã. Khán giả bị làm mờ ở phía trước." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/about-us/hero.webp" ); ?>"/>
+<img alt="Một phụ nữ đứng trên sân khấu hội nghị được chiếu sáng rực rỡ, đang thuyết trình trước khán giả. Cô mặc áo khoác blazer màu nâu, áo phông trắng, và đeo thẻ ID hội nghị. Cô cầm bộ điều khiển thuyết trình ở tay phải và ra dấu bằng tay trái. Phía sau cô, một màn hình lớn hiển thị mã QR nổi bật cho dịch vụ 'Vasco Assistance' và một hình minh họa nhỏ về điện thoại đang quét mã. Khán giả bị làm mờ ở phía trước." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>"/>
 </div>
 </div>
 </section>
@@ -281,9 +281,7 @@ Có lẽ vì thử thách quá khó khăn nên nó đã thu hút toàn bộ sự
 <p class="vjs-no-js">Để xem video này, vui lòng bật JavaScript, và xem xét nâng cấp lên một trình duyệt web<a href="#" target="_blank">hỗ trợ video HTML5</a>
 </p>
 </video>
-<button aria-controls="about_us.v2-hero-video" aria-label="Xem video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Pause video">
-<img alt="Xem video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 <p class="sr-only" id="video-desc-hero">Một người đàn ông đeo kính và có râu, mặc áo tối màu, cầm và giơ lên một thiết bị dịch hình chữ nhật với các chữ VA trên màn hình, mỉm cười nhẹ trước camera trên nền sáng đơn giản.</p>
 </div>
 </div>

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Product Page Template page-q1-phantomblack-e1.php
  *
@@ -428,9 +428,7 @@ Người tham gia có quyền rút khỏi hợp đồng mua bán trong vòng 14 
 							</a>
 </p>
 </video>
-<button aria-controls="headphone-mode-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Tạm dừng video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 <p class="sr-only" id="video-desc1">Hai tai nghe Vasco Translator E1 nhô lên từ hộp sạc, đèn LED báo hiệu bật sáng. </p>
 </div>
 <div class="tech-info">
@@ -453,9 +451,7 @@ Người tham gia có quyền rút khỏi hợp đồng mua bán trong vòng 14 
 							</a>
 </p>
 </video>
-<button aria-controls="hands-free-mode-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Tạm dừng video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 <p class="sr-only" id="video-desc2">Một chiếc tai nghe Vasco Translator E1 kết nối với ứng dụng di động trên điện thoại thông minh, trong khi đèn LED của nó nhấp nháy. </p>
 </div>
 <div class="tech-info">
@@ -1055,9 +1051,7 @@ Người tham gia có quyền rút khỏi hợp đồng mua bán trong vòng 14 
 							</a>
 </p>
 </video>
-<button aria-controls="vasco-assistant" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Tạm dừng video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 </div>
 <div class="tech-info">
 <h3>Vasco Assistant</h3>
@@ -1079,9 +1073,7 @@ Người tham gia có quyền rút khỏi hợp đồng mua bán trong vòng 14 
 							</a>
 </p>
 </video>
-<button aria-controls="vasco-my-voice-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Tạm dừng video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 </div>
 <div class="tech-info">
 <h3>Giống giọng nói của bạn trong 54 ngôn ngữ.</h3>
@@ -1103,9 +1095,7 @@ Người tham gia có quyền rút khỏi hợp đồng mua bán trong vòng 14 
 							</a>
 </p>
 </video>
-<button aria-controls="call-translator-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Tạm dừng video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 </div>
 <div class="tech-info">
 <h3>Luôn luôn kết nối trực tiếp</h3>
@@ -1204,9 +1194,7 @@ Người tham gia có quyền rút khỏi hợp đồng mua bán trong vòng 14 
 						</a>
 </p>
 </video>
-<button aria-controls="q1-e1-free-internet-video" aria-label="Play video" aria-pressed="true" class="video-toggle" data-play="Play video" data-stop="Tạm dừng video">
-<img alt="Play video" class="video-toggle-icon" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/video-pause.svg" ); ?>"/>
-</button>
+
 </div>
 </div>
 </div>
