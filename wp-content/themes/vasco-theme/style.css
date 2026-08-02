@@ -10,15 +10,14 @@ Text Domain: vasco-theme
 
 /* Product Tab & FAQ Accordion Overrides */
 .tab-content > .tab {
-    display: block !important;
+    display: block;
 }
 .tab-content > .tab.active-tab,
 .tab-content > .tab.active,
 .tab-content > .tab.current {
     display: block !important;
-}
-.tab-content > .tab:not(.active-tab):not(.active):not(.current) {
-    display: block;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 .accordion-single .accordion-hidden.show {
     display: block !important;
@@ -26,6 +25,22 @@ Text Domain: vasco-theme
 .accordion-single svg.rotate {
     transform: rotate(180deg) !important;
     transition: transform 0.2s ease !important;
+}
+
+/* Hero Doublebox Arrow (svg-pseudo) Connector Alignment */
+.doublebox-content .svg-pseudo {
+    position: absolute !important;
+    right: -12px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    z-index: 10 !important;
+    width: 24px !important;
+    height: 48px !important;
+    color: #EFECE8 !important;
+    fill: #EFECE8 !important;
+}
+.doublebox.left .doublebox-content {
+    position: relative !important;
 }
 
 /* Translators Product Carousel Smooth Animations */
@@ -131,23 +146,38 @@ Text Domain: vasco-theme
         flex-direction: row-reverse !important;
     }
 
-    .doublebox .container {
+    .doublebox.left .container {
         width: 50% !important;
         max-width: 50% !important;
         flex: 0 0 50% !important;
-        padding: 50px 60px !important;
+        padding: 50px 60px 50px 0 !important;
         box-sizing: border-box !important;
-        margin: 0 !important;
+        margin: 0 0 0 auto !important;
         position: relative !important;
         z-index: 2 !important;
         display: flex !important;
         align-items: center !important;
+        justify-content: flex-end !important;
+    }
+
+    .doublebox.right .container {
+        width: 50% !important;
+        max-width: 50% !important;
+        flex: 0 0 50% !important;
+        padding: 50px 0 50px 60px !important;
+        box-sizing: border-box !important;
+        margin: 0 auto 0 0 !important;
+        position: relative !important;
+        z-index: 2 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
     }
 
     .doublebox-content {
-        max-width: 540px !important;
+        max-width: 520px !important;
         width: 100% !important;
-        margin: 0 auto !important;
+        margin: 0 !important;
     }
 
     .doublebox-absolute {
@@ -164,7 +194,8 @@ Text Domain: vasco-theme
         z-index: 1 !important;
     }
 
-    .doublebox-absolute img {
+    .doublebox-absolute img,
+    .doublebox-absolute .video-holder {
         width: 100% !important;
         height: 100% !important;
         object-fit: cover !important;

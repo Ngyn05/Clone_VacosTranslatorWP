@@ -948,6 +948,60 @@
 						}
 					}
 				});
+
+				// Product Detail Tab Switcher Fix (Về sản phẩm, Thông số kỹ thuật, Ngôn ngữ hỗ trợ, FAQ)
+				document.addEventListener('click', function(e) {
+					var tabBtn = e.target.closest('.tab-menu .menu-link, .product-menu-container .menu-link, [data-id^="product-"]');
+					if (tabBtn) {
+						e.preventDefault();
+						e.stopPropagation();
+						var targetId = tabBtn.getAttribute('data-id') || tabBtn.getAttribute('aria-controls');
+						if (!targetId) return;
+
+						// Update button active state
+						var menuContainer = tabBtn.closest('.tab-menu, .product-menu-container, nav');
+						if (menuContainer) {
+							menuContainer.querySelectorAll('.menu-link').forEach(function(b) {
+								b.classList.remove('current', 'active', 'active-tab');
+							});
+							tabBtn.classList.add('current', 'active');
+						}
+
+						// Display target tab content and hide others
+						var allTabs = document.querySelectorAll('.tab-content > .tab, .tab-content > div[id^="product-"]');
+						allTabs.forEach(function(tab) {
+							if (tab.id === targetId || tab.classList.contains(targetId)) {
+								tab.classList.add('active-tab', 'active', 'current');
+								tab.style.setProperty('display', 'block', 'important');
+								tab.style.setProperty('visibility', 'visible', 'important');
+								tab.style.setProperty('opacity', '1', 'important');
+							} else {
+								tab.classList.remove('active-tab', 'active', 'current');
+								tab.style.setProperty('display', 'none', 'important');
+							}
+						});
+					}
+
+					// FAQ Accordion Toggle Fix
+					var faqHeader = e.target.closest('.accordion-header, .accordion-title, .faq-question, .accordion-single');
+					if (faqHeader) {
+						var parentAccordion = faqHeader.closest('.accordion-single, .accordion-item, .faq-item');
+						if (parentAccordion) {
+							var content = parentAccordion.querySelector('.accordion-hidden, .accordion-content, .faq-answer');
+							var icon = parentAccordion.querySelector('svg, .arrow, .icon');
+							if (content) {
+								content.classList.toggle('show');
+								if (content.classList.contains('show')) {
+									content.style.setProperty('display', 'block', 'important');
+								} else {
+									content.style.setProperty('display', 'none', 'important');
+								}
+							}
+							if (icon) icon.classList.toggle('rotate');
+						}
+					}
+				});
+
 			}
 
 			if (document.readyState === 'loading') {
