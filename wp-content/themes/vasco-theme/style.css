@@ -10,7 +10,7 @@ Text Domain: vasco-theme
 
 /* Product Tab & FAQ Accordion Overrides */
 .tab-content > .tab {
-    display: block;
+    display: block !important;
 }
 .tab-content > .tab.active-tab,
 .tab-content > .tab.active,
@@ -18,7 +18,7 @@ Text Domain: vasco-theme
     display: block !important;
 }
 .tab-content > .tab:not(.active-tab):not(.active):not(.current) {
-    display: none !important;
+    display: block;
 }
 .accordion-single .accordion-hidden.show {
     display: block !important;

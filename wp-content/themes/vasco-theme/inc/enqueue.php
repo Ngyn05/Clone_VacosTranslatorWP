@@ -87,15 +87,14 @@ function vasco_theme_enqueue_all_assets() {
 					}
 
 					// Switch Active Tab Content
-					var tabContentContainer = document.getElementById('tab-content') || document.querySelector('.tab-content') || document;
-					var allTabs = tabContentContainer.querySelectorAll('.tab, [id^="product-"]');
+					var allTabs = document.querySelectorAll('.tab-content > .tab, .tab-content > div[id^="product-"]');
 					allTabs.forEach(function(tab) {
 						if (tab.id === targetId || tab.classList.contains(targetId)) {
 							tab.classList.add('active-tab', 'active', 'current');
-							tab.style.display = 'block';
-						} else if (tab.id) {
+							tab.style.setProperty('display', 'block', 'important');
+						} else {
 							tab.classList.remove('active-tab', 'active', 'current');
-							tab.style.display = 'none';
+							tab.style.setProperty('display', 'none', 'important');
 						}
 					});
 				}
@@ -109,10 +108,10 @@ function vasco_theme_enqueue_all_assets() {
 						var icon = parentAccordion.querySelector('svg, .arrow, .icon');
 						if (content) {
 							content.classList.toggle('show');
-							if (getComputedStyle(content).display === 'none') {
-								content.style.display = 'block';
+							if (content.classList.contains('show')) {
+								content.style.setProperty('display', 'block', 'important');
 							} else {
-								content.style.display = 'none';
+								content.style.setProperty('display', 'none', 'important');
 							}
 						}
 						if (icon) icon.classList.toggle('rotate');
@@ -306,12 +305,14 @@ function vasco_theme_enqueue_all_assets() {
 			});
 EOT;
 
+	// Send VascoCart data to JS
+	wp_add_inline_script( 'jquery', 'window.VASCO_THEME_URI = "' . esc_url( VASCO_THEME_URI ) . '";' );
 	wp_add_inline_script( 'jquery', $custom_js );
 }
 add_action( 'wp_enqueue_scripts', 'vasco_theme_enqueue_all_assets' );
 
 /**
- * Add type="module" to enqueued scripts that use ES module syntax
+ * Add type="module" attribute to Vite ES Module scripts.
  */
 function vasco_theme_script_loader_tag( $tag, $handle, $src ) {
 	$module_handles = array(
