@@ -275,7 +275,7 @@ Có lẽ vì thử thách quá khó khăn nên nó đã thu hút toàn bộ sự
 <div class="doublebox right" style="background-color: #D9ECEF; color: #D9ECEF;">
 <div class="doublebox-absolute">
 <div class="video-holder">
-<video aria-describedby="video-desc-hero" autoplay="" class="lazy" data-setup="{}" id="about_us.v2-hero-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/about-us/career_video_placeholder.webp">
+<video aria-describedby="video-desc-hero" autoplay="" class="lazy" data-setup="{}" id="about_us.v2-hero-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>about-us/career_video_placeholder.webp">
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/about-us/about_us_video.webm" ); ?>" type="video/webm"/>
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/about-us/about_us_video.mp4" ); ?>" type="video/mp4"/>
 <p class="vjs-no-js">Để xem video này, vui lòng bật JavaScript, và xem xét nâng cấp lên một trình duyệt web<a href="#" target="_blank">hỗ trợ video HTML5</a>
@@ -443,31 +443,31 @@ Có lẽ vì thử thách quá khó khăn nên nó đã thu hút toàn bộ sự
 <div class="swiper-wrapper">
 <div class="swiper-slide" data-video-id="video1">
 <div class="video">
-<div aria-describedby="video-desc1" class="youtube" data-alt="Video cho thấy các thành viên đội ngũ Vasco cùng nhau trang trí quả cầu Giáng sinh như một hoạt động lễ hội." data-embed="FhJqk1Gyp1c" data-holder="/themes/vasco-theme/img/about-us/video1_placeholder.webp" role="button" tabindex="0"></div>
+<div aria-describedby="video-desc1" class="youtube" data-alt="Video cho thấy các thành viên đội ngũ Vasco cùng nhau trang trí quả cầu Giáng sinh như một hoạt động lễ hội." data-embed="FhJqk1Gyp1c" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>about-us/video1_placeholder.webp" role="button" tabindex="0"></div>
 <p class="sr-only" id="video-desc1">Video cho thấy các thành viên đội ngũ Vasco cùng nhau trang trí quả cầu Giáng sinh như một hoạt động lễ hội.</p>
 </div>
 </div>
 <div class="swiper-slide" data-video-id="video2">
 <div class="video">
-<div aria-describedby="video-desc2" class="youtube" data-alt="Video cho thấy văn phòng Vasco tại Kraków, với các nhân viên đang làm việc và tương tác vui vẻ trong không khí thân thiện." data-embed="YrDh6axPQm0" data-holder="/themes/vasco-theme/img/about-us/video2_placeholder.webp" role="button" tabindex="0"></div>
+<div aria-describedby="video-desc2" class="youtube" data-alt="Video cho thấy văn phòng Vasco tại Kraków, với các nhân viên đang làm việc và tương tác vui vẻ trong không khí thân thiện." data-embed="YrDh6axPQm0" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>about-us/video2_placeholder.webp" role="button" tabindex="0"></div>
 <p class="sr-only" id="video-desc2">Video cho thấy văn phòng Vasco tại Kraków, với các nhân viên đang làm việc và tương tác vui vẻ trong không khí thân thiện.</p>
 </div>
 </div>
 <div class="swiper-slide" data-video-id="video3">
 <div class="video">
-<div aria-describedby="video-desc3" class="youtube" data-alt="Nhân viên Vasco cùng nhau trang trí trứng Phục sinh và làm các vật trang trí Phục sinh." data-embed="hg5-SQ5xr7Y" data-holder="/themes/vasco-theme/img/about-us/video3_placeholder.webp" role="button" tabindex="0"></div>
+<div aria-describedby="video-desc3" class="youtube" data-alt="Nhân viên Vasco cùng nhau trang trí trứng Phục sinh và làm các vật trang trí Phục sinh." data-embed="hg5-SQ5xr7Y" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>about-us/video3_placeholder.webp" role="button" tabindex="0"></div>
 <p class="sr-only" id="video-desc3">Nhân viên Vasco cùng nhau trang trí trứng Phục sinh và làm các vật trang trí Phục sinh.</p>
 </div>
 </div>
 <div class="swiper-slide" data-video-id="video5">
 <div class="video">
-<div aria-describedby="video-desc5" class="youtube" data-alt="Video hài hước cho thấy đội ngũ marketing chuẩn bị cho Black Friday, khắc họa không khí bận rộn và sự gấp gáp vào giờ chót trước khi chiến dịch ra mắt." data-embed="AseKqzKPHZY" data-holder="/themes/vasco-theme/img/about-us/video5_placeholder.webp" role="button" tabindex="0"></div>
+<div aria-describedby="video-desc5" class="youtube" data-alt="Video hài hước cho thấy đội ngũ marketing chuẩn bị cho Black Friday, khắc họa không khí bận rộn và sự gấp gáp vào giờ chót trước khi chiến dịch ra mắt." data-embed="AseKqzKPHZY" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>about-us/video5_placeholder.webp" role="button" tabindex="0"></div>
 <p class="sr-only" id="video-desc5">Video hài hước cho thấy đội ngũ marketing chuẩn bị cho Black Friday, khắc họa không khí bận rộn và sự gấp gáp vào giờ chót trước khi chiến dịch ra mắt.</p>
 </div>
 </div>
 <div class="swiper-slide" data-video-id="video4">
 <div class="video">
-<div aria-describedby="video-desc4" class="youtube" data-alt="Video minh họa việc sử dụng Vasco Translator trong đời thực. Valentina, người không biết tiếng Ba Lan, sử dụng máy dịch để mua các nguyên liệu cần thiết chế biến một món ăn truyền thống của Ba Lan – mì ống với dâu tây." data-embed="F_Z6VSyEIlc" data-holder="/themes/vasco-theme/img/about-us/video4_placeholder.webp" role="button" tabindex="0"></div>
+<div aria-describedby="video-desc4" class="youtube" data-alt="Video minh họa việc sử dụng Vasco Translator trong đời thực. Valentina, người không biết tiếng Ba Lan, sử dụng máy dịch để mua các nguyên liệu cần thiết chế biến một món ăn truyền thống của Ba Lan – mì ống với dâu tây." data-embed="F_Z6VSyEIlc" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>about-us/video4_placeholder.webp" role="button" tabindex="0"></div>
 <p class="sr-only" id="video-desc4">Video minh họa việc sử dụng Vasco Translator trong đời thực. Valentina, người không biết tiếng Ba Lan, sử dụng máy dịch để mua các nguyên liệu cần thiết chế biến một món ăn truyền thống của Ba Lan – mì ống với dâu tây.</p>
 </div>
 </div>

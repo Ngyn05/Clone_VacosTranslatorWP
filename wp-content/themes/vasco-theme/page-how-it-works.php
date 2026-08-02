@@ -67,7 +67,7 @@ get_header();
 <h2 class="h2-notosans">tutorials</h2>
 <div class="container tutorial-wrapper">
 <div class="video-wrapper">
-<video aria-describedby="video-desc2" autoplay="" data-setup="{}" id="how-it-works-speach-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/landings/howitworks/directions-placeholder.webp" preload="none">
+<video aria-describedby="video-desc2" autoplay="" data-setup="{}" id="how-it-works-speach-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/howitworks/directions-placeholder.webp" preload="none">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/howitworks/howitworks-directions.webm" ); ?>" type="video/webm"/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/howitworks/howitworks-directions.mp4" ); ?>" type="video/mp4"/>
 <p class="vjs-no-js">
@@ -106,7 +106,7 @@ get_header();
 </ul>
 </div>
 <div class="video-wrapper">
-<video aria-describedby="video-desc3" autoplay="" data-setup="{}" id="how-it-works-photo-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/landings/howitworks/restaurant-placeholder.webp" preload="none">
+<video aria-describedby="video-desc3" autoplay="" data-setup="{}" id="how-it-works-photo-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/howitworks/restaurant-placeholder.webp" preload="none">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/howitworks/howitworks-restaurant.webm" ); ?>" type="video/webm"/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/howitworks/howitworks-restaurant.mp4" ); ?>" type="video/mp4"/>
 <p class="vjs-no-js">
@@ -128,7 +128,7 @@ get_header();
 <hr/>
 <div class="container tutorial-wrapper">
 <div class="video-wrapper">
-<video aria-describedby="video-desc4" autoplay="" data-setup="{}" id="how-it-works-text-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/landings/howitworks/meaning-placeholder.webp" preload="none">
+<video aria-describedby="video-desc4" autoplay="" data-setup="{}" id="how-it-works-text-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/howitworks/meaning-placeholder.webp" preload="none">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/howitworks/howitworks-meaning.webm" ); ?>" type="video/webm"/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/howitworks/howitworks-meaning.mp4" ); ?>" type="video/mp4"/>
 <p class="vjs-no-js">

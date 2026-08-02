@@ -251,7 +251,7 @@ get_header();
 <div class="container">
 <div class="youtube-section">
 <h2 class="h2-notosans">Xem cách lắp đặt</h2>
-<div class="youtube" data-alt="Ảnh cận cảnh một người đang giữ miếng dán màn hình trên máy dịch Vasco V4 trong quá trình lắp đặt" data-embed="9u1XBJFIpAI" data-holder="/themes/vasco-theme/img/v4-foil-placeholder.webp"></div>
+<div class="youtube" data-alt="Ảnh cận cảnh một người đang giữ miếng dán màn hình trên máy dịch Vasco V4 trong quá trình lắp đặt" data-embed="9u1XBJFIpAI" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>v4-foil-placeholder.webp"></div>
 </div>
 </div>
 <hr/>

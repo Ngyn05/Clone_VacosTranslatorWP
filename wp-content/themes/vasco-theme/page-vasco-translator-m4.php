@@ -341,7 +341,7 @@ get_header();
 <div class="slide s1">
 <div class="container">
 <div class="media">
-<video aria-describedby="video-desc1" autoplay="" data-setup="{}" id="always-ready" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/m4/ready_video-placeholder.webp" preload="none" style="border-radius: 16px;">
+<video aria-describedby="video-desc1" autoplay="" data-setup="{}" id="always-ready" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>m4/ready_video-placeholder.webp" preload="none" style="border-radius: 16px;">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/ready_video-alpha.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/ready_video-alpha.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
@@ -365,7 +365,7 @@ get_header();
 <div class="slide s2">
 <div class="container">
 <div class="media">
-<video aria-describedby="video-desc1" autoplay="" data-setup="{}" id="simple-easy" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/m4/simple_video-placeholder.webp" preload="none">
+<video aria-describedby="video-desc1" autoplay="" data-setup="{}" id="simple-easy" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>m4/simple_video-placeholder.webp" preload="none">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/simple_video-alpha.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/simple_video-alpha.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
@@ -447,7 +447,7 @@ get_header();
 <div class="doublebox right" style="background-color: #D9ECEF; color: #D9ECEF;">
 <div class="doublebox-absolute">
 <div class="video-holder">
-<video aria-describedby="video-desc-internet" autoplay="" class="lazy" data-setup="{}" id="q1-free-internet-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/q1/free_internet_placeholder.webp">
+<video aria-describedby="video-desc-internet" autoplay="" class="lazy" data-setup="{}" id="q1-free-internet-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>q1/free_internet_placeholder.webp">
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/free_internet.webm" ); ?>" type="video/webm"/>
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/free_internet.mp4" ); ?>" type="video/mp4"/>
 <p class="vjs-no-js">

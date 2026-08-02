@@ -35,7 +35,7 @@ get_header();
 </div>
 <div class="doublebox-absolute">
 <div class="video-holder">
-<video aria-describedby="video-desc-hero" autoplay="" class="lazy" data-setup="{}" id="ces-hero-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/landings/ces/hero-top.webp">
+<video aria-describedby="video-desc-hero" autoplay="" class="lazy" data-setup="{}" id="ces-hero-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/ces/hero-top.webp">
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/ces/hero-top.webm" ); ?>" type="video/webm"/>
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/ces/hero-top.mp4" ); ?>" type="video/mp4"/>
 <p class="vjs-no-js">
@@ -65,7 +65,7 @@ get_header();
 <p>Do photo, text, or speech translations feel obvious to you today?
 To us, that’s the greatest compliment.</p>
 <p class="yt-subtitle">Watch our video</p>
-<div class="youtube" data-alt="." data-embed="NTjPFMDkvdc" data-holder="/themes/vasco-theme/img/landings/ces/placeholder-yt.webp">
+<div class="youtube" data-alt="." data-embed="NTjPFMDkvdc" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/ces/placeholder-yt.webp">
 </div>
 </div>
 </div>
@@ -307,7 +307,7 @@ The beauty of simplicity</p>
 <div class="slide s1">
 <div class="container">
 <div class="media">
-<video aria-describedby="video-desc1" autoplay="" data-setup="{}" id="vasco-my-voice-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/q1/vasco_my_voice_placeholder.webp" preload="none">
+<video aria-describedby="video-desc1" autoplay="" data-setup="{}" id="vasco-my-voice-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>q1/vasco_my_voice_placeholder.webp" preload="none">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/vasco_my_voice.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/vasco_my_voice.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
@@ -331,7 +331,7 @@ The beauty of simplicity</p>
 <div class="slide s2">
 <div class="container">
 <div class="media">
-<video aria-describedby="video-desc2" autoplay="" data-setup="{}" id="free-internet-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/q1/internet_placeholder.webp" preload="none">
+<video aria-describedby="video-desc2" autoplay="" data-setup="{}" id="free-internet-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>q1/internet_placeholder.webp" preload="none">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/internet.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/internet.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
@@ -355,7 +355,7 @@ The beauty of simplicity</p>
 <div class="slide s3">
 <div class="container">
 <div class="media">
-<video aria-describedby="video-desc2" autoplay="" data-setup="{}" id="call-translator-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/q1/call_translator_placeholder.webp" preload="none">
+<video aria-describedby="video-desc2" autoplay="" data-setup="{}" id="call-translator-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>q1/call_translator_placeholder.webp" preload="none">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/call_translator.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/call_translator.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
@@ -379,7 +379,7 @@ The beauty of simplicity</p>
 <div class="slide s4">
 <div class="container">
 <div class="media">
-<video aria-describedby="video-desc2" autoplay="" data-setup="{}" id="automatic-mode-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/q1/automatic_mode_placeholder.webp" preload="none">
+<video aria-describedby="video-desc2" autoplay="" data-setup="{}" id="automatic-mode-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>q1/automatic_mode_placeholder.webp" preload="none">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/automatic_mode.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/automatic_mode.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">

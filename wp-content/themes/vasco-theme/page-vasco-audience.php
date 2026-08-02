@@ -74,7 +74,7 @@ get_header();
 <link crossorigin="" href="../assets/vendor-i18n-oX0ZlWwM.js" rel="modulepreload"/>
 <link crossorigin="" href="../assets/vendor-icons-CDibjtYT.js" rel="modulepreload"/>
 <link crossorigin="" href="../assets/index-Bac-we2J.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="../themes/vasco-theme/assets/css/smooth-carousel.css"/>
+  <link rel="stylesheet" href="..<?php echo esc_url( VASCO_THEME_URI . '/assets/' ); ?>css/smooth-carousel.css"/>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -220,7 +220,7 @@ get_header();
   }
 })();
 </script>
-  <script src="../themes/vasco-theme/assets/js/smooth-carousel.js"></script>
+  <script src="..<?php echo esc_url( VASCO_THEME_URI . '/assets/' ); ?>js/smooth-carousel.js"></script>
 </body>
 </html>
 

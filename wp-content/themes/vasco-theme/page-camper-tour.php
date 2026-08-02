@@ -37,7 +37,7 @@ get_header();
 </div>
 <div class="doublebox-absolute">
 <div class="video-holder">
-<video aria-describedby="video-desc-hero" autoplay="" class="lazy" data-setup="{}" id="ces-hero-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/landings/camper_tour/doublebox1_new.webp">
+<video aria-describedby="video-desc-hero" autoplay="" class="lazy" data-setup="{}" id="ces-hero-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/camper_tour/doublebox1_new.webp">
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/camper_tour/camper_tour_hero.webm" ); ?>" type="video/webm"/>
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/camper_tour/camper_tour_hero.mp4" ); ?>" type="video/mp4"/>
 <p class="vjs-no-js">
@@ -67,16 +67,16 @@ get_header();
 <div aria-labelledby="video-carousel-label" aria-roledescription="carousel" class="swiper swiper-video-slider-full loop" role="region">
 <div class="swiper-wrapper" role="list">
 <div aria-labelledby="slide-label-itemId" class="swiper-slide" role="listitem" tabindex="0">
-<div aria-label="Play video" class="youtube" data-alt="Video showing the use of the Vasco Translator Q1 while traveling." data-embed="RropPh3cnyE" data-holder="/themes/vasco-theme/img/landings/camper_tour/video3.webp" role="button" tabindex="0"></div>
+<div aria-label="Play video" class="youtube" data-alt="Video showing the use of the Vasco Translator Q1 while traveling." data-embed="RropPh3cnyE" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/camper_tour/video3.webp" role="button" tabindex="0"></div>
 </div>
 <div aria-labelledby="slide-label-itemId" class="swiper-slide" role="listitem" tabindex="0">
-<div aria-label="Play video" class="youtube" data-alt="Video showing the use of the Vasco Translator V4 while traveling." data-embed="mEeQVfExJ0w" data-holder="/themes/vasco-theme/img/landings/camper_tour/video4.webp" role="button" tabindex="0"></div>
+<div aria-label="Play video" class="youtube" data-alt="Video showing the use of the Vasco Translator V4 while traveling." data-embed="mEeQVfExJ0w" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/camper_tour/video4.webp" role="button" tabindex="0"></div>
 </div>
 <div aria-labelledby="slide-label-itemId" class="swiper-slide" role="listitem" tabindex="0">
-<div aria-label="Play video" class="youtube" data-alt="Video showing the Vasco Translator V4 being used while traveling, including a conversation with a vendor using the translator." data-embed="Y71NQB4rl58&amp;t=1149s" data-holder="/themes/vasco-theme/img/landings/camper_tour/video5.webp" role="button" tabindex="0"></div>
+<div aria-label="Play video" class="youtube" data-alt="Video showing the Vasco Translator V4 being used while traveling, including a conversation with a vendor using the translator." data-embed="Y71NQB4rl58&amp;t=1149s" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/camper_tour/video5.webp" role="button" tabindex="0"></div>
 </div>
 <div aria-labelledby="slide-label-itemId" class="swiper-slide" role="listitem" tabindex="0">
-<div aria-label="Play video" class="youtube" data-alt="Video showing the Vasco Translator V4 being used while traveling, including a conversation with a person at a gas station." data-embed="UU73i93uEMg&amp;t=378ss" data-holder="/themes/vasco-theme/img/landings/camper_tour/video6.webp" role="button" tabindex="0"></div>
+<div aria-label="Play video" class="youtube" data-alt="Video showing the Vasco Translator V4 being used while traveling, including a conversation with a person at a gas station." data-embed="UU73i93uEMg&amp;t=378ss" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/camper_tour/video6.webp" role="button" tabindex="0"></div>
 </div>
 </div>
 <div class="custom-navigation">
@@ -233,7 +233,7 @@ get_header();
 <div class="youtube-section">
 <h2 class="h1">Hit the road with Vasco!</h2>
 <div class="youtube" data-alt="
-" data-embed="iB7C-NIZ4ys" data-holder="/themes/vasco-theme/img/landings/camper_tour/camper-tour-video.webp"></div>
+" data-embed="iB7C-NIZ4ys" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/camper_tour/camper-tour-video.webp"></div>
 </div>
 </div>
 </section>

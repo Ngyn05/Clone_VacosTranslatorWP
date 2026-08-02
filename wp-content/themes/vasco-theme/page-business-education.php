@@ -42,7 +42,7 @@ get_header();
 <div class="container">
 <h2 class="h2-notosans">Vasco Translator đã hỗ trợ vineland lakes high school như thế nào</h2>
 <div class="youtube-section">
-<div class="youtube" data-alt="Minh họa cách sử dụng máy dịch Vasco, chẳng hạn khi dịch văn bản viết." data-embed="Cjfn7_N6CGo" data-holder="/themes/vasco-theme/img/landings/b2b/Giáo dụcnew/video-us.webp">
+<div class="youtube" data-alt="Minh họa cách sử dụng máy dịch Vasco, chẳng hạn khi dịch văn bản viết." data-embed="Cjfn7_N6CGo" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/b2b/Giáo dụcnew/video-us.webp">
 </div>
 </div>
 </div>
@@ -55,12 +55,12 @@ get_header();
 <div class="swiper swiper-video-slider loop">
 <div class="swiper-wrapper">
 <div class="swiper-slide">
-<div class="youtube" data-alt="Video cho thấy tai nghe Vasco Translator E1 trong khi Luis Javier Pentón Herrera, Tiến sĩ, Giáo viên TESOL của năm 2024, phát biểu, minh họa cách sử dụng thiết bị để dịch theo thời gian thực." data-embed="IxtpFd2L4ig" data-holder="/themes/vasco-theme/img/influencervideo/future_Giáo dục.webp">
+<div class="youtube" data-alt="Video cho thấy tai nghe Vasco Translator E1 trong khi Luis Javier Pentón Herrera, Tiến sĩ, Giáo viên TESOL của năm 2024, phát biểu, minh họa cách sử dụng thiết bị để dịch theo thời gian thực." data-embed="IxtpFd2L4ig" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>influencervideo/future_Giáo dục.webp">
 </div>
 <p>[influencer_videos.video_carousel.future_Giáo dục.title]</p>
 </div>
 <div class="swiper-slide">
-<div class="youtube" data-alt="Video cho thấy Vasco Translator Q1 giúp học sinh, giáo viên và phụ huynh vượt qua rào cản ngôn ngữ như thế nào. Video nêu bật những thách thức trong giao tiếp của học sinh mới đến trường và áp lực khi phải thích nghi với môi trường mới. Thiết bị hoạt động tại gần 200 quốc gia với Internet miễn phí, giúp mọi người dễ dàng hiểu nhau hơn, ngay cả khi cần dịch những ngôn ngữ ít phổ biến." data-embed="YE7Oz7cGxB0" data-holder="/themes/vasco-theme/img/influencervideo/all_access.webp">
+<div class="youtube" data-alt="Video cho thấy Vasco Translator Q1 giúp học sinh, giáo viên và phụ huynh vượt qua rào cản ngôn ngữ như thế nào. Video nêu bật những thách thức trong giao tiếp của học sinh mới đến trường và áp lực khi phải thích nghi với môi trường mới. Thiết bị hoạt động tại gần 200 quốc gia với Internet miễn phí, giúp mọi người dễ dàng hiểu nhau hơn, ngay cả khi cần dịch những ngôn ngữ ít phổ biến." data-embed="YE7Oz7cGxB0" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>influencervideo/all_access.webp">
 </div>
 <p>[influencer_videos.video_carousel.all_access.title]</p>
 </div>

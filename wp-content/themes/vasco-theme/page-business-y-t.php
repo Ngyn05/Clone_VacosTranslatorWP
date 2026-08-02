@@ -41,7 +41,7 @@ get_header();
 <div class="container">
 <h2 class="h2-notosans">Các tính năng của Vasco Translator V4 hỗ trợ NHÀ CUNG CẤP DỊCH VỤ Y TẾ</h2>
 <div class="youtube-section">
-<div class="youtube" data-alt="Minh họa cách sử dụng máy dịch Vasco, chẳng hạn khi dịch văn bản viết." data-embed="UxFSf1_YbJ4" data-holder="/themes/vasco-theme/img/landings/b2b/Y tế/video.webp">
+<div class="youtube" data-alt="Minh họa cách sử dụng máy dịch Vasco, chẳng hạn khi dịch văn bản viết." data-embed="UxFSf1_YbJ4" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/b2b/Y tế/video.webp">
 </div>
 <div class="flex-small-text">
 <p>112 ngôn ngữ trong tầm tay khi việc chăm sóc bệnh nhân là điều quan trọng nhất.</p>

@@ -23,15 +23,9 @@ function vasco_theme_enqueue_all_assets() {
 	wp_enqueue_style( 'vasco-css-9', VASCO_THEME_URI . '/assets/modules/ve_extdescription/views/css/vmap.css', array(), VASCO_THEME_VERSION );
 	wp_enqueue_style( 'vasco-css-10', VASCO_THEME_URI . '/assets/modules/ve_gdpr_info/views/css/ve_gdpr.css', array(), VASCO_THEME_VERSION );
 	wp_enqueue_style( 'vasco-css-11', VASCO_THEME_URI . '/assets/modules/ve_notifyproducts/views/assets/css/notifyproduct.css', array(), VASCO_THEME_VERSION );
-	wp_enqueue_style( 'vasco-css-12', VASCO_THEME_URI . '/assets/themes/vasco-theme/assets/css/category-BkrAaUZX.css', array(), VASCO_THEME_VERSION );
-	wp_enqueue_style( 'vasco-css-13', VASCO_THEME_URI . '/assets/themes/vasco-theme/assets/css/index-BdfBdicE.css', array(), VASCO_THEME_VERSION );
-	wp_enqueue_style( 'vasco-css-14', VASCO_THEME_URI . '/assets/themes/vasco-theme/assets/css/landing-Dc8GznoV.css', array(), VASCO_THEME_VERSION );
-	wp_enqueue_style( 'vasco-css-15', VASCO_THEME_URI . '/assets/themes/vasco-theme/assets/css/product-Dcv3kZVH.css', array(), VASCO_THEME_VERSION );
-	wp_enqueue_style( 'vasco-css-16', VASCO_THEME_URI . '/assets/themes/vasco-theme/assets/css/smooth-carousel.css', array(), VASCO_THEME_VERSION );
-	wp_enqueue_style( 'vasco-css-17', VASCO_THEME_URI . '/assets/themes/vasco-theme/assets/css/theme-DXqo8zvY.css', array(), VASCO_THEME_VERSION );
 
 	// 2. Enqueue Main Theme Style (MUST BE LAST to override assets CSS rules)
-	wp_enqueue_style( 'vasco-main-style', VASCO_THEME_URI . '/style.css', array( 'vasco-css-17' ), VASCO_THEME_VERSION );
+	wp_enqueue_style( 'vasco-main-style', VASCO_THEME_URI . '/style.css', array( 'vasco-css-5' ), VASCO_THEME_VERSION );
 
 
 	// 3. Enqueue jQuery Core
@@ -55,15 +49,15 @@ function vasco_theme_enqueue_all_assets() {
 	wp_enqueue_script( 'vasco-js-13', VASCO_THEME_URI . '/assets/modules/ve_extdescription/views/js/vmap/jvectormap.min.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
 	wp_enqueue_script( 'vasco-js-14', VASCO_THEME_URI . '/assets/modules/ve_gdpr_info/views/js/js.cookie.min.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
 	wp_enqueue_script( 'vasco-js-15', VASCO_THEME_URI . '/assets/modules/ve_gdpr_info/views/js/ve_gdpr.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
-	wp_enqueue_script( 'vasco-js-16', VASCO_THEME_URI . '/assets/themes/core.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
-	wp_enqueue_script( 'vasco-js-17', VASCO_THEME_URI . '/assets/themes/vasco-theme/assets/js/category-B_zo-gnJ.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
-	wp_enqueue_script( 'vasco-js-18', VASCO_THEME_URI . '/assets/themes/vasco-theme/assets/js/index-Dp7Wv8_s.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
-	wp_enqueue_script( 'vasco-js-19', VASCO_THEME_URI . '/assets/themes/vasco-theme/assets/js/landing-D-hh3MsL.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
-	wp_enqueue_script( 'vasco-js-20', VASCO_THEME_URI . '/assets/themes/vasco-theme/assets/js/product-Dtgren3K.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
-	wp_enqueue_script( 'vasco-js-21', VASCO_THEME_URI . '/assets/themes/vasco-theme/assets/js/smooth-carousel.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
-	wp_enqueue_script( 'vasco-js-22', VASCO_THEME_URI . '/assets/themes/vasco-theme/assets/js/theme-xdI8XRYL.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
-	wp_enqueue_script( 'vasco-js-23', VASCO_THEME_URI . '/assets/themes/vasco-theme/modules/ps_emailsubscription/views/js/ps_emailsubscription.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
-	wp_enqueue_script( 'vasco-js-24', VASCO_THEME_URI . '/assets/themes/vasco-theme/modules/ps_shoppingcart/ps_shoppingcart.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
+	wp_enqueue_script( 'vasco-js-16', VASCO_THEME_URI . '/assets/js/core.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
+	wp_enqueue_script( 'vasco-js-17', VASCO_THEME_URI . '/assets/js/category-B_zo-gnJ.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
+	wp_enqueue_script( 'vasco-js-18', VASCO_THEME_URI . '/assets/js/index-Dp7Wv8_s.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
+	wp_enqueue_script( 'vasco-js-19', VASCO_THEME_URI . '/assets/js/landing-D-hh3MsL.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
+	wp_enqueue_script( 'vasco-js-20', VASCO_THEME_URI . '/assets/js/product-Dtgren3K.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
+	wp_enqueue_script( 'vasco-js-21', VASCO_THEME_URI . '/assets/js/smooth-carousel.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
+	wp_enqueue_script( 'vasco-js-22', VASCO_THEME_URI . '/assets/js/theme-xdI8XRYL.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
+	wp_enqueue_script( 'vasco-js-23', VASCO_THEME_URI . '/assets/modules/ps_emailsubscription/views/js/ps_emailsubscription.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
+	wp_enqueue_script( 'vasco-js-24', VASCO_THEME_URI . '/assets/modules/ps_shoppingcart/ps_shoppingcart.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
 
 	// Inline DOM fix for product tab menus (About / Specification / Languages / FAQ)
 	// and FAQ accordions.
@@ -296,7 +290,7 @@ function vasco_theme_enqueue_all_assets() {
 						fixAttributes.forEach(function(attr) {
 							var val = el.getAttribute(attr);
 							if (val && themeUri) {
-								if (val.indexOf('/themes/vasco-theme/') === 0 || val.indexOf('../themes/vasco-theme/') === 0) {
+								if (val.indexOf('<?php echo esc_url( VASCO_THEME_URI . '/assets/' ); ?>') === 0 || val.indexOf('..<?php echo esc_url( VASCO_THEME_URI . '/assets/' ); ?>') === 0) {
 									var cleanPath = val.replace(/^(\.\.)?\/themes\/vasco-theme/, '');
 									el.setAttribute(attr, themeUri + cleanPath);
 								}

@@ -42,7 +42,7 @@ get_header();
 </div>
 <div class="doublebox-absolute">
 <div class="video-holder">
-<video aria-describedby="video-desc-hero" autoplay="" class="lazy" data-setup="{}" id="the-new-hero-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/landings/ces/hero-top.webp">
+<video aria-describedby="video-desc-hero" autoplay="" class="lazy" data-setup="{}" id="the-new-hero-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/ces/hero-top.webp">
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/ces/hero-top.webm" ); ?>" type="video/webm"/>
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/ces/hero-top.mp4" ); ?>" type="video/mp4"/>
 <p class="vjs-no-js">
@@ -205,7 +205,7 @@ get_header();
 <div class="db-container-wrapper">
 <div class="media">
 <div class="assets-wrapper">
-<video aria-describedby="video-desc1" autoplay="" class="lazy" data-setup="{}" id="vasco-assistant-mode" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/landings/the_new/q1_animation_vasco_assistant_placeholder.webp" preload="none" style="border-radius: 16px;">
+<video aria-describedby="video-desc1" autoplay="" class="lazy" data-setup="{}" id="vasco-assistant-mode" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/the_new/q1_animation_vasco_assistant_placeholder.webp" preload="none" style="border-radius: 16px;">
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/the_new/q1_animation_vasco_assistant.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/the_new/q1_animation_vasco_assistant.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
@@ -273,7 +273,7 @@ get_header();
 </div>
 <div class="media">
 <div class="assets-wrapper">
-<video aria-describedby="video-desc1" autoplay="" class="lazy" data-setup="{}" id="animation-closeups" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/landings/the_new/m4_animation_closeups_placeholder.webp" preload="none" style="border-radius: 16px;">
+<video aria-describedby="video-desc1" autoplay="" class="lazy" data-setup="{}" id="animation-closeups" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/the_new/m4_animation_closeups_placeholder.webp" preload="none" style="border-radius: 16px;">
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/the_new/m4_animation_closeups.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/the_new/m4_animation_closeups.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
@@ -293,7 +293,7 @@ get_header();
 <div class="db-container-wrapper">
 <div class="media">
 <div class="assets-wrapper">
-<video aria-describedby="video-desc1" autoplay="" class="lazy" data-setup="{}" id="vasco-offline" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/landings/the_new/q1_animation_vasco_assistant_placeholder.webp" preload="none" style="border-radius: 16px;">
+<video aria-describedby="video-desc1" autoplay="" class="lazy" data-setup="{}" id="vasco-offline" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/the_new/q1_animation_vasco_assistant_placeholder.webp" preload="none" style="border-radius: 16px;">
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/the_new/q1_animation_vasco_offline.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/the_new/q1_animation_vasco_offline.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
@@ -486,15 +486,15 @@ get_header();
 <div class="videos-wrapper">
 <div class="swiper swiper-video-slider loop">
 <div class="swiper-wrapper"><div aria-labelledby="slide-label-vasco1" class="swiper-slide" role="listitem" tabindex="0">
-<div aria-label="Play video - 'What happened in Vegas... has officially been revealed! 🎰🌍'" class="youtube" data-alt="A video showcasing the Vasco booth at CES 2026, highlighting the debut of cutting-edge translation technology. The footage features a live demonstration of new AI-driven features, including Vasco Assistant and Vasco Audience, designed for real-time translation during large-scale presentations and group events." data-embed="KOBQ62VVoLM" data-holder="/themes/vasco-theme/img/influencervideo/vasco1.webp" role="button" tabindex="0"></div>
+<div aria-label="Play video - 'What happened in Vegas... has officially been revealed! 🎰🌍'" class="youtube" data-alt="A video showcasing the Vasco booth at CES 2026, highlighting the debut of cutting-edge translation technology. The footage features a live demonstration of new AI-driven features, including Vasco Assistant and Vasco Audience, designed for real-time translation during large-scale presentations and group events." data-embed="KOBQ62VVoLM" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>influencervideo/vasco1.webp" role="button" tabindex="0"></div>
 <p id="slide-label-vasco1">What happened in Vegas... has officially been revealed! 🎰🌍</p>
 </div>
 <div aria-labelledby="slide-label-video_testy1" class="swiper-slide" role="listitem" tabindex="0">
-<div 100%="" a="" ai-driven="" and="" aria-label="Play video - 'What’s in store from Vasco in 2026? Introducing our latest breakthroughs: Vasco Assistant, Audience, and Vasco Offline.'" as="" assistant="" audience="" class="youtube" company="" conquering="" data-alt="A comprehensive video report from the Vasco Electronics booth at CES 2026 in Las Vegas. The footage, created by VideoTesty, explores the company's " data-embed="H15rAC6ksAM" data-holder="/themes/vasco-theme/img/influencervideo/video_testy1.webp" features="" for="" functionality.="" global="" group="" hardware="" highlights="" innovative,="" it="" market="" new="" of="" offline="" philosophy.="" polish="" premiere="" role="button" simply="" smart="" solutions:="" support,="" tabindex="0" technology."="" that="" the="" translations,="" user-centric="" vasco="" video="" with="" works"="" world=""></div>
+<div 100%="" a="" ai-driven="" and="" aria-label="Play video - 'What’s in store from Vasco in 2026? Introducing our latest breakthroughs: Vasco Assistant, Audience, and Vasco Offline.'" as="" assistant="" audience="" class="youtube" company="" conquering="" data-alt="A comprehensive video report from the Vasco Electronics booth at CES 2026 in Las Vegas. The footage, created by VideoTesty, explores the company's " data-embed="H15rAC6ksAM" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>influencervideo/video_testy1.webp" features="" for="" functionality.="" global="" group="" hardware="" highlights="" innovative,="" it="" market="" new="" of="" offline="" philosophy.="" polish="" premiere="" role="button" simply="" smart="" solutions:="" support,="" tabindex="0" technology."="" that="" the="" translations,="" user-centric="" vasco="" video="" with="" works"="" world=""></div>
 <p id="slide-label-video_testy1">What’s in store from Vasco in 2026? Introducing our latest breakthroughs: Vasco Assistant, Audience, and Vasco Offline.</p>
 </div>
 <div aria-labelledby="slide-label-rootblog2" class="swiper-slide" role="listitem" tabindex="0">
-<div aria-label="Play video - 'VASCO Audience 🗣️ One-to-Many Translation  👨‍👨‍👦 LATEST from CES 2026 🤩'" class="youtube" data-alt="Detailed video report from CES 2025 featuring Vasco Electronics' latest innovations. The footage demonstrates the revolutionary Vasco Audience app, which enables one-to-many simultaneous translation for conferences and international meetings via QR code. It also showcases the new AI Assistant for the Vasco Q1, highlighting its capabilities as a context-aware translator and a local travel guide. The video emphasizes the ease of use, showing real-time translation projected onto a large screen and the device's offline mode." data-embed="e_pQwvXG5Ww" data-holder="/themes/vasco-theme/img/influencervideo/rootblog2.webp" role="button" tabindex="0"></div>
+<div aria-label="Play video - 'VASCO Audience 🗣️ One-to-Many Translation  👨‍👨‍👦 LATEST from CES 2026 🤩'" class="youtube" data-alt="Detailed video report from CES 2025 featuring Vasco Electronics' latest innovations. The footage demonstrates the revolutionary Vasco Audience app, which enables one-to-many simultaneous translation for conferences and international meetings via QR code. It also showcases the new AI Assistant for the Vasco Q1, highlighting its capabilities as a context-aware translator and a local travel guide. The video emphasizes the ease of use, showing real-time translation projected onto a large screen and the device's offline mode." data-embed="e_pQwvXG5Ww" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>influencervideo/rootblog2.webp" role="button" tabindex="0"></div>
 <p id="slide-label-rootblog2">VASCO Audience 🗣️ One-to-Many Translation  👨‍👨‍👦 LATEST from CES 2026 🤩</p>
 </div>
 </div>
@@ -522,7 +522,7 @@ get_header();
 <div class="slide s1">
 <div class="container">
 <div class="media">
-<video aria-describedby="video-desc1" autoplay="" data-setup="{}" id="vasco-my-voice-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/q1/vasco_my_voice_placeholder.webp" preload="none">
+<video aria-describedby="video-desc1" autoplay="" data-setup="{}" id="vasco-my-voice-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>q1/vasco_my_voice_placeholder.webp" preload="none">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/vasco_my_voice.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/vasco_my_voice.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
@@ -546,7 +546,7 @@ get_header();
 <div class="slide s2">
 <div class="container">
 <div class="media">
-<video aria-describedby="video-desc2" autoplay="" data-setup="{}" id="free-internet-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/q1/internet_placeholder.webp" preload="none">
+<video aria-describedby="video-desc2" autoplay="" data-setup="{}" id="free-internet-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>q1/internet_placeholder.webp" preload="none">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/internet.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/internet.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
@@ -570,7 +570,7 @@ get_header();
 <div class="slide s3">
 <div class="container">
 <div class="media">
-<video aria-describedby="video-desc2" autoplay="" data-setup="{}" id="call-translator-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/q1/call_translator_placeholder.webp" preload="none">
+<video aria-describedby="video-desc2" autoplay="" data-setup="{}" id="call-translator-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>q1/call_translator_placeholder.webp" preload="none">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/call_translator.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/call_translator.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
@@ -594,7 +594,7 @@ get_header();
 <div class="slide s4">
 <div class="container">
 <div class="media">
-<video aria-describedby="video-desc2" autoplay="" data-setup="{}" id="automatic-mode-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/q1/automatic_mode_placeholder.webp" preload="none">
+<video aria-describedby="video-desc2" autoplay="" data-setup="{}" id="automatic-mode-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>q1/automatic_mode_placeholder.webp" preload="none">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/automatic_mode.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/automatic_mode.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">

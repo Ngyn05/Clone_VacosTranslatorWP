@@ -105,7 +105,7 @@ get_header();
 <div class="voice-box-wrapper" style="background-color: #EFECE8;">
 <div class="voice-box-right container">
 <div class="voice-img-box">
-<video autoplay="" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/fe-MultiTalk-poster.webp" preload="metadata">
+<video autoplay="" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>fe-MultiTalk-poster.webp" preload="metadata">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/fe-MultiTalk-video.webm" ); ?>" type="video/webm"/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/fe-MultiTalk-video.mp4" ); ?>" type="video/mp4"/>
 </video>

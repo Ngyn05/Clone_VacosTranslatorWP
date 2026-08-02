@@ -362,7 +362,7 @@ get_header();
 <div class="slide s1">
 <div class="container">
 <div class="media">
-<video aria-describedby="video-desc1" autoplay="" data-setup="{}" id="vasco-assistant" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/q1/vasco_my_voice_placeholder.webp" preload="none" style="border-radius: 16px;">
+<video aria-describedby="video-desc1" autoplay="" data-setup="{}" id="vasco-assistant" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>q1/vasco_my_voice_placeholder.webp" preload="none" style="border-radius: 16px;">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/vasco_assistant.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/vasco_assistant.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
@@ -386,7 +386,7 @@ get_header();
 <div class="slide s2">
 <div class="container">
 <div class="media">
-<video aria-describedby="video-desc1" autoplay="" data-setup="{}" id="vasco-my-voice-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/q1/vasco_my_voice_placeholder.webp" preload="none">
+<video aria-describedby="video-desc1" autoplay="" data-setup="{}" id="vasco-my-voice-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>q1/vasco_my_voice_placeholder.webp" preload="none">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/vasco_my_voice.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/vasco_my_voice.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
@@ -410,7 +410,7 @@ get_header();
 <div class="slide s3">
 <div class="container">
 <div class="media">
-<video aria-describedby="video-desc2" autoplay="" data-setup="{}" id="call-translator-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/q1/call_translator_placeholder.webp" preload="none">
+<video aria-describedby="video-desc2" autoplay="" data-setup="{}" id="call-translator-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>q1/call_translator_placeholder.webp" preload="none">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/call_translator.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/call_translator.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
@@ -558,7 +558,7 @@ get_header();
 </div>
 <div class="doublebox-absolute">
 <div class="video-holder">
-<video aria-describedby="video-desc-internet" autoplay="" class="lazy" data-setup="{}" id="q1-free-internet-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/q1/free_internet_placeholder.webp">
+<video aria-describedby="video-desc-internet" autoplay="" class="lazy" data-setup="{}" id="q1-free-internet-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>q1/free_internet_placeholder.webp">
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/free_internet.webm" ); ?>" type="video/webm"/>
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/free_internet.mp4" ); ?>" type="video/mp4"/>
 <p class="vjs-no-js">

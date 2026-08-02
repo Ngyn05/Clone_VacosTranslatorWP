@@ -176,7 +176,7 @@ get_header();
 <div class="swiper-wrapper" role="list">
 <div aria-labelledby="product-14" class="swiper-slide" role="listitem" tabindex="0">
 <div class="box">
-<img src="/themes/vasco-theme/img/features-v4-black.webp"/>
+<img src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>features-v4-black.webp"/>
 <div class="product-description">
 <h3 aria-label="Vasco Translator V4" id="product-14" tabindex="0">Vasco Translator V4</h3>
 <p>Màn hình lớn hơn và sự thoải mái tối đa</p>

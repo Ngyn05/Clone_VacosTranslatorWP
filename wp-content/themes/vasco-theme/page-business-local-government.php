@@ -1066,7 +1066,7 @@ able to understand one another. I use it many times a day.”</p>
 <tr>
 <td class="product-e1"><img height="24" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/compare/ok.svg" ); ?>" width="24"/></td>
 <td class="product-v4"><img height="24" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/compare/ok.svg" ); ?>" width="24"/></td>
-<td class="product-q1"><img height="24" src="/themes/vasco-theme/img/landings/compare/ok.svg" width="24"/></td>
+<td class="product-q1"><img height="24" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/compare/ok.svg" width="24"/></td>
 </tr>
 <tr>
 <th colspan="3" scope="row">
@@ -1076,7 +1076,7 @@ able to understand one another. I use it many times a day.”</p>
 <tr>
 <td class="product-e1">-</td>
 <td class="product-v4"><img height="24" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/compare/ok.svg" ); ?>" width="24"/></td>
-<td class="product-q1"><img height="24" src="/themes/vasco-theme/img/landings/compare/ok.svg" width="24"/></td>
+<td class="product-q1"><img height="24" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/compare/ok.svg" width="24"/></td>
 </tr>
 <tr>
 <th colspan="3" scope="row">
@@ -1086,7 +1086,7 @@ able to understand one another. I use it many times a day.”</p>
 <tr>
 <td class="product-e1">-</td>
 <td class="product-v4"><img height="24" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/compare/ok.svg" ); ?>" width="24"/></td>
-<td class="product-q1"><img height="24" src="/themes/vasco-theme/img/landings/compare/ok.svg" width="24"/></td>
+<td class="product-q1"><img height="24" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/compare/ok.svg" width="24"/></td>
 </tr>
 <tr>
 <th colspan="3" scope="row">

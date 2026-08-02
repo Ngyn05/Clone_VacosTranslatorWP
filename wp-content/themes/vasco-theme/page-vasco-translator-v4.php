@@ -225,7 +225,7 @@ get_header();
 </svg>
 </div>
 <div class="dialog-content">
-<div class="cloudimage-360" data-filename-x="black-onyx-{index}.webp" data-folder="/themes/vasco-theme/img/photos-360/black-onyx/" data-id="vasco-translator-v4-360-view" data-initial-icon="false" id="container-360"> </div>
+<div class="cloudimage-360" data-filename-x="black-onyx-{index}.webp" data-folder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>photos-360/black-onyx/" data-id="vasco-translator-v4-360-view" data-initial-icon="false" id="container-360"> </div>
 </div>
 </dialog>
 </div>

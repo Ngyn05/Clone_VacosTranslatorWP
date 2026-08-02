@@ -417,7 +417,7 @@ Người tham gia có quyền rút khỏi hợp đồng mua bán trong vòng 14 
 <div class="slide s1">
 <div class="container">
 <div class="media">
-<video aria-describedby="video-desc1" autoplay="" data-setup="{}" id="headphone-mode-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/e1/headphone_mode.webp" preload="none">
+<video aria-describedby="video-desc1" autoplay="" data-setup="{}" id="headphone-mode-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>e1/headphone_mode.webp" preload="none">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1/headphone_mode.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1/headphone_mode.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
@@ -442,7 +442,7 @@ Người tham gia có quyền rút khỏi hợp đồng mua bán trong vòng 14 
 <div class="slide s2">
 <div class="container">
 <div class="media">
-<video aria-describedby="video-desc2" autoplay="" data-setup="{}" id="hands-free-mode-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/e1/hands_free_mode.webp" preload="none">
+<video aria-describedby="video-desc2" autoplay="" data-setup="{}" id="hands-free-mode-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>e1/hands_free_mode.webp" preload="none">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1/hands_free_mode.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1/hands_free_mode.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
@@ -573,7 +573,7 @@ Người tham gia có quyền rút khỏi hợp đồng mua bán trong vòng 14 
 <path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
 </svg>
 </div>
-<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('/themes/vasco-theme/img/e1/groups-business.webp');">
+<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>e1/groups-business.webp');">
 <img alt="A side profile of a blonde woman in a white blouse speaking during a business meeting at a wooden conference table. She is wearing a black Vasco Translation E1 earbud. In the blurred background, two other professionals are sitting across the table, smiling and listening attentively. " class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1/groups-business.webp" ); ?>"/>
 </div>
 </div>
@@ -595,7 +595,7 @@ Người tham gia có quyền rút khỏi hợp đồng mua bán trong vòng 14 
 <path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
 </svg>
 </div>
-<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('/themes/vasco-theme/img/e1/groups-family.webp');">
+<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>e1/groups-family.webp');">
 <img alt="A heartwarming multi-generational family gathering around a dining table filled with food. An older smiling man in a grey cardigan and two women are interacting happily in a sunlit room full of plants. All three individuals are wearing black Vasco Translation E1 earbuds. " class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1/groups-family.webp" ); ?>"/>
 </div>
 </div>
@@ -617,7 +617,7 @@ Người tham gia có quyền rút khỏi hợp đồng mua bán trong vòng 14 
 <path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
 </svg>
 </div>
-<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('/themes/vasco-theme/img/e1/groups-travel.webp');">
+<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>e1/groups-travel.webp');">
 <img alt="Two men are standing by an outdoor table and having a conversation. One of them is wearing a backpack, and both are using Vasco Translator E1 earbuds. " class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1/groups-travel.webp" ); ?>"/>
 </div>
 </div>
@@ -1044,7 +1044,7 @@ Người tham gia có quyền rút khỏi hợp đồng mua bán trong vòng 14 
 <div class="slide s1">
 <div class="container">
 <div class="media">
-<video aria-describedby="video-desc1" autoplay="" data-setup="{}" id="vasco-assistant" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/q1/vasco_my_voice_placeholder.webp" preload="none" style="border-radius: 16px;">
+<video aria-describedby="video-desc1" autoplay="" data-setup="{}" id="vasco-assistant" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>q1/vasco_my_voice_placeholder.webp" preload="none" style="border-radius: 16px;">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/vasco_assistant.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/vasco_assistant.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
@@ -1068,7 +1068,7 @@ Người tham gia có quyền rút khỏi hợp đồng mua bán trong vòng 14 
 <div class="slide s2">
 <div class="container">
 <div class="media">
-<video aria-describedby="video-desc1" autoplay="" data-setup="{}" id="vasco-my-voice-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/q1/vasco_my_voice_placeholder.webp" preload="none">
+<video aria-describedby="video-desc1" autoplay="" data-setup="{}" id="vasco-my-voice-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>q1/vasco_my_voice_placeholder.webp" preload="none">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/vasco_my_voice.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/vasco_my_voice.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
@@ -1092,7 +1092,7 @@ Người tham gia có quyền rút khỏi hợp đồng mua bán trong vòng 14 
 <div class="slide s3">
 <div class="container">
 <div class="media">
-<video aria-describedby="video-desc2" autoplay="" data-setup="{}" id="call-translator-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/q1/call_translator_placeholder.webp" preload="none">
+<video aria-describedby="video-desc2" autoplay="" data-setup="{}" id="call-translator-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>q1/call_translator_placeholder.webp" preload="none">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/call_translator.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/call_translator.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
@@ -1193,7 +1193,7 @@ Người tham gia có quyền rút khỏi hợp đồng mua bán trong vòng 14 
 </div>
 <div class="doublebox-absolute">
 <div class="video-holder">
-<video aria-describedby="video-desc-internet" autoplay="" class="lazy" data-setup="{}" id="q1-e1-free-internet-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/q1/free_internet_placeholder.webp">
+<video aria-describedby="video-desc-internet" autoplay="" class="lazy" data-setup="{}" id="q1-e1-free-internet-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>q1/free_internet_placeholder.webp">
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/free_internet.webm" ); ?>" type="video/webm"/>
 <source data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/free_internet.mp4" ); ?>" type="video/mp4"/>
 <p class="vjs-no-js">

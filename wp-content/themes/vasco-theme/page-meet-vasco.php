@@ -674,7 +674,7 @@ with other Vasco devices" data-product-name="E1">
 <div class="feature-boxes">
 <div class="feature-box active" data-id="voice_translator">
 <div class="video">
-<video aria-describedby="video-desc1" autoplay="" data-setup="{}" id="meet-vasco-speach-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/landings/howitworks/directions-placeholder.webp" preload="none">
+<video aria-describedby="video-desc1" autoplay="" data-setup="{}" id="meet-vasco-speach-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/howitworks/directions-placeholder.webp" preload="none">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/howitworks/howitworks-directions.webm" ); ?>" type="video/webm"/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/howitworks/howitworks-directions.mp4" ); ?>" type="video/mp4"/>
 <p class="vjs-no-js">
@@ -702,7 +702,7 @@ with other Vasco devices" data-product-name="E1">
 </div>
 <div class="feature-box" data-id="photo_translator">
 <div class="video">
-<video aria-describedby="video-desc2" autoplay="" data-setup="{}" id="meet-vasco-photo-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/landings/howitworks/photo-placeholder.webp" preload="none">
+<video aria-describedby="video-desc2" autoplay="" data-setup="{}" id="meet-vasco-photo-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/howitworks/photo-placeholder.webp" preload="none">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/howitworks/howitworks-restaurant.webm" ); ?>" type="video/webm"/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/howitworks/howitworks-restaurant.mp4" ); ?>" type="video/mp4"/>
 <p class="vjs-no-js">
@@ -730,7 +730,7 @@ with other Vasco devices" data-product-name="E1">
 </div>
 <div class="feature-box" data-id="text_translator">
 <div class="video">
-<video aria-describedby="video-desc3" autoplay="" data-setup="{}" id="meet-vasco-text-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/landings/howitworks/text-placeholder.webp" preload="none">
+<video aria-describedby="video-desc3" autoplay="" data-setup="{}" id="meet-vasco-text-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/howitworks/text-placeholder.webp" preload="none">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/howitworks/howitworks-text.webm" ); ?>" type="video/webm"/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/howitworks/howitworks-text.mp4" ); ?>" type="video/mp4"/>
 <p class="vjs-no-js">
@@ -772,7 +772,7 @@ with other Vasco devices" data-product-name="E1">
 </div>
 <div class="feature-box" data-id="call_translator">
 <div class="video">
-<video aria-describedby="video-desc5" autoplay="" data-setup="{}" id="meet-vasco-call-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/landings/meet_vasco/call-translator-placeholder.webp" preload="none">
+<video aria-describedby="video-desc5" autoplay="" data-setup="{}" id="meet-vasco-call-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/meet_vasco/call-translator-placeholder.webp" preload="none">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/call-translator.webm" ); ?>" type="video/webm"/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/call-translator.mp4" ); ?>" type="video/mp4"/>
 <p class="vjs-no-js">
@@ -800,7 +800,7 @@ with other Vasco devices" data-product-name="E1">
 </div>
 <div class="feature-box" data-id="vasco_my_voice">
 <div class="video">
-<video aria-describedby="video-desc6" autoplay="" data-setup="{}" id="meet-vasco-cloning-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/landings/meet_vasco/cloning-placeholder.webp" preload="none">
+<video aria-describedby="video-desc6" autoplay="" data-setup="{}" id="meet-vasco-cloning-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/meet_vasco/cloning-placeholder.webp" preload="none">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/voice_cloning.webm" ); ?>" type="video/webm"/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/voice_cloning.mp4" ); ?>" type="video/mp4"/>
 <p class="vjs-no-js">
@@ -828,7 +828,7 @@ with other Vasco devices" data-product-name="E1">
 </div>
 <div class="feature-box" data-id="ai_assistant">
 <div class="video">
-<video aria-describedby="video-desc7" autoplay="" data-setup="{}" id="meet-vasco-ai-assistant-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/landings/meet_vasco/ai-assistant-placeholder.webp" preload="none">
+<video aria-describedby="video-desc7" autoplay="" data-setup="{}" id="meet-vasco-ai-assistant-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/meet_vasco/ai-assistant-placeholder.webp" preload="none">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/assistant.webm" ); ?>" type="video/webm"/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/assistant.mp4" ); ?>" type="video/mp4"/>
 <p class="vjs-no-js">
@@ -855,7 +855,7 @@ with other Vasco devices" data-product-name="E1">
 </div>
 <div class="feature-box" data-id="learning">
 <div class="video">
-<video aria-describedby="video-desc8" autoplay="" data-setup="{}" id="meet-vasco-learning-video" loop="" muted="" playsinline="" poster="/themes/vasco-theme/img/landings/meet_vasco/learning-placeholder.webp" preload="none">
+<video aria-describedby="video-desc8" autoplay="" data-setup="{}" id="meet-vasco-learning-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/meet_vasco/learning-placeholder.webp" preload="none">
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/learning.webm" ); ?>" type="video/webm"/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/learning.mp4" ); ?>" type="video/mp4"/>
 <p class="vjs-no-js">
@@ -1218,23 +1218,23 @@ with other Vasco devices" data-product-name="E1">
 <div class="videos-wrapper">
 <div class="swiper swiper-video-slider loop">
 <div class="swiper-wrapper"><div aria-labelledby="slide-label-influencervideo1" class="swiper-slide" role="listitem" tabindex="0">
-<div aria-label="Play video - 'TEENAGER GETS BAD NEWS | NOT THE NEWS HE WAS HOPING TO HEAR | TOTALLY DISAPPOINTED'" class="youtube" data-alt="." data-embed="2-X_XmNaPaM&amp;t=97s" data-holder="/themes/vasco-theme/img/influencervideo/our_life_in_holland.webp" role="button" tabindex="0"></div>
+<div aria-label="Play video - 'TEENAGER GETS BAD NEWS | NOT THE NEWS HE WAS HOPING TO HEAR | TOTALLY DISAPPOINTED'" class="youtube" data-alt="." data-embed="2-X_XmNaPaM&amp;t=97s" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>influencervideo/our_life_in_holland.webp" role="button" tabindex="0"></div>
 <p id="slide-label-influencervideo1">TEENAGER GETS BAD NEWS | NOT THE NEWS HE WAS HOPING TO HEAR | TOTALLY DISAPPOINTED</p>
 </div>
 <div aria-labelledby="slide-label-influencervideo2" class="swiper-slide" role="listitem" tabindex="0">
-<div aria-label="Play video - 'SCHOOL'S OUT FOR THE REST OF THE YEAR | CHRISTMAS BREAK | LAST DAY OF SCHOOL SURPRISE'" class="youtube" data-alt="" data-embed="djaMAAJAwk0&amp;t=70" data-holder="/themes/vasco-theme/img/influencervideo/our_life_in_holland2.webp" role="button" tabindex="0"></div>
+<div aria-label="Play video - 'SCHOOL'S OUT FOR THE REST OF THE YEAR | CHRISTMAS BREAK | LAST DAY OF SCHOOL SURPRISE'" class="youtube" data-alt="" data-embed="djaMAAJAwk0&amp;t=70" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>influencervideo/our_life_in_holland2.webp" role="button" tabindex="0"></div>
 <p id="slide-label-influencervideo2">SCHOOL'S OUT FOR THE REST OF THE YEAR | CHRISTMAS BREAK | LAST DAY OF SCHOOL SURPRISE</p>
 </div>
 <div aria-labelledby="slide-label-influencervideo3" class="swiper-slide" role="listitem" tabindex="0">
-<div aria-label="Play video - 'I Got Myself a Translator! My Filipina Wife's Reaction'" class="youtube" data-alt="" data-embed="J5NOsyIStv0&amp;t=401s" data-holder="/themes/vasco-theme/img/influencervideo/mirco_tere.webp" role="button" tabindex="0"></div>
+<div aria-label="Play video - 'I Got Myself a Translator! My Filipina Wife's Reaction'" class="youtube" data-alt="" data-embed="J5NOsyIStv0&amp;t=401s" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>influencervideo/mirco_tere.webp" role="button" tabindex="0"></div>
 <p id="slide-label-influencervideo3">I Got Myself a Translator! My Filipina Wife's Reaction</p>
 </div>
 <div aria-labelledby="slide-label-influencervideo4" class="swiper-slide" role="listitem" tabindex="0">
-<div aria-label="Play video - 'Take AWESOME photos with these 12 iPhone camera tips &amp; tricks!'" class="youtube" data-alt="" data-embed="Mhn0eBcZFFk&amp;t=206s" data-holder="/themes/vasco-theme/img/influencervideo/proper_honest_tech.webp" role="button" tabindex="0"></div>
+<div aria-label="Play video - 'Take AWESOME photos with these 12 iPhone camera tips &amp; tricks!'" class="youtube" data-alt="" data-embed="Mhn0eBcZFFk&amp;t=206s" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>influencervideo/proper_honest_tech.webp" role="button" tabindex="0"></div>
 <p id="slide-label-influencervideo4">Take AWESOME photos with these 12 iPhone camera tips &amp; tricks!</p>
 </div>
 <div aria-labelledby="slide-label-influencervideo5" class="swiper-slide" role="listitem" tabindex="0">
-<div aria-label="Play video - 'Bella's Birthday Celebration  Palawan to Leyte Road Trip'" class="youtube" data-alt="" data-embed="mkxJua-V9Fc&amp;t=1370" data-holder="/themes/vasco-theme/img/influencervideo/mirco_tere2.webp" role="button" tabindex="0"></div>
+<div aria-label="Play video - 'Bella's Birthday Celebration  Palawan to Leyte Road Trip'" class="youtube" data-alt="" data-embed="mkxJua-V9Fc&amp;t=1370" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>influencervideo/mirco_tere2.webp" role="button" tabindex="0"></div>
 <p id="slide-label-influencervideo5">Bella's Birthday Celebration  Palawan to Leyte Road Trip</p>
 </div>
 </div>
@@ -1375,7 +1375,7 @@ with other Vasco devices" data-product-name="E1">
 <path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
 </svg>
 </div>
-<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('/themes/vasco-theme/img/landings/meet_vasco/group1.webp');">
+<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/meet_vasco/group1.webp');">
 <img alt="Two women in a vacation setting looking in the direction one of them is pointing. One woman is holding a Vasco Translator V4 in her hand." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/group1.webp" ); ?>"/>
 </div>
 </div>
@@ -1400,7 +1400,7 @@ with other Vasco devices" data-product-name="E1">
 <path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
 </svg>
 </div>
-<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('/themes/vasco-theme/img/landings/meet_vasco/group2.webp');">
+<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/meet_vasco/group2.webp');">
 <img alt="A man wearing a helmet and work clothes taking a photo of construction plans using the Vasco Translator V4, with an excavator visible in the background." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/group2.webp" ); ?>"/>
 </div>
 </div>
@@ -1425,7 +1425,7 @@ with other Vasco devices" data-product-name="E1">
 <path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
 </svg>
 </div>
-<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('/themes/vasco-theme/img/landings/meet_vasco/group3.webp');">
+<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/meet_vasco/group3.webp');">
 <img alt="A family sitting around a table, wearing Vasco Translator E1 earpieces, laughing and talking with each other." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/group3.webp" ); ?>"/>
 </div>
 </div>
@@ -1450,7 +1450,7 @@ with other Vasco devices" data-product-name="E1">
 <path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
 </svg>
 </div>
-<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('/themes/vasco-theme/img/landings/meet_vasco/group4.webp');">
+<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/meet_vasco/group4.webp');">
 <img alt="A group of people sitting at a restaurant table by the sea, using Vasco Translator V4 devices to communicate with each other." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/group4.webp" ); ?>"/>
 </div>
 </div>
@@ -1478,7 +1478,7 @@ with other Vasco devices" data-product-name="E1">
 <path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
 </svg>
 </div>
-<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('/themes/vasco-theme/img/landings/meet_vasco/group5.webp');">
+<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/meet_vasco/group5.webp');">
 <img alt="A woman holding a Vasco Translator V4 in her hand, shaking hands with another person in an office setting." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/group5.webp" ); ?>"/>
 </div>
 </div>
@@ -1503,7 +1503,7 @@ with other Vasco devices" data-product-name="E1">
 <path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
 </svg>
 </div>
-<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('/themes/vasco-theme/img/landings/meet_vasco/group6.webp');">
+<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/meet_vasco/group6.webp');">
 <img alt="Female doctor holding the Vasco V4 translator and speaking to a patient during consultation." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/group6.webp" ); ?>"/>
 </div>
 </div>
@@ -1527,7 +1527,7 @@ with other Vasco devices" data-product-name="E1">
 <path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
 </svg>
 </div>
-<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('/themes/vasco-theme/img/landings/meet_vasco/group7.webp');">
+<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/meet_vasco/group7.webp');">
 <img alt="A woman giving a speech at a university, wearing a Vasco Translator E1 in her ear." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/group7.webp" ); ?>"/>
 </div>
 </div>
