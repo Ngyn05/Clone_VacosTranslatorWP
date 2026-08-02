@@ -9,6 +9,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+// Fix HTTPS/SSL for Reverse Proxies (Flashpanel / Cloudflare / Nginx)
+if ( isset( $_SERVER['HTTP_X_FORWARDED_PROTO'] ) && strpos( $_SERVER['HTTP_X_FORWARDED_PROTO'], 'https' ) !== false ) {
+	$_SERVER['HTTPS'] = 'on';
+}
+
 define( 'VASCO_THEME_VERSION', '1.0.1' );
 define( 'VASCO_THEME_DIR', get_template_directory() );
 define( 'VASCO_THEME_URI', get_template_directory_uri() );

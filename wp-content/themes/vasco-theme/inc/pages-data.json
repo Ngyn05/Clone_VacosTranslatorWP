@@ -463,5 +463,30 @@
         "slug": "case-for-vasco-translator-m4",
         "title": "Bao da M4",
         "parent": "accessories"
+    },
+    {
+        "slug": "tempered-glass-v4",
+        "title": "Kính cường lực V4",
+        "parent": "accessories"
+    },
+    {
+        "slug": "case-for-vasco-translator-v4",
+        "title": "Bao da V4",
+        "parent": "accessories"
+    },
+    {
+        "slug": "light-case-for-vasco-translator-q1",
+        "title": "Ốp lưng siêu nhẹ Q1",
+        "parent": "accessories"
+    },
+    {
+        "slug": "light-case-for-vasco-translator-m4",
+        "title": "Ốp lưng siêu nhẹ M4",
+        "parent": "accessories"
+    },
+    {
+        "slug": "power-adapter-us",
+        "title": "Củ sạc chuẩn US",
+        "parent": "accessories"
     }
 ]
