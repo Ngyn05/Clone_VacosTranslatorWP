@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-define( 'VASCO_THEME_VERSION', '1.0.0' );
+define( 'VASCO_THEME_VERSION', '1.0.1' );
 define( 'VASCO_THEME_DIR', get_template_directory() );
 define( 'VASCO_THEME_URI', get_template_directory_uri() );
 
