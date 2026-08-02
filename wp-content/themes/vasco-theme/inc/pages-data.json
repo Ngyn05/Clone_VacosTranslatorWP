@@ -86,37 +86,37 @@
     },
     {
         "slug": "home",
-        "title": "Trang chß╗º",
+        "title": "Trang chủ",
         "parent": ""
     },
     {
         "slug": "business-healthcare",
-        "title": "Y tß║┐",
+        "title": "Y tế",
         "parent": ""
     },
     {
         "slug": "business-education",
-        "title": "Gi├ío dß╗Ñc",
+        "title": "Giáo dục",
         "parent": ""
     },
     {
         "slug": "business-hospitality",
-        "title": "Du lß╗ïch & Kh├ích sß║ín",
+        "title": "Du lịch & Khách sạn",
         "parent": ""
     },
     {
         "slug": "business-manufacturing",
-        "title": "Sß║ún xuß║Ñt",
+        "title": "Sản xuất",
         "parent": ""
     },
     {
         "slug": "business-law-enforcement",
-        "title": "Thß╗▒c thi ph├íp luß║¡t",
+        "title": "Thực thi pháp luật",
         "parent": ""
     },
     {
         "slug": "business-local-government",
-        "title": "Ch├¡nh quyß╗ün ─æß╗ïa phã░ãíng",
+        "title": "Chính quyền địa phương",
         "parent": ""
     },
     {
@@ -131,27 +131,27 @@
     },
     {
         "slug": "features-translate-voice",
-        "title": "Dß╗ïch giß╗ìng n├│i",
+        "title": "Dịch giọng nói",
         "parent": ""
     },
     {
         "slug": "features-translate-photos",
-        "title": "Dß╗ïch ß║únh",
+        "title": "Dịch ảnh",
         "parent": ""
     },
     {
         "slug": "features-translate-text",
-        "title": "Dß╗ïch v─ân bß║ún",
+        "title": "Dịch văn bản",
         "parent": ""
     },
     {
         "slug": "features-translate-chat",
-        "title": "Dß╗ïch nh├│m",
+        "title": "Dịch nhóm",
         "parent": ""
     },
     {
         "slug": "initiatives",
-        "title": "T├íc ─æß╗Öng x├ú hß╗Öi",
+        "title": "Tác động xã hội",
         "parent": ""
     },
     {
@@ -446,12 +446,12 @@
     },
     {
         "slug": "tempered-glass-q1",
-        "title": "K├¡nh cã░ß╗Øng lß╗▒c Q1",
+        "title": "Kính cường lực Q1",
         "parent": "accessories"
     },
     {
         "slug": "tempered-glass-m4",
-        "title": "K├¡nh cã░ß╗Øng lß╗▒c M4",
+        "title": "Kính cường lực M4",
         "parent": "accessories"
     },
     {

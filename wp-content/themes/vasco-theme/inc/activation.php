@@ -9,15 +9,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-function vasco_theme_after_switch() {
+function vasco_theme_sync_pages() {
 	$json_file = get_template_directory() . '/inc/pages-data.json';
 	if ( ! file_exists( $json_file ) ) {
-		return;
+		return false;
 	}
 
 	$pages_data = json_decode( file_get_contents( $json_file ), true );
 	if ( ! is_array( $pages_data ) ) {
-		return;
+		return false;
 	}
 
 	// Step 1: Create top-level pages first
@@ -89,5 +89,53 @@ function vasco_theme_after_switch() {
 	}
 
 	flush_rewrite_rules();
+	return true;
+}
+
+function vasco_theme_after_switch() {
+	vasco_theme_sync_pages();
 }
 add_action( 'after_switch_theme', 'vasco_theme_after_switch' );
+
+/**
+ * Add WP Admin Page for Syncing Vasco Pages manually
+ */
+function vasco_theme_add_admin_menu() {
+	add_theme_page(
+		'Đồng bộ Trang Vasco',
+		'Đồng bộ Trang Vasco',
+		'manage_options',
+		'vasco-sync-pages',
+		'vasco_theme_admin_sync_page_html'
+	);
+}
+add_action( 'admin_menu', 'vasco_theme_add_admin_menu' );
+
+function vasco_theme_admin_sync_page_html() {
+	if ( ! current_user_can( 'manage_options' ) ) {
+		return;
+	}
+
+	$message = '';
+	if ( isset( $_POST['vasco_do_sync'] ) && check_admin_referer( 'vasco_sync_action', 'vasco_sync_nonce' ) ) {
+		if ( vasco_theme_sync_pages() ) {
+			$message = '<div class="notice notice-success is-dismissible"><p><strong>Thành công!</strong> Đã khởi tạo và đồng bộ tất cả trang Vasco vào cơ sở dữ liệu WordPress.</p></div>';
+		} else {
+			$message = '<div class="notice notice-error is-dismissible"><p>Có lỗi xảy ra khi đọc file pages-data.json.</p></div>';
+		}
+	}
+	?>
+	<div class="wrap">
+		<h1>Đồng bộ Trang Vasco Theme</h1>
+		<?php echo $message; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+		<p>Công cụ này giúp bạn khởi tạo tự động toàn bộ danh sách trang (URL & Slugs) của Vasco Theme vào Cơ sở dữ liệu WordPress sau khi upload theme lên Server mà không cần tạo trang thủ công.</p>
+		<form method="post" action="">
+			<?php wp_nonce_field( 'vasco_sync_action', 'vasco_sync_nonce' ); ?>
+			<p>
+				<input type="submit" name="vasco_do_sync" class="button button-primary button-hero" value="⚡ Tạo / Đồng bộ tất cả trang Vasco ngay" />
+			</p>
+		</form>
+	</div>
+	<?php
+}
+

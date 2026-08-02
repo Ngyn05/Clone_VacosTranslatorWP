@@ -424,7 +424,7 @@ get_header();
 												src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/secondary-categories/category-bundles.webp" ); ?>" />
 											<div class="box-category-text">
 												<h3 class="category-title">Bộ đôi giúp bạn hiểu nhau hơn</h3>
-												<a class="btn btn-sm btn-black" href="<?php echo esc_url( home_url( "/" ) ); ?>">Khám phá gói
+												<a class="btn btn-sm btn-black" href="<?php echo esc_url( home_url( "/q1-phantomblack-e1/" ) ); ?>">Khám phá gói
 													combo</a>
 											</div>
 										</div>
@@ -437,7 +437,7 @@ get_header();
 												src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/secondary-categories/category-accessories.webp" ); ?>" />
 											<div class="box-category-text">
 												<h3 class="category-title">Bảo vệ thiết bị của bạn</h3>
-												<a class="btn btn-sm btn-black" href="<?php echo esc_url( home_url( "/" ) ); ?>">Xem phụ kiện</a>
+												<a class="btn btn-sm btn-black" href="<?php echo esc_url( home_url( "/accessories/" ) ); ?>">Xem phụ kiện</a>
 											</div>
 										</div>
 									</div>

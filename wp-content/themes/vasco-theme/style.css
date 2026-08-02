@@ -57,6 +57,16 @@ Text Domain: vasco-theme
     transform: translateX(4px) !important;
 }
 
+/* Secondary Categories Section Links & Clickability Fix */
+.secondary-categories-section a,
+.secondary-categories-section .box-category-text a,
+.secondary-categories-section .btn {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+    position: relative !important;
+    z-index: 20 !important;
+}
+
 /* Top Section (Tính Năng Nổi Bật) Links & Clickability Fix */
 .key-features-section a,
 .key-features-section .flex-box a,

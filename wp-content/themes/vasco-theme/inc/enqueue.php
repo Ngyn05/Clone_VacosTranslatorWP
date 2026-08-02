@@ -236,12 +236,12 @@ function vasco_theme_enqueue_all_assets() {
 					var existing = document.getElementById('vasco-cart-toast');
 					if (existing) existing.remove();
 
-					var cartUrl = "<?php echo esc_url( home_url( '/cart/' ) ); ?>";
+					var cartUrl = window.VASCO_CART_URL || '/cart/';
 					var toast = document.createElement('div');
 					toast.id = 'vasco-cart-toast';
 					toast.style.cssText = 'position:fixed;bottom:24px;right:24px;z-index:999999;background:#ffffff;color:#2D3139;padding:18px 24px;border-radius:14px;box-shadow:0 8px 32px rgba(0,0,0,0.18);display:flex;align-items:center;gap:16px;max-width:440px;border-left:5px solid #001480;animation:vascoSlideUp 0.35s ease;';
 					toast.innerHTML = '<div style="flex:1;"><strong style="display:block;font-size:15px;color:#001480;margin-bottom:2px;">Thành công!</strong><span style="font-size:14px;color:#555;">Đã thêm <b>' + (productName || 'Sản phẩm') + '</b> vào giỏ hàng.</span></div>' +
-						'<a href="/cart/" style="background:#001480;color:#ffffff;padding:9px 16px;border-radius:8px;text-decoration:none;font-weight:600;font-size:13px;white-space:nowrap;">Xem giỏ hàng</a>' +
+						'<a href="' + cartUrl + '" style="background:#001480;color:#ffffff;padding:9px 16px;border-radius:8px;text-decoration:none;font-weight:600;font-size:13px;white-space:nowrap;">Xem giỏ hàng</a>' +
 						'<button onclick="this.parentElement.remove()" style="background:none;border:none;font-size:20px;cursor:pointer;color:#999;padding:0 4px;line-height:1;">&times;</button>';
 					document.body.appendChild(toast);
 
@@ -286,9 +286,24 @@ function vasco_theme_enqueue_all_assets() {
 				}
 			});
 
-			// Auto Fix for Lazyloaded Images (data-lazy-src, data-src)
+			// Auto Fix for Lazyloaded Images & Hardcoded /themes/vasco-theme Asset Paths
 			document.addEventListener('DOMContentLoaded', function() {
-				function loadLazyImages() {
+				var themeUri = window.VASCO_THEME_URI || '';
+				function fixAssetPaths() {
+					var fixAttributes = ['src', 'poster', 'data-holder', 'data-src', 'data-folder', 'data-lazy-src'];
+					var elements = document.querySelectorAll('img, video, div, source, link, script');
+					elements.forEach(function(el) {
+						fixAttributes.forEach(function(attr) {
+							var val = el.getAttribute(attr);
+							if (val && themeUri) {
+								if (val.indexOf('/themes/vasco-theme/') === 0 || val.indexOf('../themes/vasco-theme/') === 0) {
+									var cleanPath = val.replace(/^(\.\.)?\/themes\/vasco-theme/, '');
+									el.setAttribute(attr, themeUri + cleanPath);
+								}
+							}
+						});
+					});
+
 					var lazyImgs = document.querySelectorAll('img[data-lazy-src], img[data-src]');
 					lazyImgs.forEach(function(img) {
 						var realSrc = img.getAttribute('data-lazy-src') || img.getAttribute('data-src');
@@ -299,14 +314,14 @@ function vasco_theme_enqueue_all_assets() {
 						}
 					});
 				}
-				loadLazyImages();
-				setTimeout(loadLazyImages, 1000);
-				setTimeout(loadLazyImages, 3000);
+				fixAssetPaths();
+				setTimeout(fixAssetPaths, 500);
+				setTimeout(fixAssetPaths, 2000);
 			});
 EOT;
 
-	// Send VascoCart data to JS
-	wp_add_inline_script( 'jquery', 'window.VASCO_THEME_URI = "' . esc_url( VASCO_THEME_URI ) . '";' );
+	// Send Vasco Theme Config data to JS
+	wp_add_inline_script( 'jquery', 'window.VASCO_THEME_URI = "' . esc_url( VASCO_THEME_URI ) . '"; window.VASCO_CART_URL = "' . esc_url( home_url( '/cart/' ) ) . '"; window.VASCO_HOME_URL = "' . esc_url( home_url( '/' ) ) . '";' );
 	wp_add_inline_script( 'jquery', $custom_js );
 }
 add_action( 'wp_enqueue_scripts', 'vasco_theme_enqueue_all_assets' );
