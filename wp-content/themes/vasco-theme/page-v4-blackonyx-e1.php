@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Product Page Template page-v4-blackonyx-e1.php
  *
@@ -20,13 +20,13 @@ get_header();
 <nav aria-label="Đường dẫn điều hướng" class="breadcrumb" data-depth="3">
 <ol>
 <li>
-<a href="../index.html">
+<a href="<?php echo esc_url( home_url( "/" ) ); ?>">
 <span class="breadcrumb-link">Trang chủ</span>
 </a>
 <span class="breadcrumb-divider">&gt;</span>
 </li>
 <li>
-<a href="../index.html">
+<a href="<?php echo esc_url( home_url( "/translators/" ) ); ?>">
 <span class="breadcrumb-link">Máy phiên dịch điện tử</span>
 </a>
 <span class="breadcrumb-divider">&gt;</span>

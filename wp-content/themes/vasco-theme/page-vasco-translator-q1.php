@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Product Page Template page-vasco-translator-q1.php
  *
@@ -20,13 +20,13 @@ get_header();
 <nav aria-label="Đường dẫn điều hướng" class="breadcrumb" data-depth="3">
 <ol>
 <li>
-<a href="../index.html">
+<a href="<?php echo esc_url( home_url( "/" ) ); ?>">
 <span class="breadcrumb-link">Trang chủ</span>
 </a>
 <span class="breadcrumb-divider">&gt;</span>
 </li>
 <li>
-<a href="../index.html">
+<a href="<?php echo esc_url( home_url( "/translators/" ) ); ?>">
 <span class="breadcrumb-link">Máy phiên dịch điện tử</span>
 </a>
 <span class="breadcrumb-divider">&gt;</span>
@@ -298,9 +298,9 @@ get_header();
 <script async="" data-max="2000" data-min="1" src="https://js.squarecdn.com/square-marketplace.js" />
 </script>
 <!-- Afterpay.js -->
-<div class="AfterpaySimulator ps-version-8-2">
-<square-placement data-amount-selector=".current-price :not(span.discount,span.regular-price,span.discount-percentage)" data-currency="USD" data-locale="en_US" data-mpid="258a8cdf-702d-4d68-b78e-d4f97d76960f" data-page-type="product" data-platform="Prestashop">
-</square-placement>
+<div class="AfterpaySimulator ps-version-8-2" style="margin-top: 10px; font-size: 0.95rem; color: #333;">
+<span>hoặc 4 kỳ thanh toán không lãi suất chỉ $137.25 với</span>
+<span style="font-weight: bold; color: #000; margin-left: 4px;">Afterpay ⓘ</span>
 </div>
 </div>
 </div>

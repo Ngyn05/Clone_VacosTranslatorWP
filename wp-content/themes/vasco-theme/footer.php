@@ -1293,13 +1293,89 @@
         }
     }, true);
 
+    // Translate Payment Installment Text (Klarna / Sezzle / Afterpay / Square)
+    function translatePaymentInstallments() {
+        // Direct string replacements on all text nodes across DOM & Shadow DOM
+        function processNode(node) {
+            if (node.nodeType === 3 && node.nodeValue) {
+                if (node.nodeValue.indexOf('interest-free') !== -1 || node.nodeValue.indexOf('payments of') !== -1) {
+                    node.nodeValue = node.nodeValue
+                        .replace(/or\s+4\s+interest-free\s+payments\s+of/gi, 'hoặc 4 kỳ thanh toán không lãi suất chỉ')
+                        .replace(/interest-free\s+payments/gi, 'thanh toán không lãi suất')
+                        .replace(/\s+with$/gi, ' với')
+                        .replace(/\s+with\s+/gi, ' với ');
+                }
+            }
+        }
+
+        // Walk main document
+        var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
+        var n;
+        while (n = walker.nextNode()) {
+            processNode(n);
+        }
+
+        // Walk Custom Web Components & Shadow Roots
+        document.querySelectorAll('square-placement, .AfterpaySimulator, [class*="afterpay"], [id*="afterpay"]').forEach(function(el) {
+            var root = el.shadowRoot || el;
+            if (root) {
+                var innerWalker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+                var inNode;
+                while (inNode = innerWalker.nextNode()) {
+                    processNode(inNode);
+                }
+            }
+        });
+    }
+
     if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', sweepDOM);
+        document.addEventListener('DOMContentLoaded', function() {
+            sweepDOM();
+            translatePaymentInstallments();
+        });
     } else {
         sweepDOM();
+        translatePaymentInstallments();
     }
-    // Periodic sweep for dynamically rendered JS components/megamenus
-    setInterval(sweepDOM, 1000);
+    // Periodic sweep for dynamically rendered JS components/megamenus & widgets
+    setInterval(function() {
+        sweepDOM();
+        translatePaymentInstallments();
+    }, 500);
+})();
+
+// Tab Blur / Switch Tab Title Animation Effect ("Your translator is waiting 🌍")
+(function() {
+    var originalTitle = document.title;
+    var isBlurred = false;
+    var titleInterval = null;
+
+    var awayTitles = [
+        "Your translator is waiting 🌍",
+        "Vasco Translator 🌍",
+        "Đừng quên Vasco nhé! 🌍"
+    ];
+    var titleIndex = 0;
+
+    window.addEventListener('blur', function() {
+        isBlurred = true;
+        titleIndex = 0;
+        document.title = awayTitles[0];
+        
+        titleInterval = setInterval(function() {
+            titleIndex = (titleIndex + 1) % awayTitles.length;
+            document.title = awayTitles[titleIndex];
+        }, 2000);
+    });
+
+    window.addEventListener('focus', function() {
+        isBlurred = false;
+        if (titleInterval) {
+            clearInterval(titleInterval);
+            titleInterval = null;
+        }
+        document.title = originalTitle;
+    });
 })();
 </script>
 
