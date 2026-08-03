@@ -679,6 +679,17 @@ button[aria-controls*="video"] {
     background-color: transparent !important;
 }
 
+/* Product "technologies-section" slides (media + tech-info row): the outer
+   .container is centered on the page, but its own flex row defaults to
+   justify-content:flex-start, so the media+text pair hugs the container's
+   left edge and any leftover width becomes dead space stranded on the right
+   instead of being split evenly — the pair reads as left-of-center. Centering
+   the row itself (and giving it a bit more breathing room) fixes both. */
+.technologies-section .slide .container {
+    justify-content: center !important;
+    gap: 3rem !important;
+}
+
 /* "Máy phiên dịch của chúng tôi" (Q1/E1/M4/V4) feature-panel switcher:
    cross-fade between panels instead of an instant display:none/flex snap.
    All panels stack in the same grid cell so the container's height auto-fits
