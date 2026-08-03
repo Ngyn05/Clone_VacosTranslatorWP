@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Clean Page front-page.php
  *
@@ -18,61 +18,30 @@ get_header();
 				<div class="js-content-wrapper" id="content-wrapper">
 					<section id="main">
 						<section class="page-home" id="content">
-							<section class="hero-section" style="min-height: 560px;">
-								<div class="number-one number-one-floating">
+							<section class="hero-section" style="min-height: auto;">
+								<div class="number-one number-one-floating hero-badge-anim">
 									<img alt="number one" class="nr-one"
 										src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/icons/no1-badge.svg" ); ?>" />
 								</div>
 								<section class="doubleboxes">
 									<div class="doublebox left" id="box-color-random"
 										style="background-color: #EFECE8; color: #EFECE8;">
-										<div class="container">
-											<div class="doublebox-content">
+										<div class="container" style="justify-content: center !important;">
+											<div class="doublebox-content hero-content-anim" style="width: 100% !important; max-width: 800px !important; text-align: center !important; align-items: center !important;">
 												<div>
-													<h1 class="h1" style="margin-bottom: 0.5rem;">
+													<h1 class="h1 hero-title-anim" style="margin-bottom: 0.75rem;">
 														Nói như người bản địa bằng 54 ngôn ngữ với giọng nói độc đáo của
 														bạn.
 													</h1>
-													<p class="hero-subtitle">Vasco Translator Q1 với công nghệ nhân bản
+													<p class="hero-subtitle hero-sub-anim" style="margin-bottom: 1.5rem;">Vasco Translator Q1 với công nghệ nhân bản
 														giọng nói.</p>
 												</div>
-												<a class="btn btn-2xl btn-primary" href="<?php echo esc_url( home_url( "/translators/" ) ); ?>" id="btn-change">
+												<a class="btn btn-2xl btn-primary hero-btn-anim" href="<?php echo esc_url( home_url( "/translators/" ) ); ?>" id="btn-change">
 													<img alt="" aria-hidden="true"
 														src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/right-arrow.svg" ); ?>" />
 													Xem máy phiên dịch của chúng tôi
 													<span class="text-sr-only">Đi đến cửa hàng</span>
 												</a>
-												<svg class="svg-pseudo" color="" fill="none" height="48"
-													viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">
-													<path
-														d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z"
-														fill="currentColor"></path>
-												</svg>
-											</div>
-										</div>
-										<div class="doublebox-absolute">
-											<div class="video-holder" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.webp" ); ?>'); background-size: cover; background-position: center; min-height: 100%;">
-												<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hitchhiker-travel.png" ); ?>" alt="Vasco Translator Q1" style="width:100%;height:100%;object-fit:cover;display:block;" />
-												<video aria-describedby="video-desc-hero" autoplay="" class="lazy"
-													id="index-hero-video" loop="" muted="" playsinline=""
-													poster="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hitchhiker-travel.png" ); ?>" preload="auto" style="display:none;">
-													<source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.webm" ); ?>"
-														type="video/webm" />
-													<source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.mp4" ); ?>"
-														type="video/mp4" />
-													<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.webp" ); ?>" alt="Vasco Translator" style="width:100%;height:100%;object-fit:cover;" />
-												</video>
-												
-												<p class="sr-only" id="video-desc-hero">
-													The video opens with a man hitchhiking and using the Vasco
-													Translator to communicate with a driver. Next, we see a woman at a
-													market using the device to talk to a vendor. In the following scene,
-													a man is having a conversation with a local fisherman. Then, an
-													older couple is shown in a restaurant using the photo translation
-													feature to read the menu. The next moment features a woman speaking
-													with a taxi driver using the translator. The video ends with a
-													couple translating text from an information board.
-												</p>
 											</div>
 										</div>
 									</div>

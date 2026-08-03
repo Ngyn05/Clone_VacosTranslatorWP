@@ -1,60 +1,73 @@
-﻿/*
+/*
 Theme Name: Vasco Theme
 Theme URI: https://vasco-electronics.com
 Author: Antigravity AI
 Author URI: https://vasco-electronics.com
 Description: Custom WordPress Classic Theme cloned and converted from Vasco Electronics project.
-Version: 1.0.1
+Version: 1.0.3
 Text Domain: vasco-theme
 */
 
-/* Product Tab & FAQ Accordion Overrides */
-.tab-content > .tab {
-    display: block;
-}
-.tab-content > .tab.active-tab,
-.tab-content > .tab.active,
-.tab-content > .tab.current {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-}
-.accordion-single .accordion-hidden.show {
-    display: block !important;
-}
-.accordion-single svg.rotate {
-    transform: rotate(180deg) !important;
-    transition: transform 0.2s ease !important;
+/* Hero Section Custom Height, Centering & Animations Override */
+.page-home .hero-section,
+.page-home .hero-section .doublebox {
+    min-height: auto !important;
 }
 
-/* Hero Doublebox Arrow (svg-pseudo) Connector Alignment */
-.doublebox-content .svg-pseudo {
-    position: absolute !important;
-    right: -12px !important;
-    top: 50% !important;
-    transform: translateY(-50%) !important;
-    z-index: 10 !important;
-    width: 24px !important;
-    height: 48px !important;
-    color: #EFECE8 !important;
-    fill: #EFECE8 !important;
-}
-.doublebox.left .doublebox-content {
-    position: relative !important;
+.page-home .hero-section .doublebox .container {
+    min-height: auto !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
 }
 
-/* Translators Product Carousel Smooth Animations */
-.translators-carousel .swiper-foreground .swiper-slide {
-    transition: opacity 0.4s ease, transform 0.4s ease !important;
+@keyframes heroFadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-.translators-carousel .absolute-box-product-features [data-slide] {
-    transition: opacity 0.35s ease, transform 0.35s ease !important;
+
+@keyframes heroBadgePop {
+    0% {
+        opacity: 0;
+        transform: scale(0.6) rotate(-10deg);
+    }
+    70% {
+        transform: scale(1.08) rotate(3deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
 }
-.translators-carousel .feature {
-    transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+
+.hero-title-anim {
+    animation: heroFadeSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
-.translators-carousel .feature:hover {
-    transform: translateX(4px) !important;
+
+.hero-sub-anim {
+    animation: heroFadeSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+    opacity: 0;
+}
+
+.hero-btn-anim {
+    animation: heroFadeSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
+    opacity: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease !important;
+}
+
+.hero-btn-anim:hover {
+    transform: translateY(-3px) scale(1.02) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.hero-badge-anim {
+    animation: heroBadgePop 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;
+    opacity: 0;
 }
 
 /* Secondary Categories Section Links & Clickability Fix */
@@ -125,7 +138,8 @@ Text Domain: vasco-theme
     }
 }
 
-/* Doublebox 50/50 Split Layout Fix for Hero Section & Features Page */
+
+/* Doublebox 50/50 Split & Vertical Alignment Centering Fix */
 .doubleboxes {
     display: flex !important;
     flex-direction: column !important;
@@ -136,8 +150,8 @@ Text Domain: vasco-theme
 .doublebox {
     position: relative !important;
     display: flex !important;
-    align-items: stretch !important;
-    min-height: 480px !important;
+    align-items: center !important;
+    min-height: 540px !important;
     width: 100% !important;
     overflow: hidden !important;
     box-sizing: border-box !important;
@@ -145,9 +159,10 @@ Text Domain: vasco-theme
 
 @media (min-width: 992px) {
     .doublebox {
-        min-height: 540px !important;
+        min-height: 560px !important;
         position: relative !important;
         display: flex !important;
+        align-items: center !important;
         width: 100% !important;
     }
 
@@ -156,12 +171,14 @@ Text Domain: vasco-theme
         max-width: 1320px !important;
         margin-left: auto !important;
         margin-right: auto !important;
-        padding: 60px 20px !important;
+        padding: 40px 20px !important;
         box-sizing: border-box !important;
         position: relative !important;
         z-index: 2 !important;
         display: flex !important;
         align-items: center !important;
+        height: 100% !important;
+        min-height: 560px !important;
         pointer-events: none !important;
     }
 
@@ -178,7 +195,10 @@ Text Domain: vasco-theme
         width: 50% !important;
         box-sizing: border-box !important;
         pointer-events: auto !important;
-        margin: 0 !important;
+        margin: auto 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
     }
 
     .doublebox-absolute {
@@ -203,11 +223,12 @@ Text Domain: vasco-theme
     }
 
     .doublebox-absolute img,
-    .doublebox-absolute .video-holder {
+    .doublebox-absolute .video-holder,
+    .doublebox-absolute .video-holder img {
         width: 100% !important;
         height: 100% !important;
-        object-fit: cover !important;
-        object-position: center !important;
+        object-fit: contain !important;
+        object-position: center center !important;
         display: block !important;
     }
 }
@@ -232,7 +253,7 @@ Text Domain: vasco-theme
     .doublebox-absolute img {
         width: 100% !important;
         height: 100% !important;
-        object-fit: cover !important;
+        object-fit: contain !important;
     }
 }
 

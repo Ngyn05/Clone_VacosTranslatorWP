@@ -14,7 +14,9 @@ if ( isset( $_SERVER['HTTP_X_FORWARDED_PROTO'] ) && strpos( $_SERVER['HTTP_X_FOR
 	$_SERVER['HTTPS'] = 'on';
 }
 
-define( 'VASCO_THEME_VERSION', '1.0.2' );
+$theme     = wp_get_theme( get_template() );
+$theme_ver = ( $theme && $theme->exists() ) ? $theme->get( 'Version' ) : false;
+define( 'VASCO_THEME_VERSION', $theme_ver ? $theme_ver : filemtime( get_template_directory() . '/style.css' ) );
 define( 'VASCO_THEME_DIR', get_template_directory() );
 define( 'VASCO_THEME_URI', get_template_directory_uri() );
 
