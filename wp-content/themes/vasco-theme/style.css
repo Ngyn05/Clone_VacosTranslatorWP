@@ -162,64 +162,55 @@ Text Domain: vasco-theme
         min-height: 560px !important;
         position: relative !important;
         display: flex !important;
-        align-items: center !important;
+        align-items: stretch !important;
         width: 100% !important;
     }
 
+    .doublebox.left {
+        flex-direction: row !important;
+    }
+
+    .doublebox.right {
+        flex-direction: row-reverse !important;
+    }
+
     .doublebox .container {
-        width: 100% !important;
-        max-width: 1320px !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        padding: 40px 20px !important;
+        width: 50% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 50px 60px !important;
         box-sizing: border-box !important;
         position: relative !important;
         z-index: 2 !important;
         display: flex !important;
         align-items: center !important;
-        height: 100% !important;
-        min-height: 560px !important;
-        pointer-events: none !important;
-    }
-
-    .doublebox.left .container {
-        justify-content: flex-start !important;
-    }
-
-    .doublebox.right .container {
-        justify-content: flex-end !important;
+        justify-content: center !important;
+        pointer-events: auto !important;
     }
 
     .doublebox-content {
         max-width: 540px !important;
-        width: 50% !important;
+        width: 100% !important;
         box-sizing: border-box !important;
-        pointer-events: auto !important;
-        margin: auto 0 !important;
         display: flex !important;
         flex-direction: column !important;
         justify-content: center !important;
+        padding: 0 !important;
+        margin: 0 !important;
     }
 
     .doublebox-absolute {
-        position: absolute !important;
-        top: 0 !important;
-        bottom: 0 !important;
+        position: relative !important;
+        top: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+        right: auto !important;
         width: 50% !important;
-        height: 100% !important;
+        height: auto !important;
         min-height: 100% !important;
         overflow: hidden !important;
         z-index: 1 !important;
-    }
-
-    .doublebox.left .doublebox-absolute {
-        right: 0 !important;
-        left: auto !important;
-    }
-
-    .doublebox.right .doublebox-absolute {
-        left: 0 !important;
-        right: auto !important;
+        flex: 0 0 50% !important;
     }
 
     .doublebox-absolute img,
@@ -227,7 +218,7 @@ Text Domain: vasco-theme
     .doublebox-absolute .video-holder img {
         width: 100% !important;
         height: 100% !important;
-        object-fit: contain !important;
+        object-fit: cover !important;
         object-position: center center !important;
         display: block !important;
     }
@@ -525,12 +516,57 @@ button.video-toggle,
 [data-play],
 button[aria-controls*="video"] {
     display: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
-    width: 0 !important;
-    height: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    border: none !important;
+}
+
+/* Fix group-box custom list doubleboxes layout (50/50 split & proper positioning) */
+@media (min-width: 992px) {
+    .doublebox.group-box {
+        display: flex !important;
+        position: relative !important;
+        align-items: stretch !important;
+        min-height: 500px !important;
+        overflow: hidden !important;
+        width: 100% !important;
+    }
+
+    .doublebox.group-box.left {
+        flex-direction: row !important;
+    }
+
+    .doublebox.group-box.right {
+        flex-direction: row-reverse !important;
+    }
+
+    .doublebox.group-box .doublebox-content-custom-list {
+        width: 50% !important;
+        max-width: none !important;
+        box-sizing: border-box !important;
+        padding: 50px 60px !important;
+        z-index: 2 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        flex: 0 0 50% !important;
+    }
+
+    .doublebox.group-box .doublebox-absolute {
+        position: relative !important;
+        top: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+        right: auto !important;
+        width: 50% !important;
+        height: auto !important;
+        min-height: 100% !important;
+        z-index: 1 !important;
+        flex: 0 0 50% !important;
+    }
+
+    .doublebox.group-box .doublebox-absolute img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        object-position: center center !important;
+        display: block !important;
+    }
 }

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Product Page Template page-vasco-translator-e1.php
  *
@@ -304,8 +304,8 @@ get_header();
 <div class="tab product-about" id="product-about">
 <div class="container">
 <div class="youtube-section">
-<h2 class="h1">Speak in 50+ languages—hands-free</h2>
-<p>Would you like to explore the world on your own terms? Our language translator earbuds give you the freedom to communicate in over 50 languages. Discover how to make the most of this device and unlock everything the Vasco Translator E1 has to offer.</p>
+<h2 class="h1">Nói hơn 50+ ngôn ngữ—hoàn toàn rảnh tay</h2>
+<p>Bạn có muốn khám phá thế giới theo cách của riêng mình? Tai nghe phiên dịch của chúng tôi mang lại sự tự do giao tiếp bằng hơn 50 ngôn ngữ. Khám phá cách tận dụng tối đa thiết bị và khai phá mọi tính năng mà Vasco Translator E1 mang lại.</p>
 
 </div>
 </div>
@@ -314,7 +314,7 @@ get_header();
 <div class="container">
 <div id="awards-section">
 <h2 class="h2-notosans">Giải thưởng</h2>
-<div aria-label="carousel with awards" aria-roledescription="carousel" class="swiper swiper-carousel autoplay loop carousel-award" role="region">
+<div aria-label="vòng lặp giải thưởng" aria-roledescription="carousel" class="swiper swiper-carousel autoplay loop carousel-award" role="region">
 <a class="sr-only focusable" href="#after-award-carousel">Bỏ qua vòng lặp</a>
 <div class="swiper-wrapper" role="list">
 <div aria-labelledby="slide-label-muse_silver" class="swiper-slide" role="listitem">
@@ -390,11 +390,11 @@ get_header();
 </a>
 </div>
 </div>
-<div class="swiper-button-prev btn-carousel-prev" data-label-prev="Previous slide"></div>
-<div class="swiper-button-next btn-carousel-next" data-label-next="Next slide"></div>
+<div class="swiper-button-prev btn-carousel-prev" data-label-prev="Slide trước"></div>
+<div class="swiper-button-next btn-carousel-next" data-label-next="Slide sau"></div>
 </div>
 <div class="stop-autoplay-carousel">
-<button class="btn btn-md btn-stop-autoplay" data-text-button-pause="stop carousel autoplay" data-text-button-resume="resume carousel autoplay">
+<button class="btn btn-md btn-stop-autoplay" data-text-button-pause="dừng tự động phát" data-text-button-resume="tiếp tục tự động phát">
 <span data-text-pause="Tạm dừng" data-text-resume="Tiếp tục">Tạm dừng</span>
 <img alt="" aria-hidden="true" height="24" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/pause.svg" ); ?>"/>
 </button>
@@ -404,10 +404,10 @@ get_header();
 </div>
 </section>
 <section class="technologies-section sec-1" data-section-id="product_features_wow_click">
-<h2 class="h2-notosans">Explore the Vasco Translator E1 modes</h2>
+<h2 class="h2-notosans">Khám phá các chế độ của Vasco Translator E1</h2>
 <div class="btn-wrapper">
-<button class="btn btn-md btn-white active" data-feature="Headphone mode" data-section="product_features_wow_click">Earbuds Mode</button>
-<button class="btn btn-md btn-white" data-feature="Hands-free mode" data-section="product_features_wow_click">Loudspeaker Mode</button>
+<button class="btn btn-md btn-white active" data-feature="Headphone mode" data-section="product_features_wow_click">Chế độ tai nghe</button>
+<button class="btn btn-md btn-white" data-feature="Hands-free mode" data-section="product_features_wow_click">Chế độ loa ngoài</button>
 </div>
 <div class="section-scroll-wrapper">
 <div class="slide s1">
@@ -417,19 +417,15 @@ get_header();
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1/headphone_mode.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1/headphone_mode.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
-							To view this video please enable JavaScript, and consider upgrading to a
-							web browser that
-							<a href="#" target="_blank">
-								supports HTML5 video
-							</a>
+							Để xem video vui lòng bật JavaScript
 </p>
 </video>
 
-<p class="sr-only" id="video-desc1">Two Vasco Translator E1 earbuds rise from their charging case, and their LED indicators light up. </p>
+<p class="sr-only" id="video-desc1">Hai tai nghe Vasco Translator E1 nâng lên khỏi hộp sạc và đèn LED báo hiệu sáng lên.</p>
 </div>
 <div class="tech-info">
-<h3>One for you, one for sharing</h3>
-<p>Enjoy natural, ear-to-ear conversations without pressing any buttons. Simply pair the translation earpieces with your phone or Vasco Translator, select your languages, and start talking.</p>
+<h3>Một cho bạn, một để chia sẻ</h3>
+<p>Tận hưởng cuộc trò chuyện tự nhiên, tiếp xúc trực tiếp từ tai đến tai mà không cần nhấn bất kỳ nút nào. Chỉ cần ghép nối tai nghe phiên dịch với điện thoại hoặc Vasco Translator, chọn ngôn ngữ và bắt đầu trò chuyện.</p>
 </div>
 </div>
 </div>
@@ -440,19 +436,15 @@ get_header();
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1/hands_free_mode.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1/hands_free_mode.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
-							To view this video please enable JavaScript, and consider upgrading to a
-							web browser that
-							<a href="#" target="_blank">
-								supports HTML5 video
-							</a>
+							Để xem video vui lòng bật JavaScript
 </p>
 </video>
 
-<p class="sr-only" id="video-desc2">A Vasco Translator E1 earbud connects to the mobile app on a smartphone, while its LED indicator flashes. </p>
+<p class="sr-only" id="video-desc2">Tai nghe Vasco Translator E1 kết nối với ứng dụng di động trên điện thoại, đèn LED báo hiệu nhấp nháy.</p>
 </div>
 <div class="tech-info">
-<h3>Seamlessly connect the earpiece to your phone or Vasco Translator</h3>
-<p>Pair your earpiece with your phone using the free Vasco Connect app or connect it to one of the Vasco handheld translators. That’s it! In loudspeaker mode, your conversation partner hears the translation through the phone or translator speaker, while you hear it in your earpiece.</p>
+<h3>Kết nối mượt mà tai nghe với điện thoại hoặc Vasco Translator</h3>
+<p>Ghép nối tai nghe của bạn với điện thoại thông qua ứng dụng Vasco Connect miễn phí hoặc kết nối với một trong các máy phiên dịch cầm tay Vasco. Ở chế độ loa ngoài, đối phương nghe bản dịch qua loa điện thoại hoặc máy phiên dịch, trong khi bạn nghe qua tai nghe.</p>
 </div>
 </div>
 </div>
@@ -460,8 +452,8 @@ get_header();
 </section>
 <section class="how-vasco-section bottom">
 <div class="how-vasco-flex container">
-<h2 class="h1">Getting started is easy</h2>
-<p class="subtitle">We’ve created a series of short video guides to show you just how simple it is to set up your device, pair it with the app, and begin your first conversation. In just a few moments, you’ll be ready to go.</p>
+<h2 class="h1">Bắt đầu thật dễ dàng</h2>
+<p class="subtitle">Chúng tôi đã tạo một chuỗi hướng dẫn video ngắn để cho bạn thấy việc thiết lập thiết bị, ghép nối với ứng dụng và bắt đầu cuộc trò chuyện đầu tiên đơn giản như thế nào.</p>
 <div class="grid-section">
 <div class="card">
 
@@ -469,65 +461,65 @@ get_header();
 </div>
 <div class="card card-bottom">
 
-<h3 class="h2">How do I pair the earpiece with the app?</h3>
+<h3 class="h2">Làm thế nào để ghép nối tai nghe với ứng dụng?</h3>
 </div>
 <div class="card">
 
-<h3 class="h2">How do I hold conversations?</h3>
+<h3 class="h2">Làm thế nào để thực hiện cuộc trò chuyện?</h3>
 </div>
 </div>
 </div>
 </section>
 <section class="technologies-section sec-2">
-<h2>One device, many possibilities</h2>
+<h2>Một thiết bị, nhiều khả năng</h2>
 <div class="btn-wrapper">
-<button class="btn btn-md btn-black active" data-feature="Chế độ tự động" data-section="product_features_click">Chế độ tự động </button>
-<button class="btn btn-md btn-black" data-feature="Group conversations" data-section="product_features_click">Group communication</button>
-<button class="btn btn-md btn-black" data-feature="Screen off" data-section="product_features_click">Screen-off translation</button>
+<button class="btn btn-md btn-black active" data-feature="Chế độ tự động" data-section="product_features_click">Chế độ tự động</button>
+<button class="btn btn-md btn-black" data-feature="Group conversations" data-section="product_features_click">Giao tiếp nhóm</button>
+<button class="btn btn-md btn-black" data-feature="Screen off" data-section="product_features_click">Dịch khi tắt màn hình</button>
 <button class="btn btn-md btn-black" data-feature="Bundle" data-section="product_features_click">Bộ đôi cho sự thấu hiểu sâu sắc hơn</button>
 </div>
 <div class="section-scroll-wrapper">
 <div class="slide s1">
 <div class="container">
 <div class="media">
-<img alt="Close-up of a hand holding a smartphone that displays a real-time translation chat between English and Chinese. Next to the phone, a black Vasco translation earbud with a glowing green LED indicator rests on a wooden desk. " src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1/automatic_mode.webp" ); ?>"/>
+<img alt="Chế độ tự động" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1/automatic_mode.webp" ); ?>"/>
 </div>
 <div class="tech-info">
 <h3>Chế độ tự động</h3>
-<p>Select languages and enjoy seamless communication without touching buttons or checking your phone. Chế độ tự động intelligently detects who’s speaking and starts translating instantly. Just share one of the two right real time translation earpieces with your conversation partner and speak naturally. It’s the perfect solution for face-to-face chats. And if you love to talk, just remember to take a breather now and then. It helps the Vasco Translator E1 stay perfectly in sync and gives your companion a fair chance to chime in.</p>
+<p>Chọn ngôn ngữ và tận hưởng giao tiếp mượt mà mà không cần chạm nút hay kiểm tra điện thoại. Chế độ tự động thông minh nhận diện ai đang nói và bắt đầu dịch ngay lập tức. Chỉ cần chia sẻ một trong hai tai nghe dịch thời gian thực cho người đối diện và trò chuyện tự nhiên.</p>
 </div>
 </div>
 </div>
 <div class="slide s2">
 <div class="container">
 <div class="media">
-<img alt="A group of five people outdoors in a sunlit vineyard. On the right, a man wearing a yellow shirt and sunglasses holds a handheld Translator Vasco Q1 device and gestures toward the green grapevines. On the left, four people listen attentively, each wearing a black Vasco Translators E1, showcasing a real-time group conversation feature. " src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1/group_conversations.webp" ); ?>"/>
+<img alt="Giao tiếp nhóm" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1/group_conversations.webp" ); ?>"/>
 </div>
 <div class="tech-info">
-<h3>Group communication</h3>
-<p>Attending a multilingual wedding? Joining an international conference? Or perhaps taking a global cooking class? Whatever the occasion, the Vasco Translator E1 ensures no one misses a word. Connect up to 10 devices to your smartphone, or up to 6 people directly through a Vasco handheld translator. With 51 languages available for each participant, you can enjoy a truly inclusive atmosphere where everyone speaks freely.</p>
+<h3>Giao tiếp nhóm</h3>
+<p>Tham dự đám cưới đa ngôn ngữ? Tham gia hội thảo quốc tế? Hay học một lớp nấu ăn toàn cầu? Bất kể dịp nào, Vasco Translator E1 đảm bảo không ai bỏ lỡ một từ nào. Kết nối tối đa 10 thiết bị với điện thoại thông minh của bạn, hoặc tối đa 6 người trực tiếp qua máy phiên dịch cầm tay Vasco.</p>
 </div>
 </div>
 </div>
 <div class="slide s3">
 <div class="container">
 <div class="media">
-<img alt="A man and a woman sitting on concrete steps inside a modern architectural structure with a glass canopy. The man points upward with his hand while both wear black Vasco Translation E1 earbuds and look in the direction of his gesture. " src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1/screen_off.webp" ); ?>"/>
+<img alt="Dịch khi tắt màn hình" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1/screen_off.webp" ); ?>"/>
 </div>
 <div class="tech-info">
-<h3>Screen-off translation</h3>
-<p>The E1 translation earpieces continue to work even when your smartphone screen is off. This unique feature not only saves your battery life but also allows for a far more authentic experience. Now, you can focus entirely on the person in front of you, without the distraction of a glowing screen. It’s a world-first solution designed to keep your conversations as natural as possible.</p>
+<h3>Dịch khi tắt màn hình</h3>
+<p>Tai nghe dịch thuật E1 tiếp tục hoạt động ngay cả khi màn hình điện thoại thông minh của bạn đã tắt. Tính năng độc đáo này không chỉ tiết kiệm pin mà còn mang lại trải nghiệm chân thực hơn. Giờ đây, bạn có thể tập trung hoàn toàn vào người đối diện mà không bị phân tâm bởi màn hình sáng.</p>
 </div>
 </div>
 </div>
 <div class="slide s4">
 <div class="container">
 <div class="media">
-<img alt="A close-up of a person's finger adjusting preferences like color and volume on the screen of a red Vasco Translator V4 device. Next to it on the wooden table rests a black Vasco Tranlator E1 earbud with a glowing green LED indicator, with a bowl of red peppers visible in the background. " src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1/bundle.webp" ); ?>"/>
+<img alt="Bộ đôi cho sự thấu hiểu sâu sắc hơn" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1/bundle.webp" ); ?>"/>
 </div>
 <div class="tech-info">
 <h3>Bộ đôi cho sự thấu hiểu sâu sắc hơn</h3>
-<p>Pairing your earpiece translator with one of the Vasco handheld translators unlocks free, lifetime, and unlimited internet for translations tại gần 200 quốc gia. By creating this powerful set, you expand the number of supported languages to 85. It’s the ultimate setup for those who appreciate the most advanced technology. Beyond voice, you can explore a suite of sophisticated features—from photo and text translation to voice cloning and group chats—all at your fingertips.</p>
+<p>Ghép nối tai nghe phiên dịch của bạn với một trong các máy phiên dịch cầm tay Vasco giúp mở khóa Internet miễn phí, trọn đời và không giới hạn cho các bản dịch tại gần 200 quốc gia. Mở rộng số lượng ngôn ngữ hỗ trợ lên đến 85 ngôn ngữ.</p>
 </div>
 </div>
 </div>
@@ -535,30 +527,30 @@ get_header();
 </section>
 <section class="vasco-made-for" id="vasco-made-for">
 <div class="container">
-<h2 class="h2-notosans">Who is the Vasco Translator E1 for?</h2>
+<h2 class="h2-notosans">Vasco Translator E1 dành cho ai?</h2>
 </div>
 <div class="groups-wrapper">
 <div class="menu-groups">
-<button class="btn btn-md group active" data-id="business">For Business</button>
-<button class="btn btn-md group" data-id="multilingual_families">For Multilingual Families</button>
-<button class="btn btn-md group" data-id="travelers">For Travelers</button>
+<button class="btn btn-md group active" data-id="business">Cho doanh nghiệp</button>
+<button class="btn btn-md group" data-id="multilingual_families">Cho gia đình đa ngôn ngữ</button>
+<button class="btn btn-md group" data-id="travelers">Cho người du lịch</button>
 </div>
 <div class="container">
 <div class="content-groups">
 <div class="doubleboxes">
 <div class="doublebox left rounded group-box active" data-id="business" style="background-color: #FFF; color: #FFF;">
 <div class="doublebox-content-custom-list">
-<h3 class="h2">For Business</h3>
-<p>From high-level negotiations to international conferences, clarity is the key to success. In a fast-paced professional world, the Vasco Translator E1 ensures you never miss a detail, turning every unexpected encounter into a valuable networking opportunity.</p>
+<h3 class="h2">Cho doanh nghiệp</h3>
+<p>Từ đàm phán cấp cao đến hội thảo quốc tế, sự rõ ràng là chìa khóa thành công. Trong thế giới chuyên nghiệp nhịp độ nhanh, Vasco Translator E1 đảm bảo bạn không bao giờ bỏ lỡ từng chi tiết, biến mọi cuộc gặp gỡ bất ngờ thành cơ hội kết nối giá trị.</p>
 <div class="doublebox-custom-list-wrapper">
-<h4>With Vasco Translator E1, you can:</h4>
+<h4>Với Vasco Translator E1, bạn có thể:</h4>
 <ul>
-<li>speak with total confidence during high-stakes discussions</li>
-<li>engage effectively with international audiences and partners</li>
-<li>eliminate the risk of costly misunderstandings</li>
-<li>project a truly professional and forward-thinking image</li>
-<li>streamline your communication to save time and resources</li>
-<li>build and sustain global partnerships with ease</li>
+<li>nói chuyện với sự tự tin tuyệt đối trong các cuộc thảo luận quan trọng</li>
+<li>giao tiếp hiệu quả với đối tác và khán giả quốc tế</li>
+<li>loại bỏ nguy cơ hiểu lầm tốn kém</li>
+<li>thể hiện hình ảnh chuyên nghiệp và tiên phong</li>
+<li>tinh giản giao tiếp để tiết kiệm thời gian và tài nguyên</li>
+<li>xây dựng và duy trì đối tác toàn cầu một cách dễ dàng</li>
 </ul>
 </div>
 <svg class="svg-pseudo" color="" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -566,21 +558,20 @@ get_header();
 </svg>
 </div>
 <div class="doublebox-absolute with-list" id="img-change" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>e1/groups-business.webp');">
-<img alt="A side profile of a blonde woman in a white blouse speaking during a business meeting at a wooden conference table. She is wearing a black Vasco Translation E1 earbud. In the blurred background, two other professionals are sitting across the table, smiling and listening attentively. " class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1/groups-business.webp" ); ?>"/>
+<img alt="Cho doanh nghiệp" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1/groups-business.webp" ); ?>"/>
 </div>
 </div>
 <div class="doublebox left rounded group-box" data-id="multilingual_families" style="background-color: #FFF; color: #FFF;">
 <div class="doublebox-content-custom-list">
-<h3 class="h2">For Multilingual Families</h3>
-<p>Bring the whole family together, no matter which languages you speak. Whether you’re welcoming a new son-in-law or hosting relatives from across the globe, the Vasco Translator E1 ensures you’ll always find a common language.</p>
+<h3 class="h2">Cho gia đình đa ngôn ngữ</h3>
+<p>Gắn kết cả gia đình lại gần nhau hơn, bất kể ngôn ngữ nào. Cho dù bạn chào đón một người con rể mới hay đón tiếp người thân từ khắp nơi trên thế giới, Vasco Translator E1 đảm bảo bạn luôn tìm thấy tiếng nói chung.</p>
 <div class="doublebox-custom-list-wrapper">
-<h4>With Vasco Translator E1, you can:</h4>
+<h4>Với Vasco Translator E1, bạn có thể:</h4>
 <ul>
-<li>strengthen family bonds through deeper understanding</li>
-<li>share laughs and heartfelt moments around the dinner table</li>
-<li>have real, flowing conversations with relatives from around the world</li>
-<li>feel completely at ease during spontaneous family gatherings</li>
-<li>introduce your loved ones to a simpler way of staying connected</li>
+<li>tăng cường tình cảm gia đình thông qua sự thấu hiểu sâu sắc hơn</li>
+<li>chia sẻ tiếng cười và những khoảnh khắc ấm áp bên mâm cơm</li>
+<li>có những cuộc trò chuyện chân thực, trôi chảy với người thân khắp thế giới</li>
+<li>cảm thấy hoàn toàn thoải mái trong các buổi tụ họp gia đình</li>
 </ul>
 </div>
 <svg class="svg-pseudo" color="" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -588,21 +579,20 @@ get_header();
 </svg>
 </div>
 <div class="doublebox-absolute with-list" id="img-change" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>e1/groups-family.webp');">
-<img alt="A heartwarming multi-generational family gathering around a dining table filled with food. An older smiling man in a grey cardigan and two women are interacting happily in a sunlit room full of plants. All three individuals are wearing black Vasco Translation E1 earbuds. " class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1/groups-family.webp" ); ?>"/>
+<img alt="Cho gia đình đa ngôn ngữ" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/e1/groups-family.webp" ); ?>"/>
 </div>
 </div>
 <div class="doublebox left rounded group-box" data-id="travelers" style="background-color: #FFF; color: #FFF;">
 <div class="doublebox-content-custom-list">
-<h3 class="h2">For Travelers</h3>
-<p>Take Vasco Translator E1 on your next trip and transform how you see the world. Leave language barriers in the past and embrace the freedom to connect, no matter how far you wander.</p>
+<h3 class="h2">Cho người du lịch</h3>
+<p>Mang theo Vasco Translator E1 trong chuyến đi tiếp theo của bạn và thay đổi cách bạn nhìn thế giới. Để lại rào cản ngôn ngữ phía sau và tận hưởng sự tự do kết nối.</p>
 <div class="doublebox-custom-list-wrapper">
-<h4>With Vasco Translator E1, you can:</h4>
+<h4>Với Vasco Translator E1, bạn có thể:</h4>
 <ul>
-<li>book tickets and make reservations in a foreign language</li>
-<li>build genuine connections and make new friends</li>
-<li>feel at home even in the world’s most remote corners</li>
-<li>gain a truly authentic understanding of local cultures</li>
-<li>hear and understand every story from your tour guide</li>
+<li>đặt vé và đặt chỗ bằng tiếng nước ngoài</li>
+<li>xây dựng tình bạn chân thành và kết nối bạn mới</li>
+<li>cảm thấy như ở nhà ngay cả những góc xa xôi nhất thế giới</li>
+<li>hiểu sâu sắc về văn hóa địa phương</li>
 </ul>
 </div>
 <svg class="svg-pseudo" color="" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">

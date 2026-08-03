@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Product Page Template page-vasco-translator-m4.php
  *
@@ -328,14 +328,14 @@ get_header();
 <div class="container">
 <div class="youtube-section">
 <h2 class="h1">Cách đơn giản để tận hưởng mọi chuyến đi</h2>
-<p>Experience the freedom that comes with total independence. No matter your age, Vasco Translator M4 helps you better understand people and the world around you, so you can make the most of every journey. It’s human-friendly technology designed to make life easier: lightweight, incredibly intuitive, and equipped with powerful speakers and a noise-cancelling microphones. With voice, text, and photo translation features, you can explore new places, start meaningful conversations, and fuel your passion for life without barriers or complications. And most importantly, this language translation tool is ready to use straight out of the box.</p>
+<p>Trải nghiệm sự tự do đến từ sự độc lập hoàn toàn. Dù ở lứa tuổi nào, Vasco Translator M4 cũng giúp bạn hiểu rõ hơn về con người và thế giới xung quanh, để bạn tận hưởng trọn vẹn từng chuyến đi. Đây là công nghệ thân thiện thiết kế giúp cuộc sống dễ dàng hơn: siêu nhẹ, cực kỳ trực quan, trang bị loa công suất lớn và micro chống ồn. Với các tính năng dịch giọng nói, văn bản và hình ảnh, bạn có thể khám phá những điểm đến mới, bắt đầu những cuộc trò chuyện ý nghĩa mà không gặp rào cản. Và đặc biệt hơn, thiết bị dịch thuật này sẵn sàng sử dụng ngay khi mở hộp.</p>
 </div>
 </div>
 <section class="technologies-section sec-1" data-section-id="product_features_wow_click">
-<h2>Modern technology you’ll love from day one</h2>
+<h2>Công nghệ hiện đại bạn sẽ yêu thích ngay từ ngày đầu</h2>
 <div class="btn-wrapper">
-<button class="btn btn-md btn-white active" data-feature="always ready" data-section="product_features_wow_click">Always ready to go</button>
-<button class="btn btn-md btn-white" data-feature="simple easy" data-section="product_features_wow_click">Simple and easy to use</button>
+<button class="btn btn-md btn-white active" data-feature="always ready" data-section="product_features_wow_click">Luôn sẵn sàng khởi hành</button>
+<button class="btn btn-md btn-white" data-feature="simple easy" data-section="product_features_wow_click">Đơn giản và dễ sử dụng</button>
 </div>
 <div class="section-scroll-wrapper">
 <div class="slide s1">
@@ -345,18 +345,14 @@ get_header();
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/ready_video-alpha.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/ready_video-alpha.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
-							To view this video please enable JavaScript, and consider upgrading to a
-							web browser that
-							<a href="#" target="_blank">
-								supports HTML5 video
-							</a>
+							Để xem video này vui lòng bật JavaScript
 </p>
 </video>
 
 </div>
 <div class="tech-info">
-<h3>Start using it straight out of the box</h3>
-<p>This handheld translator device requires no setup or digging through settings. You can start using it the moment you step off the plane. With free, unlimited internet tại gần 200 quốc gia, there’s no need to search for Wi-Fi or buy local SIM cards. And when you return home, there are no nasty surprises on your phone bill—after all, your data is free for life! The automatic mode even recognizes languages on its own, so your conversations can flow naturally.</p>
+<h3>Bắt đầu sử dụng ngay khi mở hộp</h3>
+<p>Thiết bị phiên dịch cầm tay này không cần cài đặt hay tìm kiếm thiết lập phức tạp. Bạn có thể sử dụng ngay thời điểm bước xuống máy bay. Với Internet miễn phí không giới hạn tại gần 200 quốc gia, bạn không cần tìm kiếm Wi-Fi hay mua SIM nội địa. Và khi trở về nhà, sẽ không có khoản cước bất ngờ nào—data của bạn được miễn phí trọn đời! Chế độ tự động thậm chí còn tự nhận diện ngôn ngữ để cuộc trò chuyện diễn ra tự nhiên.</p>
 </div>
 </div>
 </div>
@@ -367,73 +363,70 @@ get_header();
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/simple_video-alpha.mp4" ); ?>" type='video/mp4; codecs="hvc1"'/>
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/simple_video-alpha.webm" ); ?>" type="video/webm"/>
 <p class="vjs-no-js">
-							To view this video please enable JavaScript, and consider upgrading to a
-							web browser that
-							<a href="#" target="_blank">
-								supports HTML5 video
-							</a>
+							Để xem video này vui lòng bật JavaScript
 </p>
 </video>
 
 </div>
 <div class="tech-info">
-<h3>One button to understand the whole world</h3>
-<p>The passion for travel has no expiry date—especially with the Vasco Translator M4 in your pocket. This compact language translator is the perfect companion for both young adventurers and mature travelers. Featuring powerful speakers and adjustable text size, it ensures you can hear and see every translation clearly. Physical buttons make it incredibly easy to use, and if you prefer a touchscreen, it’s been refined to perfection too.</p>
+<h3>Một nút bấm để hiểu cả thế giới</h3>
+<p>Đam mê du lịch không có tuổi—đặc biệt khi có Vasco Translator M4 trong túi. Máy phiên dịch nhỏ gọn này là người bạn đồng hành hoàn hảo cho cả những nhà thám hiểm trẻ tuổi lẫn người lớn tuổi. Trang bị loa lớn và kích thước chữ tùy chỉnh, máy đảm bảo bạn nghe và nhìn rõ từng bản dịch. Phím bấm vật lý giúp thao tác cực kỳ dễ dàng, và màn hình cảm ứng cũng được tinh chỉnh hoàn hảo.</p>
 </div>
 </div>
 </div>
 </div>
 </section>
 <section class="technologies-section sec-2">
-<h2>One translator, endless possibilities</h2>
+<h2>Một máy phiên dịch. Vô số cách kết nối.</h2>
 <div class="btn-wrapper">
 <button class="btn btn-md btn-black active" data-feature="Dịch giọng nói" data-section="product_features_click">Dịch giọng nói</button>
 <button class="btn btn-md btn-black" data-feature="Dịch hình ảnh" data-section="product_features_click">Dịch hình ảnh</button>
 <button class="btn btn-md btn-black" data-feature="Dịch văn bản" data-section="product_features_click">Dịch văn bản</button>
-<button class="btn btn-md btn-black" data-feature="Group translator" data-section="product_features_click">Learning app</button>
+<button class="btn btn-md btn-black" data-feature="Group translator" data-section="product_features_click">Học ngôn ngữ</button>
 </div>
 <div class="section-scroll-wrapper">
 <div class="slide s1">
 <div class="container">
 <div class="media">
-<img alt="A woman wearing a beige straw hat and a light-colored linen shirt stands at a bakery counter, holding a black Vasco electronic translator toward a smiling staff member. The staff member, with her hair in a bun and wearing a tan apron, looks back at the woman. The translator screen shows a conversation interface. In the foreground, a glass display case is filled with various pastries like croissants and tarts. Through the large window in the background, classic European-style stone buildings are visible under a bright sky. " src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/possibilities_1.webp" ); ?>"/>
+<img alt="A woman wearing a beige straw hat" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/possibilities_1.webp" ); ?>"/>
 </div>
 <div class="tech-info">
 <h3>Dịch giọng nói</h3>
-<p>Communicate in over 85 languages with ease. This pocket translator converts your words into your conversation partner’s language—and vice versa. Ask for the best pastry in a Parisian café, book tickets at a museum in Rome, or enjoy a fascinating conversation in a Spanish palm grove. With 99% translation accuracy, you can rest assured that language barriers won't spoil your trip or lead to awkward misunderstandings. The automatic mode detects the language for you, allowing for free-flowing conversation without having to tap the microphone button.</p>
+<p>Giao tiếp dễ dàng bằng hơn 85 ngôn ngữ. Máy phiên dịch bỏ túi chuyển đổi lời nói của bạn sang ngôn ngữ của đối phương và ngược lại. Gọi món tại quán cà phê Paris, mua vé bảo tàng ở Rome, hay trò chuyện thú vị ở Tây Ban Nha. Với độ chính xác 99%, bạn hoàn toàn yên tâm rào cản ngôn ngữ sẽ không làm hỏng chuyến đi. Chế độ tự động phát hiện ngôn ngữ giúp cuộc trò chuyện trôi chảy tự nhiên.</p>
 </div>
 </div>
 </div>
 <div class="slide s2">
 <div class="container">
 <div class="media">
-<img alt="A close-up, high-angle shot of a person sitting at a wooden table in a restaurant, using a handheld electronic translator device to read a menu. The person holds a white paper menu in their left hand while holding a small, teal-colored Vasco translator over it with their right. The device’s screen shows a digital version of the menu being translated into Polish. The person is wearing a black jacket with a bright blue shoulder panel. The background is softly blurred, showing the warm interior of a dining establishment. " src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/possibilities_2.webp" ); ?>"/>
+<img alt="Menu translation" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/possibilities_2.webp" ); ?>"/>
 </div>
 <div class="tech-info">
 <h3>Dịch hình ảnh</h3>
-<p>Feel confident wherever you go. Take a photo of a menu, timetable, hotel leaflet, or museum sign, and translate it into your language in seconds. With just one click, even foreign alphabets are no longer a mystery. You can zoom in on the photo and display the text on a white background for even better readability.</p>
+<p>Tự tin bất cứ nơi đâu bạn đến. Chụp ảnh thực đơn, lịch trình, tờ rơi khách sạn hay biển báo bảo tàng và dịch sang ngôn ngữ của bạn trong vài giây. Chỉ với một cú nhấp, chữ viết nước ngoài không còn là bí ẩn. Bạn có thể phóng to ảnh và hiển thị văn bản trên nền trắng để dễ đọc hơn.</p>
 </div>
 </div>
 </div>
 <div class="slide s3">
 <div class="container">
 <div class="media">
-<img "="" "la="" a="" alt="A close-up shot of a hand holding a purple Vasco electronic translator device. The screen displays a text translation from English (UK) to Spanish, showing the word " and="" as="" background="" beach="" bright,="" golden="" is="" ocean,="" of="" sand,="" scene="" several="" soft-focus="" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/possibilities_3.webp" ); ?>" straw="" sunbed"="" sunbeds,="" sunny="" the="" translated="" tumbona."="" umbrella.="" view="" with=""/>
+<img alt="Text translation" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/possibilities_3.webp" ); ?>"/>
 </div>
 <div class="tech-info">
 <h3>Dịch văn bản</h3>
-<p>A handy feature for checking pronunciation or translating specific phrases. All your typed phrases are saved in your history, which you can easily send to other devices.</p>
+<p>Tính năng tiện lợi để kiểm tra phát âm hoặc dịch các cụm từ cụ thể. Tất cả các cụm từ bạn nhập đều được lưu trong lịch sử, dễ dàng gửi sang các thiết bị khác.</p>
 </div>
 </div>
 </div>
 <div class="slide s4">
 <div class="container">
 <div class="media">
-<img a="" alt="A person's hand holding a small, purple handheld translator device over a wooden slatted table. The screen shows a language lesson with the word " amerikaans."="" and="" are="" background."="" coffee="" cup="" in="" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/possibilities_4.webp" ); ?>" sunglasses="" the=""/>
+<img alt="Learning app" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/possibilities_4.webp" ); ?>"/>
 </div>
 <div class="tech-info">
 <h3>Ứng dụng học ngôn ngữ</h3>
-<p>How do you say "thank you" in Portuguese? Sometimes, just one word in the local language can bring a wide smile to someone's face and show your respect for their culture. It’s a small gesture that can turn a simple chat into a special moment. With the language learning app on the Vasco Translator M4, you can master new words and phrases—it’s also a great way to pass the time while you travel.</p>
+<p>Làm thế nào để nói "cảm ơn" bằng tiếng Bồ Đào Nha? Đôi khi chỉ một từ bằng ngôn ngữ địa phương có thể mang lại nụ cười và thể hiện sự tôn trọng văn hóa. Với ứng dụng học ngôn ngữ trên Vasco Translator M4, bạn có thể làm chủ các từ và cụm từ mới—đây cũng là cách tuyệt vời để giải trí khi đi du lịch.</p>
+</div>
 </div>
 </div>
 </div>
@@ -666,25 +659,25 @@ get_header();
 </div>
 <div class="groups-wrapper">
 <div class="menu-groups">
-<button class="btn btn-md group active" data-id="business_international">Travel</button>
-<button class="btn btn-md group" data-id="multilingual_schools">As a gift</button>
-<button class="btn btn-md group" data-id="tourism_Du lịch &amp; Khách sạn">Life abroad</button>
+<button class="btn btn-md group active" data-id="business_international">Du lịch</button>
+<button class="btn btn-md group" data-id="multilingual_schools">Làm quà tặng</button>
+<button class="btn btn-md group" data-id="tourism_Du lịch &amp; Khách sạn">Cuộc sống ở nước ngoài</button>
 </div>
 <div class="container">
 <div class="content-groups">
 <div class="doubleboxes">
 <div class="doublebox left rounded group-box active" data-id="business_international" style="background-color: #FFF; color: #FFF;">
 <div class="doublebox-content-custom-list">
-<h3 class="h2">Travel</h3>
-<p>Take the Vasco Translator M4 with you and make the most of every trip. Forget about language barriers and enjoy independence with this instant language translation tool, ensuring effortless communication wherever you go.</p>
+<h3 class="h2">Du lịch</h3>
+<p>Mang theo Vasco Translator M4 và tận hưởng trọn vẹn từng chuyến đi. Quên đi rào cản ngôn ngữ và tận hưởng sự tự do với công cụ phiên dịch tức thì, đảm bảo giao tiếp dễ dàng bất cứ nơi nào bạn đến.</p>
 <div class="doublebox-custom-list-wrapper">
-<h4>When you travel with Vasco Translator M4:</h4>
+<h4>Khi đi du lịch cùng Vasco Translator M4:</h4>
 <ul>
-<li>Booking tickets and making reservations becomes quick and easy</li>
-<li>Technology truly supports you instead of causing frustration</li>
-<li>You feel confident in any situation</li>
-<li>You can have meaningful conversations with people from around the world</li>
-<li>You explore independently and on your own terms</li>
+<li>Đặt vé và đặt chỗ trở nên nhanh chóng và dễ dàng</li>
+<li>Công nghệ thực sự hỗ trợ bạn thay vì gây phiền toái</li>
+<li>Bạn cảm thấy tự tin trong mọi tình huống</li>
+<li>Bạn có thể trò chuyện ý nghĩa với mọi người từ khắp nơi trên thế giới</li>
+<li>Bạn tự do khám phá theo cách riêng của mình</li>
 </ul>
 </div>
 <svg class="svg-pseudo" color="" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -692,25 +685,21 @@ get_header();
 </svg>
 </div>
 <div class="doublebox-absolute with-list" id="img-change">
-<img alt="A joyful older man gives a woman a piggyback ride on a European city street, both smiling widely as she points with a raised arm toward the distance. He wears glasses, a tan jacket, and a camera, and she wears a denim jacket and scarf. " class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/useful_1.webp" ); ?>"/>
+<img alt="Travel" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/useful_1.webp" ); ?>"/>
 </div>
 </div>
 <div class="doublebox left rounded group-box" data-id="multilingual_schools" style="background-color: #FFF; color: #FFF;">
 <div class="doublebox-content-custom-list">
-<h3 class="h2">As a gift</h3>
-<p>Do you know someone with an appetite for life but whose travel dreams are held back by language barriers? Instead of exploring the world, they can only watch it on TV. Vasco Translator M4 pocket translator makes communication abroad simple and travel safer. It’s a gift that gives your loved ones the freedom to explore—and gives you peace of mind knowing they’ll manage just fine.</p>
+<h3 class="h2">Làm quà tặng</h3>
+<p>Bạn có biết ai đó tràn đầy nhiệt huyết nhưng ước mơ du lịch bị cản trở bởi rào cản ngôn ngữ? Thay vì tự do khám phá thế giới, họ chỉ có thể xem qua màn ảnh. Vasco Translator M4 giúp việc giao tiếp ở nước ngoài trở nên đơn giản và chuyến đi an toàn hơn. Đây là món quà trao tặng sự tự do và sự an tâm trọn vẹn.</p>
 <div class="doublebox-custom-list-wrapper">
-<h4>When you give Vasco Translator M4 as a gift:</h4>
+<h4>Khi tặng Vasco Translator M4 làm quà:</h4>
 <ul>
-<li>You give them the opportunity to discover the world—and relive their second youth!</li>
-<li>You know they’ll feel confident communicating while travelling</li>
-<li>You’re sure they’ll manage in hotels, restaurants, or at the airport</li>
-<li>No subscriptions or hidden fees—just a one-time purchase with free unlimited internet included</li>
-<li>You’re giving a premium gift that will bring countless smiles</li>
-<li>You care about their safety—Vasco is a European company operating in line with global data protection standards</li>
-<li>They receive technical support in their native language</li>
-<li>No need to install apps or configure a smartphone</li>
-<li>You don’t have to worry about helping them use the device</li>
+<li>Bạn trao cho họ cơ hội khám phá thế giới và sống lại tuổi trẻ lần hai!</li>
+<li>Bạn biết họ sẽ tự tin giao tiếp khi đi du lịch</li>
+<li>Bạn yên tâm họ sẽ tự xoay xở ở khách sạn, nhà hàng hay sân bay</li>
+<li>Không tốn phí thuê bao hay chi phí ẩn—chỉ cần mua một lần kèm Internet miễn phí không giới hạn</li>
+<li>Món quà cao cấp mang lại vô số nụ cười và sự tiện nghi</li>
 </ul>
 </div>
 <svg class="svg-pseudo" color="" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -718,20 +707,20 @@ get_header();
 </svg>
 </div>
 <div class="doublebox-absolute with-list" id="img-change">
-<img "="" "vasco="" a="" alt="A heartwarming scene of three people smiling and standing together. On the left, a young man with curly hair holds a white " and="" are="" at="" background.="" bag.="" behind="" box="" bright="" center,="" class="hero-image" graying="" hair="" hand="" happily="" her,="" holds="" in="" labeled="" light-green="" looking="" m4,"="" man="" man's="" man.="" neutral-colored="" on="" one="" other="" room="" shopping="" shoulder="" shoulder.="" smiles="" sofa="" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/useful_2.webp" ); ?>" the="" they="" translator="" vasco"="" wall="" warmly,="" white="" with="" woman="" woman's="" young=""/>
+<img alt="Gift" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/useful_2.webp" ); ?>"/>
 </div>
 </div>
 <div class="doublebox left rounded group-box" data-id="tourism_Du lịch &amp; Khách sạn" style="background-color: #FFF; color: #FFF;">
 <div class="doublebox-content-custom-list">
-<h3 class="h2">Life abroad</h3>
-<p>Vasco Translator M4 is an essential language translation tool for whenever a foreign country becomes your home. Whether you’re working abroad or enjoying retirement in a warmer climate, it helps you feel confident and secure in your new surroundings.</p>
+<h3 class="h2">Cuộc sống ở nước ngoài</h3>
+<p>Vasco Translator M4 là công cụ dịch thuật thiết yếu khi một quốc gia xa lạ trở thành ngôi nhà thứ hai của bạn. Cho dù bạn đang làm việc ở nước ngoài hay tận hưởng tuổi hưu ở xứ ấm áp, thiết bị giúp bạn cảm thấy tự tin và an tâm.</p>
 <div class="doublebox-custom-list-wrapper">
-<h4>With Vasco Translator M4 abroad:</h4>
+<h4>Với Vasco Translator M4 ở nước ngoài:</h4>
 <ul>
-<li>You can easily communicate with employers, colleagues, and neighbours</li>
-<li>You’re confident handling matters at offices, banks, or medical appointments</li>
-<li>You manage everyday tasks independently—from shopping to repairs or visiting a hairdresser</li>
-<li>You feel at home, as language barriers no longer limit your daily life</li>
+<li>Bạn có thể dễ dàng giao tiếp với đồng nghiệp, chủ nhà và hàng xóm</li>
+<li>Bạn tự tin giải quyết công việc tại cơ quan, ngân hàng hay lịch hẹn y tế</li>
+<li>Bạn tự lập quản lý công việc hàng ngày—từ mua sắm đến sửa chữa hay cắt tóc</li>
+<li>Bạn cảm thấy như ở nhà, rào cản ngôn ngữ không còn giới hạn cuộc sống của bạn</li>
 </ul>
 </div>
 <svg class="svg-pseudo" color="" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">
