@@ -65,7 +65,7 @@ get_header();
 <h3 class="number" id="country-number">53</h3>
 </div>
 <p class="number-description" id="country-desc">
-					languages supported by phone Dịch cuộc gọi</p>
+					ngôn ngữ được hỗ trợ bởi tính năng Dịch cuộc gọi</p>
 </div>
 <div class="vasco-numbers-single-wrapper" role="listitem" tabindex="0">
 <div class="number-paragraph">
@@ -80,7 +80,7 @@ cho phép sử dụng tính năng này</p>
 <h3 class="number" id="awards-number">99</h3>%
 				</div>
 <p class="number-description" id="awards-desc">
-					translation accuracy</p>
+					độ chính xác dịch thuật</p>
 </div>
 </div>
 </div>
@@ -132,18 +132,18 @@ cho phép sử dụng tính năng này</p>
 <div class="card">
 <picture>
 <source media="(min-width: 700px)"/>
-<img alt="A close-up photograph of a person's hand holding a dark blue Vasco electronic device over a wooden table. The screen displays a &quot;Legal information&quot; screen with checked boxes for accepting terms and privacy policies, above a prominent blue &quot;Confirm&quot; button. In the foreground on the desk sits a closed grey notebook with a black pen and a ceramic mug. The warm, softly blurred background shows a cozy room interior with a potted plant, a framed picture, and a wooden bookshelf." height="129px" width="300px"/>
+<img alt="Ảnh cận cảnh bàn tay một người đang cầm thiết bị điện tử Vasco màu xanh đậm trên một chiếc bàn gỗ. Màn hình hiển thị màn hình “Thông tin pháp lý” với các ô đã tích chọn để đồng ý điều khoản và chính sách bảo mật, phía trên nút “Xác nhận” màu xanh nổi bật. Ở phía trước trên bàn là một cuốn sổ tay màu xám đã đóng lại cùng một cây bút đen và một chiếc cốc gốm. Nền phía sau được làm mờ nhẹ, ấm áp, cho thấy không gian phòng ấm cúng với một chậu cây, một khung ảnh và một giá sách bằng gỗ." height="129px" width="300px"/>
 </picture>
 <h3 class="h2">Xác thực danh tính của bạn</h3>
-<p>Accept the Điều khoản và Điều kiện and Chính sách bảo mật. Provide your first name, last name, and phone number to receive a verification code. Then follow a short tutorial.</p>
+<p>Đồng ý với Điều khoản và Điều kiện cùng Chính sách bảo mật. Cung cấp họ, tên và số điện thoại của bạn để nhận mã xác thực. Sau đó, làm theo hướng dẫn ngắn.</p>
 </div>
 <div class="card card-bottom">
 <picture>
 <source media="(min-width: 700px)"/>
-<img alt='A close-up photograph of two people interacting with a new device. One person holds a dark purple handheld electronic device that displays a numeric dialing keypad on its screen. A woman with long brown hair wearing a white top stands next to them, reaching out to touch or point at the screen. In the background, an open white product box is held up, displaying a graphic logo that reads "No. 1" on the inside of the lid.' height="129px" width="300px"/>
+<img alt='Ảnh cận cảnh hai người đang tương tác với một thiết bị mới. Một người cầm thiết bị điện tử cầm tay màu tím đậm hiển thị bàn phím số quay số trên màn hình. Một người phụ nữ tóc nâu dài mặc áo trắng đứng bên cạnh, đưa tay chạm hoặc chỉ vào màn hình. Phía sau, một hộp sản phẩm màu trắng đang mở được giơ lên, hiển thị logo đồ họa có ghi "No. 1" ở mặt trong nắp hộp.' height="129px" width="300px"/>
 </picture>
 <h3 class="h2">Kết nối cuộc gọi</h3>
-<p>Enter the number and language of the person you want to connect with, and our technology partner will make a call. Wait a moment—the person you’re calling will hear a message explaining that you are using a translator.</p>
+<p>Nhập số điện thoại và ngôn ngữ của người bạn muốn kết nối, đối tác công nghệ của chúng tôi sẽ thực hiện cuộc gọi. Chờ một chút—người bạn gọi đến sẽ nghe một thông báo giải thích rằng bạn đang sử dụng máy phiên dịch.</p>
 </div>
 <div class="card">
 <picture>
@@ -151,14 +151,14 @@ cho phép sử dụng tính năng này</p>
 <img alt="A close-up photograph of a hand holding a dark blue Vasco electronic device. The device's screen displays an outgoing call interface showing the number &quot;+33 (0)20 7898 9880&quot; and the word &quot;CALLING...&quot;. In the background, a person stands wearing an open, yellow-and-white vertically striped shirt over a plain white t-shirt." height="129px" width="300px"/>
 </picture>
 <h3 class="h2">Tận hưởng cuộc trò chuyện</h3>
-<p>Speak freely. The feature works in speakerphone mode, with real-time translation displayed on the screen. Each user hears both the original and the translated speech.</p>
+<p>Nói chuyện tự do. Tính năng này hoạt động ở chế độ loa ngoài, với bản dịch theo thời gian thực hiển thị trên màn hình. Mỗi người dùng đều nghe được cả giọng nói gốc và bản dịch.</p>
 </div>
 </div>
 </div>
 </section>
 <section class="more-features">
 <div class="container">
-<h2 class="h2-notosans">CALL IT A GAME CHANGER! SMALL DEVICE, BIG POSSIBILITIES</h2>
+<h2 class="h2-notosans">HÃY GỌI ĐÂY LÀ MỘT BƯỚC ĐỘT PHÁ! THIẾT BỊ NHỎ, KHẢ NĂNG LỚN</h2>
 <div class="feature-list" id="feature-list">
 <div class="list">
 <button class="feature active" data-id="voice_translator">
@@ -272,56 +272,56 @@ cho phép sử dụng tính năng này</p>
 <div class="feature-boxes">
 <div class="feature-box active" data-id="voice_translator">
 <div class="video">
-<img alt="A photograph of a middle-aged man with a salt-and-pepper beard and hair, wearing a light blue short-sleeved polo and white trousers. He stands with his right hand in his pocket, looking down at the translator held in his left hand. The background is a massive, curved screen displaying a deep space panorama: a large, cold-blue Earth dominates the right side, while glowing golden nebulae and distant city-like lights dot the dark void on the left, along with scattered stars. The blue light from the Earth projection casts a hue on his side." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/call_lp/icons_panel1.webp" ); ?>"/>
+<img alt="Ảnh chụp một người đàn ông trung niên có râu và tóc hoa râm, mặc áo polo ngắn tay màu xanh nhạt và quần trắng. Anh đứng với tay phải đút trong túi quần, nhìn xuống máy phiên dịch cầm trên tay trái. Phía sau là một màn hình cong khổng lồ hiển thị toàn cảnh không gian sâu: một Trái Đất lớn, màu xanh lạnh chiếm phần bên phải, trong khi những tinh vân vàng rực và các ánh đèn thành phố xa xăm lấp lánh trong khoảng không tối bên trái, cùng những vì sao rải rác. Ánh sáng xanh từ hình chiếu Trái Đất tạo nên một sắc thái trên người anh." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/call_lp/icons_panel1.webp" ); ?>"/>
 </div>
 <div class="feature-info">
 <h3 class="h2">Phạm vi toàn cầu</h3>
-<p class="not-subtitle">Talk to whoever you want, whenever you want. The service works everywhere the Vasco Translator Q1 has signal—which is tại gần 200 quốc gia worldwide! The feature supports 53 languages, and thanks to our technology partners, you can connect with 160 countries. The service is available to users with phone numbers from 42 countries (required for verification). With this feature, the entire world is within your reach.</p>
+<p class="not-subtitle">Trò chuyện với bất kỳ ai bạn muốn, bất cứ khi nào bạn muốn. Dịch vụ này hoạt động ở mọi nơi Vasco Translator Q1 có sóng—tức là tại gần 200 quốc gia trên toàn thế giới! Tính năng này hỗ trợ 53 ngôn ngữ, và nhờ các đối tác công nghệ của chúng tôi, bạn có thể kết nối với 160 quốc gia. Dịch vụ này khả dụng cho người dùng có số điện thoại từ 42 quốc gia (cần thiết để xác thực). Với tính năng này, cả thế giới nằm trong tầm tay bạn.</p>
 </div>
 </div>
 <div class="feature-box" data-id="photo_translator">
 <div class="video">
-<img alt="A close-up photograph focusing on a person's hand holding a dark blue handheld device with a VA logo on the back. In the softly blurred background, a smiling young man wearing a black and white striped t-shirt lies relaxed on a light-colored couch. The setting is a bright, modern living room with soft lighting and a hint of indoor greenery in the background." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/call_lp/icons_panel2.webp" ); ?>"/>
+<img alt="Ảnh cận cảnh tập trung vào bàn tay một người đang cầm thiết bị cầm tay màu xanh đậm có logo VA ở mặt sau. Phía sau, trong nền được làm mờ nhẹ, một chàng trai trẻ tươi cười mặc áo thun kẻ sọc đen trắng đang nằm thư giãn trên ghế sofa màu sáng. Bối cảnh là một phòng khách hiện đại, sáng sủa với ánh sáng dịu nhẹ và thấp thoáng cây xanh trong nhà." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/call_lp/icons_panel2.webp" ); ?>"/>
 </div>
 <div class="feature-info">
 <h3 class="h2">Vận hành dễ dàng, trực quan</h3>
-<p class="not-subtitle">Using it is a piece of cake. With our interactive tutorial, you’ll quickly learn how to translate phone calls in real-time—and if you ever forget something, you can always go back and review it.</p>
+<p class="not-subtitle">Sử dụng vô cùng đơn giản. Với hướng dẫn tương tác của chúng tôi, bạn sẽ nhanh chóng học được cách dịch các cuộc gọi điện thoại theo thời gian thực—và nếu có quên điều gì, bạn luôn có thể xem lại.</p>
 </div>
 </div>
 <div class="feature-box" data-id="text_translator">
 <div class="video">
-<img alt="A close-up photograph of a hand holding a red Vasco electronic device over an open travel guidebook or brochure. The device's screen displays a &quot;Contacts&quot; menu showing the text &quot;No saved contacts. Add a new contact now or after making a call.&quot; alongside an &quot;ADD CONTACT&quot; option. In the background, a blurry green lawn is visible, along with the arm of another person wearing a red shirt." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/call_lp/icons_panel3.webp" ); ?>"/>
+<img alt="Ảnh cận cảnh một bàn tay đang cầm thiết bị điện tử Vasco màu đỏ phía trên một tập sách hướng dẫn du lịch đang mở. Màn hình thiết bị hiển thị menu “Danh bạ” với nội dung “Không có liên hệ đã lưu. Thêm liên hệ mới ngay hoặc sau khi thực hiện cuộc gọi.” cùng với tùy chọn “THÊM LIÊN HỆ”. Phía sau là một bãi cỏ xanh mờ nhạt, cùng với cánh tay của một người khác mặc áo màu đỏ." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/call_lp/icons_panel3.webp" ); ?>"/>
 </div>
 <div class="feature-info">
 <h3 class="h2">Danh bạ liên hệ</h3>
-<p class="not-subtitle">Like having everything in one place? Save numbers directly on the device and assign languages to them. From now on, your most important contacts are always at your fingertips.</p>
+<p class="not-subtitle">Muốn có mọi thứ ở một nơi? Lưu số điện thoại trực tiếp trên thiết bị và gán ngôn ngữ cho từng số. Từ giờ, những liên hệ quan trọng nhất của bạn luôn trong tầm tay.</p>
 </div>
 </div>
 <div class="feature-box" data-id="MultiTalk">
 <div class="video">
-<img alt="A photograph of four people gathered around a small, round white table in a bright, minimalist room. On the left, a man with curly brown hair wearing a red-and-white striped shirt holds up a dark handheld electronic device showing a numeric keypad on its screen. Seated in the middle, a woman in a yellow t-shirt and cream vest rests her chin on her hand, smiling. Behind her stands a woman with curly hair in a beige shirt, while a grey-haired man with a beard sits on the right wearing a grey cardigan and holding a black mug. The table is set with coffee cups, newspapers, and a small decorative vase under bright, soft lighting." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/call_lp/icons_panel4.webp" ); ?>"/>
+<img alt="Ảnh chụp bốn người đang quây quần bên một chiếc bàn tròn nhỏ màu trắng trong một căn phòng sáng, tối giản. Bên trái, một người đàn ông có tóc xoăn nâu, mặc áo kẻ sọc đỏ trắng, đang cầm một thiết bị điện tử cầm tay màu tối hiển thị bàn phím số trên màn hình. Ngồi ở giữa, một người phụ nữ mặc áo thun vàng và áo gile màu kem tựa cằm lên tay, đang mỉm cười. Phía sau cô là một người phụ nữ tóc xoăn mặc áo màu beige, còn một người đàn ông tóc hoa râm có râu ngồi bên phải, mặc áo cardigan xám và cầm một chiếc cốc màu đen. Trên bàn có các cốc cà phê, báo và một chiếc bình trang trí nhỏ dưới ánh sáng dịu nhẹ." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/call_lp/icons_panel4.webp" ); ?>"/>
 </div>
 <div class="feature-info">
 <h3 class="h2">Quay số nhanh</h3>
-<p class="not-subtitle">When time matters, there’s no room for complicated settings. Select a contact from the list, and the Vasco Translator Q1 will automatically activate the assigned language and enable the conversation.</p>
+<p class="not-subtitle">Khi thời gian là yếu tố quan trọng, không có chỗ cho những thiết lập phức tạp. Chọn một liên hệ trong danh sách, và Vasco Translator Q1 sẽ tự động kích hoạt ngôn ngữ đã gán và bắt đầu cuộc trò chuyện.</p>
 </div>
 </div>
 <div class="feature-box" data-id="call_translator">
 <div class="video">
-<img alt="A close-up photograph of a hand holding a purple Vasco electronic device. The device's screen displays the &quot;Bộ lọc từ ngữ không phù hợp&quot; settings menu, showing the feature is &quot;Enabled&quot; with a blue toggle switch turned on and text that reads, &quot;Enable this option to filter out offensive language from translations.&quot; The background features a red, white, and blue checkered tablecloth, with another hand reaching for a clear glass decorated with peach illustrations in the upper right corner." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/call_lp/icons_panel5.webp" ); ?>"/>
+<img alt="Ảnh cận cảnh một bàn tay đang cầm thiết bị điện tử Vasco màu tím. Màn hình thiết bị hiển thị menu thiết lập “Bộ lọc từ ngữ không phù hợp”, cho thấy tính năng đang ở trạng thái “Đã bật” với công tắc gạt màu xanh đang mở và nội dung ghi “Bật tùy chọn này để lọc bỏ ngôn từ thô lỗ khỏi các bản dịch.” Nền phía sau là một khăn trải bàn kẻ ô đỏ, trắng, xanh, với một bàn tay khác đang đưa tới một chiếc cốc trong suốt trang trí hình quả đào ở góc trên bên phải." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/call_lp/icons_panel5.webp" ); ?>"/>
 </div>
 <div class="feature-info">
 <h3 class="h2">Bộ lọc từ ngữ không phù hợp</h3>
-<p class="not-subtitle">The phone call translation feature not only delivers 96% translation accuracy, but also detects and censors offensive language. Maintain a professional tone even when emotions run high.</p>
+<p class="not-subtitle">Tính năng dịch cuộc gọi điện thoại không chỉ mang lại độ chính xác dịch thuật 96%, mà còn phát hiện và kiểm duyệt ngôn từ thô lỗ. Giữ giọng điệu chuyên nghiệp ngay cả khi cảm xúc dâng cao.</p>
 </div>
 </div>
 <div class="feature-box" data-id="vasco_my_voice">
 <div class="video">
-<img alt='A close-up photograph of two people interacting with a new device. One person holds a dark purple handheld electronic device that displays a numeric dialing keypad on its screen. A woman with long brown hair wearing a white top stands next to them, reaching out to touch or point at the screen. In the background, an open white product box is held up, displaying a graphic logo that reads "No. 1" on the inside of the lid.' src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/call_lp/icons_panel6.webp" ); ?>"/>
+<img alt='Ảnh cận cảnh hai người đang tương tác với một thiết bị mới. Một người cầm thiết bị điện tử cầm tay màu tím đậm hiển thị bàn phím số quay số trên màn hình. Một người phụ nữ tóc nâu dài mặc áo trắng đứng bên cạnh, đưa tay chạm hoặc chỉ vào màn hình. Phía sau, một hộp sản phẩm màu trắng đang mở được giơ lên, hiển thị logo đồ họa có ghi "No. 1" ở mặt trong nắp hộp.' src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/call_lp/icons_panel6.webp" ); ?>"/>
 </div>
 <div class="feature-info">
 <h3 class="h2">Bảo mật và riêng tư</h3>
-<p class="not-subtitle">Your conversations stay between you and your recipient. Call transcripts and logs are automatically deleted once you exit the call screen, ensuring full privacy and security.</p>
+<p class="not-subtitle">Các cuộc trò chuyện của bạn chỉ diễn ra giữa bạn và người nhận. Bản ghi và nhật ký cuộc gọi sẽ tự động bị xóa ngay khi bạn thoát khỏi màn hình gọi, đảm bảo quyền riêng tư và an toàn tuyệt đối.</p>
 </div>
 </div>
 </div>
@@ -341,7 +341,7 @@ cho phép sử dụng tính năng này</p>
 <div class="product-description">
 <h3 aria-label="q1.name]" id="product-38" tabindex="0">
 											Vasco Translator Q1</h3>
-<p>The only translator with voice cloning and call translation features</p>
+<p>Máy dịch duy nhất có tính năng nhân bản giọng nói và dịch cuộc gọi điện thoại</p>
 <a aria-label="Tìm hiểu thêm Vasco Translator Q1" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>" target="_blank">
 											Tìm hiểu thêm
 										</a>
@@ -350,8 +350,8 @@ cho phép sử dụng tính năng này</p>
 </div>
 </div>
 <div class="custom-navigation">
-<div class="swiper-button-prev btn-product-prev" data-label-prev="Previous slide"></div>
-<div class="swiper-button-next btn-product-next" data-label-next="Next slide"></div>
+<div class="swiper-button-prev btn-product-prev" data-label-prev="Slide trước"></div>
+<div class="swiper-button-next btn-product-next" data-label-next="Slide tiếp theo"></div>
 </div>
 </div>
 </div>
@@ -361,237 +361,237 @@ cho phép sử dụng tính năng này</p>
 <section class="financial-plans" id="price-plans">
 <div class="container content-wrapper">
 <h2 class="h1">Nạp tiền linh hoạt</h2>
-<p class="subtitle">Talk as much as you want. The real-time phone call translation feature comes with 10 free minutes to get you started. Want more? Choose a package that fits your conversation style.</p>
+<p class="subtitle">Trò chuyện thoải mái theo ý bạn. Tính năng dịch cuộc gọi điện thoại theo thời gian thực đi kèm 10 phút miễn phí để bạn bắt đầu. Muốn nhiều hơn? Hãy chọn gói phù hợp với phong cách trò chuyện của bạn.</p>
 <div class="plans-wrapper">
 <div class="plan-box">
 <div class="box-header">
 <div class="label-wrapper empty">
 </div>
-<p class="title">Light</p>
+<p class="title">Cơ bản</p>
 <p class="price">$7</p>
 <svg class="price-plan-pseudo" fill="none" height="25" viewbox="0 0 48 25" width="48" xmlns="http://www.w3.org/2000/svg">
 <path d="M41.0686 3.05585L29.9416 21.9231C29.4019 22.8388 28.5206 23.6169 27.4043 24.1631C26.288 24.7093 24.9849 25 23.6532 25C22.3215 25 21.0184 24.7093 19.9021 24.1631C18.7858 23.6169 17.9044 22.8388 17.3648 21.9231L6.28839 3.08116C5.75311 2.16277 4.87285 1.38196 3.75573 0.834597C2.6495 0.292577 1.35873 0.00284845 0.0390122 2.08961e-05L0 2.08961e-05C0.0130068 -6.97089e-06 0.0260109 -6.95986e-06 0.0390122 2.08961e-05L47.2727 2.08961e-05C45.959 0.0118999 44.6771 0.305843 43.5779 0.847212C42.4788 1.38858 41.6082 2.15488 41.0686 3.05585Z" fill="#E0E2F2"></path>
 </svg>
 </div>
 <div class="box-body">
-<p class="body-subtitle">For occasional chit-chats</p>
+<p class="body-subtitle">Cho những cuộc trò chuyện thỉnh thoảng</p>
 <div class="adventages-wraper"><ul>
-<li>price per translation minute $$</li>
+<li>giá mỗi phút dịch $$</li>
 <li>10 phút dịch cuộc gọi điện thoại</li>
 </ul></div>
 <a class="btn btn-md btn-primary" href="./call-translator.html">
-<img alt="cart" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>
-							GO LIGHT
+<img alt="giỏ hàng" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>
+							CHỌN CƠ BẢN
 						</a>
 </div>
 </div>
 <div class="plan-box">
 <div class="box-header">
 <div class="label-wrapper">
-<p class="label-text">save 4%</p>
+<p class="label-text">tiết kiệm 4%</p>
 <svg class="price-plan-label-pseudo" fill="none" height="32" viewbox="0 0 17 32" width="17" xmlns="http://www.w3.org/2000/svg">
 <path d="M0.342773 0C1.40364 0 2.42173 0.42173 3.17188 1.17188L15.1719 13.1719C16.7336 14.7339 16.7336 17.2661 15.1719 18.8281L3.17188 30.8281C2.42173 31.5783 1.40364 32 0.342773 32H0V0H0.342773Z" fill="#FFD260"></path>
 </svg>
 </div>
-<p class="title">Regular</p>
+<p class="title">Tiêu chuẩn</p>
 <p class="price">$33</p>
 <svg class="price-plan-pseudo" fill="none" height="25" viewbox="0 0 48 25" width="48" xmlns="http://www.w3.org/2000/svg">
 <path d="M41.0686 3.05585L29.9416 21.9231C29.4019 22.8388 28.5206 23.6169 27.4043 24.1631C26.288 24.7093 24.9849 25 23.6532 25C22.3215 25 21.0184 24.7093 19.9021 24.1631C18.7858 23.6169 17.9044 22.8388 17.3648 21.9231L6.28839 3.08116C5.75311 2.16277 4.87285 1.38196 3.75573 0.834597C2.6495 0.292577 1.35873 0.00284845 0.0390122 2.08961e-05L0 2.08961e-05C0.0130068 -6.97089e-06 0.0260109 -6.95986e-06 0.0390122 2.08961e-05L47.2727 2.08961e-05C45.959 0.0118999 44.6771 0.305843 43.5779 0.847212C42.4788 1.38858 41.6082 2.15488 41.0686 3.05585Z" fill="#6F61A5"></path>
 </svg>
 </div>
 <div class="box-body">
-<p class="body-subtitle">For frequent calls</p>
+<p class="body-subtitle">Cho các cuộc gọi thường xuyên</p>
 <div class="adventages-wraper"><ul>
-<li>price per translation minute $$</li>
+<li>giá mỗi phút dịch $$</li>
 <li>50 phút dịch cuộc gọi điện thoại</li>
 </ul></div>
 <a class="btn btn-md btn-primary" href="./call-translator.html">
-<img alt="cart" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>
-							GO REGULAR
+<img alt="giỏ hàng" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>
+							CHỌN TIÊU CHUẨN
 						</a>
 </div>
 </div>
 <div class="plan-box">
 <div class="box-header">
 <div class="label-wrapper">
-<p class="label-text">save 8%</p>
+<p class="label-text">tiết kiệm 8%</p>
 <svg class="price-plan-label-pseudo" fill="none" height="32" viewbox="0 0 17 32" width="17" xmlns="http://www.w3.org/2000/svg">
 <path d="M0.342773 0C1.40364 0 2.42173 0.42173 3.17188 1.17188L15.1719 13.1719C16.7336 14.7339 16.7336 17.2661 15.1719 18.8281L3.17188 30.8281C2.42173 31.5783 1.40364 32 0.342773 32H0V0H0.342773Z" fill="#FFD260"></path>
 </svg>
 </div>
-<p class="title">Pro</p>
+<p class="title">Cao cấp</p>
 <p class="price">$64</p>
 <svg class="price-plan-pseudo" fill="none" height="25" viewbox="0 0 48 25" width="48" xmlns="http://www.w3.org/2000/svg">
 <path d="M41.0686 3.05585L29.9416 21.9231C29.4019 22.8388 28.5206 23.6169 27.4043 24.1631C26.288 24.7093 24.9849 25 23.6532 25C22.3215 25 21.0184 24.7093 19.9021 24.1631C18.7858 23.6169 17.9044 22.8388 17.3648 21.9231L6.28839 3.08116C5.75311 2.16277 4.87285 1.38196 3.75573 0.834597C2.6495 0.292577 1.35873 0.00284845 0.0390122 2.08961e-05L0 2.08961e-05C0.0130068 -6.97089e-06 0.0260109 -6.95986e-06 0.0390122 2.08961e-05L47.2727 2.08961e-05C45.959 0.0118999 44.6771 0.305843 43.5779 0.847212C42.4788 1.38858 41.6082 2.15488 41.0686 3.05585Z" fill="#E0E2F2"></path>
 </svg>
 </div>
 <div class="box-body">
-<p class="body-subtitle">For longer conversations</p>
+<p class="body-subtitle">Cho những cuộc trò chuyện dài hơn</p>
 <div class="adventages-wraper"><ul>
-<li>price per translation minute $$</li>
+<li>giá mỗi phút dịch $$</li>
 <li>100 phút dịch cuộc gọi điện thoại</li>
 </ul></div>
 <a class="btn btn-md btn-primary" href="./call-translator.html">
-<img alt="cart" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>
-							GO PRO
+<img alt="giỏ hàng" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>
+							CHỌN CAO CẤP
 						</a>
 </div>
 </div>
 </div>
-<p class="addition">Not sure which one to pick? We’re here to help you choose the best option.</p>
-<a class="btn btn-black btn-md" href="<?php echo esc_url( home_url( "/contact/" ) ); ?>">CONTACT US</a>
+<p class="addition">Chưa chắc nên chọn gói nào? Chúng tôi luôn sẵn sàng giúp bạn chọn lựa chọn tốt nhất.</p>
+<a class="btn btn-black btn-md" href="<?php echo esc_url( home_url( "/contact/" ) ); ?>">LIÊN HỆ VỚI CHÚNG TÔI</a>
 </div>
 </section>
 <section class="container faq-section">
-<h2 class="h1">FAQ</h2>
+<h2 class="h1">Câu hỏi thường gặp</h2>
 <div class="accordion-section">
 <div class="accordion-wrapper">
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">How does a Dịch cuộc gọi work in real-time phone conversations?</p>
+<p class="accordion-visible">Tính năng Dịch cuộc gọi hoạt động như thế nào trong các cuộc gọi điện thoại theo thời gian thực?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
 </path>
 </svg></div>
 </div>
-<p class="accordion-hidden">Real-time phone call translation is simple and intuitive. After a quick identity verification, just enter the number of the person you wish to call and select their language. Our technology partners will make the call, and your recipient will be notified that you are using a phone Dịch cuộc gọi.
+<p class="accordion-hidden">Dịch cuộc gọi điện thoại theo thời gian thực rất đơn giản và dễ sử dụng. Sau khi xác thực danh tính nhanh, bạn chỉ cần nhập số điện thoại của người muốn gọi và chọn ngôn ngữ của họ. Đối tác công nghệ của chúng tôi sẽ thực hiện cuộc gọi, và người nhận sẽ được thông báo rằng bạn đang sử dụng tính năng Dịch cuộc gọi điện thoại.
 
-The conversation takes place in speakerphone mode, with a real-time translation displayed on the screen. Both participants hear the original speech followed by the translated version.</p>
+Cuộc trò chuyện diễn ra ở chế độ loa ngoài, với bản dịch theo thời gian thực hiển thị trên màn hình. Cả hai người tham gia đều nghe được giọng nói gốc và sau đó là bản dịch.</p>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">Is the Dịch cuộc gọi two-way during a phone conversation?</p>
+<p class="accordion-visible">Tính năng Dịch cuộc gọi có hoạt động hai chiều trong cuộc gọi điện thoại không?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
 </path>
 </svg></div>
 </div>
-<p class="accordion-hidden">Yes. The feature provides a two-way translation. Both you and your recipient will hear the real-time phone call translation in your respective languages, allowing for a fluid and natural exchange without any language barriers.</p>
+<p class="accordion-hidden">Có. Tính năng này cung cấp bản dịch hai chiều. Cả bạn và người nhận đều sẽ nghe được bản dịch cuộc gọi điện thoại theo thời gian thực bằng ngôn ngữ của mình, giúp cuộc trao đổi diễn ra trôi chảy và tự nhiên mà không gặp rào cản ngôn ngữ nào.</p>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">Can the live Dịch cuộc gọi be used while traveling abroad?</p>
+<p class="accordion-visible">Tính năng Dịch cuộc gọi trực tiếp có thể sử dụng được khi đi du lịch nước ngoài không?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
 </path>
 </svg></div>
 </div>
-<p class="accordion-hidden">Yes, the translator for phone calls works wherever the Vasco Translator Q1 has a signal—which covers nearly 200 countries worldwide. You don’t need to worry about local SIM cards or Wi-Fi access.</p>
+<p class="accordion-hidden">Có, máy dịch cuộc gọi điện thoại hoạt động ở bất cứ đâu Vasco Translator Q1 có sóng—phủ sóng gần 200 quốc gia trên toàn thế giới. Bạn không cần lo lắng về SIM địa phương hay truy cập Wi-Fi.</p>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">Does the Dịch cuộc gọi work in speakerphone mode?</p>
+<p class="accordion-visible">Tính năng Dịch cuộc gọi có hoạt động ở chế độ loa ngoài không?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
 </path>
 </svg></div>
 </div>
-<p class="accordion-hidden">Yes, the device operates in speakerphone mode. Additionally, the call translation is shown on the screen in real time. This allows you to follow every word on the display, ensuring that nothing is missed or misunderstood during the conversation.</p>
+<p class="accordion-hidden">Có, thiết bị hoạt động ở chế độ loa ngoài. Ngoài ra, bản dịch cuộc gọi còn được hiển thị trên màn hình theo thời gian thực. Điều này giúp bạn theo dõi từng lời trên màn hình, đảm bảo không bỏ lỡ hay hiểu nhầm điều gì trong cuộc trò chuyện.</p>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">Are conversations translated by the phone Dịch cuộc gọi private and secure?</p>
+<p class="accordion-visible">Các cuộc trò chuyện được dịch bởi tính năng Dịch cuộc gọi điện thoại có được bảo mật và riêng tư không?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
 </path>
 </svg></div>
 </div>
-<p class="accordion-hidden">Absolutely. Bảo mật và riêng tư are our top priorities. Using the phone translator feature on the Vasco Translator Q1 is completely private and secure. Conversations stay strictly between the participants; all transcripts and call logs are automatically deleted as soon as you exit the call screen and cannot be recovered later.</p>
+<p class="accordion-hidden">Chắc chắn rồi. Bảo mật và riêng tư luôn là ưu tiên hàng đầu của chúng tôi. Sử dụng tính năng dịch cuộc gọi điện thoại trên Vasco Translator Q1 hoàn toàn riêng tư và an toàn. Cuộc trò chuyện chỉ diễn ra giữa những người tham gia; tất cả bản ghi và nhật ký cuộc gọi sẽ tự động bị xóa ngay khi bạn thoát khỏi màn hình gọi và không thể khôi phục lại.</p>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">Can I use the Dịch cuộc gọi without knowing the other person’s language?</p>
+<p class="accordion-visible">Tôi có thể sử dụng tính năng Dịch cuộc gọi mà không biết ngôn ngữ của người kia không?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
 </path>
 </svg></div>
 </div>
-<p class="accordion-hidden">Yes. The feature was designed specifically for international communication. Thanks to our technology partners, you can freely call people abroad without knowing a single word of their language. The Vasco Translator Q1 acts as your personal live Dịch cuộc gọi, giving you the independence and confidence to handle any conversation.</p>
+<p class="accordion-hidden">Có. Tính năng này được thiết kế đặc biệt cho giao tiếp quốc tế. Nhờ các đối tác công nghệ của chúng tôi, bạn có thể tự do gọi điện cho người ở nước ngoài mà không cần biết một từ nào trong ngôn ngữ của họ. Vasco Translator Q1 hoạt động như tính năng Dịch cuộc gọi trực tiếp cá nhân của bạn, mang lại sự độc lập và tự tin để xử lý mọi cuộc trò chuyện.</p>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">Is the phone Dịch cuộc gọi feature available immediately after purchasing the device?</p>
+<p class="accordion-visible">Tính năng Dịch cuộc gọi điện thoại có sẵn ngay sau khi mua thiết bị không?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
 </path>
 </svg></div>
 </div>
-<p class="accordion-hidden">Yes, the feature is ready to use right out of the box. Simply complete a quick identity confirmation and verify your phone number. To get you started, we provide 10 free minutes of real-time phone call translation. Once those are used, you can continue your conversations by choosing one of our flexible packages.</p>
+<p class="accordion-hidden">Có, tính năng này có thể sử dụng ngay khi mở hộp. Bạn chỉ cần hoàn thành xác nhận danh tính nhanh và xác minh số điện thoại. Để giúp bạn bắt đầu, chúng tôi cung cấp 10 phút miễn phí dịch cuộc gọi điện thoại theo thời gian thực. Sau khi dùng hết, bạn có thể tiếp tục trò chuyện bằng cách chọn một trong các gói linh hoạt của chúng tôi.</p>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">How to top up additional minutes in the Dịch cuộc gọi feature?</p>
+<p class="accordion-visible">Làm thế nào để nạp thêm phút cho tính năng Dịch cuộc gọi?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
 </path>
 </svg></div>
 </div>
-<p class="accordion-hidden">To top up your minutes for the phone translator service, simply choose one of our three packages available on our website or contact our customer support team for assistance.</p>
+<p class="accordion-hidden">Để nạp thêm phút cho dịch vụ dịch cuộc gọi điện thoại, bạn chỉ cần chọn một trong ba gói có sẵn trên trang web của chúng tôi hoặc liên hệ với bộ phận hỗ trợ khách hàng để được trợ giúp.</p>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">Can I add my credit card so that payments for the Dịch cuộc gọi minutes are deducted automatically?</p>
+<p class="accordion-visible">Tôi có thể thêm thẻ tín dụng để thanh toán phút của tính năng Dịch cuộc gọi được trừ tự động không?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
 </path>
 </svg></div>
 </div>
-<p class="accordion-hidden">No. Currently, we do not offer automatic renewals or recurring payments. You have full control and can decide exactly when and which package you want to purchase.</p>
+<p class="accordion-hidden">Không. Hiện tại, chúng tôi chưa cung cấp tính năng tự động gia hạn hoặc thanh toán định kỳ. Bạn có toàn quyền kiểm soát và có thể quyết định chính xác thời điểm và gói mà bạn muốn mua.</p>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">Why is the rate the same for calls within the EU and outside the EU in the Dịch cuộc gọi?</p>
+<p class="accordion-visible">Tại sao mức giá của tính năng Dịch cuộc gọi lại giống nhau cho các cuộc gọi trong và ngoài EU?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
 </path>
 </svg></div>
 </div>
-<p class="accordion-hidden">The cost remains the same regardless of the country because the fee applies to the translation service itself, not the cellular connection. Vasco provides a high-quality, real-time translation service rather than traditional telecommunications services. </p>
+<p class="accordion-hidden">Chi phí không thay đổi dù bạn ở quốc gia nào, vì mức phí được áp dụng cho dịch vụ dịch thuật, không phải cho kết nối mạng di động. Vasco cung cấp dịch vụ dịch thuật theo thời gian thực chất lượng cao, thay vì dịch vụ viễn thông truyền thống. </p>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">What countries are available for this Dịch cuộc gọi service?</p>
+<p class="accordion-visible">Những quốc gia nào có thể sử dụng dịch vụ Dịch cuộc gọi này?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
 </path>
 </svg></div>
 </div>
-<p class="accordion-hidden">With phone call translation feature you’ll Hiểu 53 ngôn ngữ:
-Afrikaans, Arabic, Bengali, Bulgarian, Catalan, Chinese (Cantonese), Chinese (Simplified), Chinese (Traditional), Croatian, Czech, Danish, Dutch, English (Australia), English (India), English (UK), English (USA), Estonian, Filipino, Finnish, French (Canada), French (France), German, Greek, Gujarati, Hindi, Hungarian, Icelandic, Indonesian, Italian, Japanese, Kannada, Korean, Latvian, Lithuanian, Malayalam, Malaysian, Norwegian (Bokmål), Polish, Portuguese (Brazil), Portuguese (Portugal), Punjabi, Romanian, Russian, Serbian, Slovak, Spanish (Americas), Spanish (Spain), Swedish, Tamil, Thai, Turkish, Ukrainian, Vietnamese.
-The Dịch cuộc gọi is available for phone number holders in 42 countries:
-Albania, Australia, Austria, Belgium, Brazil, Bulgaria, Canada, China, Croatia, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, India, Ireland, Italy, Japan, Latvia, Lithuania, Mexico, Netherlands, Norway, Poland, Portugal, Qatar, Romania, Saudi Arabia, Slovakia, Slovenia, South Korea, Spain, Sweden, Switzerland, Turkey, Ukraine, United Arab Emirates, United Kingdom, United States.
-The function allows communication with residents of 160 countries:
-Afghanistan, Albania, Andorra, Angola, Anguilla, Antigua and Barbuda, Argentina, Armenia, Aruba, Australia, Austria, Azerbaijan, Bahamas, Bahrain, Bangladesh, Barbados, Belgium, Belize, Bermuda, Bhutan, Bolivia, Bosnia and Herzegovina, Botswana, Brazil, Brunei, Bulgaria, Cambodia, Cameroon, Canada, Cape Verde, Cayman Islands, Chile, China, Christmas Island, Cocos (Keeling) Islands, Colombia, Costa Rica, Croatia, Cyprus, Czech Republic, Denmark, Dominica, Dominican Republic, Ecuador, Egypt, El Salvador, Eritrea, Estonia, Eswatini, Ethiopia, Faroe Islands, Fiji, Philippines, Finland, France, French Guiana, French Polynesia, Georgia, Germany, Ghana, Gibraltar, Greece, Greenland, Guadeloupe, Guam, Guatemala, Guyana, Hong Kong, Honduras, Iceland, India, Indonesia, Iraq, Ireland, Israel, Italy, Jamaica, Japan, Jordan, Kazakhstan, Kenya, Kuwait, Laos, Latvia, Lebanon, Libya, Liechtenstein, Lithuania, Luxembourg, Macau, Malaysia, Malta, Martinique, Marshall Islands, Mauritius, Mayotte, Mexico, Micronesia, Moldova, Monaco, Mongolia, Montserrat, Myanmar, Namibia, Nepal, Netherlands, Netherlands Antilles, New Caledonia, New Zealand, Nicaragua, Nigeria, Northern Cyprus, Northern Macedonia, Norway, Oman, Pakistan, Palestine, Panama, Paraguay, Peru, Poland, Portugal, Puerto Rico, Qatar, Romania, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines, American Samoa, San Marino, Saudi Arabia, Serbia, Singapore, Slovakia, Slovenia, South Africa, South Korea, Spain, Sri Lanka, Sweden, Switzerland, Taiwan, Tajikistan, Tanzania, Thailand, Trinidad and Tobago, Turkey, Turkmenistan, Turks and Caicos Islands, Ukraine, United Arab Emirates, United Kingdom, United States, United States Virgin Islands, Uruguay, Uzbekistan, Venezuela, Vietnam, Hungary. </p>
+<p class="accordion-hidden">Với tính năng dịch cuộc gọi điện thoại, bạn sẽ hiểu được 53 ngôn ngữ:
+Tiếng Afrikaans, Tiếng Ả Rập, Tiếng Bengal, Tiếng Bulgaria, Tiếng Catalan, Tiếng Trung (Quảng Đông), Tiếng Trung (Giản thể), Tiếng Trung (Phồn thể), Tiếng Croatia, Tiếng Séc, Tiếng Đan Mạch, Tiếng Hà Lan, Tiếng Anh (Úc), Tiếng Anh (Ấn Độ), Tiếng Anh (Anh), Tiếng Anh (Mỹ), Tiếng Estonia, Tiếng Filipino, Tiếng Phần Lan, Tiếng Pháp (Canada), Tiếng Pháp (Pháp), Tiếng Đức, Tiếng Hy Lạp, Tiếng Gujarat, Tiếng Hindi, Tiếng Hungary, Tiếng Iceland, Tiếng Indonesia, Tiếng Ý, Tiếng Nhật, Tiếng Kannada, Tiếng Hàn, Tiếng Latvia, Tiếng Litva, Tiếng Malayalam, Tiếng Malaysia, Tiếng Na Uy (Bokmål), Tiếng Ba Lan, Tiếng Bồ Đào Nha (Brazil), Tiếng Bồ Đào Nha (Bồ Đào Nha), Tiếng Punjab, Tiếng Romania, Tiếng Nga, Tiếng Serbia, Tiếng Slovak, Tiếng Tây Ban Nha (Châu Mỹ), Tiếng Tây Ban Nha (Tây Ban Nha), Tiếng Thụy Điển, Tiếng Tamil, Tiếng Thái, Tiếng Thổ Nhĩ Kỳ, Tiếng Ukraine, Tiếng Việt.
+Tính năng Dịch cuộc gọi khả dụng cho người có số điện thoại tại 42 quốc gia:
+Albania, Úc, Áo, Bỉ, Brazil, Bulgaria, Canada, Trung Quốc, Croatia, Cộng hòa Séc, Đan Mạch, Estonia, Phần Lan, Pháp, Đức, Hy Lạp, Hungary, Ấn Độ, Ireland, Ý, Nhật Bản, Latvia, Litva, Mexico, Hà Lan, Na Uy, Ba Lan, Bồ Đào Nha, Qatar, Romania, Ả Rập Xê Út, Slovakia, Slovenia, Hàn Quốc, Tây Ban Nha, Thụy Điển, Thụy Sĩ, Thổ Nhĩ Kỳ, Ukraine, Các Tiểu vương quốc Ả Rập Thống nhất, Vương quốc Anh, Hoa Kỳ.
+Tính năng này cho phép giao tiếp với người dân tại 160 quốc gia:
+Afghanistan, Albania, Andorra, Angola, Anguilla, Antigua và Barbuda, Argentina, Armenia, Aruba, Úc, Áo, Azerbaijan, Bahamas, Bahrain, Bangladesh, Barbados, Bỉ, Belize, Bermuda, Bhutan, Bolivia, Bosnia và Herzegovina, Botswana, Brazil, Brunei, Bulgaria, Campuchia, Cameroon, Canada, Cape Verde, Quần đảo Cayman, Chile, Trung Quốc, Đảo Christmas, Quần đảo Cocos (Keeling), Colombia, Costa Rica, Croatia, Cyprus, Cộng hòa Séc, Đan Mạch, Dominica, Cộng hòa Dominica, Ecuador, Ai Cập, El Salvador, Eritrea, Estonia, Eswatini, Ethiopia, Quần đảo Faroe, Fiji, Philippines, Phần Lan, Pháp, Guiana thuộc Pháp, Polynesia thuộc Pháp, Georgia, Đức, Ghana, Gibraltar, Hy Lạp, Greenland, Guadeloupe, Guam, Guatemala, Guyana, Hồng Kông, Honduras, Iceland, Ấn Độ, Indonesia, Iraq, Ireland, Israel, Ý, Jamaica, Nhật Bản, Jordan, Kazakhstan, Kenya, Kuwait, Lào, Latvia, Lebanon, Libya, Liechtenstein, Litva, Luxembourg, Ma Cao, Malaysia, Malta, Martinique, Quần đảo Marshall, Mauritius, Mayotte, Mexico, Micronesia, Moldova, Monaco, Mông Cổ, Montserrat, Myanmar, Namibia, Nepal, Hà Lan, Antille thuộc Hà Lan, New Caledonia, New Zealand, Nicaragua, Nigeria, Bắc Cyprus, Bắc Macedonia, Na Uy, Oman, Pakistan, Palestine, Panama, Paraguay, Peru, Ba Lan, Bồ Đào Nha, Puerto Rico, Qatar, Romania, Saint Kitts và Nevis, Saint Lucia, Saint Vincent và Grenadines, Samoa thuộc Mỹ, San Marino, Ả Rập Xê Út, Serbia, Singapore, Slovakia, Slovenia, Nam Phi, Hàn Quốc, Tây Ban Nha, Sri Lanka, Thụy Điển, Thụy Sĩ, Đài Loan, Tajikistan, Tanzania, Thái Lan, Trinidad và Tobago, Thổ Nhĩ Kỳ, Turkmenistan, Quần đảo Turks và Caicos, Ukraine, Các Tiểu vương quốc Ả Rập Thống nhất, Vương quốc Anh, Hoa Kỳ, Quần đảo Virgin thuộc Mỹ, Uruguay, Uzbekistan, Venezuela, Việt Nam, Hungary. </p>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">Is the call translation two-way, meaning the other person can call me back on the device?</p>
+<p class="accordion-visible">Tính năng dịch cuộc gọi có hai chiều không, nghĩa là người kia có thể gọi lại cho tôi trên thiết bị không?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
 </path>
 </svg></div>
 </div>
-<p class="accordion-hidden">No. Through our technology partners, the Vasco Translator Q1 supports outgoing calls only, which means the recipient cannot call your device back directly. However, the Dịch cuộc gọi does provide full two-way, real-time phone call translation during the conversation—both you and your recipient will hear everything in your respective languages.</p>
+<p class="accordion-hidden">Không. Thông qua các đối tác công nghệ của chúng tôi, Vasco Translator Q1 chỉ hỗ trợ gọi đi, nghĩa là người nhận không thể gọi ngược lại trực tiếp cho thiết bị của bạn. Tuy nhiên, tính năng Dịch cuộc gọi vẫn cung cấp bản dịch cuộc gọi điện thoại hai chiều đầy đủ theo thời gian thực trong suốt cuộc trò chuyện—cả bạn và người nhận đều sẽ nghe được mọi thứ bằng ngôn ngữ của mình.</p>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">Can I receive calls using the phone Dịch cuộc gọi, or can I only make calls? </p>
+<p class="accordion-visible">Tôi có thể nhận cuộc gọi bằng tính năng Dịch cuộc gọi điện thoại, hay chỉ có thể gọi đi?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
 </path>
 </svg></div>
 </div>
-<p class="accordion-hidden">The Vasco Translator Q1 is designed specifically for initiating calls. While you can use the live Dịch cuộc gọi for any outgoing conversation, receiving incoming calls is not currently supported.</p>
+<p class="accordion-hidden">Vasco Translator Q1 được thiết kế đặc biệt để thực hiện cuộc gọi đi. Trong khi bạn có thể sử dụng tính năng Dịch cuộc gọi trực tiếp cho bất kỳ cuộc gọi đi nào, việc nhận cuộc gọi đến hiện chưa được hỗ trợ.</p>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">Why is my number or name not shown on the recipient’s phone when calling from Q1 with the Dịch cuộc gọi?</p>
+<p class="accordion-visible">Tại sao số điện thoại hoặc tên của tôi không hiển thị trên điện thoại của người nhận khi gọi từ Q1 bằng tính năng Dịch cuộc gọi?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
 </path>
 </svg></div>
 </div>
-<p class="accordion-hidden">When you make a call using the phone translator, your private number remains hidden. Instead, our technology partners display a dedicated Vasco number on the recipient's screen. This ensures an extra layer of security and privacy, keeping your personal information safe.</p>
+<p class="accordion-hidden">Khi bạn thực hiện cuộc gọi bằng tính năng dịch cuộc gọi điện thoại, số điện thoại riêng của bạn sẽ được ẩn đi. Thay vào đó, đối tác công nghệ của chúng tôi sẽ hiển thị một số Vasco riêng biệt trên màn hình của người nhận. Điều này đảm bảo thêm một lớp bảo mật và quyền riêng tư, giữ an toàn cho thông tin cá nhân của bạn.</p>
 </div>
 </div>
 </div>
@@ -599,8 +599,8 @@ Afghanistan, Albania, Andorra, Angola, Anguilla, Antigua and Barbuda, Argentina,
 <hr/>
 <section class="more-questions container">
 <h2 class="h1">Bạn có thêm câu hỏi?</h2>
-<p>We’d be happy to answer them and help you choose a solution tailored to your needs.</p>
-<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/contact/" ) ); ?>">GET IN TOUCH</a>
+<p>Chúng tôi rất vui được giải đáp và giúp bạn chọn giải pháp phù hợp với nhu cầu của mình.</p>
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/contact/" ) ); ?>">LIÊN HỆ NGAY</a>
 </section>
 </div>
 </div>

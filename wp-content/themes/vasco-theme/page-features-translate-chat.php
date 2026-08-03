@@ -40,7 +40,7 @@ get_header();
 <div class="heading-wrapper heading-wrapper-MultiTalk">
 <div class="heading">
 <h1 class="h1">MultiTalk</h1>
-<p class="body-base">Chat with Automatic Translation</p>
+<p class="body-base">Trò chuyện với dịch thuật tự động</p>
 </div>
 </div>
 </div>
@@ -48,14 +48,14 @@ get_header();
 <div class="voice-box-wrapper" style="background-color: #E0E2F2;">
 <div class="voice-box-left container">
 <div class="voice-text-box">
-<h2 class="h1">Connect with Friends and Colleagues Worldwide</h2>
-<p class="voice-box-subtitle">Are language barriers holding you back from communicating with people at work? Do you want to connect more deeply with friends from abroad? MultiTalk is the answer!</p>
-<p class="body-16 box-text-upper">With our multilingual chat application, you can chat in different languages. Messages are translated in real-time, so conversations flow naturally.</p>
-<p class="body-16">All you need is the app from Google Play Store or App Store. You can also use MultiTalk freely with your Vasco Translators. See how to start:</p>
+<h2 class="h1">Kết nối với bạn bè và đồng nghiệp trên toàn thế giới</h2>
+<p class="voice-box-subtitle">Rào cản ngôn ngữ đang cản trở bạn giao tiếp với đồng nghiệp? Bạn muốn kết nối sâu sắc hơn với những người bạn ở nước ngoài? MultiTalk chính là giải pháp!</p>
+<p class="body-16 box-text-upper">Với ứng dụng trò chuyện đa ngôn ngữ của chúng tôi, bạn có thể trò chuyện bằng nhiều ngôn ngữ khác nhau. Tin nhắn được dịch theo thời gian thực, giúp cuộc trò chuyện diễn ra tự nhiên.</p>
+<p class="body-16">Bạn chỉ cần tải ứng dụng từ Google Play Store hoặc App Store. Bạn cũng có thể sử dụng MultiTalk miễn phí cùng máy phiên dịch Vasco của mình. Xem cách bắt đầu:</p>
 <ul class="body-16">
-<li>Create a multilingual chat with up to 100 users</li>
-<li>Send the QR code or the conversation name for guests to join</li>
-<li>Choose your preferred language and chat with automatic translation</li>
+<li>Tạo một cuộc trò chuyện đa ngôn ngữ với tối đa 100 người dùng</li>
+<li>Gửi mã QR hoặc tên cuộc trò chuyện để khách tham gia</li>
+<li>Chọn ngôn ngữ ưa thích của bạn và trò chuyện với dịch thuật tự động</li>
 </ul>
 <div class="last-box-element">
 <a class="btn btn-md btn-black body-16 last-box-element" href="../translators/vasco-translator-v4.html#product-languages" target="_blank">
@@ -74,13 +74,13 @@ get_header();
 <img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/features/MultiTalk-new-2.webp" ); ?>"/>
 </div>
 <div class="voice-text-box">
-<h2 class="h1">Intuitive, easy-to-use multilingual chat translator</h2>
-<p class="body-16 box-text-upper">MultiTalk makes chatting in different languages simple. Start by creating a chat, choose a name, then invite people to join. Guests join the chat via QR code or group name.</p>
-<p class="body-16">They select their preferred language and the conversation begins. Everyone can chat in different languages by speaking or typing their messages, which are automatically translated for each recipient.</p>
+<h2 class="h1">Trình dịch trò chuyện đa ngôn ngữ trực quan, dễ sử dụng</h2>
+<p class="body-16 box-text-upper">MultiTalk giúp việc trò chuyện bằng nhiều ngôn ngữ trở nên đơn giản. Bắt đầu bằng cách tạo cuộc trò chuyện, chọn một tên, sau đó mời mọi người tham gia. Khách tham gia trò chuyện qua mã QR hoặc tên nhóm.</p>
+<p class="body-16">Họ chọn ngôn ngữ ưa thích và cuộc trò chuyện bắt đầu. Mọi người có thể trò chuyện bằng các ngôn ngữ khác nhau bằng cách nói hoặc gõ tin nhắn, và tin nhắn sẽ được tự động dịch cho từng người nhận.</p>
 <ul class="body-16 last-box-element">
-<li>Real-time chat with translation in different languages</li>
-<li>Vocal and text translations in everyone’s preferred language</li>
-<li>Intuitive multilingual chat app that’s easy-to-use</li>
+<li>Trò chuyện theo thời gian thực với bản dịch bằng nhiều ngôn ngữ khác nhau</li>
+<li>Dịch giọng nói và văn bản theo ngôn ngữ ưa thích của mỗi người</li>
+<li>Ứng dụng trò chuyện đa ngôn ngữ trực quan, dễ sử dụng</li>
 </ul>
 </div>
 </div>
@@ -88,13 +88,13 @@ get_header();
 <div class="voice-box-wrapper" style="background-color: #FFF7DC;">
 <div class="voice-box-left container">
 <div class="voice-text-box">
-<h2 class="h1">Reliable &amp; Accurate Chat with Instant Translation</h2>
-<p class="body-16 box-paragraph-gap">Our multilingual chat application has the power of 10 translation engines, offering you the most accurate results, every time.</p>
-<p class="body-16">Language barriers are instantly bridged, ensuring a smooth and natural group conversation with accurate translations for everyone.</p>
+<h2 class="h1">Trò chuyện đáng tin cậy &amp; chính xác với dịch thuật tức thì</h2>
+<p class="body-16 box-paragraph-gap">Ứng dụng trò chuyện đa ngôn ngữ của chúng tôi sở hữu sức mạnh của 10 công cụ dịch thuật, mang lại kết quả chính xác nhất mọi lúc.</p>
+<p class="body-16">Rào cản ngôn ngữ được xóa bỏ ngay lập tức, đảm bảo cuộc trò chuyện nhóm diễn ra trôi chảy, tự nhiên với bản dịch chính xác cho mọi người.</p>
 <ul class="body-16 last-box-element">
-<li>Automatic translation with up to 99% accuracy</li>
-<li>High quality even for less common language pairs</li>
-<li>Bridge the language gaps with this multilingual chat translator</li>
+<li>Dịch tự động với độ chính xác lên đến 99%</li>
+<li>Chất lượng cao ngay cả với các cặp ngôn ngữ ít phổ biến</li>
+<li>Xóa bỏ khoảng cách ngôn ngữ với trình dịch trò chuyện đa ngôn ngữ này</li>
 </ul>
 </div>
 <div class="voice-img-box">
@@ -111,13 +111,13 @@ get_header();
 </video>
 </div>
 <div class="voice-text-box">
-<h2 class="h1">Text in Any Language, Wherever You Are</h2>
-<p class="body-16 box-paragraph-gap">MultiTalk is available on a Vasco Translator V4, but you can also get the app from Google Play and AppStore. Just like any other of our devices, it comes with a built-in SIM card that connects with the Internet tại gần 200 quốc gia. It’s free, unlimited and lasts for a lifetime!</p>
-<p class="body-16">The Vasco translation device is a great investment for all of your multilingual communication, business trips and travels abroad. Forget about expensive roaming charges!</p>
+<h2 class="h1">Nhắn tin bằng bất kỳ ngôn ngữ nào, ở bất cứ đâu</h2>
+<p class="body-16 box-paragraph-gap">MultiTalk có sẵn trên Vasco Translator V4, nhưng bạn cũng có thể tải ứng dụng từ Google Play và App Store. Giống như các thiết bị khác của chúng tôi, nó đi kèm thẻ SIM tích hợp sẵn, kết nối Internet tại gần 200 quốc gia. Hoàn toàn miễn phí, không giới hạn và có giá trị vĩnh viễn!</p>
+<p class="body-16">Thiết bị dịch Vasco là một khoản đầu tư tuyệt vời cho mọi hoạt động giao tiếp đa ngôn ngữ, chuyến công tác và du lịch nước ngoài của bạn. Quên đi những khoản phí chuyển vùng đắt đỏ!</p>
 <ul class="body-16">
-<li>Enjoy unlimited lifetime connectivity tại gần 200 quốc gia</li>
-<li>Save on roaming fees abroad</li>
-<li>Connect with people from all around the world</li>
+<li>Tận hưởng kết nối không giới hạn, trọn đời tại gần 200 quốc gia</li>
+<li>Tiết kiệm phí chuyển vùng khi ở nước ngoài</li>
+<li>Kết nối với mọi người trên toàn thế giới</li>
 </ul>
 <div class="voice-btn-wrapper last-box-element">
 <div>
@@ -135,15 +135,15 @@ get_header();
 <div class="voice-box-wrapper" style="background-color: #D9ECEF;">
 <div class="voice-box-left container">
 <div class="voice-text-box">
-<h2 class="h1">More than a multilingual chat translator</h2>
-<p class="voice-box-subtitle">The ability to chat in different languages is a big benefit, helping you communicate easily with multilingual friends and coworkers. But Vasco Translators offer much more.</p>
-<p class="body-16 box-text-upper">With Vasco, you can understand over 90% of the world’s population. In addition to the multilingual chat translator, we provide several useful features to help you work and travel when language presents an obstacle.</p>
-<p class="body-16">We’ll help you feel like a local, wherever you go!</p>
+<h2 class="h1">Hơn cả một trình dịch trò chuyện đa ngôn ngữ</h2>
+<p class="voice-box-subtitle">Khả năng trò chuyện bằng nhiều ngôn ngữ khác nhau là một lợi ích lớn, giúp bạn dễ dàng giao tiếp với bạn bè và đồng nghiệp đa ngôn ngữ. Nhưng máy phiên dịch Vasco còn mang lại nhiều hơn thế.</p>
+<p class="body-16 box-text-upper">Với Vasco, bạn có thể hiểu hơn 90% dân số thế giới. Bên cạnh trình dịch trò chuyện đa ngôn ngữ, chúng tôi còn cung cấp nhiều tính năng hữu ích khác để giúp bạn làm việc và du lịch khi ngôn ngữ trở thành rào cản.</p>
+<p class="body-16">Chúng tôi sẽ giúp bạn cảm thấy như người bản địa, dù bạn đi đến đâu!</p>
 <ul class="body-16">
-<li>Speech Translator</li>
+<li>Dịch giọng nói</li>
 <li>Dịch hình ảnh</li>
 <li>Dịch văn bản</li>
-<li>Phone call Translator</li>
+<li>Dịch cuộc gọi điện thoại</li>
 </ul>
 </div>
 <div class="voice-img-box">
@@ -165,7 +165,7 @@ get_header();
 <div class="product-description">
 <h3 aria-label="q1.name]" id="product-38" tabindex="0">
 												Vasco Translator Q1</h3>
-<p>The only translator with voice cloning and call translation features</p>
+<p>Máy dịch duy nhất có tính năng nhân bản giọng nói và dịch cuộc gọi điện thoại</p>
 <a aria-label="Tìm hiểu thêm Vasco Translator Q1" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>" target="_blank">
 												Tìm hiểu thêm
 											</a>
@@ -178,7 +178,7 @@ get_header();
 <div class="product-description">
 <h3 aria-label="v4.name]" id="product-14" tabindex="0">
 												Vasco Translator V4</h3>
-<p>Electronic instant translator device</p>
+<p>Thiết bị dịch điện tử tức thời</p>
 <a aria-label="Tìm hiểu thêm Vasco Translator V4" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>" target="_blank">
 												Tìm hiểu thêm
 											</a>
@@ -187,8 +187,8 @@ get_header();
 </div>
 </div>
 <div class="custom-navigation">
-<div class="swiper-button-prev btn-product-prev" data-label-prev="Previous slide"></div>
-<div class="swiper-button-next btn-product-next" data-label-next="Next slide"></div>
+<div class="swiper-button-prev btn-product-prev" data-label-prev="Slide trước"></div>
+<div class="swiper-button-next btn-product-next" data-label-next="Slide tiếp theo"></div>
 </div>
 </div>
 </div>

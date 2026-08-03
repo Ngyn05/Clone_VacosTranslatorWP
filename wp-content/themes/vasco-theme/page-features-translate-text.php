@@ -39,7 +39,7 @@ get_header();
 <div class="container">
 <div class="heading-wrapper heading-wrapper-text">
 <div class="heading">
-<h1 class="h1">Understand. Everywhere.</h1>
+<h1 class="h1">Hiểu. Mọi nơi.</h1>
 </div>
 </div>
 </div>
@@ -47,14 +47,14 @@ get_header();
 <div class="voice-box-wrapper" style="background-color: #FAEDE5;">
 <div class="voice-box-left container">
 <div class="voice-text-box">
-<h2 class="h1">Quick &amp; User-Friendly Dịch văn bản</h2>
-<p class="voice-box-subtitle">Whether you’re an avid traveler, working abroad, or learning a new language, our text-to-speech language translator gives you the power to understand the world.</p>
-<p class="body-16 box-text-upper">Speak into the mic or type something using the digital keyboard. You’ll get an instant text-to-speech translation within seconds.</p>
-<p class="body-16">The Vasco Translator is the most accurate text-to-Dịch giọng nói on the market, combining the power of 10 different language engines to give you results with up to 96% accuracy.</p>
+<h2 class="h1">Dịch văn bản nhanh chóng &amp; thân thiện với người dùng</h2>
+<p class="voice-box-subtitle">Cho dù bạn là người đam mê du lịch, làm việc ở nước ngoài, hay đang học một ngôn ngữ mới, máy dịch văn bản thành giọng nói của chúng tôi sẽ giúp bạn hiểu cả thế giới.</p>
+<p class="body-16 box-text-upper">Nói vào micro hoặc gõ chữ bằng bàn phím số. Bạn sẽ nhận được bản dịch văn bản thành giọng nói ngay lập tức chỉ trong vài giây.</p>
+<p class="body-16">Vasco Translator là máy dịch văn bản thành giọng nói chính xác nhất trên thị trường, kết hợp sức mạnh của 10 công cụ ngôn ngữ khác nhau để mang lại kết quả với độ chính xác lên đến 96%.</p>
 <ul class="body-16">
-<li>Understand words and phrases</li>
-<li>Comfortable digital keyboard and speech recognition</li>
-<li>Powerful language-learning tool</li>
+<li>Hiểu các từ và cụm từ</li>
+<li>Bàn phím số thoải mái và nhận diện giọng nói</li>
+<li>Công cụ học ngôn ngữ mạnh mẽ</li>
 </ul>
 <div class="last-box-element">
 <a class="btn btn-md btn-black body-16 last-box-element" href="../translators/vasco-translator-v4.html#product-languages" target="_blank">
@@ -73,13 +73,13 @@ get_header();
 <img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/features/text-new-2.webp" ); ?>"/>
 </div>
 <div class="voice-text-box">
-<h2 class="h1">Save on roaming-fees abroad</h2>
-<p class="body-16 box-text-upper">Text translation services require data or an Internet connection, and fees can add up quickly when you’re abroad.</p>
-<p class="body-16">Vasco devices are equipped with a built-in SIM card that automatically connects you to available networks tại gần 200 quốc gia at no additional cost. Forever.</p>
+<h2 class="h1">Tiết kiệm phí chuyển vùng khi ở nước ngoài</h2>
+<p class="body-16 box-text-upper">Các dịch vụ dịch văn bản cần dữ liệu hoặc kết nối Internet, và phí có thể tăng lên nhanh chóng khi bạn ở nước ngoài.</p>
+<p class="body-16">Các thiết bị Vasco được trang bị thẻ SIM tích hợp sẵn, tự động kết nối bạn với các mạng khả dụng tại gần 200 quốc gia mà không tốn thêm phí. Vĩnh viễn.</p>
 <ul class="body-16 last-box-element">
-<li>Forget about Internet costs for text translation &amp; other features</li>
-<li>No data subscription needed</li>
-<li>Constant connectivity tại gần 200 quốc gia</li>
+<li>Quên đi chi phí Internet cho việc dịch văn bản &amp; các tính năng khác</li>
+<li>Không cần đăng ký gói dữ liệu</li>
+<li>Kết nối liên tục tại gần 200 quốc gia</li>
 </ul>
 </div>
 </div>
@@ -87,13 +87,13 @@ get_header();
 <div class="voice-box-wrapper" style="background-color: #E0E2F2;">
 <div class="voice-box-left container">
 <div class="voice-text-box">
-<h2 class="h1">Text-to-speech translation and silent mode</h2>
-<p class="body-16 box-paragraph-gap">Our Dịch văn bản combines the power of 10 language engines — 9 more than most translators on the market.</p>
-<p class="body-16">With Vasco, you can be sure you’re getting the most accurate translations, so you’re always communicating clearly.</p>
+<h2 class="h1">Dịch văn bản thành giọng nói và chế độ im lặng</h2>
+<p class="body-16 box-paragraph-gap">Tính năng Dịch văn bản của chúng tôi kết hợp sức mạnh của 10 công cụ ngôn ngữ — nhiều hơn 9 công cụ so với hầu hết các máy dịch khác trên thị trường.</p>
+<p class="body-16">Với Vasco, bạn có thể chắc chắn rằng mình đang nhận được những bản dịch chính xác nhất, để luôn giao tiếp rõ ràng.</p>
 <ul class="body-16 last-box-element">
 <li>Độ chính xác dịch thuật 99%, ngay cả với các ngôn ngữ ít phổ biến</li>
-<li>10 engines offering most optimal translation results</li>
-<li>Learn new vocabulary in the process</li>
+<li>10 công cụ dịch mang lại kết quả dịch tối ưu nhất</li>
+<li>Học thêm từ vựng mới trong quá trình sử dụng</li>
 </ul>
 </div>
 <div class="voice-img-box">
@@ -107,13 +107,13 @@ get_header();
 <img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/device-photos/features/en/v4_gray.webp" ); ?>"/>
 </div>
 <div class="voice-text-box">
-<h2 class="h1">Text translation for 107 languages</h2>
-<p class="body-16 box-paragraph-gap">The Vasco text-to-speech language translator can help you understand the world, even the places where less common languages are spoken.</p>
-<p class="body-16">With this handheld translator, you’ll have the freedom to travel anywhere, and feel confident while doing it. The device combines the power of multiple language databases, ensuring up to 99% accuracy.</p>
+<h2 class="h1">Dịch văn bản cho 107 ngôn ngữ</h2>
+<p class="body-16 box-paragraph-gap">Máy dịch văn bản thành giọng nói của Vasco có thể giúp bạn hiểu cả thế giới, ngay cả những nơi sử dụng các ngôn ngữ ít phổ biến.</p>
+<p class="body-16">Với máy dịch cầm tay này, bạn sẽ được tự do đi đến bất cứ đâu và luôn tự tin khi làm điều đó. Thiết bị kết hợp sức mạnh của nhiều cơ sở dữ liệu ngôn ngữ, đảm bảo độ chính xác lên đến 99%.</p>
 <ul class="body-16">
-<li>Understand text in 107 languages</li>
-<li>Learn proper pronunciation</li>
-<li>Discover new vocabulary and helpful phrases</li>
+<li>Hiểu văn bản bằng 107 ngôn ngữ</li>
+<li>Học cách phát âm chuẩn</li>
+<li>Khám phá từ vựng mới và các cụm từ hữu ích</li>
 </ul>
 <div class="voice-btn-wrapper last-box-element">
 <div>
@@ -131,14 +131,14 @@ get_header();
 <div class="voice-box-wrapper" style="background-color: #E2F3DF;">
 <div class="voice-box-left container">
 <div class="voice-text-box">
-<h2 class="h1">More than a Dịch văn bản</h2>
-<p class="voice-box-subtitle">When you don’t have the words, the Vasco text-to-Dịch giọng nói is there to help.</p>
-<p class="body-16 box-text-upper">Whether you need to ask for directions, explain a food allergy, or request a hotel service, this language translation device will help you get what you need, no matter where you are. It’s more than just a Dịch văn bản:</p>
+<h2 class="h1">Hơn cả một tính năng Dịch văn bản</h2>
+<p class="voice-box-subtitle">Khi bạn không tìm được từ ngữ để diễn đạt, máy dịch văn bản thành giọng nói của Vasco luôn ở đây để giúp bạn.</p>
+<p class="body-16 box-text-upper">Cho dù bạn cần hỏi đường, giải thích về dị ứng thực phẩm, hay yêu cầu dịch vụ khách sạn, thiết bị dịch ngôn ngữ này sẽ giúp bạn có được điều mình cần, bất kể bạn ở đâu. Đây không chỉ là một tính năng Dịch văn bản:</p>
 <ul class="body-16">
-<li>Speech Translator: Understand and speak 82 languages</li>
-<li>Dịch hình ảnh: Hiểu 112 ngôn ngữ with the built-in camera image translator</li>
-<li>Dịch cuộc gọi điện thoại: Understand and speak with your caller</li>
-<li>Chat translator: Multilingual chats chats are translated automatically</li>
+<li>Dịch giọng nói: Hiểu và nói được 82 ngôn ngữ</li>
+<li>Dịch hình ảnh: Hiểu 112 ngôn ngữ với camera dịch ảnh tích hợp sẵn</li>
+<li>Dịch cuộc gọi điện thoại: Hiểu và trò chuyện với người gọi đến</li>
+<li>Dịch trò chuyện: Các cuộc trò chuyện đa ngôn ngữ được tự động dịch</li>
 </ul>
 </div>
 <div class="voice-img-box">
@@ -160,7 +160,7 @@ get_header();
 <div class="product-description">
 <h3 aria-label="q1.name]" id="product-38" tabindex="0">
 												Vasco Translator Q1</h3>
-<p>The only translator with voice cloning and call translation features</p>
+<p>Máy dịch duy nhất có tính năng nhân bản giọng nói và dịch cuộc gọi điện thoại</p>
 <a aria-label="Tìm hiểu thêm Vasco Translator Q1" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>" target="_blank">
 												Tìm hiểu thêm
 											</a>
@@ -173,7 +173,7 @@ get_header();
 <div class="product-description">
 <h3 aria-label="m4.name]" id="product-62" tabindex="0">
 												Vasco Translator M4</h3>
-<p>Lightweight and easy-to-use pocket translator for everyone</p>
+<p>Máy dịch bỏ túi nhẹ và dễ sử dụng cho mọi người</p>
 <a aria-label="Tìm hiểu thêm Vasco Translator M4" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/translators/vasco-translator-m4/" ) ); ?>" target="_blank">
 												Tìm hiểu thêm
 											</a>
@@ -186,7 +186,7 @@ get_header();
 <div class="product-description">
 <h3 aria-label="v4.name]" id="product-14" tabindex="0">
 												Vasco Translator V4</h3>
-<p>Electronic instant translator device</p>
+<p>Thiết bị dịch điện tử tức thời</p>
 <a aria-label="Tìm hiểu thêm Vasco Translator V4" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>" target="_blank">
 												Tìm hiểu thêm
 											</a>
@@ -195,8 +195,8 @@ get_header();
 </div>
 </div>
 <div class="custom-navigation">
-<div class="swiper-button-prev btn-product-prev" data-label-prev="Previous slide"></div>
-<div class="swiper-button-next btn-product-next" data-label-next="Next slide"></div>
+<div class="swiper-button-prev btn-product-prev" data-label-prev="Slide trước"></div>
+<div class="swiper-button-next btn-product-next" data-label-next="Slide tiếp theo"></div>
 </div>
 </div>
 </div>

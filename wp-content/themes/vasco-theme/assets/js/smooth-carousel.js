@@ -89,11 +89,22 @@
     let stepWidth = 0;
 
     function calculateDimensions() {
-      const containerWidth = container.clientWidth || 300;
+      // Subtract the container's own left/right padding (box-sizing: border-box
+      // containers like .floating-carousel include it in clientWidth) so this
+      // matches the content-box width CSS percentages actually resolve
+      // against. Reading track.clientWidth instead isn't safe here: the track
+      // is `width: max-content` outside the desktop breakpoint, which is
+      // itself derived from the slide widths we're about to set — a circular
+      // measurement that produces runaway widths.
+      const containerStyle = window.getComputedStyle(container);
+      const containerPadding = (parseFloat(containerStyle.paddingLeft) || 0) + (parseFloat(containerStyle.paddingRight) || 0);
+      const containerWidth = (container.clientWidth - containerPadding) || 300;
       let itemsPerView = 3;
 
       if (window.innerWidth < 768) {
-        itemsPerView = 1.18; // Mobile: ~1.18 items visible
+        // "Ứng dụng của Máy phiên dịch" cards must show one full card at a time on
+        // mobile (no partial peek); other carousels keep the ~1.18 peek hint.
+        itemsPerView = container.classList.contains('floating-carousel') ? 1 : 1.18;
         gap = 14;
       } else if (window.innerWidth < 1024) {
         itemsPerView = 2;

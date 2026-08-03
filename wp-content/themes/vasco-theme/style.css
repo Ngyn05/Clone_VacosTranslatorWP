@@ -110,7 +110,10 @@ Text Domain: vasco-theme
 }
 
 /* Bottom Section (Ứng Dụng Của Máy Phiên Dịch): Exactly 3 Full Cards per View + Horizontal Sliding */
-@media (min-width: 992px) {
+/* Breakpoint must match smooth-carousel.js's own 1024px breakpoint, otherwise between
+   992-1023px the CSS forces 3-per-row while the JS still steps the track as if there
+   were 2 per row, so the track's translateX lands mid-card and slides get cut off. */
+@media (min-width: 1024px) {
     .how-vasco-section .floating-carousel .swiper-wrapper {
         display: flex !important;
         flex-wrap: nowrap !important;
@@ -676,12 +679,36 @@ button[aria-controls*="video"] {
     background-color: transparent !important;
 }
 
+/* "Máy phiên dịch của chúng tôi" (Q1/E1/M4/V4) feature-panel switcher:
+   cross-fade between panels instead of an instant display:none/flex snap.
+   All panels stack in the same grid cell so the container's height auto-fits
+   whichever panel is tallest, and opacity/visibility animate the swap. */
+.absolute-box-product-features {
+    display: grid !important;
+}
+
+.absolute-box-product-features [data-slide] {
+    grid-area: 1 / 1 !important;
+    display: flex !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transition: opacity 0.45s ease !important;
+}
+
+.absolute-box-product-features [data-slide].visible {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+}
+
 /* Card Image Display Fix for B2B & Healthcare Pages */
 .how-vasco-section .grid-section .card img,
 .how-vasco-section .card picture img {
     display: block !important;
     width: 100% !important;
-    height: 200px !important;
+    height: auto !important;
+    aspect-ratio: 300 / 129 !important;
     object-fit: cover !important;
     border-radius: 8px 8px 0 0 !important;
 }

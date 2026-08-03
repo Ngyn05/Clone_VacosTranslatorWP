@@ -40,7 +40,7 @@ get_header();
 <div class="heading-wrapper heading-wrapper-voice">
 <div class="heading">
 <h1 class="h1">Dịch giọng nói</h1>
-<p class="body-base">Speak 82 Languages</p>
+<p class="body-base">Nói được 82 ngôn ngữ</p>
 </div>
 </div>
 </div>
@@ -115,7 +115,7 @@ get_header();
 <div class="voice-text-box">
 <h2 class="h1">Không còn nỗi lo hiểu nhầm</h2>
 <p class="body-16 box-paragraph-gap">Máy phiên dịch Vasco mang lại bản dịch chính xác nhất trên thị trường. Micro lọc tiếng ồn đến 99% và loa công suất lớn giúp âm thanh luôn rõ ràng ngay cả ở nơi đông người.</p>
-<p class="body-16">You can also translate audio with strong loudspeakers (up to 99 dB). This volume can be compared to a shouted conversation, motorcycle or busy street. </p>
+<p class="body-16">Bạn cũng có thể dịch âm thanh với loa công suất lớn (lên đến 99 dB). Mức âm lượng này tương đương với một cuộc nói chuyện lớn tiếng, tiếng xe máy hoặc đường phố đông đúc. </p>
 <ul class="body-16 last-box-element">
 <li>Tận hưởng cuộc trò chuyện trôi chảy và tự nhiên</li>
 <li>Bản dịch chính xác giảm thiểu nguy cơ hiểu nhầm, đặc biệt trong tình huống khẩn cấp</li>
@@ -157,16 +157,16 @@ get_header();
 <img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/m4.webp" ); ?>"/>
 </div>
 <div class="voice-text-box">
-<h2 class="h1">More Than a Smart Translator</h2>
-<p class="body-16 box-paragraph-gap">Kết nối với hơn 90% dân số thế giới in 82 languages. Communicate with co-workers from abroad, tourists, and shop owners around the world.</p>
-<p class="body-16">Vasco audio translation device also provides:</p>
+<h2 class="h1">Hơn cả một máy phiên dịch thông minh</h2>
+<p class="body-16 box-paragraph-gap">Kết nối với hơn 90% dân số thế giới bằng 82 ngôn ngữ. Giao tiếp với đồng nghiệp nước ngoài, khách du lịch và chủ cửa hàng trên toàn thế giới.</p>
+<p class="body-16">Thiết bị dịch giọng nói Vasco còn cung cấp thêm:</p>
 <ul class="body-16">
-<li>Text translations</li>
-<li>Photo translations</li>
-<li>Group chat translations</li>
-<li>Languages learning app</li>
+<li>Dịch văn bản</li>
+<li>Dịch hình ảnh</li>
+<li>Dịch trò chuyện nhóm</li>
+<li>Ứng dụng học ngôn ngữ</li>
 </ul>
-<p class="body-16 last-box-element">Find out more about your possibilities with Vasco speech translator below.</p>
+<p class="body-16 last-box-element">Tìm hiểu thêm về những khả năng của máy phiên dịch giọng nói Vasco ngay dưới đây.</p>
 </div>
 </div>
 </div>
@@ -184,7 +184,7 @@ get_header();
 <div class="product-description">
 <h3 aria-label="q1.name]" id="product-38" tabindex="0">
 												Vasco Translator Q1</h3>
-<p>The only translator with voice cloning and call translation features</p>
+<p>Máy dịch duy nhất có tính năng nhân bản giọng nói và dịch cuộc gọi điện thoại</p>
 <a aria-label="Tìm hiểu thêm Vasco Translator Q1" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>" target="_blank">
 												Tìm hiểu thêm
 											</a>
@@ -197,7 +197,7 @@ get_header();
 <div class="product-description">
 <h3 aria-label="m4.name]" id="product-62" tabindex="0">
 												Vasco Translator M4</h3>
-<p>Lightweight and easy-to-use pocket translator for everyone</p>
+<p>Máy dịch bỏ túi nhẹ và dễ sử dụng cho mọi người</p>
 <a aria-label="Tìm hiểu thêm Vasco Translator M4" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/translators/vasco-translator-m4/" ) ); ?>" target="_blank">
 												Tìm hiểu thêm
 											</a>
@@ -210,7 +210,7 @@ get_header();
 <div class="product-description">
 <h3 aria-label="v4.name]" id="product-14" tabindex="0">
 												Vasco Translator V4</h3>
-<p>Electronic instant translator device</p>
+<p>Thiết bị dịch điện tử tức thời</p>
 <a aria-label="Tìm hiểu thêm Vasco Translator V4" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>" target="_blank">
 												Tìm hiểu thêm
 											</a>
@@ -219,8 +219,8 @@ get_header();
 </div>
 </div>
 <div class="custom-navigation">
-<div class="swiper-button-prev btn-product-prev" data-label-prev="Previous slide"></div>
-<div class="swiper-button-next btn-product-next" data-label-next="Next slide"></div>
+<div class="swiper-button-prev btn-product-prev" data-label-prev="Slide trước"></div>
+<div class="swiper-button-next btn-product-next" data-label-next="Slide tiếp theo"></div>
 </div>
 </div>
 </div>

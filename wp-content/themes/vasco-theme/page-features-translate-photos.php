@@ -41,7 +41,7 @@ get_header();
 <div class="heading-wrapper heading-wrapper-photo">
 <div class="heading">
 <h1 class="h1">Dịch hình ảnh</h1>
-<p class="body-base">Quickly Understand your Surroundings</p>
+<p class="body-base">Nhanh chóng hiểu môi trường xung quanh</p>
 </div>
 </div>
 </div>
@@ -49,11 +49,11 @@ get_header();
 <div class="voice-box-wrapper" style="background-color: #E2F3DF;">
 <div class="voice-box-left container">
 <div class="voice-text-box">
-<h2 class="h1">Save time and feel confident</h2>
-<p class="voice-box-subtitle">Quickly translate words in a picture, wherever you are. The high-quality 8-megapixel Sony camera allows you to take a photo of any text and translate the words in a picture.</p>
-<p class="body-16 box-text-upper">Whether it’s signs at the train station or menus while you’re abroad, simply take a picture and translate whatever is in front of you.</p>
-<p class="body-16">This is also a great tool when you’re in a hurry. Understand a timetable, signboard, or items on the menu. With blink of an eye, photo translate everything on the go!</p>
-<ul class="body-16"><li>Quick image translation</li><li>Độ chính xác 99% dựa trên 10 công cụ dịch thuật</li><li>Understand foreign alphabets through picture translation</li></ul>
+<h2 class="h1">Tiết kiệm thời gian và tự tin hơn</h2>
+<p class="voice-box-subtitle">Dịch nhanh chữ viết trong hình ảnh, ở bất cứ đâu bạn đến. Camera Sony 8-megapixel chất lượng cao cho phép bạn chụp ảnh bất kỳ văn bản nào và dịch các chữ trong hình ảnh đó.</p>
+<p class="body-16 box-text-upper">Cho dù là biển báo ở nhà ga hay thực đơn khi bạn ở nước ngoài, chỉ cần chụp ảnh và dịch bất cứ thứ gì trước mắt bạn.</p>
+<p class="body-16">Đây cũng là công cụ tuyệt vời khi bạn đang vội. Hiểu ngay lịch trình, biển hiệu hay các món trong thực đơn. Chỉ trong chớp mắt, dịch ảnh mọi thứ khi đang di chuyển!</p>
+<ul class="body-16"><li>Dịch hình ảnh nhanh chóng</li><li>Độ chính xác 99% dựa trên 10 công cụ dịch thuật</li><li>Hiểu các loại chữ viết nước ngoài thông qua dịch hình ảnh</li></ul>
 <div class="last-box-element">
 <a class="btn btn-md btn-black body-16 last-box-element" href="../translators/vasco-translator-v4.html#product-languages" target="_blank">
 							Kiểm tra danh sách ngôn ngữ hỗ trợ
@@ -71,20 +71,20 @@ get_header();
 <img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/features/photo-new-2.webp" ); ?>"/>
 </div>
 <div class="voice-text-box">
-<h2 class="h1">Language confidence at international job</h2>
-<p class="body-16 box-text-upper">Are you worried about the language barrier in a multilingual environment?</p>
-<p class="body-16">The picture-Dịch văn bản helps you understand documents in 112 languages. Just take a picture and translate any text and see an instant, easy-to-read translation.</p>
-<ul class="body-16 last-box-element"><li>Translate text in images for documents</li><li>Feel secure signing contracts</li><li>Image-Dịch văn bản builds confidence when consulting foreign clients</li></ul>
+<h2 class="h1">Tự tin về ngôn ngữ trong công việc quốc tế</h2>
+<p class="body-16 box-text-upper">Bạn lo lắng về rào cản ngôn ngữ trong môi trường đa ngôn ngữ?</p>
+<p class="body-16">Tính năng dịch hình ảnh giúp bạn hiểu các tài liệu bằng 112 ngôn ngữ. Chỉ cần chụp ảnh và dịch bất kỳ văn bản nào để xem bản dịch tức thì, dễ đọc.</p>
+<ul class="body-16 last-box-element"><li>Dịch văn bản trong hình ảnh cho tài liệu</li><li>Tự tin và an tâm khi ký hợp đồng</li><li>Dịch hình ảnh giúp bạn tự tin hơn khi tư vấn cho khách hàng nước ngoài</li></ul>
 </div>
 </div>
 </div>
 <div class="voice-box-wrapper" style="background-color: #E0E2F2;">
 <div class="voice-box-left container">
 <div class="voice-text-box">
-<h2 class="h1">Comfort and security while traveling</h2>
-<p class="body-16 box-paragraph-gap">Signs with unfamiliar alphabets and characters can be confusing, but our picture-Dịch văn bản has you covered!</p>
-<p class="body-16">Translate from a camera and feel comfortable anywhere in the world!</p>
-<ul class="body-16 last-box-element"><li>Understand menus &amp; order delicious local food</li><li>Visit local exhibitions &amp; museums, and photo translate descriptions</li><li>Feel safe in public areas as you can translate with camera all inscriptions</li></ul>
+<h2 class="h1">Thoải mái và an toàn khi du lịch</h2>
+<p class="body-16 box-paragraph-gap">Các biển báo với chữ viết và ký tự lạ có thể gây khó hiểu, nhưng tính năng dịch hình ảnh của chúng tôi sẽ giúp bạn!</p>
+<p class="body-16">Dịch trực tiếp từ camera và cảm thấy thoải mái ở bất cứ đâu trên thế giới!</p>
+<ul class="body-16 last-box-element"><li>Hiểu thực đơn &amp; gọi những món ăn địa phương ngon miệng</li><li>Tham quan các triển lãm &amp; bảo tàng địa phương, và dịch ảnh các mô tả</li><li>Cảm thấy an toàn ở nơi công cộng khi có thể dịch mọi bảng chữ bằng camera</li></ul>
 </div>
 <div class="voice-img-box">
 <img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/features/photo-new-3.webp" ); ?>"/>
@@ -97,10 +97,10 @@ get_header();
 <img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/device-photos/features/en/v4_blue.webp" ); ?>"/>
 </div>
 <div class="voice-text-box">
-<h2 class="h1">Take a picture and translate in 112 languages</h2>
-<p class="body-16 box-paragraph-gap">Internet isn’t available everywhere when you’re traveling, and roaming fees can add up. Especially if you want to translate from picture files that require strong connections. But with Vasco, you’ll always be connected!</p>
-<p class="body-16">A built-in SIM card ensures free connectivity for translations tại gần 200 quốc gia, with no hidden costs. You’ll have lifetime access to the picture-Dịch văn bản with no limits, forever!</p>
-<ul class="body-16"><li>Lifetime connectivity tại gần 200 quốc gia</li><li>Have 112 languages in your pocket to translate text in images</li><li>Get fast &amp; accurate picture translation</li></ul>
+<h2 class="h1">Chụp ảnh và dịch sang 112 ngôn ngữ</h2>
+<p class="body-16 box-paragraph-gap">Internet không phải lúc nào cũng có sẵn khi bạn đi du lịch, và phí chuyển vùng có thể tăng lên nhanh chóng. Đặc biệt nếu bạn muốn dịch từ các tệp hình ảnh cần kết nối mạnh. Nhưng với Vasco, bạn sẽ luôn được kết nối!</p>
+<p class="body-16">Thẻ SIM tích hợp sẵn đảm bảo kết nối miễn phí cho việc dịch thuật tại gần 200 quốc gia, không có phí ẩn. Bạn sẽ có quyền truy cập trọn đời vào tính năng dịch hình ảnh mà không giới hạn, vĩnh viễn!</p>
+<ul class="body-16"><li>Kết nối trọn đời tại gần 200 quốc gia</li><li>Có 112 ngôn ngữ trong tầm tay để dịch văn bản trong hình ảnh</li><li>Nhận bản dịch hình ảnh nhanh &amp; chính xác</li></ul>
 <div class="voice-btn-wrapper last-box-element">
 <div>
 <a class="btn btn-md btn-black body-16 last-box-element mt-0" href="../translators/vasco-translator-v4.html#product-languages" target="_blank">
@@ -117,10 +117,10 @@ get_header();
 <div class="voice-box-wrapper" style="background-color: #FFF7DC;">
 <div class="voice-box-left container">
 <div class="voice-text-box">
-<h2 class="h1">More than a Dịch hình ảnh</h2>
-<p class="voice-box-subtitle">With the photo translate feature, you’ll instantly feel more confident abroad. Traffic signs, train station information, business and government documents, we’ve got you covered.</p>
-<p class="body-16 box-text-upper">The ability to translate from a picture helps your travel experience feel more natural, enjoyable, and care-free. Especially in countries with alphabet characters that are unfamiliar.</p>
-<ul class="body-16"><li>Translate speech in 82 languages</li><li>Translate text in 107 languages</li><li>Learn new vocabulary in 28 languages</li><li>Translate multilingual conversations for up to 100 members</li></ul>
+<h2 class="h1">Hơn cả một tính năng Dịch hình ảnh</h2>
+<p class="voice-box-subtitle">Với tính năng dịch ảnh, bạn sẽ ngay lập tức cảm thấy tự tin hơn khi ở nước ngoài. Biển báo giao thông, thông tin nhà ga, tài liệu kinh doanh và chính phủ, chúng tôi đều hỗ trợ bạn.</p>
+<p class="body-16 box-text-upper">Khả năng dịch từ hình ảnh giúp trải nghiệm du lịch của bạn trở nên tự nhiên, thú vị và thoải mái hơn. Đặc biệt tại các quốc gia có hệ chữ viết xa lạ.</p>
+<ul class="body-16"><li>Dịch giọng nói bằng 82 ngôn ngữ</li><li>Dịch văn bản bằng 107 ngôn ngữ</li><li>Học từ vựng mới bằng 28 ngôn ngữ</li><li>Dịch các cuộc hội thoại đa ngôn ngữ cho tới 100 thành viên</li></ul>
 </div>
 <div class="voice-img-box">
 <img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/v4.webp" ); ?>"/>
@@ -141,7 +141,7 @@ get_header();
 <div class="product-description">
 <h3 aria-label="q1.name]" id="product-38" tabindex="0">
 												Vasco Translator Q1</h3>
-<p>The only translator with voice cloning and call translation features</p>
+<p>Máy dịch duy nhất có tính năng nhân bản giọng nói và dịch cuộc gọi điện thoại</p>
 <a aria-label="Tìm hiểu thêm Vasco Translator Q1" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>" target="_blank">
 												Tìm hiểu thêm
 											</a>
@@ -154,7 +154,7 @@ get_header();
 <div class="product-description">
 <h3 aria-label="m4.name]" id="product-62" tabindex="0">
 												Vasco Translator M4</h3>
-<p>Lightweight and easy-to-use pocket translator for everyone</p>
+<p>Máy dịch bỏ túi nhẹ và dễ sử dụng cho mọi người</p>
 <a aria-label="Tìm hiểu thêm Vasco Translator M4" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/translators/vasco-translator-m4/" ) ); ?>" target="_blank">
 												Tìm hiểu thêm
 											</a>
@@ -167,7 +167,7 @@ get_header();
 <div class="product-description">
 <h3 aria-label="v4.name]" id="product-14" tabindex="0">
 												Vasco Translator V4</h3>
-<p>Electronic instant translator device</p>
+<p>Thiết bị dịch điện tử tức thời</p>
 <a aria-label="Tìm hiểu thêm Vasco Translator V4" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>" target="_blank">
 												Tìm hiểu thêm
 											</a>
@@ -176,8 +176,8 @@ get_header();
 </div>
 </div>
 <div class="custom-navigation">
-<div class="swiper-button-prev btn-product-prev" data-label-prev="Previous slide"></div>
-<div class="swiper-button-next btn-product-next" data-label-next="Next slide"></div>
+<div class="swiper-button-prev btn-product-prev" data-label-prev="Slide trước"></div>
+<div class="swiper-button-next btn-product-next" data-label-next="Slide tiếp theo"></div>
 </div>
 </div>
 </div>
