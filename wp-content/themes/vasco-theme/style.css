@@ -382,19 +382,29 @@ Text Domain: vasco-theme
     text-transform: none !important;
 }
 
-/* No.1 Badge - Fix bị ẩn khi hover vào menu header */
-/* Dùng position:fixed với z-index cực cao để luôn hiển thị trên tất cả */
+/* No.1 Badge - Scaled down on mobile to prevent overlapping */
 .number-one-floating {
-    z-index: 200000 !important;
-    position: fixed !important;
-    top: 60px !important;
-    right: 0 !important;
+    z-index: 90 !important;
+    position: absolute !important;
+    top: 20px !important;
+    right: 20px !important;
     pointer-events: none !important;
     display: block !important;
 }
 .number-one-floating img {
-    width: 94px !important;
-    max-width: 94px !important;
+    width: 80px !important;
+    max-width: 80px !important;
+}
+
+@media (max-width: 991px) {
+    .number-one-floating {
+        top: 10px !important;
+        right: 10px !important;
+    }
+    .number-one-floating img {
+        width: 50px !important;
+        max-width: 50px !important;
+    }
 }
 
 /* Mobile Header Navigation Dropdown Fix */
@@ -416,16 +426,16 @@ Text Domain: vasco-theme
     .mobile-menu.open {
         display: block !important;
         position: fixed !important;
-        top: 70px !important;
+        top: 85px !important;
         left: 0 !important;
         right: 0 !important;
         bottom: 0 !important;
         width: 100vw !important;
-        height: calc(100vh - 70px) !important;
+        height: calc(100vh - 85px) !important;
         background: #ffffff !important;
         box-shadow: 0 10px 30px rgba(0,0,0,0.2) !important;
         z-index: 999999 !important;
-        padding: 20px !important;
+        padding: 30px 25px 20px 25px !important;
         box-sizing: border-box !important;
         overflow-y: auto !important;
         -webkit-overflow-scrolling: touch !important;
@@ -667,4 +677,129 @@ button[aria-controls*="video"] {
     height: 200px !important;
     object-fit: cover !important;
     border-radius: 8px 8px 0 0 !important;
+}
+
+/* ==========================================================================
+   GLOBAL RESPONSIVE DESIGN SYSTEM (MOBILE, TABLET, LAPTOP, DESKTOP)
+   ========================================================================== */
+
+/* 1. Mobile Devices (Max width: 767px) */
+@media (max-width: 767px) {
+    /* Doubleboxes layout stack vertically */
+    .doubleboxes .doublebox,
+    .doublebox.left,
+    .doublebox.right,
+    .doublebox.group-box {
+        flex-direction: column !important;
+        min-height: auto !important;
+        height: auto !important;
+    }
+
+    .doublebox .container,
+    .doublebox.group-box .doublebox-content-custom-list,
+    .hero-section .doublebox .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 30px 20px !important;
+    }
+
+    .doublebox-absolute {
+        width: 100% !important;
+        min-height: 260px !important;
+        height: 260px !important;
+        flex: 0 0 auto !important;
+    }
+
+    .doublebox-content h1,
+    .doublebox-content .h1 {
+        font-size: 1.65rem !important;
+        line-height: 1.3 !important;
+    }
+
+    /* Tutorials & How-It-Works section */
+    .tutorials .tutorial-wrapper {
+        flex-direction: column !important;
+        padding: 20px 0 !important;
+        gap: 20px !important;
+    }
+
+    .tutorials .tutorial-wrapper .video-wrapper,
+    .tutorials .tutorial-wrapper img,
+    .tutorials .tutorial-wrapper .tutorial-text-right,
+    .tutorials .tutorial-wrapper .tutorial-text-left {
+        flex: 0 0 100% !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .tutorials .tutorial-wrapper h2.h1 {
+        font-size: 1.35rem !important;
+    }
+
+    /* Numbers section */
+    .numbers-box {
+        flex-direction: column !important;
+        gap: 24px !important;
+    }
+
+    .numbers-box .single-box {
+        width: 100% !important;
+    }
+
+    /* Grid cards */
+    .grid-section {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
+    /* Swiper & carousels horizontal scroll padding */
+    .swiper-wrapper {
+        padding-bottom: 10px !important;
+    }
+}
+
+/* 2. Tablets & Small Laptops (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .doublebox .container {
+        padding: 40px 30px !important;
+    }
+
+    .doublebox-content h1,
+    .doublebox-content .h1 {
+        font-size: 2.1rem !important;
+    }
+
+    .tutorials .tutorial-wrapper {
+        gap: 24px !important;
+    }
+
+    .grid-section {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 24px !important;
+    }
+}
+
+/* 3. Laptops & Large Screens (992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .doublebox .container {
+        padding: 40px 50px !important;
+    }
+
+    .doublebox-content {
+        max-width: 480px !important;
+    }
+
+    .tutorials .tutorial-wrapper {
+        max-width: 960px !important;
+    }
+}
+
+/* 4. Desktop & Extra Large Screens (1200px+) */
+@media (min-width: 1200px) {
+    .container,
+    .max-width-container {
+        max-width: 1200px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
 }
