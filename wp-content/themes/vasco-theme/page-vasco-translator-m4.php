@@ -816,65 +816,65 @@ get_header();
 <div class="feature-boxes">
 <div class="feature-box active" data-id="speach_rate">
 <div class="feature-media">
-<img "="" "adjust="" "normal"="" a="" alt="A close-up of a person's hand holding a black Vasco electronic translator against a blurred outdoor background of a city square with historic buildings. The device screen displays the " and="" bracelet.="" bright="" by="" daylight="" device="" easy="" featuring="" highlights="" holding="" interface,="" is="" making="" moving="" note="" person="" reading="" says:="" screen's="" see.="" set="" settings="" settings,="" silver="" slider="" slider."="" speed="" speed"="" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/speach_rate.webp" ); ?>" that="" the="" to="" translation="" wearing=""/>
+<img alt="Điều chỉnh tốc độ phát" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/speach_rate.webp" ); ?>"/>
 </div>
 <div class="feature-info">
 <h3 class="h2">Điều chỉnh tốc độ phát</h3>
-<p class="not-subtitle">Customize the speech rate to suit your needs. Slow down the playback on your pocket translator to catch every nuance or speed it up when you're in a hurry.</p>
+<p class="not-subtitle">Tùy chỉnh tốc độ nói phù hợp với nhu cầu của bạn. Làm chậm bản phát trên máy phiên dịch bỏ túi để nắm bắt từng sắc thái hoặc tăng tốc khi bạn đang vội.</p>
 </div>
 </div>
 <div class="feature-box" data-id="vulgarisms">
 <div class="feature-media">
-<img "="" "enable="" "enabled."="" a="" all="" alt="A top-down shot of a teal Vasco electronic translator resting on a wooden table. The device's screen is active, showing the " an="" and="" below="" by="" bộ="" captured="" chess="" chessboard="" coffee="" corner="" cup,="" dark="" description="" device="" filter="" from="" hợp"="" in="" including="" is="" items,="" không="" language="" lifestyle="" light.="" lọc="" menu="" natural="" ngữ="" notebook,="" of="" offensive="" open="" option="" out="" phù="" piece,="" reads:="" set="" settings="" soft,="" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/vulgarisms.webp" ); ?>" surrounded="" switch="" the="" this="" to="" toggle="" toggle,="" translations."="" từ="" white="" with="" wooden=""/>
+<img alt="Bộ lọc từ ngữ không phù hợp" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/vulgarisms.webp" ); ?>"/>
 </div>
 <div class="feature-info">
 <h3 class="h2">Bộ lọc từ ngữ không phù hợp</h3>
-<p class="not-subtitle">This feature detects and censors offensive language in both text and voice translations. Perfect for moments when diplomacy matters—it preserves the meaning while avoiding awkward situations.</p>
+<p class="not-subtitle">Tính năng này phát hiện và kiểm duyệt ngôn ngữ nhạy cảm trong cả bản dịch văn bản và giọng nói. Giúp giữ nguyên ý nghĩa trong khi tránh các tình huống ngượng ngùng.</p>
 </div>
 </div>
 <div class="feature-box" data-id="zooming_the_screen">
 <div class="feature-media">
-<img "="" a="" about="" alt="A high-angle shot showing a person's hand holding a black Vasco electronic translator over an open magazine on a wooden table. The device's screen is in " and="" are="" attractions.="" background,="" casual="" coffee="" creating="" cup="" displaying="" edges="" english="" for="" in="" local="" magazine="" mode,="" of="" photo"="" reading="" setting="" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/zooming_the_screen.webp" ); ?>" text="" the="" translated="" translation.="" visible,="" white="" zoomed-in,=""/>
+<img alt="Phóng to màn hình" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/zooming_the_screen.webp" ); ?>"/>
 </div>
 <div class="feature-info">
-<h3 class="h2">Screen zoom</h3>
-<p class="not-subtitle">Enlarge text or photos to see your translation clearly. No more squinting—unless it’s from the blazing sun on the beach!</p>
+<h3 class="h2">Phóng to màn hình</h3>
+<p class="not-subtitle">Phóng to văn bản hoặc hình ảnh để xem bản dịch rõ ràng hơn. Không còn phải nheo mắt đọc chữ.</p>
 </div>
 </div>
 <div class="feature-box" data-id="speakers">
 <div class="feature-media">
-<img alt="A person wearing a black quilted vest over a plaid shirt holds a teal Vasco electronic translator horizontally toward another person on a city street. The second person, wearing a grey and orange work jacket, holds their hand out as if mid-conversation. The device screen displays a translation interface with text. The background is a wide, blurred view of a European-style street with tall buildings under a bright, overcast sky. " src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/speakers.webp" ); ?>"/>
+<img alt="Loa công suất lớn và micro chống ồn" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/speakers.webp" ); ?>"/>
 </div>
 <div class="feature-info">
-<h3 class="h2">Loa công suất lớn and a noise-cancelling microphones</h3>
-<p class="not-subtitle">The Vasco language translation tool features a precise microphones and powerful speakers. The microphones reduces background noise by up to 99%, and the speakers deliver crystal-clear sound, so you can communicate easily on a busy street, at a crowded market, or in a noisy bar.</p>
+<h3 class="h2">Loa công suất lớn và micro chống ồn</h3>
+<p class="not-subtitle">Công cụ phiên dịch Vasco có micro chính xác và loa công suất lớn. Micro giảm tiếng ồn xung quanh lên đến 99%, và loa mang lại âm thanh trong trẻo.</p>
 </div>
 </div>
 <div class="feature-box" data-id="full_screen">
 <div class="feature-media">
-<img "="" a="" ahead="" alt="A close-up of a hand holding a black Vasco electronic translator horizontally. The screen is in full-screen mode, displaying the translated text in a large, clear blue font: " and="" background="" blurred="" bright,="" chile,="" colorful="" countries,="" covered="" denmark.="" device="" directional="" easy="" featuring="" for="" go="" have="" highlighting="" in="" including="" is="" on="" outdoor="" poland,="" post="" reading.="" right."="" scene="" signs="" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/full_screen.webp" ); ?>" straight="" sunlight="" text="" the="" to="" turn="" various="" vibrant,="" you=""/>
+<img alt="Chế độ toàn màn hình" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/full_screen.webp" ); ?>"/>
 </div>
 <div class="feature-info">
-<h3 class="h2">Full-screen mode</h3>
-<p class="not-subtitle">Need a closer look? No need to reach for your glasses—just rotate your device to switch to full-screen mode.</p>
+<h3 class="h2">Chế độ toàn màn hình</h3>
+<p class="not-subtitle">Cần nhìn rõ hơn? Không cần tìm kính—chỉ cần xoay thiết bị để chuyển sang chế độ toàn màn hình.</p>
 </div>
 </div>
 <div class="feature-box" data-id="sharing">
 <div class="feature-media">
-<img "="" "hej!"="" "share="" a="" address="" aesthetic.="" alt="A high-angle, close-up shot of a dark blue Vasco electronic translator in a transparent protective case, resting on a light-colored wooden table. The device's screen is active, showing a " an="" and="" are="" brightly="" button="" clean="" coffee="" conversation="" conversation."="" creating="" device="" edge="" email="" enter="" field="" is="" it.="" lanyard="" lit,="" menu="" modern="" mug,="" of="" on="" orange="" plant="" pot,="" printed="" says="" scene="" sharing"="" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/sharing.webp" ); ?>" surrounding="" table="" that="" the="" to="" white="" with="" word=""/>
+<img alt="Chia sẻ bản dịch" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/sharing.webp" ); ?>"/>
 </div>
 <div class="feature-info">
 <h3 class="h2">Chia sẻ bản dịch</h3>
-<p class="not-subtitle">With Vasco, you won’t miss a thing. You can always return to saved translations or share them—for example, via email.</p>
+<p class="not-subtitle">Với Vasco, bạn sẽ không bỏ lỡ điều gì. Bạn luôn có thể quay lại các bản dịch đã lưu hoặc chia sẻ chúng qua email.</p>
 </div>
 </div>
 <div class="feature-box" data-id="updates">
 <div class="feature-media">
-<img "="" "downloading="" "keep="" a="" alt="A top-down shot of a person's hand holding a purple Vasco electronic translator over a wooden table. The device's screen displays a " an="" and="" are="" around="" atmosphere.="" bar="" calendar,="" chess="" chessboard="" coffee.="" creating="" cup="" device="" everyday="" is="" lighting="" message="" natural,="" of="" on="" open="" pieces,="" progress="" relaxed,="" says="" shows="" soft="" software="" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/updates.webp" ); ?>" table="" text="" that="" the="" up="" update"="" update...".="" updates"="" white="" with="" wooden=""/>
+<img alt="Cập nhật phần mềm liên tục" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/updates.webp" ); ?>"/>
 </div>
 <div class="feature-info">
 <h3 class="h2">Cập nhật phần mềm liên tục</h3>
-<p class="not-subtitle">Vasco Translator M4 is built to last for years. Not only is it durable, but it also receives regular updates—so you can enjoy the latest software improvements long after your purchase.</p>
+<p class="not-subtitle">Vasco Translator M4 được xây dựng để sử dụng lâu dài nhiều năm. Thiết bị nhận được các bản cập nhật thường xuyên để bạn tận hưởng những cải tiến phần mềm mới nhất.</p>
 </div>
 </div>
 <div class="feature-box" data-id="instant_work">
@@ -897,11 +897,11 @@ get_header();
 </div>
 <div class="feature-box" data-id="resilience">
 <div class="feature-media">
-<img "="" "vasco="" "¡hola!",="" a="" alt="A close-up of a hand holding a purple Vasco electronic translator device against a bright outdoor background. The screen displays the greetings " and="" background="" blue="" clear="" cliffs="" coastal="" device="" features="" gray="" hello!",="" holding="" is="" jacket="" landscape="" light="" light-colored="" logo.="" of="" or="" person="" rocky="" silver="" sky.="" sleeve.="" soft-focus="" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/resilience.webp" ); ?>" sunny="" textured="" the="" translator"="" under="" view="" water="" wearing="" with=""/>
+<img alt="Bền bỉ theo thời gian" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/resilience.webp" ); ?>"/>
 </div>
 <div class="feature-info">
 <h3 class="h2">Bền bỉ theo thời gian</h3>
-<p class="not-subtitle">Vasco Translator M4 is a true travel companion, designed for real-life use on the go. The device is shock-resistant and splash-proof, so you don’t have to worry when using it by the pool or during a trip to the mountains.</p>
+<p class="not-subtitle">Vasco Translator M4 là người bạn đồng hành đích thực, được thiết kế cho cuộc sống di chuyển. Thiết bị chống sốc và chống nước bắn, giúp bạn yên tâm sử dụng tại hồ bơi hay khi đi leo núi.</p>
 </div>
 </div>
 <div class="feature-box" data-id="support">
@@ -910,25 +910,25 @@ get_header();
 </div>
 <div class="feature-info">
 <h3 class="h2">Hỗ trợ kỹ thuật bằng ngôn ngữ của bạn</h3>
-<p class="not-subtitle">We’re always by your side. You can count on us before, during, and after your purchase. If you have any questions, our specialists are ready to help—in your language.</p>
+<p class="not-subtitle">Chúng tôi luôn đồng hành cùng bạn. Bạn có thể tin tưởng trước, trong và sau khi mua hàng. Các chuyên gia của chúng tôi luôn sẵn sàng hỗ trợ bằng ngôn ngữ của bạn.</p>
 </div>
 </div>
 <div class="feature-box" data-id="easy_use">
 <div class="feature-media">
-<img "="" "va",="" "vasco="" "¡hola!",="" a="" alt="Three people hold up Vasco Thiết bị máy phiên dịchs in different colors against a neutral grey background. On the left, a person holds a black device; in the center, a person holds a purple device; and on the right, a person with manicured nails holds a teal device. All three screens are illuminated, displaying the greeting " and="" angle,="" available="" colors="" devices.="" elevated="" focusing="" for="" from="" handheld="" hello!",="" is="" letters="" logo.="" of="" on="" shot="" slightly="" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/easy_use.webp" ); ?>" taken="" the="" translator"="" variety=""/>
+<img alt="Sử dụng dễ dàng & Thuận tiện" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/easy_use.webp" ); ?>"/>
 </div>
 <div class="feature-info">
 <h3 class="h2">Sử dụng dễ dàng & Thuận tiện</h3>
-<p class="not-subtitle">This handheld translator device requires no unnecessary steps. There’s no need for subscriptions, complicated setup, or unlocking extra features. Just buy it, unbox it, and enjoy a high-quality device—for years to come.</p>
+<p class="not-subtitle">Thiết bị phiên dịch cầm tay này không đòi hỏi các bước phức tạp. Không cần đăng ký gói cước, cài đặt phức tạp hay mở khóa tính năng. Chỉ cần mua, mở hộp và tận hưởng.</p>
 </div>
 </div>
 <div class="feature-box" data-id="connect">
 <div class="feature-media">
-<img "="" alt="A close-up shot showing two people's hands interacting with a black, curved ear-hook style earbud. One person is holding the earbud, which features a small glowing blue light and a " and="" case="" charging="" device="" earbuds="" fingertips.="" focus="" for="" foreground,="" in="" is="" it.="" lighting="" logo,="" on="" open="" other="" out="" person="" reaches="" sharp="" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/connect.webp" ); ?>" the="" toward="" va"="" visible.="" warm,="" while=""/>
+<img alt="Vasco Connect" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/connect.webp" ); ?>"/>
 </div>
 <div class="feature-info">
 <h3 class="h2">Vasco Connect</h3>
-<p class="not-subtitle">Pair your Vasco Translator M4 with Vasco Translator E1 translating earbuds and enjoy natural, hands-free conversations.</p>
+<p class="not-subtitle">Ghép nối Vasco Translator M4 với tai nghe phiên dịch Vasco Translator E1 và tận hưởng cuộc trò chuyện rảnh tay tự nhiên.</p>
 </div>
 </div>
 <div class="feature-box" data-id="service">
@@ -948,37 +948,37 @@ get_header();
 <hr/>
 <section class="color-section color-section-product">
 <div class="container">
-<h2 class="h1 text-center">Let’s add a splash of colour</h2>
-<p class="text-center">We love Vasco Translator M4 not just for its technology but also for its design. This is a device that impresses with its classic, elegant look. Choose the color that best complements your style.</p>
+<h2 class="h1 text-center">Thêm một chút sắc màu</h2>
+<p class="text-center">Chúng tôi yêu thích Vasco Translator M4 không chỉ bởi công nghệ mà còn bởi thiết kế ấn tượng, thanh lịch. Hãy chọn màu sắc phù hợp nhất với phong cách của bạn.</p>
 <div class="color-wrapper mt-10">
 <div class="swiper swiper-product-colors">
 <div class="swiper-wrapper">
 <div class="swiper-slide" tabindex="0">
-<img "hello!",="" "va",="" "vasco="" "¡hola!",="" a="" alt="A product showcase image featuring a black Vasco Thiết bị máy phiên dịch from two angles against a dark, textured fabric background. The device on the left shows the back view, highlighting a camera lens with a flash and an embossed " and="" at="" background="" blue="" bottom="" button="" charcoal-gray="" circular="" consists="" device="" displaying="" draped,="" fabric="" front="" glowing="" greetings="" illuminated,="" is="" its="" light.="" logo.="" mesh-like="" of="" on="" outlined="" right="" screen="" shows="" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/m4_small_black.webp" ); ?>" subtle="" texture."="" the="" translator"="" va"="" view="" with=""/>
+<img alt="Vasco Translator M4 Matte Black" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/m4_small_black.webp" ); ?>"/>
 <div class="color-box">
 <div class="circle matte-black" title="Matte Black"></div>
 <span>
-								Matte Black
+								Đen Nhám
 							</span>
 </div>
-<p>Quiet minimalism, perfected. For those who see functionality and timelessness as the ultimate form of aesthetics.</p>
+<p>Phong cách tối giản, hoàn hảo. Dành cho những ai yêu thích tính tiện dụng và sự bền bỉ vượt thời gian.</p>
 </div>
 <div class="swiper-slide" tabindex="0">
-<img "hello!",="" "va",="" "vasco="" "¡hola!",="" a="" alt="A product showcase image featuring a turquoise Vasco Thiết bị máy phiên dịch from two angles against a dark, textured fabric background. The device on the left shows the back view, highlighting a camera lens with a flash and an embossed " and="" at="" background="" blue="" bottom="" button="" circular="" device="" displaying="" features="" front="" glowing="" green="" greetings="" illuminated,="" is="" its="" light-colored="" light.="" logo.="" luxurious="" marble="" of="" on="" outlined="" pattern="" right="" screen="" shows="" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/m4_small_turquoise.webp" ); ?>" the="" translator"="" va"="" veins."="" view="" with=""/>
+<img alt="Vasco Translator M4 Frosty Turquoise" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/m4_small_turquoise.webp" ); ?>"/>
 <div class="color-box">
 <div class="circle frosty-turquoise" title="Frosty Turquoise"></div>
 <span>
-								Frosty Turquoise
+								Xanh Băng
 							</span>
 </div>
-<p>Calm, refined, and modern. This delicate, metallic turquoise turns the device into a statement piece. Elegance that needs no explanation—it speaks for itself.</p>
+<p>Nãm tính, tinh tế và hiện đại. Tông màu xanh ngọc ánh kim nhẹ nhàng tôn lên sự sang trọng.</p>
 </div>
 <div class="swiper-slide" tabindex="0">
-<img "hello!",="" "va",="" "vasco="" "¡hola!",="" a="" against="" alt="A product showcase image featuring a purple Vasco Thiết bị máy phiên dịch from two angles against a dark, textured fabric background. The device on the left shows the back view, highlighting a camera lens with a flash and an embossed " and="" at="" background="" bathed="" blue="" blurred="" bottom="" button="" circular="" composition="" device="" displaying="" dreamy,="" flowers="" front="" glowing="" greetings="" he="" heather="" illuminated,="" in="" is="" its="" light.="" logo.="" of="" on="" outlined="" purple="" right="" screen="" set="" shows="" soft="" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/m4_small_purple.webp" ); ?>" sunlight."="" the="" translator"="" va"="" view="" with=""/>
+<img alt="Vasco Translator M4 Misty Purple" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/m4/m4_small_purple.webp" ); ?>"/>
 <div class="color-box">
 <div class="circle misty-purple" title="Misty Purple"></div>
 <span>
-								Misty Purple
+								Tím Sương
 							</span>
 </div>
 <p>A subtle yet deep shade that transports you to a mist-covered heathland. A characterful violet that becomes a conversation starter all on its own.</p>

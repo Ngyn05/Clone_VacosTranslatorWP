@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Clean Page page-about-us.php
  *
@@ -43,13 +43,10 @@ get_header();
 <div aria-roledescription="carousel" class="swiper swiper-carousel" role="region">
 <div class="swiper-wrapper" role="list">
 <div aria-labelledby="panel1" class="card swiper-slide" role="listitem" tabindex="0">
-<img 2022"="" a="" abstract="" alt="Một cảnh trung-toàn cho thấy hai người đàn ông trong trang phục lễ phục đen đang bắt tay. Người đàn ông bên phải, Maciej Góralski, đang cầm một giải thưởng đóng khung với biểu tượng vàng, xác định đó là" and="" are="" at="" award.="" background,="" blue="" blurred="" decoding="async" dimly="" dynamic="" entrepreneur="" event="" features="" fetchpriority="low" geometric="" graphical="" guests="" hall."="" in="" lit="" loading="lazy" of="" patterns.="" red-orange="" seated="" several="" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/about-us/global1.webp" ); ?>" stage="" structures="" tables="" the="" year=""/>
+<img alt="Lễ trao giải thưởng Vasco" decoding="async" fetchpriority="low" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/about-us/global1.webp" ); ?>"/>
 </div>
 <div aria-labelledby="panel2" class="card swiper-slide card-bottom" role="listitem" tabindex="0">
-<img "vasco="" 2025="" a="" abstract="" alt="Hai người đàn ông trong trang phục kinh doanh trang trọng—người bên trái mặc tuxedo và đeo kính, người bên phải mặc vest xanh đậm—cùng nhau cầm một giấy chứng nhận giải thưởng đóng khung bằng cả hai tay. Giấy chứng nhận ghi rõ" and="" awarded="" backdrop="" background,="" best="" best"="" decoding="async" dot="" dynamic="" e1".="" fetchpriority="low" graphical="" in="" is="" large-scale,="" loading="lazy" of="" patterns="" red="" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/about-us/global2.webp" ); ?>" the="" to="" translator="" visible."="" wave="" white="" winner="" with=""/>
-</div>
-<div aria-labelledby="panel3" class="card swiper-slide" role="listitem" tabindex="0">
-<img "maciej="" "vasco="" a="" against="" alt="Một bức ảnh rộng ghi lại sân khấu lễ trao giải từ phía sau khán giả đang ngồi. Ở phía bên trái sân khấu, một người đàn ông mặc vest tối màu và một phụ nữ mặc váy dài trắng đứng cầm máy tính bảng, hướng về phía khán giả. Ở giữa sân khấu nền tối, một màn hình lớn hiển thị chữ màu hổ phách sáng ở phía trên ghi" and="" auditorium."="" award,="" below="" by="" centered="" crystal="" dark,="" decoding="async" diamond-shaped="" diffused="" electronics"="" fetchpriority="low" followed="" glowing,="" góralski"="" i="" illuminate="" innovacje."="" is="" large,="" lights="" loading="lazy" on="" packed="" screen,="" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/about-us/global3.webp" ); ?>" stage="" text="" the="" this,="" underneath.="" warm,="" wizja=""/>
+<img alt="Giấy chứng nhận giải thưởng Vasco" decoding="async" fetchpriority="low" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/about-us/global2.webp" ); ?>"/>
 </div>
 </div>
 <div class="swiper-button-prev btn-carousel-prev" data-label-prev="Previous slide"></div>

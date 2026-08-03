@@ -188,6 +188,12 @@ Text Domain: vasco-theme
         pointer-events: auto !important;
     }
 
+    .hero-section .doublebox .container {
+        width: 100% !important;
+        max-width: 1200px !important;
+        margin: 0 auto !important;
+    }
+
     .doublebox-content {
         max-width: 540px !important;
         width: 100% !important;
@@ -197,6 +203,13 @@ Text Domain: vasco-theme
         justify-content: center !important;
         padding: 0 !important;
         margin: 0 !important;
+    }
+
+    .hero-section .doublebox-content {
+        max-width: 800px !important;
+        margin: 0 auto !important;
+        align-items: center !important;
+        text-align: center !important;
     }
 
     .doublebox-absolute {

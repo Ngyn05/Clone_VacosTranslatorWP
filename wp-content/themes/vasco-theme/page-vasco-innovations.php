@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Clean Page page-vasco-innovations.php
  *
@@ -439,7 +439,7 @@ get_header();
 </svg>
 </div>
 <div class="doublebox-absolute with-list" id="img-change">
-<img "downloading="" "keep="" "va"="" a="" alt="A studio shot of the Vasco Translator Q1 showcasing the software update process. Two devices are shown: one from the front and one from the back. The front device displays a " and="" back="" bar="" blue="" camera="" class="hero-image" device="" embossed="" highlights="" indicating="" lens="" logo."="" message="" of="" progress="" screen="" software="" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/the_new/target_groups_q1.webp" ); ?>" the="" up="" update"="" update...".="" updates"="" with=""/>
+<img alt="Vasco Translator Q1 software update" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/the_new/target_groups_q1.webp" ); ?>"/>
 </div>
 </div>
 <div class="doublebox left rounded group-box" data-id="vasco_v4" style="background-color: #FFF; color: #FFF;">
@@ -464,7 +464,7 @@ get_header();
 </svg>
 </div>
 <div class="doublebox-absolute with-list" id="img-change">
-<img "download="" "va"="" a="" alt="A studio product photo of the Vasco Translator V4 showing the system update interface. Two black devices are positioned side-by-side: one facing forward and one showing the back. The screen displays a cloud icon with a download arrow, the heading " and="" at="" bar="" be="" bottom="" camera="" class="hero-image" date,"="" dual-lens="" embossed="" installation...".="" labeled="" logo."="" progress="" rear="" showcases="" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/the_new/target_groups_v4.webp" ); ?>" the="" to="" up="" view=""/>
+<img alt="Vasco Translator V4 system update" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/the_new/target_groups_v4.webp" ); ?>"/>
 </div>
 </div>
 </div>

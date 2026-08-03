@@ -1478,7 +1478,7 @@ Vasco Assistant nhận diện được các biểu tượng, ẩm thực vùng m
 <div class="swiper swiper-product-colors">
 <div class="swiper-wrapper">
 <div class="swiper-slide" tabindex="0">
-<img "¡hola!"="" alt="Two black Vasco Translators Q1 shown from the front and back against a black textured stone background. The front screen displays " and="" hello!"="" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/q1_small_black.webp" ); ?>" translations."=""/>
+<img alt="Vasco Translator Q1 Đen Phantom" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/q1_small_black.webp" ); ?>"/>
 <div class="color-box">
 <div class="circle phantom-black" title="Phantom Black"></div>
 <span>Đen Phantom</span>
@@ -1486,7 +1486,7 @@ Vasco Assistant nhận diện được các biểu tượng, ẩm thực vùng m
 <p>Is black your favourite colour? We know the type. Meet elegance in its purest form – classic black for those who love timeless style.</p>
 </div>
 <div class="swiper-slide" tabindex="0">
-<img "¡hola!"="" alt="Two purple-tinted Vasco Translators Q1 shown from the front and back against a background of purple nebula clouds. The front screen displays " and="" hello!"="" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/q1_small_plum.webp" ); ?>" translations."=""/>
+<img alt="Vasco Translator Q1 Mận Mystic" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/q1_small_plum.webp" ); ?>"/>
 <div class="color-box">
 <div class="circle mystic-plum" title="Mystic Plum"></div>
 <span>Mận Mystic</span>
@@ -1494,7 +1494,7 @@ Vasco Assistant nhận diện được các biểu tượng, ẩm thực vùng m
 <p>There’s something mysterious about this colour that simply draws you in. Probably not only you, which is a plus. A magnetic purple with subtle depth. Too late now, you’ve already been enchanted.</p>
 </div>
 <div class="swiper-slide" tabindex="0">
-<img "¡hola!"="" alt="Two red Vasco Translators Q1 shown from the front and back against a vibrant, textured red background. The front screen displays " and="" hello!"="" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/q1_small_pulse.webp" ); ?>" translations."=""/>
+<img alt="Vasco Translator Q1 Đỏ Scarlet" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/q1_small_pulse.webp" ); ?>"/>
 <div class="color-box">
 <div class="circle scarlet-pulse" title="Scarlet Pulse"></div>
 <span>Đỏ Scarlet</span>
@@ -1502,7 +1502,7 @@ Vasco Assistant nhận diện được các biểu tượng, ẩm thực vùng m
 <p>A colour with character – just like you. Coincidence? Stand out with this deep, energetic shade of red and enjoy a device that’s not only practical but downright beautiful. Now you can have it all.</p>
 </div>
 <div class="swiper-slide" tabindex="0">
-<img "¡hola!"="" alt="Two blue Vasco Translators Q1 shown from the front and back against a dark, textured ocean water background. The front screen displays " and="" hello!"="" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/q1_small_blue.webp" ); ?>" translations."=""/>
+<img alt="Vasco Translator Q1 Xanh Slate" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/q1_small_blue.webp" ); ?>"/>
 <div class="color-box">
 <div class="circle slate-blue" title="Slate Blue"></div>
 <span>Xanh Slate</span>
