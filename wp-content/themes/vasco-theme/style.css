@@ -426,16 +426,16 @@ Text Domain: vasco-theme
     .mobile-menu.open {
         display: block !important;
         position: fixed !important;
-        top: 85px !important;
+        top: 125px !important;
         left: 0 !important;
         right: 0 !important;
         bottom: 0 !important;
         width: 100vw !important;
-        height: calc(100vh - 85px) !important;
+        height: calc(100vh - 125px) !important;
         background: #ffffff !important;
         box-shadow: 0 10px 30px rgba(0,0,0,0.2) !important;
         z-index: 999999 !important;
-        padding: 30px 25px 20px 25px !important;
+        padding: 30px 25px 40px 25px !important;
         box-sizing: border-box !important;
         overflow-y: auto !important;
         -webkit-overflow-scrolling: touch !important;
@@ -446,8 +446,15 @@ Text Domain: vasco-theme
     .desktop-nav.show-mobile nav {
         display: flex !important;
         flex-direction: column !important;
-        gap: 16px !important;
+        gap: 20px !important;
+        padding-top: 25px !important;
         padding-bottom: 60px !important;
+    }
+
+    .desktop-nav.active .menu-item-wrapper:first-child,
+    .desktop-nav.open .menu-item-wrapper:first-child,
+    .desktop-nav.show-mobile .menu-item-wrapper:first-child {
+        margin-top: 35px !important;
     }
 
     .desktop-nav.active .menu-item-wrapper,
