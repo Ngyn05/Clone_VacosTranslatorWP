@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Clean Page page-business-healthcare.php
  *
@@ -24,7 +24,7 @@ get_header();
 <div class="doublebox-content">
 <h1 class="h1">Chăm sóc tốt hơn nhờ dịch thuật ngay lập tức tuân thủ HIPAA</h1>
 <div>
-<button class="btn btn-2xl btn-primary scrollToForm">[contact.text1.title]</button>
+<button class="btn btn-2xl btn-primary scrollToForm">LIÊN HỆ NGAY</button>
 </div>
 <svg class="svg-pseudo" color="" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
@@ -32,7 +32,7 @@ get_header();
 </div>
 </div>
 <div class="doublebox-absolute" id="img-change">
-<img alt="Một bác sĩ đang mỉm cười giải thích điều gì đó cho bệnh nhân đang ngồi trên bàn khám tại phòng khám." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/paramedics-healthcare.png" ); ?>"/>
+<img alt="Chăm sóc y tế với Vasco Translator" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/paramedics-healthcare.png" ); ?>"/>
 </div>
 </div>
 </section>
@@ -41,7 +41,8 @@ get_header();
 <div class="container">
 <h2 class="h2-notosans">Các tính năng của Vasco Translator V4 hỗ trợ NHÀ CUNG CẤP DỊCH VỤ Y TẾ</h2>
 <div class="youtube-section">
-<div class="youtube" data-alt="Minh họa cách sử dụng máy dịch Vasco, chẳng hạn khi dịch văn bản viết." data-embed="UxFSf1_YbJ4" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/b2b/Y tế/video.webp">
+<div class="video-holder" style="width:100%;max-width:800px;margin:0 auto 20px auto;border-radius:12px;overflow:hidden;">
+<img alt="Minh họa cách sử dụng máy dịch Vasco" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/paramedics-healthcare.png" ); ?>" style="width:100%;height:auto;display:block;border-radius:12px;"/>
 </div>
 <div class="flex-small-text">
 <p>112 ngôn ngữ trong tầm tay khi việc chăm sóc bệnh nhân là điều quan trọng nhất.</p>
@@ -54,31 +55,19 @@ get_header();
 <h2 class="h2-notosans">VASCO TRANSLATOR CÓ THỂ HỖ TRỢ CÁC CHUYÊN GIA Y TẾ NHƯ THẾ NÀO</h2>
 <div class="grid-section">
 <div class="card">
-<picture>
-<source media="(min-width: 700px)"/>
-<img alt="Nữ bác sĩ mỉm cười giải thích điều gì đó cho phụ huynh đang bế con trên đùi, với các bệnh nhân và nhân viên y tế khác ở phía sau."/>
-</picture>
+<img alt="Giao tiếp với bệnh nhân" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/paramedics-healthcare.png" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
 <h3 class="h2">Giao tiếp với bệnh nhân</h3>
-<p>Giao tiếp rõ ràng và chẩn đoán bệnh nhân hiệu quả hơn, bất kể ngôn ngữ họ sử dụng.
-					Bản dịch có thể được in dưới dạng PDF để lưu vào hồ sơ bệnh nhân.</p>
+<p>Giao tiếp rõ ràng và chẩn đoán bệnh nhân hiệu quả hơn, bất kể ngôn ngữ họ sử dụng. Bản dịch có thể được in dưới dạng PDF để lưu vào hồ sơ bệnh nhân.</p>
 </div>
 <div class="card card-bottom">
-<picture>
-<source media="(min-width: 700px)"/>
-<img alt="Cận cảnh một chiếc Vasco Translator V4 đang được bác sĩ sử dụng để dịch một bảng khảo sát y tế, với tay bác sĩ đang cầm thiết bị và văn bản trên màn hình có thể nhìn thấy rõ."/>
-</picture>
+<img alt="Dịch tài liệu" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/ces/card14.webp" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
 <h3 class="h2">Dịch tài liệu</h3>
-<p>Bệnh nhân và nhà cung cấp dịch vụ y tế nhanh chóng hiểu nhau nhờ các bản dịch chính xác trong 112 ngôn ngữ.
-					Camera tích hợp giúp việc này trở nên nhanh chóng và dễ dàng.</p>
+<p>Bệnh nhân và nhà cung cấp dịch vụ y tế nhanh chóng hiểu nhau nhờ các bản dịch chính xác trong 112 ngôn ngữ. Camera tích hợp giúp việc này trở nên nhanh chóng và dễ dàng.</p>
 </div>
 <div class="card">
-<picture>
-<source media="(min-width: 700px)"/>
-<img alt="Nữ bác sĩ đang giảng bài và trình bày điều gì đó trên màn hình máy chiếu, với khán giả đang lắng nghe ở phía sau."/>
-</picture>
+<img alt="Hợp tác ý nghĩa" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
 <h3 class="h2">Hợp tác ý nghĩa</h3>
-<p>Tận dụng tối đa các hội nghị và tạo thêm nhiều cơ hội kết nối bằng cách xóa bỏ khoảng cách
-					ngôn ngữ. Các hợp tác toàn cầu trở nên liền mạch hơn.</p>
+<p>Tận dụng tối đa các hội nghị và tạo thêm nhiều cơ hội kết nối bằng cách xóa bỏ khoảng cách ngôn ngữ. Các hợp tác toàn cầu trở nên liền mạch hơn.</p>
 </div>
 </div>
 </div>
@@ -86,18 +75,13 @@ get_header();
 <section class="doubleboxes">
 <div class="doublebox right" style="background-color: #D9ECEF; color: #D9ECEF;">
 <div class="doublebox-absolute">
-<img alt="Máy dịch Vasco M3 và V4 màu trắng." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/Y tế/b2b-ukrain.webp" ); ?>"/>
+<img alt="Hỗ trợ nhân đạo Ukraine" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/happy-people.webp" ); ?>"/>
 </div>
 <div class="container">
 <div class="doublebox-content">
 <h3 class="h2">Vasco Translator đã hỗ trợ các nạn nhân chiến tranh tại Ukraine như thế nào</h3>
-<p class="doublebox-text-bold">Vasco Translator đã đóng vai trò then chốt trong việc hỗ trợ các nạn nhân chiến tranh tại Ukraine. Chúng tôi đã cung cấp
-					khoảng 500 thiết bị máy dịch điện tử cho hơn 200 tổ chức trên toàn châu Âu. Các thiết bị này đóng vai trò
-					quan trọng trong việc thúc đẩy giao tiếp hiệu quả tại các bệnh viện, tổ chức NGO và các cơ quan khác đang hỗ trợ người tị nạn.</p>
-<p class="doublebox-text-thin">Bằng cách cho phép<a href="../features/translate-voice.html">giọng nói</a>, <a href="../features/translate-photos.html">hình ảnh</a>, <a href="../features/translate-text.html">văn bản</a>, và dịch trò chuyện nhóm, đặc biệt bằng tiếng Ukraina, các máy dịch này đã
-					xóa bỏ rào cản ngôn ngữ, giúp người tị nạn dễ dàng nhận được chăm sóc y tế, tham gia các buổi hội thảo
-					và tương tác trong đời sống hàng ngày. Sáng kiến này nhấn mạnh vai trò quan trọng của công nghệ
-					trong các cuộc khủng hoảng nhân đạo, minh chứng cho tác động của Vasco Translator trong việc cung cấp hỗ trợ giao tiếp thiết yếu trong suốt cuộc xung đột tại Ukraine.</p>
+<p class="doublebox-text-bold">Vasco Translator đã đóng vai trò then chốt trong việc hỗ trợ các nạn nhân chiến tranh tại Ukraine. Chúng tôi đã cung cấp khoảng 500 thiết bị máy dịch điện tử cho hơn 200 tổ chức trên toàn châu Âu.</p>
+<p class="doublebox-text-thin">Bằng cách cho phép giọng nói, hình ảnh, văn bản, và dịch trò chuyện nhóm, các máy dịch này đã xóa bỏ rào cản ngôn ngữ, giúp người tị nạn dễ dàng nhận được chăm sóc y tế.</p>
 <svg class="svg-pseudo" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
 </svg>
@@ -112,26 +96,26 @@ get_header();
 <h3 class="h1">Đây là lý do Vasco cung cấp những thiết bị máy dịch ngôn ngữ tốt nhất trên thị trường:</h3>
 <div class="grid-section">
 <div aria-labelledby="icon1-title" class="key" role="group" tabindex="0">
-<div><img aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/Y tế/insurance.svg" ); ?>"/>
+<div><img aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/key-features/key-section-4.svg" ); ?>"/>
 </div>
 <div>
 <h4 class="h2" id="icon1-title">An toàn dữ liệu tuân thủ HIPAA</h4>
 </div>
 </div>
 <div aria-labelledby="icon2-title" class="key" role="group" tabindex="0">
-<div><img aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/Y tế/goal-b2b.svg" ); ?>"/></div>
+<div><img aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/key-features/key-section-3.svg" ); ?>"/></div>
 <div>
 <h4 class="h2" id="icon2-title">Dịch với độ chính xác 96%</h4>
 </div>
 </div>
 <div aria-labelledby="icon3-title" class="key" role="group" tabindex="0">
-<div><img aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/Y tế/earth.svg" ); ?>"/></div>
+<div><img aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/key-features/key-section-3.svg" ); ?>"/></div>
 <div>
 <h4 class="h2" id="icon3-title">Khả năng hỗ trợ lên đến 112 ngôn ngữ</h4>
 </div>
 </div>
 <div aria-labelledby="icon4-title" class="key" role="group" tabindex="0">
-<div><img aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/Y tế/MT.svg" ); ?>"/></div>
+<div><img aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/key-features/key-section-4.svg" ); ?>"/></div>
 <div>
 <h4 class="h2" id="icon4-title">Chuyên môn ngôn ngữ theo yêu cầu</h4>
 </div>
@@ -139,7 +123,7 @@ get_header();
 </div>
 </div>
 <div class="btn-wrapper">
-<a class="btn btn-black btn-md" href="../features/index.html">thêm về các tính năng của Máy dịch</a>
+<a class="btn btn-black btn-md" href="<?php echo esc_url( home_url( "/features/" ) ); ?>">THÊM VỀ TÍNH NĂNG MÁY PHIÊN DỊCH</a>
 </div>
 </div>
 </section>
@@ -164,7 +148,7 @@ get_header();
 <label for="b2b-phonenumber">Số điện thoại<span class="asterisk">*</span></label>
 <input id="phone" inputmode="tel" name="b2b-phonenumber" placeholder="Nhập số điện thoại của bạn" required="" type="tel"/>
 </div>
-<input name="b2b-landingId" type="hidden" tế="" value="b2b-Y"/>
+<input name="b2b-landingId" type="hidden" value="b2b-y-te"/>
 <input id="freshdesk-form-g-recaptcha-response" name="g-recaptcha-response" type="hidden" value=""/>
 <input id="freshdesk-form-g-recaptcha-action" name="g-recaptcha-action" type="hidden" value="freshdesk_submit">
 <div aria-hidden="true" class="ve-hp">
@@ -174,10 +158,10 @@ get_header();
 <input name="ve_ts" type="hidden" value="1785226340"/>
 <p class="text-required"><span class="asterisk">*</span>Bắt buộc</p>
 <div class="gdpr-and-submit-wrapper">
-<p class="gdpr-text">Bên quản lý dữ liệu cá nhân là Vasco Electronics S.A. Bên quản lý xử lý dữ liệu cá nhân được cung cấp trong biểu mẫu này nhằm mục đích xử lý thư từ liên lạc, theo các quy định được quy định trong<a href="../privacy-policy.html" target="_blank">Chính sách bảo mật</a>.</p>
+<p class="gdpr-text">Bên quản lý dữ liệu cá nhân là Vasco Electronics S.A. Bên quản lý xử lý dữ liệu cá nhân được cung cấp trong biểu mẫu này nhằm mục đích xử lý thư từ liên lạc, theo các quy định được quy định trong <a href="<?php echo esc_url( home_url( "/privacy-policy/" ) ); ?>" target="_blank">Chính sách bảo mật</a>.</p>
 <button class="btn btn-md btn-primary" type="submit">Gửi</button>
 </div>
-</input></form>
+</form>
 <div class="freshdesk-confirmation-screen" id="freshdesk-confirmation-screen">
 <svg fill="none" height="150" viewbox="0 0 150 150" width="150" xmlns="http://www.w3.org/2000/svg">
 <path d="M105.639 49H126.919C131.917 49.0132 136.706 51.0045 140.24 54.5385C143.774 58.0726 145.766 62.8621 145.779 67.86V124.09C145.776 129.096 143.79 133.897 140.255 137.441C136.72 140.985 131.925 142.984 126.919 143H23.0788C18.0765 142.984 13.284 140.988 9.74964 137.448C6.21527 133.908 4.22666 129.112 4.21875 124.11V67.88C4.22667 62.8786 6.2156 58.084 9.75025 54.5456C13.2849 51.0072 18.0774 49.0132 23.0788 49H46.0788" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.111"></path>
@@ -196,17 +180,18 @@ get_header();
 <section aria-labelledby="vasco-products-heading" class="vasco-products" tabindex="0">
 <div class="container">
 <div class="products-flex">
-<h2 class="h2-notosans" id="vasco-products-heading">KHÁM PHÁ CÁC TÍNH NĂNG NÀY VÀ HƠN THẾ NỮA VỚI VASCO TRANSLATOR M3 VÀ VASCO TRANSLATOR V4</h2>
+<h2 class="h2-notosans" id="vasco-products-heading">KHÁM PHÁ CÁC TÍNH NĂNG NÀY VÀ HƠN THẾ NỮA VỚI VASCO TRANSLATOR V4</h2>
 <div class="products-wrapper">
 <div aria-roledescription="carousel" class="swiper swiper-products-slider" role="region">
 <div class="swiper-wrapper" role="list">
 <div aria-labelledby="product-14" class="swiper-slide" role="listitem" tabindex="0">
 <div class="box">
-<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/343-home_default/vasco-translator-v4.jpg" ); ?>"/>
+<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/343-home_default/a.jpg" ); ?>"/>
 <div class="product-description">
 <h3 aria-label="Vasco Translator V4" id="product-14" tabindex="0">Vasco Translator V4</h3>
-<p>[travel.gallery_of_products_side.product1.subtitle]</p>
+<p>Thiết bị máy phiên dịch ngôn ngữ cầm tay cao cấp</p>
 <a aria-label="Tìm hiểu thêm về Vasco Translator V4" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>" target="_blank">Tìm hiểu thêm</a>
+</div>
 </div>
 </div>
 </div>
@@ -270,38 +255,29 @@ get_header();
 <section class="numbers-section">
 <div class="container">
 <h2 class="h2-notosans text-center">Vasco qua những con số</h2>
-<div class="numbers-box">
-<div class="single-box">
-<img alt="biểu tượng số 1" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/Y tế/1.svg" ); ?>"/>
+<div class="numbers-box" style="display:flex;justify-content:space-around;gap:20px;text-align:center;margin-top:30px;">
+<div class="single-box" style="flex:1;">
+<div class="number-badge" style="font-size:3rem;font-weight:bold;color:#2B59C3;margin-bottom:10px;">#1</div>
 <p class="h2">Vị trí toàn cầu trong các thương hiệu máy dịch</p>
 </div>
-<div class="single-box">
-<img alt="biểu tượng số 16" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/Y tế/16.svg" ); ?>"/>
+<div class="single-box" style="flex:1;">
+<div class="number-badge" style="font-size:3rem;font-weight:bold;color:#2B59C3;margin-bottom:10px;">16+</div>
 <p class="h2">Số năm hoạt động trên thị trường</p>
 </div>
-<div class="single-box">
-<img alt="biểu tượng số 500" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/Y tế/500.svg" ); ?>"/>
+<div class="single-box" style="flex:1;">
+<div class="number-badge" style="font-size:3rem;font-weight:bold;color:#2B59C3;margin-bottom:10px;">500+</div>
 <p class="h2">Thiết bị cho các tổ chức NGO mượn miễn phí</p>
 </div>
 </div>
 </div>
 </section>
-<section class="notes-slider container">
-<h2 class="h2-notosans">[b2b_Giáo dục.quote.category_title]</h2>
-<div class="opinions-Y tế">
-<p class="quote-font">Xin chúc mừng bạn về chiếc máy dịch tốt nhất thế giới này! Không chỉ được thiết kế
-			đẹp mắt,
-			làm từ vật liệu chất lượng cao nhất và đóng gói hoàn hảo, mà nó còn hoạt động tuyệt vời! Kỹ thuật Ba Lan ở đỉnh
-			cao nhất!!!!</p>
-<p class="quote-font">Một số sinh viên cũng nhận thấy rằng mặc dù có các ứng dụng dịch thuật khác,
-			họ
-			không thực sự muốn sử dụng điện thoại thông minh cá nhân của mình và truyền tay nhau thiết bị (điều đôi khi
-			cần thiết). Một số người dùng cũng nhận thấy rằng thiết bị này không chỉ là một máy dịch tuyệt vời mà còn có thể rất
-			hữu ích trong việc học ngoại ngữ.</p>
-<p class="font-bold">Martin A. Malz, MD, LLC</p>
-<p class="font-bold">Prof. Gedeon Werner</p>
-<p class="quote-end">Nội khoa,<br/>Được cấp chứng nhận chuyên môn,<br/>Bác sĩ phẫu thuật dân sự Hoa Kỳ</p>
-<p>University of Quinnipiac</p>
+<section class="notes-slider container" style="text-align:center;max-width:800px;margin:40px auto;">
+<h2 class="h2-notosans text-center" style="margin-bottom:20px;">ĐÁNH GIÁ TỪ CÁC CHUYÊN GIA Y TẾ</h2>
+<div class="opinions-Y tế" style="line-height:1.8;">
+<p class="quote-font" style="font-size:1.1rem;font-style:italic;margin-bottom:16px;">"Xin chúc mừng bạn về chiếc máy dịch tốt nhất thế giới này! Không chỉ được thiết kế đẹp mắt, làm từ vật liệu chất lượng cao nhất và đóng gói hoàn hảo, mà nó còn hoạt động tuyệt vời! Kỹ thuật Ba Lan ở đỉnh cao nhất!!!!"</p>
+<p class="quote-font" style="font-size:1rem;font-style:italic;margin-bottom:20px;">"Một số sinh viên cũng nhận thấy rằng mặc dù có các ứng dụng dịch thuật khác, họ không thực sự muốn sử dụng điện thoại thông minh cá nhân của mình và truyền tay nhau thiết bị. Một số người dùng cũng nhận thấy rằng thiết bị này không chỉ là một máy dịch tuyệt vời mà còn có thể rất hữu ích trong việc học ngoại ngữ."</p>
+<p class="font-bold" style="font-weight:bold;margin-bottom:4px;">Martin A. Malz, MD, LLC | Prof. Gedeon Werner</p>
+<p class="quote-end" style="color:#666;font-size:0.9rem;">Nội khoa, Được cấp chứng nhận chuyên môn, Bác sĩ phẫu thuật dân sự Hoa Kỳ<br/>University of Quinnipiac</p>
 </div>
 </section>
 <hr/>

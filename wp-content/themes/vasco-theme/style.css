@@ -583,3 +583,88 @@ button[aria-controls*="video"] {
         display: block !important;
     }
 }
+
+/* Tutorials & How-It-Works Layout, Padding & Spacing Fixes */
+.tutorials {
+    padding: 60px 0 !important;
+}
+
+.tutorials h2.h2-notosans {
+    margin-bottom: 40px !important;
+    text-align: center !important;
+}
+
+.tutorials .tutorial-wrapper {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 40px !important;
+    padding: 40px 0 !important;
+    margin: 0 auto !important;
+    max-width: 1200px !important;
+    box-sizing: border-box !important;
+}
+
+.tutorials .tutorial-wrapper .video-wrapper,
+.tutorials .tutorial-wrapper img {
+    flex: 0 0 48% !important;
+    width: 48% !important;
+    max-width: 48% !important;
+    box-sizing: border-box !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+}
+
+.tutorials .tutorial-wrapper .video-wrapper video {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    border-radius: 12px !important;
+}
+
+.tutorials .tutorial-wrapper .tutorial-text-right,
+.tutorials .tutorial-wrapper .tutorial-text-left {
+    flex: 0 0 48% !important;
+    width: 48% !important;
+    max-width: 48% !important;
+    box-sizing: border-box !important;
+}
+
+.tutorials .tutorial-wrapper h2.h1 {
+    font-size: 1.875rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 16px !important;
+}
+
+.tutorials .tutorial-wrapper .tutorial-list {
+    margin-top: 16px !important;
+    padding-left: 20px !important;
+}
+
+.tutorials .tutorial-wrapper .tutorial-list li {
+    margin-bottom: 12px !important;
+    line-height: 1.6 !important;
+}
+
+.tutorials hr {
+    margin: 40px 0 !important;
+    border: 0 !important;
+    border-top: 1px solid #EFECE8 !important;
+}
+
+/* Fix Youtube Dark Block Overlay */
+.youtube-section .youtube,
+.youtube-top .youtube {
+    background-color: transparent !important;
+}
+
+/* Card Image Display Fix for B2B & Healthcare Pages */
+.how-vasco-section .grid-section .card img,
+.how-vasco-section .card picture img {
+    display: block !important;
+    width: 100% !important;
+    height: 200px !important;
+    object-fit: cover !important;
+    border-radius: 8px 8px 0 0 !important;
+}

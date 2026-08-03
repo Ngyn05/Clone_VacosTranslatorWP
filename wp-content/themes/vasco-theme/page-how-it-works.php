@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Clean Page page-how-it-works.php
  *
@@ -22,7 +22,7 @@ get_header();
 <div class="container">
 <div class="doublebox-content">
 <h1 class="h1">
-						See how easy it is to speak foreign languages with Vasco Translator
+						Xem máy phiên dịch Vasco giúp bạn giao tiếp ngoại ngữ dễ dàng như thế nào
 					</h1>
 <div>
 <a class="btn btn-2xl btn-primary" href="<?php echo esc_url( home_url( "/" ) ); ?>" id="btn-change">
@@ -62,119 +62,79 @@ get_header();
 </section>
 </section>
 <section class="tutorials">
-<h2 class="h2-notosans">tutorials</h2>
+<h2 class="h2-notosans">HƯỚNG DẪN SỬ DỤNG</h2>
 <div class="container tutorial-wrapper">
 <div class="video-wrapper">
-<video aria-describedby="video-desc2" autoplay="" data-setup="{}" id="how-it-works-speach-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/howitworks/directions-placeholder.webp" preload="none">
-<source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/howitworks/howitworks-directions.webm" ); ?>" type="video/webm"/>
-<source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/howitworks/howitworks-directions.mp4" ); ?>" type="video/mp4"/>
-<p class="vjs-no-js">
-					To view this video please enable JavaScript, and consider upgrading to a
-					web browser that
-					<a href="#" target="_blank">
-						supports HTML5 video
-					</a>
-</p>
-</video>
-
+<img alt="Hỏi đường bằng dịch giọng nói" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/voice.webp" ); ?>" style="width:100%;height:auto;display:block;border-radius:12px;"/>
 </div>
-<p class="sr-only" id="video-desc2">
-			A woman is talking to a taxi driver in a car, using voice translation to communicate.
-		</p>
 <div class="tutorial-text-right">
-<h2 class="h1">How to ask for directions with the <a href="./features/translate-voice.html">voice translation</a> feature</h2>
+<h2 class="h1">Hỏi đường bằng tính năng <a href="<?php echo esc_url( home_url( "/features/dich-giong-noi/" ) ); ?>">dịch giọng nói</a></h2>
 <ul class="tutorial-list">
-<li>Select the voice translation app</li>
-<li>Tap and hold the microphone icon to start speaking</li>
-<li>Once you release the button, the device will translate your statement for the interlocutor</li>
-<li>Press the microphone button when your interlocutor wants to speak back. Once you release it, you will hear the translation</li>
+<li>Chọn ứng dụng dịch giọng nói</li>
+<li>Nhấn và giữ biểu tượng micro để bắt đầu nói</li>
+<li>Thả nút ra, thiết bị sẽ dịch câu nói của bạn cho người đối diện</li>
+<li>Nhấn nút micro khi người đối diện muốn trả lời. Khi bạn thả ra, bạn sẽ nghe thấy bản dịch</li>
 </ul>
 </div>
 </div>
 <hr/>
 <div class="container tutorial-wrapper">
 <div class="tutorial-text-left">
-<h2 class="h1">How to read a foreign text</h2>
+<h2 class="h1">Cách đọc văn bản tiếng nước ngoài</h2>
 <ul class="tutorial-list">
-<li>Select the <a href="./features/translate-photos.html">photo translation</a> app</li>
-<li>Take a photo</li>
-<li>Wait as the Vasco Translator recognizes the language and gets you a translation in a blink of an eye</li>
+<li>Chọn ứng dụng <a href="<?php echo esc_url( home_url( "/features/dich-hinh-anh/" ) ); ?>">dịch hình ảnh</a></li>
+<li>Chụp một bức ảnh</li>
+<li>Chờ Vasco Translator nhận diện ngôn ngữ và trả về bản dịch trong chớp mắt</li>
 </ul>
 </div>
 <div class="video-wrapper">
-<video aria-describedby="video-desc3" autoplay="" data-setup="{}" id="how-it-works-photo-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/howitworks/restaurant-placeholder.webp" preload="none">
-<source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/howitworks/howitworks-restaurant.webm" ); ?>" type="video/webm"/>
-<source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/howitworks/howitworks-restaurant.mp4" ); ?>" type="video/mp4"/>
-<p class="vjs-no-js">
-					To view this video please enable JavaScript, and consider upgrading to a
-					web browser that
-					<a href="#" target="_blank">
-						supports HTML5 video
-					</a>
-</p>
-</video>
-
+<img alt="Cách đọc văn bản dịch hình ảnh" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/photo.webp" ); ?>" style="width:100%;height:auto;display:block;border-radius:12px;"/>
 </div>
-<p class="sr-only" id="video-desc3">
-			Two boys are using a translator device for text translation from a plaque on a sculpture.
-		</p>
 </div>
 <hr/>
 <div class="container tutorial-wrapper">
 <div class="video-wrapper">
-<video aria-describedby="video-desc4" autoplay="" data-setup="{}" id="how-it-works-text-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/howitworks/meaning-placeholder.webp" preload="none">
-<source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/howitworks/howitworks-meaning.webm" ); ?>" type="video/webm"/>
-<source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/howitworks/howitworks-meaning.mp4" ); ?>" type="video/mp4"/>
-<p class="vjs-no-js">
-					To view this video please enable JavaScript, and consider upgrading to a
-					web browser that
-					<a href="#" target="_blank">
-						supports HTML5 video
-					</a>
-</p>
-</video>
-
+<img alt="Tra cứu nghĩa từ dịch văn bản" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/text.webp" ); ?>" style="width:100%;height:auto;display:block;border-radius:12px;"/>
 </div>
-<p class="sr-only" id="video-desc4">
-			A translator device is being used to translate text by typing it in.
-		</p>
 <div class="tutorial-text-right">
-<h2 class="h1">How to check the meaning of the foreign word</h2>
+<h2 class="h1">Tra cứu nghĩa của từ tiếng nước ngoài</h2>
 <ul class="tutorial-list">
-<li>Select the <a href="./features/translate-text.html">text translation</a> app</li>
-<li>Enter the word or short phrase you wish to be translated</li>
-<li>Get a translation in your language right away</li>
+<li>Chọn ứng dụng <a href="<?php echo esc_url( home_url( "/features/dich-van-ban/" ) ); ?>">dịch văn bản</a></li>
+<li>Nhập từ hoặc cụm từ ngắn bạn muốn dịch</li>
+<li>Nhận ngay bản dịch bằng ngôn ngữ của bạn</li>
 </ul>
 </div>
 </div>
 <hr/>
 <div class="container tutorial-wrapper">
 <div class="tutorial-text-left">
-<h2 class="h1">How to chat with people who don’t speak your language</h2>
+<h2 class="h1">Trò chuyện với những người không nói cùng ngôn ngữ</h2>
 <ul class="tutorial-list">
-<li>Select the MultiTalk app</li>
-<li>Create or join an existing chat with up to 100 members</li>
-<li>Say out loud or type in messages in your mother language</li>
-<li>Wait as <a href="./features/translate-chat.html">MultiTalk</a> app translates all your messages and the ones you receive. All chat members can see &amp; hear messages in their own language</li>
+<li>Chọn ứng dụng MultiTalk</li>
+<li>Tạo hoặc tham gia cuộc trò chuyện nhóm lên đến 100 người</li>
+<li>Nói hoặc nhập tin nhắn bằng tiếng mẹ đẻ của bạn</li>
+<li>Ứng dụng <a href="<?php echo esc_url( home_url( "/features/dich-tro-truyen/" ) ); ?>">MultiTalk</a> sẽ dịch tất cả tin nhắn gửi và nhận. Mọi thành viên đều có thể xem &amp; nghe tin nhắn bằng ngôn ngữ của họ</li>
 </ul>
 </div>
-<img alt="Three people are standing, each holding a translator device in their hands." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/howitworks/chat.webp" ); ?>"/>
+<div class="video-wrapper">
+<img alt="Trò chuyện đa ngôn ngữ MultiTalk" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/q1/group.webp" ); ?>" style="width:100%;height:auto;display:block;border-radius:12px;"/>
+</div>
 </div>
 </section>
 <section aria-labelledby="key-features-heading" class="key-features-section">
 <div class="container">
 <div class="key-features-flex">
-<h2 class="h2-notosans">Major Vasco Translators features:</h2>
+<h2 class="h2-notosans">CÁC TÍNH NĂNG CHÍNH CỦA MÁY PHIÊN DỊCH VASCO:</h2>
 <div class="grid-section">
 <div aria-describedby="icon1-desc icon1-desc2" aria-labelledby="icon1-title" class="key" role="group" tabindex="0">
 <div>
 <img aria-hidden="true" height="100px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/key-features/key-section-4.svg" ); ?>" width="100px"/>
 </div>
 <div>
-<h3 class="h2" id="icon1-title">Free Connectivity</h3>
+<h3 class="h2" id="icon1-title">Kết nối miễn phí</h3>
 </div>
 <div>
-<p id="icon1-desc">Use it for translations tại gần 200 quốc gia</p>
+<p id="icon1-desc">Sử dụng dịch thuật tại gần 200 quốc gia</p>
 </div>
 </div>
 <div aria-describedby="icon2-desc" aria-labelledby="icon2-title" class="key" role="group" tabindex="0">
@@ -182,10 +142,10 @@ get_header();
 <img aria-hidden="true" height="100px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/key-features/key-section-3.svg" ); ?>" width="100px"/>
 </div>
 <div>
-<h3 class="h2" id="icon2-title">Several modes</h3>
+<h3 class="h2" id="icon2-title">Nhiều chế độ dịch</h3>
 </div>
 <div>
-<p id="icon2-desc">Translate voice, text on the photos, chat messages and more</p>
+<p id="icon2-desc">Dịch giọng nói, văn bản trên ảnh, tin nhắn trò chuyện và nhiều hơn nữa</p>
 </div>
 </div>
 <div aria-describedby="icon3-desc" aria-labelledby="icon3-title" class="key" role="group" tabindex="0">
@@ -193,10 +153,10 @@ get_header();
 <img aria-hidden="true" height="100px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/key-features/key-section-3.svg" ); ?>" width="100px"/>
 </div>
 <div>
-<h3 class="h2" id="icon3-title">Even 112 languages</h3>
+<h3 class="h2" id="icon3-title">Lên tới 112 ngôn ngữ</h3>
 </div>
 <div>
-<p id="icon3-desc">Hold a key to understand everyone you meet</p>
+<p id="icon3-desc">Chìa khóa để thấu hiểu mọi người bạn gặp</p>
 </div>
 </div>
 <div aria-describedby="icon4-desc" aria-labelledby="icon4-title" class="key" role="group" tabindex="0">
@@ -204,19 +164,19 @@ get_header();
 <img aria-hidden="true" height="100px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/howitworks/tutorials-key4.svg" ); ?>" width="100px"/>
 </div>
 <div>
-<h3 class="h2" id="icon4-title">User-friendly design</h3>
+<h3 class="h2" id="icon4-title">Thiết kế thân thiện</h3>
 </div>
 <div>
-<p id="icon4-desc">Rely on intuitive use, proven by renowned awards</p>
+<p id="icon4-desc">Sử dụng dễ dàng, trực quan, được chứng nhận bởi các giải thưởng lớn</p>
 </div>
 </div>
 </div>
 <div class="flex-box">
-<a class="btn btn-md btn-black" href="./features/index.html">
-					MORE ABOUT TRANSLATOR FEATURES
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/features/" ) ); ?>">
+					XEM THÊM VỀ TÍNH NĂNG
 				</a>
 <a class="btn btn-md btn-primary" href="<?php echo esc_url( home_url( "/" ) ); ?>">
-					Mua ngay
+					MUA NGAY
 				</a>
 </div>
 </div>
@@ -225,7 +185,7 @@ get_header();
 <section aria-labelledby="vasco-products-heading" class="vasco-products" tabindex="0">
 <div class="container">
 <div class="products-flex">
-<h2 class="h2-notosans" id="vasco-products-heading">Choose your model</h2>
+<h2 class="h2-notosans" id="vasco-products-heading">CHỌN DÒNG MÁY PHÙ HỢP VỚI BẠN</h2>
 <div class="products-wrapper">
 <div aria-roledescription="carousel" class="swiper swiper-products-slider" role="region">
 <div class="swiper-wrapper" role="list">
@@ -248,7 +208,7 @@ get_header();
 <div class="product-description">
 <h3 aria-label="m4.name]" id="product-62" tabindex="0">
 											Vasco Translator M4</h3>
-<p>Lightweight and easy-to-use pocket translator for everyone</p>
+<p>Máy phiên dịch bỏ túi nhỏ gọn, dễ sử dụng cho tất cả mọi người</p>
 <a aria-label="Tìm hiểu thêm Vasco Translator M4" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/translators/vasco-translator-m4/" ) ); ?>" target="_blank">
 											Tìm hiểu thêm
 										</a>
@@ -261,7 +221,7 @@ get_header();
 <div class="product-description">
 <h3 aria-label="v4.name]" id="product-14" tabindex="0">
 											Vasco Translator V4</h3>
-<p>Electronic instant translator device</p>
+<p>Máy phiên dịch tức thì màn hình lớn cao cấp</p>
 <a aria-label="Tìm hiểu thêm Vasco Translator V4" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>" target="_blank">
 											Tìm hiểu thêm
 										</a>
@@ -270,8 +230,8 @@ get_header();
 </div>
 </div>
 <div class="custom-navigation">
-<div class="swiper-button-prev btn-product-prev" data-label-prev="Previous slide"></div>
-<div class="swiper-button-next btn-product-next" data-label-next="Next slide"></div>
+<div class="swiper-button-prev btn-product-prev" data-label-prev="Slide trước"></div>
+<div class="swiper-button-next btn-product-next" data-label-next="Slide sau"></div>
 </div>
 </div>
 </div>
@@ -279,8 +239,8 @@ get_header();
 </div>
 </section>
 <section class="container more-inf">
-<h2 class="h1">Do you need more information?</h2>
-<p>We’ll be happy to hear from you!</p>
+<h2 class="h1">Bạn cần thêm thông tin?</h2>
+<p>Chúng tôi rất hân hạnh được hỗ trợ bạn!</p>
 <a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/contact/" ) ); ?>">LIÊN HỆ NGAY</a>
 </section>
 </div>
