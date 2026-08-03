@@ -252,12 +252,6 @@ get_header();
 </div>
 </div>
 </section>
-<div class="container">
-<div class="youtube-section">
-<h2 class="h2-notosans">Xem cách lắp đặt:</h2>
-<div class="youtube" data-alt="Dán một miếng kính bảo vệ lên Vasco Translator Q1." data-embed="yVFdHxGs9CU" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>q1-foil-placeholder.webp"></div>
-</div>
-</div>
 <hr/>
 <section class="gpsr-section">
 <div class="container">
