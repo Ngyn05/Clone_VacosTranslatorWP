@@ -14,9 +14,10 @@ if ( isset( $_SERVER['HTTP_X_FORWARDED_PROTO'] ) && strpos( $_SERVER['HTTP_X_FOR
 	$_SERVER['HTTPS'] = 'on';
 }
 
-$theme     = wp_get_theme( get_template() );
-$theme_ver = ( $theme && $theme->exists() ) ? $theme->get( 'Version' ) : false;
-define( 'VASCO_THEME_VERSION', $theme_ver ? $theme_ver : filemtime( get_template_directory() . '/style.css' ) );
+$style_file = get_template_directory() . '/style.css';
+$theme_data = file_exists( $style_file ) ? get_file_data( $style_file, array( 'Version' => 'Version' ) ) : array();
+$theme_ver  = ! empty( $theme_data['Version'] ) ? $theme_data['Version'] : filemtime( $style_file );
+define( 'VASCO_THEME_VERSION', $theme_ver );
 define( 'VASCO_THEME_DIR', get_template_directory() );
 define( 'VASCO_THEME_URI', get_template_directory_uri() );
 
