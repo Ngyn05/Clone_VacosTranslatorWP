@@ -2004,4 +2004,407 @@ button.add-to-cart:hover {
     }
 }
 
+/* Fallback & Image Protection System across all pages */
+img {
+    max-width: 100%;
+    height: auto;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
 
+img[src=""],
+img:not([src]) {
+    opacity: 0 !important;
+    min-height: 1px;
+}
+
+.product-cover-thumbnail-section img,
+.product-thumb-wrapper img,
+.swiper-slide img {
+    object-fit: contain !important;
+}
+
+/* ==========================================================================
+   VASCO INNOVATIONS LANDING PAGE - FULL CENTERED SYSTEM
+   ========================================================================== */
+
+/* 1. Hero Section Centered */
+.the_new-landing .hero {
+    padding: 0 !important;
+    background-color: transparent !important;
+    min-height: auto !important;
+}
+
+.the_new-landing .hero .doubleboxes {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+}
+
+.the_new-landing .hero .doublebox.left {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    margin: 0 auto !important;
+    max-width: 1200px !important;
+    width: 100% !important;
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    background-color: #6F61A5 !important;
+    position: relative !important;
+    box-shadow: 0 10px 30px rgba(111, 97, 165, 0.2) !important;
+}
+
+.the_new-landing .hero .doublebox.left .container {
+    width: 50% !important;
+    max-width: 50% !important;
+    padding: 60px 40px !important;
+    box-sizing: border-box !important;
+}
+
+.the_new-landing .hero .doublebox-content {
+    text-align: left !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.the_new-landing .hero .doublebox-content h1,
+.the_new-landing .hero .doublebox-content p {
+    color: #ffffff !important;
+}
+
+.the_new-landing .hero .doublebox-absolute {
+    position: relative !important;
+    width: 50% !important;
+    max-width: 50% !important;
+    height: 100% !important;
+    align-self: stretch !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+}
+
+.the_new-landing .hero .video-holder {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.the_new-landing .hero .video-holder img {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 440px !important;
+    object-fit: cover !important;
+    border-radius: 0 20px 20px 0 !important;
+}
+
+/* 2. Side-by-Side Content Blocks Centered (Max Width 1200px + Centered Items) */
+.db-containerized-section .container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+.db-containerized-section .db-container-wrapper {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 60px !important;
+    margin-bottom: 80px !important;
+}
+
+.db-containerized-section .media,
+.db-containerized-section .media .assets-wrapper {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.db-containerized-section .media video,
+.db-containerized-section .media img {
+    margin: auto !important;
+    align-self: center !important;
+    max-width: 100% !important;
+    height: auto !important;
+    border-radius: 20px !important;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* 3. Software Update Section Side-by-Side */
+.vasco-made-for .doublebox.left {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 40px !important;
+    padding: 40px !important;
+    border-radius: 20px !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08) !important;
+}
+
+.vasco-made-for .doublebox-content-custom-list {
+    flex: 1 !important;
+    color: #1e293b !important;
+}
+
+.vasco-made-for .doublebox-content-custom-list h3,
+.vasco-made-for .doublebox-content-custom-list h4,
+.vasco-made-for .doublebox-content-custom-list p,
+.vasco-made-for .doublebox-content-custom-list li {
+    color: #1e293b !important;
+}
+
+.vasco-made-for .doublebox-absolute.with-list {
+    position: relative !important;
+    width: 450px !important;
+    max-width: 100% !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+}
+
+/* 4. Centering 'Đây không phải là lời cuối cùng của chúng tôi' Section */
+.technologies-section-sec2-headers {
+    text-align: center !important;
+    padding: 40px 20px 20px 20px !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+.technologies-section-sec2-headers .h1 {
+    text-align: center !important;
+    margin: 0 auto !important;
+}
+
+.technologies-section.sec-2 {
+    max-width: 1200px !important;
+    margin: 0 auto 60px auto !important;
+    padding: 0 20px !important;
+}
+
+.technologies-section.sec-2 .h2-notosans,
+.technologies-section.sec-2 .btn-wrapper {
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    gap: 15px !important;
+    margin-bottom: 30px !important;
+}
+
+.technologies-section.sec-2 .slide .container {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 40px !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+.technologies-section.sec-2 .slide .media {
+    flex: 1 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.technologies-section.sec-2 .slide .media img {
+    max-width: 100% !important;
+    height: auto !important;
+    border-radius: 16px !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+}
+
+.technologies-section.sec-2 .slide .tech-info {
+    flex: 1 !important;
+    text-align: left !important;
+}
+
+/* 3. Software Update Section Side-by-Side */
+.vasco-made-for .doublebox.left {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 40px !important;
+    padding: 40px !important;
+    border-radius: 20px !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08) !important;
+}
+
+.vasco-made-for .doublebox-content-custom-list {
+    flex: 1 !important;
+    color: #1e293b !important;
+}
+
+.vasco-made-for .doublebox-content-custom-list h3,
+.vasco-made-for .doublebox-content-custom-list h4,
+.vasco-made-for .doublebox-content-custom-list p,
+.vasco-made-for .doublebox-content-custom-list li {
+    color: #1e293b !important;
+}
+
+.vasco-made-for .doublebox-absolute.with-list {
+    position: relative !important;
+    width: 450px !important;
+    max-width: 100% !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+}
+
+/* ==============================================
+   PAGE INITIATIVES - Social Impact Card Layout
+   ============================================== */
+
+/* Wrapper ngoài + background */
+.socialimpact-pages {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* Tiêu đề trang */
+.socialimpact-top {
+    text-align: center;
+    padding: 60px 20px 40px;
+    background: #fff;
+}
+
+.socialimpact-top .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.socialimpact-top .h1 {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.socialimpact-subtitle {
+    color: #666;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    text-align: center;
+}
+
+/* Wrapper xám bao quanh tất cả 3 khối */
+.socialimpact-card-wrapper {
+    background: #f2f3f5;
+    padding: 60px 20px;
+}
+
+/* Card xám trong (bo góc, shadow nhẹ) */
+.socialimpact-inner-card {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+/* Mỗi row: text 1 bên, ảnh 1 bên */
+.si-item {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    min-height: 380px;
+}
+
+/* Đảo chiều cho item right (ảnh trái, text phải) */
+.si-item--right {
+    flex-direction: row-reverse;
+}
+
+/* Phần chữ */
+.si-text {
+    flex: 1;
+    padding: 48px 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fff;
+}
+
+.si-text .h2 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.si-text .box-subtitle {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 14px;
+    font-weight: 500;
+}
+
+.si-text p {
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+
+.si-text ul {
+    margin: 0 0 24px 0;
+    padding-left: 20px;
+}
+
+.si-text ul li {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+/* Phần ảnh */
+.si-image {
+    flex: 0 0 45%;
+    width: 45%;
+    overflow: hidden;
+    position: relative;
+}
+
+.si-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* Đường kẻ ngăn cách giữa 3 khối */
+.si-divider {
+    margin: 0;
+    border: none;
+    border-top: 1px solid #e8e8e8;
+}
+
+/* Responsive tablet */
+@media (max-width: 991px) {
+    .si-item,
+    .si-item--right {
+        flex-direction: column !important;
+        min-height: auto;
+    }
+    .si-image {
+        flex: none;
+        width: 100%;
+        height: 260px;
+    }
+    .si-text {
+        padding: 32px 24px;
+    }
+}
+
+@media (max-width: 575px) {
+    .socialimpact-card-wrapper {
+        padding: 30px 12px;
+    }
+    .si-text {
+        padding: 24px 20px;
+    }
+}

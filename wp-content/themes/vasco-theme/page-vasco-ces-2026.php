@@ -55,18 +55,6 @@ get_header();
 </div>
 </section>
 </section>
-<section class="yt">
-<div class="container">
-<div aria-labelledby="yt-title" class="youtube-section">
-<h2 class="h1" id="yt-title">Tầm nhìn dẫn dắt chúng tôi</h2>
-<p>Câu chuyện của Vasco bắt đầu từ một câu hỏi duy nhất: Làm thế nào để giúp cả thế giới nói cùng một tiếng nói? Ý tưởng xóa bỏ rào cản ngôn ngữ được thúc đẩy bởi lòng can đảm theo đuổi điều mà khi đó tưởng như bất khả thi. Những con đường chúng tôi mở ra khi ấy đã nhanh chóng trở thành định hướng cho cả ngành công nghiệp. Và từ đó đến nay, chúng tôi vẫn không ngừng mở rộng giới hạn của giao tiếp—cách mạng nối tiếp cách mạng.</p>
-<p>Việc dịch ảnh, văn bản hay giọng nói có vẻ hiển nhiên với bạn ngày nay?
-Với chúng tôi, đó chính là lời khen lớn nhất.</p>
-<p class="yt-subtitle">Xem video của chúng tôi</p>
-<div class="youtube" data-alt="." data-embed="NTjPFMDkvdc" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/ces/placeholder-yt.webp">
-</div>
-</div>
-</div>
 </section>
 <section class="events-slider">
 <div class="container text-container">
@@ -477,7 +465,9 @@ Vẻ đẹp của sự đơn giản</p>
 </div>
 </section>
 <section class="technologies-section-sec2-headers">
-<h2 class="h1">Đây không phải là lời cuối cùng của chúng tôi</h2>
+<div class="container" style="max-width: 1200px; margin: 0 auto; text-align: center;">
+<h2 class="h1" style="text-align: center;">Đây không phải là lời cuối cùng của chúng tôi</h2>
+</div>
 </section>
 <section class="technologies-section sec-2">
 <h2 class="h2-notosans">Xem cách chúng tôi định hình ngày mai từ hôm nay</h2>

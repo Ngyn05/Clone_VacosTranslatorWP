@@ -1292,6 +1292,17 @@
         }
     }, true);
 
+    // Global Image Error Fallback Handler
+    document.addEventListener('error', function(e) {
+        if (e.target && e.target.tagName === 'IMG') {
+            var defaultPlaceholder = '<?php echo esc_url( VASCO_THEME_URI . "/assets/img/menu/megamenu_shop_img.webp" ); ?>';
+            if (e.target.src !== defaultPlaceholder) {
+                e.target.src = defaultPlaceholder;
+                e.target.style.objectFit = 'contain';
+            }
+        }
+    }, true);
+
     // Translate Payment Installment Text (Klarna / Sezzle / Afterpay / Square)
     function translatePaymentInstallments() {
         // Direct string replacements on all text nodes across DOM & Shadow DOM

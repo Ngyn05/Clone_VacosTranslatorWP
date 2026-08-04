@@ -47,51 +47,8 @@ get_header();
 </div>
 </div>
 <div class="doublebox-absolute" id="img-change">
-<img alt="Trao quyền cho đội ngũ quốc tế trong khu vực sản xuất" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/factories/b2bfactories_1.webp" ); ?>"/>
+<img alt="Trao quyền cho đội ngũ quốc tế trong khu vực sản xuất" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>"/>
 </div>
-</div>
-</section>
-<section class="trustedby-carousel">
-<div class="container">
-<h2 class="h2-notosans text-center">được tin dùng bởi</h2>
-<div aria-label="trình chiếu logo của các công ty đã tin tưởng chúng tôi" aria-roledescription="carousel" class="swiper swiper-carousel autoplay loop carousel-trustedby">
-<a class="sr-only focusable" href="#after-trustedby-carousel">Bỏ qua trình chiếu</a>
-<div class="swiper-wrapper">
-<div aria-labelledby="slide-label-unicef" class="swiper-slide" role="listitem" tabindex="0">
-<h3 class="sr-only" id="slide-label-unicef">unicef</h3>
-<img alt="" aria-hidden="true" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/TrustedBy/unicef.webp" ); ?>"/>
-</div>
-<div aria-labelledby="slide-label-la_generalitat_de_catalunya" class="swiper-slide" role="listitem" tabindex="0">
-<h3 class="sr-only" id="slide-label-la_generalitat_de_catalunya">la_generalitat_de_catalunya</h3>
-<img alt="" aria-hidden="true" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/TrustedBy/la_generalitat_de_catalunya.webp" ); ?>"/>
-</div>
-<div aria-labelledby="slide-label-mrg" class="swiper-slide" role="listitem" tabindex="0">
-<h3 class="sr-only" id="slide-label-mrg">mrg</h3>
-<img alt="" aria-hidden="true" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/TrustedBy/mrg.webp" ); ?>"/>
-</div>
-<div aria-labelledby="slide-label-red_cross" class="swiper-slide" role="listitem" tabindex="0">
-<h3 class="sr-only" id="slide-label-red_cross">red_cross</h3>
-<img alt="" aria-hidden="true" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/TrustedBy/red_cross.webp" ); ?>"/>
-</div>
-<div aria-labelledby="slide-label-shell" class="swiper-slide" role="listitem" tabindex="0">
-<h3 class="sr-only" id="slide-label-shell">shell</h3>
-<img alt="" aria-hidden="true" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/TrustedBy/shell.webp" ); ?>"/>
-</div>
-<div aria-labelledby="slide-label-who" class="swiper-slide" role="listitem" tabindex="0">
-<h3 class="sr-only" id="slide-label-who">who</h3>
-<img alt="" aria-hidden="true" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/TrustedBy/who.webp" ); ?>"/>
-</div>
-</div>
-<div class="swiper-button-prev btn-carousel-prev" data-label-prev="Slide trước"></div>
-<div class="swiper-button-next btn-carousel-next" data-label-next="Slide tiếp theo"></div>
-</div>
-<div class="stop-autoplay-carousel">
-<button class="btn btn-md btn-stop-autoplay" data-text-button-pause="dừng tự động chạy trình chiếu" data-text-button-resume="tiếp tục tự động chạy trình chiếu">
-<span data-text-pause="Tạm dừng" data-text-resume="Tiếp tục">Tạm dừng</span>
-<img alt="" aria-hidden="true" height="24" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/pause.svg" ); ?>" width="24"/>
-</button>
-</div>
-<div id="after-trustedby-carousel"></div>
 </div>
 </section>
 <section class="how-vasco-section">
@@ -99,26 +56,17 @@ get_header();
 <h2 class="h2-notosans">Dịch thuật đột phá cho khu vực sản xuất của bạn</h2>
 <div class="grid-section">
 <div class="card">
-<picture>
-<source media="(min-width: 700px)"/>
-<img alt="Vận hành tinh gọn" height="129px" width="300px"/>
-</picture>
+<img alt="Vận hành tinh gọn" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
 <h3 class="h2">Vận hành tinh gọn</h3>
 <p>Xóa bỏ rào cản giao tiếp trong các giai đoạn sản xuất quan trọng—từ lập kế hoạch đến kiểm soát chất lượng. Đảm bảo hiểu rõ các quy trình an toàn, hướng dẫn vận hành và yêu cầu tuân thủ.</p>
 </div>
 <div class="card card-bottom">
-<picture>
-<source media="(min-width: 700px)"/>
-<img alt="Nâng cao an toàn và tuân thủ" height="129px" width="300px"/>
-</picture>
+<img alt="Nâng cao an toàn và tuân thủ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hitchhiker-travel.png" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
 <h3 class="h2">Nâng cao an toàn và tuân thủ</h3>
 <p>Trang bị cho đội ngũ lao động di cư và quốc tế đa dạng của bạn công cụ đa ngôn ngữ. Giúp họ có khả năng báo cáo sự cố hiệu quả, hiểu quy trình an toàn và tuân theo các quy định.</p>
 </div>
 <div class="card">
-<picture>
-<source media="(min-width: 700px)"/>
-<img alt="Tăng cường hòa nhập lực lượng lao động" height="129px" width="300px"/>
-</picture>
+<img alt="Tăng cường hòa nhập lực lượng lao động" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/happy-people.webp" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
 <h3 class="h2">Tăng cường hòa nhập lực lượng lao động</h3>
 <p>Thúc đẩy sự hợp tác và gắn kết mạnh mẽ hơn giữa các đội ngũ sản xuất đa ngôn ngữ của bạn. Cho phép quá trình hội nhập, đào tạo và phối hợp hàng ngày diễn ra liền mạch.</p>
 </div>
@@ -166,7 +114,7 @@ get_header();
 </div>
 </div>
 <div class="doublebox-absolute" id="img-change">
-<img alt="Trao quyền cho tổ chức của bạn với Vasco Translator V4" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/Y tếnew/b2bY tế_8.webp" ); ?>"/>
+<img alt="Trao quyền cho tổ chức của bạn với Vasco Translator V4" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>"/>
 </div>
 </div>
 </section>
@@ -180,41 +128,41 @@ get_header();
 <div class="features-miniatures">
 <div class="align-items-center description-icons">
 <button aria-labelledby="feature-title-0" class="description-icon active" data-id="0" role="button" tabindex="0" type="button">
-<img alt="Nhận diện giọng nói chính xác" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/features/precise_speech_recognition.svg" ); ?>" width="64px"/>
+<img alt="Nhận diện giọng nói chính xác" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/mic.svg" ); ?>" width="64px"/>
 <p>Nhận diện giọng nói chính xác</p>
 </button>
 <button aria-labelledby="feature-title-1" class="description-icon" data-id="1" role="button" tabindex="0" type="button">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/features/effortless_operation.svg" ); ?>" width="64px"/>
+<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/touch.svg" ); ?>" width="64px"/>
 <p>Vận hành dễ dàng</p>
 </button>
 <button aria-labelledby="feature-title-2" class="description-icon" data-id="2" role="button" tabindex="0" type="button">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/features/long-lasting_battery.svg" ); ?>" width="64px"/>
+<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/battery.svg" ); ?>" width="64px"/>
 <p>Pin bền lâu</p>
 </button>
 <button aria-labelledby="feature-title-3" class="description-icon" data-id="3" role="button" tabindex="0" type="button">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/features/natural_pronunciation.svg" ); ?>" width="64px"/>
+<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/translation.svg" ); ?>" width="64px"/>
 <p>Phát âm rõ ràng, tự nhiên</p>
 </button>
 <button aria-labelledby="feature-title-4" class="description-icon" data-id="4" role="button" tabindex="0" type="button">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/features/unlimited_connectivity.svg" ); ?>" width="64px"/>
+<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/internet.svg" ); ?>" width="64px"/>
 <p>Kết nối miễn phí trọn đời</p>
 </button>
 </div>
 <div class="description-icons">
 <button aria-labelledby="feature-title-5" class="description-icon" data-id="5" role="button" tabindex="0" type="button">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/features/multi-language_support.svg" ); ?>" width="64px"/>
+<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/globe.svg" ); ?>" width="64px"/>
 <p>Hỗ trợ đa ngôn ngữ</p>
 </button>
 <button aria-labelledby="feature-title-6" class="description-icon" data-id="6" role="button" tabindex="0" type="button">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/features/durable_design.svg" ); ?>" width="64px"/>
+<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/screen.svg" ); ?>" width="64px"/>
 <p>Thiết kế bền bỉ, gọn nhẹ</p>
 </button>
 <button aria-labelledby="feature-title-7" class="description-icon" data-id="7" role="button" tabindex="0" type="button">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/features/seamless_document_translation.svg" ); ?>" width="64px"/>
+<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/photo.svg" ); ?>" width="64px"/>
 <p>Dịch tài liệu tức thì</p>
 </button>
 <button aria-labelledby="feature-title-8" class="description-icon" data-id="8" role="button" tabindex="0" type="button">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/features/languageskills.svg" ); ?>" width="64px"/>
+<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/learn.svg" ); ?>" width="64px"/>
 <p>Nâng cao kỹ năng ngôn ngữ</p>
 </button>
 </div>
@@ -223,58 +171,48 @@ get_header();
 <div class="swiper swiper-features" id="swiper-features">
 <div class="swiper-wrapper">
 <div aria-labelledby="feature-title-0" class="swiper-slide active" data-feature="0" role="button" tabindex="0">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/features/precise_speech_recognition.svg" ); ?>" width="64px"/>
+<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/mic.svg" ); ?>" width="64px"/>
 <p class="feature-title" id="feature-title-0">Nhận diện giọng nói chính xác</p>
 <p>Công nghệ khử tiếng ồn tiên tiến của chúng tôi vẫn dịch chính xác ngay cả trong môi trường công nghiệp ồn ào, giảm 99% tiếng ồn xung quanh để giao tiếp hiệu quả tại khu vực sản xuất.</p>
 </div>
 <div aria-labelledby="feature-title-1" class="swiper-slide" data-feature="1" role="button" tabindex="0">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/features/effortless_operation.svg" ); ?>" width="64px"/>
+<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/touch.svg" ); ?>" width="64px"/>
 <p class="feature-title" id="feature-title-1">Vận hành dễ dàng</p>
 <p>Với tính năng dịch chỉ bằng một nút bấm, Vasco Translator V4 giúp tiết kiệm thời gian quý báu trong môi trường làm việc với tốc độ cao. Thiết kế trực quan cho phép người lao động tập trung vào công việc mà không phải bận tâm về công nghệ phức tạp.</p>
 </div>
 <div aria-labelledby="feature-title-2" class="swiper-slide" data-feature="2" role="button" tabindex="0">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/features/long-lasting_battery.svg" ); ?>" width="64px"/>
-<p class="feature-title" id="feature-title-2">
-									Pin bền lâu
-								</p>
+<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/battery.svg" ); ?>" width="64px"/>
+<p class="feature-title" id="feature-title-2">Pin bền lâu</p>
 <p>Với thời lượng pin lên đến 180 giờ, Vasco Translator V4 được thiết kế để hoạt động liên tục qua nhiều ca làm việc mà không bị gián đoạn, mang lại hỗ trợ dịch thuật đáng tin cậy trong suốt những ngày làm việc dài.</p>
 </div>
 <div aria-labelledby="feature-title-3" class="swiper-slide" data-feature="3" role="button" tabindex="0">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/features/natural_pronunciation.svg" ); ?>" width="64px"/>
-<p class="feature-title" id="feature-title-3">
-									Phát âm rõ ràng, tự nhiên
-								</p>
+<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/translation.svg" ); ?>" width="64px"/>
+<p class="feature-title" id="feature-title-3">Phát âm rõ ràng, tự nhiên</p>
 <p>Đạt được bản dịch chính xác với cách phát âm tự nhiên như người bản xứ, giúp các đội ngũ đa dạng hiểu nhau rõ hơn và xây dựng sự tin tưởng.</p>
 </div>
 <div aria-labelledby="feature-title-4" class="swiper-slide" data-feature="4" role="button" tabindex="0">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/features/unlimited_connectivity.svg" ); ?>" width="64px"/>
-<p class="feature-title" id="feature-title-4">
-									Kết nối miễn phí trọn đời
-								</p>
+<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/internet.svg" ); ?>" width="64px"/>
+<p class="feature-title" id="feature-title-4">Kết nối miễn phí trọn đời</p>
 <p>Luôn kết nối tại gần 200 quốc gia với thẻ SIM tích hợp sẵn, cung cấp Internet miễn phí không giới hạn cho việc dịch thuật. Không cần kết nối Wi-Fi, đảm bảo quy trình làm việc liền mạch.</p>
 </div>
 <div aria-labelledby="feature-title-5" class="swiper-slide" data-feature="5" role="button" tabindex="0">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/features/multi-language_support.svg" ); ?>" width="64px"/>
+<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/globe.svg" ); ?>" width="64px"/>
 <p class="feature-title" id="feature-title-5">Hỗ trợ đa ngôn ngữ</p>
 <p>Truy cập 10 công cụ dịch thuật chất lượng cao cho 110+ ngôn ngữ. Mỗi cặp ngôn ngữ được chỉ định công cụ dịch tối ưu nhất cho kết quả chính xác, khác với các ứng dụng dịch trực tuyến thông thường chỉ dựa vào 1 công cụ.</p>
 </div>
 <div aria-labelledby="feature-title-6" class="swiper-slide" data-feature="6" role="button" tabindex="0">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/features/durable_design.svg" ); ?>" width="64px"/>
+<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/screen.svg" ); ?>" width="64px"/>
 <p class="feature-title" id="feature-title-6">Thiết kế bền bỉ, gọn nhẹ</p>
 <p>Được thiết kế cho điều kiện khắc nghiệt, Vasco Translator V4 chống bụi, chống va đập và chống nước, lý tưởng cho môi trường sản xuất.</p>
 </div>
 <div aria-labelledby="feature-title-7" class="swiper-slide" data-feature="7" role="button" tabindex="0">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/features/seamless_document_translation.svg" ); ?>" width="64px"/>
-<p class="feature-title" id="feature-title-7">
-									Dịch tài liệu tức thì
-								</p>
+<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/photo.svg" ); ?>" width="64px"/>
+<p class="feature-title" id="feature-title-7">Dịch tài liệu tức thì</p>
 <p>Dễ dàng dịch các hướng dẫn an toàn, chỉ dẫn vận hành và tài liệu đào tạo với tính năng Dịch hình ảnh của chúng tôi. Hỗ trợ hơn 110 ngôn ngữ để giao tiếp hiệu quả tại nơi làm việc.</p>
 </div>
 <div aria-labelledby="feature-title-8" class="swiper-slide" data-feature="8" role="button" tabindex="0">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/features/languageskills.svg" ); ?>" width="64px"/>
-<p class="feature-title" id="feature-title-8">
-									Nâng cao kỹ năng ngôn ngữ
-								</p>
+<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/learn.svg" ); ?>" width="64px"/>
+<p class="feature-title" id="feature-title-8">Nâng cao kỹ năng ngôn ngữ</p>
 <p>Hỗ trợ đội ngũ của bạn xây dựng vốn từ vựng cơ bản bằng 28 ngôn ngữ.</p>
 </div>
 </div>
@@ -286,15 +224,11 @@ get_header();
 </div>
 </div>
 </div>
-</div>
 </section>
 <section class="image-text-section type-gray">
 <div class="container image-text-section-wrapper">
 <div class="image-section">
-<picture>
-<source media="(min-width: 992px)"/>
-<img alt="Tinh gọn sản xuất và nâng cao an toàn với Vasco Translator V4" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/factories/b2bfactories_9-2.webp" ); ?>"/>
-</picture>
+<img alt="Tinh gọn sản xuất và nâng cao an toàn với Vasco Translator V4" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>"/>
 </div>
 <div class="text-section">
 <h2 class="h1">Tinh gọn sản xuất và nâng cao an toàn với Vasco Translator V4</h2>

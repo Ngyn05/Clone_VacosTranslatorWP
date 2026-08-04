@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Clean Page page-meet-vasco.php
  *
@@ -28,9 +28,9 @@ get_header();
 </div>
 </div>
 <div class="js-content-wrapper" id="content-wrapper">
-<div class="meet-vasco-title-wrapper">
-<div class="container">
-<h1 class="h1">Gặp Gỡ Vasco</h1>
+<div class="meet-vasco-title-wrapper" style="text-align:center;padding:40px 20px 20px;max-width:1200px;margin:0 auto;">
+<div class="container" style="max-width:1200px;margin:0 auto;text-align:center;">
+<h1 class="h1" style="text-align:center;">Gặp Gỡ Vasco</h1>
 </div>
 </div>
 <section class="doubleboxes">
@@ -57,15 +57,14 @@ get_header();
 <source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.mp4" ); ?>" type="video/mp4"/>
 <img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.webp" ); ?>" alt="Vasco Translator" style="width:100%;height:100%;object-fit:cover;"/>
 </video>
-
-<p class="sr-only" id="video-desc1">Video mở đầu với cảnh một người đàn ông xin đi nhờ xe và sử dụng Vasco Translator để giao tiếp với tài xế. Tiếp theo, một người phụ nữ tại khu chợ dùng thiết bị để trò chuyện với người bán hàng. Ở cảnh sau, một người đàn ông đang trò chuyện với một ngư dân địa phương. Sau đó, một cặp vợ chồng lớn tuổi được thấy trong nhà hàng, sử dụng tính năng dịch hình ảnh để đọc thực đơn. Khoảnh khắc tiếp theo là một người phụ nữ nói chuyện với tài xế taxi bằng máy phiên dịch. Video kết thúc với cảnh một cặp đôi dịch văn bản từ một bảng thông tin.</p>
+<p class="sr-only" id="video-desc1">Video mo dau voi canh mot nguoi dan ong xin di nho xe va su dung Vasco Translator de giao tiep voi tai xe.</p>
 </div>
 </div>
 </div>
 </section>
-<section class="doublebox-features" id="more-info">
-<div class="container">
-<h2 class="h2-notosans" id="benefits-title">ĐIỀU GÌ KHIẾN VASCO TRANSLATOR KHÁC BIỆT SO VỚI CÁC MÁY PHIÊN DỊCH VÀ ỨNG DỤNG KHÁC</h2>
+<section class="doublebox-features" id="more-info" style="max-width:1200px;margin:0 auto;padding:60px 20px;">
+<div class="container" style="max-width:1200px;margin:0 auto;">
+<h2 class="h2-notosans" id="benefits-title" style="text-align:center;margin-bottom:40px;">ĐIỀU GÌ KHIẾN VASCO TRANSLATOR KHÁC BIỆT SO VỚI CÁC MÁY PHIÊN DỊCH VÀ ỨNG DỤNG KHÁC</h2>
 <div aria-labelledby="benefits-title" class="box-grid" role="group">
 <div class="box-left-wrapper">
 <img alt="Hình ảnh nhìn nghiêng các thiết bị Vasco: Vasco Translator V4, Q1, M4 và E1 được trưng bày cạnh nhau." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/translators.webp" ); ?>"/>
@@ -446,9 +445,9 @@ with other Vasco devices" data-product-name="E1">
 </svg>
 </div>
 </section>
-<section aria-labelledby="vasco-numbers-heading" class="vasco-numbers-section">
-<div class="container">
-<h2 class="h2-notosans" id="vasco-numbers-heading">Reasons to choose Vasco Translator</h2>
+<section aria-labelledby="vasco-numbers-heading" class="vasco-numbers-section" style="max-width:100%;">
+<div class="container" style="max-width:1200px;margin:0 auto;">
+<h2 class="h2-notosans" id="vasco-numbers-heading" style="text-align:center;">Reasons to choose Vasco Translator</h2>
 <div class="vasco-numbers-wrapper" role="list">
 <div class="vasco-numbers-single-wrapper" role="listitem" tabindex="0">
 <div class="number-paragraph">

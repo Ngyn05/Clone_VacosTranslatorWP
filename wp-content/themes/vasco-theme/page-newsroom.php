@@ -43,7 +43,7 @@ get_header();
 <div class="doublebox-content">
 <h2 class="h1">Đọc về các sản phẩm, đổi mới của Vasco và mọi điều quan trọng với chúng tôi</h2>
 <div>
-<a aria-controls="Tin tức-anchor" class="btn btn-2xl btn-primary" href="#Tin tức-anchor" id="Tin tức-anchor-btn">liên hệ với chúng tôi</a>
+<a aria-controls="Tin-tuc-anchor" class="btn btn-2xl btn-primary" href="#Tin-tuc-anchor" id="Tin-tuc-anchor-btn">Liên hệ với chúng tôi</a>
 </div>
 <svg class="svg-pseudo" color="" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
@@ -51,45 +51,51 @@ get_header();
 </div>
 </div>
 <div class="doublebox-absolute" id="img-change">
-<img alt="Vasco Translator V4" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/Tin tức/Tin tức-main.webp" ); ?>"/>
+<img alt="Phòng tin tức Vasco" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/landings/newsroom/newsroom-main.webp' ); ?>" style="width:100%;height:100%;object-fit:cover;"/>
 </div>
 </div>
 </section>
 </section>
-<section class="how-vasco-section">
-<div class="how-vasco-flex container">
-<h2 class="h2-notosans">Tài liệu quan hệ công chúng từ Vasco</h2>
-<div class="grid-section">
-<div class="card">
-<picture>
-<source media="(min-width: 700px)"/>
-<img alt="Di chuyển qua sân bay ở nước ngoài"/>
+<section class="how-vasco-section" style="max-width:1200px;margin:0 auto;padding:60px 20px;">
+<div class="how-vasco-flex container" style="max-width:1200px;margin:0 auto;">
+<h2 class="h2-notosans" style="text-align:center;margin-bottom:40px;">Tài liệu quan hệ công chúng từ Vasco</h2>
+<div class="grid-section" style="display:grid;grid-template-columns:repeat(3,1fr);gap:30px;">
+<div class="card" style="background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.08);display:flex;flex-direction:column;">
+<picture style="width:100%;height:200px;overflow:hidden;display:block;">
+<source media="(min-width: 700px)" srcset="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/landings/newsroom/newsroom-news.webp' ); ?>"/>
+<img alt="Tin tức Vasco" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/landings/newsroom/newsroom-news.webp' ); ?>" style="width:100%;height:200px;object-fit:cover;"/>
 </picture>
-<h3 class="h2">Tin tức</h3>
-<p>Tại đây bạn sẽ tìm thấy các tin tức và sự kiện hiện tại trong hoạt động của công ty</p>
-<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/" ) ); ?>">đọc thêm</a>
+<div style="padding:24px;flex:1;display:flex;flex-direction:column;">
+<h3 class="h2" style="margin-bottom:12px;">Tin tức</h3>
+<p style="flex:1;">Tại đây bạn sẽ tìm thấy các tin tức và sự kiện hiện tại trong hoạt động của công ty</p>
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/" ) ); ?>" style="margin-top:16px;align-self:flex-start;">Đọc thêm</a>
 </div>
-<div class="card card-bottom">
-<picture>
-<source media="(min-width: 700px)"/>
-<img alt="Hiểu thực đơn của một nhà hàng nước ngoài"/>
-</picture>
-<h3 class="h2">Thông cáo báo chí</h3>
-<p>Tại đây bạn sẽ tìm thấy các tài liệu chúng tôi gửi cho truyền thông: thông cáo báo chí và báo cáo</p>
-<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/" ) ); ?>">đọc thêm</a>
 </div>
-<div class="card">
-<picture>
-<source media="(min-width: 700px)"/>
-<img alt="Cảm thấy như người bản xứ tại một quốc gia nước ngoài"/>
+<div class="card card-bottom" style="background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.08);display:flex;flex-direction:column;">
+<picture style="width:100%;height:200px;overflow:hidden;display:block;">
+<source media="(min-width: 700px)" srcset="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/landings/newsroom/newsroom-press.webp' ); ?>"/>
+<img alt="Thông cáo báo chí Vasco" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/landings/newsroom/newsroom-press.webp' ); ?>" style="width:100%;height:200px;object-fit:cover;"/>
 </picture>
-<h3 class="h2">Bộ tài liệu truyền thông</h3>
-<p>Tại đây bạn có thể tải xuống:</p>
-<ul>
+<div style="padding:24px;flex:1;display:flex;flex-direction:column;">
+<h3 class="h2" style="margin-bottom:12px;">Thông cáo báo chí</h3>
+<p style="flex:1;">Tại đây bạn sẽ tìm thấy các tài liệu chúng tôi gửi cho truyền thông: thông cáo báo chí và báo cáo</p>
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/" ) ); ?>" style="margin-top:16px;align-self:flex-start;">Đọc thêm</a>
+</div>
+</div>
+<div class="card" style="background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.08);display:flex;flex-direction:column;">
+<picture style="width:100%;height:200px;overflow:hidden;display:block;">
+<source media="(min-width: 700px)" srcset="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/landings/newsroom/newsroom-mediakit.webp' ); ?>"/>
+<img alt="Bộ tài liệu truyền thông Vasco" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/landings/newsroom/newsroom-mediakit.webp' ); ?>" style="width:100%;height:200px;object-fit:cover;"/>
+</picture>
+<div style="padding:24px;flex:1;display:flex;flex-direction:column;">
+<h3 class="h2" style="margin-bottom:12px;">Bộ tài liệu truyền thông</h3>
+<p style="flex:1;">Tại đây bạn có thể tải xuống:</p>
+<ul style="margin:8px 0;">
 <li><a download="Logo pack" href="./downloads/Newsroom-logos.zip" target="_blank">Bộ logo</a></li>
 <li><a download="Press kit" href="#" target="_blank">Bộ tài liệu báo chí</a></li>
 <li><a download="Photos" href="./downloads/Newsroom-photos.zip" target="_blank">Hình ảnh</a></li>
 </ul>
+</div>
 </div>
 </div>
 </div>
@@ -273,15 +279,15 @@ get_header();
 </div>
 </div>
 </section>
-<section aria-labelledby="Tin tức-contact-heading" class="Tin tức-contact" id="Tin tức-anchor" tabindex="-1">
-<div class="container">
-<h2 class="h2-notosans" id="Tin tức-contact-heading">Bạn cần thêm thông tin? hãy liên hệ với chúng tôi</h2>
-<div class="contact-box-wrapper">
-<div class="contact-box-single">
-<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/Tin tức/michał_sikora-photo.webp" ); ?>"/>
-<h3 class="h2">Michał Sikora</h3>
-<p>PR &amp; Truyền thông</p>
-<a href="mailto:m.sikora@vasco-electronics.com">m.sikora@vasco-electronics.com</a>
+<section aria-labelledby="newsroom-contact-heading" class="Tin-tuc-contact" id="Tin-tuc-anchor" tabindex="-1" style="background:#f5f6fa;padding:60px 20px;">
+<div class="container" style="max-width:1200px;margin:0 auto;text-align:center;">
+<h2 class="h2-notosans" id="newsroom-contact-heading" style="text-align:center;margin-bottom:40px;">Bạn cần thêm thông tin? Hãy liên hệ với chúng tôi</h2>
+<div class="contact-box-wrapper" style="display:flex;justify-content:center;gap:40px;flex-wrap:wrap;">
+<div class="contact-box-single" style="background:#fff;border-radius:16px;padding:32px;box-shadow:0 4px 20px rgba(0,0,0,0.08);text-align:center;min-width:260px;">
+<img alt="Michał Sikora - PR & Truyền thông" aria-hidden="false" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/menu/megamenu_about_us_img1.webp' ); ?>" style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin-bottom:16px;"/>
+<h3 class="h2" style="margin-bottom:8px;">Michał Sikora</h3>
+<p style="color:#666;margin-bottom:12px;">PR &amp; Truyền thông</p>
+<a href="mailto:m.sikora@vasco-electronics.com" style="color:#3E5AEE;font-weight:600;">m.sikora@vasco-electronics.com</a>
 </div>
 </div>
 </div>

@@ -196,9 +196,9 @@
 										<div class="megamenu-column-wrapper megamenu-column-image">
 											<a href="<?php echo esc_url( home_url( "/translators/vasco-translator-m4/" ) ); ?>" role="menuitem">
 												<div class="img-wrapper">
-													<img alt='A close-up of a hand holding a purple Vasco Translator M4 electronic translator device against a bright outdoor background. The screen displays the greetings "Hello!", "¡Hola!", and the "VASCO Translator" logo.'
+													<img alt="Vasco Translator M4"
 														class="js-menu-lazy-image"
-														data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/menu/megamenu_shop_img.webp" ); ?>"
+														src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/menu/megamenu_shop_img.webp" ); ?>"
 														decoding="async" fetchpriority="low" loading="lazy" />
 												</div>
 												<div class="text-absolute">
@@ -266,8 +266,8 @@
 											class="megamenu-column-wrapper megamenu-column-image megamenu-column-image-square">
 											<a href="<?php echo esc_url( home_url( "/vasco-innovations/" ) ); ?>" role="menuitem">
 												<div class="img-wrapper">
-													<img alt="Vasco logo – ‘VA’ initials" class="js-menu-lazy-image"
-														data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/menu/megamenu_about_us_img1.webp" ); ?>"
+													<img alt="Vasco logo" class="js-menu-lazy-image"
+														src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/menu/megamenu_about_us_img1.webp" ); ?>"
 														decoding="async" fetchpriority="low" loading="lazy" />
 												</div>
 												<div class="text-absolute">
@@ -285,9 +285,9 @@
 											class="megamenu-column-wrapper megamenu-column-image megamenu-column-image-square">
 											<a href="<?php echo esc_url( home_url( "/about-us/" ) ); ?>" role="menuitem">
 												<div class="img-wrapper">
-													<img alt="Three men sit on modern white chairs outside a building, working together on a laptop. They appear relaxed and engaged, with one man smiling while looking at his translator. Lush grass and flowers surround them."
+													<img alt="Vasco About Us"
 														class="js-menu-lazy-image"
-														data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/menu/megamenu_about_us_img1_default.webp" ); ?>"
+														src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/menu/megamenu_about_us_img1_default.webp" ); ?>"
 														decoding="async" fetchpriority="low" loading="lazy" />
 												</div>
 												<div class="text-absolute">
@@ -360,9 +360,9 @@
 											class="megamenu-column-wrapper megamenu-column-image megamenu-column-image-square">
 											<a href="<?php echo esc_url( home_url( "/meet-vasco/" ) ); ?>" role="menuitem">
 												<div class="img-wrapper">
-													<img alt="A product lineup of Vasco Electronics devices on a light purple background, featuring the large-screen Vasco Translator V4, the purple Vasco Translator Q1, the teal Vasco Translator M4, and the Vasco Translator E1 earbuds with their charging cases."
+													<img alt="Meet Vasco"
 														class="js-menu-lazy-image"
-														data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/menu/megamenu_how_it_works_img1.webp" ); ?>"
+														src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/menu/megamenu_how_it_works_img1.webp" ); ?>"
 														decoding="async" fetchpriority="low" loading="lazy" />
 												</div>
 												<div class="text-absolute">
@@ -380,9 +380,9 @@
 											class="megamenu-column-wrapper megamenu-column-image megamenu-column-image-square">
 											<a href="<?php echo esc_url( home_url( "/how-it-works/" ) ); ?>" role="menuitem">
 												<div class="img-wrapper">
-													<img alt="Four smiling people with briefcases walking through a modern office lobby, each wearing a Vasco Translator E1 in their ear. They appear relaxed and confident, engaged in conversation, with a professional and friendly atmosphere."
+													<img alt="How it works"
 														class="js-menu-lazy-image"
-														data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/menu/megamenu_how_it_works_img2.webp" ); ?>"
+														src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/menu/megamenu_how_it_works_img2.webp" ); ?>"
 														decoding="async" fetchpriority="low" loading="lazy" />
 												</div>
 												<div class="text-absolute">
@@ -477,9 +477,9 @@
 											class="megamenu-column-wrapper megamenu-column-image megamenu-column-image-square">
 											<a href="<?php echo esc_url( home_url( "/business-healthcare/" ) ); ?>" role="menuitem">
 												<div class="img-wrapper">
-													<img alt="A large conference room screen displays the “Join Vasco Audience” instructions, showing guidance for participants on how to access the session."
+													<img alt="Vasco Audience"
 														class="js-menu-lazy-image"
-														data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/menu/megamenu_for_business_img1.webp" ); ?>"
+														src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/menu/megamenu_for_business_img1.webp" ); ?>"
 														decoding="async" fetchpriority="low" loading="lazy" />
 												</div>
 												<div class="text-absolute">

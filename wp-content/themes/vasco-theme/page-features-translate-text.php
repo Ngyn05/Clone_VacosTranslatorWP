@@ -32,10 +32,7 @@ get_header();
 </div>
 <div class="js-content-wrapper" id="content-wrapper">
 <section class="feature-voice">
-<picture>
-<source media="(min-width: 700px)"/>
-<img alt="[fe_general.doublebox1.img1.alt]" class="img-main" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/how-vasco/how-vasco-section-new-1.webp" ); ?>"/>
-</picture>
+
 <div class="container">
 <div class="heading-wrapper heading-wrapper-text">
 <div class="heading">

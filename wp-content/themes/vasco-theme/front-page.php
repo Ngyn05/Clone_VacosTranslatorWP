@@ -454,7 +454,7 @@ get_header();
 												công cụ dịch thuật</p>
 											<a aria-describedby="engines-number engines-desc"
 												class="btn btn-black btn-md"
-												href="<?php echo esc_url( home_url( "/features/translate-voice/" ) ); ?>">
+												href="<?php echo esc_url( home_url( "/all-products/" ) ); ?>">
 												Tìm hiểu thêm <span class="text-sr-only">về công cụ dịch
 													thuật</span></a>
 										</div>

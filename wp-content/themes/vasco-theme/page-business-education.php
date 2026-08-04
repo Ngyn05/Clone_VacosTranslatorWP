@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Clean Page page-business-education.php
  *
@@ -16,7 +16,7 @@ get_header();
 </aside>
 <div>
 <div class="js-content-wrapper" id="content-wrapper">
-<div id="old-Giáo dục">
+<div id="old-giao-duc">
 <section class="hero-section" style="min-height: 560px;">
 <section class="doubleboxes">
 <div class="doublebox left" style="background-color: #EFECE8; color: #EFECE8;">
@@ -25,7 +25,7 @@ get_header();
 <h1 class="h1">Trao quyền tiếp cận giáo dục bình đẳng</h1>
 <p class="hero-subtitle">Phá vỡ rào cản ngôn ngữ trong trường học của bạn với công nghệ dịch thuật ứng dụng AI cho học sinh, phụ huynh và nhân viên</p>
 <div>
-<button class="btn btn-2xl btn-primary scrollToForm">[contact.text1.title]</button>
+<button class="btn btn-2xl btn-primary scrollToForm">Liên hệ với chúng tôi</button>
 </div>
 <svg class="svg-pseudo" color="" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
@@ -38,64 +38,22 @@ get_header();
 </div>
 </section>
 </section>
-<section class="youtube-top">
-<div class="container">
-<h2 class="h2-notosans">Vasco Translator đã hỗ trợ vineland lakes high school như thế nào</h2>
-<div class="youtube-section">
-<div class="youtube" data-alt="Minh họa cách sử dụng máy dịch Vasco, chẳng hạn khi dịch văn bản viết." data-embed="Cjfn7_N6CGo" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/b2b/Giáo dụcnew/video-us.webp">
-</div>
-</div>
-</div>
-</section>
-<hr/>
-<section class="description-videos">
-<div class="container">
-<h2 class="h2-notosans">Xem thêm video khác về Vasco trong Giáo dục</h2>
-<div class="videos-wrapper">
-<div class="swiper swiper-video-slider loop">
-<div class="swiper-wrapper">
-<div class="swiper-slide">
-<div class="youtube" data-alt="Video cho thấy tai nghe Vasco Translator E1 trong khi Luis Javier Pentón Herrera, Tiến sĩ, Giáo viên TESOL của năm 2024, phát biểu, minh họa cách sử dụng thiết bị để dịch theo thời gian thực." data-embed="IxtpFd2L4ig" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>influencervideo/future_Giáo dục.webp">
-</div>
-<p>[influencer_videos.video_carousel.future_Giáo dục.title]</p>
-</div>
-<div class="swiper-slide">
-<div class="youtube" data-alt="Video cho thấy Vasco Translator Q1 giúp học sinh, giáo viên và phụ huynh vượt qua rào cản ngôn ngữ như thế nào. Video nêu bật những thách thức trong giao tiếp của học sinh mới đến trường và áp lực khi phải thích nghi với môi trường mới. Thiết bị hoạt động tại gần 200 quốc gia với Internet miễn phí, giúp mọi người dễ dàng hiểu nhau hơn, ngay cả khi cần dịch những ngôn ngữ ít phổ biến." data-embed="YE7Oz7cGxB0" data-holder="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>influencervideo/all_access.webp">
-</div>
-<p>[influencer_videos.video_carousel.all_access.title]</p>
-</div>
-</div>
-<div class="swiper-button-prev btn-carousel-prev"></div>
-<div class="swiper-button-next btn-carousel-next"></div>
-</div>
-</div>
-</div>
-</section>
 <section class="how-vasco-section">
 <div class="how-vasco-flex container">
 <h2 class="h2-notosans">VASCO TRANSLATOR CÓ THỂ GIÚP CÁC TRƯỜNG HỌC THÀNH CÔNG NHƯ THẾ NÀO</h2>
 <div class="grid-section">
 <div class="card">
-<picture>
-<source media="(min-width: 700px)"/>
-<img alt="Một người nam và một người nữ đang mỉm cười với nhau."/>
-</picture>
+<img alt="Khả năng hiểu bài trong lớp học" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/Giáo dục/Giáo dục-hero.webp" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
 <h3 class="h2">Khả năng hiểu bài trong lớp học</h3>
 <p>Việc học trở nên công bằng cho mọi học sinh khi rào cản ngôn ngữ không còn là trở ngại.</p>
 </div>
 <div class="card card-bottom">
-<picture>
-<source media="(min-width: 700px)"/>
-<img alt="Một nhóm trẻ em đang ngồi trên bậu cửa sổ."/>
-</picture>
+<img alt="Giao tiếp liền mạch" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
 <h3 class="h2">Giao tiếp liền mạch</h3>
 <p>Giáo viên, học sinh và phụ huynh có thể giao tiếp hiệu quả về tiến độ học tập trong lớp.</p>
 </div>
 <div class="card">
-<picture>
-<source media="(min-width: 700px)"/>
-<img alt="Một người nữ đang đập tay chào mừng với một người nữ khác."/>
-</picture>
+<img alt="Phát triển xã hội" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/happy-people.webp" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
 <h3 class="h2">Phát triển xã hội</h3>
 <p>Học sinh có thể xóa bỏ khoảng cách về ngôn ngữ và văn hóa, tạo dựng kết nối xã hội ngay từ ngày đầu tiên.</p>
 </div>
@@ -105,7 +63,7 @@ get_header();
 <section class="doubleboxes">
 <div class="doublebox right" style="background-color: #D9ECEF; color: #D9ECEF;">
 <div class="doublebox-absolute">
-<img alt="Năm thiết bị máy dịch được đặt cạnh nhau với các màu đen, trắng, đỏ, xanh dương và xám." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/Y tế/quinnipiac.webp" ); ?>"/>
+<img alt="Vasco Translator tại Quinnipiac University" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>"/>
 </div>
 <div class="container">
 <div class="doublebox-content">
@@ -128,26 +86,26 @@ get_header();
 <h3 class="h1">Đây là lý do Vasco cung cấp những thiết bị máy dịch ngôn ngữ tốt nhất trên thị trường:</h3>
 <div class="grid-section">
 <div aria-labelledby="icon1-title" class="key" role="group" tabindex="0">
-<div><img aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/Y tế/goal-b2b.svg" ); ?>"/></div>
+<div><img aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/translation.svg" ); ?>"/></div>
 <div>
 <h4 class="h2" id="icon1-title">Dịch với độ chính xác 96%</h4>
 </div>
 </div>
 <div aria-labelledby="icon2-title" class="key" role="group" tabindex="0">
-<div><img aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/Y tế/insurance.svg" ); ?>"/>
+<div><img aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/accessibility.svg" ); ?>"/>
 </div>
 <div>
 <h4 class="h2" id="icon2-title">Dữ liệu được bảo mật và riêng tư</h4>
 </div>
 </div>
 <div aria-labelledby="icon3-title" class="key" role="group" tabindex="0">
-<div><img aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/Y tế/earth.svg" ); ?>"/></div>
+<div><img aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/globe.svg" ); ?>"/></div>
 <div>
 <h4 class="h2" id="icon3-title">Thư viện ngôn ngữ mạnh mẽ lên đến 112 ngôn ngữ</h4>
 </div>
 </div>
 <div aria-labelledby="icon4-title" class="key" role="group" tabindex="0">
-<div><img aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/Y tế/fast-shipping.svg" ); ?>"/>
+<div><img aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/learn.svg" ); ?>"/>
 </div>
 <div>
 <h4 class="h2" id="icon4-title">Một máy dịch luôn sẵn sàng trong mọi lớp học</h4>
@@ -334,94 +292,22 @@ Khi tôi đi quanh trường, tôi mang theo Vasco phòng trường hợp gặp 
 <a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/contact/" ) ); ?>">ĐẾN TRANG LIÊN HỆ</a>
 </div>
 </section>
-<section aria-labelledby="vasco-products-heading" class="vasco-products" tabindex="0">
-<div class="container">
-<div class="products-flex">
-<h2 class="h2-notosans" id="vasco-products-heading">KHÁM PHÁ CÁC TÍNH NĂNG NÀY VÀ HƠN THẾ NỮA VỚI VASCO TRANSLATOR M3 VÀ VASCO TRANSLATOR V4</h2>
-<div class="products-wrapper">
-<div aria-roledescription="carousel" class="swiper swiper-products-slider" role="region">
-<div class="swiper-wrapper" role="list">
-<div aria-labelledby="product-14" class="swiper-slide" role="listitem" tabindex="0">
-<div class="box">
-<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/343-home_default/vasco-translator-v4.jpg" ); ?>"/>
-<div class="product-description">
-<h3 aria-label="Vasco Translator V4" id="product-14" tabindex="0">Vasco Translator V4</h3>
-<p>[travel.gallery_of_products_side.product1.subtitle]</p>
-<a aria-label="Tìm hiểu thêm về Vasco Translator V4" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>" target="_blank">Tìm hiểu thêm</a>
-</div>
-</div>
-</div>
-</div>
-<div class="custom-navigation">
-<div class="swiper-button-prev btn-product-prev" data-label-prev="Previous slide"></div>
-<div class="swiper-button-next btn-product-next" data-label-next="Next slide"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="trustedby-carousel">
-<div class="container">
-<h2 class="h2-notosans text-center">được tin dùng bởi</h2>
-<div aria-label="một băng chuyền hiển thị logo các công ty đã tin tưởng chúng tôi" aria-roledescription="carousel" class="swiper swiper-carousel autoplay loop carousel-trustedby">
-<a class="sr-only focusable" href="#after-trustedby-carousel">Bỏ qua băng chuyền</a>
-<div class="swiper-wrapper">
-<div aria-labelledby="slide-label-mrg" class="swiper-slide" role="listitem" tabindex="0">
-<h3 class="sr-only" id="slide-label-mrg">mrg</h3>
-<img alt="" aria-hidden="true" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/TrustedBy/mrg.webp" ); ?>"/>
-</div>
-<div aria-labelledby="slide-label-rrss" class="swiper-slide" role="listitem" tabindex="0">
-<h3 class="sr-only" id="slide-label-rrss">rrss</h3>
-<img alt="" aria-hidden="true" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/TrustedBy/rrss.webp" ); ?>"/>
-</div>
-<div aria-labelledby="slide-label-hospital_barcelona" class="swiper-slide" role="listitem" tabindex="0">
-<h3 class="sr-only" id="slide-label-hospital_barcelona">hospital_barcelona</h3>
-<img alt="" aria-hidden="true" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/TrustedBy/hospital_barcelona.webp" ); ?>"/>
-</div>
-<div aria-labelledby="slide-label-chtmad" class="swiper-slide" role="listitem" tabindex="0">
-<h3 class="sr-only" id="slide-label-chtmad">chtmad</h3>
-<img alt="" aria-hidden="true" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/TrustedBy/chtmad.webp" ); ?>"/>
-</div>
-<div aria-labelledby="slide-label-messe_duesseldorf" class="swiper-slide" role="listitem" tabindex="0">
-<h3 class="sr-only" id="slide-label-messe_duesseldorf">messe_duesseldorf</h3>
-<img alt="" aria-hidden="true" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/TrustedBy/messe_duesseldorf.webp" ); ?>"/>
-</div>
-<div aria-labelledby="slide-label-mc_donald" class="swiper-slide" role="listitem" tabindex="0">
-<h3 class="sr-only" id="slide-label-mc_donald">mc_donald</h3>
-<img alt="" aria-hidden="true" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/TrustedBy/mc_donald.webp" ); ?>"/>
-</div>
-<div aria-labelledby="slide-label-dino" class="swiper-slide" role="listitem" tabindex="0">
-<h3 class="sr-only" id="slide-label-dino">dino</h3>
-<img alt="" aria-hidden="true" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/TrustedBy/dino.webp" ); ?>"/>
-</div>
-</div>
-<div class="swiper-button-prev btn-carousel-prev" data-label-prev="Previous slide"></div>
-<div class="swiper-button-next btn-carousel-next" data-label-next="Next slide"></div>
-</div>
-<div class="stop-autoplay-carousel">
-<button class="btn btn-md btn-stop-autoplay" data-text-button-pause="stop carousel autoplay" data-text-button-resume="resume carousel autoplay">
-<span data-text-pause="Pause" data-text-resume="Resume">Tạm dừng</span>
-<img alt="" aria-hidden="true" height="24" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/pause.svg" ); ?>" width="24"/>
-</button>
-</div>
-<div id="after-trustedby-carousel"></div>
-</div>
-</section>
+
+
 <section class="numbers-section">
 <div class="container">
 <h2 class="h2-notosans text-center">Vasco qua những con số</h2>
 <div class="numbers-box">
 <div class="single-box">
-<img alt="biểu tượng số 1" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/Y tế/1.svg" ); ?>"/>
+<div style="font-size: 48px; font-weight: 800; color: #2B2A29; line-height: 1; margin-bottom: 12px;">#1</div>
 <p class="h2">Vị trí toàn cầu trong các thương hiệu máy dịch</p>
 </div>
 <div class="single-box">
-<img alt="biểu tượng số 16" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/Y tế/16.svg" ); ?>"/>
+<div style="font-size: 48px; font-weight: 800; color: #2B2A29; line-height: 1; margin-bottom: 12px;">16+</div>
 <p class="h2">Số năm hoạt động trên thị trường</p>
 </div>
 <div class="single-box">
-<img alt="biểu tượng số 500" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/Y tế/500.svg" ); ?>"/>
+<div style="font-size: 48px; font-weight: 800; color: #2B2A29; line-height: 1; margin-bottom: 12px;">500+</div>
 <p class="h2">Thiết bị cho các tổ chức NGO mượn miễn phí</p>
 </div>
 </div>
