@@ -517,72 +517,8 @@ function vasco_theme_render_product_detail_page( $slug = '' ) {
 			});
 		});
 
-		// FAQ Accordion
-		document.querySelectorAll(".vasco-faq-question").forEach(function(btn) {
-			btn.addEventListener("click", function() {
-				var expanded = this.getAttribute("aria-expanded") === "true";
-				var answerId = this.getAttribute("aria-controls");
-				var answerEl = document.getElementById(answerId);
-				this.setAttribute("aria-expanded", expanded ? "false" : "true");
-				this.classList.toggle("vasco-faq-question--open", !expanded);
-				if (answerEl) {
-					if (expanded) { answerEl.setAttribute("hidden", ""); }
-					else { answerEl.removeAttribute("hidden"); }
-				}
-			});
-		});
-		// Star rating interactive
-		var starsContainer = document.getElementById("vasco-star-rating");
-		if (starsContainer) {
-			var stars = starsContainer.querySelectorAll(".star");
-			var ratingInput = document.getElementById("rating");
-
-			function setRating(val) {
-				ratingInput.value = val;
-				stars.forEach(function(s) {
-					var sVal = parseInt(s.getAttribute("data-value"), 10);
-					if (sVal <= val) {
-						s.classList.add("active");
-					} else {
-						s.classList.remove("active");
-					}
-				});
-			}
-
-			// Mặc định 5 sao
-			setRating(5);
-
-			stars.forEach(function(star) {
-				star.addEventListener("mouseover", function() {
-					var val = parseInt(this.getAttribute("data-value"), 10);
-					stars.forEach(function(s) {
-						var sVal = parseInt(s.getAttribute("data-value"), 10);
-						if (sVal <= val) { s.classList.add("hover"); }
-						else { s.classList.remove("hover"); }
-					});
-				});
-
-				star.addEventListener("mouseout", function() {
-					stars.forEach(function(s) { s.classList.remove("hover"); });
-				});
-
-				star.addEventListener("click", function() {
-					var val = parseInt(this.getAttribute("data-value"), 10);
-					setRating(val);
-				});
-			});
-		}
 	});
-	</script>
-	<style>
-	/* Ẩn các bộ chọn sao mặc định WooCommerce nếu có */
-	.comment-form-rating, p.stars { display: none !important; }
-	
-	.vasco-star-rating { display: inline-flex; gap: 6px; font-size: 24px; cursor: pointer; user-select: none; margin-top: 4px; }
-	.vasco-star-rating .star { color: #d1d5db; transition: color 0.15s ease, transform 0.1s ease; display: inline-block; }
-	.vasco-star-rating .star:hover { transform: scale(1.15); }
-	.vasco-star-rating .star.active, .vasco-star-rating .star.hover { color: #ffb800; }
-	</style>';
+	</script>';
 	echo '</div></section></div></div></section>';
 
 	wp_reset_postdata();

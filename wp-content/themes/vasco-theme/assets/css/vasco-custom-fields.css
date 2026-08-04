@@ -1,0 +1,182 @@
+/**
+ * Custom Product Fields & UI Styles for Vasco Theme
+ * (Thông số kỹ thuật, FAQ Accordion, Star Rating & Admin Metabox)
+ */
+
+/* ── Common Tab Container ──────────────────────────────────── */
+.vasco-tab-title {
+	font-size: 28px;
+	font-weight: 400;
+	text-align: center;
+	color: #1a1a1a;
+	margin: 0 0 28px;
+	letter-spacing: -0.3px;
+}
+
+/* ── Frontend Specs Table ─────────────────────────────────── */
+.vasco-specs-tab {
+	padding: 24px 0;
+	max-width: 680px;
+	margin: 0 auto;
+}
+.vasco-specs-table-wrapper {
+	margin-top: 15px;
+	overflow-x: auto;
+	border: 1px solid #d8d8d8;
+	border-radius: 4px;
+}
+.vasco-specs-table-frontend {
+	width: 100%;
+	border-collapse: collapse;
+	background: #ffffff;
+	font-size: 14px;
+}
+.vasco-spec-row-frontend {
+	border-bottom: 1px solid #ebebeb;
+}
+.vasco-spec-row-frontend:last-child {
+	border-bottom: none;
+}
+.vasco-spec-row-frontend:hover {
+	background-color: #f9f9f9;
+}
+.vasco-spec-name {
+	font-weight: 400;
+	color: #666666;
+	padding: 14px 20px;
+	width: 38%;
+	vertical-align: top;
+	border-right: 1px solid #ebebeb;
+	line-height: 1.5;
+}
+.vasco-spec-value {
+	color: #1a1a1a;
+	padding: 14px 20px;
+	vertical-align: middle;
+	line-height: 1.5;
+}
+.vasco-spec-placeholder {
+	color: #bbbbbb;
+	font-style: italic;
+}
+.vasco-spec-value--empty .vasco-spec-placeholder {
+	color: #cccccc;
+}
+
+/* ── Frontend FAQ Accordion ───────────────────────────────── */
+.vasco-faq-tab {
+	padding: 24px 0;
+	max-width: 680px;
+	margin: 0 auto;
+}
+.vasco-faq-accordion {
+	display: flex;
+	flex-direction: column;
+}
+.vasco-faq-item {
+	border-bottom: 1px solid #e0e0e0;
+	background: #ffffff;
+}
+.vasco-faq-item:first-child {
+	border-top: 1px solid #e0e0e0;
+}
+.vasco-faq-question {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 18px 4px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	text-align: left;
+	gap: 12px;
+	font-size: 14px;
+	color: #1a1a1a;
+	line-height: 1.5;
+	transition: color 0.2s ease;
+}
+.vasco-faq-question:hover,
+.vasco-faq-question[aria-expanded="true"] {
+	color: #0066cc;
+}
+.vasco-faq-question-text {
+	flex: 1;
+	font-weight: 400;
+}
+.vasco-faq-icon {
+	flex-shrink: 0;
+	color: #555555;
+	display: flex;
+	align-items: center;
+	transition: transform 0.25s ease, color 0.2s ease;
+}
+.vasco-faq-question[aria-expanded="true"] .vasco-faq-icon {
+	transform: rotate(180deg);
+	color: #0066cc;
+}
+.vasco-faq-answer[hidden] {
+	display: none;
+}
+.vasco-faq-answer-inner {
+	padding: 0 4px 18px;
+	font-size: 14px;
+	color: #555555;
+	line-height: 1.65;
+}
+
+@media (max-width: 600px) {
+	.vasco-spec-name,
+	.vasco-spec-value {
+		padding: 10px 12px;
+	}
+	.vasco-faq-question {
+		padding: 14px 2px;
+		font-size: 13px;
+	}
+	.vasco-tab-title {
+		font-size: 22px;
+	}
+}
+
+/* ── Frontend Star Rating ──────────────────────────────────── */
+.comment-form-rating,
+p.stars {
+	display: none !important;
+}
+.vasco-star-rating {
+	display: inline-flex;
+	gap: 6px;
+	font-size: 24px;
+	cursor: pointer;
+	user-select: none;
+	margin-top: 4px;
+}
+.vasco-star-rating .star {
+	color: #d1d5db;
+	transition: color 0.15s ease, transform 0.1s ease;
+	display: inline-block;
+}
+.vasco-star-rating .star:hover {
+	transform: scale(1.15);
+}
+.vasco-star-rating .star.active,
+.vasco-star-rating .star.hover {
+	color: #ffb800;
+}
+
+/* ── Admin WooCommerce Product Data Panel Styles ──────────── */
+#vasco_specs_data .form-table th,
+#vasco_faq_data .form-table th {
+	width: 150px;
+}
+.vasco-admin-field-row {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 8px;
+	align-items: center;
+}
+.vasco-admin-field-row input[type="text"],
+.vasco-admin-field-row textarea {
+	flex: 1;
+}

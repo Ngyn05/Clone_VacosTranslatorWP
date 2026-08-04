@@ -1,6 +1,6 @@
 <?php
 /**
- * Theme Setup
+ * Theme Setup & Custom Template Resolver
  *
  * @package VascoTheme
  */
@@ -50,18 +50,43 @@ function vasco_theme_setup() {
 	// Register Navigation Menus
 	register_nav_menus(
 		array(
-			'primary'   => __( 'Primary Desktop Menu', 'vasco-theme' ),
-			'mobile'    => __( 'Mobile Menu', 'vasco-theme' ),
-			'footer'    => __( 'Footer Menu', 'vasco-theme' ),
+			'primary' => __( 'Primary Desktop Menu', 'vasco-theme' ),
+			'mobile'  => __( 'Mobile Menu', 'vasco-theme' ),
+			'footer'  => __( 'Footer Menu', 'vasco-theme' ),
 		)
 	);
 }
 add_action( 'after_setup_theme', 'vasco_theme_setup' );
 
 // Turn off WooCommerce Coming Soon mode automatically
-add_action( 'init', function() {
+add_action( 'init', function () {
 	if ( 'yes' === get_option( 'woocommerce_coming_soon' ) ) {
 		update_option( 'woocommerce_coming_soon', 'no' );
 	}
 } );
 
+/**
+ * Locate custom page templates in subdirectories under templates/
+ */
+function vasco_theme_custom_page_template( $template ) {
+	if ( is_page() ) {
+		$page = get_queried_object();
+		if ( $page && ! empty( $page->post_name ) ) {
+			$slug           = $page->post_name;
+			$possible_files = array(
+				"templates/pages/page-{$slug}.php",
+				"templates/products/page-{$slug}.php",
+				"templates/articles/page-{$slug}.php",
+				"templates/page-{$slug}.php",
+			);
+			foreach ( $possible_files as $file ) {
+				$located = locate_template( $file );
+				if ( $located ) {
+					return $located;
+				}
+			}
+		}
+	}
+	return $template;
+}
+add_filter( 'page_template', 'vasco_theme_custom_page_template' );

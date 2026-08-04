@@ -126,11 +126,6 @@ if ( $order_id && function_exists( 'wc_get_order' ) ) {
             <a href="<?php echo esc_url( home_url( '/translators/' ) ); ?>" style="display: inline-block; background: #001480; color: #ffffff; padding: 14px 32px; border-radius: 24px; font-size: 15px; font-weight: 700; text-decoration: none; letter-spacing: 0.5px;">
                 🛍️ Tiếp tục mua sắm
             </a>
-            <?php if ( is_user_logged_in() ) : ?>
-            <a href="<?php echo esc_url( wc_get_account_endpoint_url( 'orders' ) ); ?>" style="display: inline-block; background: transparent; color: #5A67D8; padding: 14px 32px; border-radius: 24px; font-size: 15px; font-weight: 700; text-decoration: none; border: 2px solid #5A67D8; letter-spacing: 0.5px;">
-                📋 Xem đơn hàng của tôi
-            </a>
-            <?php endif; ?>
         </div>
 
     <?php else : ?>
