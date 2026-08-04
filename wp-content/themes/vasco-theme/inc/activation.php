@@ -14,20 +14,21 @@ function vasco_theme_sync_pages( $clean_old = false ) {
 	$pages_data = file_exists( $json_file ) ? json_decode( file_get_contents( $json_file ), true ) : array();
 	$pages_data = is_array( $pages_data ) ? $pages_data : array();
 
-	// Tự động quét tất cả file page-*.php trong thư mục theme để không bỏ sót bất kỳ trang nào
+	// Tự động quét tất cả file page-*.php trong thư mục theme và templates/ để không bỏ sót bất kỳ trang nào
 	$existing_slugs = array_column( $pages_data, 'slug' );
-	$theme_files = glob( get_template_directory() . '/page-*.php' );
+	$theme_files    = array_merge(
+		glob( get_template_directory() . '/page-*.php' ) ?: array(),
+		glob( get_template_directory() . '/templates/*/*.php' ) ?: array()
+	);
 	if ( $theme_files ) {
 		foreach ( $theme_files as $file ) {
 			$filename = basename( $file );
-			// Bỏ qua page.php
 			if ( 'page.php' === $filename ) {
 				continue;
 			}
 			$slug = preg_replace( '/^page-|\.php$/', '', $filename );
 			if ( ! in_array( $slug, $existing_slugs, true ) ) {
-				// Tạo tiêu đề hiển thị đẹp từ slug
-				$title = ucwords( str_replace( array( '-', '_' ), ' ', $slug ) );
+				$title        = ucwords( str_replace( array( '-', '_' ), ' ', $slug ) );
 				$pages_data[] = array(
 					'title'    => $title,
 					'slug'     => $slug,
@@ -248,26 +249,18 @@ add_action( 'init', function() {
 } );
 
 /**
- * Add WP Admin Page for Syncing Vasco Pages manually
+ * Add WP Admin Page for Syncing Vasco Pages & Data manually
  */
 function vasco_theme_add_admin_menu() {
-	// Add under Appearance -> Đồng bộ Trang Vasco
-	add_theme_page(
-		'Đồng bộ Trang Vasco',
-		'Đồng bộ Trang Vasco',
+	// Top-level Admin Menu duy nhất trên thanh bên trái WP Admin
+	add_menu_page(
+		'Đồng bộ Vasco',
+		'Đồng bộ Vasco',
 		'manage_options',
-		'vasco-sync-pages',
-		'vasco_theme_admin_sync_page_html'
-	);
-
-	// Also add under Pages (edit.php) -> Đồng bộ Trang Vasco
-	add_submenu_page(
-		'edit.php',
-		'Đồng bộ Trang Vasco',
-		'⚡ Đồng bộ Trang Vasco',
-		'manage_options',
-		'vasco-sync-pages',
-		'vasco_theme_admin_sync_page_html'
+		'vasco-sync-main',
+		'vasco_theme_admin_sync_page_html',
+		'dashicons-update',
+		59
 	);
 }
 add_action( 'admin_menu', 'vasco_theme_add_admin_menu' );
@@ -286,23 +279,47 @@ function vasco_theme_admin_sync_page_html() {
 			$message = '<div class="notice notice-error is-dismissible"><p>Có lỗi xảy ra khi đọc file pages-data.json.</p></div>';
 		}
 	}
+
+	if ( isset( $_POST['vasco_do_product_sync'] ) && check_admin_referer( 'vasco_sync_products_action', 'vasco_sync_products_nonce' ) ) {
+		if ( function_exists( 'vasco_theme_sync_products' ) && vasco_theme_sync_products() ) {
+			$message .= '<div class="notice notice-success is-dismissible"><p><strong>Thành công!</strong> Đã đồng bộ tất cả sản phẩm Vasco WooCommerce vào CSDL thành công.</p></div>';
+		}
+	}
 	?>
 	<div class="wrap">
-		<h1>Đồng bộ Trang Vasco Theme</h1>
+		<h1>⚡ Trung Tâm Đồng Bộ Vasco Theme</h1>
 		<?php echo $message; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-		<p>Công cụ này giúp bạn khởi tạo tự động toàn bộ danh sách trang (URL & Slugs) của Vasco Theme vào Cơ sở dữ liệu WordPress sau khi upload theme lên Server mà không cần tạo trang thủ công.</p>
-		<form method="post" action="">
-			<?php wp_nonce_field( 'vasco_sync_action', 'vasco_sync_nonce' ); ?>
-			<p style="margin: 15px 0;">
-				<label>
-					<input type="checkbox" name="vasco_clean_old" value="1" />
-					<strong>🗑️ Xóa các trang cũ/trang rác không thuộc Vasco Theme trong WordPress</strong>
-				</label>
-			</p>
-			<p>
-				<input type="submit" name="vasco_do_sync" class="button button-primary button-hero" value="⚡ Đồng bộ trang & Dọn dẹp ngay" />
-			</p>
-		</form>
+		<p style="font-size:14px;color:#555;">Công cụ này giúp bạn tự động khởi tạo danh sách trang và sản phẩm WooCommerce của Vasco Theme vào Cơ sở dữ liệu WordPress sau khi cài đặt theme.</p>
+		
+		<div style="display:flex;gap:20px;margin-top:20px;flex-wrap:wrap;">
+			<div style="background:#fff;border:1px solid #ccc;border-radius:8px;padding:20px;flex:1;min-width:300px;box-shadow:0 1px 3px rgba(0,0,0,0.05);">
+				<h2 style="margin-top:0;">📄 1. Đồng bộ Trang (Pages)</h2>
+				<p>Khởi tạo tự động tất cả các đường dẫn trang (About Us, Contact, Sản phẩm, Tin tức, Chính sách...).</p>
+				<form method="post" action="">
+					<?php wp_nonce_field( 'vasco_sync_action', 'vasco_sync_nonce' ); ?>
+					<p style="margin: 15px 0;">
+						<label>
+							<input type="checkbox" name="vasco_clean_old" value="1" />
+							<strong>🗑️ Xóa các trang cũ/trang rác không thuộc Vasco Theme</strong>
+						</label>
+					</p>
+					<p>
+						<input type="submit" name="vasco_do_sync" class="button button-primary button-hero" value="⚡ Đồng bộ Tất Cả Trang Ngay" />
+					</p>
+				</form>
+			</div>
+
+			<div style="background:#fff;border:1px solid #ccc;border-radius:8px;padding:20px;flex:1;min-width:300px;box-shadow:0 1px 3px rgba(0,0,0,0.05);">
+				<h2 style="margin-top:0;">🛍️ 2. Đồng bộ Sản phẩm WooCommerce</h2>
+				<p>Tạo hoặc cập nhật tự động toàn bộ Sản phẩm WooCommerce (Giá bán, Ảnh đại diện, Danh mục, Biến thể màu sắc, Thông số kỹ thuật & FAQ).</p>
+				<form method="post" action="">
+					<?php wp_nonce_field( 'vasco_sync_products_action', 'vasco_sync_products_nonce' ); ?>
+					<p style="margin-top:40px;">
+						<input type="submit" name="vasco_do_product_sync" class="button button-secondary button-hero" value="🛍️ Đồng bộ Sản Phẩm WooCommerce" />
+					</p>
+				</form>
+			</div>
+		</div>
 	</div>
 	<?php
 }
