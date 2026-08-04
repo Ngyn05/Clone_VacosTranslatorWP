@@ -114,6 +114,13 @@ function vasco_theme_sync_products() {
 		return false;
 	}
 
+	// Tự động cấu hình đơn vị tiền tệ WooCommerce thành VNĐ (VND)
+	update_option( 'woocommerce_currency', 'VND' );
+	update_option( 'woocommerce_currency_pos', 'right_space' );
+	update_option( 'woocommerce_price_thousand_sep', '.' );
+	update_option( 'woocommerce_price_decimal_sep', ',' );
+	update_option( 'woocommerce_price_num_decimals', 0 );
+
 	$products = vasco_theme_get_products_data();
 	if ( empty( $products ) ) {
 		return false;
@@ -131,9 +138,16 @@ function vasco_theme_sync_products() {
 		}
 
 		if ( ! $product_id ) {
-			$existing = get_page_by_path( $slug, OBJECT, 'product' );
-			if ( $existing && isset( $existing->ID ) ) {
-				$product_id = (int) $existing->ID;
+			$existing = get_posts(
+				array(
+					'name'        => $slug,
+					'post_type'   => 'product',
+					'post_status' => 'any',
+					'numberposts' => 1,
+				)
+			);
+			if ( ! empty( $existing[0]->ID ) ) {
+				$product_id = (int) $existing[0]->ID;
 			}
 		}
 
@@ -143,8 +157,27 @@ function vasco_theme_sync_products() {
 		}
 
 		$title = ! empty( $product['title'] ) ? sanitize_text_field( $product['title'] ) : $slug;
-		$price = ! empty( $product['price'] ) ? (string) $product['price'] : '0';
-		$price = number_format( (float) $price, 2, '.', '' );
+		$raw_price = ! empty( $product['price'] ) ? (float) $product['price'] : 0;
+
+		// Tự động chuyển đổi giá từ USD sang VND nếu giá < 1000 (Ví dụ 549 USD -> 13.990.000 VND)
+		if ( $raw_price > 0 && $raw_price < 10000 ) {
+			$vnd_map = array(
+				'549' => 13990000,
+				'449' => 11490000,
+				'429' => 10990000,
+				'389' => 9990000,
+				'799' => 19990000,
+				'715' => 17990000,
+				'19'  => 490000,
+				'29'  => 750000,
+				'9'   => 250000,
+				'7'   => 180000,
+			);
+			$price_key = (string) (int) $raw_price;
+			$price = isset( $vnd_map[ $price_key ] ) ? (string) $vnd_map[ $price_key ] : (string) round( $raw_price * 25000 );
+		} else {
+			$price = (string) round( $raw_price );
+		}
 
 		$wc_product->set_name( $title );
 		$wc_product->set_slug( $slug );

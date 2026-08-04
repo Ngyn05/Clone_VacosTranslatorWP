@@ -45,24 +45,27 @@ function vasco_theme_get_wc_product_by_slug( $slug ) {
 	}
 
 	$slug = sanitize_title( (string) $slug );
-	if ( '' === $slug ) {
-		return null;
-	}
+	if ( '' !== $slug ) {
+		$product_post = get_page_by_path( $slug, OBJECT, 'product' );
+		if ( $product_post && ! empty( $product_post->ID ) ) {
+			$product = wc_get_product( $product_post->ID );
+			if ( $product ) {
+				return $product;
+			}
+		}
 
-	$product_post = get_page_by_path( $slug, OBJECT, 'product' );
-	if ( $product_post && ! empty( $product_post->ID ) ) {
-		$product = wc_get_product( $product_post->ID );
-		if ( $product ) {
-			return $product;
+		$product_id = (int) wc_get_product_id_by_sku( $slug );
+		if ( $product_id ) {
+			$product = wc_get_product( $product_id );
+			if ( $product ) {
+				return $product;
+			}
 		}
 	}
 
-	$product_id = (int) wc_get_product_id_by_sku( $slug );
-	if ( $product_id ) {
-		$product = wc_get_product( $product_id );
-		if ( $product ) {
-			return $product;
-		}
+	global $post;
+	if ( $post && 'product' === $post->post_type ) {
+		return wc_get_product( $post->ID );
 	}
 
 	return null;

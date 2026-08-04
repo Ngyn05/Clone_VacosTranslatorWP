@@ -9,15 +9,39 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-function vasco_theme_sync_pages() {
+function vasco_theme_sync_pages( $clean_old = false ) {
 	$json_file = get_template_directory() . '/inc/pages-data.json';
-	if ( ! file_exists( $json_file ) ) {
-		return false;
+	$pages_data = file_exists( $json_file ) ? json_decode( file_get_contents( $json_file ), true ) : array();
+	$pages_data = is_array( $pages_data ) ? $pages_data : array();
+
+	// Tự động quét tất cả file page-*.php trong thư mục theme để không bỏ sót bất kỳ trang nào
+	$existing_slugs = array_column( $pages_data, 'slug' );
+	$theme_files = glob( get_template_directory() . '/page-*.php' );
+	if ( $theme_files ) {
+		foreach ( $theme_files as $file ) {
+			$filename = basename( $file );
+			// Bỏ qua page.php
+			if ( 'page.php' === $filename ) {
+				continue;
+			}
+			$slug = preg_replace( '/^page-|\.php$/', '', $filename );
+			if ( ! in_array( $slug, $existing_slugs, true ) ) {
+				// Tạo tiêu đề hiển thị đẹp từ slug
+				$title = ucwords( str_replace( array( '-', '_' ), ' ', $slug ) );
+				$pages_data[] = array(
+					'title'    => $title,
+					'slug'     => $slug,
+					'template' => $filename,
+				);
+			}
+		}
 	}
 
-	$pages_data = json_decode( file_get_contents( $json_file ), true );
-	if ( ! is_array( $pages_data ) ) {
-		return false;
+	$valid_slugs = array();
+	foreach ( $pages_data as $page ) {
+		if ( ! empty( $page['slug'] ) ) {
+			$valid_slugs[] = $page['slug'];
+		}
 	}
 
 	// Step 1: Create top-level pages first
@@ -27,8 +51,17 @@ function vasco_theme_sync_pages() {
 			$slug  = $page['slug'];
 			$title = $page['title'];
 
-			$page_check = get_page_by_path( $slug );
-			if ( ! isset( $page_check->ID ) ) {
+			$existing = get_posts(
+				array(
+					'name'        => $slug,
+					'post_type'   => 'page',
+					'post_status' => 'any',
+					'numberposts' => 1,
+				)
+			);
+			$page_check_id = ! empty( $existing[0] ) ? $existing[0]->ID : 0;
+
+			if ( ! $page_check_id ) {
 				$new_page_id = wp_insert_post(
 					array(
 						'post_title'   => $title,
@@ -46,10 +79,10 @@ function vasco_theme_sync_pages() {
 					}
 				}
 			} else {
-				$created_ids[ $slug ] = $page_check->ID;
+				$created_ids[ $slug ] = $page_check_id;
 				$template = ! empty( $page['template'] ) ? $page['template'] : 'page-' . $slug . '.php';
 				if ( file_exists( get_template_directory() . '/' . $template ) ) {
-					update_post_meta( $page_check->ID, '_wp_page_template', $template );
+					update_post_meta( $page_check_id, '_wp_page_template', $template );
 				}
 			}
 		}
@@ -67,14 +100,30 @@ function vasco_theme_sync_pages() {
 			if ( isset( $created_ids[ $parent_slug ] ) ) {
 				$parent_id = $created_ids[ $parent_slug ];
 			} else {
-				$parent_check = get_page_by_path( $parent_slug );
-				if ( isset( $parent_check->ID ) ) {
-					$parent_id = $parent_check->ID;
+				$parent_existing = get_posts(
+					array(
+						'name'        => $parent_slug,
+						'post_type'   => 'page',
+						'post_status' => 'any',
+						'numberposts' => 1,
+					)
+				);
+				if ( ! empty( $parent_existing[0] ) ) {
+					$parent_id = $parent_existing[0]->ID;
 				}
 			}
 
-			$page_check = get_page_by_path( $slug );
-			if ( ! isset( $page_check->ID ) ) {
+			$child_existing = get_posts(
+				array(
+					'name'        => $slug,
+					'post_type'   => 'page',
+					'post_status' => 'any',
+					'numberposts' => 1,
+				)
+			);
+			$child_check_id = ! empty( $child_existing[0] ) ? $child_existing[0]->ID : 0;
+
+			if ( ! $child_check_id ) {
 				$child_id = wp_insert_post(
 					array(
 						'post_title'   => $title,
@@ -94,8 +143,24 @@ function vasco_theme_sync_pages() {
 			} else {
 				$template = ! empty( $page['template'] ) ? $page['template'] : 'page-' . $slug . '.php';
 				if ( file_exists( get_template_directory() . '/' . $template ) ) {
-					update_post_meta( $page_check->ID, '_wp_page_template', $template );
+					update_post_meta( $child_check_id, '_wp_page_template', $template );
 				}
+			}
+		}
+	}
+
+	// Optional Step 3: Delete old pages not present in pages-data.json
+	if ( $clean_old ) {
+		$all_wp_pages = get_posts(
+			array(
+				'post_type'      => 'page',
+				'post_status'    => 'any',
+				'posts_per_page' => -1,
+			)
+		);
+		foreach ( $all_wp_pages as $wp_page ) {
+			if ( ! in_array( $wp_page->post_name, $valid_slugs, true ) ) {
+				wp_delete_post( $wp_page->ID, true );
 			}
 		}
 	}
@@ -118,12 +183,42 @@ function vasco_theme_after_switch() {
 add_action( 'after_switch_theme', 'vasco_theme_after_switch' );
 
 /**
+ * Auto sync on Admin Load if not synced yet
+ */
+function vasco_theme_auto_sync_on_admin() {
+	// Disable WooCommerce Coming Soon mode to show real products
+	update_option( 'woocommerce_coming_soon', 'no' );
+	update_option( 'woocommerce_store_pages_only', 'no' );
+
+	if ( get_option( 'vasco_products_vnd_synced_v5' ) ) {
+		return;
+	}
+	vasco_theme_sync_pages( true );
+	if ( function_exists( 'vasco_theme_sync_products' ) ) {
+		vasco_theme_sync_products();
+	}
+	update_option( 'vasco_products_vnd_synced_v5', 1 );
+}
+add_action( 'admin_init', 'vasco_theme_auto_sync_on_admin' );
+
+/**
  * Add WP Admin Page for Syncing Vasco Pages manually
  */
 function vasco_theme_add_admin_menu() {
+	// Add under Appearance -> Đồng bộ Trang Vasco
 	add_theme_page(
 		'Đồng bộ Trang Vasco',
 		'Đồng bộ Trang Vasco',
+		'manage_options',
+		'vasco-sync-pages',
+		'vasco_theme_admin_sync_page_html'
+	);
+
+	// Also add under Pages (edit.php) -> Đồng bộ Trang Vasco
+	add_submenu_page(
+		'edit.php',
+		'Đồng bộ Trang Vasco',
+		'⚡ Đồng bộ Trang Vasco',
 		'manage_options',
 		'vasco-sync-pages',
 		'vasco_theme_admin_sync_page_html'
@@ -138,8 +233,9 @@ function vasco_theme_admin_sync_page_html() {
 
 	$message = '';
 	if ( isset( $_POST['vasco_do_sync'] ) && check_admin_referer( 'vasco_sync_action', 'vasco_sync_nonce' ) ) {
-		if ( vasco_theme_sync_pages() ) {
-			$message = '<div class="notice notice-success is-dismissible"><p><strong>Thành công!</strong> Đã khởi tạo và đồng bộ tất cả trang Vasco vào cơ sở dữ liệu WordPress.</p></div>';
+		$clean_old = ! empty( $_POST['vasco_clean_old'] );
+		if ( vasco_theme_sync_pages( $clean_old ) ) {
+			$message = '<div class="notice notice-success is-dismissible"><p><strong>Thành công!</strong> Đã khởi tạo và đồng bộ tất cả trang Vasco vào cơ sở dữ liệu WordPress.' . ( $clean_old ? ' (Đã dọn dẹp các trang cũ/thừa)' : '' ) . '</p></div>';
 		} else {
 			$message = '<div class="notice notice-error is-dismissible"><p>Có lỗi xảy ra khi đọc file pages-data.json.</p></div>';
 		}
@@ -151,8 +247,14 @@ function vasco_theme_admin_sync_page_html() {
 		<p>Công cụ này giúp bạn khởi tạo tự động toàn bộ danh sách trang (URL & Slugs) của Vasco Theme vào Cơ sở dữ liệu WordPress sau khi upload theme lên Server mà không cần tạo trang thủ công.</p>
 		<form method="post" action="">
 			<?php wp_nonce_field( 'vasco_sync_action', 'vasco_sync_nonce' ); ?>
+			<p style="margin: 15px 0;">
+				<label>
+					<input type="checkbox" name="vasco_clean_old" value="1" />
+					<strong>🗑️ Xóa các trang cũ/trang rác không thuộc Vasco Theme trong WordPress</strong>
+				</label>
+			</p>
 			<p>
-				<input type="submit" name="vasco_do_sync" class="button button-primary button-hero" value="⚡ Tạo / Đồng bộ tất cả trang Vasco ngay" />
+				<input type="submit" name="vasco_do_sync" class="button button-primary button-hero" value="⚡ Đồng bộ trang & Dọn dẹp ngay" />
 			</p>
 		</form>
 	</div>

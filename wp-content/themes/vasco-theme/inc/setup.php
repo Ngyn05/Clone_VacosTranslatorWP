@@ -57,3 +57,11 @@ function vasco_theme_setup() {
 	);
 }
 add_action( 'after_setup_theme', 'vasco_theme_setup' );
+
+// Turn off WooCommerce Coming Soon mode automatically
+add_action( 'init', function() {
+	if ( 'yes' === get_option( 'woocommerce_coming_soon' ) ) {
+		update_option( 'woocommerce_coming_soon', 'no' );
+	}
+} );
+
