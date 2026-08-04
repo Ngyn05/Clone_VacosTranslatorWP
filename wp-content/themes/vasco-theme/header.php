@@ -506,9 +506,9 @@
 				</div>
 				<div class="right-nav">
 					<div class="phone-number" id="phone-numbers">
-						<button class="icon">
+						<a class="icon phone-icon-link" href="<?php echo esc_url( home_url( "/contact/" ) ); ?>" title="Liên hệ hỗ trợ">
 							<img alt="Phone" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/phone-icon.svg" ); ?>" />
-						</button>
+						</a>
 						<div class="phone-numbers-wrapper">
 							<div class="phone-numbers-list">
 								<div class="phone-numbers-list-header">

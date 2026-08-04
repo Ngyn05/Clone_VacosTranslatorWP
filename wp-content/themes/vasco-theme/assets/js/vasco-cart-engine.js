@@ -362,4 +362,14 @@
 		setTimeout(fixAssetPaths, 500);
 		setTimeout(fixAssetPaths, 2000);
 	});
+
+	// ── 7. Phone Icon Click Handler ────────────────────────────────
+	document.addEventListener('click', function (e) {
+		var phoneBtn = e.target.closest('#phone-numbers .icon, .phone-number .icon, .phone-icon-link');
+		if (phoneBtn) {
+			e.preventDefault();
+			var contactUrl = (window.VASCO_HOME_URL || '/') + 'contact/';
+			window.location.href = contactUrl;
+		}
+	});
 })();
