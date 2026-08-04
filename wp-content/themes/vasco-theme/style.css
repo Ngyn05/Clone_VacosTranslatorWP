@@ -1485,7 +1485,8 @@ button[aria-controls*="video"] {
     flex-direction: column !important;
     gap: 48px !important;
     margin-top: 30px !important;
-    margin-bottom: 60px !important;
+    margin-bottom: 80px !important;
+    padding-bottom: 30px !important;
 }
 
 .products-horizontal-listing .product-miniature,
@@ -1505,15 +1506,13 @@ article.product-horizontal-card {
     transition: none !important;
 }
 
-/* ==========================================================================
-   GRID CARD STYLING (For Accessories & Packages Categories - 4 Columns)
-   ========================================================================== */
 .products-grid-listing {
     display: grid !important;
     grid-template-columns: repeat(4, 1fr) !important;
     gap: 40px 24px !important;
     margin-top: 30px !important;
-    margin-bottom: 60px !important;
+    margin-bottom: 80px !important;
+    padding-bottom: 40px !important;
 }
 
 @media (max-width: 1199px) {
@@ -1941,29 +1940,28 @@ a.product-link-description {
 
 /* THÊM VÀO GIỎ HÀNG & THÔNG BÁO CHO TÔI Buttons */
 .add-to-cart-btn-primary,
-.product-add-to-cart .add-to-cart,
-.add-to-cart,
-button.add-to-cart,
-.btn-add-to-cart,
-.btn-notify-me {
+.product-add-to-cart article.product-grid-card .add-to-cart-btn-full,
+article.product-grid-card .btn-notify-me-full {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
     gap: 8px !important;
-    height: 48px !important;
-    padding: 0 28px !important;
-    border-radius: 24px !important;
+    height: 42px !important;
+    padding: 0 20px !important;
+    border-radius: 21px !important;
     background: #4361ee !important;
     color: #ffffff !important;
-    font-size: 14px !important;
+    font-size: 12.5px !important;
     font-weight: 700 !important;
     text-transform: uppercase !important;
-    letter-spacing: 0.5px !important;
     text-decoration: none !important;
-    border: none !important;
-    cursor: pointer !important;
-    box-shadow: 0 4px 14px rgba(67, 97, 238, 0.3) !important;
-    transition: all 0.25s ease !important;
+    box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3) !important;
+    transition: all 0.2s ease !important;
+    margin-bottom: 20px !important;
+}
+
+.products-catalog-wrapper {
+    padding-bottom: 40px !important;
 }
 
 .btn-notify-me,
