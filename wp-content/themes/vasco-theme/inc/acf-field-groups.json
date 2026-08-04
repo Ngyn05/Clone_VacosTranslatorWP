@@ -1,0 +1,623 @@
+[
+  {
+    "key": "group_page_front_page",
+    "title": "Trang Chủ (Front Page)",
+    "fields": [
+      { "key": "field_fp_tab_hero", "label": "Hero Banner", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_fp_hero_title", "label": "Tiêu đề Hero", "name": "hero_title", "type": "text", "default_value": "Nói như người bản địa bằng 54 ngôn ngữ với giọng nói độc đáo của bạn." },
+      { "key": "field_fp_hero_subtitle", "label": "Mô tả Hero", "name": "hero_subtitle", "type": "text", "default_value": "Vasco Translator Q1 với công nghệ nhân bản giọng nói." },
+      { "key": "field_fp_hero_cta", "label": "Nút CTA Hero", "name": "hero_cta", "type": "link", "return_format": "array" },
+      { "key": "field_fp_hero_badge", "label": "Badge Huy hiệu Số 1", "name": "hero_badge", "type": "image", "return_format": "array" },
+
+      { "key": "field_fp_tab_translators", "label": "Máy phiên dịch Slider", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_fp_translators_title", "label": "Tiêu đề khối Máy dịch", "name": "translators_section_title", "type": "text", "default_value": "Máy phiên dịch của chúng tôi" },
+      {
+        "key": "field_fp_translators_slides",
+        "label": "Danh sách Slider Máy Dịch",
+        "name": "translators_slides",
+        "type": "repeater",
+        "layout": "table",
+        "button_label": "Thêm máy dịch",
+        "sub_fields": [
+          { "key": "field_fp_tr_id", "label": "Mã sản phẩm", "name": "product_id", "type": "text" },
+          { "key": "field_fp_tr_name", "label": "Tên máy", "name": "product_name", "type": "text" },
+          { "key": "field_fp_tr_desc", "label": "Mô tả ngắn", "name": "product_desc", "type": "text" },
+          { "key": "field_fp_tr_image", "label": "Hình ảnh", "name": "product_image", "type": "image", "return_format": "array" },
+          { "key": "field_fp_tr_link", "label": "Đường dẫn", "name": "product_link", "type": "link", "return_format": "array" }
+        ]
+      },
+
+      { "key": "field_fp_tab_features", "label": "Ưu điểm & Tính năng", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_fp_features_title", "label": "Tiêu đề Khối Ưu điểm", "name": "features_title", "type": "text" },
+      {
+        "key": "field_fp_features_list",
+        "label": "Danh sách Ưu điểm",
+        "name": "features_list",
+        "type": "repeater",
+        "layout": "block",
+        "button_label": "Thêm Ưu điểm",
+        "sub_fields": [
+          { "key": "field_fp_feat_title", "label": "Tiêu đề", "name": "title", "type": "text" },
+          { "key": "field_fp_feat_desc", "label": "Mô tả", "name": "description", "type": "wysiwyg" },
+          { "key": "field_fp_feat_icon", "label": "Icon", "name": "icon", "type": "image", "return_format": "array" }
+        ]
+      },
+
+      { "key": "field_fp_tab_stats", "label": "Thống kê / Uy tín", "name": "", "type": "tab", "placement": "top" },
+      {
+        "key": "field_fp_stats_list",
+        "label": "Danh sách Con số ấn tượng",
+        "name": "stats_list",
+        "type": "repeater",
+        "layout": "table",
+        "button_label": "Thêm Con số",
+        "sub_fields": [
+          { "key": "field_fp_stat_num", "label": "Con số", "name": "number", "type": "text" },
+          { "key": "field_fp_stat_lbl", "label": "Nhãn", "name": "label", "type": "text" },
+          { "key": "field_fp_stat_desc", "label": "Mô tả ngắn", "name": "description", "type": "text" }
+        ]
+      },
+
+      { "key": "field_fp_tab_awards", "label": "Báo chí & Giải thưởng", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_fp_awards_title", "label": "Tiêu đề Giải thưởng", "name": "awards_title", "type": "text" },
+      { "key": "field_fp_awards_gallery", "label": "Bộ sưu tập Logo Giải thưởng", "name": "awards_gallery", "type": "gallery", "return_format": "array" },
+
+      { "key": "field_fp_tab_testimonials", "label": "Đánh giá khách hàng", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_fp_reviews_title", "label": "Tiêu đề Khối Đánh giá", "name": "reviews_title", "type": "text" },
+      {
+        "key": "field_fp_reviews_list",
+        "label": "Danh sách Đánh giá",
+        "name": "reviews_list",
+        "type": "repeater",
+        "layout": "block",
+        "button_label": "Thêm Đánh giá",
+        "sub_fields": [
+          { "key": "field_fp_rev_author", "label": "Tên khách hàng", "name": "author_name", "type": "text" },
+          { "key": "field_fp_rev_role", "label": "Quốc gia / Chức danh", "name": "author_role", "type": "text" },
+          { "key": "field_fp_rev_content", "label": "Nội dung đánh giá", "name": "content", "type": "wysiwyg" },
+          { "key": "field_fp_rev_avatar", "label": "Ảnh đại diện", "name": "avatar", "type": "image", "return_format": "array" }
+        ]
+      },
+
+      { "key": "field_fp_tab_cta", "label": "CTA Cuối trang", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_fp_cta_title", "label": "Tiêu đề CTA", "name": "cta_title", "type": "text" },
+      { "key": "field_fp_cta_subtitle", "label": "Mô tả CTA", "name": "cta_subtitle", "type": "text" },
+      { "key": "field_fp_cta_button", "label": "Nút bấm CTA", "name": "cta_button", "type": "link", "return_format": "array" }
+    ],
+    "location": [[{ "param": "page_type", "operator": "==", "value": "front_page" }]],
+    "menu_order": 0, "position": "normal", "style": "default", "label_placement": "top", "active": true,
+    "description": "Field Group riêng cho Trang Chủ"
+  },
+
+  {
+    "key": "group_page_about_us",
+    "title": "Trang Về Chúng Tôi (page-about-us.php)",
+    "fields": [
+      { "key": "field_ab_tab_hero", "label": "Hero & Sứ mệnh", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_ab_hero_title", "label": "Tiêu đề Sứ mệnh", "name": "hero_title", "type": "text" },
+      { "key": "field_ab_hero_subtitle", "label": "Phụ đề", "name": "hero_subtitle", "type": "text" },
+      { "key": "field_ab_hero_content", "label": "Mô tả chi tiết Sứ mệnh", "name": "hero_content", "type": "wysiwyg" },
+      { "key": "field_ab_hero_image", "label": "Hình ảnh Banner/Thuyết trình", "name": "hero_image", "type": "image", "return_format": "array" },
+
+      { "key": "field_ab_tab_quality", "label": "Dấu ấn chất lượng", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_ab_global_title", "label": "Tiêu đề Chất lượng toàn cầu", "name": "global_title", "type": "text" },
+      { "key": "field_ab_global_desc", "label": "Mô tả Chất lượng", "name": "global_desc", "type": "wysiwyg" },
+      { "key": "field_ab_global_gallery", "label": "Bộ sưu tập chứng nhận", "name": "global_gallery", "type": "gallery", "return_format": "array" },
+
+      { "key": "field_ab_tab_awards", "label": "Giải thưởng quốc tế", "name": "", "type": "tab", "placement": "top" },
+      {
+        "key": "field_ab_awards",
+        "label": "Danh sách Giải thưởng",
+        "name": "awards",
+        "type": "repeater",
+        "layout": "table",
+        "button_label": "Thêm Giải thưởng",
+        "sub_fields": [
+          { "key": "field_ab_award_title", "label": "Tên giải thưởng", "name": "title", "type": "text" },
+          { "key": "field_ab_award_logo", "label": "Logo", "name": "logo", "type": "image", "return_format": "array" },
+          { "key": "field_ab_award_url", "label": "Link xác thực", "name": "url", "type": "url" }
+        ]
+      }
+    ],
+    "location": [[{ "param": "page_template", "operator": "==", "value": "page-about-us.php" }]],
+    "menu_order": 0, "position": "normal", "style": "default", "label_placement": "top", "active": true,
+    "description": "Field Group riêng cho Trang Về Chúng Tôi"
+  },
+
+  {
+    "key": "group_page_contact",
+    "title": "Trang Liên Hệ (page-contact.php)",
+    "fields": [
+      { "key": "field_ct_tab_hero", "label": "Tiêu đề trang", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_ct_hero_title", "label": "Tiêu đề trang Liên hệ", "name": "hero_title", "type": "text" },
+
+      { "key": "field_ct_tab_support", "label": "Hỗ trợ khách hàng", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_ct_support_title", "label": "Tiêu đề khối Hỗ trợ", "name": "support_title", "type": "text" },
+      { "key": "field_ct_support_hours", "label": "Thời gian làm việc", "name": "support_hours", "type": "text" },
+      { "key": "field_ct_support_phone", "label": "Số điện thoại", "name": "support_phone", "type": "text" },
+      { "key": "field_ct_support_email", "label": "Email hỗ trợ", "name": "support_email", "type": "email" },
+
+      { "key": "field_ct_tab_sales", "label": "Kinh doanh", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_ct_sales_title", "label": "Tiêu đề khối Kinh doanh", "name": "sales_title", "type": "text" },
+      { "key": "field_ct_sales_hours", "label": "Thời gian làm việc", "name": "sales_hours", "type": "text" },
+      { "key": "field_ct_sales_phone", "label": "Số điện thoại", "name": "sales_phone", "type": "text" },
+      { "key": "field_ct_sales_email", "label": "Email kinh doanh", "name": "sales_email", "type": "email" },
+
+      { "key": "field_ct_tab_offices", "label": "Trụ sở & Văn phòng", "name": "", "type": "tab", "placement": "top" },
+      {
+        "key": "field_ct_main_offices",
+        "label": "Danh sách Trụ sở chính",
+        "name": "main_offices",
+        "type": "repeater",
+        "layout": "block",
+        "button_label": "Thêm Trụ sở chính",
+        "sub_fields": [
+          { "key": "field_ct_off_country", "label": "Quốc gia", "name": "country_name", "type": "text" },
+          { "key": "field_ct_off_flag", "label": "Cờ SVG", "name": "flag_icon", "type": "image", "return_format": "array" },
+          { "key": "field_ct_off_address", "label": "Địa chỉ", "name": "address", "type": "wysiwyg" },
+          { "key": "field_ct_off_phone", "label": "Số điện thoại", "name": "phone", "type": "text" },
+          { "key": "field_ct_off_email", "label": "Email", "name": "email", "type": "email" }
+        ]
+      },
+      {
+        "key": "field_ct_other_countries",
+        "label": "Văn phòng các nước khác",
+        "name": "other_countries",
+        "type": "repeater",
+        "layout": "block",
+        "button_label": "Thêm Quốc Gia Khác",
+        "sub_fields": [
+          { "key": "field_ct_oth_country", "label": "Quốc gia", "name": "country_name", "type": "text" },
+          { "key": "field_ct_oth_flag", "label": "Cờ SVG", "name": "flag_icon", "type": "image", "return_format": "array" },
+          { "key": "field_ct_oth_address", "label": "Địa chỉ", "name": "address", "type": "wysiwyg" },
+          { "key": "field_ct_oth_phone", "label": "Số điện thoại", "name": "phone", "type": "text" },
+          { "key": "field_ct_oth_email", "label": "Email", "name": "email", "type": "email" }
+        ]
+      },
+
+      { "key": "field_ct_tab_departments", "label": "Phòng ban & Bản đồ", "name": "", "type": "tab", "placement": "top" },
+      {
+        "key": "field_ct_departments",
+        "label": "Liên hệ Phòng ban",
+        "name": "departments",
+        "type": "repeater",
+        "layout": "table",
+        "button_label": "Thêm Phòng Ban",
+        "sub_fields": [
+          { "key": "field_ct_dept_title", "label": "Tên phòng ban", "name": "title", "type": "text" },
+          { "key": "field_ct_dept_icon", "label": "Icon", "name": "icon", "type": "image", "return_format": "array" },
+          { "key": "field_ct_dept_link", "label": "Link liên hệ", "name": "link", "type": "link", "return_format": "array" }
+        ]
+      },
+      { "key": "field_ct_map_image", "label": "Hình ảnh Bản đồ thế giới", "name": "map_image", "type": "image", "return_format": "array" }
+    ],
+    "location": [[{ "param": "page_template", "operator": "==", "value": "page-contact.php" }]],
+    "menu_order": 0, "position": "normal", "style": "default", "label_placement": "top", "active": true,
+    "description": "Field Group riêng cho Trang Liên Hệ"
+  },
+
+  {
+    "key": "group_page_vasco_q1",
+    "title": "Trang Máy Dịch Vasco Q1 (page-vasco-translator-q1.php)",
+    "fields": [
+      { "key": "field_q1_tab_hero", "label": "Hero Banner", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_q1_hero_title", "label": "Tiêu đề Vasco Q1", "name": "hero_title", "type": "text", "default_value": "Vasco Translator Q1" },
+      { "key": "field_q1_hero_subtitle", "label": "Slogan", "name": "hero_subtitle", "type": "text", "default_value": "Công nghệ nhân bản giọng nói đột phá" },
+      { "key": "field_q1_hero_desc", "label": "Mô tả chi tiết", "name": "hero_description", "type": "wysiwyg" },
+      { "key": "field_q1_hero_gallery", "label": "Bộ sưu tập ảnh Q1", "name": "hero_gallery", "type": "gallery", "return_format": "array" },
+
+      { "key": "field_q1_tab_features", "label": "Tính năng nổi bật", "name": "", "type": "tab", "placement": "top" },
+      {
+        "key": "field_q1_features",
+        "label": "Danh sách Tính năng cờ đầu",
+        "name": "features_list",
+        "type": "repeater",
+        "layout": "block",
+        "button_label": "Thêm Tính năng",
+        "sub_fields": [
+          { "key": "field_q1_ft_title", "label": "Tên tính năng", "name": "title", "type": "text" },
+          { "key": "field_q1_ft_desc", "label": "Chi tiết tính năng", "name": "description", "type": "wysiwyg" },
+          { "key": "field_q1_ft_image", "label": "Hình ảnh minh họa", "name": "image", "type": "image", "return_format": "array" }
+        ]
+      },
+
+      { "key": "field_q1_tab_specs", "label": "Thông số & Đóng gói", "name": "", "type": "tab", "placement": "top" },
+      {
+        "key": "field_q1_specs",
+        "label": "Bảng thông số kỹ thuật",
+        "name": "specs_list",
+        "type": "repeater",
+        "layout": "table",
+        "button_label": "Thêm Thông số",
+        "sub_fields": [
+          { "key": "field_q1_sp_name", "label": "Tên thông số", "name": "spec_name", "type": "text" },
+          { "key": "field_q1_sp_val", "label": "Giá trị", "name": "spec_value", "type": "text" }
+        ]
+      },
+      { "key": "field_q1_in_box", "label": "Trong hộp gồm có", "name": "in_the_box", "type": "wysiwyg" }
+    ],
+    "location": [[{ "param": "page_template", "operator": "==", "value": "page-vasco-translator-q1.php" }]],
+    "menu_order": 0, "position": "normal", "style": "default", "label_placement": "top", "active": true,
+    "description": "Field Group riêng cho Trang Vasco Q1"
+  },
+
+  {
+    "key": "group_page_vasco_v4",
+    "title": "Trang Máy Dịch Vasco V4 (page-vasco-translator-v4.php)",
+    "fields": [
+      { "key": "field_v4_tab_hero", "label": "Hero Banner", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_v4_hero_title", "label": "Tiêu đề Vasco V4", "name": "hero_title", "type": "text", "default_value": "Vasco Translator V4" },
+      { "key": "field_v4_hero_subtitle", "label": "Slogan", "name": "hero_subtitle", "type": "text" },
+      { "key": "field_v4_hero_desc", "label": "Mô tả chi tiết", "name": "hero_description", "type": "wysiwyg" },
+      { "key": "field_v4_hero_gallery", "label": "Bộ sưu tập ảnh V4", "name": "hero_gallery", "type": "gallery", "return_format": "array" },
+
+      { "key": "field_v4_tab_features", "label": "Tính năng nổi bật", "name": "", "type": "tab", "placement": "top" },
+      {
+        "key": "field_v4_features",
+        "label": "Danh sách Tính năng",
+        "name": "features_list",
+        "type": "repeater",
+        "layout": "block",
+        "button_label": "Thêm Tính năng",
+        "sub_fields": [
+          { "key": "field_v4_ft_title", "label": "Tên tính năng", "name": "title", "type": "text" },
+          { "key": "field_v4_ft_desc", "label": "Chi tiết tính năng", "name": "description", "type": "wysiwyg" },
+          { "key": "field_v4_ft_image", "label": "Hình ảnh minh họa", "name": "image", "type": "image", "return_format": "array" }
+        ]
+      },
+
+      { "key": "field_v4_tab_specs", "label": "Thông số & Đóng gói", "name": "", "type": "tab", "placement": "top" },
+      {
+        "key": "field_v4_specs",
+        "label": "Bảng thông số kỹ thuật",
+        "name": "specs_list",
+        "type": "repeater",
+        "layout": "table",
+        "button_label": "Thêm Thông số",
+        "sub_fields": [
+          { "key": "field_v4_sp_name", "label": "Tên thông số", "name": "spec_name", "type": "text" },
+          { "key": "field_v4_sp_val", "label": "Giá trị", "name": "spec_value", "type": "text" }
+        ]
+      },
+      { "key": "field_v4_in_box", "label": "Trong hộp gồm có", "name": "in_the_box", "type": "wysiwyg" }
+    ],
+    "location": [[{ "param": "page_template", "operator": "==", "value": "page-vasco-translator-v4.php" }]],
+    "menu_order": 0, "position": "normal", "style": "default", "label_placement": "top", "active": true,
+    "description": "Field Group riêng cho Trang Vasco V4"
+  },
+
+  {
+    "key": "group_page_vasco_m4",
+    "title": "Trang Máy Dịch Vasco M4 (page-vasco-translator-m4.php)",
+    "fields": [
+      { "key": "field_m4_tab_hero", "label": "Hero Banner", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_m4_hero_title", "label": "Tiêu đề Vasco M4", "name": "hero_title", "type": "text", "default_value": "Vasco Translator M4" },
+      { "key": "field_m4_hero_subtitle", "label": "Slogan", "name": "hero_subtitle", "type": "text" },
+      { "key": "field_m4_hero_desc", "label": "Mô tả chi tiết", "name": "hero_description", "type": "wysiwyg" },
+      { "key": "field_m4_hero_gallery", "label": "Bộ sưu tập ảnh M4", "name": "hero_gallery", "type": "gallery", "return_format": "array" },
+
+      { "key": "field_m4_tab_features", "label": "Tính năng nổi bật", "name": "", "type": "tab", "placement": "top" },
+      {
+        "key": "field_m4_features",
+        "label": "Danh sách Tính năng M4",
+        "name": "features_list",
+        "type": "repeater",
+        "layout": "block",
+        "button_label": "Thêm Tính năng",
+        "sub_fields": [
+          { "key": "field_m4_ft_title", "label": "Tên tính năng", "name": "title", "type": "text" },
+          { "key": "field_m4_ft_desc", "label": "Chi tiết tính năng", "name": "description", "type": "wysiwyg" },
+          { "key": "field_m4_ft_image", "label": "Hình ảnh minh họa", "name": "image", "type": "image", "return_format": "array" }
+        ]
+      },
+
+      { "key": "field_m4_tab_specs", "label": "Thông số & Đóng gói", "name": "", "type": "tab", "placement": "top" },
+      {
+        "key": "field_m4_specs",
+        "label": "Bảng thông số kỹ thuật",
+        "name": "specs_list",
+        "type": "repeater",
+        "layout": "table",
+        "button_label": "Thêm Thông số",
+        "sub_fields": [
+          { "key": "field_m4_sp_name", "label": "Tên thông số", "name": "spec_name", "type": "text" },
+          { "key": "field_m4_sp_val", "label": "Giá trị", "name": "spec_value", "type": "text" }
+        ]
+      },
+      { "key": "field_m4_in_box", "label": "Trong hộp gồm có", "name": "in_the_box", "type": "wysiwyg" }
+    ],
+    "location": [[{ "param": "page_template", "operator": "==", "value": "page-vasco-translator-m4.php" }]],
+    "menu_order": 0, "position": "normal", "style": "default", "label_placement": "top", "active": true,
+    "description": "Field Group riêng cho Trang Vasco M4"
+  },
+
+  {
+    "key": "group_page_vasco_e1",
+    "title": "Trang Tai Nghe Vasco E1 (page-vasco-translator-e1.php)",
+    "fields": [
+      { "key": "field_e1_tab_hero", "label": "Hero Banner", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_e1_hero_title", "label": "Tiêu đề Vasco E1", "name": "hero_title", "type": "text", "default_value": "Vasco Translator E1" },
+      { "key": "field_e1_hero_subtitle", "label": "Slogan", "name": "hero_subtitle", "type": "text" },
+      { "key": "field_e1_hero_desc", "label": "Mô tả chi tiết", "name": "hero_description", "type": "wysiwyg" },
+      { "key": "field_e1_hero_gallery", "label": "Bộ sưu tập ảnh E1", "name": "hero_gallery", "type": "gallery", "return_format": "array" },
+
+      { "key": "field_e1_tab_features", "label": "Tính năng nổi bật", "name": "", "type": "tab", "placement": "top" },
+      {
+        "key": "field_e1_features",
+        "label": "Danh sách Tính năng E1",
+        "name": "features_list",
+        "type": "repeater",
+        "layout": "block",
+        "button_label": "Thêm Tính năng",
+        "sub_fields": [
+          { "key": "field_e1_ft_title", "label": "Tên tính năng", "name": "title", "type": "text" },
+          { "key": "field_e1_ft_desc", "label": "Chi tiết tính năng", "name": "description", "type": "wysiwyg" },
+          { "key": "field_e1_ft_image", "label": "Hình ảnh minh họa", "name": "image", "type": "image", "return_format": "array" }
+        ]
+      },
+
+      { "key": "field_e1_tab_specs", "label": "Thông số & Đóng gói", "name": "", "type": "tab", "placement": "top" },
+      {
+        "key": "field_e1_specs",
+        "label": "Bảng thông số kỹ thuật",
+        "name": "specs_list",
+        "type": "repeater",
+        "layout": "table",
+        "button_label": "Thêm Thông số",
+        "sub_fields": [
+          { "key": "field_e1_sp_name", "label": "Tên thông số", "name": "spec_name", "type": "text" },
+          { "key": "field_e1_sp_val", "label": "Giá trị", "name": "spec_value", "type": "text" }
+        ]
+      },
+      { "key": "field_e1_in_box", "label": "Trong hộp gồm có", "name": "in_the_box", "type": "wysiwyg" }
+    ],
+    "location": [[{ "param": "page_template", "operator": "==", "value": "page-vasco-translator-e1.php" }]],
+    "menu_order": 0, "position": "normal", "style": "default", "label_placement": "top", "active": true,
+    "description": "Field Group riêng cho Trang Vasco E1"
+  },
+
+  {
+    "key": "group_page_biz_hospitality",
+    "title": "Trang Khách Sạn & Du Lịch (page-business-hospitality.php)",
+    "fields": [
+      { "key": "field_bh_tab_hero", "label": "Hero Banner", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_bh_hero_title", "label": "Tiêu đề Hero", "name": "hero_title", "type": "text" },
+      { "key": "field_bh_hero_desc", "label": "Mô tả Hero", "name": "hero_description", "type": "wysiwyg" },
+      { "key": "field_bh_hero_image", "label": "Hình ảnh Banner", "name": "hero_image", "type": "image", "return_format": "array" },
+      { "key": "field_bh_hero_cta", "label": "Nút CTA", "name": "hero_cta", "type": "link", "return_format": "array" },
+
+      { "key": "field_bh_tab_challenges", "label": "Thách thức & Giải pháp", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_bh_challenges_title", "label": "Tiêu đề Khối Thách thức", "name": "challenges_title", "type": "text" },
+      {
+        "key": "field_bh_challenges_cards",
+        "label": "Danh sách Giải pháp ngành Khách sạn",
+        "name": "challenges_cards",
+        "type": "repeater",
+        "layout": "block",
+        "button_label": "Thêm Thẻ Giải Pháp",
+        "sub_fields": [
+          { "key": "field_bh_card_title", "label": "Tiêu đề thẻ", "name": "title", "type": "text" },
+          { "key": "field_bh_card_desc", "label": "Mô tả thẻ", "name": "description", "type": "wysiwyg" },
+          { "key": "field_bh_card_image", "label": "Hình ảnh minh họa", "name": "image", "type": "image", "return_format": "array" }
+        ]
+      },
+
+      { "key": "field_bh_tab_features", "label": "Tính năng & Phù hợp cho", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_bh_features_list", "label": "Tính năng nổi bật", "name": "features_list", "type": "wysiwyg" },
+      { "key": "field_bh_use_cases_list", "label": "Phù hợp cho (Reception, Concierge...)", "name": "use_cases_list", "type": "wysiwyg" }
+    ],
+    "location": [[{ "param": "page_template", "operator": "==", "value": "page-business-hospitality.php" }]],
+    "menu_order": 0, "position": "normal", "style": "default", "label_placement": "top", "active": true,
+    "description": "Field Group riêng cho Trang Doanh Nghiệp Khách Sạn & Du Lịch"
+  },
+
+  {
+    "key": "group_page_biz_education",
+    "title": "Trang Giáo Dục (page-business-education.php)",
+    "fields": [
+      { "key": "field_be_tab_hero", "label": "Hero Banner", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_be_hero_title", "label": "Tiêu đề Hero", "name": "hero_title", "type": "text" },
+      { "key": "field_be_hero_desc", "label": "Mô tả Hero", "name": "hero_description", "type": "wysiwyg" },
+      { "key": "field_be_hero_image", "label": "Hình ảnh Banner", "name": "hero_image", "type": "image", "return_format": "array" },
+
+      { "key": "field_be_tab_challenges", "label": "Thách thức & Giải pháp", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_be_challenges_title", "label": "Tiêu đề Khối Thách thức", "name": "challenges_title", "type": "text" },
+      {
+        "key": "field_be_challenges_cards",
+        "label": "Danh sách Giải pháp ngành Giáo Dục",
+        "name": "challenges_cards",
+        "type": "repeater",
+        "layout": "block",
+        "button_label": "Thêm Thẻ Giải Pháp",
+        "sub_fields": [
+          { "key": "field_be_card_title", "label": "Tiêu đề thẻ", "name": "title", "type": "text" },
+          { "key": "field_be_card_desc", "label": "Mô tả thẻ", "name": "description", "type": "wysiwyg" },
+          { "key": "field_be_card_image", "label": "Hình ảnh minh họa", "name": "image", "type": "image", "return_format": "array" }
+        ]
+      },
+
+      { "key": "field_be_tab_features", "label": "Tính năng & Phù hợp cho", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_be_features_list", "label": "Tính năng nổi bật", "name": "features_list", "type": "wysiwyg" },
+      { "key": "field_be_use_cases_list", "label": "Phù hợp cho (Sinh viên quốc tế, Giảng viên...)", "name": "use_cases_list", "type": "wysiwyg" }
+    ],
+    "location": [[{ "param": "page_template", "operator": "==", "value": "page-business-education.php" }]],
+    "menu_order": 0, "position": "normal", "style": "default", "label_placement": "top", "active": true,
+    "description": "Field Group riêng cho Trang Doanh Nghiệp Giáo Dục"
+  },
+
+  {
+    "key": "group_page_biz_healthcare",
+    "title": "Trang Y Tế (page-business-healthcare.php)",
+    "fields": [
+      { "key": "field_hc_tab_hero", "label": "Hero Banner", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_hc_hero_title", "label": "Tiêu đề Hero", "name": "hero_title", "type": "text" },
+      { "key": "field_hc_hero_desc", "label": "Mô tả Hero", "name": "hero_description", "type": "wysiwyg" },
+      { "key": "field_hc_hero_image", "label": "Hình ảnh Banner", "name": "hero_image", "type": "image", "return_format": "array" },
+
+      { "key": "field_hc_tab_challenges", "label": "Thách thức & Giải pháp", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_hc_challenges_title", "label": "Tiêu đề Khối Thách thức", "name": "challenges_title", "type": "text" },
+      {
+        "key": "field_hc_challenges_cards",
+        "label": "Danh sách Giải pháp Y tế & Bệnh viện",
+        "name": "challenges_cards",
+        "type": "repeater",
+        "layout": "block",
+        "button_label": "Thêm Thẻ Giải Pháp",
+        "sub_fields": [
+          { "key": "field_hc_card_title", "label": "Tiêu đề thẻ", "name": "title", "type": "text" },
+          { "key": "field_hc_card_desc", "label": "Mô tả thẻ", "name": "description", "type": "wysiwyg" },
+          { "key": "field_hc_card_image", "label": "Hình ảnh minh họa", "name": "image", "type": "image", "return_format": "array" }
+        ]
+      },
+
+      { "key": "field_hc_tab_features", "label": "Tính năng & Bảo mật Y tế", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_hc_features_list", "label": "Tính năng bảo mật & Y tế", "name": "features_list", "type": "wysiwyg" },
+      { "key": "field_hc_use_cases_list", "label": "Phù hợp cho (Bác sĩ, Cấp cứu, Bệnh viện...)", "name": "use_cases_list", "type": "wysiwyg" }
+    ],
+    "location": [[{ "param": "page_template", "operator": "==", "value": "page-business-healthcare.php" }]],
+    "menu_order": 0, "position": "normal", "style": "default", "label_placement": "top", "active": true,
+    "description": "Field Group riêng cho Trang Doanh Nghiệp Y Tế"
+  },
+
+  {
+    "key": "group_page_initiatives",
+    "title": "Trang Tác Động Xã Hội (page-initiatives.php)",
+    "fields": [
+      { "key": "field_in_tab_hero", "label": "Hero Banner", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_in_hero_title", "label": "Tiêu đề trang Sáng kiến", "name": "hero_title", "type": "text", "default_value": "Tác động xã hội của chúng tôi" },
+      { "key": "field_in_hero_subtitle", "label": "Phụ đề thông điệp", "name": "hero_subtitle", "type": "wysiwyg" },
+
+      { "key": "field_in_tab_projects", "label": "Danh sách Sáng kiến", "name": "", "type": "tab", "placement": "top" },
+      {
+        "key": "field_in_items",
+        "label": "Danh sách các dự án tác động xã hội",
+        "name": "initiatives_items",
+        "type": "repeater",
+        "layout": "block",
+        "button_label": "Thêm Sáng Kiến",
+        "sub_fields": [
+          { "key": "field_in_item_title", "label": "Tên dự án", "name": "title", "type": "text" },
+          { "key": "field_in_item_subtitle", "label": "Phụ đề ngắn", "name": "subtitle", "type": "text" },
+          { "key": "field_in_item_desc", "label": "Mô tả & Điểm chính", "name": "description", "type": "wysiwyg" },
+          { "key": "field_in_item_image", "label": "Hình ảnh minh họa", "name": "image", "type": "image", "return_format": "array" },
+          { "key": "field_in_item_link", "label": "Link Tìm hiểu thêm", "name": "link", "type": "link", "return_format": "array" }
+        ]
+      }
+    ],
+    "location": [[{ "param": "page_template", "operator": "==", "value": "page-initiatives.php" }]],
+    "menu_order": 0, "position": "normal", "style": "default", "label_placement": "top", "active": true,
+    "description": "Field Group riêng cho Trang Tác động xã hội"
+  },
+
+  {
+    "key": "group_page_features",
+    "title": "Trang Tính Năng (page-features.php)",
+    "fields": [
+      { "key": "field_ft_tab_hero", "label": "Hero & Video Demo", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_ft_hero_title", "label": "Tiêu đề tính năng", "name": "hero_title", "type": "text" },
+      { "key": "field_ft_hero_desc", "label": "Mô tả tính năng", "name": "hero_desc", "type": "wysiwyg" },
+      { "key": "field_ft_video_url", "label": "Link Video Demo", "name": "video_url", "type": "url" },
+
+      { "key": "field_ft_tab_cards", "label": "Điểm nổi bật", "name": "", "type": "tab", "placement": "top" },
+      {
+        "key": "field_ft_cards",
+        "label": "Danh sách các điểm nổi bật",
+        "name": "feature_cards",
+        "type": "repeater",
+        "layout": "block",
+        "button_label": "Thêm Thẻ Tính Năng",
+        "sub_fields": [
+          { "key": "field_ft_card_title", "label": "Tiêu đề", "name": "title", "type": "text" },
+          { "key": "field_ft_card_desc", "label": "Mô tả", "name": "description", "type": "wysiwyg" },
+          { "key": "field_ft_card_icon", "label": "Icon", "name": "icon", "type": "image", "return_format": "array" }
+        ]
+      }
+    ],
+    "location": [[{ "param": "page_template", "operator": "==", "value": "page-features.php" }]],
+    "menu_order": 0, "position": "normal", "style": "default", "label_placement": "top", "active": true,
+    "description": "Field Group riêng cho Trang Tính Năng"
+  },
+
+  {
+    "key": "group_page_accessories",
+    "title": "Trang Phụ Kiện (page-accessories.php)",
+    "fields": [
+      { "key": "field_ac_tab_hero", "label": "Hero Banner", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_ac_hero_title", "label": "Tiêu đề trang Phụ kiện", "name": "hero_title", "type": "text", "default_value": "Phụ kiện chính hãng Vasco" },
+      { "key": "field_ac_hero_desc", "label": "Mô tả dòng Phụ kiện", "name": "hero_desc", "type": "wysiwyg" },
+
+      { "key": "field_ac_tab_items", "label": "Danh mục Phụ kiện", "name": "", "type": "tab", "placement": "top" },
+      {
+        "key": "field_ac_items",
+        "label": "Danh sách Phụ kiện trưng bày",
+        "name": "accessories_items",
+        "type": "repeater",
+        "layout": "block",
+        "button_label": "Thêm Phụ Kiện",
+        "sub_fields": [
+          { "key": "field_ac_item_title", "label": "Tên phụ kiện", "name": "title", "type": "text" },
+          { "key": "field_ac_item_desc", "label": "Mô tả ngắn", "name": "description", "type": "text" },
+          { "key": "field_ac_item_image", "label": "Hình ảnh phụ kiện", "name": "image", "type": "image", "return_format": "array" },
+          { "key": "field_ac_item_link", "label": "Link mua hàng / Chi tiết", "name": "link", "type": "link", "return_format": "array" }
+        ]
+      }
+    ],
+    "location": [[{ "param": "page_template", "operator": "==", "value": "page-accessories.php" }]],
+    "menu_order": 0, "position": "normal", "style": "default", "label_placement": "top", "active": true,
+    "description": "Field Group riêng cho Trang Phụ Kiện"
+  },
+
+  {
+    "key": "group_page_comparison_engine",
+    "title": "Trang So Sánh Sản Phẩm (page-comparison-engine.php)",
+    "fields": [
+      { "key": "field_ce_tab_hero", "label": "Hero Banner", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_ce_hero_title", "label": "Tiêu đề trang So sánh", "name": "hero_title", "type": "text", "default_value": "Chọn máy phiên dịch ngôn ngữ tốt nhất" },
+      { "key": "field_ce_hero_desc", "label": "Mô tả hướng dẫn so sánh", "name": "hero_desc", "type": "wysiwyg" },
+
+      { "key": "field_ce_tab_cards", "label": "Thẻ tóm tắt các máy", "name": "", "type": "tab", "placement": "top" },
+      {
+        "key": "field_ce_cards",
+        "label": "Danh sách các thẻ sản phẩm so sánh",
+        "name": "device_cards",
+        "type": "repeater",
+        "layout": "block",
+        "button_label": "Thêm Thẻ Sản Phẩm",
+        "sub_fields": [
+          { "key": "field_ce_card_name", "label": "Tên máy (V4, Q1, M4, E1)", "name": "device_name", "type": "text" },
+          { "key": "field_ce_card_summary", "label": "Tóm tắt ưu điểm", "name": "summary", "type": "wysiwyg" }
+        ]
+      }
+    ],
+    "location": [[{ "param": "page_template", "operator": "==", "value": "page-comparison-engine.php" }]],
+    "menu_order": 0, "position": "normal", "style": "default", "label_placement": "top", "active": true,
+    "description": "Field Group riêng cho Trang So Sánh Máy Phiên Dịch"
+  },
+
+  {
+    "key": "group_page_general_default",
+    "title": "Trang Nội Dung Chuẩn & Điều Khoản (General Pages)",
+    "fields": [
+      { "key": "field_gen_tab_content", "label": "Nội dung chính", "name": "", "type": "tab", "placement": "top" },
+      { "key": "field_gen_subtitle", "label": "Phụ đề trang", "name": "page_subtitle", "type": "text" },
+      { "key": "field_gen_banner", "label": "Hình ảnh Banner đầu trang", "name": "page_banner", "type": "image", "return_format": "array" },
+
+      { "key": "field_gen_tab_faqs", "label": "Hỏi đáp (FAQ)", "name": "", "type": "tab", "placement": "top" },
+      {
+        "key": "field_gen_faqs",
+        "label": "Các câu hỏi thường gặp FAQ",
+        "name": "page_faqs",
+        "type": "repeater",
+        "layout": "block",
+        "button_label": "Thêm Câu Hỏi FAQ",
+        "sub_fields": [
+          { "key": "field_gen_faq_q", "label": "Câu hỏi", "name": "question", "type": "text" },
+          { "key": "field_gen_faq_a", "label": "Câu trả lời", "name": "answer", "type": "wysiwyg" }
+        ]
+      }
+    ],
+    "location": [[{ "param": "post_type", "operator": "==", "value": "page" }]],
+    "menu_order": 10, "position": "normal", "style": "default", "label_placement": "top", "active": true,
+    "description": "Field Group cho các trang nội dung chuẩn, pháp lý & điều khoản"
+  }
+]

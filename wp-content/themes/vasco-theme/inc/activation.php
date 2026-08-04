@@ -40,9 +40,17 @@ function vasco_theme_sync_pages() {
 				);
 				if ( $new_page_id && ! is_wp_error( $new_page_id ) ) {
 					$created_ids[ $slug ] = $new_page_id;
+					$template = ! empty( $page['template'] ) ? $page['template'] : 'page-' . $slug . '.php';
+					if ( file_exists( get_template_directory() . '/' . $template ) ) {
+						update_post_meta( $new_page_id, '_wp_page_template', $template );
+					}
 				}
 			} else {
 				$created_ids[ $slug ] = $page_check->ID;
+				$template = ! empty( $page['template'] ) ? $page['template'] : 'page-' . $slug . '.php';
+				if ( file_exists( get_template_directory() . '/' . $template ) ) {
+					update_post_meta( $page_check->ID, '_wp_page_template', $template );
+				}
 			}
 		}
 	}
@@ -67,7 +75,7 @@ function vasco_theme_sync_pages() {
 
 			$page_check = get_page_by_path( $slug );
 			if ( ! isset( $page_check->ID ) ) {
-				wp_insert_post(
+				$child_id = wp_insert_post(
 					array(
 						'post_title'   => $title,
 						'post_name'    => $slug,
@@ -77,6 +85,17 @@ function vasco_theme_sync_pages() {
 						'post_parent'  => $parent_id,
 					)
 				);
+				if ( $child_id && ! is_wp_error( $child_id ) ) {
+					$template = ! empty( $page['template'] ) ? $page['template'] : 'page-' . $slug . '.php';
+					if ( file_exists( get_template_directory() . '/' . $template ) ) {
+						update_post_meta( $child_id, '_wp_page_template', $template );
+					}
+				}
+			} else {
+				$template = ! empty( $page['template'] ) ? $page['template'] : 'page-' . $slug . '.php';
+				if ( file_exists( get_template_directory() . '/' . $template ) ) {
+					update_post_meta( $page_check->ID, '_wp_page_template', $template );
+				}
 			}
 		}
 	}

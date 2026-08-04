@@ -1,492 +1,298 @@
 [
     {
-        "slug": "privacy-policy",
-        "title": "Privacy Policy",
-        "parent": ""
-    },
-    {
-        "slug": "translators",
-        "title": "Máy phiên dịch",
-        "parent": ""
-    },
-    {
-        "slug": "accessories",
-        "title": "Phụ kiện",
-        "parent": ""
-    },
-    {
-        "slug": "bundles",
-        "title": "Combo",
-        "parent": ""
-    },
-    {
-        "slug": "all-products",
-        "title": "Tất cả sản phẩm",
-        "parent": ""
-    },
-    {
-        "slug": "about-us",
-        "title": "Về chúng tôi",
-        "parent": ""
-    },
-    {
-        "slug": "how-it-works",
-        "title": "Cách hoạt động",
-        "parent": ""
-    },
-    {
-        "slug": "meet-vasco",
-        "title": "Gặp gỡ Vasco",
-        "parent": ""
-    },
-    {
-        "slug": "call-translator",
-        "title": "Dịch cuộc gọi",
-        "parent": ""
-    },
-    {
-        "slug": "newsroom",
-        "title": "Tin tức",
-        "parent": ""
-    },
-    {
-        "slug": "contact",
-        "title": "Liên hệ",
-        "parent": ""
-    },
-    {
-        "slug": "terms-and-conditions",
-        "title": "Điều khoản sử dụng",
-        "parent": ""
-    },
-    {
-        "slug": "returns",
-        "title": "Chính sách đổi trả",
-        "parent": ""
-    },
-    {
-        "slug": "shipping",
-        "title": "Vận chuyển",
-        "parent": ""
-    },
-    {
-        "slug": "sitemap",
-        "title": "Sơ đồ trang",
-        "parent": ""
-    },
-    {
-        "slug": "vasco-ces-2026",
-        "title": "Vasco CES 2026",
-        "parent": ""
-    },
-    {
-        "slug": "vasco-innovations",
-        "title": "Vasco Innovations",
-        "parent": ""
-    },
-    {
-        "slug": "home",
         "title": "Trang chủ",
-        "parent": ""
+        "slug": "home",
+        "template": "front-page.php",
+        "front": true
     },
     {
-        "slug": "business-healthcare",
-        "title": "Y tế",
-        "parent": ""
+        "title": "Về chúng tôi",
+        "slug": "about-us",
+        "template": "page-about-us.php"
     },
     {
-        "slug": "business-education",
-        "title": "Giáo dục",
-        "parent": ""
-    },
-    {
-        "slug": "business-hospitality",
-        "title": "Du lịch & Khách sạn",
-        "parent": ""
-    },
-    {
-        "slug": "business-manufacturing",
-        "title": "Sản xuất",
-        "parent": ""
-    },
-    {
-        "slug": "business-law-enforcement",
-        "title": "Thực thi pháp luật",
-        "parent": ""
-    },
-    {
-        "slug": "business-local-government",
-        "title": "Chính quyền địa phương",
-        "parent": ""
-    },
-    {
-        "slug": "business-ngo",
-        "title": "NGO",
-        "parent": ""
-    },
-    {
-        "slug": "vasco-audience",
-        "title": "Vasco Audience",
-        "parent": ""
-    },
-    {
-        "slug": "features-translate-voice",
-        "title": "Dịch giọng nói",
-        "parent": ""
-    },
-    {
-        "slug": "features-translate-photos",
-        "title": "Dịch ảnh",
-        "parent": ""
-    },
-    {
-        "slug": "features-translate-text",
-        "title": "Dịch văn bản",
-        "parent": ""
-    },
-    {
-        "slug": "features-translate-chat",
-        "title": "Dịch nhóm",
-        "parent": ""
-    },
-    {
-        "slug": "initiatives",
-        "title": "Tác động xã hội",
-        "parent": ""
-    },
-    {
-        "slug": "vasco-translator-q1",
-        "title": "Vasco Translator Q1",
-        "parent": "translators"
-    },
-    {
-        "slug": "vasco-translator-m4",
-        "title": "Vasco Translator M4",
-        "parent": "translators"
-    },
-    {
-        "slug": "vasco-translator-v4",
-        "title": "Vasco Translator V4",
-        "parent": "translators"
-    },
-    {
-        "slug": "vasco-translator-e1",
-        "title": "Vasco Translator E1",
-        "parent": "translators"
-    },
-    {
-        "slug": "camper-tour",
-        "title": "Camper Tour",
-        "parent": ""
-    },
-    {
-        "slug": "cart",
-        "title": "Cart",
-        "parent": ""
-    },
-    {
-        "slug": "cartactionshow",
-        "title": "Cartactionshow",
-        "parent": ""
-    },
-    {
-        "slug": "comparison-engine",
-        "title": "Comparison Engine",
-        "parent": ""
-    },
-    {
-        "slug": "coverage-map",
-        "title": "Coverage Map",
-        "parent": ""
-    },
-    {
-        "slug": "features1",
-        "title": "Features1",
-        "parent": ""
-    },
-    {
+        "title": "Truyền thông",
         "slug": "media-about-us",
-        "title": "Media About Us",
-        "parent": ""
+        "template": "page-media-about-us.php"
     },
     {
-        "slug": "seniors-traveling",
-        "title": "Seniors Traveling",
-        "parent": ""
+        "title": "Liên hệ",
+        "slug": "contact",
+        "template": "page-contact.php"
     },
     {
-        "slug": "terms-and-conditions-of-the-promotion-cheaper-in-a-set",
-        "title": "Terms And Conditions Of The Promotion Cheaper In A Set",
-        "parent": ""
+        "title": "Máy phiên dịch",
+        "slug": "translators",
+        "template": "page-translators.php"
     },
     {
-        "slug": "tin-tc",
-        "title": "Tin Tc",
-        "parent": ""
+        "title": "Vasco Q1",
+        "slug": "vasco-translator-q1",
+        "template": "page-vasco-translator-q1.php"
     },
     {
-        "slug": "accessories-case-for-vasco-translator-m4",
-        "title": "Accessories Case For Vasco Translator M4",
-        "parent": ""
+        "title": "Vasco V4",
+        "slug": "vasco-translator-v4",
+        "template": "page-vasco-translator-v4.php"
     },
     {
-        "slug": "accessories-case-for-vasco-translator-q1",
-        "title": "Accessories Case For Vasco Translator Q1",
-        "parent": ""
+        "title": "Vasco M4",
+        "slug": "vasco-translator-m4",
+        "template": "page-vasco-translator-m4.php"
     },
     {
-        "slug": "accessories-case-for-vasco-translator-v4",
-        "title": "Accessories Case For Vasco Translator V4",
-        "parent": ""
+        "title": "Vasco E1",
+        "slug": "vasco-translator-e1",
+        "template": "page-vasco-translator-e1.php"
     },
     {
-        "slug": "accessories-light-case-for-vasco-translator-m4",
-        "title": "Accessories Light Case For Vasco Translator M4",
-        "parent": ""
-    },
-    {
-        "slug": "accessories-light-case-for-vasco-translator-q1",
-        "title": "Accessories Light Case For Vasco Translator Q1",
-        "parent": ""
-    },
-    {
-        "slug": "accessories-power-adapter-us",
-        "title": "Accessories Power Adapter Us",
-        "parent": ""
-    },
-    {
-        "slug": "accessories-tempered-glass-m4",
-        "title": "Accessories Tempered Glass M4",
-        "parent": ""
-    },
-    {
-        "slug": "accessories-tempered-glass-q1",
-        "title": "Accessories Tempered Glass Q1",
-        "parent": ""
-    },
-    {
-        "slug": "accessories-tempered-glass-v4",
-        "title": "Accessories Tempered Glass V4",
-        "parent": ""
-    },
-    {
-        "slug": "articles",
-        "title": "Articles",
-        "parent": ""
-    },
-    {
-        "slug": "articles-languages-how-many-people-speak-more-than-one-language",
-        "title": "Articles Languages How Many People Speak More Than One Language",
-        "parent": ""
-    },
-    {
-        "slug": "articles-languages-least-spoken-language-in-the-world",
-        "title": "Articles Languages Least Spoken Language In The World",
-        "parent": ""
-    },
-    {
-        "slug": "articles-languages-oldest-known-language",
-        "title": "Articles Languages Oldest Known Language",
-        "parent": ""
-    },
-    {
-        "slug": "articles-languages-spanish-speaking-countries",
-        "title": "Articles Languages Spanish Speaking Countries",
-        "parent": ""
-    },
-    {
-        "slug": "articles-news",
-        "title": "Articles News",
-        "parent": ""
-    },
-    {
-        "slug": "articles-press-release",
-        "title": "Articles Press Release",
-        "parent": ""
-    },
-    {
-        "slug": "business-du-lch--khch-sn",
-        "title": "Business Du Lch  Khch Sn",
-        "parent": ""
-    },
-    {
-        "slug": "business-gio-dc",
-        "title": "Business Gio Dc",
-        "parent": ""
-    },
-    {
-        "slug": "business-sn-xut",
-        "title": "Business Sn Xut",
-        "parent": ""
-    },
-    {
-        "slug": "business-vasco-audience",
-        "title": "Business Vasco Audience",
-        "parent": ""
-    },
-    {
-        "slug": "business-y-t",
-        "title": "Business Y T",
-        "parent": ""
-    },
-    {
-        "slug": "downloads",
-        "title": "Downloads",
-        "parent": ""
-    },
-    {
-        "slug": "features",
-        "title": "Features",
-        "parent": ""
-    },
-    {
-        "slug": "initiatives-help-ukraine",
-        "title": "Initiatives Help Ukraine",
-        "parent": ""
-    },
-    {
-        "slug": "initiatives-polish-medical-mission-pmm",
-        "title": "Initiatives Polish Medical Mission Pmm",
-        "parent": ""
-    },
-    {
-        "slug": "initiatives-quinnipiac",
-        "title": "Initiatives Quinnipiac",
-        "parent": ""
-    },
-    {
-        "slug": "languages",
-        "title": "Languages",
-        "parent": ""
-    },
-    {
-        "slug": "packages",
-        "title": "Packages",
-        "parent": ""
-    },
-    {
-        "slug": "translators-q1-mysticplum-e1",
-        "title": "Translators Q1 Mysticplum E1",
-        "parent": ""
-    },
-    {
-        "slug": "translators-q1-phantomblack-e1",
-        "title": "Translators Q1 Phantomblack E1",
-        "parent": ""
-    },
-    {
-        "slug": "translators-q1-scarletpulse-e1",
-        "title": "Translators Q1 Scarletpulse E1",
-        "parent": ""
-    },
-    {
-        "slug": "translators-q1-slateblue-e1",
-        "title": "Translators Q1 Slateblue E1",
-        "parent": ""
-    },
-    {
-        "slug": "translators-v4-blackonyx-e1",
-        "title": "Translators V4 Blackonyx E1",
-        "parent": ""
-    },
-    {
-        "slug": "translators-v4-cobaltblue-e1",
-        "title": "Translators V4 Cobaltblue E1",
-        "parent": ""
-    },
-    {
-        "slug": "translators-v4-pearlwhite-e1",
-        "title": "Translators V4 Pearlwhite E1",
-        "parent": ""
-    },
-    {
-        "slug": "translators-v4-rubyred-e1",
-        "title": "Translators V4 Rubyred E1",
-        "parent": ""
-    },
-    {
-        "slug": "translators-v4-stonegray-e1",
-        "title": "Translators V4 Stonegray E1",
-        "parent": ""
-    },
-    {
-        "slug": "translators-vasco-translator-e1",
-        "title": "Translators Vasco Translator E1",
-        "parent": ""
-    },
-    {
-        "slug": "translators-vasco-translator-m4",
-        "title": "Translators Vasco Translator M4",
-        "parent": ""
-    },
-    {
-        "slug": "translators-vasco-translator-q1",
-        "title": "Translators Vasco Translator Q1",
-        "parent": ""
-    },
-    {
-        "slug": "translators-vasco-translator-v4",
-        "title": "Translators Vasco Translator V4",
-        "parent": ""
-    },
-    {
-        "slug": "travel",
-        "title": "Travel",
-        "parent": ""
-    },
-    {
-        "slug": "v4-blackonyx-e1",
-        "title": "Vasco Translator V4 + E1",
-        "parent": "translators"
-    },
-    {
+        "title": "Bộ Q1 + E1",
         "slug": "q1-phantomblack-e1",
-        "title": "Vasco Translator Q1 + E1",
-        "parent": "translators"
+        "template": "page-q1-phantomblack-e1.php"
     },
     {
-        "slug": "tempered-glass-q1",
-        "title": "Kính cường lực Q1",
-        "parent": "accessories"
+        "title": "Bộ V4 + E1",
+        "slug": "v4-blackonyx-e1",
+        "template": "page-v4-blackonyx-e1.php"
     },
     {
-        "slug": "tempered-glass-m4",
-        "title": "Kính cường lực M4",
-        "parent": "accessories"
+        "title": "So sánh sản phẩm",
+        "slug": "comparison-engine",
+        "template": "page-comparison-engine.php"
     },
     {
-        "slug": "case-for-vasco-translator-q1",
-        "title": "Bao da Q1",
-        "parent": "accessories"
+        "title": "Dịch cuộc gọi",
+        "slug": "call-translator",
+        "template": "page-call-translator.php"
     },
     {
-        "slug": "case-for-vasco-translator-m4",
+        "title": "Khách sạn & Du lịch",
+        "slug": "business-hospitality",
+        "template": "page-business-hospitality.php"
+    },
+    {
+        "title": "Du lịch & Khách sạn",
+        "slug": "business-du-lich-khach-san",
+        "template": "page-business-du-lich-khach-san.php"
+    },
+    {
+        "title": "Giáo dục",
+        "slug": "business-education",
+        "template": "page-business-education.php"
+    },
+    {
+        "title": "Giáo dục VN",
+        "slug": "business-giao-duc",
+        "template": "page-business-giao-duc.php"
+    },
+    {
+        "title": "Y tế",
+        "slug": "business-healthcare",
+        "template": "page-business-healthcare.php"
+    },
+    {
+        "title": "Y tế VN",
+        "slug": "business-y-te",
+        "template": "page-business-y-te.php"
+    },
+    {
+        "title": "Bảo vệ & Pháp luật",
+        "slug": "business-law-enforcement",
+        "template": "page-business-law-enforcement.php"
+    },
+    {
+        "title": "Chính quyền",
+        "slug": "business-local-government",
+        "template": "page-business-local-government.php"
+    },
+    {
+        "title": "Sản xuất",
+        "slug": "business-manufacturing",
+        "template": "page-business-manufacturing.php"
+    },
+    {
+        "title": "Sản xuất VN",
+        "slug": "business-san-xuat",
+        "template": "page-business-san-xuat.php"
+    },
+    {
+        "title": "Phi lợi nhuận",
+        "slug": "business-ngo",
+        "template": "page-business-ngo.php"
+    },
+    {
+        "title": "Đối tượng sử dụng",
+        "slug": "business-vasco-audience",
+        "template": "page-business-vasco-audience.php"
+    },
+    {
+        "title": "Tác động xã hội",
+        "slug": "initiatives",
+        "template": "page-initiatives.php"
+    },
+    {
+        "title": "Hỗ trợ Ukraine",
+        "slug": "initiatives-help-ukraine",
+        "template": "page-initiatives-help-ukraine.php"
+    },
+    {
+        "title": "Sứ mệnh Y tế PMM",
+        "slug": "initiatives-polish-medical-mission-pmm",
+        "template": "page-initiatives-polish-medical-mission-pmm.php"
+    },
+    {
+        "title": "Hợp tác Quinnipiac",
+        "slug": "initiatives-quinnipiac",
+        "template": "page-initiatives-quinnipiac.php"
+    },
+    {
+        "title": "Tính năng",
+        "slug": "features",
+        "template": "page-features.php"
+    },
+    {
+        "title": "Dịch giọng nói",
+        "slug": "features-translate-voice",
+        "template": "page-features-translate-voice.php"
+    },
+    {
+        "title": "Dịch văn bản",
+        "slug": "features-translate-text",
+        "template": "page-features-translate-text.php"
+    },
+    {
+        "title": "Dịch hình ảnh",
+        "slug": "features-translate-photos",
+        "template": "page-features-translate-photos.php"
+    },
+    {
+        "title": "Dịch trò chuyện",
+        "slug": "features-translate-chat",
+        "template": "page-features-translate-chat.php"
+    },
+    {
+        "title": "Cách hoạt động",
+        "slug": "how-it-works",
+        "template": "page-how-it-works.php"
+    },
+    {
+        "title": "Phụ kiện",
+        "slug": "accessories",
+        "template": "page-accessories.php"
+    },
+    {
         "title": "Bao da M4",
-        "parent": "accessories"
+        "slug": "accessories-case-for-vasco-translator-m4",
+        "template": "page-accessories-case-for-vasco-translator-m4.php"
     },
     {
-        "slug": "tempered-glass-v4",
-        "title": "Kính cường lực V4",
-        "parent": "accessories"
+        "title": "Bao da Q1",
+        "slug": "accessories-case-for-vasco-translator-q1",
+        "template": "page-accessories-case-for-vasco-translator-q1.php"
     },
     {
-        "slug": "case-for-vasco-translator-v4",
         "title": "Bao da V4",
-        "parent": "accessories"
+        "slug": "accessories-case-for-vasco-translator-v4",
+        "template": "page-accessories-case-for-vasco-translator-v4.php"
     },
     {
-        "slug": "light-case-for-vasco-translator-q1",
-        "title": "Ốp lưng siêu nhẹ Q1",
-        "parent": "accessories"
+        "title": "Ốp lưng M4",
+        "slug": "accessories-light-case-for-vasco-translator-m4",
+        "template": "page-accessories-light-case-for-vasco-translator-m4.php"
     },
     {
-        "slug": "light-case-for-vasco-translator-m4",
-        "title": "Ốp lưng siêu nhẹ M4",
-        "parent": "accessories"
+        "title": "Ốp lưng Q1",
+        "slug": "accessories-light-case-for-vasco-translator-q1",
+        "template": "page-accessories-light-case-for-vasco-translator-q1.php"
     },
     {
-        "slug": "power-adapter-us",
-        "title": "Củ sạc chuẩn US",
-        "parent": "accessories"
+        "title": "Củ sạc US",
+        "slug": "accessories-power-adapter-us",
+        "template": "page-accessories-power-adapter-us.php"
+    },
+    {
+        "title": "Kính cường lực M4",
+        "slug": "accessories-tempered-glass-m4",
+        "template": "page-accessories-tempered-glass-m4.php"
+    },
+    {
+        "title": "Kính cường lực Q1",
+        "slug": "accessories-tempered-glass-q1",
+        "template": "page-accessories-tempered-glass-q1.php"
+    },
+    {
+        "title": "Kính cường lực V4",
+        "slug": "accessories-tempered-glass-v4",
+        "template": "page-accessories-tempered-glass-v4.php"
+    },
+    {
+        "title": "Tất cả sản phẩm",
+        "slug": "all-products",
+        "template": "page-all-products.php"
+    },
+    {
+        "title": "Giới thiệu Vasco",
+        "slug": "meet-vasco",
+        "template": "page-meet-vasco.php"
+    },
+    {
+        "title": "Tin tức",
+        "slug": "newsroom",
+        "template": "page-newsroom.php"
+    },
+    {
+        "title": "Bài viết tin tức",
+        "slug": "tin-tuc",
+        "template": "page-tin-tuc.php"
+    },
+    {
+        "title": "Chính sách bảo mật",
+        "slug": "privacy-policy",
+        "template": "page-privacy-policy.php"
+    },
+    {
+        "title": "Điều khoản sử dụng",
+        "slug": "terms-and-conditions",
+        "template": "page-terms-and-conditions.php"
+    },
+    {
+        "title": "Chính sách đổi trả",
+        "slug": "returns",
+        "template": "page-returns.php"
+    },
+    {
+        "title": "Chính sách vận chuyển",
+        "slug": "shipping",
+        "template": "page-shipping.php"
+    },
+    {
+        "title": "Sơ đồ trang",
+        "slug": "sitemap",
+        "template": "page-sitemap.php"
+    },
+    {
+        "title": "Tải về",
+        "slug": "downloads",
+        "template": "page-downloads.php"
+    },
+    {
+        "title": "Bản đồ phủ sóng",
+        "slug": "coverage-map",
+        "template": "page-coverage-map.php"
+    },
+    {
+        "title": "Sự kiện CES 2026",
+        "slug": "vasco-ces-2026",
+        "template": "page-vasco-ces-2026.php"
+    },
+    {
+        "title": "Đổi mới công nghệ",
+        "slug": "vasco-innovations",
+        "template": "page-vasco-innovations.php"
+    },
+    {
+        "title": "Hành trình Tour",
+        "slug": "camper-tour",
+        "template": "page-camper-tour.php"
     }
 ]

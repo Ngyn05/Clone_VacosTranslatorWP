@@ -1,6 +1,6 @@
-﻿<?php
+<?php
 /**
- * Template Name: Clean Page page-business-gio-dc.php
+ * Template Name: Doanh Nghiệp - Giáo Dục
  *
  * @package VascoTheme
  */

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Clean Page page-tin-tc.php
+ * Template Name: Tin Tức
  *
  * @package VascoTheme
  */
