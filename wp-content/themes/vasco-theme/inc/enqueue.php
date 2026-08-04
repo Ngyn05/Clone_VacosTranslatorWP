@@ -252,33 +252,40 @@ function vasco_theme_enqueue_all_assets() {
 			}
 
 			document.addEventListener('click', function(ev) {
-				var btn = ev.target.closest('.btn-add-to-cart, .add-to-cart, [data-button-action="add-to-cart"], .add_to_cart_button, .product-add-to-cart button, .btn-primary[href*="cart"], .btn-black[href*="cart"]');
+				var btn = ev.target.closest('.btn-add-to-cart, .add-to-cart, [data-button-action="add-to-cart"], .add_to_cart_button, .product-add-to-cart button, .add-to-cart-btn-full, .add-to-cart-btn-primary');
 				if (btn) {
-					var isCartPageLink = btn.tagName === 'A' && btn.getAttribute('href') && btn.getAttribute('href').indexOf('/cart/') !== -1 && !btn.classList.contains('btn-add-to-cart');
+					var isCartPageLink = btn.tagName === 'A' && btn.getAttribute('href') && btn.getAttribute('href').indexOf('/cart/') !== -1 && !btn.classList.contains('btn-add-to-cart') && !btn.classList.contains('add-to-cart');
 					if (isCartPageLink) return;
 
 					ev.preventDefault();
-					var container = btn.closest('.product-detail, .product-container, .product-single, section, body') || document;
-					var nameEl = container.querySelector('.product-title, h1, .product-name, [itemprop="name"]');
-					var priceEl = container.querySelector('.current-price, .price, .product-price, .price-new, [itemprop="price"]');
-					var imgEl = container.querySelector('.product-main-image img, .product-cover img, .gallery img, img[itemprop="image"]');
+					ev.stopPropagation();
 
-					var productName = nameEl ? nameEl.textContent.trim() : 'Máy phiên dịch Vasco';
+					var pId = btn.getAttribute('data-product-id');
+					var pName = btn.getAttribute('data-product-name');
+					var pPrice = btn.getAttribute('data-product-price');
+					var pImg = btn.getAttribute('data-product-image');
+
+					var container = btn.closest('.product-miniature, .product-detail, .product-container, .product-single, section, body') || document;
+					var nameEl = container.querySelector('.product-title a, .product-title, h1, .product-name, [itemprop="name"]');
+					var priceEl = container.querySelector('.current-price, .price, .product-price, .price-new, [itemprop="price"]');
+					var imgEl = container.querySelector('.product-thumb-wrapper img, .product-main-image img, .product-cover img, .gallery img, img[itemprop="image"]');
+
+					var productName = pName || (nameEl ? nameEl.textContent.trim() : 'Máy phiên dịch Vasco');
 					var priceText = priceEl ? priceEl.textContent.trim() : '9.990.000 đ';
-					var imgUrl = imgEl ? imgEl.src : '';
-					var priceNum = parseFloat(priceText.replace(/[^0-9]/g, '')) || 9990000;
+					var imgUrl = pImg || (imgEl ? imgEl.src : '');
+					var priceNum = pPrice ? parseFloat(pPrice) : (parseFloat(priceText.replace(/[^0-9]/g, '')) || 9990000);
 
 					window.VascoCart.addItem({
-						id: 'prod-' + productName.toLowerCase().replace(/[^a-z0-9]/gi, '-'),
+						id: pId ? ('prod-' + pId) : ('prod-' + productName.toLowerCase().replace(/[^a-z0-9]/gi, '-')),
 						name: productName,
 						price: priceNum,
-						priceText: priceText,
+						priceText: window.VascoCart.formatMoney(priceNum),
 						image: imgUrl,
 						link: window.location.href,
 						quantity: 1
 					});
 				}
-			});
+			}, true);
 
 			// Auto Fix for Lazyloaded Images & Hardcoded /themes/vasco-theme Asset Paths
 			document.addEventListener('DOMContentLoaded', function() {
