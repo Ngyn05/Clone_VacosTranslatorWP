@@ -1,6 +1,6 @@
 /**
- * Custom Product Fields & UI Styles for Vasco Theme
- * (Thông số kỹ thuật, FAQ Accordion, Star Rating & Admin Metabox)
+ * Custom Product Fields & Responsive Universal UI Styles for Vasco Theme
+ * (Thông số kỹ thuật, FAQ Accordion, Star Rating, Grid Cards & Mobile Layouts)
  */
 
 /* ── Common Tab Container ──────────────────────────────────── */
@@ -24,6 +24,7 @@
 	overflow-x: auto;
 	border: 1px solid #d8d8d8;
 	border-radius: 4px;
+	-webkit-overflow-scrolling: touch;
 }
 .vasco-specs-table-frontend {
 	width: 100%;
@@ -125,18 +126,21 @@
 	line-height: 1.65;
 }
 
-@media (max-width: 600px) {
-	.vasco-spec-name,
-	.vasco-spec-value {
-		padding: 10px 12px;
-	}
-	.vasco-faq-question {
-		padding: 14px 2px;
-		font-size: 13px;
-	}
-	.vasco-tab-title {
-		font-size: 22px;
-	}
+/* ── Universal Navigation Tab Menu Scroll ──────────────────── */
+.tab-menu, .menu-container nav {
+	display: flex !important;
+	overflow-x: auto !important;
+	-webkit-overflow-scrolling: touch !important;
+	scrollbar-width: none;
+	white-space: nowrap !important;
+	gap: 8px;
+}
+.tab-menu::-webkit-scrollbar {
+	display: none;
+}
+.tab-menu .menu-link {
+	flex-shrink: 0 !important;
+	white-space: nowrap !important;
 }
 
 /* ── Frontend Star Rating ──────────────────────────────────── */
@@ -179,4 +183,77 @@ p.stars {
 .vasco-admin-field-row input[type="text"],
 .vasco-admin-field-row textarea {
 	flex: 1;
+}
+
+/* ── Responsive Media Queries ────────────────────────────── */
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+	.product-grid-container,
+	.products-grid-wrapper,
+	.product-list-section {
+		display: grid !important;
+		grid-template-columns: repeat(2, 1fr) !important;
+		gap: 20px !important;
+	}
+	#vasco-side-drawer {
+		width: 380px !important;
+	}
+}
+
+/* Mobile & Small Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+	.container {
+		padding-left: 16px !important;
+		padding-right: 16px !important;
+	}
+	.vasco-tab-title {
+		font-size: 22px;
+		margin-bottom: 20px;
+	}
+	.product-grid-container,
+	.products-grid-wrapper,
+	.product-list-section {
+		grid-template-columns: 1fr !important;
+		gap: 16px !important;
+	}
+	.vasco-spec-name,
+	.vasco-spec-value {
+		padding: 12px 14px;
+	}
+	.vasco-faq-question {
+		padding: 14px 4px;
+		font-size: 13px;
+	}
+	#vasco-side-drawer {
+		width: 100vw !important;
+		max-width: 100vw !important;
+	}
+}
+
+/* Small Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+	.vasco-specs-table-frontend,
+	.vasco-specs-table-frontend tbody,
+	.vasco-spec-row-frontend,
+	.vasco-spec-name,
+	.vasco-spec-value {
+		display: block !important;
+		width: 100% !important;
+		box-sizing: border-box !important;
+	}
+	.vasco-spec-name {
+		border-right: none !important;
+		border-bottom: 1px solid #f0f0f0;
+		background: #fafafa;
+		font-weight: 600;
+		padding: 10px 14px;
+	}
+	.vasco-spec-value {
+		padding: 10px 14px 14px;
+	}
+	.breadcrumb ol {
+		flex-wrap: wrap !important;
+		font-size: 13px !important;
+	}
 }
