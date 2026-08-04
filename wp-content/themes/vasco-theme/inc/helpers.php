@@ -358,8 +358,13 @@ function vasco_theme_render_product_detail_page( $slug = '' ) {
 	$languages  = get_post_meta( $product->get_id(), '_product_supported_languages', true );
 	$faq        = get_post_meta( $product->get_id(), '_product_faq', true );
 
+	// Truy vấn số lượng đánh giá và đánh giá trung bình từ WooCommerce Database
+	$review_count   = $product->get_review_count();
+	$average_rating = $product->get_average_rating();
+
 	echo '<div class="container"><div class="product-tabs-nav">';
 	echo '<a class="product-tab-btn active" href="#about">Về sản phẩm</a>';
+	echo '<a class="product-tab-btn" href="#reviews">Đánh giá sản phẩm (' . esc_html( (string) $review_count ) . ')</a>';
 	if ( ! empty( $tech_specs ) ) {
 		echo '<a class="product-tab-btn" href="#specs">Thông số kỹ thuật</a>';
 	}
@@ -373,6 +378,42 @@ function vasco_theme_render_product_detail_page( $slug = '' ) {
 
 	echo '<div class="product-description container py-3">';
 	echo '<div id="about" class="tab-content-block">' . wp_kses_post( wpautop( $description ) ) . '</div>';
+	
+	// Khối Đánh giá sản phẩm (Reviews Block 100% Tiếng Việt)
+	echo '<div id="reviews" class="tab-content-block py-4">';
+	echo '<div class="product-reviews-container">';
+	echo '<h3 class="reviews-title">Đánh giá từ khách hàng (' . esc_html( (string) $review_count ) . ')</h3>';
+	if ( $review_count > 0 ) {
+		echo '<div class="rating-summary-box"><div class="rating-score">' . esc_html( number_format( (float) $average_rating, 1 ) ) . ' <span class="star-icon">★</span></div><p class="rating-count">Dựa trên ' . esc_html( (string) $review_count ) . ' đánh giá thực tế từ người mua hàng.</p></div>';
+	} else {
+		echo '<div class="no-reviews-box"><p class="text-muted">Chưa có đánh giá nào cho sản phẩm này. Hãy là người đầu tiên gửi đánh giá trải nghiệm của bạn!</p></div>';
+	}
+
+	// Form viết đánh giá tiếng Việt 100%
+	echo '<div class="custom-review-form-box">';
+	echo '<h4 class="form-title">Viết đánh giá của bạn</h4>';
+	echo '<form action="' . esc_url( home_url( '/wp-comments-post.php' ) ) . '" method="post" id="commentform" class="comment-form">';
+	echo '<div class="rating-select-wrapper"><label>Đánh giá của bạn *</label><select name="rating" id="rating" required><option value="5">★★★★★ - Rất tốt</option><option value="4">★★★★☆ - Tốt</option><option value="3">★★★☆☆ - Bình thường</option><option value="2">★★☆☆☆ - Tạm được</option><option value="1">★☆☆☆☆ - Kém</option></select></div>';
+	echo '<div class="form-group mb-3"><label for="comment">Nội dung đánh giá *</label><textarea id="comment" name="comment" cols="45" rows="4" placeholder="Chia sẻ trải nghiệm sử dụng sản phẩm này với người mua khác..." required></textarea></div>';
+	echo '<div class="row"><div class="col-md-6 form-group mb-3"><label for="author">Họ và tên *</label><input id="author" name="author" type="text" placeholder="Nhập tên của bạn" required /></div>';
+	echo '<div class="col-md-6 form-group mb-3"><label for="email">Địa chỉ Email *</label><input id="email" name="email" type="email" placeholder="Nhập email của bạn" required /></div></div>';
+	echo '<input type="hidden" name="comment_post_ID" value="' . esc_attr( (string) $product->get_id() ) . '" id="comment_post_ID" />';
+	echo '<input type="hidden" name="comment_parent" id="comment_parent" value="0" />';
+	echo '<button name="submit" type="submit" id="submit" class="submit btn-submit-review">GỬI ĐÁNH GIÁ NGAY</button>';
+	echo '</form></div>';
+
+	// Danh sách các nhận xét / đánh giá thực tế từ Database WooCommerce
+	if ( comments_open( $product->get_id() ) ) {
+		echo '<div class="wc-reviews-list-wrapper">';
+		wp_list_comments( array(
+			'post_id' => $product->get_id(),
+			'style'   => 'ol',
+			'type'    => 'comment',
+		) );
+		echo '</div>';
+	}
+	echo '</div></div>';
+
 	if ( ! empty( $tech_specs ) ) {
 		echo '<div id="specs" class="tab-content-block py-4"><h3>Thông số kỹ thuật</h3>' . wp_kses_post( wpautop( $tech_specs ) ) . '</div>';
 	}
@@ -383,6 +424,40 @@ function vasco_theme_render_product_detail_page( $slug = '' ) {
 		echo '<div id="faq" class="tab-content-block py-4"><h3>Hỏi đáp (FAQ)</h3>' . wp_kses_post( wpautop( $faq ) ) . '</div>';
 	}
 	echo '</div>';
+	echo '<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		var tabBtns = document.querySelectorAll(".product-tab-btn");
+		var tabBlocks = document.querySelectorAll(".tab-content-block");
+		
+		function showTab(targetId) {
+			tabBlocks.forEach(function(block) {
+				if ("#" + block.id === targetId || block.id === targetId.replace("#", "")) {
+					block.style.display = "block";
+				} else {
+					block.style.display = "none";
+				}
+			});
+			tabBtns.forEach(function(btn) {
+				if (btn.getAttribute("href") === targetId) {
+					btn.classList.add("active");
+				} else {
+					btn.classList.remove("active");
+				}
+			});
+		}
+		
+		// Mặc định hiện tab đầu tiên (Về sản phẩm)
+		showTab("#about");
+		
+		tabBtns.forEach(function(btn) {
+			btn.addEventListener("click", function(e) {
+				e.preventDefault();
+				var target = this.getAttribute("href");
+				showTab(target);
+			});
+		});
+	});
+	</script>';
 	echo '</div></section></div></div></section>';
 
 	wp_reset_postdata();
