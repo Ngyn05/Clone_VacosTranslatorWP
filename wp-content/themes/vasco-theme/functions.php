@@ -31,4 +31,5 @@ require_once VASCO_THEME_DIR . '/inc/post-types.php';
 require_once VASCO_THEME_DIR . '/inc/product-sync.php';
 require_once VASCO_THEME_DIR . '/inc/activation.php';
 require_once VASCO_THEME_DIR . '/inc/wc-integration.php';
+require_once VASCO_THEME_DIR . '/inc/product-fields.php';
 

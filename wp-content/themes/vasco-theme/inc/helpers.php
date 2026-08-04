@@ -358,10 +358,17 @@ function vasco_theme_render_product_detail_page( $slug = '' ) {
 	echo '</div>';
 	echo '</div>';
 	echo '</div></div></div>';
-	// Truy vấn các thông tin bổ sung riêng của từng sản phẩm từ WordPress Post Meta / Custom Fields
-	$tech_specs = get_post_meta( $product->get_id(), '_product_tech_specs', true );
+	// Đọc Thông Số Kỹ Thuật và FAQ từ meta key chuẩn của vasco-theme
+	$vasco_specs = get_post_meta( $product->get_id(), '_vasco_specs', true );
+	$vasco_faq   = get_post_meta( $product->get_id(), '_vasco_faq', true );
+	// Fallback: nếu chưa có dữ liệu thật, dùng mặc định để luôn hiển thị tab
+	if ( empty( $vasco_specs ) || ! is_array( $vasco_specs ) ) {
+		$vasco_specs = function_exists( 'vasco_get_default_specs' ) ? vasco_get_default_specs() : array();
+	}
+	if ( empty( $vasco_faq ) || ! is_array( $vasco_faq ) ) {
+		$vasco_faq = function_exists( 'vasco_get_default_faqs' ) ? vasco_get_default_faqs() : array();
+	}
 	$languages  = get_post_meta( $product->get_id(), '_product_supported_languages', true );
-	$faq        = get_post_meta( $product->get_id(), '_product_faq', true );
 
 	// Truy vấn số lượng đánh giá và đánh giá trung bình từ WooCommerce Database
 	$review_count   = $product->get_review_count();
@@ -370,14 +377,14 @@ function vasco_theme_render_product_detail_page( $slug = '' ) {
 	echo '<div class="container"><div class="product-tabs-nav">';
 	echo '<a class="product-tab-btn active" href="#about">Về sản phẩm</a>';
 	echo '<a class="product-tab-btn" href="#reviews">Đánh giá sản phẩm (' . esc_html( (string) $review_count ) . ')</a>';
-	if ( ! empty( $tech_specs ) ) {
-		echo '<a class="product-tab-btn" href="#specs">Thông số kỹ thuật</a>';
+	if ( ! empty( $vasco_specs ) ) {
+		echo '<a class="product-tab-btn" href="#specs">Thông Số Kỹ Thuật</a>';
 	}
 	if ( ! empty( $languages ) ) {
 		echo '<a class="product-tab-btn" href="#languages">Ngôn ngữ hỗ trợ</a>';
 	}
-	if ( ! empty( $faq ) ) {
-		echo '<a class="product-tab-btn" href="#faq">Hỏi đáp (FAQ)</a>';
+	if ( ! empty( $vasco_faq ) ) {
+		echo '<a class="product-tab-btn" href="#faq">FAQ</a>';
 	}
 	echo '</div></div>';
 
@@ -394,11 +401,42 @@ function vasco_theme_render_product_detail_page( $slug = '' ) {
 		echo '<div class="no-reviews-box"><p class="text-muted">Chưa có đánh giá nào cho sản phẩm này. Hãy là người đầu tiên gửi đánh giá trải nghiệm của bạn!</p></div>';
 	}
 
-	// Form viết đánh giá tiếng Việt 100%
-	echo '<div class="custom-review-form-box">';
-	echo '<h4 class="form-title">Viết đánh giá của bạn</h4>';
+	// 1. Danh sách các nhận xét / đánh giá thực tế từ Database WooCommerce
+	$comments = get_comments( array(
+		'post_id' => $product->get_id(),
+		'status'  => 'approve',
+	) );
+	if ( ! empty( $comments ) ) {
+		echo '<div class="wc-reviews-list-wrapper mt-4 mb-4">';
+		echo '<ul class="vasco-comments-list" style="list-style:none;padding:0;margin:0;">';
+		foreach ( $comments as $comm ) {
+			$rating_val = get_comment_meta( $comm->comment_ID, 'rating', true );
+			$stars_str  = str_repeat( '★', (int) $rating_val ) . str_repeat( '☆', 5 - (int) $rating_val );
+			echo '<li class="vasco-comment-item p-3 mb-3" style="background:#f8f9fa;border-radius:8px;border:1px solid #e9ecef;">';
+			echo '<div class="d-flex justify-content-between align-items-center mb-2">';
+			echo '<div><strong style="font-size:15px;color:#212529;">' . esc_html( $comm->comment_author ) . '</strong> <span style="color:#ffb800;font-size:16px;margin-left:8px;">' . esc_html( $stars_str ) . '</span></div>';
+			echo '<small class="text-muted">' . esc_html( date_i18n( 'd/m/Y H:i', strtotime( $comm->comment_date ) ) ) . '</small>';
+			echo '</div>';
+			echo '<div class="comment-text" style="color:#495057;font-size:14px;line-height:1.5;">' . wp_kses_post( wpautop( $comm->comment_content ) ) . '</div>';
+			echo '</li>';
+		}
+		echo '</ul></div>';
+	}
+
+	// 2. Form viết đánh giá tiếng Việt
+	echo '<div class="custom-review-form-box mt-4">';
+	echo '<h4 class="form-title mb-3 font-weight-bold">Viết đánh giá của bạn</h4>';
 	echo '<form action="' . esc_url( home_url( '/wp-comments-post.php' ) ) . '" method="post" id="commentform" class="comment-form">';
-	echo '<div class="rating-select-wrapper"><label>Đánh giá của bạn *</label><select name="rating" id="rating" required><option value="5">★★★★★ - Rất tốt</option><option value="4">★★★★☆ - Tốt</option><option value="3">★★★☆☆ - Bình thường</option><option value="2">★★☆☆☆ - Tạm được</option><option value="1">★☆☆☆☆ - Kém</option></select></div>';
+	echo '<div class="rating-select-wrapper mb-3"><label class="d-block mb-1 font-weight-bold">Đánh giá của bạn *</label>';
+	echo '<div class="vasco-star-rating" id="vasco-star-rating">';
+	echo '<span class="star" data-value="1">★</span>';
+	echo '<span class="star" data-value="2">★</span>';
+	echo '<span class="star" data-value="3">★</span>';
+	echo '<span class="star" data-value="4">★</span>';
+	echo '<span class="star" data-value="5">★</span>';
+	echo '</div>';
+	echo '<input type="hidden" name="rating" id="rating" value="5" required />';
+	echo '</div>';
 	echo '<div class="form-group mb-3"><label for="comment">Nội dung đánh giá *</label><textarea id="comment" name="comment" cols="45" rows="4" placeholder="Chia sẻ trải nghiệm sử dụng sản phẩm này với người mua khác..." required></textarea></div>';
 	echo '<div class="row"><div class="col-md-6 form-group mb-3"><label for="author">Họ và tên *</label><input id="author" name="author" type="text" placeholder="Nhập tên của bạn" required /></div>';
 	echo '<div class="col-md-6 form-group mb-3"><label for="email">Địa chỉ Email *</label><input id="email" name="email" type="email" placeholder="Nhập email của bạn" required /></div></div>';
@@ -406,27 +444,44 @@ function vasco_theme_render_product_detail_page( $slug = '' ) {
 	echo '<input type="hidden" name="comment_parent" id="comment_parent" value="0" />';
 	echo '<button name="submit" type="submit" id="submit" class="submit btn-submit-review">GỬI ĐÁNH GIÁ NGAY</button>';
 	echo '</form></div>';
-
-	// Danh sách các nhận xét / đánh giá thực tế từ Database WooCommerce
-	if ( comments_open( $product->get_id() ) ) {
-		echo '<div class="wc-reviews-list-wrapper">';
-		wp_list_comments( array(
-			'post_id' => $product->get_id(),
-			'style'   => 'ol',
-			'type'    => 'comment',
-		) );
-		echo '</div>';
-	}
 	echo '</div></div>';
 
-	if ( ! empty( $tech_specs ) ) {
-		echo '<div id="specs" class="tab-content-block py-4"><h3>Thông số kỹ thuật</h3>' . wp_kses_post( wpautop( $tech_specs ) ) . '</div>';
+	if ( ! empty( $vasco_specs ) && is_array( $vasco_specs ) ) {
+		echo '<div id="specs" class="tab-content-block py-4">';
+		echo '<div class="vasco-specs-table-wrapper"><table class="vasco-specs-table-frontend"><tbody>';
+		foreach ( $vasco_specs as $spec ) {
+			if ( empty( $spec['name'] ) ) continue;
+			$val_class = empty( $spec['value'] ) ? 'vasco-spec-value--empty' : 'vasco-spec-value--filled';
+			$val_html  = ! empty( $spec['value'] )
+				? esc_html( $spec['value'] )
+				: '<span class="vasco-spec-placeholder">&mdash;</span>';
+			echo '<tr class="vasco-spec-row-frontend">';
+			echo '<td class="vasco-spec-name">' . esc_html( $spec['name'] ) . '</td>';
+			echo '<td class="vasco-spec-value ' . esc_attr( $val_class ) . '">' . $val_html . '</td>';
+			echo '</tr>';
+		}
+		echo '</tbody></table></div>';
+		echo '</div>';
 	}
 	if ( ! empty( $languages ) ) {
 		echo '<div id="languages" class="tab-content-block py-4"><h3>Ngôn ngữ hỗ trợ</h3>' . wp_kses_post( wpautop( $languages ) ) . '</div>';
 	}
-	if ( ! empty( $faq ) ) {
-		echo '<div id="faq" class="tab-content-block py-4"><h3>Hỏi đáp (FAQ)</h3>' . wp_kses_post( wpautop( $faq ) ) . '</div>';
+	if ( ! empty( $vasco_faq ) && is_array( $vasco_faq ) ) {
+		echo '<div id="faq" class="tab-content-block py-4">';
+		echo '<div class="vasco-faq-accordion">';
+		foreach ( $vasco_faq as $i => $faq_item ) {
+			if ( empty( $faq_item['question'] ) ) continue;
+			$ans_id = 'vasco-faq-ans-' . esc_attr( (string) $i );
+			echo '<div class="vasco-faq-item">';
+			echo '<button class="vasco-faq-question" aria-expanded="false" aria-controls="' . $ans_id . '">';
+			echo '<span class="vasco-faq-question-text">' . esc_html( $faq_item['question'] ) . '</span>';
+			echo '<span class="vasco-faq-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>';
+			echo '</button>';
+			echo '<div class="vasco-faq-answer" id="' . $ans_id . '" hidden>';
+			echo '<div class="vasco-faq-answer-inner">' . wp_kses_post( nl2br( esc_html( $faq_item['answer'] ?? '' ) ) ) . '</div>';
+			echo '</div></div>';
+		}
+		echo '</div></div>';
 	}
 	echo '</div>';
 	echo '<script>
@@ -461,8 +516,73 @@ function vasco_theme_render_product_detail_page( $slug = '' ) {
 				showTab(target);
 			});
 		});
+
+		// FAQ Accordion
+		document.querySelectorAll(".vasco-faq-question").forEach(function(btn) {
+			btn.addEventListener("click", function() {
+				var expanded = this.getAttribute("aria-expanded") === "true";
+				var answerId = this.getAttribute("aria-controls");
+				var answerEl = document.getElementById(answerId);
+				this.setAttribute("aria-expanded", expanded ? "false" : "true");
+				this.classList.toggle("vasco-faq-question--open", !expanded);
+				if (answerEl) {
+					if (expanded) { answerEl.setAttribute("hidden", ""); }
+					else { answerEl.removeAttribute("hidden"); }
+				}
+			});
+		});
+		// Star rating interactive
+		var starsContainer = document.getElementById("vasco-star-rating");
+		if (starsContainer) {
+			var stars = starsContainer.querySelectorAll(".star");
+			var ratingInput = document.getElementById("rating");
+
+			function setRating(val) {
+				ratingInput.value = val;
+				stars.forEach(function(s) {
+					var sVal = parseInt(s.getAttribute("data-value"), 10);
+					if (sVal <= val) {
+						s.classList.add("active");
+					} else {
+						s.classList.remove("active");
+					}
+				});
+			}
+
+			// Mặc định 5 sao
+			setRating(5);
+
+			stars.forEach(function(star) {
+				star.addEventListener("mouseover", function() {
+					var val = parseInt(this.getAttribute("data-value"), 10);
+					stars.forEach(function(s) {
+						var sVal = parseInt(s.getAttribute("data-value"), 10);
+						if (sVal <= val) { s.classList.add("hover"); }
+						else { s.classList.remove("hover"); }
+					});
+				});
+
+				star.addEventListener("mouseout", function() {
+					stars.forEach(function(s) { s.classList.remove("hover"); });
+				});
+
+				star.addEventListener("click", function() {
+					var val = parseInt(this.getAttribute("data-value"), 10);
+					setRating(val);
+				});
+			});
+		}
 	});
-	</script>';
+	</script>
+	<style>
+	/* Ẩn các bộ chọn sao mặc định WooCommerce nếu có */
+	.comment-form-rating, p.stars { display: none !important; }
+	
+	.vasco-star-rating { display: inline-flex; gap: 6px; font-size: 24px; cursor: pointer; user-select: none; margin-top: 4px; }
+	.vasco-star-rating .star { color: #d1d5db; transition: color 0.15s ease, transform 0.1s ease; display: inline-block; }
+	.vasco-star-rating .star:hover { transform: scale(1.15); }
+	.vasco-star-rating .star.active, .vasco-star-rating .star.hover { color: #ffb800; }
+	</style>';
 	echo '</div></section></div></div></section>';
 
 	wp_reset_postdata();

@@ -220,7 +220,40 @@ function vasco_theme_sync_products() {
 		update_post_meta( $product_id, '_vasco_wc_source_slug', $slug );
 		update_post_meta( $product_id, '_manage_stock', 'no' );
 		update_post_meta( $product_id, '_stock_status', 'instock' );
-	}
+
+		// ── Đồng bộ Thông Số Kỹ Thuật ────────────────────────────
+		if ( ! empty( $product['specs'] ) && is_array( $product['specs'] ) ) {
+			$clean_specs = array();
+			foreach ( $product['specs'] as $spec ) {
+				$name  = sanitize_text_field( $spec['name'] ?? '' );
+				$value = sanitize_text_field( $spec['value'] ?? '' );
+				if ( ! empty( $name ) ) {
+					$clean_specs[] = array( 'name' => $name, 'value' => $value );
+				}
+			}
+			// Chỉ ghi đè nếu trong JSON có dữ liệu thật (không ghi đè nếu admin đã tự nhập)
+			$existing_specs = get_post_meta( $product_id, '_vasco_specs', true );
+			if ( empty( $existing_specs ) || ! is_array( $existing_specs ) ) {
+				update_post_meta( $product_id, '_vasco_specs', $clean_specs );
+			}
+		}
+
+		// ── Đồng bộ FAQ / Hỏi Đáp ────────────────────────────────
+		if ( ! empty( $product['faq'] ) && is_array( $product['faq'] ) ) {
+			$clean_faqs = array();
+			foreach ( $product['faq'] as $faq ) {
+				$question = sanitize_text_field( $faq['question'] ?? '' );
+				$answer   = sanitize_textarea_field( $faq['answer'] ?? '' );
+				if ( ! empty( $question ) ) {
+					$clean_faqs[] = array( 'question' => $question, 'answer' => $answer );
+				}
+			}
+			$existing_faqs = get_post_meta( $product_id, '_vasco_faq', true );
+			if ( empty( $existing_faqs ) || ! is_array( $existing_faqs ) ) {
+				update_post_meta( $product_id, '_vasco_faq', $clean_faqs );
+			}
+		}
+	} // end foreach $products
 
 	flush_rewrite_rules();
 	return true;
