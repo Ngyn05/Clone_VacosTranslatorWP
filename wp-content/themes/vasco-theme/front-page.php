@@ -590,7 +590,7 @@ get_header();
 								<div class="how-vasco-flex container">
 									<h2 class="h2-notosans" id="how-vasco-section-heading">Ứng dụng của Máy phiên dịch
 										tức thì Vasco</h2>
-									<div aria-roledescription="carousel" class="swiper floating-carousel" role="region">
+									<div aria-roledescription="carousel" class="swiper home-applications-carousel" role="region">
 										<div class="swiper-wrapper" role="list">
 											<div aria-labelledby="panel1" class="card swiper-slide" role="listitem"
 												tabindex="0">

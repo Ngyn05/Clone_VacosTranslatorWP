@@ -104,7 +104,7 @@
       if (window.innerWidth < 768) {
         // "Ứng dụng của Máy phiên dịch" cards must show one full card at a time on
         // mobile (no partial peek); other carousels keep the ~1.18 peek hint.
-        itemsPerView = container.classList.contains('floating-carousel') ? 1 : 1.18;
+        itemsPerView = container.matches('.floating-carousel, .home-applications-carousel') ? 1 : 1.18;
         gap = 14;
       } else if (window.innerWidth < 1024) {
         itemsPerView = 2;
@@ -393,6 +393,7 @@
   function initAllCarousels() {
     const selectors = [
       '.floating-carousel',
+      '.home-applications-carousel',
       '.carousel-media',
       '.carousel-awards',
       '.carousel-award',

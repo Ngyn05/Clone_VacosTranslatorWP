@@ -4,7 +4,7 @@ Theme URI: https://vasco-electronics.com
 Author: Antigravity AI
 Author URI: https://vasco-electronics.com
 Description: Custom WordPress Classic Theme cloned and converted from Vasco Electronics project.
-Version: 1.0.4
+Version: 1.0.6
 Text Domain: vasco-theme
 */
 
@@ -114,7 +114,7 @@ Text Domain: vasco-theme
    992-1023px the CSS forces 3-per-row while the JS still steps the track as if there
    were 2 per row, so the track's translateX lands mid-card and slides get cut off. */
 @media (min-width: 1024px) {
-    .how-vasco-section .floating-carousel .swiper-wrapper {
+    .how-vasco-section .home-applications-carousel .swiper-wrapper {
         display: flex !important;
         flex-wrap: nowrap !important;
         gap: 24px !important;
@@ -123,8 +123,8 @@ Text Domain: vasco-theme
         transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1) !important;
     }
 
-    .how-vasco-section .floating-carousel .swiper-slide,
-    .how-vasco-section .floating-carousel .card {
+    .how-vasco-section .home-applications-carousel .swiper-slide,
+    .how-vasco-section .home-applications-carousel .card {
         flex: 0 0 calc((100% - 48px) / 3) !important;
         width: calc((100% - 48px) / 3) !important;
         min-width: calc((100% - 48px) / 3) !important;
@@ -133,7 +133,7 @@ Text Domain: vasco-theme
         box-sizing: border-box !important;
     }
 
-    .how-vasco-section .floating-carousel {
+    .how-vasco-section .home-applications-carousel {
         overflow: hidden !important;
         width: 100% !important;
         cursor: grab !important;
@@ -848,3 +848,861 @@ button[aria-controls*="video"] {
         margin-right: auto !important;
     }
 }
+
+/* Product detail layout & styling fix (exact match with reference image) */
+.product-container {
+    background: #ffffff !important;
+    color: #172238 !important;
+}
+
+.product-header-wrapper {
+    padding: 32px 0 20px !important;
+}
+
+.product-header {
+    max-width: 1200px !important;
+    display: grid !important;
+    grid-template-columns: 540px 1fr !important;
+    gap: 40px !important;
+    align-items: start !important;
+    margin: 0 auto !important;
+}
+
+.product-cover-thumbnail-section {
+    grid-column: 1 !important;
+    width: 100% !important;
+}
+
+.js-product-images {
+    display: flex !important;
+    gap: 24px !important;
+    align-items: start !important;
+}
+
+.swiper-thumbs-container {
+    width: 90px !important;
+    min-width: 90px !important;
+    height: 480px !important;
+    background: transparent !important;
+    border-radius: 12px !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+}
+
+.swiper-thumbs .swiper-slide {
+    width: 90px !important;
+    height: 90px !important;
+    background: #f4f1ea !important;
+    border-radius: 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+}
+
+.swiper-thumbs .thumb {
+    width: 76px !important;
+    height: 76px !important;
+    object-fit: contain !important;
+}
+
+.product-cover {
+    flex: 1 !important;
+    width: calc(100% - 114px) !important;
+    min-width: 0 !important;
+    height: 480px !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    background: #f4f1ea !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 30px !important;
+    box-sizing: border-box !important;
+    position: relative !important;
+}
+
+.swiper-cover img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    filter: drop-shadow(0 12px 24px rgba(0,0,0,0.06)) !important;
+}
+
+.product-header-section {
+    grid-column: 2 !important;
+    padding-top: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+}
+
+.product-name {
+    font-size: 34px !important;
+    font-weight: 800 !important;
+    line-height: 1.2 !important;
+    margin: 0 0 12px 0 !important;
+    color: #1e293b !important;
+    letter-spacing: -0.5px !important;
+}
+
+.product-subtitle {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+    color: #475569 !important;
+    margin: 0 0 16px 0 !important;
+    font-weight: 400 !important;
+}
+
+.product-review-wrapper {
+    margin-bottom: 16px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.product-review-wrapper .trustpilot-logo-img {
+    height: 22px !important;
+    width: auto !important;
+}
+
+/* 2-Column Action & Variant Box (Shipping & Colors side-by-side) */
+.product-action-info-wrapper {
+    display: grid !important;
+    grid-template-columns: 240px 1fr !important;
+    gap: 24px !important;
+    align-items: start !important;
+    margin-top: 12px !important;
+    margin-bottom: 20px !important;
+}
+
+/* Extended description icons card box */
+.product-extended-description {
+    display: flex !important;
+    flex-direction: column !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 8px !important;
+    background: #ffffff !important;
+    overflow: hidden !important;
+}
+
+.extended-description-icon {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    padding: 10px 12px !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+}
+
+.extended-description-icon:last-child {
+    border-bottom: none !important;
+}
+
+.extended-description-icon img {
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.extended-description-icon p {
+    font-size: 12px !important;
+    color: #475569 !important;
+    margin: 0 !important;
+    font-weight: 500 !important;
+}
+
+/* Product price, afterpay & Add to Cart button section */
+.product-actions {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    grid-column: 1 / -1 !important;
+    margin-top: 10px !important;
+}
+
+.current-price-value,
+.product-prices .product-price {
+    font-size: 34px !important;
+    font-weight: 800 !important;
+    color: #0f172a !important;
+    margin: 0 !important;
+}
+
+.afterpay-text {
+    font-size: 13px !important;
+    color: #475569 !important;
+    margin: 4px 0 12px 0 !important;
+}
+
+.product-add-to-cart .add-to-cart {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    height: 48px !important;
+    padding: 0 36px !important;
+    border-radius: 24px !important;
+    background: #4361ee !important;
+    color: #ffffff !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    border: none !important;
+    cursor: pointer !important;
+    box-shadow: 0 4px 16px rgba(67, 97, 238, 0.35) !important;
+    transition: all 0.25s ease !important;
+    width: fit-content !important;
+    min-width: 240px !important;
+}
+
+.product-add-to-cart .add-to-cart:hover {
+    background: #3451d1 !important;
+    box-shadow: 0 6px 20px rgba(67, 97, 238, 0.45) !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Detail Navigation Tabs (Về sản phẩm, Thông số kỹ thuật, Ngôn ngữ hỗ trợ, Hỏi đáp) */
+.product-tabs-nav {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+    border-bottom: none !important;
+}
+
+.product-tab-btn {
+    padding: 10px 24px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #334155 !important;
+    background: #ffffff !important;
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    text-decoration: none !important;
+}
+
+.product-tab-btn.active {
+    background: #4361ee !important;
+    color: #ffffff !important;
+    border-color: #4361ee !important;
+    position: relative !important;
+}
+
+.product-tab-btn.active::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -6px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    border-width: 6px 6px 0 6px !important;
+    border-style: solid !important;
+    border-color: #4361ee transparent transparent transparent !important;
+}
+
+/* Bottom description content section (Về sản phẩm sang trọng) */
+.product-description.container {
+    max-width: 960px !important;
+    margin: 30px auto 60px auto !important;
+    padding: 20px 0 !important;
+    font-size: 16px !important;
+    line-height: 1.8 !important;
+    color: #334155 !important;
+}
+
+.product-description h2,
+.product-description .section-title,
+.product-description h2.h1 {
+    font-size: 38px !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+    margin: 40px 0 24px 0 !important;
+    color: #0f172a !important;
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
+    letter-spacing: -0.5px !important;
+}
+
+.product-description p {
+    font-size: 16px !important;
+    line-height: 1.85 !important;
+    color: #475569 !important;
+    text-align: center !important;
+    max-width: 860px !important;
+    margin: 0 auto 24px auto !important;
+}
+
+.product-description img {
+    max-width: 100% !important;
+    height: auto !important;
+    border-radius: 16px !important;
+    margin: 32px auto !important;
+    display: block !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06) !important;
+}
+
+.product-description ul {
+    max-width: 800px !important;
+    margin: 24px auto !important;
+    padding-left: 24px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+}
+
+.product-description ul li {
+    font-size: 15.5px !important;
+    line-height: 1.7 !important;
+    color: #334155 !important;
+}
+
+.tab-content-block h3 {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    margin-bottom: 16px !important;
+    border-bottom: 2px solid #e2e8f0 !important;
+    padding-bottom: 8px !important;
+}
+
+@media (max-width: 991px) {
+    .product-header {
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
+    }
+    
+    .product-action-info-wrapper {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* ==========================================================================
+   PRODUCT CATALOG & LISTING CARD STYLING FIX (HORIZONTAL & GRID DUAL LAYOUT)
+   ========================================================================== */
+.products-horizontal-listing,
+.products-translators {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 48px !important;
+    margin-top: 30px !important;
+    margin-bottom: 60px !important;
+}
+
+.products-horizontal-listing .product-miniature,
+.products-translators .product-miniature,
+article.product-horizontal-card {
+    display: grid !important;
+    grid-template-columns: 360px 1fr !important;
+    gap: 48px !important;
+    background: #ffffff !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 24px 0 48px 0 !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+    box-shadow: none !important;
+    align-items: start !important;
+    height: auto !important;
+    transition: none !important;
+}
+
+/* ==========================================================================
+   GRID CARD STYLING (For Accessories & Packages Categories - 4 Columns)
+   ========================================================================== */
+.products-grid-listing {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 40px 24px !important;
+    margin-top: 30px !important;
+    margin-bottom: 60px !important;
+}
+
+@media (max-width: 1199px) {
+    .products-grid-listing {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+@media (max-width: 850px) {
+    .products-grid-listing {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 24px 16px !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .products-grid-listing {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+article.product-grid-card {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    text-align: center !important;
+    background: #ffffff !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100% !important;
+}
+
+article.product-grid-card .listing-product-head {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 16px !important;
+}
+
+article.product-grid-card .product-thumb-wrapper {
+    position: relative !important;
+    width: 100% !important;
+    aspect-ratio: 1 / 1 !important;
+    max-width: 240px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto !important;
+}
+
+article.product-grid-card .product-thumb-wrapper img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.06)) !important;
+}
+
+article.product-grid-card .listing-product-body {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    flex-grow: 1 !important;
+    justify-content: space-between !important;
+    gap: 10px !important;
+}
+
+article.product-grid-card .product-title {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+    color: #1e293b !important;
+    margin: 0 0 4px 0 !important;
+    text-align: center !important;
+}
+
+article.product-grid-card .product-title a {
+    color: #1e293b !important;
+    text-decoration: none !important;
+}
+
+/* Trustpilot image logo styling */
+.trustpilot-mini {
+    display: inline-flex !important;
+    align-items: center !important;
+    margin: 4px 0 8px 0 !important;
+}
+
+.trustpilot-logo-img {
+    height: 18px !important;
+    width: auto !important;
+    object-fit: contain !important;
+}
+
+article.product-grid-card .trustpilot-mini {
+    justify-content: center !important;
+    margin-bottom: 6px !important;
+}
+
+article.product-grid-card .trustpilot-logo-img {
+    height: 16px !important;
+}
+
+article.product-grid-card .product-variants-list {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    margin: 4px 0 12px 0 !important;
+}
+
+article.product-grid-card .product-variants-item {
+    padding: 3px !important;
+    border-radius: 4px !important;
+    border: 1px solid #cbd5e1 !important;
+}
+
+article.product-grid-card .product-variants-item.active {
+    border-color: #0f172a !important;
+}
+
+article.product-grid-card .product-price-and-actions {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px !important;
+    margin-top: auto !important;
+}
+
+article.product-grid-card .product-price {
+    font-size: 26px !important;
+    font-weight: 800 !important;
+    color: #0f172a !important;
+    margin-bottom: 4px !important;
+}
+
+.btn-pill-desc {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    min-width: 200px !important;
+    height: 38px !important;
+    border-radius: 20px !important;
+    border: 1.5px solid #94a3b8 !important;
+    background: #ffffff !important;
+    color: #4f46e5 !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease !important;
+}
+
+.btn-pill-desc:hover {
+    border-color: #4361ee !important;
+    background: #f8fafc !important;
+    color: #4361ee !important;
+}
+
+.add-to-cart-btn-full,
+.btn-notify-me-full {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    width: 100% !important;
+    min-width: 200px !important;
+    height: 42px !important;
+    border-radius: 21px !important;
+    background: #4361ee !important;
+    color: #ffffff !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+    border: none !important;
+    box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3) !important;
+    transition: all 0.2s ease !important;
+}
+
+.btn-notify-me-full {
+    background: #ffffff !important;
+    color: #475569 !important;
+    border: 1px solid #cbd5e1 !important;
+    box-shadow: none !important;
+}
+
+.add-to-cart-btn-full:hover {
+    background: #3451d1 !important;
+    transform: translateY(-1px) !important;
+}
+
+.products-translators .product-miniature:hover,
+.products-listing .product-miniature:hover,
+.products .product-miniature:hover {
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+/* Left side image styling */
+.products-translators .thumbnail-container,
+.products-listing .listing-product-head,
+.products .listing-product-head {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.products-translators .thumbnail-top,
+.products-listing .product-thumb-wrapper,
+.products .product-thumb-wrapper {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 360px !important;
+    aspect-ratio: 1 / 1 !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.products-translators .thumbnail-top img,
+.products-listing .product-thumb-wrapper img,
+.products .product-thumb-wrapper img {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    filter: drop-shadow(0 15px 30px rgba(0,0,0,0.07)) !important;
+    transition: transform 0.3s ease !important;
+}
+
+/* Right side content styling */
+.products-translators .product-description,
+.products-listing .listing-product-body,
+.products .listing-product-body {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+}
+
+.product-description-head {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+}
+
+.products-translators .product-title,
+.products-listing .product-title,
+.products .product-title,
+.product-name,
+h2.product-title {
+    font-size: 32px !important;
+    font-weight: 800 !important;
+    line-height: 1.2 !important;
+    color: #1e293b !important;
+    margin: 0 !important;
+    letter-spacing: -0.5px !important;
+}
+
+.products-translators .product-title a,
+.products-listing .product-title a,
+.products .product-title a {
+    color: #1e293b !important;
+    text-decoration: none !important;
+}
+
+.products-translators .product-subtitle,
+.products-listing .product-subtitle,
+.products .product-subtitle {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+    color: #475569 !important;
+    margin: 4px 0 8px 0 !important;
+    min-height: auto !important;
+    display: block !important;
+    font-weight: 400 !important;
+}
+
+/* Trustpilot section */
+.trustpilot-top,
+.trustpilot-widget {
+    margin-bottom: 8px !important;
+}
+
+/* Bullet points list */
+.products-translators .product-description ul,
+.products-listing .product-description ul,
+.product-long-description ul {
+    list-style-type: disc !important;
+    padding-left: 20px !important;
+    margin: 6px 0 16px 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+}
+
+.products-translators .product-description ul li,
+.products-listing .product-description ul li,
+.product-long-description ul li {
+    font-size: 14px !important;
+    line-height: 1.55 !important;
+    color: #334155 !important;
+}
+
+/* Color variant section */
+#legend-color,
+.color-label-title {
+    font-size: 14px !important;
+    color: #334155 !important;
+    margin-bottom: 6px !important;
+    font-weight: 500 !important;
+}
+
+.product-variants-list,
+.product-colors-wrapper,
+.product-variants-items {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    flex-wrap: wrap !important;
+    margin: 4px 0 20px 0 !important;
+}
+
+.product-variants-item,
+.input-container.product-variants-item,
+.color-pill {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding: 5px 12px !important;
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 6px !important;
+    font-size: 12.5px !important;
+    font-weight: 500 !important;
+    color: #334155 !important;
+    cursor: pointer !important;
+    background: #ffffff !important;
+    transition: all 0.2s ease !important;
+}
+
+.product-variants-item.active,
+.product-variants-item[aria-checked="true"],
+.product-variants-item:first-child {
+    border-color: #0f172a !important;
+    box-shadow: 0 0 0 1px #0f172a !important;
+}
+
+.product-variants-item .circle,
+.circle {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+    display: inline-block !important;
+    flex-shrink: 0 !important;
+}
+
+.circle.phantom-black { background-color: #1a1a1a !important; }
+.circle.slate-blue { background-color: #4a6fa5 !important; }
+.circle.mystic-plum { background-color: #7b435b !important; }
+.circle.scarlet-pulse { background-color: #c0392b !important; }
+
+/* Bottom Action Bar (Price + Circular Mô Tả + Blue Add to Cart / Notify Button) */
+.product-description-body,
+.listing-product-body-bottom {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 24px !important;
+    margin-top: 12px !important;
+    width: 100% !important;
+}
+
+.product-price,
+.products-translators .product-price,
+.products-listing .product-price,
+.price-container {
+    font-size: 32px !important;
+    font-weight: 800 !important;
+    color: #0f172a !important;
+    margin: 0 !important;
+    letter-spacing: -0.5px !important;
+}
+
+/* Circular MÔ TẢ Button */
+.btn-circle-desc,
+.product-description-button-wrapper .btn-secondary,
+.btn-description-circle,
+a.product-link-description {
+    width: 50px !important;
+    height: 50px !important;
+    min-width: 50px !important;
+    border-radius: 50% !important;
+    border: 1.5px solid #94a3b8 !important;
+    background: transparent !important;
+    color: #4f46e5 !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    line-height: 1.1 !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease !important;
+    text-transform: uppercase !important;
+}
+
+.btn-circle-desc:hover,
+.product-description-button-wrapper .btn-secondary:hover {
+    border-color: #4361ee !important;
+    background: #f8fafc !important;
+    color: #4361ee !important;
+    transform: scale(1.04) !important;
+}
+
+/* THÊM VÀO GIỎ HÀNG & THÔNG BÁO CHO TÔI Buttons */
+.add-to-cart-btn-primary,
+.product-add-to-cart .add-to-cart,
+.add-to-cart,
+button.add-to-cart,
+.btn-add-to-cart,
+.btn-notify-me {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    height: 48px !important;
+    padding: 0 28px !important;
+    border-radius: 24px !important;
+    background: #4361ee !important;
+    color: #ffffff !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    text-decoration: none !important;
+    border: none !important;
+    cursor: pointer !important;
+    box-shadow: 0 4px 14px rgba(67, 97, 238, 0.3) !important;
+    transition: all 0.25s ease !important;
+}
+
+.btn-notify-me,
+button.btn-notify {
+    background: #ffffff !important;
+    color: #475569 !important;
+    border: 1px solid #cbd5e1 !important;
+    box-shadow: none !important;
+}
+
+.add-to-cart-btn-primary:hover,
+.product-add-to-cart .add-to-cart:hover,
+button.add-to-cart:hover {
+    background: #3451d1 !important;
+    box-shadow: 0 6px 18px rgba(67, 97, 238, 0.4) !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 991px) {
+    .products-translators .product-miniature,
+    .products-listing .product-miniature,
+    .products .product-miniature,
+    article.product-miniature {
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
+    }
+    
+    .products-translators .thumbnail-top,
+    .products-listing .product-thumb-wrapper,
+    .products .product-thumb-wrapper {
+        max-width: 280px !important;
+        margin: 0 auto !important;
+    }
+    
+    .product-description-body,
+    .listing-product-body-bottom {
+        flex-wrap: wrap !important;
+        justify-content: space-between !important;
+    }
+}
+
+

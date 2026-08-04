@@ -1011,7 +1011,6 @@
 			}
 		})();
 	</script>
-	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets/js/smooth-carousel.js" ); ?>"></script>
 	<script id="translators-carousel-engine">
 		(function () {
 			function initSingleCarousel(carousel) {

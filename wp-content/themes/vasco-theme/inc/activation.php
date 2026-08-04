@@ -94,6 +94,7 @@ function vasco_theme_sync_pages() {
 
 function vasco_theme_after_switch() {
 	vasco_theme_sync_pages();
+	vasco_theme_sync_products();
 }
 add_action( 'after_switch_theme', 'vasco_theme_after_switch' );
 

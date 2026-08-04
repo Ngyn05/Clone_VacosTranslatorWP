@@ -1,0 +1,234 @@
+<?php
+/**
+ * Product Sync Tools
+ *
+ * @package VascoTheme
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+if ( ! function_exists( 'vasco_theme_product_category_map' ) ) {
+	function vasco_theme_product_category_map() {
+		return array(
+			'translators' => 'Máy phiên dịch',
+			'accessories' => 'Phụ kiện',
+			'bundles'     => 'Bộ sản phẩm',
+			'packages'    => 'Gói sản phẩm',
+		);
+	}
+}
+
+function vasco_theme_get_products_data() {
+	$json_file = get_template_directory() . '/inc/products-data.json';
+	if ( ! file_exists( $json_file ) ) {
+		return array();
+	}
+
+	$products = json_decode( file_get_contents( $json_file ), true );
+	return is_array( $products ) ? $products : array();
+}
+
+function vasco_theme_ensure_product_cat_term( $category_slug ) {
+	$categories = vasco_theme_product_category_map();
+	if ( empty( $categories[ $category_slug ] ) ) {
+		return 0;
+	}
+
+	$term = term_exists( $category_slug, 'product_cat' );
+	if ( ! $term ) {
+		$term = wp_insert_term(
+			$categories[ $category_slug ],
+			'product_cat',
+			array(
+				'slug' => $category_slug,
+			)
+		);
+	}
+
+	if ( is_wp_error( $term ) ) {
+		return 0;
+	}
+
+	return is_array( $term ) && ! empty( $term['term_id'] ) ? (int) $term['term_id'] : (int) $term;
+}
+
+function vasco_theme_import_product_image( $relative_image_path, $product_title ) {
+	if ( empty( $relative_image_path ) ) {
+		return 0;
+	}
+
+	$source_path = trailingslashit( VASCO_THEME_DIR ) . ltrim( $relative_image_path, '/' );
+	if ( ! file_exists( $source_path ) ) {
+		return 0;
+	}
+
+	$existing_attachment = get_posts(
+		array(
+			'post_type'      => 'attachment',
+			'post_status'    => 'inherit',
+			'posts_per_page' => 1,
+			'fields'         => 'ids',
+			'meta_key'       => '_vasco_source_image_path',
+			'meta_value'     => $relative_image_path,
+		)
+	);
+
+	if ( ! empty( $existing_attachment[0] ) ) {
+		return (int) $existing_attachment[0];
+	}
+
+	$upload = wp_upload_bits( basename( $source_path ), null, file_get_contents( $source_path ) );
+	if ( ! empty( $upload['error'] ) || empty( $upload['file'] ) ) {
+		return 0;
+	}
+
+	require_once ABSPATH . 'wp-admin/includes/image.php';
+	require_once ABSPATH . 'wp-admin/includes/file.php';
+	require_once ABSPATH . 'wp-admin/includes/media.php';
+
+	$attachment_id = wp_insert_attachment(
+		array(
+			'post_mime_type' => wp_check_filetype( $upload['file'] )['type'],
+			'post_title'     => sanitize_text_field( $product_title ),
+			'post_content'   => '',
+			'post_status'    => 'inherit',
+		),
+		$upload['file']
+	);
+
+	if ( is_wp_error( $attachment_id ) || ! $attachment_id ) {
+		return 0;
+	}
+
+	$metadata = wp_generate_attachment_metadata( $attachment_id, $upload['file'] );
+	wp_update_attachment_metadata( $attachment_id, $metadata );
+	update_post_meta( $attachment_id, '_vasco_source_image_path', $relative_image_path );
+
+	return (int) $attachment_id;
+}
+
+function vasco_theme_sync_products() {
+	if ( ! function_exists( 'wc_get_product' ) ) {
+		return false;
+	}
+
+	$products = vasco_theme_get_products_data();
+	if ( empty( $products ) ) {
+		return false;
+	}
+
+	foreach ( $products as $product ) {
+		$slug = ! empty( $product['slug'] ) ? sanitize_title( $product['slug'] ) : '';
+		if ( '' === $slug ) {
+			continue;
+		}
+
+		$product_id = 0;
+		if ( ! empty( $product['sku'] ) ) {
+			$product_id = (int) wc_get_product_id_by_sku( $product['sku'] );
+		}
+
+		if ( ! $product_id ) {
+			$existing = get_page_by_path( $slug, OBJECT, 'product' );
+			if ( $existing && isset( $existing->ID ) ) {
+				$product_id = (int) $existing->ID;
+			}
+		}
+
+		$wc_product = $product_id ? wc_get_product( $product_id ) : new WC_Product_Simple();
+		if ( ! $wc_product ) {
+			continue;
+		}
+
+		$title = ! empty( $product['title'] ) ? sanitize_text_field( $product['title'] ) : $slug;
+		$price = ! empty( $product['price'] ) ? (string) $product['price'] : '0';
+		$price = number_format( (float) $price, 2, '.', '' );
+
+		$wc_product->set_name( $title );
+		$wc_product->set_slug( $slug );
+		$wc_product->set_status( 'publish' );
+		$wc_product->set_catalog_visibility( 'visible' );
+		$wc_product->set_description( ! empty( $product['description'] ) ? wp_kses_post( $product['description'] ) : '' );
+		$wc_product->set_short_description( ! empty( $product['excerpt'] ) ? sanitize_textarea_field( $product['excerpt'] ) : '' );
+		$wc_product->set_regular_price( $price );
+		$wc_product->set_price( $price );
+		$wc_product->set_manage_stock( false );
+		$wc_product->set_virtual( false );
+		$wc_product->set_sold_individually( false );
+
+		if ( ! empty( $product['sku'] ) ) {
+			$wc_product->set_sku( sanitize_text_field( $product['sku'] ) );
+		}
+
+		$product_id = $wc_product->save();
+		if ( ! $product_id ) {
+			continue;
+		}
+
+		$category_term_id = ! empty( $product['category'] ) ? vasco_theme_ensure_product_cat_term( sanitize_title( $product['category'] ) ) : 0;
+		if ( $category_term_id ) {
+			wp_set_object_terms( $product_id, array( $category_term_id ), 'product_cat', false );
+		}
+
+		if ( ! empty( $product['image'] ) ) {
+			$image_id = vasco_theme_import_product_image( $product['image'], $title );
+			if ( $image_id ) {
+				set_post_thumbnail( $product_id, $image_id );
+			}
+		}
+
+		if ( ! empty( $product['source_url'] ) ) {
+			update_post_meta( $product_id, '_vasco_wc_source_url', esc_url_raw( $product['source_url'] ) );
+		}
+
+		update_post_meta( $product_id, '_vasco_wc_seeded', '1' );
+		update_post_meta( $product_id, '_vasco_wc_source_slug', $slug );
+		update_post_meta( $product_id, '_manage_stock', 'no' );
+		update_post_meta( $product_id, '_stock_status', 'instock' );
+	}
+
+	flush_rewrite_rules();
+	return true;
+}
+
+function vasco_theme_add_product_sync_menu() {
+	add_submenu_page(
+		'edit.php?post_type=product',
+		'Đồng bộ sản phẩm Vasco',
+		'Đồng bộ sản phẩm Vasco',
+		'manage_options',
+		'vasco-sync-products',
+		'vasco_theme_admin_sync_products_html'
+	);
+}
+add_action( 'admin_menu', 'vasco_theme_add_product_sync_menu' );
+
+function vasco_theme_admin_sync_products_html() {
+	if ( ! current_user_can( 'manage_options' ) ) {
+		return;
+	}
+
+	$message = '';
+	if ( isset( $_POST['vasco_do_product_sync'] ) && check_admin_referer( 'vasco_sync_products_action', 'vasco_sync_products_nonce' ) ) {
+		if ( vasco_theme_sync_products() ) {
+			$message = '<div class="notice notice-success is-dismissible"><p><strong>Thành công!</strong> Đã đồng bộ product vào cơ sở dữ liệu WordPress.</p></div>';
+		} else {
+			$message = '<div class="notice notice-error is-dismissible"><p>Không tìm thấy file products-data.json hoặc dữ liệu không hợp lệ.</p></div>';
+		}
+	}
+	?>
+	<div class="wrap">
+		<h1>Đồng bộ Product Vasco</h1>
+		<?php echo $message; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+		<p>Công cụ này tạo hoặc cập nhật product WooCommerce thật từ file dữ liệu trong theme, gồm ảnh đại diện và giá bán.</p>
+		<form method="post" action="">
+			<?php wp_nonce_field( 'vasco_sync_products_action', 'vasco_sync_products_nonce' ); ?>
+			<p>
+				<input type="submit" name="vasco_do_product_sync" class="button button-primary button-hero" value="⚡ Tạo / Đồng bộ product ngay" />
+			</p>
+		</form>
+	</div>
+	<?php
+}

@@ -6,6 +6,10 @@
  */
 
 get_header();
+
+vasco_theme_render_product_detail_page();
+get_footer();
+return;
 ?>
 
 

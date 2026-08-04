@@ -6,6 +6,17 @@
  */
 
 get_header();
+
+vasco_theme_render_catalog_page(
+	array(
+		'active_tab'    => 'packages',
+		'heading'       => 'Gói sản phẩm',
+		'category_slug' => 'packages',
+		'show_compare'  => false,
+	)
+);
+get_footer();
+return;
 ?>
 
 

@@ -6,6 +6,17 @@
  */
 
 get_header();
+
+vasco_theme_render_catalog_page(
+	array(
+		'active_tab'    => 'accessories',
+		'heading'       => 'Phụ kiện',
+		'category_slug' => 'accessories',
+		'show_compare'  => false,
+	)
+);
+get_footer();
+return;
 ?>
 
 

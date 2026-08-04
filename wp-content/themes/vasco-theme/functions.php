@@ -28,4 +28,5 @@ require_once VASCO_THEME_DIR . '/inc/menus.php';
 require_once VASCO_THEME_DIR . '/inc/template-tags.php';
 require_once VASCO_THEME_DIR . '/inc/helpers.php';
 require_once VASCO_THEME_DIR . '/inc/post-types.php';
+require_once VASCO_THEME_DIR . '/inc/product-sync.php';
 require_once VASCO_THEME_DIR . '/inc/activation.php';
