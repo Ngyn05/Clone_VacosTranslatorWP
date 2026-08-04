@@ -172,7 +172,9 @@ function vasco_theme_enqueue_all_assets() {
 					this.updateBadge();
 				},
 				addItem: function(product) {
-					var cart = this.getCart();
+					var self = this;
+					// Optimistic UI: thêm vào localStorage trước cho tốc độ
+					var cart = self.getCart();
 					var existing = cart.find(function(item) { return item.name === product.name; });
 					if (existing) {
 						existing.quantity += (product.quantity || 1);
@@ -180,15 +182,35 @@ function vasco_theme_enqueue_all_assets() {
 						cart.push({
 							id: product.id || 'prod-' + Date.now(),
 							name: product.name || 'Máy phiên dịch Vasco',
-							price: product.price || 9990000,
-							priceText: product.priceText || '9.990.000 đ',
+							price: product.price || 0,
+							priceText: product.priceText || '',
 							image: product.image || '',
 							link: product.link || window.location.href,
 							quantity: product.quantity || 1
 						});
 					}
-					this.saveCart(cart);
-					this.showToast(product.name);
+					self.saveCart(cart);
+					self.showToast(product.name, product);
+
+					// Đồng bộ với WooCommerce cart session qua AJAX
+					var pId = parseInt(product.id, 10);
+					if (pId > 0 && window.VASCO_AJAX_URL && window.VASCO_WC_NONCE) {
+						var fd = new FormData();
+						fd.append('action', 'vasco_wc_add_to_cart');
+						fd.append('nonce', window.VASCO_WC_NONCE);
+						fd.append('product_id', pId);
+						fd.append('quantity', product.quantity || 1);
+						fetch(window.VASCO_AJAX_URL, { method: 'POST', body: fd })
+							.then(function(r) { return r.json(); })
+							.then(function(res) {
+								if (res.success && res.data) {
+									// Cập nhật badge theo WC session count
+									window.VASCO_WC_CART_COUNT = res.data.cart_count || 0;
+									self.updateBadge();
+								}
+							})
+							.catch(function(e) { /* silent fail */ });
+					}
 				},
 				removeItem: function(id) {
 					var cart = this.getCart().filter(function(item) { return item.id !== id; });
@@ -204,9 +226,14 @@ function vasco_theme_enqueue_all_assets() {
 				},
 				clearCart: function() {
 					localStorage.removeItem('vasco_cart');
+					window.VASCO_WC_CART_COUNT = 0;
 					this.updateBadge();
 				},
 				getTotalCount: function() {
+					// Ưu tiên WC session count nếu có
+					if (window.VASCO_WC_CART_COUNT !== undefined && window.VASCO_WC_CART_COUNT > 0) {
+						return window.VASCO_WC_CART_COUNT;
+					}
 					return this.getCart().reduce(function(sum, item) { return sum + item.quantity; }, 0);
 				},
 				getTotalPrice: function() {
@@ -226,22 +253,90 @@ function vasco_theme_enqueue_all_assets() {
 						badge.style.display = count > 0 ? 'inline-flex' : 'none';
 					});
 				},
-				showToast: function(productName) {
-					var existing = document.getElementById('vasco-cart-toast');
-					if (existing) existing.remove();
+				showToast: function(productName, productItem) {
+					var existingDrawer = document.getElementById('vasco-side-drawer');
+					if (existingDrawer) existingDrawer.remove();
+					var existingOverlay = document.getElementById('vasco-drawer-overlay');
+					if (existingOverlay) existingOverlay.remove();
 
-					var cartUrl = window.VASCO_CART_URL || '/cart/';
-					var toast = document.createElement('div');
-					toast.id = 'vasco-cart-toast';
-					toast.style.cssText = 'position:fixed;bottom:24px;right:24px;z-index:999999;background:#ffffff;color:#2D3139;padding:18px 24px;border-radius:14px;box-shadow:0 8px 32px rgba(0,0,0,0.18);display:flex;align-items:center;gap:16px;max-width:440px;border-left:5px solid #001480;animation:vascoSlideUp 0.35s ease;';
-					toast.innerHTML = '<div style="flex:1;"><strong style="display:block;font-size:15px;color:#001480;margin-bottom:2px;">Thành công!</strong><span style="font-size:14px;color:#555;">Đã thêm <b>' + (productName || 'Sản phẩm') + '</b> vào giỏ hàng.</span></div>' +
-						'<a href="' + cartUrl + '" style="background:#001480;color:#ffffff;padding:9px 16px;border-radius:8px;text-decoration:none;font-weight:600;font-size:13px;white-space:nowrap;">Xem giỏ hàng</a>' +
-						'<button onclick="this.parentElement.remove()" style="background:none;border:none;font-size:20px;cursor:pointer;color:#999;padding:0 4px;line-height:1;">&times;</button>';
-					document.body.appendChild(toast);
+					var cartUrl = window.VASCO_CART_URL || '<?php echo esc_url( home_url( "/cart/" ) ); ?>';
+					var defaultImg = "<?php echo esc_url( VASCO_THEME_URI . '/assets/img/v4.webp' ); ?>";
+					var accGlassImg = "<?php echo esc_url( VASCO_THEME_URI . '/assets/img/v4.webp' ); ?>";
+					var accCaseImg = "<?php echo esc_url( VASCO_THEME_URI . '/assets/img/m4/m4-phantom-black.webp' ); ?>";
+					var itemImg = (productItem && productItem.image) ? productItem.image : defaultImg;
+					var itemName = productName || 'Vasco Translator Q1';
+
+					var overlay = document.createElement('div');
+					overlay.id = 'vasco-drawer-overlay';
+					overlay.style.cssText = 'position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);z-index:999998;opacity:0;transition:opacity 0.3s ease;';
+
+					var drawer = document.createElement('div');
+					drawer.id = 'vasco-side-drawer';
+					drawer.style.cssText = 'position:fixed;top:0;right:0;width:420px;max-width:90vw;height:100vh;background:#2D3139;color:#ffffff;z-index:999999;box-shadow:-8px 0 32px rgba(0,0,0,0.3);transform:translateX(100%);transition:transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);display:flex;flex-direction:column;font-family:system-ui, -apple-system, sans-serif;';
+
+					var html = '<div style="background:#2D3139;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,0.1);">';
+					html += '<h3 style="margin:0;font-size:15px;font-weight:700;letter-spacing:0.5px;color:#ffffff;text-transform:uppercase;">ĐÃ THÊM SẢN PHẨM VÀO GIỎ HÀNG</h3>';
+					html += '<button onclick="window.VascoCart.closeDrawer()" style="background:none;border:none;color:#ffffff;font-size:24px;cursor:pointer;padding:0;line-height:1;">&times;</button>';
+					html += '</div>';
+					html += '<div style="flex:1;overflow-y:auto;padding:24px;background:#ffffff;color:#2D3139;">';
+					html += '<div style="background:#EFECE8;border-radius:14px;padding:18px;display:flex;align-items:center;gap:16px;margin-bottom:24px;">';
+					html += '<img src="' + itemImg + '" alt="' + itemName + '" style="width:70px;height:70px;object-fit:contain;border-radius:8px;background:#fff;padding:4px;" />';
+					html += '<div>';
+					html += '<h4 style="margin:0 0 4px 0;font-size:17px;font-weight:700;color:#2D3139;font-family:Georgia, serif;">' + itemName + '</h4>';
+					html += '<span style="font-size:13px;color:#718096;">Đã chọn phiên bản chuẩn Vasco</span>';
+					html += '</div></div>';
+
+					html += '<div style="text-align:center;margin-bottom:32px;">';
+					html += '<a href="' + cartUrl + '" style="display:inline-block;width:100%;background:#3B82F6;color:#ffffff;padding:14px 20px;border-radius:24px;text-decoration:none;font-weight:700;font-size:14px;letter-spacing:0.5px;text-transform:uppercase;box-sizing:border-box;">XEM GIỎ HÀNG & THANH TOÁN</a>';
+					html += '</div>';
+
+					html += '<div style="border-top:1px solid #E2E8F0;padding-top:24px;">';
+					html += '<h4 style="text-align:center;font-size:15px;font-weight:600;color:#2D3139;margin-bottom:20px;">Gợi ý phụ kiện mua kèm</h4>';
+					html += '<div style="display:flex;flex-direction:column;gap:16px;">';
+					
+					var suggestedList = window.VASCO_SUGGESTED_PRODUCTS || [
+						{ name: 'Miếng dán kính cường lực Vasco Q1', price: 490000, price_fmt: '490.000 đ', image: accGlassImg, permalink: '#' },
+						{ name: 'Túi bảo vệ kéo khóa Vasco Q1', price: 750000, price_fmt: '750.000 đ', image: accCaseImg, permalink: '#' }
+					];
+
+					suggestedList.forEach(function(acc) {
+						var accLink = acc.permalink || '#';
+						var accImg = acc.image || defaultImg;
+						var accPriceDisplay = acc.price_fmt || (window.VascoCart.formatMoney(acc.price));
+
+						html += '<div style="border:1px solid #E2E8F0;border-radius:12px;padding:12px 16px;display:flex;align-items:center;gap:14px;background:#fff;">';
+						html += '<a href="' + accLink + '" style="display:block;flex-shrink:0;"><img src="' + accImg + '" alt="' + acc.name + '" style="width:50px;height:50px;object-fit:contain;border-radius:6px;" /></a>';
+						html += '<div style="flex:1;min-width:0;">';
+						html += '<a href="' + accLink + '" style="display:block;font-size:13px;font-weight:600;color:#2D3139;text-decoration:none;line-height:1.3;margin-bottom:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="' + acc.name + '">' + acc.name + '</a>';
+						html += '<strong style="font-size:14px;color:#001480;">' + accPriceDisplay + '</strong>';
+						html += '</div>';
+						html += '<button onclick="window.VascoCart.addItem({id:\'' + (acc.id || 0) + '\',name:\'' + acc.name.replace(/'/g, "\\'") + '\',price:' + acc.price + ',image:\'' + accImg + '\'})" style="background:#F0F5FF;border:1px solid #3B82F6;border-radius:20px;padding:6px 14px;cursor:pointer;color:#3B82F6;font-weight:600;font-size:13px;flex-shrink:0;">+ Thêm</button>';
+						html += '</div>';
+					});
+
+					html += '</div></div></div>';
+
+					drawer.innerHTML = html;
+
+					document.body.appendChild(overlay);
+					document.body.appendChild(drawer);
+
+					overlay.onclick = this.closeDrawer;
 
 					setTimeout(function() {
-						if (toast && toast.parentElement) toast.remove();
-					}, 4500);
+						overlay.style.opacity = '1';
+						drawer.style.transform = 'translateX(0)';
+					}, 10);
+				},
+				closeDrawer: function() {
+					var drawer = document.getElementById('vasco-side-drawer');
+					var overlay = document.getElementById('vasco-drawer-overlay');
+					if (drawer) drawer.style.transform = 'translateX(100%)';
+					if (overlay) overlay.style.opacity = '0';
+					setTimeout(function() {
+						if (drawer) drawer.remove();
+						if (overlay) overlay.remove();
+					}, 350);
 				}
 			};
 
@@ -265,25 +360,27 @@ function vasco_theme_enqueue_all_assets() {
 					var pPrice = btn.getAttribute('data-product-price');
 					var pImg = btn.getAttribute('data-product-image');
 
-					var container = btn.closest('.product-miniature, .product-detail, .product-container, .product-single, section, body') || document;
-					var nameEl = container.querySelector('.product-title a, .product-title, h1, .product-name, [itemprop="name"]');
-					var priceEl = container.querySelector('.current-price, .price, .product-price, .price-new, [itemprop="price"]');
-					var imgEl = container.querySelector('.product-thumb-wrapper img, .product-main-image img, .product-cover img, .gallery img, img[itemprop="image"]');
+					var container = btn.closest('.product-miniature, .product-detail, .product-container, .product-single, .js-product-container, #content, #main, section, body') || document;
+					var nameEl = container.querySelector('.product-title a, .product-name, .product-title, h1, [itemprop="name"]');
+					var priceEl = container.querySelector('.current-price-value, .current-price, .price, .product-price, .price-new, [itemprop="price"]');
+					var imgEl = container.querySelector('.swiper-slide-active img, .product-cover img, .product-thumb-wrapper img, .product-main-image img, .gallery img, img[itemprop="image"]');
 
-					var productName = pName || (nameEl ? nameEl.textContent.trim() : 'Máy phiên dịch Vasco');
-					var priceText = priceEl ? priceEl.textContent.trim() : '9.990.000 đ';
+					var productName = pName || (nameEl ? nameEl.textContent.trim() : 'Vasco Translator Q1');
+					var priceText = priceEl ? priceEl.textContent.trim() : '13.990.000 đ';
 					var imgUrl = pImg || (imgEl ? imgEl.src : '');
-					var priceNum = pPrice ? parseFloat(pPrice) : (parseFloat(priceText.replace(/[^0-9]/g, '')) || 9990000);
+					var priceNum = pPrice ? parseFloat(pPrice) : (parseFloat(priceText.replace(/[^0-9]/g, '')) || 13990000);
 
-					window.VascoCart.addItem({
-						id: pId ? ('prod-' + pId) : ('prod-' + productName.toLowerCase().replace(/[^a-z0-9]/gi, '-')),
+					var productItem = {
+						id: pId ? pId : ('prod-' + productName.toLowerCase().replace(/[^a-z0-9]/gi, '-')),
 						name: productName,
 						price: priceNum,
 						priceText: window.VascoCart.formatMoney(priceNum),
 						image: imgUrl,
 						link: window.location.href,
 						quantity: 1
-					});
+					};
+
+					window.VascoCart.addItem(productItem);
 				}
 			}, true);
 
@@ -321,11 +418,79 @@ function vasco_theme_enqueue_all_assets() {
 			});
 EOT;
 
+	// Get suggested accessories dynamically from WooCommerce / Database
+	$suggested_accessories = array();
+	if ( function_exists( 'wc_get_products' ) ) {
+		$acc_products = wc_get_products(
+			array(
+				'category' => array( 'accessories' ),
+				'limit'    => 4,
+				'status'   => 'publish',
+			)
+		);
+		foreach ( $acc_products as $acc ) {
+			$image_id  = $acc->get_image_id();
+			$image_url = $image_id ? wp_get_attachment_image_url( $image_id, 'thumbnail' ) : '';
+			if ( ! $image_url ) {
+				$image_url = VASCO_THEME_URI . '/assets/img/v4.webp';
+			}
+			$suggested_accessories[] = array(
+				'id'        => $acc->get_id(),
+				'name'      => $acc->get_name(),
+				'price'     => (float) $acc->get_price(),
+				'price_fmt' => wc_price( $acc->get_price() ),
+				'image'     => esc_url( $image_url ),
+				'permalink' => esc_url( $acc->get_permalink() ),
+			);
+		}
+	}
+
+	// Fallback if WooCommerce products are not synced yet
+	if ( empty( $suggested_accessories ) ) {
+		$suggested_accessories = array(
+			array(
+				'id'        => 0,
+				'name'      => 'Miếng dán kính cường lực Vasco Q1',
+				'price'     => 490000,
+				'price_fmt' => '490.000&nbsp;&#8363;',
+				'image'     => VASCO_THEME_URI . '/assets/images/products/381-medium_default/tempered-glass-q1.jpg',
+				'permalink' => home_url( '/accessories/tempered-glass-q1/' ),
+			),
+			array(
+				'id'        => 0,
+				'name'      => 'Túi bảo vệ cho Vasco Translator Q1',
+				'price'     => 750000,
+				'price_fmt' => '750.000&nbsp;&#8363;',
+				'image'     => VASCO_THEME_URI . '/assets/images/products/438-medium_default/case-for-vasco-translator-q1.jpg',
+				'permalink' => home_url( '/accessories/case-for-vasco-translator-q1/' ),
+			),
+		);
+	}
+
 	// Send Vasco Theme Config data to JS
-	wp_add_inline_script( 'jquery', 'window.VASCO_THEME_URI = "' . esc_url( VASCO_THEME_URI ) . '"; window.VASCO_CART_URL = "' . esc_url( home_url( '/cart/' ) ) . '"; window.VASCO_HOME_URL = "' . esc_url( home_url( '/' ) ) . '";' );
+	wp_add_inline_script( 'jquery', 'window.VASCO_THEME_URI = "' . esc_url( VASCO_THEME_URI ) . '"; window.VASCO_CART_URL = "' . esc_url( home_url( '/cart/' ) ) . '"; window.VASCO_HOME_URL = "' . esc_url( home_url( '/' ) ) . '"; window.VASCO_AJAX_URL = "' . esc_url( admin_url( 'admin-ajax.php' ) ) . '"; window.VASCO_SUGGESTED_PRODUCTS = ' . wp_json_encode( $suggested_accessories ) . ';' );
 	wp_add_inline_script( 'jquery', $custom_js );
 }
 add_action( 'wp_enqueue_scripts', 'vasco_theme_enqueue_all_assets' );
+
+/**
+ * AJAX Handler for syncing frontend Add-to-Cart with WooCommerce Cart Session
+ */
+function vasco_theme_add_to_wc_cart_ajax() {
+	if ( ! function_exists( 'WC' ) || ! WC()->cart ) {
+		wp_send_json_error( array( 'message' => 'WooCommerce not active' ) );
+	}
+	$product_id = isset( $_POST['product_id'] ) ? (int) $_POST['product_id'] : 0;
+	$quantity   = isset( $_POST['quantity'] ) ? (int) $_POST['quantity'] : 1;
+
+	if ( $product_id > 0 ) {
+		WC()->cart->add_to_cart( $product_id, $quantity );
+		wp_send_json_success( array( 'cart_count' => WC()->cart->get_cart_contents_count() ) );
+	}
+	wp_send_json_error( array( 'message' => 'Invalid Product ID' ) );
+}
+add_action( 'wp_ajax_vasco_add_to_wc_cart', 'vasco_theme_add_to_wc_cart_ajax' );
+add_action( 'wp_ajax_nopriv_vasco_add_to_wc_cart', 'vasco_theme_add_to_wc_cart_ajax' );
 
 /**
  * Add type="module" attribute to Vite ES Module scripts.

@@ -190,16 +190,62 @@ function vasco_theme_auto_sync_on_admin() {
 	update_option( 'woocommerce_coming_soon', 'no' );
 	update_option( 'woocommerce_store_pages_only', 'no' );
 
-	if ( get_option( 'vasco_products_vnd_synced_v5' ) ) {
+	if ( get_option( 'vasco_pages_checkout_synced_v9' ) ) {
 		return;
 	}
 	vasco_theme_sync_pages( true );
 	if ( function_exists( 'vasco_theme_sync_products' ) ) {
 		vasco_theme_sync_products();
 	}
-	update_option( 'vasco_products_vnd_synced_v5', 1 );
+
+	// ── Setup WooCommerce Payment Gateways (COD + BACS) ──
+	$cod_settings = get_option( 'woocommerce_cod_settings', array() );
+	$cod_settings['enabled'] = 'yes';
+	$cod_settings['title']   = 'Thanh toán khi nhận hàng (COD)';
+	update_option( 'woocommerce_cod_settings', $cod_settings );
+
+	$bacs_settings = get_option( 'woocommerce_bacs_settings', array() );
+	$bacs_settings['enabled'] = 'yes';
+	$bacs_settings['title']   = 'Chuyển khoản ngân hàng';
+	update_option( 'woocommerce_bacs_settings', $bacs_settings );
+
+	// ── WooCommerce Currency VND ──
+	update_option( 'woocommerce_currency', 'VND' );
+	update_option( 'woocommerce_currency_pos', 'right_space' );
+	update_option( 'woocommerce_price_decimals', '0' );
+	update_option( 'woocommerce_price_thousand_sep', '.' );
+	update_option( 'woocommerce_price_decimal_sep', ',' );
+
+	// ── Tạo trang order-received nếu chưa có ──
+	$or_page = get_posts( array(
+		'name'        => 'order-received',
+		'post_type'   => 'page',
+		'post_status' => 'any',
+		'numberposts' => 1,
+	) );
+	if ( empty( $or_page ) ) {
+		$or_id = wp_insert_post( array(
+			'post_title'   => 'Xác nhận đơn hàng',
+			'post_name'    => 'order-received',
+			'post_status'  => 'publish',
+			'post_type'    => 'page',
+			'post_content' => '',
+		) );
+		if ( $or_id && ! is_wp_error( $or_id ) ) {
+			update_post_meta( $or_id, '_wp_page_template', 'page-order-received.php' );
+		}
+	} else {
+		update_post_meta( $or_page[0]->ID, '_wp_page_template', 'page-order-received.php' );
+	}
+
+	update_option( 'vasco_pages_checkout_synced_v9', 1 );
 }
 add_action( 'admin_init', 'vasco_theme_auto_sync_on_admin' );
+add_action( 'init', function() {
+	if ( current_user_can( 'manage_options' ) ) {
+		vasco_theme_auto_sync_on_admin();
+	}
+} );
 
 /**
  * Add WP Admin Page for Syncing Vasco Pages manually

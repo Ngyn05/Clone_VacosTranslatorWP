@@ -1295,6 +1295,10 @@
     // Global Image Error Fallback Handler
     document.addEventListener('error', function(e) {
         if (e.target && e.target.tagName === 'IMG') {
+            // Avoid loop or replacing accessory images with wrong megamenu banner
+            if (e.target.closest('#vasco-side-drawer, #cart-content-area, .product-miniature, .product-cover')) {
+                return;
+            }
             var defaultPlaceholder = '<?php echo esc_url( VASCO_THEME_URI . "/assets/img/menu/megamenu_shop_img.webp" ); ?>';
             if (e.target.src !== defaultPlaceholder) {
                 e.target.src = defaultPlaceholder;

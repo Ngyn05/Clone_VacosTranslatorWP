@@ -291,6 +291,16 @@
         "template": "page-vasco-innovations.php"
     },
     {
+        "title": "Thanh toán",
+        "slug": "checkout",
+        "template": "page-checkout.php"
+    },
+    {
+        "title": "Giỏ hàng",
+        "slug": "cart",
+        "template": "page-cart.php"
+    },
+    {
         "title": "Hành trình Tour",
         "slug": "camper-tour",
         "template": "page-camper-tour.php"
