@@ -42,7 +42,9 @@ if ( $order_id && function_exists( 'wc_get_order' ) ) {
             <div style="width: 80px; height: 80px; background: #D1FAE5; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 36px;">✅</div>
             <h1 style="font-size: 28px; font-weight: 800; color: #065F46; margin-bottom: 8px;">Đặt hàng thành công!</h1>
             <p style="font-size: 16px; color: #4A5568;">Cảm ơn bạn đã tin tưởng mua sắm tại <strong>Vasco Electronics</strong>.</p>
+            <?php if ( strpos( $order->get_billing_email(), '@vasco.local' ) === false ) : ?>
             <p style="font-size: 14px; color: #718096;">Email xác nhận đã được gửi tới <strong><?php echo esc_html( $order->get_billing_email() ); ?></strong></p>
+            <?php endif; ?>
         </div>
 
         <!-- ORDER DETAILS -->
@@ -99,13 +101,26 @@ if ( $order_id && function_exists( 'wc_get_order' ) ) {
 
         <!-- Billing Info -->
         <div style="background: #ffffff; border-radius: 16px; border: 1px solid #EAECEF; padding: 28px; margin-bottom: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.04);">
-            <h2 style="font-size: 16px; font-weight: 700; color: #2D3139; margin: 0 0 16px 0;">Thông tin giao hàng</h2>
-            <div style="font-size: 14px; color: #4A5568; line-height: 1.8;">
-                <p style="margin: 0;"><strong><?php echo esc_html( $order->get_billing_first_name() . ' ' . $order->get_billing_last_name() ); ?></strong></p>
-                <p style="margin: 0;"><?php echo esc_html( $order->get_billing_address_1() ); ?></p>
-                <p style="margin: 0;"><?php echo esc_html( $order->get_billing_city() ); ?></p>
-                <p style="margin: 0;">SĐT: <?php echo esc_html( $order->get_billing_phone() ); ?></p>
-                <p style="margin: 0;">Email: <?php echo esc_html( $order->get_billing_email() ); ?></p>
+            <h2 style="font-size: 16px; font-weight: 700; color: #2D3139; margin: 0 0 16px 0; border-bottom: 1px solid #F0F0F0; padding-bottom: 12px;">Thông tin đơn hàng & Giao hàng</h2>
+            <div style="font-size: 14px; color: #4A5568; line-height: 2;">
+                <?php 
+                    $full_name = trim( $order->get_billing_first_name() . ' ' . $order->get_billing_last_name() );
+                    $address   = trim( $order->get_billing_address_1() );
+                    $city      = trim( $order->get_billing_city() );
+                    $full_addr = array_filter( array( $address, ($city !== 'Việt Nam' ? $city : '') ) );
+                    $addr_text = ! empty( $full_addr ) ? implode( ', ', $full_addr ) : 'Chưa cung cấp';
+                    $email     = $order->get_billing_email();
+                    $email_text= ( strpos( $email, '@vasco.local' ) !== false ) ? 'Chưa cung cấp' : $email;
+                    $customer_note = $order->get_customer_note();
+                ?>
+                <div style="display: flex; gap: 8px; margin-bottom: 6px;"><strong style="min-width: 140px; color: #2D3139;">Mã đơn hàng:</strong> <span>#<?php echo esc_html( (string) $order->get_order_number() ); ?></span></div>
+                <div style="display: flex; gap: 8px; margin-bottom: 6px;"><strong style="min-width: 140px; color: #2D3139;">Tên khách hàng:</strong> <span><?php echo esc_html( $full_name ?: 'Khách hàng' ); ?></span></div>
+                <div style="display: flex; gap: 8px; margin-bottom: 6px;"><strong style="min-width: 140px; color: #2D3139;">Số điện thoại:</strong> <span><?php echo esc_html( $order->get_billing_phone() ); ?></span></div>
+                <div style="display: flex; gap: 8px; margin-bottom: 6px;"><strong style="min-width: 140px; color: #2D3139;">Email:</strong> <span><?php echo esc_html( $email_text ); ?></span></div>
+                <div style="display: flex; gap: 8px; margin-bottom: 6px;"><strong style="min-width: 140px; color: #2D3139;">Địa chỉ giao hàng:</strong> <span><?php echo esc_html( $addr_text ); ?></span></div>
+                <?php if ( ! empty( $customer_note ) ) : ?>
+                <div style="display: flex; gap: 8px;"><strong style="min-width: 140px; color: #2D3139;">Ghi chú đơn hàng:</strong> <span><?php echo esc_html( $customer_note ); ?></span></div>
+                <?php endif; ?>
             </div>
         </div>
 

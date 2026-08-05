@@ -249,6 +249,7 @@ function vasco_wc_place_order() {
 	}
 
 	// Thu thập dữ liệu billing
+	$full_name      = sanitize_text_field( $_POST['billing_full_name'] ?? '' );
 	$first_name     = sanitize_text_field( $_POST['billing_first_name'] ?? '' );
 	$last_name      = sanitize_text_field( $_POST['billing_last_name'] ?? '' );
 	$email          = sanitize_email( $_POST['billing_email'] ?? '' );
@@ -259,18 +260,30 @@ function vasco_wc_place_order() {
 	$payment_method = sanitize_text_field( $_POST['payment_method'] ?? 'cod' );
 	$order_notes    = sanitize_textarea_field( $_POST['order_notes'] ?? '' );
 
-	// Validate dữ liệu bắt buộc
-	if ( empty( $first_name ) || empty( $last_name ) ) {
-		wp_send_json_error( array( 'message' => 'Vui lòng nhập họ và tên.' ) );
+	// Phân tách họ và tên nếu khách nhập ô Họ và tên gộp
+	if ( ! empty( $full_name ) && empty( $last_name ) ) {
+		$parts      = explode( ' ', trim( $full_name ), 2 );
+		$first_name = isset( $parts[1] ) ? $parts[0] : '';
+		$last_name  = isset( $parts[1] ) ? $parts[1] : $parts[0];
 	}
-	if ( ! is_email( $email ) ) {
-		wp_send_json_error( array( 'message' => 'Địa chỉ email không hợp lệ.' ) );
-	}
+
+	// Validate dữ liệu bắt buộc (Chỉ bắt buộc Số điện thoại)
 	if ( empty( $phone ) ) {
 		wp_send_json_error( array( 'message' => 'Vui lòng nhập số điện thoại.' ) );
 	}
-	if ( empty( $address_1 ) || empty( $city ) ) {
-		wp_send_json_error( array( 'message' => 'Vui lòng nhập địa chỉ giao hàng đầy đủ.' ) );
+
+	// Gán giá trị mặc định cho các trường tùy chọn nếu khách không nhập
+	if ( empty( $first_name ) && empty( $last_name ) ) {
+		$last_name = 'Khách hàng';
+	}
+	if ( empty( $email ) ) {
+		$email = 'khachhang_' . preg_replace( '/\D/', '', $phone ) . '@vasco.local';
+	}
+	if ( empty( $address_1 ) ) {
+		$address_1 = 'Chưa cung cấp';
+	}
+	if ( empty( $city ) ) {
+		$city = 'Việt Nam';
 	}
 
 	// Validate payment method
