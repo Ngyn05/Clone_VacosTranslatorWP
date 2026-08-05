@@ -407,54 +407,8 @@ function vasco_theme_render_product_detail_page( $slug = '' ) {
 	echo '<div class="product-description container py-3">';
 	echo '<div id="about" class="tab-content-block">' . wp_kses_post( wpautop( $description ) ) . '</div>';
 	
-	// Khối Đánh giá sản phẩm (Reviews Block 100% Tiếng Việt)
-	echo '<div id="reviews" class="tab-content-block py-4">';
-	echo '<div class="product-reviews-container">';
-	echo '<h3 class="reviews-title">Đánh giá từ khách hàng (' . esc_html( (string) $review_count ) . ')</h3>';
-	if ( $review_count > 0 ) {
-		echo '<div class="rating-summary-box"><div class="rating-score">' . esc_html( number_format( (float) $average_rating, 1 ) ) . ' <span class="star-icon">★</span></div><p class="rating-count">Dựa trên ' . esc_html( (string) $review_count ) . ' đánh giá thực tế từ người mua hàng.</p></div>';
-	} else {
-		echo '<div class="no-reviews-box"><p class="text-muted">Chưa có đánh giá nào cho sản phẩm này. Hãy là người đầu tiên gửi đánh giá trải nghiệm của bạn!</p></div>';
-	}
-	if ( ! empty( $comments ) ) {
-		echo '<div class="wc-reviews-list-wrapper mt-4 mb-4">';
-		echo '<ul class="vasco-comments-list" style="list-style:none;padding:0;margin:0;">';
-		foreach ( $comments as $comm ) {
-			$rating_val = get_comment_meta( $comm->comment_ID, 'rating', true );
-			$stars_str  = str_repeat( '★', (int) $rating_val ) . str_repeat( '☆', 5 - (int) $rating_val );
-			echo '<li class="vasco-comment-item p-3 mb-3" style="background:#f8f9fa;border-radius:8px;border:1px solid #e9ecef;">';
-			echo '<div class="d-flex justify-content-between align-items-center mb-2">';
-			echo '<div><strong style="font-size:15px;color:#212529;">' . esc_html( $comm->comment_author ) . '</strong> <span style="color:#ffb800;font-size:16px;margin-left:8px;">' . esc_html( $stars_str ) . '</span></div>';
-			echo '<small class="text-muted">' . esc_html( date_i18n( 'd/m/Y H:i', strtotime( $comm->comment_date ) ) ) . '</small>';
-			echo '</div>';
-			echo '<div class="comment-text" style="color:#495057;font-size:14px;line-height:1.5;">' . wp_kses_post( wpautop( $comm->comment_content ) ) . '</div>';
-			echo '</li>';
-		}
-		echo '</ul></div>';
-	}
-
-	// 2. Form viết đánh giá tiếng Việt
-	echo '<div class="custom-review-form-box mt-4">';
-	echo '<h4 class="form-title mb-3 font-weight-bold">Viết đánh giá của bạn</h4>';
-	echo '<form action="' . esc_url( home_url( '/wp-comments-post.php' ) ) . '" method="post" id="commentform" class="comment-form">';
-	echo '<div class="rating-select-wrapper mb-3"><label class="d-block mb-1 font-weight-bold">Đánh giá của bạn *</label>';
-	echo '<div class="vasco-star-rating" id="vasco-star-rating">';
-	echo '<span class="star" data-value="1">★</span>';
-	echo '<span class="star" data-value="2">★</span>';
-	echo '<span class="star" data-value="3">★</span>';
-	echo '<span class="star" data-value="4">★</span>';
-	echo '<span class="star" data-value="5">★</span>';
-	echo '</div>';
-	echo '<input type="hidden" name="rating" id="rating" value="5" required />';
-	echo '</div>';
-	echo '<div class="form-group mb-3"><label for="comment">Nội dung đánh giá *</label><textarea id="comment" name="comment" cols="45" rows="4" placeholder="Chia sẻ trải nghiệm sử dụng sản phẩm này với người mua khác..." required></textarea></div>';
-	echo '<div class="row"><div class="col-md-6 form-group mb-3"><label for="author">Họ và tên *</label><input id="author" name="author" type="text" placeholder="Nhập tên của bạn" required /></div>';
-	echo '<div class="col-md-6 form-group mb-3"><label for="email">Địa chỉ Email *</label><input id="email" name="email" type="email" placeholder="Nhập email của bạn" required /></div></div>';
-	echo '<input type="hidden" name="comment_post_ID" value="' . esc_attr( (string) $product->get_id() ) . '" id="comment_post_ID" />';
-	echo '<input type="hidden" name="comment_parent" id="comment_parent" value="0" />';
-	echo '<button name="submit" type="submit" id="submit" class="submit btn-submit-review">GỬI ĐÁNH GIÁ NGAY</button>';
-	echo '</form></div>';
-	echo '</div></div>';
+	// Khối Đánh giá sản phẩm (Modular Template Part)
+	get_template_part( 'template-parts/product/reviews', null, array( 'product' => $product ) );
 
 	if ( ! empty( $vasco_specs ) && is_array( $vasco_specs ) ) {
 		echo '<div id="specs" class="tab-content-block py-4">';

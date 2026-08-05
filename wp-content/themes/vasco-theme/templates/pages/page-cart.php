@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Cart Page (WooCommerce Integrated & Responsive)
  *
@@ -283,6 +283,22 @@ get_header();
                 this.removeItem(key);
                 return;
             }
+
+            // 1. Cập nhật LocalStorage trước để UI mượt mà
+            try {
+                var localCart = JSON.parse(localStorage.getItem('vasco_cart')) || [];
+                var item = localCart.find(function(i) { return i.cart_item_key === key || String(i.id) === String(key) || i.name === key; });
+                if (!item && localCart.length > 0) {
+                    item = localCart[0];
+                }
+                if (item) {
+                    item.quantity = qty;
+                    localStorage.setItem('vasco_cart', JSON.stringify(localCart));
+                    if (window.VascoCart) window.VascoCart.updateBadge();
+                }
+            } catch(e) {}
+
+            // 2. Gửi request AJAX tới backend
             var fd = new FormData();
             fd.append('action', 'vasco_wc_update_cart_item');
             fd.append('nonce', nonce);
@@ -293,11 +309,31 @@ get_header();
                 .then(function(res) {
                     if (res.success) {
                         loadCart();
-                        if (window.VascoCart) window.VascoCart.updateBadge();
+                    } else {
+                        loadCartFromLocal();
                     }
-                });
+                })
+                .catch(function() { loadCartFromLocal(); });
         },
         removeItem: function(key) {
+            // 1. Cập nhật LocalStorage trước để xóa sản phẩm tức thì
+            try {
+                var localCart = JSON.parse(localStorage.getItem('vasco_cart')) || [];
+                var filtered = localCart.filter(function(i) { 
+                    return i.cart_item_key !== key && String(i.id) !== String(key) && i.name !== key; 
+                });
+                if (filtered.length === localCart.length && localCart.length > 0) {
+                    // Nếu key hash không trùng chính xác, xóa phần tử đầu tiên
+                    filtered.shift();
+                }
+                localStorage.setItem('vasco_cart', JSON.stringify(filtered));
+                if (window.VascoCart) {
+                    window.VASCO_WC_CART_COUNT = filtered.reduce(function(s, i) { return s + i.quantity; }, 0);
+                    window.VascoCart.updateBadge();
+                }
+            } catch(e) {}
+
+            // 2. Gửi request AJAX tới backend
             var fd = new FormData();
             fd.append('action', 'vasco_wc_remove_cart_item');
             fd.append('nonce', nonce);
@@ -307,11 +343,48 @@ get_header();
                 .then(function(res) {
                     if (res.success) {
                         loadCart();
-                        if (window.VascoCart) window.VascoCart.updateBadge();
+                    } else {
+                        loadCartFromLocal();
                     }
-                });
+                })
+                .catch(function() { loadCartFromLocal(); });
         }
     };
+
+    function loadCartFromLocal() {
+        try {
+            var localCart = JSON.parse(localStorage.getItem('vasco_cart')) || [];
+            if (localCart.length > 0) {
+                var subtotal = 0;
+                var formattedItems = localCart.map(function(item, idx) {
+                    var priceNum = typeof item.price === 'number' ? item.price : (parseFloat(String(item.price).replace(/[^0-9]/g, '')) || 0);
+                    var itemTotal = priceNum * item.quantity;
+                    subtotal += itemTotal;
+                    var key = item.cart_item_key || item.id || item.name || ('local-' + idx);
+                    return {
+                        cart_item_key: key,
+                        product_id: item.id,
+                        name: item.name,
+                        price: priceNum,
+                        price_fmt: item.priceText || (window.VascoCart ? window.VascoCart.formatMoney(priceNum) : priceNum + ' đ'),
+                        quantity: item.quantity,
+                        item_total: itemTotal,
+                        item_total_fmt: window.VascoCart ? window.VascoCart.formatMoney(itemTotal) : itemTotal + ' đ',
+                        image: item.image || ((window.VASCO_THEME_URI || '') + '/assets/img/v4.webp'),
+                        permalink: item.link || '#'
+                    };
+                });
+                renderCartItems({
+                    items: formattedItems,
+                    count: formattedItems.reduce(function(s, i) { return s + i.quantity; }, 0),
+                    subtotal_fmt: window.VascoCart ? window.VascoCart.formatMoney(subtotal) : subtotal + ' đ',
+                    total_fmt: window.VascoCart ? window.VascoCart.formatMoney(subtotal) : subtotal + ' đ'
+                });
+                return;
+            }
+        } catch(e) {}
+        renderEmptyCart();
+    }
 
     window.vascoCoupon = {
         apply: function() {
