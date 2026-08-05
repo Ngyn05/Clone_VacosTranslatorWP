@@ -21,7 +21,7 @@ if ( ! function_exists( 'vasco_theme_product_category_map' ) ) {
 }
 
 function vasco_theme_get_products_data() {
-	$json_file = get_template_directory() . '/inc/products-data.json';
+	$json_file = get_template_directory() . '/inc/data/products-data.json';
 	if ( ! file_exists( $json_file ) ) {
 		return array();
 	}

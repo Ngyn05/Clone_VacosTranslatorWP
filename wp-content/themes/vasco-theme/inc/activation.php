@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 function vasco_theme_sync_pages( $clean_old = false ) {
-	$json_file = get_template_directory() . '/inc/pages-data.json';
+	$json_file = get_template_directory() . '/inc/data/pages-data.json';
 	$pages_data = file_exists( $json_file ) ? json_decode( file_get_contents( $json_file ), true ) : array();
 	$pages_data = is_array( $pages_data ) ? $pages_data : array();
 
@@ -18,7 +18,8 @@ function vasco_theme_sync_pages( $clean_old = false ) {
 	$existing_slugs = array_column( $pages_data, 'slug' );
 	$theme_files    = array_merge(
 		glob( get_template_directory() . '/page-*.php' ) ?: array(),
-		glob( get_template_directory() . '/templates/*/*.php' ) ?: array()
+		glob( get_template_directory() . '/templates/*/*.php' ) ?: array(),
+		glob( get_template_directory() . '/templates/*/*/*.php' ) ?: array()
 	);
 	if ( $theme_files ) {
 		// Danh sách các template bài viết sẽ tạo dưới dạng Post, không tạo dưới dạng Page

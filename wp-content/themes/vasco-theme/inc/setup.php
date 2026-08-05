@@ -84,6 +84,11 @@ function vasco_theme_custom_page_template( $template ) {
 			$slug           = $page->post_name;
 			$possible_files = array(
 				"templates/pages/page-{$slug}.php",
+				"templates/pages/business/page-{$slug}.php",
+				"templates/pages/features/page-{$slug}.php",
+				"templates/pages/shop/page-{$slug}.php",
+				"templates/pages/initiatives/page-{$slug}.php",
+				"templates/pages/general/page-{$slug}.php",
 				"templates/products/page-{$slug}.php",
 				"templates/articles/page-{$slug}.php",
 				"templates/page-{$slug}.php",
