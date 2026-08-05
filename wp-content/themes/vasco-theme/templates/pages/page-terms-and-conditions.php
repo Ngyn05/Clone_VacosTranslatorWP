@@ -118,7 +118,7 @@ get_header();
 </li>
 <li>Phương thức giao hàng
 <ol>
-<li>Việc giao Sản phẩm được thực hiện bởi đơn vị chuyển phát nhanh hoặc thông qua một đơn vị vận chuyển bưu chính khác. Thông tin chi tiết về việc giao hàng có tại trang con „<a href="./shipping.html" rel="noopener" target="_blank">Vận chuyển</a>” của cửa hàng.</li>
+<li>Việc giao Sản phẩm được thực hiện bởi đơn vị chuyển phát nhanh hoặc thông qua một đơn vị vận chuyển bưu chính khác. Thông tin chi tiết về việc giao hàng có tại trang con „<a href="<?php echo esc_url( home_url( "/shipping/" ) ); ?>" rel="noopener" target="_blank">Vận chuyển</a>” của cửa hàng.</li>
 <li>Khách hàng lựa chọn phương thức giao hàng khi đặt đơn hàng.</li>
 <li>Chi phí giao hàng được nêu rõ khi đặt đơn hàng. Chi phí này phụ thuộc vào loại Sản phẩm và phương thức giao hàng do Khách hàng lựa chọn.</li>
 <li>Người bán bảo lưu quyền loại bỏ hoặc thay đổi từng hình thức thanh toán và giao hàng Sản phẩm.</li>
@@ -128,7 +128,7 @@ get_header();
 </li>
 <li>Phương thức thanh toán
 <ol>
-<li>Người bán cung cấp các phương thức thanh toán được nêu tại thẻ „<a href="./shipping.html" rel="noopener" target="_blank">Vận chuyển</a>”.</li>
+<li>Người bán cung cấp các phương thức thanh toán được nêu tại thẻ „<a href="<?php echo esc_url( home_url( "/shipping/" ) ); ?>" rel="noopener" target="_blank">Vận chuyển</a>”.</li>
 <li>Người bán bảo lưu quyền sửa đổi, tạm ngừng theo từng thời kỳ hoặc thay thế các hình thức thanh toán nêu trên bằng các hình thức khác.</li>
 <li>Các khiếu nại phát sinh từ việc không thực hiện hoặc thực hiện không đúng dịch vụ thanh toán cần được gửi đến bên trung gian thanh toán phù hợp theo Điều khoản dịch vụ cung cấp dịch vụ thanh toán điện tử của đơn vị thanh toán liên quan.</li>
 <li>Trong trường hợp Khách hàng không thanh toán trong thời hạn đã nêu trong quá trình đặt đơn hàng, Người bán có thể ấn định một thời hạn bổ sung để thực hiện thanh toán. Người bán cũng có thể rút khỏi hợp đồng mua bán do việc không thanh toán này sau thời hạn thanh toán. Tuyên bố rút khỏi hợp đồng mua bán trên cơ sở đó sẽ được gửi đến khách hàng qua email.</li>
@@ -176,7 +176,7 @@ get_header();
 </li>
 <li>Bảo hành của nhà sản xuất
 <ol>
-<li>Tất cả các sản phẩm có tại Cửa hàng đều được bảo hành 24 tháng từ nhà sản xuất. Nội dung và điều kiện bảo hành có sẵn -&gt; <a href="./warranty.pdf" rel="noopener" target="_blank" title="warranty">TẠI ĐÂY</a>.</li>
+<li>Tất cả các sản phẩm có tại Cửa hàng đều được bảo hành 24 tháng từ nhà sản xuất. Nội dung và điều kiện bảo hành có sẵn -&gt; <a href="<?php echo esc_url( home_url( '/wp-content/uploads/warranty.pdf' ) ); ?>" rel="noopener" target="_blank" title="warranty">TẠI ĐÂY</a>.</li>
 <li>Chế độ bảo hành không áp dụng trong trường hợp hư hỏng do sử dụng không đúng cách, bảo trì không phù hợp với hướng dẫn vận hành hoặc hao mòn tự nhiên. Chế độ bảo hành cũng không bao gồm các hư hỏng do ngập nước, va đập, rơi vỡ, quá tải điện và cháy nổ gây ra.</li>
 </ol>
 </li>
@@ -202,7 +202,7 @@ get_header();
 <li>Người bán bảo lưu quyền thay đổi các quy định của Điều khoản dịch vụ này, đồng thời cam kết công bố văn bản thống nhất của Điều khoản dịch vụ trên Cửa hàng trực tuyến với ngày có hiệu lực của các thay đổi, cũng như gửi thông báo về các thay đổi đó đến địa chỉ email của Khách hàng.</li>
 <li>Các sửa đổi đối với Điều khoản dịch vụ áp dụng cho cả Người bán và Khách hàng kể từ thời điểm các thay đổi được công bố trên Cửa hàng trực tuyến. Các sửa đổi đối với Điều khoản dịch vụ sẽ không xâm phạm dưới bất kỳ hình thức nào đến quyền lợi của các khách hàng đã sử dụng Cửa hàng trực tuyến trước ngày các sửa đổi có hiệu lực, đặc biệt là sẽ không ảnh hưởng đến các đơn hàng đã đặt và/hoặc đã thực hiện. Các đơn hàng đã được chấp nhận để thực hiện sẽ tuân theo Điều khoản dịch vụ có hiệu lực tại thời điểm đặt đơn hàng.</li>
 <li>Các thuật ngữ và mô tả được sử dụng để xác định từng chức năng của Cửa hàng trực tuyến trong quy định này, bao gồm đặc biệt là tên gọi và mô tả của các nút bấm, hình tượng và biểu tượng, có thể được thay đổi thành các thuật ngữ tương đương. Sự thay đổi như vậy không cấu thành một sự thay đổi đối với Điều khoản dịch vụ này.</li>
-<li>Nội dung của Điều khoản dịch vụ này có sẵn trên trang web: <a href="./terms-and-conditions.html" rel="noopener" target="_blank">./terms-and-conditions</a>. Điều khoản dịch vụ có thể được lưu trữ, thu thập và sao chép bất cứ lúc nào bằng cách in ra, lưu vào một phương tiện lưu trữ phù hợp hoặc tải xuống.</li>
+<li>Nội dung của Điều khoản dịch vụ này có sẵn trên trang web: <a href="<?php echo esc_url( home_url( "/terms-and-conditions/" ) ); ?>" rel="noopener" target="_blank">./terms-and-conditions</a>. Điều khoản dịch vụ có thể được lưu trữ, thu thập và sao chép bất cứ lúc nào bằng cách in ra, lưu vào một phương tiện lưu trữ phù hợp hoặc tải xuống.</li>
 </ol>
 </li>
 </ol>

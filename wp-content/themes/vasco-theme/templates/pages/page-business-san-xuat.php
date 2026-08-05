@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Doanh Nghiệp - Sản Xuất
  *
@@ -357,7 +357,7 @@ get_header();
 <input name="ve_ts" type="hidden" value="1785226338"/>
 <p class="text-required"><span class="asterisk">*</span> Obligatory</p>
 <div class="gdpr-and-submit-wrapper">
-<p class="gdpr-text">The administrator of personal data is Vasco Electronics S.A. The Administrator processes the personal data indicated in the form in order to handle correspondence, in accordance with the rules specified in the <a href="../privacy-policy.html" target="_blank">Chính sách bảo mật</a>.</p>
+<p class="gdpr-text">The administrator of personal data is Vasco Electronics S.A. The Administrator processes the personal data indicated in the form in order to handle correspondence, in accordance with the rules specified in the <a href="<?php echo esc_url( home_url( "/privacy-policy/" ) ); ?>" target="_blank">Chính sách bảo mật</a>.</p>
 <button class="btn btn-md btn-primary" type="submit">Submit</button>
 </div>
 </input></form>

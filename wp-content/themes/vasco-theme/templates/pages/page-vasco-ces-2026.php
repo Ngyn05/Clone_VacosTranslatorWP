@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-vasco-ces-2026.php
  *
@@ -494,7 +494,7 @@ Vẻ đẹp của sự đơn giản</p>
 </div>
 <div class="tech-info">
 <h3>Vasco Audience</h3>
-<p>Giao tiếp một-đối-một? Đã thành thạo. Giờ là lúc cho giao tiếp một-đối-nhiều. <a class="font-normal" href="./business/healthcare.html" rel="noopener" style="font-family: inherit; color:#3E5AEE;" target="_blank">Vasco Audience</a> dịch các cuộc họp, buổi đào tạo và hội nghị theo thời gian thực sang hơn 50 ngôn ngữ, giúp giảm chi phí liên quan lên đến 90%. Người tham gia không cần cài đặt bất kỳ ứng dụng nào; họ chỉ cần mở một đường link trên trình duyệt. Các sự kiện trở nên dễ tiếp cận hơn với khán giả đa ngôn ngữ, và nhờ công nghệ phân đoạn ngữ nghĩa, các bản dịch diễn ra mượt mà và nhanh chóng.</p>
+<p>Giao tiếp một-đối-một? Đã thành thạo. Giờ là lúc cho giao tiếp một-đối-nhiều. <a class="font-normal" href="<?php echo esc_url( home_url( "/business-y-te/" ) ); ?>" rel="noopener" style="font-family: inherit; color:#3E5AEE;" target="_blank">Vasco Audience</a> dịch các cuộc họp, buổi đào tạo và hội nghị theo thời gian thực sang hơn 50 ngôn ngữ, giúp giảm chi phí liên quan lên đến 90%. Người tham gia không cần cài đặt bất kỳ ứng dụng nào; họ chỉ cần mở một đường link trên trình duyệt. Các sự kiện trở nên dễ tiếp cận hơn với khán giả đa ngôn ngữ, và nhờ công nghệ phân đoạn ngữ nghĩa, các bản dịch diễn ra mượt mà và nhanh chóng.</p>
 </div>
 </div>
 </div>
@@ -644,12 +644,12 @@ Vẻ đẹp của sự đơn giản</p>
 <div class="swiper-wrapper" role="list">
 <div aria-labelledby="product-38" class="swiper-slide" role="listitem" tabindex="0">
 <div class="box">
-<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/385-home_default/a.jpg" ); ?>"/>
+<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/m4.webp" ); ?>"/>
 <div class="product-description">
 <h3 aria-label="q1.name]" id="product-38" tabindex="0">
 												Vasco Translator Q1</h3>
 <p>Máy dịch duy nhất có tính năng nhân bản giọng nói và dịch cuộc gọi điện thoại</p>
-<a aria-label="Tìm hiểu thêm Vasco Translator Q1" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>" target="_blank">
+<a aria-label="Tìm hiểu thêm Vasco Translator Q1" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/vasco-translator-q1/" ) ); ?>" target="_blank">
 												Tìm hiểu thêm
 											</a>
 </div>
@@ -657,12 +657,12 @@ Vẻ đẹp của sự đơn giản</p>
 </div>
 <div aria-labelledby="product-30" class="swiper-slide" role="listitem" tabindex="0">
 <div class="box">
-<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/323-home_default/a.jpg" ); ?>"/>
+<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/q1.webp" ); ?>"/>
 <div class="product-description">
 <h3 aria-label="e1.name]" id="product-30" tabindex="0">
 												Vasco Translator E1</h3>
 <p>Tai nghe dịch cho những cuộc trò chuyện liền mạch</p>
-<a aria-label="Tìm hiểu thêm Vasco Translator E1" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/translators/vasco-translator-e1/" ) ); ?>" target="_blank">
+<a aria-label="Tìm hiểu thêm Vasco Translator E1" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/vasco-translator-e1/" ) ); ?>" target="_blank">
 												Tìm hiểu thêm
 											</a>
 </div>
@@ -670,12 +670,12 @@ Vẻ đẹp của sự đơn giản</p>
 </div>
 <div aria-labelledby="product-14" class="swiper-slide" role="listitem" tabindex="0">
 <div class="box">
-<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/343-home_default/a.jpg" ); ?>"/>
+<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/v4.webp" ); ?>"/>
 <div class="product-description">
 <h3 aria-label="v4.name]" id="product-14" tabindex="0">
 												Vasco Translator V4</h3>
 <p>Thiết bị dịch điện tử tức thời</p>
-<a aria-label="Tìm hiểu thêm Vasco Translator V4" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>" target="_blank">
+<a aria-label="Tìm hiểu thêm Vasco Translator V4" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/vasco-translator-v4/" ) ); ?>" target="_blank">
 												Tìm hiểu thêm
 											</a>
 </div>

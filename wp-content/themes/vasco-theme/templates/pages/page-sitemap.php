@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-sitemap.php
  *
@@ -49,22 +49,22 @@ get_header();
 <h2 class="h2" id="sitemap-translators">Translators</h2>
 <ul aria-labelledby="sitemap-translators" class="sitemap-list">
 <li>
-<a href="./translators/q1-slateblue-e1.html">Vasco Translator Q1 + E1 – Smart Language Translator Set</a>
+<a href="<?php echo esc_url( home_url( "/q1-slateblue-e1/" ) ); ?>">Vasco Translator Q1 + E1 – Smart Language Translator Set</a>
 </li>
 <li>
-<a href="./translators/v4-stonegray-e1.html"> Bundle: Vasco Translator E1 &amp; Vasco Translator V4</a>
+<a href="<?php echo esc_url( home_url( "/v4-stonegray-e1/" ) ); ?>"> Bundle: Vasco Translator E1 &amp; Vasco Translator V4</a>
 </li>
 <li>
-<a href="<?php echo esc_url( home_url( "/translators/vasco-translator-e1/" ) ); ?>">Vasco E1 | Translator Earbuds</a>
+<a href="<?php echo esc_url( home_url( "/vasco-translator-e1/" ) ); ?>">Vasco E1 | Translator Earbuds</a>
 </li>
 <li>
-<a href="<?php echo esc_url( home_url( "/translators/vasco-translator-m4/" ) ); ?>">Vasco Translator M4 – Handheld Language Translator</a>
+<a href="<?php echo esc_url( home_url( "/vasco-translator-m4/" ) ); ?>">Vasco Translator M4 – Handheld Language Translator</a>
 </li>
 <li>
-<a href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>">Automatic Translator for Business | Vasco Translator Q1</a>
+<a href="<?php echo esc_url( home_url( "/vasco-translator-q1/" ) ); ?>">Automatic Translator for Business | Vasco Translator Q1</a>
 </li>
 <li>
-<a href="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>">Vasco Electronics | Vasco V4 universal translator</a>
+<a href="<?php echo esc_url( home_url( "/vasco-translator-v4/" ) ); ?>">Vasco Electronics | Vasco V4 universal translator</a>
 </li>
 </ul>
 </li>
@@ -73,43 +73,43 @@ get_header();
 <h2 class="h2" id="sitemap-accessories">Accessories</h2>
 <ul aria-labelledby="sitemap-accessories" class="sitemap-list">
 <li>
-<a href="./accessories/power-adapter-us.html">Vasco USB-C Power Adapter (US Plug)</a>
+<a href="<?php echo esc_url( home_url( "/accessories-power-adapter-us/" ) ); ?>">Vasco USB-C Power Adapter (US Plug)</a>
 </li>
 <li>
-<a href="./accessories/protective-case">Protective case for Vasco Translator M3</a>
+<a href="<?php echo esc_url( home_url( "/accessories/" ) ); ?>">Protective case for Vasco Translator M3</a>
 </li>
 <li>
-<a href="./accessories/case-for-vasco-translator-m4.html">Bao da cho Vasco Translator M4 | Vasco Accessories </a>
+<a href="<?php echo esc_url( home_url( "/accessories-case-for-vasco-translator-m4/" ) ); ?>">Bao da cho Vasco Translator M4 | Vasco Accessories </a>
 </li>
 <li>
-<a href="./accessories/case-for-vasco-translator-q1.html">Bao da cho Vasco Translator Q1 | Vasco Accessories</a>
+<a href="<?php echo esc_url( home_url( "/accessories-case-for-vasco-translator-q1/" ) ); ?>">Bao da cho Vasco Translator Q1 | Vasco Accessories</a>
 </li>
 <li>
-<a href="./accessories/case-for-vasco-translator-v4.html">Durable case for Vasco Translator V4</a>
+<a href="<?php echo esc_url( home_url( "/accessories-case-for-vasco-translator-v4/" ) ); ?>">Durable case for Vasco Translator V4</a>
 </li>
 <li>
-<a href="./accessories/light-case-for-vasco-translator-m4.html">Bao da cho Vasco Translator M4 | Vasco Accessories</a>
+<a href="<?php echo esc_url( home_url( "/accessories-light-case-for-vasco-translator-m4/" ) ); ?>">Bao da cho Vasco Translator M4 | Vasco Accessories</a>
 </li>
 <li>
-<a href="./accessories/light-case-for-vasco-translator-q1.html">Bao da cho Vasco Translator Q1 | Vasco Accessories</a>
+<a href="<?php echo esc_url( home_url( "/accessories-light-case-for-vasco-translator-q1/" ) ); ?>">Bao da cho Vasco Translator Q1 | Vasco Accessories</a>
 </li>
 <li>
-<a href="./accessories/tempered-glass-m4.html">Kính cường lực bảo vệ màn hình Vasco Translator M4</a>
+<a href="<?php echo esc_url( home_url( "/accessories-tempered-glass-m4/" ) ); ?>">Kính cường lực bảo vệ màn hình Vasco Translator M4</a>
 </li>
 <li>
-<a href="./accessories/tempered-glass-q1.html">Kính cường lực bảo vệ màn hình Vasco Translator Q1</a>
+<a href="<?php echo esc_url( home_url( "/accessories-tempered-glass-q1/" ) ); ?>">Kính cường lực bảo vệ màn hình Vasco Translator Q1</a>
 </li>
 <li>
-<a href="./accessories/tempered-glass-v4.html">Tempered Glass Screen Protector for Vasco Translator V4</a>
+<a href="<?php echo esc_url( home_url( "/accessories-tempered-glass-v4/" ) ); ?>">Tempered Glass Screen Protector for Vasco Translator V4</a>
 </li>
 <li>
-<a href="./accessories/bulgarian-pronunciation">Bulgarian pronunciation</a>
+<a href="<?php echo esc_url( home_url( "/accessories/" ) ); ?>">Bulgarian pronunciation</a>
 </li>
 <li>
-<a href="./accessories/hebrew-pronunciation">Hebrew pronunciation</a>
+<a href="<?php echo esc_url( home_url( "/accessories/" ) ); ?>">Hebrew pronunciation</a>
 </li>
 <li>
-<a href="./accessories/croatian-pronunciation">Croatian pronunciation</a>
+<a href="<?php echo esc_url( home_url( "/accessories/" ) ); ?>">Croatian pronunciation</a>
 </li>
 </ul>
 </li>
@@ -121,124 +121,124 @@ get_header();
 <a href="<?php echo esc_url( home_url( "/about-us/" ) ); ?>">Learn about Vasco | Our Story &amp; People</a>
 </li>
 <li>
-<a href="./get-vasco-connect">Get Vasco Connect</a>
+<a href="<?php echo esc_url( home_url( "/call-translator/" ) ); ?>">Get Vasco Connect</a>
 </li>
 <li>
-<a href="./business">Empower your team to serve global guests</a>
+<a href="<?php echo esc_url( home_url( "/business-vasco-audience/" ) ); ?>">Empower your team to serve global guests</a>
 </li>
 <li>
-<a href="./business/education.html">Vasco Translator for schools: break language barriers</a>
+<a href="<?php echo esc_url( home_url( "/business-giao-duc/" ) ); ?>">Vasco Translator for schools: break language barriers</a>
 </li>
 <li>
-<a href="./business/manufacturing.html">Empower your production teams across languages</a>
+<a href="<?php echo esc_url( home_url( "/business-san-xuat/" ) ); ?>">Empower your production teams across languages</a>
 </li>
 <li>
-<a href="./business/healthcare.html"> Vasco Translator V4: Translation Device for Y tế</a>
+<a href="<?php echo esc_url( home_url( "/business-y-te/" ) ); ?>"> Vasco Translator V4: Translation Device for Y tế</a>
 </li>
 <li>
-<a href="./business/hospitality.html">Empower your team to serve global guests</a>
+<a href="<?php echo esc_url( home_url( "/business-du-lich-khach-san/" ) ); ?>">Empower your team to serve global guests</a>
 </li>
 <li>
-<a href="./business/law-enforcement.html">Xóa Bỏ Rào Cản Ngôn Ngữ Cho Chính Quyền Địa Phương</a>
+<a href="<?php echo esc_url( home_url( "/business-law-enforcement/" ) ); ?>">Xóa Bỏ Rào Cản Ngôn Ngữ Cho Chính Quyền Địa Phương</a>
 </li>
 <li>
-<a href="./business/law-enforcement.html">Vasco Translator V4: Emergency Translation Services			</a>
+<a href="<?php echo esc_url( home_url( "/business-law-enforcement/" ) ); ?>">Vasco Translator V4: Emergency Translation Services			</a>
 </li>
 <li>
-<a href="./business/ngo.html">Thu hẹp khoảng cách văn hóa và hỗ trợ cộng đồng người nhập cư</a>
+<a href="<?php echo esc_url( home_url( "/business-ngo/" ) ); ?>">Thu hẹp khoảng cách văn hóa và hỗ trợ cộng đồng người nhập cư</a>
 </li>
 <li>
-<a href="./camper-tour.html">Your ideal language translator for campervan travel</a>
+<a href="<?php echo esc_url( home_url( "/camper-tour/" ) ); ?>">Your ideal language translator for campervan travel</a>
 </li>
 <li>
-<a href="./vasco-ces-2026.html">Vasco Translators | CES 2026</a>
+<a href="<?php echo esc_url( home_url( "/vasco-ces-2026/" ) ); ?>">Vasco Translators | CES 2026</a>
 </li>
 <li>
-<a href="./comparison-engine.html">Comparison Engine | Choose the Best Language Translator</a>
+<a href="<?php echo esc_url( home_url( "/comparison-engine/" ) ); ?>">Comparison Engine | Choose the Best Language Translator</a>
 </li>
 <li>
 <a href="<?php echo esc_url( home_url( "/contact/" ) ); ?>">Vasco | Contact us today</a>
 </li>
 <li>
-<a href="./coverage-map.html">Where Vasco Translator Connects for free - Coverage Map by Device</a>
+<a href="<?php echo esc_url( home_url( "/coverage-map/" ) ); ?>">Where Vasco Translator Connects for free - Coverage Map by Device</a>
 </li>
 <li>
-<a href="./vasco-audience-dpa">Data Processing Agreement - Vasco Audience</a>
+<a href="<?php echo esc_url( home_url( "/privacy-policy/" ) ); ?>">Data Processing Agreement - Vasco Audience</a>
 </li>
 <li>
-<a href="<?php echo esc_url( home_url( "/translators/vasco-translator-e1/" ) ); ?>">Vasco E1 | Translating earbuds for Seamless Communication</a>
+<a href="<?php echo esc_url( home_url( "/vasco-translator-e1/" ) ); ?>">Vasco E1 | Translating earbuds for Seamless Communication</a>
 </li>
 <li>
-<a href="./business/healthcare.html">Vasco Audience | Mobile Conference Translation App</a>
+<a href="<?php echo esc_url( home_url( "/business-y-te/" ) ); ?>">Vasco Audience | Mobile Conference Translation App</a>
 </li>
 <li>
-<a href="./features/index.html">All Features of the Vasco Smart Translator</a>
+<a href="<?php echo esc_url( home_url( "/features/" ) ); ?>">All Features of the Vasco Smart Translator</a>
 </li>
 <li>
-<a href="./features/translate-chat.html">MultiTalk - Multilingual Chat Application</a>
+<a href="<?php echo esc_url( home_url( "/features/translate-chat/" ) ); ?>">MultiTalk - Multilingual Chat Application</a>
 </li>
 <li>
-<a href="./features/translate-photos.html">Learn How To Translate from Picture With Dịch hình ảnh</a>
+<a href="<?php echo esc_url( home_url( "/features/translate-photos/" ) ); ?>">Learn How To Translate from Picture With Dịch hình ảnh</a>
 </li>
 <li>
-<a href="./features/translate-text.html">What is a Dịch văn bản, and How Does It Work?</a>
+<a href="<?php echo esc_url( home_url( "/features/translate-text/" ) ); ?>">What is a Dịch văn bản, and How Does It Work?</a>
 </li>
 <li>
-<a href="./features/translate-voice.html">Learn More About Vasco Dịch giọng nói</a>
+<a href="<?php echo esc_url( home_url( "/features/translate-voice/" ) ); ?>">Learn More About Vasco Dịch giọng nói</a>
 </li>
 <li>
 <a href="<?php echo esc_url( home_url( "/how-it-works/" ) ); ?>">How does Vasco Translator work?</a>
 </li>
 <li>
-<a href="./call-translator.html">Real-Time Dịch cuộc gọi điện thoại | Vasco Electronics</a>
+<a href="<?php echo esc_url( home_url( "/call-translator/" ) ); ?>">Real-Time Dịch cuộc gọi điện thoại | Vasco Electronics</a>
 </li>
 <li>
 <a href="<?php echo esc_url( home_url( "/" ) ); ?>">Vasco Translators at CES 2026 (New Release &amp; Coming Soon)</a>
 </li>
 <li>
-<a href="./media-about-us.html">Truyền thông nói về chúng tôi</a>
+<a href="<?php echo esc_url( home_url( "/media-about-us/" ) ); ?>">Truyền thông nói về chúng tôi</a>
 </li>
 <li>
-<a href="./meet-vasco.html">Meet Vasco Translator and communicate without barriers</a>
+<a href="<?php echo esc_url( home_url( "/meet-vasco/" ) ); ?>">Meet Vasco Translator and communicate without barriers</a>
 </li>
 <li>
-<a href="./vasco-for-international-families">Vasco Translator for Communication in Multilingual Families</a>
+<a href="<?php echo esc_url( home_url( "/meet-vasco/" ) ); ?>">Vasco Translator for Communication in Multilingual Families</a>
 </li>
 <li>
-<a href="./newsroom.html">Vasco Newsroom | Check our latest news and publications</a>
+<a href="<?php echo esc_url( home_url( "/newsroom/" ) ); ?>">Vasco Newsroom | Check our latest news and publications</a>
 </li>
 <li>
-<a href="./vasco-audience-privacy-policy">Chính sách bảo mật - Vasco Audience</a>
+<a href="<?php echo esc_url( home_url( "/privacy-policy/" ) ); ?>">Chính sách bảo mật - Vasco Audience</a>
 </li>
 <li>
-<a href="./returns.html">The Vasco Returns Policy Statement</a>
+<a href="<?php echo esc_url( home_url( "/returns/" ) ); ?>">The Vasco Returns Policy Statement</a>
 </li>
 <li>
-<a href="./seniors-traveling.html">Carefree Travel Regardless of Your Age</a>
+<a href="<?php echo esc_url( home_url( "/seniors-traveling/" ) ); ?>">Carefree Travel Regardless of Your Age</a>
 </li>
 <li>
-<a href="./shipping.html">Vasco Translator | Giao hàng &amp; Thanh toán</a>
+<a href="<?php echo esc_url( home_url( "/shipping/" ) ); ?>">Vasco Translator | Giao hàng &amp; Thanh toán</a>
 </li>
 <li>
-<a href="./initiatives.html">Vasco Electronics’ social initiatives</a>
+<a href="<?php echo esc_url( home_url( "/initiatives/" ) ); ?>">Vasco Electronics’ social initiatives</a>
 </li>
 <li>
-<a href="./initiatives/polish-medical-mission-pmm.html">Polish Medical Mission Vasco Emergency Team</a>
+<a href="<?php echo esc_url( home_url( "/initiatives/polish-medical-mission-pmm/" ) ); ?>">Polish Medical Mission Vasco Emergency Team</a>
 </li>
 <li>
-<a href="./initiatives/quinnipiac.html">Vasco Electronics helps Quinnipiac University</a>
+<a href="<?php echo esc_url( home_url( "/initiatives/quinnipiac/" ) ); ?>">Vasco Electronics helps Quinnipiac University</a>
 </li>
 <li>
-<a href="./initiatives/help-ukraine.html">Vasco Helps the Victims of the War in Ukraine</a>
+<a href="<?php echo esc_url( home_url( "/initiatives/help-ukraine/" ) ); ?>">Vasco Helps the Victims of the War in Ukraine</a>
 </li>
 <li>
-<a href="./vasco-innovations.html">See What’s New at Vasco | Discover Our Innovations</a>
+<a href="<?php echo esc_url( home_url( "/vasco-innovations/" ) ); ?>">See What’s New at Vasco | Discover Our Innovations</a>
 </li>
 <li>
-<a href="./vasco-audience-terms-of-service">Điều khoản dịch vụ - Vasco Audience</a>
+<a href="<?php echo esc_url( home_url( "/terms-and-conditions/" ) ); ?>">Điều khoản dịch vụ - Vasco Audience</a>
 </li>
 <li>
-<a href="./your-travel-translator">Choose Your Travel Translator</a>
+<a href="<?php echo esc_url( home_url( "/travel/" ) ); ?>">Choose Your Travel Translator</a>
 </li>
 </ul>
 </li>

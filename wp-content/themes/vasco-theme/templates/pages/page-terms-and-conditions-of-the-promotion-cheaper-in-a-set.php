@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-terms-and-conditions-of-the-promotion-cheaper-in-a-set.php
  *
@@ -91,7 +91,7 @@ get_header();
 <li>Điều kiện để sử dụng Chương Trình Khuyến Mãi là đọc nội dung của các Điều Khoản và Điều Kiện này và chấp nhận các quy định trong đó.</li>
 <li>Đối với những vấn đề không được quy định trong các Điều Khoản và Điều Kiện này, các quy định của Bộ Luật Dân Sự và các quy định pháp luật liên quan khác của Ba Lan sẽ được áp dụng.</li>
 <li>Đơn Vị Tổ Chức có quyền thay đổi nội dung của Điều Khoản và Điều Kiện. Trong trường hợp có thay đổi đối với Điều Khoản và Điều Kiện, nội dung mới sẽ được công bố trên trang web Cửa Hàng Trực Tuyến của Đơn Vị Tổ Chức. Các thay đổi đối với Điều Khoản và Điều Kiện không được vi phạm các quyền mà Người Tham Gia đã có được cho đến ngày thay đổi Điều Khoản và Điều Kiện, cũng như không được làm xấu đi các điều kiện của Chương Trình Khuyến Mãi đang diễn ra.</li>
-<li>Nội dung của Điều Khoản và Điều Kiện có sẵn trên trang web Cửa Hàng Trực Tuyến của Đơn Vị Tổ Chức tại<a href="./terms-and-conditions-of-the-promotion-cheaper-in-a-set.html">https://vasco-electronics.com/terms-and-conditions-of-the-promotion-cheaper-in-a-set</a>.</li>
+<li>Nội dung của Điều Khoản và Điều Kiện có sẵn trên trang web Cửa Hàng Trực Tuyến của Đơn Vị Tổ Chức tại<a href="<?php echo esc_url( home_url( "/terms-and-conditions-of-the-promotion-cheaper-in-a-set/" ) ); ?>">https://vasco-electronics.com/terms-and-conditions-of-the-promotion-cheaper-in-a-set</a>.</li>
 </ol>
 </li>
 </ol>

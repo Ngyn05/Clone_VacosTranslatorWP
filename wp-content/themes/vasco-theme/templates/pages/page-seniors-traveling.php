@@ -143,7 +143,7 @@ get_header();
 </div>
 </div>
 <div class="flex-box">
-<a class="btn btn-md btn-black" href="./features/index.html">TÌM HIỂU THÊM VỀ CÁC TÍNH NĂNG CỦA MÁY DỊCH</a>
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/features/" ) ); ?>">TÌM HIỂU THÊM VỀ CÁC TÍNH NĂNG CỦA MÁY DỊCH</a>
 <a class="btn btn-md btn-primary" href="<?php echo esc_url( home_url( "/" ) ); ?>">Mua ngay</a>
 </div>
 </div>
@@ -180,7 +180,7 @@ get_header();
 <div class="product-description">
 <h3 aria-label="Vasco Translator V4" id="product-14" tabindex="0">Vasco Translator V4</h3>
 <p>Màn hình lớn hơn và sự thoải mái tối đa</p>
-<a aria-label="Tìm hiểu thêm về Vasco Translator V4" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>" target="_blank">Tìm hiểu thêm</a>
+<a aria-label="Tìm hiểu thêm về Vasco Translator V4" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/vasco-translator-v4/" ) ); ?>" target="_blank">Tìm hiểu thêm</a>
 </div>
 </div>
 </div>

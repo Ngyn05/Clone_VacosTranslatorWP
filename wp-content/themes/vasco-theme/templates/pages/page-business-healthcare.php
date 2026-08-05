@@ -186,11 +186,11 @@ get_header();
 <div class="swiper-wrapper" role="list">
 <div aria-labelledby="product-14" class="swiper-slide" role="listitem" tabindex="0">
 <div class="box">
-<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/343-home_default/a.jpg" ); ?>"/>
+<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/v4.webp" ); ?>"/>
 <div class="product-description">
 <h3 aria-label="Vasco Translator V4" id="product-14" tabindex="0">Vasco Translator V4</h3>
 <p>Thiết bị máy phiên dịch ngôn ngữ cầm tay cao cấp</p>
-<a aria-label="Tìm hiểu thêm về Vasco Translator V4" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>" target="_blank">Tìm hiểu thêm</a>
+<a aria-label="Tìm hiểu thêm về Vasco Translator V4" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/vasco-translator-v4/" ) ); ?>" target="_blank">Tìm hiểu thêm</a>
 </div>
 </div>
 </div>
@@ -325,7 +325,7 @@ get_header();
 </div>
 <p class="accordion-hidden">Vasco Translator hỗ trợ số lượng ngôn ngữ khác nhau tùy theo từng tính năng. Tính năng dịch giọng nói
 					hỗ trợ 82 ngôn ngữ, tính năng dịch ảnh hỗ trợ 112 ngôn ngữ, tính năng dịch văn bản hỗ trợ 108 ngôn ngữ.
-					Danh sách đầy đủ các ngôn ngữ có tại đây<a href="../translators/vasco-translator-v4.html#product-languages" target="_blank">//vasco-translator.com/translators/vasco-translator-v4</a>
+					Danh sách đầy đủ các ngôn ngữ có tại đây<a href="<?php echo esc_url( home_url( "/vasco-translator-v4/" ) ); ?>#product-languages" target="_blank">//vasco-translator.com/translators/vasco-translator-v4</a>
 </p>
 </div>
 <div class="accordion-single">

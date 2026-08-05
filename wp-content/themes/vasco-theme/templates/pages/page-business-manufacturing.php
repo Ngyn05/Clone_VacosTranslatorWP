@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-business-manufacturing.php
  *
@@ -291,7 +291,7 @@ get_header();
 <input name="ve_ts" type="hidden" value="1785226338"/>
 <p class="text-required"><span class="asterisk">*</span> Bắt buộc</p>
 <div class="gdpr-and-submit-wrapper">
-<p class="gdpr-text">Bên quản lý dữ liệu cá nhân là Vasco Electronics S.A. Bên quản lý xử lý dữ liệu cá nhân được cung cấp trong biểu mẫu này nhằm mục đích xử lý liên lạc, theo các quy định được nêu trong <a href="../privacy-policy.html" target="_blank">Chính sách bảo mật</a>.</p>
+<p class="gdpr-text">Bên quản lý dữ liệu cá nhân là Vasco Electronics S.A. Bên quản lý xử lý dữ liệu cá nhân được cung cấp trong biểu mẫu này nhằm mục đích xử lý liên lạc, theo các quy định được nêu trong <a href="<?php echo esc_url( home_url( "/privacy-policy/" ) ); ?>" target="_blank">Chính sách bảo mật</a>.</p>
 <button class="btn btn-md btn-primary" type="submit">Gửi</button>
 </div>
 </input></form>

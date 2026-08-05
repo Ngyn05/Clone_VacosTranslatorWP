@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Doanh Nghiệp - Y Tế
  *
@@ -94,7 +94,7 @@ get_header();
 <p class="doublebox-text-bold">Vasco Translator đã đóng vai trò then chốt trong việc hỗ trợ các nạn nhân chiến tranh tại Ukraine. Chúng tôi đã cung cấp
 					khoảng 500 thiết bị máy dịch điện tử cho hơn 200 tổ chức trên toàn châu Âu. Các thiết bị này đóng vai trò
 					quan trọng trong việc thúc đẩy giao tiếp hiệu quả tại các bệnh viện, tổ chức NGO và các cơ quan khác đang hỗ trợ người tị nạn.</p>
-<p class="doublebox-text-thin">Bằng cách cho phép<a href="../features/translate-voice.html">giọng nói</a>, <a href="../features/translate-photos.html">hình ảnh</a>, <a href="../features/translate-text.html">văn bản</a>, và dịch trò chuyện nhóm, đặc biệt bằng tiếng Ukraina, các máy dịch này đã
+<p class="doublebox-text-thin">Bằng cách cho phép<a href="<?php echo esc_url( home_url( "/features/translate-voice/" ) ); ?>">giọng nói</a>, <a href="<?php echo esc_url( home_url( "/features/translate-photos/" ) ); ?>">hình ảnh</a>, <a href="<?php echo esc_url( home_url( "/features/translate-text/" ) ); ?>">văn bản</a>, và dịch trò chuyện nhóm, đặc biệt bằng tiếng Ukraina, các máy dịch này đã
 					xóa bỏ rào cản ngôn ngữ, giúp người tị nạn dễ dàng nhận được chăm sóc y tế, tham gia các buổi hội thảo
 					và tương tác trong đời sống hàng ngày. Sáng kiến này nhấn mạnh vai trò quan trọng của công nghệ
 					trong các cuộc khủng hoảng nhân đạo, minh chứng cho tác động của Vasco Translator trong việc cung cấp hỗ trợ giao tiếp thiết yếu trong suốt cuộc xung đột tại Ukraine.</p>
@@ -139,7 +139,7 @@ get_header();
 </div>
 </div>
 <div class="btn-wrapper">
-<a class="btn btn-black btn-md" href="../features/index.html">thêm về các tính năng của Máy dịch</a>
+<a class="btn btn-black btn-md" href="<?php echo esc_url( home_url( "/features/" ) ); ?>">thêm về các tính năng của Máy dịch</a>
 </div>
 </div>
 </section>
@@ -174,7 +174,7 @@ get_header();
 <input name="ve_ts" type="hidden" value="1785226340"/>
 <p class="text-required"><span class="asterisk">*</span>Bắt buộc</p>
 <div class="gdpr-and-submit-wrapper">
-<p class="gdpr-text">Bên quản lý dữ liệu cá nhân là Vasco Electronics S.A. Bên quản lý xử lý dữ liệu cá nhân được cung cấp trong biểu mẫu này nhằm mục đích xử lý thư từ liên lạc, theo các quy định được quy định trong<a href="../privacy-policy.html" target="_blank">Chính sách bảo mật</a>.</p>
+<p class="gdpr-text">Bên quản lý dữ liệu cá nhân là Vasco Electronics S.A. Bên quản lý xử lý dữ liệu cá nhân được cung cấp trong biểu mẫu này nhằm mục đích xử lý thư từ liên lạc, theo các quy định được quy định trong<a href="<?php echo esc_url( home_url( "/privacy-policy/" ) ); ?>" target="_blank">Chính sách bảo mật</a>.</p>
 <button class="btn btn-md btn-primary" type="submit">Gửi</button>
 </div>
 </input></form>
@@ -202,11 +202,11 @@ get_header();
 <div class="swiper-wrapper" role="list">
 <div aria-labelledby="product-14" class="swiper-slide" role="listitem" tabindex="0">
 <div class="box">
-<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/343-home_default/vasco-translator-v4.jpg" ); ?>"/>
+<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/v4.webp" ); ?>"/>
 <div class="product-description">
 <h3 aria-label="Vasco Translator V4" id="product-14" tabindex="0">Vasco Translator V4</h3>
 <p>[travel.gallery_of_products_side.product1.subtitle]</p>
-<a aria-label="Tìm hiểu thêm về Vasco Translator V4" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>" target="_blank">Tìm hiểu thêm</a>
+<a aria-label="Tìm hiểu thêm về Vasco Translator V4" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/vasco-translator-v4/" ) ); ?>" target="_blank">Tìm hiểu thêm</a>
 </div>
 </div>
 </div>
@@ -349,7 +349,7 @@ get_header();
 </div>
 <p class="accordion-hidden">Vasco Translator hỗ trợ số lượng ngôn ngữ khác nhau tùy theo từng tính năng. Tính năng dịch giọng nói
 					hỗ trợ 82 ngôn ngữ, tính năng dịch ảnh hỗ trợ 112 ngôn ngữ, tính năng dịch văn bản hỗ trợ 108 ngôn ngữ.
-					Danh sách đầy đủ các ngôn ngữ có tại đây<a href="../translators/vasco-translator-v4.html#product-languages" target="_blank">//vasco-translator.com/translators/vasco-translator-v4</a>
+					Danh sách đầy đủ các ngôn ngữ có tại đây<a href="<?php echo esc_url( home_url( "/vasco-translator-v4/" ) ); ?>#product-languages" target="_blank">//vasco-translator.com/translators/vasco-translator-v4</a>
 </p>
 </div>
 <div class="accordion-single">

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-business-education.php
  *
@@ -67,10 +67,10 @@ get_header();
 </div>
 <div class="container">
 <div class="doublebox-content">
-<h3 class="h2">Vasco Translator đã giúp hòa nhập học sinh tại<a href="../articles/vasco/vasco-electronics-helps-quinnipiac-university" style="font: inherit;">Quinnipiac University</a>
+<h3 class="h2">Vasco Translator đã giúp hòa nhập học sinh tại<a href="<?php echo esc_url( home_url( "/articles/vasco/vasco-electronics-helps-quinnipiac-university/" ) ); ?>" style="font: inherit;">Quinnipiac University</a>
 </h3>
 <p class="doublebox-text-bold">
-<a href="../articles/vasco/vasco-electronics-helps-quinnipiac-university" style="font: inherit;">Quinnipiac University</a>đã nhận ra những thách thức mà sinh viên quốc tế gặp phải. Vì lý do đó, họ đã triển khai các thiết bị Vasco Translator để hỗ trợ vượt qua rào cản ngôn ngữ. Sáng kiến này, kéo dài qua ba học kỳ từ năm 2021 đến 2022, sử dụng Vasco Translator M3.</p>
+<a href="<?php echo esc_url( home_url( "/articles/vasco/vasco-electronics-helps-quinnipiac-university/" ) ); ?>" style="font: inherit;">Quinnipiac University</a>đã nhận ra những thách thức mà sinh viên quốc tế gặp phải. Vì lý do đó, họ đã triển khai các thiết bị Vasco Translator để hỗ trợ vượt qua rào cản ngôn ngữ. Sáng kiến này, kéo dài qua ba học kỳ từ năm 2021 đến 2022, sử dụng Vasco Translator M3.</p>
 <p class="doublebox-text-thin">Phản hồi từ cả sinh viên và giảng viên đều rất tích cực, sinh viên đánh giá cao sự dễ sử dụng còn giảng viên đánh giá cao khả năng giao tiếp tốt hơn với phụ huynh. Sự hợp tác thành công này phù hợp với sứ mệnh của Vasco là thúc đẩy giáo dục bằng cách xóa bỏ rào cản ngôn ngữ.</p>
 <svg class="svg-pseudo" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
@@ -114,7 +114,7 @@ get_header();
 </div>
 </div>
 <div class="btn-wrapper">
-<a class="btn btn-black btn-md" href="../features/index.html">thêm về các tính năng của Máy dịch</a>
+<a class="btn btn-black btn-md" href="<?php echo esc_url( home_url( "/features/" ) ); ?>">thêm về các tính năng của Máy dịch</a>
 </div>
 </div>
 </section>
@@ -273,7 +273,7 @@ Khi tôi đi quanh trường, tôi mang theo Vasco phòng trường hợp gặp 
 <input name="ve_ts" type="hidden" value="1785226338"/>
 <p class="text-required"><span class="asterisk">*</span>Bắt buộc</p>
 <div class="gdpr-and-submit-wrapper">
-<p class="gdpr-text">Bên quản lý dữ liệu cá nhân là Vasco Electronics S.A. Bên quản lý xử lý dữ liệu cá nhân được cung cấp trong biểu mẫu này nhằm mục đích xử lý thư từ liên lạc, theo các quy định được quy định trong<a href="../privacy-policy.html" target="_blank">Chính sách bảo mật</a>.</p>
+<p class="gdpr-text">Bên quản lý dữ liệu cá nhân là Vasco Electronics S.A. Bên quản lý xử lý dữ liệu cá nhân được cung cấp trong biểu mẫu này nhằm mục đích xử lý thư từ liên lạc, theo các quy định được quy định trong<a href="<?php echo esc_url( home_url( "/privacy-policy/" ) ); ?>" target="_blank">Chính sách bảo mật</a>.</p>
 <button class="btn btn-md btn-primary" type="submit">Gửi</button>
 </div>
 </input></form>
@@ -357,7 +357,7 @@ Khi tôi đi quanh trường, tôi mang theo Vasco phòng trường hợp gặp 
 </div>
 <p class="accordion-hidden">Vasco Translator hỗ trợ số lượng ngôn ngữ khác nhau tùy theo từng tính năng. Tính năng dịch giọng nói
 					hỗ trợ 82 ngôn ngữ, tính năng dịch ảnh hỗ trợ 112 ngôn ngữ, tính năng dịch văn bản hỗ trợ 108 ngôn ngữ.
-					Danh sách đầy đủ các ngôn ngữ có tại đây<a href="../translators/vasco-translator-v4.html#product-languages" target="_blank">//vasco-translator.com/translators/vasco-translator-v4</a>
+					Danh sách đầy đủ các ngôn ngữ có tại đây<a href="<?php echo esc_url( home_url( "/vasco-translator-v4/" ) ); ?>#product-languages" target="_blank">//vasco-translator.com/translators/vasco-translator-v4</a>
 </p>
 </div>
 <div class="accordion-single">

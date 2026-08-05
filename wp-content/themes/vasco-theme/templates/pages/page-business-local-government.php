@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-business-local-government.php
  *
@@ -938,7 +938,7 @@ able to understand one another. I use it many times a day.”</p>
 <p class="compare-product-header-price">
 										$389									</p>
 </div>
-<a class="compare-product-header-link compare-product-header-button" href="<?php echo esc_url( home_url( "/translators/vasco-translator-e1/" ) ); ?>">
+<a class="compare-product-header-link compare-product-header-button" href="<?php echo esc_url( home_url( "/vasco-translator-e1/" ) ); ?>">
 									Go to product
 									<span class="text-sr-only">translatora Vasco Translator E1</span>
 </a>
@@ -952,7 +952,7 @@ able to understand one another. I use it many times a day.”</p>
 <p class="compare-product-header-price">
 										$449									</p>
 </div>
-<a class="compare-product-header-link compare-product-header-button" href="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>">
+<a class="compare-product-header-link compare-product-header-button" href="<?php echo esc_url( home_url( "/vasco-translator-v4/" ) ); ?>">
 									Go to product
 									<span class="text-sr-only">translatora Vasco Translator V4</span>
 </a>
@@ -966,7 +966,7 @@ able to understand one another. I use it many times a day.”</p>
 <p class="compare-product-header-price">
 										$549									</p>
 </div>
-<a class="compare-product-header-link compare-product-header-button" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>">
+<a class="compare-product-header-link compare-product-header-button" href="<?php echo esc_url( home_url( "/vasco-translator-q1/" ) ); ?>">
 									Go to product
 									<span class="text-sr-only">translatora Vasco Translator Q1</span>
 </a>
@@ -1351,7 +1351,7 @@ able to understand one another. I use it many times a day.”</p>
 <input name="ve_ts" type="hidden" value="1785226341"/>
 <p class="text-required"><span class="asterisk">*</span> Obligatory</p>
 <div class="gdpr-and-submit-wrapper">
-<p class="gdpr-text">The administrator of personal data is Vasco Electronics S.A. The Administrator processes the personal data indicated in the form in order to handle correspondence, in accordance with the rules specified in the <a href="../privacy-policy.html" target="_blank">Chính sách bảo mật</a>.</p>
+<p class="gdpr-text">The administrator of personal data is Vasco Electronics S.A. The Administrator processes the personal data indicated in the form in order to handle correspondence, in accordance with the rules specified in the <a href="<?php echo esc_url( home_url( "/privacy-policy/" ) ); ?>" target="_blank">Chính sách bảo mật</a>.</p>
 <button class="btn btn-md btn-primary" type="submit">Submit</button>
 </div>
 </input></form>

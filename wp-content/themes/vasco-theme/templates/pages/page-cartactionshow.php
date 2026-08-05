@@ -82,22 +82,22 @@ get_header();
 <div aria-label="[e1.label.carousel]" aria-roledescription="carousel" class="swiper swiper-foreground" role="region">
 <div class="swiper-wrapper">
 <div class="swiper-slide" data-product-desc="Electronic instant translator device" data-product-id="V4" data-product-link="//vasco-translator.com/translators/vasco-translator-v4" data-product-name="Vasco Translator V4">
-<a class="photo-link" href="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>" title="Go to product Vasco Translator V4">
+<a class="photo-link" href="<?php echo esc_url( home_url( "/vasco-translator-v4/" ) ); ?>" title="Go to product Vasco Translator V4">
 <img alt="Vasco Translator V4" decoding="async" fetchpriority="low" height="480" loading="lazy" sizes="(min-width: 1280px) 480px, (min-width: 992px) 360px, 320px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/v4.webp" ); ?>" width="480"/>
 </a>
 </div>
 <div class="swiper-slide" data-product-desc="Lightweight and easy-to-use pocket translator for everyone" data-product-id="M4" data-product-link="//vasco-translator.com/translators/vasco-translator-m4" data-product-name="Vasco Translator M4">
-<a class="photo-link" href="<?php echo esc_url( home_url( "/translators/vasco-translator-m4/" ) ); ?>" title="Go to product Vasco Translator M4">
+<a class="photo-link" href="<?php echo esc_url( home_url( "/vasco-translator-m4/" ) ); ?>" title="Go to product Vasco Translator M4">
 <img alt="Vasco Translator M4" decoding="async" fetchpriority="low" height="480" loading="lazy" sizes="(min-width: 1280px) 480px, (min-width: 992px) 360px, 320px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/m4.webp" ); ?>" width="480"/>
 </a>
 </div>
 <div class="swiper-slide" data-product-desc="Translator earbuds for seamless conversations" data-product-id="E1" data-product-link="//vasco-translator.com/translators/vasco-translator-e1" data-product-name="Vasco Translator E1">
-<a class="photo-link" href="<?php echo esc_url( home_url( "/translators/vasco-translator-e1/" ) ); ?>" title="Go to product Vasco Translator E1">
+<a class="photo-link" href="<?php echo esc_url( home_url( "/vasco-translator-e1/" ) ); ?>" title="Go to product Vasco Translator E1">
 <img alt="Vasco Translator E1" decoding="async" fetchpriority="low" height="480" loading="lazy" sizes="(min-width: 1280px) 480px, (min-width: 992px) 360px, 320px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/e1.webp" ); ?>" width="480"/>
 </a>
 </div>
 <div class="swiper-slide" data-product-desc="The only translator with voice cloning and call translation features" data-product-id="Q1" data-product-link="//vasco-translator.com/translators/vasco-translator-q1" data-product-name="Vasco Translator Q1">
-<a class="photo-link" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>" title="Go to product Vasco Translator Q1">
+<a class="photo-link" href="<?php echo esc_url( home_url( "/vasco-translator-q1/" ) ); ?>" title="Go to product Vasco Translator Q1">
 <img alt="Vasco Translator Q1" decoding="async" height="480" loading="eager" sizes="(min-width: 1280px) 480px, (min-width: 992px) 360px, 320px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/q1.webp" ); ?>" width="480"/>
 </a>
 </div>
@@ -251,7 +251,7 @@ with other Vasco devices" data-product-name="E1">
 </div>
 <h3 class="product-name">Vasco Translator Q1</h3>
 <p class="product-desc">The only translator with voice cloning and call translation features</p>
-<a class="product-link btn btn-md btn-white" data-product-id="Q1" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>">Tìm hiểu thêm</a>
+<a class="product-link btn btn-md btn-white" data-product-id="Q1" href="<?php echo esc_url( home_url( "/vasco-translator-q1/" ) ); ?>">Tìm hiểu thêm</a>
 </div>
 <div class="container">
 <button class="swiper-button-prev btn-carousel-prev" data-label-prev="Previous slide" type="button"></button>
@@ -298,7 +298,7 @@ with other Vasco devices" data-product-name="E1">
 <div class="comparison-page-link-module">
 <h2 class="h1">Are you unsure which translator to choose?</h2>
 <p>We have prepared a comparison of translators to make your choice easier.</p>
-<a class="view-compare-button btn btn-md btn-black" href="./comparison-engine.html">
+<a class="view-compare-button btn btn-md btn-black" href="<?php echo esc_url( home_url( "/comparison-engine/" ) ); ?>">
 					So sánh máy phiên dịch
 				</a>
 </div>
@@ -314,7 +314,7 @@ with other Vasco devices" data-product-name="E1">
 </div>
 <p class="number-description" id="lang-desc">
 					languages in your pocket</p>
-<a aria-describedby="lang-number lang-desc" class="btn btn-black btn-md" href="./translators/vasco-translator-v4.html#product-languages">Kiểm tra danh sách ngôn ngữ</a>
+<a aria-describedby="lang-number lang-desc" class="btn btn-black btn-md" href="<?php echo esc_url( home_url( "/vasco-translator-v4/" ) ); ?>#product-languages">Kiểm tra danh sách ngôn ngữ</a>
 </div>
 <div class="vasco-numbers-single-wrapper" role="listitem" tabindex="0">
 <div class="number-paragraph">
@@ -322,7 +322,7 @@ with other Vasco devices" data-product-name="E1">
 </div>
 <p class="number-description" id="country-desc">
 					countries with free connectivity for translations</p>
-<a aria-describedby="country-number country-desc" class="btn btn-black btn-md" href="./coverage-map.html">Xem bản đồ phủ sóng Internet</a>
+<a aria-describedby="country-number country-desc" class="btn btn-black btn-md" href="<?php echo esc_url( home_url( "/coverage-map/" ) ); ?>">Xem bản đồ phủ sóng Internet</a>
 </div>
 <div class="vasco-numbers-single-wrapper" role="listitem" tabindex="0">
 <div class="number-paragraph">
@@ -330,7 +330,7 @@ with other Vasco devices" data-product-name="E1">
 				</div>
 <p class="number-description" id="engines-desc">
 					translation engines</p>
-<a aria-describedby="engines-number engines-desc" class="btn btn-black btn-md" href="./features/translate-voice.html#translation-engines">
+<a aria-describedby="engines-number engines-desc" class="btn btn-black btn-md" href="<?php echo esc_url( home_url( "/features/translate-voice/" ) ); ?>#translation-engines">
 					Tìm hiểu thêm <span class="text-sr-only">about translation engines</span></a>
 </div>
 <div class="vasco-numbers-single-wrapper" role="listitem" tabindex="0">
@@ -348,7 +348,7 @@ with other Vasco devices" data-product-name="E1">
 </div>
 <p class="number-description" id="features-desc">
 					useful translation features</p>
-<a aria-describedby="features-number features-desc" class="btn btn-black btn-md" href="./features/index.html">
+<a aria-describedby="features-number features-desc" class="btn btn-black btn-md" href="<?php echo esc_url( home_url( "/features/" ) ); ?>">
 					Tìm hiểu thêm <span class="text-sr-only">about useful features of translators</span></a>
 </div>
 </div>
@@ -361,28 +361,28 @@ with other Vasco devices" data-product-name="E1">
 <div aria-label="carousel with features" aria-roledescription="carousel" class="swiper swiper-carousel" role="region">
 <a class="sr-only focusable" href="#after-feature-carousel">Skip carousel</a>
 <div class="swiper-wrapper">
-<a aria-hidden="true" class="swiper-slide" href="./features/translate-voice.html" tabindex="-1">
+<a aria-hidden="true" class="swiper-slide" href="<?php echo esc_url( home_url( "/features/translate-voice/" ) ); ?>" tabindex="-1">
 <div class="key" role="group" tabindex="0">
 <img aria-hidden="true" decoding="async" fetchpriority="low" height="100px" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/key-features/key-section-1.svg" ); ?>" width="100px"/>
 <h3 class="h2" id="icon1-title">Voice <br/> Translator</h3>
 <p id="icon1-desc">Tận hưởng cuộc trò chuyện lưu loát với bản dịch tức thì</p>
 </div>
 </a>
-<a aria-hidden="true" class="swiper-slide" href="./features/translate-photos.html" tabindex="-1">
+<a aria-hidden="true" class="swiper-slide" href="<?php echo esc_url( home_url( "/features/translate-photos/" ) ); ?>" tabindex="-1">
 <div class="key" role="group" tabindex="0">
 <img aria-hidden="true" decoding="async" fetchpriority="low" height="100px" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/key-features/key-section-2.svg" ); ?>" width="100px"/>
 <h3 class="h2" id="icon2-title">Photo <br/> Translator</h3>
 <p id="icon2-desc">Hiểu thực đơn, lịch trình, biển cảnh báo, v.v.</p>
 </div>
 </a>
-<a aria-hidden="true" class="swiper-slide" href="./features/index.html" tabindex="-1">
+<a aria-hidden="true" class="swiper-slide" href="<?php echo esc_url( home_url( "/features/" ) ); ?>" tabindex="-1">
 <div class="key" role="group" tabindex="0">
 <img aria-hidden="true" decoding="async" fetchpriority="low" height="100px" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/key-features/key-section-3.svg" ); ?>" width="100px"/>
 <h3 class="h2" id="icon3-title">113 <br/> languages</h3>
 <p id="icon3-desc">Kết nối với hơn 90% dân số thế giới</p>
 </div>
 </a>
-<a aria-hidden="true" class="swiper-slide" href="./features/index.html" tabindex="-1">
+<a aria-hidden="true" class="swiper-slide" href="<?php echo esc_url( home_url( "/features/" ) ); ?>" tabindex="-1">
 <div class="key" role="group" tabindex="0">
 <img aria-hidden="true" decoding="async" fetchpriority="low" height="100px" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/key-features/key-section-4.svg" ); ?>" width="100px"/>
 <h3 class="h2" id="icon4-title">Free <br/> Internet
@@ -390,21 +390,21 @@ with other Vasco devices" data-product-name="E1">
 <p id="icon4-desc">Tận hưởng Internet miễn phí trọn đời cho việc dịch thuật</p>
 </div>
 </a>
-<a aria-hidden="true" class="swiper-slide" href="./features/index.html" tabindex="-1">
+<a aria-hidden="true" class="swiper-slide" href="<?php echo esc_url( home_url( "/features/" ) ); ?>" tabindex="-1">
 <div class="key" role="group" tabindex="0">
 <img aria-hidden="true" decoding="async" fetchpriority="low" height="100px" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/key-features/key-section-5.svg" ); ?>" width="100px"/>
 <h3 class="h2" id="icon5-title">Call <br/> translator</h3>
 <p id="icon5-desc">Make real-time translated phone calls in 77 languages.</p>
 </div>
 </a>
-<a aria-hidden="true" class="swiper-slide" href="./features/index.html" tabindex="-1">
+<a aria-hidden="true" class="swiper-slide" href="<?php echo esc_url( home_url( "/features/" ) ); ?>" tabindex="-1">
 <div class="key" role="group" tabindex="0">
 <img aria-hidden="true" decoding="async" fetchpriority="low" height="100px" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/key-features/key-section-6.svg" ); ?>" width="100px"/>
 <h3 class="h2" id="icon6-title">Vasco <br/> My Voice</h3>
 <p id="icon6-desc">Create a digital version of your voice to talk like a native in 54 languages.</p>
 </div>
 </a>
-<a aria-hidden="true" class="swiper-slide" href="./features/index.html" tabindex="-1">
+<a aria-hidden="true" class="swiper-slide" href="<?php echo esc_url( home_url( "/features/" ) ); ?>" tabindex="-1">
 <div class="key" role="group" tabindex="0">
 <img aria-hidden="true" decoding="async" fetchpriority="low" height="100px" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/key-features/key-section-7.svg" ); ?>" width="100px"/>
 <h3 class="h2" id="icon7-title">Vasco <br/> Assistant</h3>
@@ -416,7 +416,7 @@ with other Vasco devices" data-product-name="E1">
 <div class="swiper-button-next btn-carousel-next" data-label-next="Next slide"></div>
 </div>
 <div class="flex-box">
-<a class="btn btn-md btn-black" href="./features/index.html">
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/features/" ) ); ?>">
 					Tìm hiểu thêm về các tính năng máy dịch
 				</a>
 <a class="btn btn-md btn-primary" href="<?php echo esc_url( home_url( "/" ) ); ?>">
@@ -673,7 +673,7 @@ with other Vasco devices" data-product-name="E1">
 <h3 class="h2">Tác động xã hội</h3>
 <p class="body-16">Hợp tác cùng Sứ mệnh Y tế Ba Lan, chúng tôi thành lập Đội Cứu hộ Khẩn cấp PMM Vasco. Từ năm 2022, đơn vị cứu hộ đặc biệt gồm các lực lượng ứng phó tích cực đã cung cấp viện trợ y tế trong vòng 24–48 giờ sau sự cố. Khi thiên tai và khủng hoảng nhân đạo xảy ra, Đội tự hào mang lại sự giúp đỡ cho những nạn nhân gặp khó khăn.</p>
 <div class="btn-wrapper">
-<a class="btn btn-md btn-black" href="./initiatives.html" title="Tác động xã hội">
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/initiatives/" ) ); ?>" title="Tác động xã hội">
 							Tìm hiểu thêm <span class="text-sr-only">o naszych inicjatywach</span>
 </a>
 </div>

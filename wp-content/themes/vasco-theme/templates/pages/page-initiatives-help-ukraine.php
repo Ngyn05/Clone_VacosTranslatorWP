@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-initiatives-help-ukraine.php
  *
@@ -23,7 +23,7 @@ get_header();
 <a href="<?php echo esc_url( home_url( "/" ) ); ?>"><span class="breadcrumb-link">Trang chủ</span></a><span class="breadcrumb-divider">&gt;</span>
 </li>
 <li>
-<a href="../initiatives.html"><span class="breadcrumb-link">Tác động xã hội của chúng tôi</span></a><span class="breadcrumb-divider">&gt;</span>
+<a href="<?php echo esc_url( home_url( "/initiatives/" ) ); ?>"><span class="breadcrumb-link">Tác động xã hội của chúng tôi</span></a><span class="breadcrumb-divider">&gt;</span>
 </li>
 <li><span aria-current="page" class="breadcrumb-current body-16">Giúp đỡ Ukraine</span></li>
 </ol>

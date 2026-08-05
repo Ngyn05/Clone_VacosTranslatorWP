@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-features-translate-chat.php
  *
@@ -55,7 +55,7 @@ get_header();
 <li>Chọn ngôn ngữ ưa thích của bạn và trò chuyện với dịch thuật tự động</li>
 </ul>
 <div class="last-box-element">
-<a class="btn btn-md btn-black body-16 last-box-element" href="../translators/vasco-translator-v4.html#product-languages" target="_blank">
+<a class="btn btn-md btn-black body-16 last-box-element" href="<?php echo esc_url( home_url( "/vasco-translator-v4/" ) ); ?>#product-languages" target="_blank">
 							Kiểm tra danh sách ngôn ngữ hỗ trợ
 						</a>
 </div>
@@ -118,12 +118,12 @@ get_header();
 </ul>
 <div class="voice-btn-wrapper last-box-element">
 <div>
-<a class="btn btn-md btn-black body-16 last-box-element mt-0" href="../translators/vasco-translator-v4.html#product-languages" target="_blank">
+<a class="btn btn-md btn-black body-16 last-box-element mt-0" href="<?php echo esc_url( home_url( "/vasco-translator-v4/" ) ); ?>#product-languages" target="_blank">
 								Kiểm tra danh sách ngôn ngữ hỗ trợ
 							</a>
 </div>
 <div>
-<a class="btn btn-md btn-black body-16 last-box-element mt-0" href="../coverage-map.html" target="_blank">Xem bản đồ phủ sóng Internet</a>
+<a class="btn btn-md btn-black body-16 last-box-element mt-0" href="<?php echo esc_url( home_url( "/coverage-map/" ) ); ?>" target="_blank">Xem bản đồ phủ sóng Internet</a>
 </div>
 </div>
 </div>
@@ -163,7 +163,7 @@ get_header();
 <h3 aria-label="q1.name]" id="product-38" tabindex="0">
 												Vasco Translator Q1</h3>
 <p>Máy dịch duy nhất có tính năng nhân bản giọng nói và dịch cuộc gọi điện thoại</p>
-<a aria-label="Tìm hiểu thêm Vasco Translator Q1" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>" target="_blank">
+<a aria-label="Tìm hiểu thêm Vasco Translator Q1" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/vasco-translator-q1/" ) ); ?>" target="_blank">
 												Tìm hiểu thêm
 											</a>
 </div>
@@ -176,7 +176,7 @@ get_header();
 <h3 aria-label="v4.name]" id="product-14" tabindex="0">
 												Vasco Translator V4</h3>
 <p>Thiết bị dịch điện tử tức thời</p>
-<a aria-label="Tìm hiểu thêm Vasco Translator V4" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>" target="_blank">
+<a aria-label="Tìm hiểu thêm Vasco Translator V4" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/vasco-translator-v4/" ) ); ?>" target="_blank">
 												Tìm hiểu thêm
 											</a>
 </div>
@@ -198,7 +198,7 @@ get_header();
 <a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( "/" ) ); ?>">QUAY LẠI TÍNH NĂNG</a>
 </div>
 <div>
-<a class="btn btn-md btn-secondary" href="./translate-text.html">XEM TÍNH NĂNG TIẾP THEO</a>
+<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( "/features/translate-text/" ) ); ?>">XEM TÍNH NĂNG TIẾP THEO</a>
 </div>
 </div>
 </section>

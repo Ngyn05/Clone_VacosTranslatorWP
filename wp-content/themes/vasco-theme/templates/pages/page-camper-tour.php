@@ -135,7 +135,7 @@ get_header();
 </div>
 </div>
 <div class="flex-box">
-<a class="btn btn-md btn-black" href="./features/index.html">
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/features/" ) ); ?>">
 					MEET VASCO
 				</a>
 </div>
@@ -258,22 +258,22 @@ get_header();
 <div aria-label="Carousel with the main functions of the Vasco Connect application" aria-roledescription="carousel" class="swiper swiper-foreground" role="region">
 <div class="swiper-wrapper">
 <div class="swiper-slide" data-product-desc="Electronic instant translator device" data-product-id="V4" data-product-link="//vasco-translator.com/translators/vasco-translator-v4" data-product-name="Vasco Translator V4">
-<a class="photo-link" href="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>" title="Go to product Vasco Translator V4">
+<a class="photo-link" href="<?php echo esc_url( home_url( "/vasco-translator-v4/" ) ); ?>" title="Go to product Vasco Translator V4">
 <img alt="Vasco Translator V4" decoding="async" fetchpriority="low" height="480" loading="lazy" sizes="(min-width: 1280px) 480px, (min-width: 992px) 360px, 320px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/v4.webp" ); ?>" width="480"/>
 </a>
 </div>
 <div class="swiper-slide" data-product-desc="Lightweight and easy-to-use pocket translator for everyone" data-product-id="M4" data-product-link="//vasco-translator.com/translators/vasco-translator-m4" data-product-name="Vasco Translator M4">
-<a class="photo-link" href="<?php echo esc_url( home_url( "/translators/vasco-translator-m4/" ) ); ?>" title="Go to product Vasco Translator M4">
+<a class="photo-link" href="<?php echo esc_url( home_url( "/vasco-translator-m4/" ) ); ?>" title="Go to product Vasco Translator M4">
 <img alt="Vasco Translator M4" decoding="async" fetchpriority="low" height="480" loading="lazy" sizes="(min-width: 1280px) 480px, (min-width: 992px) 360px, 320px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/m4.webp" ); ?>" width="480"/>
 </a>
 </div>
 <div class="swiper-slide" data-product-desc="Translator earbuds for seamless conversations" data-product-id="E1" data-product-link="//vasco-translator.com/translators/vasco-translator-e1" data-product-name="Vasco Translator E1">
-<a class="photo-link" href="<?php echo esc_url( home_url( "/translators/vasco-translator-e1/" ) ); ?>" title="Go to product Vasco Translator E1">
+<a class="photo-link" href="<?php echo esc_url( home_url( "/vasco-translator-e1/" ) ); ?>" title="Go to product Vasco Translator E1">
 <img alt="Vasco Translator E1" decoding="async" fetchpriority="low" height="480" loading="lazy" sizes="(min-width: 1280px) 480px, (min-width: 992px) 360px, 320px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/e1.webp" ); ?>" width="480"/>
 </a>
 </div>
 <div class="swiper-slide" data-product-desc="The only translator with voice cloning and call translation features" data-product-id="Q1" data-product-link="//vasco-translator.com/translators/vasco-translator-q1" data-product-name="Vasco Translator Q1">
-<a class="photo-link" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>" title="Go to product Vasco Translator Q1">
+<a class="photo-link" href="<?php echo esc_url( home_url( "/vasco-translator-q1/" ) ); ?>" title="Go to product Vasco Translator Q1">
 <img alt="Vasco Translator Q1" decoding="async" height="480" loading="eager" sizes="(min-width: 1280px) 480px, (min-width: 992px) 360px, 320px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/q1.webp" ); ?>" width="480"/>
 </a>
 </div>
@@ -427,7 +427,7 @@ with other Vasco devices" data-product-name="E1">
 </div>
 <h3 class="product-name">Vasco Translator Q1</h3>
 <p class="product-desc">The only translator with voice cloning and call translation features</p>
-<a class="product-link btn btn-md btn-white" data-product-id="Q1" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>">Tìm hiểu thêm</a>
+<a class="product-link btn btn-md btn-white" data-product-id="Q1" href="<?php echo esc_url( home_url( "/vasco-translator-q1/" ) ); ?>">Tìm hiểu thêm</a>
 </div>
 <div class="container">
 <button class="swiper-button-prev btn-carousel-prev" data-label-prev="Previous slide" type="button"></button>
