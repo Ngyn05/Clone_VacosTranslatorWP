@@ -863,23 +863,7 @@
 		</footer>
 
 </main><?php // End main ?>
-<div class="global-back-to-top" data-global-back-to-top="">
-		<div class="global-back-to-top-tooltip" role="tooltip">
-			Về đầu trang
-			<svg aria-hidden="true" class="global-back-to-top-tooltip-arrow" fill="none" focusable="false" height="16"
-				viewbox="0 0 8 16" width="8" xmlns="http://www.w3.org/2000/svg">
-				<path
-					d="M0.977873 2.09985L7.0154 5.86593C7.30841 6.04858 7.55741 6.34689 7.73219 6.7247C7.90697 7.10252 8 7.54357 8 7.9943C8 8.44504 7.90697 8.88609 7.73219 9.26391C7.55741 9.64172 7.30841 9.94003 7.0154 10.1227L0.985971 13.8716C0.692085 14.0528 0.442226 14.3507 0.267071 14.7288C0.0936245 15.1032 0.000911504 15.5401 6.68676e-06 15.9868L6.68676e-06 16C-2.23068e-06 15.9956 -2.22716e-06 15.9912 6.68676e-06 15.9868L6.68676e-06 0C0.00380797 0.444658 0.0978698 0.878535 0.271108 1.25055C0.444346 1.62256 0.689562 1.91723 0.977873 2.09985Z"
-					fill="#2D3139"></path>
-			</svg>
-		</div>
-		<button aria-label="Về đầu trang" class="global-back-to-top-button" type="button">
-			<svg aria-hidden="true" fill="none" focusable="false" height="16" viewbox="0 0 16 16" width="16"
-				xmlns="http://www.w3.org/2000/svg">
-				<path d="M13 10.5L8 5.5L3 10.5" stroke="#2D3139" stroke-linejoin="round" stroke-width="2"></path>
-			</svg>
-		</button>
-	</div>
+<!-- Nút Về đầu trang đã được xóa theo yêu cầu -->
 	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ps_emailalerts/js/mailalerts.js" ); ?>" type="text/javascript"></script>
 	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets<?php echo esc_url( VASCO_THEME_URI . '/assets/' ); ?>modules/ps_emailsubscription/views/js/ps_emailsubscription.js" ); ?>"
 		type="text/javascript"></script>
@@ -1524,6 +1508,11 @@
 	</svg>
 </a>
 <style>
+.global-back-to-top, .global-back-to-top-button, [data-global-back-to-top] {
+	display: none !important;
+	opacity: 0 !important;
+	pointer-events: none !important;
+}
 #vasco-floating-hotline:hover {
 	transform: scale(1.08);
 	box-shadow: 0 8px 28px rgba(37, 99, 235, 0.75);
