@@ -157,11 +157,8 @@ get_header();
                 $author_name = get_post_meta( $post_id, '_vasco_author_name', true ) ?: get_the_author();
                 $read_time   = get_post_meta( $post_id, '_vasco_read_time', true ) ?: '10 phút đọc';
 
-                if ( has_post_thumbnail( $post_id ) ) {
-                    $thumb_src = get_the_post_thumbnail_url( $post_id, 'medium_large' );
-                } else {
-                    $thumb_src = VASCO_THEME_URI . '/assets/img/happy-people.webp';
-                }
+                $has_thumb = has_post_thumbnail( $post_id );
+                $thumb_src = $has_thumb ? get_the_post_thumbnail_url( $post_id, 'medium_large' ) : '';
                 ?>
                 <!-- Article Item with GEO / Schema Markup -->
                 <article class="article-card" itemscope itemtype="https://schema.org/BlogPosting">
@@ -169,7 +166,11 @@ get_header();
                     <meta itemprop="inLanguage" content="vi-VN">
                     
                     <a class="article-card-img-link" href="<?php echo esc_url( $permalink ); ?>" title="<?php echo esc_attr( $title ); ?>">
-                        <img class="article-card-img" src="<?php echo esc_url( $thumb_src ); ?>" alt="<?php echo esc_attr( $title ); ?>" itemprop="image" loading="lazy" />
+                        <?php if ( $has_thumb && $thumb_src ) : ?>
+                            <img class="article-card-img" src="<?php echo esc_url( $thumb_src ); ?>" alt="<?php echo esc_attr( $title ); ?>" itemprop="image" loading="lazy" />
+                        <?php else : ?>
+                            <div class="article-card-img-placeholder" style="width:100%;height:100%;background:#1a1a1a;display:flex;align-items:center;justify-content:center;color:#666;font-size:13px;">Chưa có ảnh</div>
+                        <?php endif; ?>
                     </a>
 
                     <div class="article-card-body">
