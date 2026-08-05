@@ -149,29 +149,6 @@ function vasco_theme_enqueue_admin_assets( $hook ) {
 add_action( 'admin_enqueue_scripts', 'vasco_theme_enqueue_admin_assets' );
 
 /**
- * AJAX Handler for syncing frontend Add-to-Cart with WooCommerce Cart Session (Secured with Nonce)
- */
-function vasco_theme_add_to_wc_cart_ajax() {
-	check_ajax_referer( 'vasco_cart_nonce', 'nonce' );
-
-	if ( ! function_exists( 'WC' ) || ! WC()->cart ) {
-		wp_send_json_error( array( 'message' => 'WooCommerce not active' ) );
-	}
-
-	$product_id = isset( $_POST['product_id'] ) ? (int) $_POST['product_id'] : 0;
-	$quantity   = isset( $_POST['quantity'] ) ? (int) $_POST['quantity'] : 1;
-
-	if ( $product_id > 0 ) {
-		WC()->cart->add_to_cart( $product_id, $quantity );
-		wp_send_json_success( array( 'cart_count' => WC()->cart->get_cart_contents_count() ) );
-	}
-
-	wp_send_json_error( array( 'message' => 'Invalid Product ID' ) );
-}
-add_action( 'wp_ajax_vasco_add_to_wc_cart', 'vasco_theme_add_to_wc_cart_ajax' );
-add_action( 'wp_ajax_nopriv_vasco_add_to_wc_cart', 'vasco_theme_add_to_wc_cart_ajax' );
-
-/**
  * Add type="module" attribute to Vite ES Module scripts.
  */
 function vasco_theme_script_loader_tag( $tag, $handle, $src ) {

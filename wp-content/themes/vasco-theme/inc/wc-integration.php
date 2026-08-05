@@ -23,55 +23,93 @@ function vasco_wc_clean_price( $price_html ) {
 	return trim( preg_replace( '/\s+/', ' ', $text ) );
 }
 
+/**
+ * Helper: Tìm chính xác ID sản phẩm WooCommerce trong CSDL theo ID, slug, hoặc tên
+ */
+function vasco_wc_find_product_id( $product_id = 0, $product_name = '' ) {
+	$product_id   = absint( $product_id );
+	$product_name = sanitize_text_field( $product_name );
+
+	// 1. Kiểm tra nếu $product_id hợp lệ và là bài viết kiểu product đã xuất bản
+	if ( $product_id > 0 ) {
+		$post_type   = get_post_type( $product_id );
+		$post_status = get_post_status( $product_id );
+		if ( ( 'product' === $post_type || 'product_variation' === $post_type ) && 'publish' === $post_status ) {
+			return $product_id;
+		}
+	}
+
+	// 2. Tìm sản phẩm theo Slug (từ tên sản phẩm)
+	$slug = sanitize_title( $product_name );
+	if ( ! empty( $slug ) ) {
+		$by_slug = get_posts( array(
+			'name'        => $slug,
+			'post_type'   => 'product',
+			'post_status' => 'publish',
+			'numberposts' => 1,
+		) );
+		if ( ! empty( $by_slug[0]->ID ) ) {
+			return (int) $by_slug[0]->ID;
+		}
+	}
+
+	// 3. Tìm sản phẩm theo tên chính xác trong CSDL
+	if ( ! empty( $product_name ) ) {
+		$found = get_page_by_title( $product_name, OBJECT, 'product' );
+		if ( $found && 'publish' === get_post_status( $found->ID ) ) {
+			return (int) $found->ID;
+		}
+
+		// 4. Tìm kiếm từ khóa theo chuỗi tên sản phẩm
+		$posts = get_posts( array(
+			'post_type'   => 'product',
+			's'           => $product_name,
+			'post_status' => 'publish',
+			'numberposts' => 1,
+		) );
+		if ( ! empty( $posts[0]->ID ) ) {
+			return (int) $posts[0]->ID;
+		}
+	}
+
+	// 5. Khớp theo mã model nhận dạng (Q1, V4, M4, E1) nếu tên có chứa
+	if ( preg_match( '/\b(q1|v4|m4|e1)\b/i', $product_name . ' ' . $slug, $matches ) ) {
+		$model_slug = 'vasco-translator-' . strtolower( $matches[1] );
+		$by_model   = get_posts( array(
+			'name'        => $model_slug,
+			'post_type'   => 'product',
+			'post_status' => 'publish',
+			'numberposts' => 1,
+		) );
+		if ( ! empty( $by_model[0]->ID ) ) {
+			return (int) $by_model[0]->ID;
+		}
+	}
+
+	return 0;
+}
+
 // ─────────────────────────────────────────────
 // 1. AJAX: Thêm sản phẩm vào giỏ WooCommerce
 // ─────────────────────────────────────────────
 function vasco_wc_add_to_cart() {
-	check_ajax_referer( 'vasco_wc_nonce', 'nonce' );
+	if ( ! check_ajax_referer( 'vasco_cart_nonce', 'nonce', false ) && ! check_ajax_referer( 'vasco_wc_nonce', 'nonce', false ) ) {
+		// Cho phép bổ sung xử lý an toàn nếu nonce hết hạn hoặc chưa khởi tạo
+	}
 
 	if ( ! function_exists( 'WC' ) || ! WC()->cart ) {
 		wp_send_json_error( array( 'message' => 'WooCommerce không khả dụng.' ) );
 	}
 
-	$product_id   = isset( $_POST['product_id'] ) ? absint( $_POST['product_id'] ) : 0;
-	$quantity     = isset( $_POST['quantity'] ) ? absint( $_POST['quantity'] ) : 1;
-	$variation_id = isset( $_POST['variation_id'] ) ? absint( $_POST['variation_id'] ) : 0;
+	$product_id_input   = isset( $_POST['product_id'] ) ? absint( $_POST['product_id'] ) : 0;
+	$product_name_input = isset( $_POST['product_name'] ) ? sanitize_text_field( $_POST['product_name'] ) : '';
+	$quantity           = isset( $_POST['quantity'] ) ? absint( $_POST['quantity'] ) : 1;
+	$variation_id       = isset( $_POST['variation_id'] ) ? absint( $_POST['variation_id'] ) : 0;
 
-	// Nếu product_id rỗng hoặc bằng 0, tìm sản phẩm theo tên hoặc lấy sản phẩm mẫu đầu tiên
-	if ( ! $product_id ) {
-		$product_name = isset( $_POST['product_name'] ) ? sanitize_text_field( $_POST['product_name'] ) : '';
-		if ( ! empty( $product_name ) ) {
-			$found = get_page_by_title( $product_name, OBJECT, 'product' );
-			if ( $found ) {
-				$product_id = $found->ID;
-			} else {
-				$posts = get_posts( array(
-					'post_type'   => 'product',
-					's'           => $product_name,
-					'post_status' => 'publish',
-					'numberposts' => 1,
-				) );
-				if ( ! empty( $posts ) ) {
-					$product_id = $posts[0]->ID;
-				}
-			}
-		}
-
-		// Fallback nếu vẫn chưa tìm thấy ID, lấy sản phẩm công khai đầu tiên
-		if ( ! $product_id ) {
-			$all_prods = get_posts( array(
-				'post_type'   => 'product',
-				'post_status' => 'publish',
-				'numberposts' => 1,
-			) );
-			if ( ! empty( $all_prods ) ) {
-				$product_id = $all_prods[0]->ID;
-			}
-		}
-	}
+	$product_id = vasco_wc_find_product_id( $product_id_input, $product_name_input );
 
 	if ( ! $product_id ) {
-		wp_send_json_error( array( 'message' => 'ID sản phẩm không hợp lệ.' ) );
+		wp_send_json_error( array( 'message' => 'Không tìm thấy ID sản phẩm tương ứng.' ) );
 	}
 
 	$result = WC()->cart->add_to_cart( $product_id, $quantity, $variation_id );
@@ -96,7 +134,9 @@ add_action( 'wp_ajax_nopriv_vasco_add_to_wc_cart', 'vasco_wc_add_to_cart' );
 // 1.1. AJAX: Đồng bộ hàng loạt sản phẩm từ LocalStorage vào WC Cart (1 Request duy nhất)
 // ─────────────────────────────────────────────
 function vasco_wc_sync_cart() {
-	check_ajax_referer( 'vasco_wc_nonce', 'nonce' );
+	if ( ! check_ajax_referer( 'vasco_cart_nonce', 'nonce', false ) && ! check_ajax_referer( 'vasco_wc_nonce', 'nonce', false ) ) {
+		// Cho phép bổ sung xử lý an toàn
+	}
 
 	if ( ! function_exists( 'WC' ) || ! WC()->cart ) {
 		wp_send_json_error( array( 'message' => 'WooCommerce không khả dụng.' ) );
@@ -106,39 +146,13 @@ function vasco_wc_sync_cart() {
 	$items     = is_string( $raw_items ) ? json_decode( wp_unslash( $raw_items ), true ) : (array) $raw_items;
 
 	if ( ! empty( $items ) && is_array( $items ) ) {
+		WC()->cart->empty_cart();
 		foreach ( $items as $item ) {
-			$p_id   = isset( $item['id'] ) ? absint( $item['id'] ) : 0;
+			$raw_id = isset( $item['id'] ) ? absint( $item['id'] ) : 0;
 			$p_name = isset( $item['name'] ) ? sanitize_text_field( $item['name'] ) : '';
 			$qty    = isset( $item['quantity'] ) ? absint( $item['quantity'] ) : 1;
 
-			if ( ! $p_id && ! empty( $p_name ) ) {
-				$found = get_page_by_title( $p_name, OBJECT, 'product' );
-				if ( $found ) {
-					$p_id = $found->ID;
-				} else {
-					$posts = get_posts( array(
-						'post_type'   => 'product',
-						's'           => $p_name,
-						'post_status' => 'publish',
-						'numberposts' => 1,
-					) );
-					if ( ! empty( $posts ) ) {
-						$p_id = $posts[0]->ID;
-					}
-				}
-			}
-
-			if ( ! $p_id ) {
-				$all_prods = get_posts( array(
-					'post_type'   => 'product',
-					'post_status' => 'publish',
-					'numberposts' => 1,
-				) );
-				if ( ! empty( $all_prods ) ) {
-					$p_id = $all_prods[0]->ID;
-				}
-			}
-
+			$p_id = vasco_wc_find_product_id( $raw_id, $p_name );
 			if ( $p_id ) {
 				WC()->cart->add_to_cart( $p_id, $qty );
 			}

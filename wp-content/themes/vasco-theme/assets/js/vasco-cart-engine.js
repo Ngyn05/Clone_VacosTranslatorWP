@@ -256,7 +256,7 @@
 				html += '<a href="' + accLink + '" style="display:block;font-size:13px;font-weight:600;color:#2D3139;text-decoration:none;line-height:1.3;margin-bottom:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="' + acc.name + '">' + acc.name + '</a>';
 				html += '<strong style="font-size:14px;color:#001480;">' + accPriceDisplay + '</strong>';
 				html += '</div>';
-				html += '<button onclick="window.VascoCart.addItem({id:\'' + (acc.id || 0) + '\',name:\'' + acc.name.replace(/'/g, "\\'") + '\',price:' + acc.price + ',image:\'' + accImg + '\'})" style="background:#F0F5FF;border:1px solid #3B82F6;border-radius:20px;padding:6px 14px;cursor:pointer;color:#3B82F6;font-weight:600;font-size:13px;flex-shrink:0;">+ Thêm</button>';
+				html += '<button class="btn-drawer-add" data-vasco-handled="true" onclick="event.stopPropagation(); event.preventDefault(); window.VascoCart.addItem({id:\'' + (acc.id || 0) + '\',name:\'' + acc.name.replace(/'/g, "\\'") + '\',price:' + acc.price + ',image:\'' + accImg + '\'});" style="background:#F0F5FF;border:1px solid #3B82F6;border-radius:20px;padding:6px 14px;cursor:pointer;color:#3B82F6;font-weight:600;font-size:13px;flex-shrink:0;">+ Thêm</button>';
 				html += '</div>';
 			});
 
@@ -305,6 +305,10 @@
 			}
 		}
 		if (!btn) return;
+
+		if (btn.closest('#vasco-side-drawer') || btn.classList.contains('btn-drawer-add') || btn.getAttribute('data-vasco-handled') === 'true') {
+			return;
+		}
 
 		var isCartPageLink = btn.tagName === 'A' && btn.getAttribute('href') && btn.getAttribute('href').indexOf('/cart/') !== -1 && !btn.classList.contains('btn-add-to-cart') && !btn.classList.contains('add-to-cart');
 		if (isCartPageLink) return;
