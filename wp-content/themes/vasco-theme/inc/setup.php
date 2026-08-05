@@ -55,6 +55,9 @@ function vasco_theme_setup() {
 			'footer'  => __( 'Footer Menu', 'vasco-theme' ),
 		)
 	);
+
+	// Đồng bộ 100% style giữa WP Admin Visual Editor và Frontend
+	add_editor_style( 'assets/css/editor-style.css' );
 }
 add_action( 'after_setup_theme', 'vasco_theme_setup' );
 
