@@ -58,251 +58,145 @@
 					</div>
 				</div>
 				<div class="footer-dark-bottom">
+					<!-- CSS RESPONSIVE CHO FOOTER -->
+					<style>
+						.vasco-footer-top {
+							padding-bottom: 24px;
+							margin-bottom: 28px;
+							border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+							display: flex;
+							align-items: center;
+							justify-content: space-between;
+							flex-wrap: wrap;
+							gap: 16px;
+							width: 100%;
+						}
+						.vasco-support-grid {
+							display: grid;
+							grid-template-columns: repeat(3, 1fr);
+							gap: 24px;
+							align-items: stretch;
+							width: 100%;
+						}
+						.vasco-menu-grid {
+							display: grid;
+							grid-template-columns: repeat(4, 1fr);
+							gap: 32px 24px;
+							width: 100%;
+						}
+						.vasco-commitments {
+							margin-top: 20px;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							gap: 24px;
+							font-size: 13.5px;
+							color: #94A3B8 !important;
+							flex-wrap: wrap;
+						}
+						.vasco-commitment-sep {
+							color: rgba(255,255,255,0.2);
+						}
+
+						/* RESPONSIVE TABLET / MÀN HÌNH VỪA (MAX 1024PX) */
+						@media (max-width: 1024px) {
+							.vasco-support-grid {
+								grid-template-columns: repeat(2, 1fr) !important;
+								gap: 20px !important;
+							}
+							/* Card Hotline thứ 3 khi xuống dòng sẽ nằm chính giữa */
+							.vasco-support-grid > div:nth-child(3) {
+								grid-column: 1 / -1 !important;
+								max-width: 500px !important;
+								justify-self: center !important;
+								width: 100% !important;
+							}
+							.vasco-menu-grid {
+								grid-template-columns: repeat(2, 1fr) !important;
+								gap: 32px 24px !important;
+							}
+						}
+
+						/* RESPONSIVE MOBILE (MAX 768PX) - CĂN GIỮA TOÀN BỘ */
+						@media (max-width: 768px) {
+							.vasco-footer-top {
+								flex-direction: column !important;
+								align-items: center !important;
+								text-align: center !important;
+								gap: 12px !important;
+							}
+							.footer-support-header, .footer-support-header h4 {
+								justify-content: center !important;
+								text-align: center !important;
+							}
+							.vasco-support-grid {
+								grid-template-columns: 1fr !important;
+								gap: 20px !important;
+								justify-items: center !important;
+							}
+							.vasco-support-grid > div {
+								max-width: 480px !important;
+								width: 100% !important;
+							}
+							.vasco-menu-grid {
+								grid-template-columns: repeat(2, 1fr) !important;
+								gap: 28px 16px !important;
+								text-align: center !important;
+							}
+							.vasco-menu-grid .footer-column-header {
+								justify-content: center !important;
+								text-align: center !important;
+							}
+							.vasco-menu-grid .footer-column-list {
+								align-items: center !important;
+							}
+							.vasco-commitments {
+								flex-direction: column !important;
+								gap: 8px !important;
+								text-align: center !important;
+							}
+							.vasco-commitment-sep {
+								display: none !important;
+							}
+							.footer-dark-bottom .footer-flex {
+								flex-direction: column !important;
+								align-items: center !important;
+								gap: 20px !important;
+								text-align: center !important;
+							}
+							.footer-dark-bottom .box-flex {
+								justify-content: center !important;
+								width: 100% !important;
+							}
+						}
+
+						/* RESPONSIVE MOBILE NHỎ (MAX 480PX) */
+						@media (max-width: 480px) {
+							.vasco-menu-grid {
+								grid-template-columns: 1fr !important;
+								gap: 24px !important;
+							}
+						}
+					</style>
+
 					<div class="container">
-						<div class="footer-top">
+						<!-- TOP LOGO & SLOGAN -->
+						<div class="vasco-footer-top">
+							<a href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN" style="display: inline-flex; align-items: center; text-decoration: none; gap: 10px;">
+								<img alt="Vasco Electronics" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/logo.svg" ); ?>" style="height: 30px; width: auto; filter: brightness(0) invert(1); display: block;" />
+								<span style="color: #60A5FA; font-size: 15px; font-weight: 800; letter-spacing: 1.5px; background: rgba(59, 130, 246, 0.18); border: 1px solid rgba(96, 165, 250, 0.35); padding: 2px 8px; border-radius: 6px;">VN</span>
+							</a>
+							<span style="color: #94A3B8; font-size: 14px; font-weight: 500;">Máy phiên dịch hàng đầu thế giới</span>
 						</div>
-						<div class="footer-grid">
-							<div class="footer-columns">
-								<nav aria-labelledby="footer-0-heading" class="footer-nav" role="navigation">
-									<div class="footer-column-header" data-id="0">
-										<h4 class="h2" id="footer-0-heading">Khu vực khách hàng</h4>
-										<svg fill="none" height="12" viewbox="0 0 20 12" width="20"
-											xmlns="http://www.w3.org/2000/svg">
-											<path d="M2 2L10 10L18 2" stroke="white" stroke-linecap="square"
-												stroke-width="2"></path>
-										</svg>
-									</div>
-									<ul class="footer-column-list" data-id="0">
-										<li>
-											<a class="footer-info" href="<?php echo esc_url( home_url( "/shipping/" ) ); ?>" rel="nofollow"
-												title="Shipping &amp; Payments">
-												Vận chuyển &amp; Thanh toán
-											</a>
-										</li>
-										<li>
-											<a class="footer-info" href="<?php echo esc_url( home_url( "/returns/" ) ); ?>" title="Returns">
-												Đổi trả
-											</a>
-										</li>
-										<li>
-											<a class="footer-info" href="#" rel="nofollow" target="_blank"
-												title="User manuals">
-												Hướng dẫn sử dụng
-											</a>
-										</li>
-										<li>
-											<a class="footer-info" href="#" rel="nofollow" target="_blank"
-												title="Tutorials">
-												Video hướng dẫn
-											</a>
-										</li>
-										<li>
-											<a class="footer-info" href="<?php echo esc_url( home_url( "/contact/" ) ); ?>" title="Contact">
-												Liên hệ
-											</a>
-										</li>
-										<li>
-											<a class="footer-info" href="./seniors-traveling.html"
-												title="Seniors traveling">
-												Người cao tuổi đi du lịch
-											</a>
-										</li>
-										<li>
-											<a class="footer-info" href="<?php echo esc_url( home_url( "/articles/" ) ); ?>" title="Blog">
-												Blog
-											</a>
-										</li>
-										<li>
-											<a class="footer-info" href="<?php echo esc_url( home_url( "/camper-tour/" ) ); ?>" title="Vasco Camper Tour">
-												Chuyến xe Vasco
-											</a>
-										</li>
-									</ul>
-								</nav>
-								<hr />
-								<nav aria-labelledby="footer-1-heading" class="footer-nav" role="navigation">
-									<div class="footer-column-header" data-id="1">
-										<h4 class="h2" id="footer-1-heading">Sản phẩm</h4>
-										<svg fill="none" height="12" viewbox="0 0 20 12" width="20"
-											xmlns="http://www.w3.org/2000/svg">
-											<path d="M2 2L10 10L18 2" stroke="white" stroke-linecap="square"
-												stroke-width="2"></path>
-										</svg>
-									</div>
-									<ul class="footer-column-list" data-id="1">
-										<li>
-											<a class="footer-info" href="<?php echo esc_url( home_url( "/all-products/" ) ); ?>"
-												title="All products">
-												Tất cả sản phẩm
-											</a>
-										</li>
-										<li>
-											<a class="footer-info" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Máy phiên dịch điện tử">
-												Máy dịch điện tử
-											</a>
-										</li>
-										<li>
-											<a class="footer-info" href="./translators/vasco-translator-q1.html"
-												title="Vasco Translator Q1">
-												Vasco Translator Q1
-											</a>
-										</li>
-										<li>
-											<a class="footer-info" href="./translators/vasco-translator-v4.html"
-												title="Vasco Translator V4">
-												Vasco Translator V4
-											</a>
-										</li>
-										<li>
-											<a class="footer-info" href="./translators/vasco-translator-e1.html"
-												title="Vasco Translator E1">
-												Vasco Translator E1
-											</a>
-										</li>
-										<li>
-											<a class="footer-info" href="<?php echo esc_url( home_url( "/accessories/" ) ); ?>" title="Accessories">
-												Phụ kiện
-											</a>
-										</li>
-										<li>
-											<a class="footer-info" href="<?php echo esc_url( home_url( "/comparison-engine/" ) ); ?>"
-												title="Công cụ so sánh">
-												Công cụ so sánh
-											</a>
-										</li>
-									</ul>
-								</nav>
-								<hr>
-								<nav aria-labelledby="footer-2-heading" class="footer-nav" role="navigation">
-									<div class="footer-column-header" data-id="2">
-										<h4 class="h2" id="footer-2-heading">Tính năng</h4>
-										<svg fill="none" height="12" viewbox="0 0 20 12" width="20"
-											xmlns="http://www.w3.org/2000/svg">
-											<path d="M2 2L10 10L18 2" stroke="white" stroke-linecap="square"
-												stroke-width="2"></path>
-										</svg>
-									</div>
-									<ul class="footer-column-list" data-id="2">
-										<li>
-											<a class="footer-info" href="./features/translate-voice.html"
-												title="Dịch giọng nói">
-												Dịch giọng nói
-											</a>
-										</li>
-										<li>
-											<a class="footer-info" href="./features/translate-photos.html"
-												title="Dịch hình ảnh">
-												Dịch ảnh
-											</a>
-										</li>
-										<li>
-											<a class="footer-info" href="./features/translate-text.html"
-												title="Dịch văn bản">
-												Dịch văn bản
-											</a>
-										</li>
-										<li>
-											<a class="footer-info" href="./features/translate-chat.html"
-												title="MultiTalk">
-												MultiTalk
-											</a>
-										</li>
-										<li>
-											<a class="footer-info" href="./coverage-map.html"
-												title="Bản đồ phủ sóng Internet">
-												Bản đồ vùng phủ sóng Internet
-											</a>
-										</li>
-									</ul>
-								</nav>
-								<hr />
-								<nav aria-labelledby="footer-3-heading" class="footer-nav" role="navigation">
-									<div class="footer-column-header" data-id="3">
-										<h4 class="h2" id="footer-3-heading">Thông tin</h4>
-										<svg fill="none" height="12" viewbox="0 0 20 12" width="20"
-											xmlns="http://www.w3.org/2000/svg">
-											<path d="M2 2L10 10L18 2" stroke="white" stroke-linecap="square"
-												stroke-width="2"></path>
-										</svg>
-									</div>
-									<ul class="footer-column-list" data-id="3">
-										<li>
-											<a class="footer-info" href="<?php echo esc_url( home_url( "/about-us/" ) ); ?>" title="About us">
-												Về chúng tôi
-											</a>
-										</li>
-										<li>
-											<a class="footer-info" href="./vasco-innovations.html" title="What’s new">
-												Tin mới
-											</a>
-										</li>
-										<li>
-											<a class="footer-info" href="./vasco-ces-2026.html" title="CES 2026">
-												CES 2026
-											</a>
-										</li>
-										<li>
-											<a class="footer-info" href="./media-about-us.html"
-												title="Truyền thông nói về chúng tôi">
-												Truyền thông nói về chúng tôi
-											</a>
-										</li>
-										<li>
-											<a class="footer-info" href="./newsroom.html" title="Newsroom">
-												Tin tức
-											</a>
-										</li>
-										<li>
-											<a class="footer-info" href="<?php echo esc_url( home_url( "/privacy-policy/" ) ); ?>" rel="nofollow"
-												title="Privacy policy">
-												Chính sách bảo mật
-											</a>
-										</li>
-										<li>
-											<a class="footer-info" href="<?php echo esc_url( home_url( "/terms-and-conditions/" ) ); ?>" rel="nofollow"
-												title="Terms of service">
-												Điều khoản dịch vụ
-											</a>
-										</li>
-										<li>
-											<a class="footer-info"
-												href="./terms-and-conditions-of-the-promotion-cheaper-in-a-set.html"
-												rel="nofollow"
-												title="Điều khoản và điều kiện of the promotion cheaper in a set">
-												Điều khoản khuyến mãi mua theo bộ
-											</a>
-										</li>
-										<li>
-											<a class="footer-info" href="./assets/docs/isms-policy.pdf" rel="nofollow"
-												target="_blank" title="ISMS Policy">
-												Chính sách ISMS
-											</a>
-										</li>
-										<li>
-											<a class="footer-info" href="./initiatives/polish-medical-mission-pmm.html"
-												title="PMM Vasco Emergency Team">
-												Đội cấp cứu PMM Vasco
-											</a>
-										</li>
-										<li>
-											<a class="footer-info" href="./sitemap.html" rel="nofollow" title="Sitemap">
-												Sơ đồ trang web
-											</a>
-										</li>
-									</ul>
-								</nav>
-								<hr />
-								</hr>
-							</div>
-						</div>
-						<hr class="footer-divider" />
-						<nav aria-labelledby="footer-support" class="footer-suport-info" role="navigation" style="padding-bottom: 28px;">
+
+						<!-- TẦNG 1: KHỐI HỖ TRỢ KHÁCH HÀNG ĐẶT LÊN TRÊN -->
+						<nav aria-labelledby="footer-support" class="footer-suport-info" role="navigation" style="padding-bottom: 32px; margin-bottom: 32px; border-bottom: 1px solid rgba(255, 255, 255, 0.12);">
 							<div class="footer-column-header footer-support-header" style="margin-bottom: 24px;">
-								<h4 class="h2" id="footer-support" style="color: #FFFFFF !important;">Hỗ trợ khách hàng</h4>
+								<h4 class="h2" id="footer-support" style="color: #FFFFFF !important; font-size: 18px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Hỗ trợ khách hàng</h4>
 							</div>
 							
 							<!-- 3 Columns Layout (Hà Nội, TP.HCM, Hotline) -->
-							<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; align-items: stretch;">
+							<div class="vasco-support-grid">
 								
 								<!-- Column 1: Hà Nội -->
 								<div style="background: linear-gradient(145deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%); border: 1px solid rgba(255,255,255,0.15); border-radius: 14px; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 20px rgba(0,0,0,0.25);">
@@ -408,32 +302,228 @@
 
 							</div>
 
-							<!-- Commitment Badges Row -->
-							<div style="margin-top: 24px; padding: 14px 24px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center; gap: 28px; font-size: 13.5px; color: #E2E8F0 !important; flex-wrap: wrap;">
-								<div class="footer-info" style="display: flex; align-items: center; gap: 8px; font-weight: 500; color: #E2E8F0 !important;">
-									<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-										<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-										<path d="m9 12 2 2 4-4"/>
-									</svg>
-									<span>Sản phẩm chính hãng</span>
-								</div>
-								<span style="color: rgba(255,255,255,0.3);">|</span>
-								<div class="footer-info" style="display: flex; align-items: center; gap: 8px; font-weight: 500; color: #E2E8F0 !important;">
-									<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-										<path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-									</svg>
-									<span>Bảo hành uy tín</span>
-								</div>
-								<span style="color: rgba(255,255,255,0.3);">|</span>
-								<div class="footer-info" style="display: flex; align-items: center; gap: 8px; font-weight: 500; color: #E2E8F0 !important;">
-									<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-										<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-									</svg>
-									<span>Hỗ trợ tận tâm</span>
-								</div>
+							<!-- Commitment Badges Row (Không đóng khung & không icon) -->
+							<div class="vasco-commitments">
+								<span>Sản phẩm chính hãng</span>
+								<span class="vasco-commitment-sep">|</span>
+								<span>Bảo hành uy tín</span>
+								<span class="vasco-commitment-sep">|</span>
+								<span>Hỗ trợ tận tâm</span>
 							</div>
-
 						</nav>
+
+						<!-- TẦNG 2: 4 CỘT MENU Ở PHÍA DƯỚI -->
+						<div class="footer-grid" style="width: 100%; padding-bottom: 24px;">
+							<div class="footer-columns vasco-menu-grid">
+								<nav aria-labelledby="footer-0-heading" class="footer-nav" role="navigation">
+									<div class="footer-column-header" data-id="0">
+										<h4 class="h2" id="footer-0-heading">Khu vực khách hàng</h4>
+										<svg fill="none" height="12" viewbox="0 0 20 12" width="20"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M2 2L10 10L18 2" stroke="white" stroke-linecap="square"
+												stroke-width="2"></path>
+										</svg>
+									</div>
+									<ul class="footer-column-list" data-id="0">
+										<li>
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/shipping/" ) ); ?>" rel="nofollow"
+												title="Shipping &amp; Payments">
+												Vận chuyển &amp; Thanh toán
+											</a>
+										</li>
+										<li>
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/returns/" ) ); ?>" title="Returns">
+												Đổi trả
+											</a>
+										</li>
+										<li>
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/contact/" ) ); ?>" title="Contact">
+												Liên hệ
+											</a>
+										</li>
+										<li>
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/seniors-traveling/" ) ); ?>"
+												title="Seniors traveling">
+												Người cao tuổi đi du lịch
+											</a>
+										</li>
+										<li>
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/articles/" ) ); ?>" title="Blog">
+												Blog
+											</a>
+										</li>
+										<li>
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/camper-tour/" ) ); ?>" title="Vasco Camper Tour">
+												Chuyến xe Vasco
+											</a>
+										</li>
+									</ul>
+								</nav>
+								<nav aria-labelledby="footer-1-heading" class="footer-nav" role="navigation">
+									<div class="footer-column-header" data-id="1">
+										<h4 class="h2" id="footer-1-heading">Sản phẩm</h4>
+										<svg fill="none" height="12" viewbox="0 0 20 12" width="20"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M2 2L10 10L18 2" stroke="white" stroke-linecap="square"
+												stroke-width="2"></path>
+										</svg>
+									</div>
+									<ul class="footer-column-list" data-id="1">
+										<li>
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/all-products/" ) ); ?>"
+												title="All products">
+												Tất cả sản phẩm
+											</a>
+										</li>
+										<li>
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Máy phiên dịch điện tử">
+												Máy dịch điện tử
+											</a>
+										</li>
+										<li>
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/vasco-translator-q1/" ) ); ?>"
+												title="Vasco Translator Q1">
+												Vasco Translator Q1
+											</a>
+										</li>
+										<li>
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/vasco-translator-v4/" ) ); ?>"
+												title="Vasco Translator V4">
+												Vasco Translator V4
+											</a>
+										</li>
+										<li>
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/vasco-translator-e1/" ) ); ?>"
+												title="Vasco Translator E1">
+												Vasco Translator E1
+											</a>
+										</li>
+										<li>
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/accessories/" ) ); ?>" title="Accessories">
+												Phụ kiện
+											</a>
+										</li>
+										<li>
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/comparison-engine/" ) ); ?>"
+												title="Công cụ so sánh">
+												Công cụ so sánh
+											</a>
+										</li>
+									</ul>
+								</nav>
+								<nav aria-labelledby="footer-2-heading" class="footer-nav" role="navigation">
+									<div class="footer-column-header" data-id="2">
+										<h4 class="h2" id="footer-2-heading">Tính năng</h4>
+										<svg fill="none" height="12" viewbox="0 0 20 12" width="20"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M2 2L10 10L18 2" stroke="white" stroke-linecap="square"
+												stroke-width="2"></path>
+										</svg>
+									</div>
+									<ul class="footer-column-list" data-id="2">
+										<li>
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/features-translate-voice/" ) ); ?>"
+												title="Dịch giọng nói">
+												Dịch giọng nói
+											</a>
+										</li>
+										<li>
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/features-translate-photos/" ) ); ?>"
+												title="Dịch hình ảnh">
+												Dịch ảnh
+											</a>
+										</li>
+										<li>
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/features-translate-text/" ) ); ?>"
+												title="Dịch văn bản">
+												Dịch văn bản
+											</a>
+										</li>
+										<li>
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/features-translate-chat/" ) ); ?>"
+												title="MultiTalk">
+												MultiTalk
+											</a>
+										</li>
+										<li>
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/coverage-map/" ) ); ?>"
+												title="Bản đồ phủ sóng Internet">
+												Bản đồ vùng phủ sóng Internet
+											</a>
+										</li>
+									</ul>
+								</nav>
+								<nav aria-labelledby="footer-3-heading" class="footer-nav" role="navigation">
+									<div class="footer-column-header" data-id="3">
+										<h4 class="h2" id="footer-3-heading">Thông tin</h4>
+										<svg fill="none" height="12" viewbox="0 0 20 12" width="20"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M2 2L10 10L18 2" stroke="white" stroke-linecap="square"
+												stroke-width="2"></path>
+										</svg>
+									</div>
+									<ul class="footer-column-list" data-id="3">
+										<li>
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/about-us/" ) ); ?>" title="About us">
+												Về chúng tôi
+											</a>
+										</li>
+										<li>
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/vasco-innovations/" ) ); ?>" title="What’s new">
+												Tin mới
+											</a>
+										</li>
+										<li>
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/vasco-ces-2026/" ) ); ?>" title="CES 2026">
+												CES 2026
+											</a>
+										</li>
+										<li>
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/media-about-us/" ) ); ?>"
+												title="Truyền thông nói về chúng tôi">
+												Truyền thông nói về chúng tôi
+											</a>
+										</li>
+										<li>
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/newsroom/" ) ); ?>" title="Newsroom">
+												Tin tức
+											</a>
+										</li>
+										<li>
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/privacy-policy/" ) ); ?>" rel="nofollow"
+												title="Privacy policy">
+												Chính sách bảo mật
+											</a>
+										</li>
+										<li>
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/terms-and-conditions/" ) ); ?>" rel="nofollow"
+												title="Terms of service">
+												Điều khoản dịch vụ
+											</a>
+										</li>
+										<li>
+											<a class="footer-info"
+												href="<?php echo esc_url( home_url( "/terms-and-conditions-of-the-promotion-cheaper-in-a-set/" ) ); ?>"
+												rel="nofollow"
+												title="Điều khoản khuyến mãi mua theo bộ">
+												Điều khoản khuyến mãi mua theo bộ
+											</a>
+										</li>
+										<li>
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/initiatives-polish-medical-mission-pmm/" ) ); ?>"
+												title="PMM Vasco Emergency Team">
+												Đội cấp cứu PMM Vasco
+											</a>
+										</li>
+										<li>
+											<a class="footer-info" href="<?php echo esc_url( home_url( "/sitemap/" ) ); ?>" rel="nofollow" title="Sitemap">
+												Sơ đồ trang web
+											</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
 						<hr />
 						<div class="footer-flex">
 							<div class="box-flex payments">
