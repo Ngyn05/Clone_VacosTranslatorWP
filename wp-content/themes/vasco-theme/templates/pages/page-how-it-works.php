@@ -161,7 +161,7 @@ get_header();
 </div>
 <div aria-describedby="icon4-desc" aria-labelledby="icon4-title" class="key" role="group" tabindex="0">
 <div>
-<img aria-hidden="true" height="100px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/howitworks/tutorials-key4.svg" ); ?>" width="100px"/>
+<img aria-hidden="true" height="100px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/key-features/key-section-1.svg" ); ?>" width="100px"/>
 </div>
 <div>
 <h3 class="h2" id="icon4-title">Thiết kế thân thiện</h3>

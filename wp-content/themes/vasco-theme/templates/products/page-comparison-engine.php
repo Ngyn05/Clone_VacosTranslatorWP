@@ -60,34 +60,36 @@ get_header();
 <p>Chọn các dòng máy để so sánh</p>
 </div>
 <div class="comparison-page-choose-to-compare">
-<label class="comparison-page-choose-to-compare-product" data-product="product-v4">
-<input aria-label="Vasco Translator V4" class="visually-hidden" id="vasco-v4" name="vasco-v4" type="checkbox"/>
-<div class="choose-image">
-<img alt="Vasco Translator V4" height="96" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/343-medium_default/vasco-translator-v4.jpg" ); ?>" title="Vasco Translator V4" width="96"/>
-</div>
-<p class="compare-product-header-name">Vasco Translator V4</p>
-</label>
-<label class="comparison-page-choose-to-compare-product" data-product="product-e1">
-<input aria-label="Vasco Translator E1" class="visually-hidden" id="vasco-e1" name="vasco-e1" type="checkbox"/>
-<div class="choose-image">
-<img alt="Vasco Translator E1" height="96" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/323-medium_default/vasco-translator-e1.jpg" ); ?>" title="Vasco Translator E1" width="96"/>
-</div>
-<p class="compare-product-header-name">Vasco Translator E1</p>
-</label>
-<label class="comparison-page-choose-to-compare-product" data-product="product-m4">
-<input aria-label="Vasco Translator M4" class="visually-hidden" id="vasco-m4" name="vasco-m4" type="checkbox"/>
-<div class="choose-image">
-<img alt="Vasco Translator M4" height="96" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/488-medium_default/vasco-translator-m4.jpg" ); ?>" title="Vasco Translator M4" width="96"/>
-</div>
-<p class="compare-product-header-name">Vasco Translator M4</p>
-</label>
-<label class="comparison-page-choose-to-compare-product" data-product="product-q1">
-<input aria-label="Vasco Translator Q1" class="visually-hidden" id="vasco-q1" name="vasco-q1" type="checkbox"/>
-<div class="choose-image">
-<img alt="Vasco Translator Q1" height="96" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/385-medium_default/vasco-translator-q1.jpg" ); ?>" title="Vasco Translator Q1" width="96"/>
-</div>
-<p class="compare-product-header-name">Vasco Translator Q1</p>
-</label>
+<?php
+$compare_slugs = array(
+	'product-v4' => 'vasco-translator-v4',
+	'product-e1' => 'vasco-translator-e1',
+	'product-m4' => 'vasco-translator-m4',
+	'product-q1' => 'vasco-translator-q1',
+);
+$compare_products = array();
+foreach ( $compare_slugs as $data_key => $slug ) {
+	$prod = vasco_theme_get_wc_product_by_slug( $slug );
+	$compare_products[ $data_key ] = array(
+		'slug'      => $slug,
+		'product'   => $prod,
+		'name'      => $prod ? $prod->get_name() : ucwords( str_replace( '-', ' ', $slug ) ),
+		'price_html'=> $prod ? $prod->get_price_html() : '',
+		'image_url' => $prod ? vasco_theme_get_wc_product_image_url( $prod, 'medium' ) : '',
+		'permalink' => $prod ? $prod->get_permalink() : home_url( '/translators/' . $slug . '/' ),
+	);
+}
+
+foreach ( $compare_products as $data_key => $item ) :
+	?>
+	<label class="comparison-page-choose-to-compare-product" data-product="<?php echo esc_attr( $data_key ); ?>">
+		<input aria-label="<?php echo esc_attr( $item['name'] ); ?>" class="visually-hidden" id="<?php echo esc_attr( str_replace( 'product-', 'vasco-', $data_key ) ); ?>" name="<?php echo esc_attr( str_replace( 'product-', 'vasco-', $data_key ) ); ?>" type="checkbox"/>
+		<div class="choose-image">
+			<img alt="<?php echo esc_attr( $item['name'] ); ?>" height="96" src="<?php echo esc_url( $item['image_url'] ); ?>" title="<?php echo esc_attr( $item['name'] ); ?>" width="96" style="object-fit:contain;"/>
+		</div>
+		<p class="compare-product-header-name"><?php echo esc_html( $item['name'] ); ?></p>
+	</label>
+<?php endforeach; ?>
 </div>
 </div>
 <div aria-hidden="true" class="fixed-header">
@@ -98,62 +100,23 @@ get_header();
 <table class="comparison-table">
 <thead>
 <tr>
-<th class="product-v4" scope="col">
+<?php foreach ( $compare_products as $data_key => $item ) : ?>
+<th class="<?php echo esc_attr( $data_key ); ?>" scope="col">
 <div class="compare-product-header-wrapper">
-<p class="compare-product-header-name">Vasco Translator V4</p>
-<img alt="Vasco Translator V4" class="product-img" height="180" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/343-medium_default/vasco-translator-v4.jpg" ); ?>" title="Vasco Translator V4" width="180"/>
+<p class="compare-product-header-name"><?php echo esc_html( $item['name'] ); ?></p>
+<img alt="<?php echo esc_attr( $item['name'] ); ?>" class="product-img" height="180" src="<?php echo esc_url( $item['image_url'] ); ?>" title="<?php echo esc_attr( $item['name'] ); ?>" width="180" style="object-fit:contain;"/>
 <div class="compare-product-header-prices">
 <p class="compare-product-header-price">
-										$449									</p>
+	<?php echo wp_kses_post( $item['price_html'] ); ?>
+</p>
 </div>
-<a class="compare-product-header-link compare-product-header-button" href="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>">
-									Xem chi tiết
-									<span class="text-sr-only">Vasco Translator V4</span>
+<a class="compare-product-header-link compare-product-header-button" href="<?php echo esc_url( $item['permalink'] ); ?>">
+	Xem chi tiết
+	<span class="text-sr-only"><?php echo esc_html( $item['name'] ); ?></span>
 </a>
 </div>
 </th>
-<th class="product-e1" scope="col">
-<div class="compare-product-header-wrapper">
-<p class="compare-product-header-name">Vasco Translator E1</p>
-<img alt="Vasco Translator E1" class="product-img" height="180" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/323-medium_default/vasco-translator-e1.jpg" ); ?>" title="Vasco Translator E1" width="180"/>
-<div class="compare-product-header-prices">
-<p class="compare-product-header-price">
-										$389									</p>
-</div>
-<a class="compare-product-header-link compare-product-header-button" href="<?php echo esc_url( home_url( "/translators/vasco-translator-e1/" ) ); ?>">
-									Xem chi tiết
-									<span class="text-sr-only">Vasco Translator E1</span>
-</a>
-</div>
-</th>
-<th class="product-m4" scope="col">
-<div class="compare-product-header-wrapper">
-<p class="compare-product-header-name">Vasco Translator M4</p>
-<img alt="Vasco Translator M4" class="product-img" height="180" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/488-medium_default/vasco-translator-m4.jpg" ); ?>" title="Vasco Translator M4" width="180"/>
-<div class="compare-product-header-prices">
-<p class="compare-product-header-price">
-										$429									</p>
-</div>
-<a class="compare-product-header-link compare-product-header-button" href="<?php echo esc_url( home_url( "/translators/vasco-translator-m4/" ) ); ?>">
-									Xem chi tiết
-									<span class="text-sr-only">Vasco Translator M4</span>
-</a>
-</div>
-</th>
-<th class="product-q1" scope="col">
-<div class="compare-product-header-wrapper">
-<p class="compare-product-header-name">Vasco Translator Q1</p>
-<img alt="Vasco Translator Q1" class="product-img" height="180" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/385-medium_default/vasco-translator-q1.jpg" ); ?>" title="Vasco Translator Q1" width="180"/>
-<div class="compare-product-header-prices">
-<p class="compare-product-header-price">
-										$549									</p>
-</div>
-<a class="compare-product-header-link compare-product-header-button" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>">
-									Xem chi tiết
-									<span class="text-sr-only">Vasco Translator Q1</span>
-</a>
-</div>
-</th>
+<?php endforeach; ?>
 </tr>
 </thead>
 <tbody>

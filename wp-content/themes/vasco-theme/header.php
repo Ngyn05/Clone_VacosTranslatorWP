@@ -65,6 +65,7 @@
 							<div class="megamenu-childs-wrapper" hidden="" id="submenu-shop" role="menu">
 								<div class="megamenu-container">
 									<div class="megamenu-grid-section">
+										<!-- Cột 1: Máy phiên dịch (Lấy 4 sản phẩm đại diện từ DB WooCommerce) -->
 										<div class="megamenu-column-wrapper">
 											<p class="megamenu-column-title">
 												Máy phiên dịch
@@ -73,42 +74,32 @@
 											</p>
 											<div class="megamenu-column-content">
 												<ul aria-labelledby="nav-title-shop" role="menu">
-													<li>
-														<a href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>"
-															role="menuitem">
-															<img alt="" aria-hidden="true" class="js-menu-lazy-image"
-																data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/385-thumb_60/vasco-translator-q1.jpg" ); ?>"
-																decoding="async" fetchpriority="low" loading="lazy" />
-															Vasco Translator Q1
-														</a>
-													</li>
-													<li>
-														<a href="<?php echo esc_url( home_url( "/translators/vasco-translator-m4/" ) ); ?>"
-															role="menuitem">
-															<img alt="" aria-hidden="true" class="js-menu-lazy-image"
-																data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/488-thumb_60/vasco-translator-m4.jpg" ); ?>"
-																decoding="async" fetchpriority="low" loading="lazy" />
-															Vasco Translator M4
-														</a>
-													</li>
-													<li>
-														<a href="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>"
-															role="menuitem">
-															<img alt="" aria-hidden="true" class="js-menu-lazy-image"
-																data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/343-thumb_60/vasco-translator-v4.jpg" ); ?>"
-																decoding="async" fetchpriority="low" loading="lazy" />
-															Vasco Translator V4
-														</a>
-													</li>
-													<li>
-														<a href="<?php echo esc_url( home_url( "/translators/vasco-translator-e1/" ) ); ?>"
-															role="menuitem">
-															<img alt="" aria-hidden="true" class="js-menu-lazy-image"
-																data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/323-thumb_60/vasco-translator-e1.jpg" ); ?>"
-																decoding="async" fetchpriority="low" loading="lazy" />
-															Vasco Translator E1
-														</a>
-													</li>
+													<?php
+													$translators = vasco_theme_get_wc_products_for_category( 'translators', 4 );
+													if ( ! empty( $translators ) ) :
+														foreach ( $translators as $prod ) :
+															$img_url = vasco_theme_get_wc_product_image_url( $prod, 'thumbnail' );
+															?>
+															<li>
+																<a href="<?php echo esc_url( $prod->get_permalink() ); ?>" role="menuitem" style="display:flex;align-items:center;gap:12px;padding:6px 0;">
+																	<?php if ( $img_url ) : ?>
+																		<img alt="<?php echo esc_attr( $prod->get_name() ); ?>" class="js-menu-lazy-image"
+																			src="<?php echo esc_url( $img_url ); ?>"
+																			data-src="<?php echo esc_url( $img_url ); ?>"
+																			decoding="async" fetchpriority="low" loading="lazy" style="width:48px;height:48px;object-fit:contain;flex-shrink:0;border-radius:6px;background:#f5f6f8;padding:2px;" />
+																	<?php endif; ?>
+																	<span><?php echo esc_html( $prod->get_name() ); ?></span>
+																</a>
+															</li>
+															<?php
+														endforeach;
+													else :
+														?>
+														<li><a href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>">Vasco Translator Q1</a></li>
+														<li><a href="<?php echo esc_url( home_url( "/translators/vasco-translator-m4/" ) ); ?>">Vasco Translator M4</a></li>
+														<li><a href="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>">Vasco Translator V4</a></li>
+														<li><a href="<?php echo esc_url( home_url( "/translators/vasco-translator-e1/" ) ); ?>">Vasco Translator E1</a></li>
+													<?php endif; ?>
 												</ul>
 												<a class="link-all" href="<?php echo esc_url( home_url( "/translators/" ) ); ?>"><svg fill="none"
 														height="19" viewbox="0 0 11 19" width="11"
@@ -119,30 +110,40 @@
 													</svg>Xem tất cả máy phiên dịch</a>
 											</div>
 										</div>
+
+										<!-- Cột 2: Gói combo (Lấy 3 sản phẩm đại diện từ DB WooCommerce) -->
 										<div class="megamenu-column-wrapper">
 											<p class="megamenu-column-title">
-												Gói combo
+												gói combo
 												<img alt="" aria-hidden="true" class="arrow-rotate-sub"
 													src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/menu/arrow-submenu.svg" ); ?>" />
 											</p>
 											<div class="megamenu-column-content">
 												<ul aria-labelledby="nav-title-shop" role="menu">
-													<li>
-														<a href="<?php echo esc_url( home_url( "/translators/q1-phantomblack-e1/" ) ); ?>" role="menuitem">
-															<img alt="" aria-hidden="true" class="js-menu-lazy-image"
-																data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/426-thumb_60/q1-phantomblack-e1.jpg" ); ?>"
-																decoding="async" fetchpriority="low" loading="lazy" />
-															Vasco Translator Q1 + E1
-														</a>
-													</li>
-													<li>
-														<a href="<?php echo esc_url( home_url( "/translators/v4-blackonyx-e1/" ) ); ?>" role="menuitem">
-															<img alt="" aria-hidden="true" class="js-menu-lazy-image"
-																data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/330-thumb_60/v4-blackonyx-e1.jpg" ); ?>"
-																decoding="async" fetchpriority="low" loading="lazy" />
-															Vasco Translator V4 + E1
-														</a>
-													</li>
+													<?php
+													$combos = vasco_theme_get_wc_products_for_category( 'bundles', 3 );
+													if ( ! empty( $combos ) ) :
+														foreach ( $combos as $prod ) :
+															$img_url = vasco_theme_get_wc_product_image_url( $prod, 'thumbnail' );
+															?>
+															<li>
+																<a href="<?php echo esc_url( $prod->get_permalink() ); ?>" role="menuitem" style="display:flex;align-items:center;gap:12px;padding:6px 0;">
+																	<?php if ( $img_url ) : ?>
+																		<img alt="<?php echo esc_attr( $prod->get_name() ); ?>" class="js-menu-lazy-image"
+																			src="<?php echo esc_url( $img_url ); ?>"
+																			data-src="<?php echo esc_url( $img_url ); ?>"
+																			decoding="async" fetchpriority="low" loading="lazy" style="width:48px;height:48px;object-fit:contain;flex-shrink:0;border-radius:6px;background:#f5f6f8;padding:2px;" />
+																	<?php endif; ?>
+																	<span><?php echo esc_html( $prod->get_name() ); ?></span>
+																</a>
+															</li>
+															<?php
+														endforeach;
+													else :
+														?>
+														<li><a href="<?php echo esc_url( home_url( "/translators/q1-phantomblack-e1/" ) ); ?>">Vasco Translator Q1 + E1</a></li>
+														<li><a href="<?php echo esc_url( home_url( "/translators/v4-blackonyx-e1/" ) ); ?>">Vasco Translator V4 + E1</a></li>
+													<?php endif; ?>
 												</ul>
 												<a class="link-all" href="<?php echo esc_url( home_url( "/bundles/" ) ); ?>"><svg fill="none"
 														height="19" viewbox="0 0 11 19" width="11"
@@ -153,36 +154,42 @@
 													</svg>Xem gói combo</a>
 											</div>
 										</div>
+
+										<!-- Cột 3: Phụ kiện (Lấy 4 sản phẩm đại diện từ DB WooCommerce) -->
 										<div class="megamenu-column-wrapper">
 											<p class="megamenu-column-title">
-												Phụ kiện
+												phụ kiện
 												<img alt="" aria-hidden="true" class="arrow-rotate-sub"
 													src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/menu/arrow-submenu.svg" ); ?>" />
 											</p>
 											<div class="megamenu-column-content">
 												<ul aria-labelledby="nav-title-shop" role="menu">
-													<li>
-														<a href="<?php echo esc_url( home_url( "/accessories/tempered-glass-q1/" ) ); ?>" role="menuitem">
-															Kính cường lực bảo vệ màn hình Vasco Translator Q1
-														</a>
-													</li>
-													<li>
-														<a href="<?php echo esc_url( home_url( "/accessories/tempered-glass-m4/" ) ); ?>" role="menuitem">
-															Kính cường lực bảo vệ màn hình Vasco Translator M4
-														</a>
-													</li>
-													<li>
-														<a href="<?php echo esc_url( home_url( "/accessories/case-for-vasco-translator-q1/" ) ); ?>"
-															role="menuitem">
-															Bao da khoá kéo cho Vasco Translator Q1
-														</a>
-													</li>
-													<li>
-														<a href="<?php echo esc_url( home_url( "/accessories/case-for-vasco-translator-m4/" ) ); ?>"
-															role="menuitem">
-															Bao da khoá kéo cho Vasco Translator M4
-														</a>
-													</li>
+													<?php
+													$accessories = vasco_theme_get_wc_products_for_category( 'accessories', 4 );
+													if ( ! empty( $accessories ) ) :
+														foreach ( $accessories as $prod ) :
+															$img_url = vasco_theme_get_wc_product_image_url( $prod, 'thumbnail' );
+															?>
+															<li>
+																<a href="<?php echo esc_url( $prod->get_permalink() ); ?>" role="menuitem" style="display:flex;align-items:center;gap:12px;padding:6px 0;">
+																	<?php if ( $img_url ) : ?>
+																		<img alt="<?php echo esc_attr( $prod->get_name() ); ?>" class="js-menu-lazy-image"
+																			src="<?php echo esc_url( $img_url ); ?>"
+																			data-src="<?php echo esc_url( $img_url ); ?>"
+																			decoding="async" fetchpriority="low" loading="lazy" style="width:48px;height:48px;object-fit:contain;flex-shrink:0;border-radius:6px;background:#f5f6f8;padding:2px;" />
+																	<?php endif; ?>
+																	<span><?php echo esc_html( $prod->get_name() ); ?></span>
+																</a>
+															</li>
+															<?php
+														endforeach;
+													else :
+														?>
+														<li><a href="<?php echo esc_url( home_url( "/accessories/tempered-glass-q1/" ) ); ?>">Kính cường lực bảo vệ màn hình Vasco Translator Q1</a></li>
+														<li><a href="<?php echo esc_url( home_url( "/accessories/tempered-glass-m4/" ) ); ?>">Kính cường lực bảo vệ màn hình Vasco Translator M4</a></li>
+														<li><a href="<?php echo esc_url( home_url( "/accessories/case-for-vasco-translator-q1/" ) ); ?>">Bao da khoá kéo cho Vasco Translator Q1</a></li>
+														<li><a href="<?php echo esc_url( home_url( "/accessories/case-for-vasco-translator-m4/" ) ); ?>">Bao da khoá kéo cho Vasco Translator M4</a></li>
+													<?php endif; ?>
 												</ul>
 												<a class="link-all" href="<?php echo esc_url( home_url( "/accessories/" ) ); ?>"><svg fill="none"
 														height="19" viewbox="0 0 11 19" width="11"

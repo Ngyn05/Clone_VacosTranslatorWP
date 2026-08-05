@@ -340,13 +340,13 @@ get_header();
 											</div>
 											<div class="product-flags" data-slide="2">
 												<div class="product-flag-wrapper promotion-theme-orange">
-													<div aria-label="New" class="body-base product-flag">New</div>
+													<div aria-label="Mới" class="body-base product-flag">Mới</div>
 												</div>
 											</div>
 											<div class="product-flags" data-slide="3">
 												<div class="product-flag-wrapper promotion-theme-blue">
-													<div aria-label="Bestseller" class="body-base product-flag">
-														Bestseller</div>
+													<div aria-label="Bán chạy nhất" class="body-base product-flag">
+														Bán chạy nhất</div>
 												</div>
 											</div>
 											<h3 class="product-name">Vasco Translator Q1</h3>

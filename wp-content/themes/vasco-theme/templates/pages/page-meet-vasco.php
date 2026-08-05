@@ -33,31 +33,17 @@ get_header();
 <h1 class="h1" style="text-align:center;">Gặp Gỡ Vasco</h1>
 </div>
 </div>
-<section class="doubleboxes">
-<div class="doublebox left" id="box-color-random" style="background-color: #E0E2F2; color: #E0E2F2;">
-<div class="container">
-<div class="doublebox-content">
-<h2 class="h1">Giao Tiếp Không Rào Cản Với Hơn 110 Ngôn Ngữ</h2>
-<p>Vasco Translator là thiết bị phiên dịch trực tiếp số 1 thế giới. Sản phẩm kết hợp công nghệ tiên tiến với 18 năm kinh nghiệm, mang lại cho bạn sự tự tin để giao tiếp tự do khắp thế giới. Nhỏ gọn để mang theo mọi nơi, thông minh để hiểu hầu hết mọi ngôn ngữ – đây chính là chìa khóa cho giao tiếp liền mạch của bạn.</p>
-<div class="box-btn-wrapper">
-<button class="btn btn-md btn-black-filled scrollToMoreInfo">
+<section class="doubleboxes" style="display:flex;justify-content:center;align-items:center;background-color:#E0E2F2;padding:50px 20px;width:100%;">
+<div class="doublebox left" style="background-color:#E0E2F2;color:#2D3139;width:100% !important;max-width:1050px !important;margin:0 auto !important;padding:0 !important;float:none !important;text-align:center !important;">
+<div class="container" style="max-width:1050px !important;width:100% !important;margin:0 auto !important;text-align:center !important;float:none !important;">
+<div class="doublebox-content" style="text-align:center !important;width:100% !important;max-width:1050px !important;margin:0 auto !important;padding:0 !important;float:none !important;">
+<h2 class="h1" style="text-align:center !important;margin:0 auto 16px !important;font-size:2.2rem;line-height:1.3;display:block !important;width:100% !important;color:#2D3139 !important;">Giao Tiếp Không Rào Cản Với Hơn 110 Ngôn Ngữ</h2>
+<p style="text-align:center !important;font-size:1.05rem;line-height:1.6;margin:0 auto 24px !important;max-width:1000px !important;display:block !important;color:#4A5568 !important;">Vasco Translator là thiết bị phiên dịch trực tiếp số 1 thế giới. Sản phẩm kết hợp công nghệ tiên tiến với 18 năm kinh nghiệm, mang lại cho bạn sự tự tin để giao tiếp tự do khắp thế giới. Nhỏ gọn để mang theo mọi nơi, thông minh để hiểu hầu hết mọi ngôn ngữ – đây chính là chìa khóa cho giao tiếp liền mạch của bạn.</p>
+<div class="box-btn-wrapper" style="display:flex !important;justify-content:center !important;margin:0 auto !important;width:100% !important;">
+<button class="btn btn-md btn-black-filled scrollToMoreInfo" style="margin:0 auto !important;">
 						Tìm hiểu thêm
 					</button>
 </div>
-<svg class="svg-pseudo" color="" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">
-<path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
-</svg>
-</div>
-</div>
-<div class="doublebox-absolute">
-<div class="video-holder" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.webp" ); ?>'); background-size: cover; background-position: center; min-height: 100%;">
-<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.webp" ); ?>" alt="Vasco Translator" style="width:100%;height:100%;object-fit:cover;display:block;"/>
-<video aria-describedby="video-desc1" autoplay="" data-setup="{}" id="meet-vasco-hero-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.webp" ); ?>" preload="auto" style="display:none;">
-<source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.webm" ); ?>" type="video/webm"/>
-<source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.mp4" ); ?>" type="video/mp4"/>
-<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.webp" ); ?>" alt="Vasco Translator" style="width:100%;height:100%;object-fit:cover;"/>
-</video>
-<p class="sr-only" id="video-desc1">Video mo dau voi canh mot nguoi dan ong xin di nho xe va su dung Vasco Translator de giao tiep voi tai xe.</p>
 </div>
 </div>
 </div>
@@ -65,23 +51,23 @@ get_header();
 <section class="doublebox-features" id="more-info" style="max-width:1200px;margin:0 auto;padding:60px 20px;">
 <div class="container" style="max-width:1200px;margin:0 auto;">
 <h2 class="h2-notosans" id="benefits-title" style="text-align:center;margin-bottom:40px;">ĐIỀU GÌ KHIẾN VASCO TRANSLATOR KHÁC BIỆT SO VỚI CÁC MÁY PHIÊN DỊCH VÀ ỨNG DỤNG KHÁC</h2>
-<div aria-labelledby="benefits-title" class="box-grid" role="group">
-<div class="box-left-wrapper">
-<img alt="Hình ảnh nhìn nghiêng các thiết bị Vasco: Vasco Translator V4, Q1, M4 và E1 được trưng bày cạnh nhau." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/translators.webp" ); ?>"/>
+<div aria-labelledby="benefits-title" class="box-grid" role="group" style="display:flex;align-items:center;gap:40px;flex-wrap:wrap;">
+<div class="box-left-wrapper" style="flex:1;min-width:300px;display:flex;justify-content:center;align-items:center;">
+<img alt="Máy phiên dịch Vasco Translator" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/v4.webp" ); ?>" style="max-width:100%;height:auto;max-height:480px;object-fit:contain;margin:0 auto;display:block;"/>
 </div>
 <div class="box-right-wrapper">
 <div aria-describedby="benefit-desc-1" aria-expanded="false" aria-labelledby="benefit-title-1" class="box" tabindex="0">
 <div class="icon-wrapper">
-<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/howitworks/internet.svg" ); ?>"/>
+<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/internet.svg" ); ?>"/>
 </div>
 <div class="description">
-<h3 id="benefit-title-1">Internet miễn phí Forever</h3>
+<h3 id="benefit-title-1">Internet miễn phí trọn đời</h3>
 <p id="benefit-desc-1">Không còn phải lo lắng về cước roaming hay tìm kiếm WiFi. Khác với các ứng dụng, Vasco hoạt động tại gần 200 quốc gia với internet miễn phí, trọn đời được tích hợp sẵn cho việc phiên dịch—hoàn toàn không phí hàng tháng!</p>
 </div>
 </div>
 <div aria-describedby="benefit-desc-2" aria-expanded="false" aria-labelledby="benefit-title-2" class="box" tabindex="0">
 <div class="icon-wrapper">
-<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/translation.svg" ); ?>"/>
+<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/translation.svg" ); ?>"/>
 </div>
 <div class="description">
 <h3 id="benefit-title-2">Hơn 10 Công Cụ Dịch Thuật</h3>
@@ -90,7 +76,7 @@ get_header();
 </div>
 <div aria-describedby="benefit-desc-3" aria-expanded="false" aria-labelledby="benefit-title-3" class="box" tabindex="0">
 <div class="icon-wrapper">
-<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/multilanguagesupport.svg" ); ?>"/>
+<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features-new/multilanguagesupport.svg" ); ?>"/>
 </div>
 <div class="description">
 <h3 id="benefit-title-3">Độ chính xác dịch thuật 99%</h3>
@@ -99,18 +85,16 @@ get_header();
 </div>
 <div aria-describedby="benefit-desc-4" aria-expanded="false" aria-labelledby="benefit-title-4" class="box" tabindex="0">
 <div class="icon-wrapper">
-<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/clonedvoice.svg" ); ?>"/>
+<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features-new/voice_select.svg" ); ?>"/>
 </div>
 <div class="description">
 <h3 id="benefit-title-4">Nhân Bản Giọng Nói</h3>
-<p id="benefit-desc-4">Tính năng nhân bản giọng nói mang tính cách mạng này ghi lại đặc điểm giọng nói riêng của bạn bằng nhiều ngôn ngữ. Giờ đây, bạn có thể thực sự là chính mình trong mọi cuộc trò chuyện.
-gặp gỡ vasco
-</p>
+<p id="benefit-desc-4">Tính năng nhân bản giọng nói mang tính cách mạng này ghi lại đặc điểm giọng nói riêng của bạn bằng nhiều ngôn ngữ. Giờ đây, bạn có thể thực sự là chính mình trong mọi cuộc trò chuyện.</p>
 </div>
 </div>
 <div aria-describedby="benefit-desc-5" aria-expanded="false" aria-labelledby="benefit-title-5" class="box" tabindex="0">
 <div class="icon-wrapper">
-<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/vascoassistance.svg" ); ?>"/>
+<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/service.svg" ); ?>"/>
 </div>
 <div class="description">
 <h3 id="benefit-title-5">Trợ lý AI</h3>
@@ -119,7 +103,7 @@ gặp gỡ vasco
 </div>
 <div aria-describedby="benefit-desc-6" aria-expanded="false" aria-labelledby="benefit-title-6" class="box" tabindex="0">
 <div class="icon-wrapper">
-<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/touchlesstranslation.svg" ); ?>"/>
+<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features-new/automatic_mode.svg" ); ?>"/>
 </div>
 <div class="description">
 <h3 id="benefit-title-6">Chế độ Tự động</h3>
@@ -128,7 +112,7 @@ gặp gỡ vasco
 </div>
 <div aria-describedby="benefit-desc-7" aria-expanded="false" aria-labelledby="benefit-title-7" class="box" tabindex="0">
 <div class="icon-wrapper">
-<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/translacall.svg" ); ?>"/>
+<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/globe.svg" ); ?>"/>
 </div>
 <div class="description">
 <h3 id="benefit-title-7">Dịch cuộc gọi</h3>
@@ -137,7 +121,7 @@ gặp gỡ vasco
 </div>
 <div aria-describedby="benefit-desc-8" aria-expanded="false" aria-labelledby="benefit-title-8" class="box" tabindex="0">
 <div class="icon-wrapper">
-<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/mic.svg" ); ?>"/>
+<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/mic.svg" ); ?>"/>
 </div>
 <div class="description">
 <h3 id="benefit-title-8">Micro chuyên dụng</h3>
@@ -146,7 +130,7 @@ gặp gỡ vasco
 </div>
 <div aria-describedby="benefit-desc-9" aria-expanded="false" aria-labelledby="benefit-title-9" class="box" tabindex="0">
 <div class="icon-wrapper">
-<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/loudspeakers.svg" ); ?>"/>
+<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features-new/loudspeakers.svg" ); ?>"/>
 </div>
 <div class="description">
 <h3 id="benefit-title-9">Loa công suất lớn</h3>
@@ -207,39 +191,39 @@ gặp gỡ vasco
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-business_insider" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-business_insider">Trích dẫn từ business_insider</h3>
+<h3 class="sr-only" id="slide-label-business_insider">Trích dẫn từ Business Insider</h3>
 <img alt="business insider icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/business_insider.webp" ); ?>"/>
-<blockquote class="awards-text" tabindex="0">Now HIPAA-compliant, Vasco’s handheld translation devices can provide up to 108 language translations that are secure, making them safe to use in any Y tế facility by any Y tế professional to break down language barriers between patients and medical personnel.</blockquote>
+<blockquote class="awards-text" tabindex="0">Đạt chuẩn bảo mật HIPAA quốc tế, các thiết bị dịch thuật cầm tay Vasco cung cấp bản dịch an toàn lên tới 108 ngôn ngữ, đảm bảo an toàn tuyệt đối khi sử dụng tại các cơ sở y tế bởi các chuyên gia y tế.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-vancouver_sun" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-vancouver_sun">Trích dẫn từ vancouver_sun</h3>
+<h3 class="sr-only" id="slide-label-vancouver_sun">Trích dẫn từ Vancouver Sun</h3>
 <img alt="vancouver sun icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/vancouver_sun.webp" ); ?>"/>
-<blockquote class="awards-text" tabindex="0">Vasco’s innovative technology allows users to communicate with one another through its translators, connecting 90% of the world’s population through the power of language.</blockquote>
+<blockquote class="awards-text" tabindex="0">Công nghệ đột phá của Vasco giúp người dùng giao tiếp mượt mà với nhau, kết nối hơn 90% dân số thế giới nhờ sức mạnh ngôn ngữ.</blockquote>
 </a>
 </div>
 <div class="swiper-slide" role="listitem">
 <a aria-labelledby="slide-label-techradar" href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-techradar">Trích dẫn từ techradar</h3>
+<h3 class="sr-only" id="slide-label-techradar">Trích dẫn từ TechRadar</h3>
 <img alt="tech radar icon" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Media/techradar.webp" ); ?>"/>
-<blockquote class="awards-text" tabindex="0">The Vasco Translator V4 offers reliable voice translation, speedy photo translation, and free lifetime global coverage in a pocket-sized package that’s perfect for your next holiday or business trip.</blockquote>
+<blockquote class="awards-text" tabindex="0">Vasco Translator V4 mang lại khả năng dịch giọng nói đáng tin cậy, dịch hình ảnh siêu tốc và phủ sóng Internet toàn cầu miễn phí trọn đời trong một thiết bị bỏ túi nhỏ gọn.</blockquote>
 </a>
 </div>
 </div>
-<div class="swiper-button-prev btn-carousel-prev" data-label-prev="Previous slide"></div>
-<div class="swiper-button-next btn-carousel-next" data-label-next="Next slide"></div>
+<div class="swiper-button-prev btn-carousel-prev" data-label-prev="Trượt sang trái"></div>
+<div class="swiper-button-next btn-carousel-next" data-label-next="Trượt sang phải"></div>
 </div>
 <div class="stop-autoplay-carousel">
-<button class="btn btn-md btn-stop-autoplay" data-text-button-pause="stop carousel autoplay" data-text-button-resume="resume carousel autoplay">
-<span data-text-pause="Pause" data-text-resume="Resume">Pause</span>
+<button class="btn btn-md btn-stop-autoplay" data-text-button-pause="Tạm dừng carousel" data-text-button-resume="Tiếp tục carousel">
+<span data-text-pause="Tạm dừng" data-text-resume="Tiếp tục">Tạm dừng</span>
 <img alt="" aria-hidden="true" height="24" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/pause.svg" ); ?>" width="24"/>
 </button>
 </div>
 <div id="after-media-carousel"></div>
 </div>
 </section>
-<section class="translators-carousel max-width-container">
+<section class="translators-carousel max-width-container" style="display:none !important;">
 <div class="absolute-box">
 <h2>Máy phiên dịch của chúng tôi</h2>
 <div class="button-navigation">
@@ -286,35 +270,35 @@ gặp gỡ vasco
 <div class="visible" data-slide="0">
 <div class="feature" data-event="Vasco Assistant" data-product-name="Q1">
 <h4>Công nghệ nhân bản giọng nói</h4>
-<p>Vasco My Voice Technology creates the digital version of your voice and lets you sound like yourself in 54 languages.</p>
+<p>Công nghệ Vasco My Voice tạo phiên bản kỹ thuật số giọng nói của bạn, giúp bạn phát âm tự nhiên bằng 54 ngôn ngữ.</p>
 <svg fill="none" height="24" viewbox="0 0 13 24" width="13" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.52793 3.28393L10.9616 8.84745C11.4194 9.11727 11.8085 9.55796 12.0816 10.1161C12.3546 10.6742 12.5 11.3258 12.5 11.9916C12.5 12.6575 12.3546 13.3091 12.0816 13.8672C11.8085 14.4253 11.4194 14.866 10.9616 15.1358L1.54058 20.674C1.08138 20.9417 0.690979 21.3818 0.417299 21.9404C0.146288 22.4935 0.0014242 23.1389 1.04472e-05 23.7987L1.04481e-05 23.8182C-3.48573e-06 23.8117 -3.4805e-06 23.8052 1.04472e-05 23.7987L9.41488e-06 0.181873C0.00594895 0.838757 0.152921 1.47971 0.423605 2.02928C0.694289 2.57884 1.07744 3.01414 1.52793 3.28393Z" fill="#E0E2F2"></path>
 </svg>
 </div>
 <div class="feature" data-event="Vasco my voice" data-product-name="Q1">
 <h4>Dịch cuộc gọi điện thoại</h4>
-<p>Translates phone calls in real time, giving you a sense of security in any situation.</p>
+<p>Dịch cuộc gọi thoại theo thời gian thực, mang lại sự an tâm tuyệt đối trong mọi tình huống giao tiếp.</p>
 <svg fill="none" height="24" viewbox="0 0 13 24" width="13" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.52793 3.28393L10.9616 8.84745C11.4194 9.11727 11.8085 9.55796 12.0816 10.1161C12.3546 10.6742 12.5 11.3258 12.5 11.9916C12.5 12.6575 12.3546 13.3091 12.0816 13.8672C11.8085 14.4253 11.4194 14.866 10.9616 15.1358L1.54058 20.674C1.08138 20.9417 0.690979 21.3818 0.417299 21.9404C0.146288 22.4935 0.0014242 23.1389 1.04472e-05 23.7987L1.04481e-05 23.8182C-3.48573e-06 23.8117 -3.4805e-06 23.8052 1.04472e-05 23.7987L9.41488e-06 0.181873C0.00594895 0.838757 0.152921 1.47971 0.423605 2.02928C0.694289 2.57884 1.07744 3.01414 1.52793 3.28393Z" fill="#E0E2F2"></path>
 </svg>
 </div>
 <div class="feature" data-event="Dịch cuộc gọi" data-product-name="Q1">
 <h4>Chế độ tự động</h4>
-<p>Detects language and enables effortless communication, so you can focus on connection, not the buttons.</p>
+<p>Tự động nhận diện ngôn ngữ và hỗ trợ giao tiếp rảnh tay, giúp bạn tập trung vào cuộc trò chuyện thay vì thao tác nút bấm.</p>
 <svg fill="none" height="24" viewbox="0 0 13 24" width="13" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.52793 3.28393L10.9616 8.84745C11.4194 9.11727 11.8085 9.55796 12.0816 10.1161C12.3546 10.6742 12.5 11.3258 12.5 11.9916C12.5 12.6575 12.3546 13.3091 12.0816 13.8672C11.8085 14.4253 11.4194 14.866 10.9616 15.1358L1.54058 20.674C1.08138 20.9417 0.690979 21.3818 0.417299 21.9404C0.146288 22.4935 0.0014242 23.1389 1.04472e-05 23.7987L1.04481e-05 23.8182C-3.48573e-06 23.8117 -3.4805e-06 23.8052 1.04472e-05 23.7987L9.41488e-06 0.181873C0.00594895 0.838757 0.152921 1.47971 0.423605 2.02928C0.694289 2.57884 1.07744 3.01414 1.52793 3.28393Z" fill="#E0E2F2"></path>
 </svg>
 </div>
 <div class="feature" data-event="Chế độ tự động" data-product-name="Q1">
-<h4>Lifetime Internet miễn phí</h4>
-<p>Unlimited data for translations in nearly 200 countires—with no monthly fees.</p>
+<h4>Internet miễn phí trọn đời</h4>
+<p>Dữ liệu không giới hạn cho dịch thuật tại gần 200 quốc gia — không phí hàng tháng.</p>
 <svg fill="none" height="24" viewbox="0 0 13 24" width="13" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.52793 3.28393L10.9616 8.84745C11.4194 9.11727 11.8085 9.55796 12.0816 10.1161C12.3546 10.6742 12.5 11.3258 12.5 11.9916C12.5 12.6575 12.3546 13.3091 12.0816 13.8672C11.8085 14.4253 11.4194 14.866 10.9616 15.1358L1.54058 20.674C1.08138 20.9417 0.690979 21.3818 0.417299 21.9404C0.146288 22.4935 0.0014242 23.1389 1.04472e-05 23.7987L1.04481e-05 23.8182C-3.48573e-06 23.8117 -3.4805e-06 23.8052 1.04472e-05 23.7987L9.41488e-06 0.181873C0.00594895 0.838757 0.152921 1.47971 0.423605 2.02928C0.694289 2.57884 1.07744 3.01414 1.52793 3.28393Z" fill="#E0E2F2"></path>
 </svg>
 </div>
 <div class="feature" data-event="Lifetime Internet miễn phí" data-product-name="Q1" style="order: -1;">
-<h4>Vasco Assistant</h4>
-<p>An advanced photo translation feature powered by context-aware intelligence. Vasco Assistant explains symbols, local cuisine, customs, and even country-specific regulations—significantly enhancing travel comfort.</p>
+<h4>Trợ lý Vasco AI</h4>
+<p>Tính năng dịch ảnh nâng cao tích hợp AI nhận diện ngữ cảnh. Trợ lý Vasco giải thích biểu tượng, ẩm thực địa phương, phong tục và quy định bản địa.</p>
 <svg fill="none" height="24" viewbox="0 0 13 24" width="13" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.52793 3.28393L10.9616 8.84745C11.4194 9.11727 11.8085 9.55796 12.0816 10.1161C12.3546 10.6742 12.5 11.3258 12.5 11.9916C12.5 12.6575 12.3546 13.3091 12.0816 13.8672C11.8085 14.4253 11.4194 14.866 10.9616 15.1358L1.54058 20.674C1.08138 20.9417 0.690979 21.3818 0.417299 21.9404C0.146288 22.4935 0.0014242 23.1389 1.04472e-05 23.7987L1.04481e-05 23.8182C-3.48573e-06 23.8117 -3.4805e-06 23.8052 1.04472e-05 23.7987L9.41488e-06 0.181873C0.00594895 0.838757 0.152921 1.47971 0.423605 2.02928C0.694289 2.57884 1.07744 3.01414 1.52793 3.28393Z" fill="#E0E2F2"></path>
 </svg>
@@ -322,30 +306,30 @@ gặp gỡ vasco
 </div>
 <div data-slide="1">
 <div class="feature" data-event="Hands-free mode" data-product-name="E1">
-<h4>Touchless mode</h4>
-<p>The translating device automatically detects language and translates your conversation without the need to use buttons.</p>
+<h4>Chế độ Rảnh Tay</h4>
+<p>Thiết bị tự động nhận diện ngôn ngữ và dịch cuộc trò chuyện mà bạn không cần phải bấm nút.</p>
 <svg fill="none" height="24" viewbox="0 0 13 24" width="13" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.52793 3.28393L10.9616 8.84745C11.4194 9.11727 11.8085 9.55796 12.0816 10.1161C12.3546 10.6742 12.5 11.3258 12.5 11.9916C12.5 12.6575 12.3546 13.3091 12.0816 13.8672C11.8085 14.4253 11.4194 14.866 10.9616 15.1358L1.54058 20.674C1.08138 20.9417 0.690979 21.3818 0.417299 21.9404C0.146288 22.4935 0.0014242 23.1389 1.04472e-05 23.7987L1.04481e-05 23.8182C-3.48573e-06 23.8117 -3.4805e-06 23.8052 1.04472e-05 23.7987L9.41488e-06 0.181873C0.00594895 0.838757 0.152921 1.47971 0.423605 2.02928C0.694289 2.57884 1.07744 3.01414 1.52793 3.28393Z" fill="#E0E2F2"></path>
 </svg>
 </div>
 <div class="feature" data-event="MultiTalk" data-product-name="E1">
-<h4>Group conversations</h4>
-<p>Talk with up to 10 people in 51 languages.</p>
+<h4>Trò chuyện nhóm</h4>
+<p>Trò chuyện nhóm tối đa 10 người bằng 51 ngôn ngữ khác nhau.</p>
 <svg fill="none" height="24" viewbox="0 0 13 24" width="13" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.52793 3.28393L10.9616 8.84745C11.4194 9.11727 11.8085 9.55796 12.0816 10.1161C12.3546 10.6742 12.5 11.3258 12.5 11.9916C12.5 12.6575 12.3546 13.3091 12.0816 13.8672C11.8085 14.4253 11.4194 14.866 10.9616 15.1358L1.54058 20.674C1.08138 20.9417 0.690979 21.3818 0.417299 21.9404C0.146288 22.4935 0.0014242 23.1389 1.04472e-05 23.7987L1.04481e-05 23.8182C-3.48573e-06 23.8117 -3.4805e-06 23.8052 1.04472e-05 23.7987L9.41488e-06 0.181873C0.00594895 0.838757 0.152921 1.47971 0.423605 2.02928C0.694289 2.57884 1.07744 3.01414 1.52793 3.28393Z" fill="#E0E2F2"></path>
 </svg>
 </div>
 <div class="feature" data-event="Hygienic design" data-product-name="E1">
-<h4>Hygienic design</h4>
-<p>Translator earbuds are designed to be safely shared with other users.</p>
+<h4>Thiết kế vệ sinh an toàn</h4>
+<p>Tai nghe phiên dịch được thiết kế để chia sẻ an toàn và vệ sinh giữa các người dùng.</p>
 <svg fill="none" height="24" viewbox="0 0 13 24" width="13" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.52793 3.28393L10.9616 8.84745C11.4194 9.11727 11.8085 9.55796 12.0816 10.1161C12.3546 10.6742 12.5 11.3258 12.5 11.9916C12.5 12.6575 12.3546 13.3091 12.0816 13.8672C11.8085 14.4253 11.4194 14.866 10.9616 15.1358L1.54058 20.674C1.08138 20.9417 0.690979 21.3818 0.417299 21.9404C0.146288 22.4935 0.0014242 23.1389 1.04472e-05 23.7987L1.04481e-05 23.8182C-3.48573e-06 23.8117 -3.4805e-06 23.8052 1.04472e-05 23.7987L9.41488e-06 0.181873C0.00594895 0.838757 0.152921 1.47971 0.423605 2.02928C0.694289 2.57884 1.07744 3.01414 1.52793 3.28393Z" fill="#E0E2F2"></path>
 </svg>
 </div>
 <div class="feature" data-event="Connects
 with other Vasco devices" data-product-name="E1">
-<h4>Connects with other Vasco devices</h4>
-<p>Earbuds are compatible with Vasco Translator V4 and Vasco Translator Q1, giving you additional capabilities.</p>
+<h4>Kết nối với máy Vasco khác</h4>
+<p>Tai nghe tương thích hoàn hảo với Vasco Translator V4 và Vasco Q1.</p>
 <svg fill="none" height="24" viewbox="0 0 13 24" width="13" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.52793 3.28393L10.9616 8.84745C11.4194 9.11727 11.8085 9.55796 12.0816 10.1161C12.3546 10.6742 12.5 11.3258 12.5 11.9916C12.5 12.6575 12.3546 13.3091 12.0816 13.8672C11.8085 14.4253 11.4194 14.866 10.9616 15.1358L1.54058 20.674C1.08138 20.9417 0.690979 21.3818 0.417299 21.9404C0.146288 22.4935 0.0014242 23.1389 1.04472e-05 23.7987L1.04481e-05 23.8182C-3.48573e-06 23.8117 -3.4805e-06 23.8052 1.04472e-05 23.7987L9.41488e-06 0.181873C0.00594895 0.838757 0.152921 1.47971 0.423605 2.02928C0.694289 2.57884 1.07744 3.01414 1.52793 3.28393Z" fill="#E0E2F2"></path>
 </svg>
@@ -353,29 +337,29 @@ with other Vasco devices" data-product-name="E1">
 </div>
 <div data-slide="2">
 <div class="feature" data-event="Voice, photo, and Dịch văn bản" data-product-name="M4">
-<h4>Voice, photo, and Dịch văn bản</h4>
-<p>Bộ tính năng giúp việc giao tiếp khi du lịch trở nên dễ dàng.</p>
+<h4>Dịch giọng nói, ảnh và văn bản</h4>
+<p>Bộ tính năng đầy đủ giúp việc giao tiếp khi du lịch trở nên cực kỳ dễ dàng.</p>
 <svg fill="none" height="24" viewbox="0 0 13 24" width="13" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.52793 3.28393L10.9616 8.84745C11.4194 9.11727 11.8085 9.55796 12.0816 10.1161C12.3546 10.6742 12.5 11.3258 12.5 11.9916C12.5 12.6575 12.3546 13.3091 12.0816 13.8672C11.8085 14.4253 11.4194 14.866 10.9616 15.1358L1.54058 20.674C1.08138 20.9417 0.690979 21.3818 0.417299 21.9404C0.146288 22.4935 0.0014242 23.1389 1.04472e-05 23.7987L1.04481e-05 23.8182C-3.48573e-06 23.8117 -3.4805e-06 23.8052 1.04472e-05 23.7987L9.41488e-06 0.181873C0.00594895 0.838757 0.152921 1.47971 0.423605 2.02928C0.694289 2.57884 1.07744 3.01414 1.52793 3.28393Z" fill="#E0E2F2"></path>
 </svg>
 </div>
 <div class="feature" data-event="Physical buttons or touchscreen" data-product-name="M4">
-<h4>Physical buttons or touchscreen</h4>
-<p>You choose the way that’s most convenient for you.</p>
+<h4>Nút bấm vật lý hoặc màn hình cảm ứng</h4>
+<p>Lựa chọn phương thức điều khiển tiện lợi nhất cho bạn.</p>
 <svg fill="none" height="24" viewbox="0 0 13 24" width="13" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.52793 3.28393L10.9616 8.84745C11.4194 9.11727 11.8085 9.55796 12.0816 10.1161C12.3546 10.6742 12.5 11.3258 12.5 11.9916C12.5 12.6575 12.3546 13.3091 12.0816 13.8672C11.8085 14.4253 11.4194 14.866 10.9616 15.1358L1.54058 20.674C1.08138 20.9417 0.690979 21.3818 0.417299 21.9404C0.146288 22.4935 0.0014242 23.1389 1.04472e-05 23.7987L1.04481e-05 23.8182C-3.48573e-06 23.8117 -3.4805e-06 23.8052 1.04472e-05 23.7987L9.41488e-06 0.181873C0.00594895 0.838757 0.152921 1.47971 0.423605 2.02928C0.694289 2.57884 1.07744 3.01414 1.52793 3.28393Z" fill="#E0E2F2"></path>
 </svg>
 </div>
 <div class="feature" data-event="High-visibility display and powerful speakers" data-product-name="M4">
-<h4>High-visibility display and powerful  speakers</h4>
-<p>Designed so you never miss a single detail.</p>
+<h4>Màn hình rõ nét & loa công suất lớn</h4>
+<p>Thiết kế tối ưu để bạn không bỏ lỡ bất kỳ chi tiết bản dịch nào.</p>
 <svg fill="none" height="24" viewbox="0 0 13 24" width="13" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.52793 3.28393L10.9616 8.84745C11.4194 9.11727 11.8085 9.55796 12.0816 10.1161C12.3546 10.6742 12.5 11.3258 12.5 11.9916C12.5 12.6575 12.3546 13.3091 12.0816 13.8672C11.8085 14.4253 11.4194 14.866 10.9616 15.1358L1.54058 20.674C1.08138 20.9417 0.690979 21.3818 0.417299 21.9404C0.146288 22.4935 0.0014242 23.1389 1.04472e-05 23.7987L1.04481e-05 23.8182C-3.48573e-06 23.8117 -3.4805e-06 23.8052 1.04472e-05 23.7987L9.41488e-06 0.181873C0.00594895 0.838757 0.152921 1.47971 0.423605 2.02928C0.694289 2.57884 1.07744 3.01414 1.52793 3.28393Z" fill="#E0E2F2"></path>
 </svg>
 </div>
 <div class="feature" data-event="Internet miễn phí trọn đời" data-product-name="M4">
 <h4>Internet miễn phí trọn đời</h4>
-<p>Unlimited data for translations tại gần 200 quốc gia.</p>
+<p>Dữ liệu không giới hạn cho dịch thuật tại gần 200 quốc gia.</p>
 <svg fill="none" height="24" viewbox="0 0 13 24" width="13" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.52793 3.28393L10.9616 8.84745C11.4194 9.11727 11.8085 9.55796 12.0816 10.1161C12.3546 10.6742 12.5 11.3258 12.5 11.9916C12.5 12.6575 12.3546 13.3091 12.0816 13.8672C11.8085 14.4253 11.4194 14.866 10.9616 15.1358L1.54058 20.674C1.08138 20.9417 0.690979 21.3818 0.417299 21.9404C0.146288 22.4935 0.0014242 23.1389 1.04472e-05 23.7987L1.04481e-05 23.8182C-3.48573e-06 23.8117 -3.4805e-06 23.8052 1.04472e-05 23.7987L9.41488e-06 0.181873C0.00594895 0.838757 0.152921 1.47971 0.423605 2.02928C0.694289 2.57884 1.07744 3.01414 1.52793 3.28393Z" fill="#E0E2F2"></path>
 </svg>
@@ -384,21 +368,21 @@ with other Vasco devices" data-product-name="E1">
 <div data-slide="3">
 <div class="feature" data-event="Dịch giọng nói" data-product-name="V4">
 <h4>Dịch giọng nói</h4>
-<p>You talk, Vasco translates, in 82 languages.</p>
+<p>Bạn nói, Vasco dịch bằng 82 ngôn ngữ.</p>
 <svg fill="none" height="24" viewbox="0 0 13 24" width="13" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.52793 3.28393L10.9616 8.84745C11.4194 9.11727 11.8085 9.55796 12.0816 10.1161C12.3546 10.6742 12.5 11.3258 12.5 11.9916C12.5 12.6575 12.3546 13.3091 12.0816 13.8672C11.8085 14.4253 11.4194 14.866 10.9616 15.1358L1.54058 20.674C1.08138 20.9417 0.690979 21.3818 0.417299 21.9404C0.146288 22.4935 0.0014242 23.1389 1.04472e-05 23.7987L1.04481e-05 23.8182C-3.48573e-06 23.8117 -3.4805e-06 23.8052 1.04472e-05 23.7987L9.41488e-06 0.181873C0.00594895 0.838757 0.152921 1.47971 0.423605 2.02928C0.694289 2.57884 1.07744 3.01414 1.52793 3.28393Z" fill="#E0E2F2"></path>
 </svg>
 </div>
 <div class="feature" data-event="Dịch hình ảnh" data-product-name="V4">
 <h4>Dịch hình ảnh</h4>
-<p>Snap! And text from a picture becomes clear in 112 languages.</p>
+<p>Chụp ảnh! Và văn bản trên ảnh lập tức rõ ràng bằng 112 ngôn ngữ.</p>
 <svg fill="none" height="24" viewbox="0 0 13 24" width="13" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.52793 3.28393L10.9616 8.84745C11.4194 9.11727 11.8085 9.55796 12.0816 10.1161C12.3546 10.6742 12.5 11.3258 12.5 11.9916C12.5 12.6575 12.3546 13.3091 12.0816 13.8672C11.8085 14.4253 11.4194 14.866 10.9616 15.1358L1.54058 20.674C1.08138 20.9417 0.690979 21.3818 0.417299 21.9404C0.146288 22.4935 0.0014242 23.1389 1.04472e-05 23.7987L1.04481e-05 23.8182C-3.48573e-06 23.8117 -3.4805e-06 23.8052 1.04472e-05 23.7987L9.41488e-06 0.181873C0.00594895 0.838757 0.152921 1.47971 0.423605 2.02928C0.694289 2.57884 1.07744 3.01414 1.52793 3.28393Z" fill="#E0E2F2"></path>
 </svg>
 </div>
 <div class="feature" data-event="Large screen" data-product-name="V4">
-<h4>Large screen</h4>
-<p>The 5-inch screen ensures every translation is crystal clear and easy to read.</p>
+<h4>Màn hình lớn</h4>
+<p>Màn hình 5 inch đảm bảo mọi bản dịch hiển thị vô cùng rõ nét và dễ đọc.</p>
 <svg fill="none" height="24" viewbox="0 0 13 24" width="13" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.52793 3.28393L10.9616 8.84745C11.4194 9.11727 11.8085 9.55796 12.0816 10.1161C12.3546 10.6742 12.5 11.3258 12.5 11.9916C12.5 12.6575 12.3546 13.3091 12.0816 13.8672C11.8085 14.4253 11.4194 14.866 10.9616 15.1358L1.54058 20.674C1.08138 20.9417 0.690979 21.3818 0.417299 21.9404C0.146288 22.4935 0.0014242 23.1389 1.04472e-05 23.7987L1.04481e-05 23.8182C-3.48573e-06 23.8117 -3.4805e-06 23.8052 1.04472e-05 23.7987L9.41488e-06 0.181873C0.00594895 0.838757 0.152921 1.47971 0.423605 2.02928C0.694289 2.57884 1.07744 3.01414 1.52793 3.28393Z" fill="#E0E2F2"></path>
 </svg>
@@ -447,39 +431,39 @@ with other Vasco devices" data-product-name="E1">
 </section>
 <section aria-labelledby="vasco-numbers-heading" class="vasco-numbers-section" style="max-width:100%;">
 <div class="container" style="max-width:1200px;margin:0 auto;">
-<h2 class="h2-notosans" id="vasco-numbers-heading" style="text-align:center;">Reasons to choose Vasco Translator</h2>
+<h2 class="h2-notosans" id="vasco-numbers-heading" style="text-align:center;">Lý do chọn máy phiên dịch Vasco</h2>
 <div class="vasco-numbers-wrapper" role="list">
 <div class="vasco-numbers-single-wrapper" role="listitem" tabindex="0">
 <div class="number-paragraph">
 <h3 class="number" id="lang-number">113</h3>
 </div>
 <p class="number-description" id="lang-desc">
-					languages in your pocket</p>
-<a aria-describedby="lang-number lang-desc" class="btn btn-black btn-md" href="./translators/vasco-translator-v4.html#product-languages">Kiểm tra danh sách ngôn ngữ</a>
+					ngôn ngữ gọn gàng trong túi bạn</p>
+<a aria-describedby="lang-number lang-desc" class="btn btn-black btn-md" href="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/#product-languages" ) ); ?>">Kiểm tra danh sách ngôn ngữ</a>
 </div>
 <div class="vasco-numbers-single-wrapper" role="listitem" tabindex="0">
 <div class="number-paragraph">
 <h3 class="number" id="country-number">200</h3>
 </div>
 <p class="number-description" id="country-desc">
-					countries with free connectivity for translations</p>
-<a aria-describedby="country-number country-desc" class="btn btn-black btn-md" href="./coverage-map.html">Xem bản đồ phủ sóng Internet</a>
+					quốc gia kết nối miễn phí cho dịch thuật</p>
+<a aria-describedby="country-number country-desc" class="btn btn-black btn-md" href="<?php echo esc_url( home_url( "/coverage-map/" ) ); ?>">Xem bản đồ phủ sóng Internet</a>
 </div>
 <div class="vasco-numbers-single-wrapper" role="listitem" tabindex="0">
 <div class="number-paragraph">
 <h3 class="number" id="engines-number">10</h3>+
 								</div>
 <p class="number-description" id="engines-desc">
-					translation engines</p>
-<a aria-describedby="engines-number engines-desc" class="btn btn-black btn-md" href="./features/translate-voice.html#translation-engines">
-					Tìm hiểu thêm <span class="text-sr-only">about translation engines</span></a>
+					công cụ dịch thuật tối ưu</p>
+<a aria-describedby="engines-number engines-desc" class="btn btn-black btn-md" href="<?php echo esc_url( home_url( "/features/dich-giong-noi/#translation-engines" ) ); ?>">
+					Tìm hiểu thêm <span class="text-sr-only">về công cụ dịch thuật</span></a>
 </div>
 <div class="vasco-numbers-single-wrapper" role="listitem" tabindex="0">
 <div class="number-paragraph">
 <h3 class="number" id="awards-number">11</h3>
 </div>
 <p class="number-description" id="awards-desc">
-					prestigious awards</p>
+					giải thưởng quốc tế danh giá</p>
 <a aria-describedby="awards-number awards-desc" class="btn btn-black btn-md" href="#awards-section" id="awards-scroll">
 					Tìm hiểu thêm <span class="text-sr-only">về các giải thưởng</span></a>
 </div>
@@ -488,18 +472,18 @@ with other Vasco devices" data-product-name="E1">
 <h3 class="number" id="features-number">5</h3>
 </div>
 <p class="number-description" id="features-desc">
-					useful translation features</p>
-<a aria-describedby="features-number features-desc" class="btn btn-black btn-md" href="./features/index.html">
-					Tìm hiểu thêm <span class="text-sr-only">about useful features of translators</span></a>
+					tính năng phiên dịch hữu ích</p>
+<a aria-describedby="features-number features-desc" class="btn btn-black btn-md" href="<?php echo esc_url( home_url( "/features/" ) ); ?>">
+					Tìm hiểu thêm <span class="text-sr-only">về các tính năng hữu ích</span></a>
 </div>
 </div>
 </div>
 </section>
-<section class="more-features">
+<section class="more-features" style="display:none !important;">
 <div class="container">
-<h2 class="h2-notosans">EXPLORE FEATURES DESIGNED FOR SEAMLESS GLOBAL COMMUNICATION</h2>
+<h2 class="h2-notosans">KHÁM PHÁ CÁC TÍNH NĂNG ĐƯỢC THIẾT KẾ CHO GIAO TIẾP TOÀN CẦU DỄ DÀNG</h2>
 <div class="feature-list" id="feature-list">
-<div class="list">
+<div class="list" style="display:flex !important;flex-wrap:wrap !important;justify-content:center !important;gap:20px !important;overflow:visible !important;white-space:normal !important;width:100% !important;">
 <button class="feature active" data-event="Dịch giọng nói" data-id="voice_translator">
 <svg fill="none" height="64" viewbox="0 0 64 64" width="64" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_10647_181911)">
@@ -622,7 +606,7 @@ with other Vasco devices" data-product-name="E1">
 </clippath>
 </defs>
 </svg>
-<h3>Voice Cloning</h3>
+<h3>Nhân bản giọng nói</h3>
 </button>
 <hr/>
 <button class="feature" data-event="AI Assistant" data-id="ai_assistant">
@@ -664,7 +648,7 @@ with other Vasco devices" data-product-name="E1">
 </clippath>
 </defs>
 </svg>
-<h3>Learning App</h3>
+<h3>Ứng dụng học tập</h3>
 </button>
 <hr/>
 </div>
@@ -687,11 +671,11 @@ with other Vasco devices" data-product-name="E1">
 </div>
 <div class="feature-info">
 <h3 class="h2">Dịch giọng nói</h3>
-<p>Speak freely around the world</p>
-<p>Translate over 85 languages in real time with 99% accuracy ensured by 10 advanced translation engines. Speak like a native and enjoy conversations even in loud settings with an advanced noise-reducing microphone and powerful speakers. Perfect for travel, business meetings, and everyday conversations that connect you with the world.</p>
-<p><b>Available in: </b>Vasco Translator Q1, Vasco Translator E1, Vasco Translator V4, Vasco Translator M4</p>
-<a class="btn btn-md btn-black-filled feature-landing-btn" href="./features/translate-voice.html">
-							DISCOVER VOICE TRANSLATION TECHNOLOGY
+<p>Tự do giao tiếp trên toàn thế giới</p>
+<p>Dịch hơn 85 ngôn ngữ theo thời gian thực với độ chính xác 99% nhờ 10 công cụ dịch thuật tiên tiến. Nói chuyện như người bản xứ và thoải mái trò chuyện ngay cả trong môi trường ồn ào với micro lọc tiếng ồn chuyên dụng và loa công suất lớn. Hoàn hảo cho du lịch, họp hành kinh doanh và giao tiếp hàng ngày kết nối bạn với thế giới.</p>
+<p><b>Có sẵn trên: </b>Vasco Translator Q1, Vasco Translator E1, Vasco Translator V4, Vasco Translator M4</p>
+<a class="btn btn-md btn-black-filled feature-landing-btn" href="<?php echo esc_url( home_url( "/features/dich-giong-noi/" ) ); ?>">
+							KHÁM PHÁ CÔNG NGHỆ DỊCH GIỌNG NÓI
 						</a>
 </div>
 </div>
@@ -713,11 +697,11 @@ with other Vasco devices" data-product-name="E1">
 </div>
 <div class="feature-info">
 <h3 class="h2">Dịch hình ảnh</h3>
-<p>One click and everything's clear</p>
-<p>Translate text from photos in over 110 languages with a high-quality camera. No need to type or copy anything – just take a picture and translate signs, menus, or documents. Works even in low-light conditions, so you can navigate foreign environments confidently and understand everything around you.</p>
-<p><b>Available in: </b>Vasco Translator Q1, Vasco Translator V4, Vasco Translator M4</p>
-<a class="btn btn-md btn-black-filled feature-landing-btn" href="./features/translate-photos.html">
-							SEE HOW PHOTO TRANSLATION WORKS
+<p>Chụp ảnh và thấu hiểu mọi thứ ngay lập tức</p>
+<p>Dịch văn bản trên ảnh hơn 110 ngôn ngữ với ống kính camera chất lượng cao. Không cần gõ chữ hay sao chép—chỉ cần chụp ảnh để dịch bảng hiệu, thực đơn hoặc tài liệu. Hoạt động hiệu quả ngay cả trong điều kiện thiếu sáng, giúp bạn tự tin di chuyển tại nước ngoài.</p>
+<p><b>Có sẵn trên: </b>Vasco Translator Q1, Vasco Translator V4, Vasco Translator M4</p>
+<a class="btn btn-md btn-black-filled feature-landing-btn" href="<?php echo esc_url( home_url( "/features/dich-hinh-anh/" ) ); ?>">
+							TÌM HIỂU CÁCH DỊCH HÌNH ẢNH HOẠT ĐỘNG
 						</a>
 </div>
 </div>
@@ -739,11 +723,11 @@ with other Vasco devices" data-product-name="E1">
 </div>
 <div class="feature-info">
 <h3 class="h2">Dịch văn bản</h3>
-<p>Precision at your fingertips</p>
-<p>Translate text in over 100 languages by simply typing on a digital keyboard. It’s the ultimate tool for those moments when you need absolute discretion or want to polish every word before sending. With a built-in profanity filter and a suite of advanced translation engines, you can communicate with total confidence. Whether for professional emails, study, or private notes, it makes global communication feel effortless and secure.</p>
-<p><b>Available in: </b>Vasco Translator Q1, Vasco Translator V4, Vasco Translator M4</p>
-<a class="btn btn-md btn-black-filled feature-landing-btn" href="./features/translate-text.html">
-							EXPLORE TEXT TRANSLATION CAPABILITIES
+<p>Chính xác trong tầm tay</p>
+<p>Dịch văn bản hơn 100 ngôn ngữ bằng cách nhập từ bàn phím màn hình. Đây là công cụ tuyệt vời cho những lúc cần sự riêng tư hoặc tra cứu từ ngữ chính xác. Tích hợp bộ lọc từ ngữ ngữ cảnh và nhiều engine dịch tối ưu giúp bạn giao tiếp chính xác tuyệt đối.</p>
+<p><b>Có sẵn trên: </b>Vasco Translator Q1, Vasco Translator V4, Vasco Translator M4</p>
+<a class="btn btn-md btn-black-filled feature-landing-btn" href="<?php echo esc_url( home_url( "/features/dich-van-ban/" ) ); ?>">
+							KHÁM PHÁ TÍNH NĂNG DỊCH VĂN BẢN
 						</a>
 </div>
 </div>
@@ -752,12 +736,12 @@ with other Vasco devices" data-product-name="E1">
 <img alt="A top-down photograph shows seven pairs of hands arranged in a circle, each holding a Vasco Translator Q1 device over a light-colored surface. The devices, in various colors including black, dark blue, and one red, feature bright screens displaying translation interfaces in multiple languages. This visual effectively illustrates the device's ability to facilitate multilingual group conversations." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/chat-group-placeholder.webp" ); ?>"/>
 </div>
 <div class="feature-info">
-<h3 class="h2">Group Chat</h3>
-<p>One chat, many languages</p>
-<p>Connect up to 100 people in one chat. MultiTalk lets everyone speak or type in their native tongue, while messages are automatically translated into each participant’s selected language – with over 100 to choose from. It’s the perfect solution for international teams, tour groups, or multilingual families. Available in the MultiTalk app, Vasco Translator Q1, and Vasco Translator V4.</p>
-<p><b>Available in: </b>Vasco Translator Q1, Vasco Translator V4</p>
-<a class="btn btn-md btn-black-filled feature-landing-btn" href="./features/translate-chat.html">
-							LEARN HOW THE MULTILINGUAL CHAT WORKS
+<h3 class="h2">Trò chuyện nhóm (MultiTalk)</h3>
+<p>Một cuộc trò chuyện, đa ngôn ngữ</p>
+<p>Kết nối tới 100 người trong một nhóm trò chuyện. MultiTalk cho phép mỗi thành viên nói hoặc gõ bằng tiếng mẹ đẻ, trong khi tin nhắn sẽ tự động dịch sang ngôn ngữ riêng của từng người đối diện với hơn 100 ngôn ngữ hỗ trợ. Giải pháp hoàn hảo cho đội ngũ quốc tế, đoàn du lịch hoặc gia đình đa quốc gia.</p>
+<p><b>Có sẵn trên: </b>Vasco Translator Q1, Vasco Translator V4</p>
+<a class="btn btn-md btn-black-filled feature-landing-btn" href="<?php echo esc_url( home_url( "/features/dich-tro-truyen/" ) ); ?>">
+							KHÁM PHÁ TÍNH NĂNG TRÒ CHUYỆN ĐA NGÔN NGỮ
 						</a>
 </div>
 </div>
@@ -779,11 +763,11 @@ with other Vasco devices" data-product-name="E1">
 </div>
 <div class="feature-info">
 <h3 class="h2">Dịch cuộc gọi</h3>
-<p>Xóa bỏ rào cản ngôn ngữ on every call</p>
-<p>Translate phone calls in over 50 languages and communicate with people from more than 160 countries. This feature is available to users with phone numbers from 42 countries (required for verification) and provides real-time translations to both you and your conversation partner. It’s an essential tool for emergencies abroad. Start with 10 free test minutes, and purchase additional packages tailored to your needs on our website or through customer service.</p>
-<p><b>Available in: </b>Vasco Translator Q1</p>
+<p>Xóa bỏ rào cản ngôn ngữ trên mọi cuộc gọi</p>
+<p>Dịch cuộc gọi điện thoại hơn 50 ngôn ngữ và giao tiếp với người dùng từ hơn 160 quốc gia. Tính năng này dịch theo thời gian thực cho cả bạn và người ở đầu dây bên kia. Công cụ thiết yếu cho các cuộc gọi công việc quốc tế hoặc giữ liên lạc với bạn bè toàn cầu.</p>
+<p><b>Có sẵn trên: </b>Vasco Translator Q1</p>
 <a class="btn btn-md btn-black-filled feature-landing-btn" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>">
-							DISCOVER CALL TRANSLATOR FEATURE
+							KHÁM PHÁ TÍNH NĂNG DỊCH CUỘC GỌI
 						</a>
 </div>
 </div>
@@ -804,12 +788,12 @@ with other Vasco devices" data-product-name="E1">
 <p class="sr-only" id="video-desc6">[meet_vasco.icons_with_panel.feature6.box1.video.alt]</p>
 </div>
 <div class="feature-info">
-<h3 class="h2">Voice Cloning</h3>
-<p>Next-level personalization</p>
-<p>With voice cloning, you can sound like yourself in over 50 languages. Based on a short audio sample, Vasco Translator captures and recreates your unique vocal characteristics, so every conversation feels more natural and genuinely personal. With this function, you can build authentic connections and be yourself in any situation.</p>
-<p><b>Available in: </b>Vasco Translator Q1</p>
+<h3 class="h2">Nhân bản giọng nói (Voice Cloning)</h3>
+<p>Cá nhân hóa trải nghiệm đỉnh cao</p>
+<p>Với công nghệ nhân bản giọng nói, bản dịch phát ra sẽ mang chính âm điệu và giọng nói của bạn bằng hơn 50 ngôn ngữ. Dựa trên mẫu âm thanh ngắn, Vasco Translator tái tạo đặc trưng giọng nói độc đáo của bạn, giúp mọi cuộc trò chuyện trở nên tự nhiên và chân thực nhất.</p>
+<p><b>Có sẵn trên: </b>Vasco Translator Q1</p>
 <a class="btn btn-md btn-black-filled feature-landing-btn" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>">
-							LEARN HOW TO CLONE YOUR VOICE
+							TÌM HIỂU CÁCH NHÂN BẢN GIỌNG NÓI
 						</a>
 </div>
 </div>
@@ -831,10 +815,10 @@ with other Vasco devices" data-product-name="E1">
 </div>
 <div class="feature-info">
 <h3 class="h2">Trợ lý AI</h3>
-<p>Discover the meaning beyond words</p>
-<p>An advanced photo translation feature powered by context-aware intelligence. Vasco Assistant doesn’t just translate languages—it deciphers cultural context too. Simply take a photo, and your AI assistant will explain its full meaning—from the ingredients in exotic dishes to the purpose of peculiar road signs. Bạn có thêm câu hỏi? Just ask. Vasco Assistant provides instant answers, letting you dive deeper into any topic that sparks your interest.</p>
-<p><b>Available in: </b>Vasco Translator Q1</p>
-<a class="btn btn-md btn-black-filled feature-landing-btn" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>">MEET YOUR NEW AI ASSISTANT
+<p>Khám phá ý nghĩa vượt xa từ ngữ</p>
+<p>Tính năng dịch ảnh nâng cao tích hợp trí tuệ nhân tạo nhận diện ngữ cảnh. Trợ lý Vasco không chỉ dịch chữ—mà còn giải thích ngữ cảnh văn hóa. Chỉ cần chụp ảnh, trợ lý AI sẽ giải thích ý nghĩa đầy đủ—từ thành phần món ăn địa phương đến ý nghĩa bảng hiệu giao thông. Trợ lý AI trả lời tức thì mọi thắc mắc của bạn.</p>
+<p><b>Có sẵn trên: </b>Vasco Translator Q1</p>
+<a class="btn btn-md btn-black-filled feature-landing-btn" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>">KHÁM PHÁ TRỢ LÝ AI CỦA BẠN
 						</a>
 </div>
 </div>
@@ -855,10 +839,10 @@ with other Vasco devices" data-product-name="E1">
 <p class="sr-only" id="video-desc8">[meet_vasco.icons_with_panel.feature8.box1.video.alt]</p>
 </div>
 <div class="feature-info">
-<h3 class="h2">Learning App</h3>
+<h3 class="h2">Ứng dụng học ngôn ngữ (Learning App)</h3>
 <p>Rèn luyện kỹ năng ngôn ngữ vững chắc</p>
-<p>Master over 25 languages with vocabulary learning and pronunciation practice available anytime, anywhere. Organize lessons by categorizing what you know versus what needs practice for focused learning. Make steady progress at your own pace and turn spare moments into valuable language-learning opportunities.</p>
-<p><b>Available in: </b>Vasco Translator Q1, Vasco Translator V4, Vasco Translator M4</p>
+<p>Zilch rào cản với hơn 25 ngôn ngữ nhờ ứng dụng học từ vựng và luyện phát âm mọi lúc, mọi nơi. Phân loại bài học thông minh giúp bạn rèn luyện đúng trọng tâm, tiến bộ theo tiến độ riêng của mình.</p>
+<p><b>Có sẵn trên: </b>Vasco Translator Q1, Vasco Translator V4, Vasco Translator M4</p>
 </div>
 </div>
 </div>
@@ -867,7 +851,7 @@ with other Vasco devices" data-product-name="E1">
 </section>
 <hr/>
 <section class="trustedby-logo-carousel-wrapper">
-<h2 class="h2-notosans trustedby-logo-carousel-title">Trusted by 500,000+ customers globally</h2>
+<h2 class="h2-notosans trustedby-logo-carousel-title">Được tin dùng bởi hơn 500.000+ khách hàng trên toàn cầu</h2>
 <div aria-label="a carousel presenting the logos of companies that have trusted us" aria-roledescription="carousel" class="trustedby-logo-carousel" role="region">
 <a class="sr-only focusable" href="#after-trustedby-logo-carousel">Bỏ qua carousel</a>
 <div aria-hidden="true" class="trustedby-logo-carousel-rows">
@@ -1001,7 +985,7 @@ with other Vasco devices" data-product-name="E1">
 </div>
 <div id="after-trustedby-logo-carousel"></div>
 </section>
-<section class="features-card-carousel">
+<section class="features-card-carousel" style="display:none !important;">
 <div class="container">
 <h3 class="h2-notosans">DISCOVER MORE VASCO FEATURES</h3>
 </div>
@@ -1194,7 +1178,7 @@ with other Vasco devices" data-product-name="E1">
 <div id="after-features-cards-carousel"></div>
 </div>
 </section>
-<section class="description-videos" id="play">
+<section class="description-videos" id="play" style="display:none !important;">
 <div class="container">
 <h2 class="h2-notosans">VASCO IN ACTION</h2>
 <p>Experience speaks louder than words. Watch real users put Vasco translators to the test while traveling, at work, or in everyday situations – and see for yourself that a world without language barriers is wide open.</p>
@@ -1280,238 +1264,194 @@ with other Vasco devices" data-product-name="E1">
 <div aria-labelledby="slide-label-good_design" class="swiper-slide" role="listitem">
 <a href="#" rel="nofollow" target="_blank">
 <h3 class="sr-only" id="slide-label-good_design">good_design logo</h3>
-<img alt="good design award" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/good_design.webp" ); ?>"/>
-</a>
-</div>
-<div aria-labelledby="slide-label-japan_good_design" class="swiper-slide" role="listitem">
-<a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-japan_good_design">japan_good_design logo</h3>
-<img alt="Japan good design award" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/japan_good_design.webp" ); ?>"/>
-</a>
-</div>
-<div aria-labelledby="slide-label-red_dot_2021" class="swiper-slide" role="listitem">
-<a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-red_dot_2021">red_dot_2021 logo</h3>
-<img alt="red dot winner 2021" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/red_dot_2021.webp" ); ?>"/>
-</a>
-</div>
-<div aria-labelledby="slide-label-glomo" class="swiper-slide" role="listitem">
-<a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-glomo">glomo logo</h3>
-<img alt="glomo global mobile awards" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/glomo.webp" ); ?>"/>
-</a>
-</div>
-<div aria-labelledby="slide-label-red_dot_2026" class="swiper-slide" role="listitem">
-<a href="#" rel="nofollow" target="_blank">
-<h3 class="sr-only" id="slide-label-red_dot_2026">red_dot_2026 logo</h3>
-<img alt="red dot winner 2026" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/red_dot_2026.webp" ); ?>"/>
+<img alt="Good Design" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_contentmanager/src/Resources/Images/Award/good_design.webp" ); ?>"/>
 </a>
 </div>
 </div>
-<div class="swiper-button-prev btn-carousel-prev" data-label-prev="Previous slide"></div>
-<div class="swiper-button-next btn-carousel-next" data-label-next="Next slide"></div>
-</div>
-<div class="stop-autoplay-carousel">
-<button class="btn btn-md btn-stop-autoplay" data-text-button-pause="stop carousel autoplay" data-text-button-resume="resume carousel autoplay">
-<span data-text-pause="Pause" data-text-resume="Resume">Pause</span>
-<img alt="" aria-hidden="true" height="24" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/pause.svg" ); ?>" width="24"/>
-</button>
-</div>
-<div id="after-award-carousel"></div>
 </div>
 </div>
 </section>
 <section class="vasco-made-for" id="vasco-made-for">
 <div class="container">
-<h2 class="h2-notosans">WHO ARE VASCO TRANSLATORS MADE FOR?</h2>
+<h2 class="h2-notosans">MÁY PHIÊN DỊCH VASCO DÀNH CHO AI?</h2>
 </div>
 <div class="groups-wrapper">
 <div class="menu-groups">
-<button class="btn btn-md group active" data-id="travelers">For travelers</button>
-<button class="btn btn-md group" data-id="working_aboroad">For people working abroad</button>
-<button class="btn btn-md group" data-id="international_families">For international families</button>
-<button class="btn btn-md group" data-id="language_learners">For language learners</button>
-<button class="btn btn-md group" data-id="business">For business</button>
-<button class="btn btn-md group" data-id="providers">For Y tế providers</button>
-<button class="btn btn-md group" data-id="Giáo dục">For Giáo dục</button>
+<button class="btn btn-md group active" data-id="travelers">Cho người đi du lịch</button>
+<button class="btn btn-md group" data-id="working_aboroad">Cho người làm việc ở nước ngoài</button>
+<button class="btn btn-md group" data-id="international_families">Cho gia đình đa quốc gia</button>
+<button class="btn btn-md group" data-id="language_learners">Cho người học ngoại ngữ</button>
+<button class="btn btn-md group" data-id="business">Cho doanh nghiệp</button>
+<button class="btn btn-md group" data-id="providers">Cho cơ sở y tế</button>
+<button class="btn btn-md group" data-id="Giáo dục">Cho ngành giáo dục</button>
 </div>
-<div class="container">
 <div class="content-groups">
+<style>
+.vasco-made-for .doublebox-absolute { display: block !important; }
+.vasco-made-for .doublebox-content-custom-list { flex: 1 !important; }
+</style>
 <div class="doubleboxes">
 <div class="doublebox left rounded group-box active" data-id="travelers" style="background-color: #FFF; color: #FFF;">
 <div class="doublebox-content-custom-list">
-<h3 class="h2">For travelers</h3>
-<p>Plan the vacation of your dreams! Talk to people wherever you go to find authentic travel experiences – we'll break the language barrier for you.</p>
+<h3 class="h2">Cho người đi du lịch</h3>
+<p>Lên kế hoạch cho kỳ nghỉ mơ ước của bạn! Thoải mái trò chuyện với người địa phương mọi nơi bạn đến để có những trải nghiệm du lịch chân thực nhất – chúng tôi xóa bỏ rào cản ngôn ngữ cho bạn.</p>
 <div class="doublebox-custom-list-wrapper">
-<h4>With Vasco Translators, you can:</h4>
+<h4>Với máy phiên dịch Vasco, bạn có thể:</h4>
 <ul>
-<li>communicate with everyone</li>
-<li>get accurate and instant translations</li>
-<li>travel with confidence</li>
-<li>connect with locals</li>
-<li>save on roaming costs</li>
-<li>explore new cultures and opportunities through language</li>
-<li>get directions and local tips</li>
+<li>giao tiếp dễ dàng với tất cả mọi người</li>
+<li>nhận bản dịch tức thì và chính xác</li>
+<li>tự tin du lịch khắp thế giới</li>
+<li>kết nối thân thiết với người bản địa</li>
+<li>tiết kiệm tối đa chi phí roaming</li>
+<li>khám phá văn hóa và cơ hội mới qua ngôn ngữ</li>
+<li>hỏi đường và nhận mẹo hay địa phương</li>
 </ul>
 </div>
 <svg class="svg-pseudo" color="" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
 </svg>
 </div>
-<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/meet_vasco/group1.webp');">
-<img alt="Two women in a vacation setting looking in the direction one of them is pointing. One woman is holding a Vasco Translator V4 in her hand." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/group1.webp" ); ?>"/>
+<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . '/assets/img/e1/groups-travel.webp' ); ?>');">
+<img alt="Hai phụ nữ trong kỳ nghỉ du lịch đang sử dụng máy phiên dịch Vasco." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/e1/groups-travel.webp' ); ?>"/>
 </div>
 </div>
 <div class="doublebox left rounded group-box" data-id="working_aboroad" style="background-color: #FFF; color: #FFF;">
 <div class="doublebox-content-custom-list">
-<h3 class="h2">For people working abroad</h3>
-<p>Work with confidence around the world! Whether you're moving abroad for work, taking on global projects, or working across borders, we'll help you communicate effectively in any language and any professional setting.</p>
+<h3 class="h2">Cho người làm việc ở nước ngoài</h3>
+<p>Tự tin làm việc trên toàn cầu! Cho dù bạn chuyển sang nước ngoài định cư, đảm nhận dự án quốc tế hay làm việc xuyên biên giới, Vasco giúp bạn giao tiếp hiệu quả trong mọi môi trường chuyên nghiệp.</p>
 <div class="doublebox-custom-list-wrapper">
-<h4>With Vasco Translators, you can:</h4>
+<h4>Với máy phiên dịch Vasco, bạn có thể:</h4>
 <ul>
-<li>feel secure and independent</li>
-<li>connect and build relations with colleagues</li>
-<li>unlock new career opportunities</li>
-<li>network and collaborate effectively</li>
-<li>eliminate misunderstandings</li>
-<li>take care of important paperwork abroad</li>
-<li>focus on results, not language barriers</li>
-<li>excel in international teams</li>
+<li>cảm thấy an tâm và độc lập</li>
+<li>kết nối và xây dựng mối quan hệ tốt với đồng nghiệp</li>
+<li>mở ra các cơ hội thăng tiến sự nghiệp mới</li>
+<li>hợp tác công việc hiệu quả hơn</li>
+<li>xóa bỏ hiểu lầm trong công việc</li>
+<li>xử lý các giấy tờ thủ tục quan trọng tại nước ngoài</li>
+<li>tập trung vào kết quả công việc thay vì rào cản ngôn ngữ</li>
+<li>xuất sắc làm việc trong đội ngũ đa quốc gia</li>
 </ul>
 </div>
 <svg class="svg-pseudo" color="" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
 </svg>
 </div>
-<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/meet_vasco/group2.webp');">
-<img alt="A man wearing a helmet and work clothes taking a photo of construction plans using the Vasco Translator V4, with an excavator visible in the background." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/group2.webp" ); ?>"/>
+<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . '/assets/img/landings/the_new/target_groups_v4.webp' ); ?>');">
+<img alt="Người làm việc ở nước ngoài sử dụng Vasco Translator V4 trong môi trường chuyên nghiệp." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/landings/the_new/target_groups_v4.webp' ); ?>"/>
 </div>
 </div>
 <div class="doublebox left rounded group-box" data-id="international_families" style="background-color: #FFF; color: #FFF;">
 <div class="doublebox-content-custom-list">
-<h3 class="h2">For international families</h3>
-<p>Keep your family connected across languages and generations! Bridge communication gaps and strengthen bonds in multicultural relationships.</p>
+<h3 class="h2">Cho gia đình đa quốc gia</h3>
+<p>Gắn kết các thế hệ và người thân trong gia đình vượt qua rào cản ngôn ngữ! Thắt chặt tình cảm gia đình trong các mối quan hệ đa văn hóa.</p>
 <div class="doublebox-custom-list-wrapper">
-<h4>With Vasco Translators, you can:</h4>
+<h4>Với máy phiên dịch Vasco, bạn có thể:</h4>
 <ul>
-<li>capture the true meaning behind words</li>
-<li>translate live conversations</li>
-<li>communicate during family gatherings</li>
-<li>connect remotely through MultiTalk</li>
-<li>build stronger family bonds</li>
-<li>belong fully in every family moment</li>
-<li>include family members of all ages</li>
-<li>share family stories</li>
+<li>thấu hiểu trọn vẹn ý nghĩa đằng sau từng lời nói</li>
+<li>dịch trực tiếp các cuộc trò chuyện thân mật</li>
+<li>dễ dàng trò chuyện trong các buổi họp mặt gia đình</li>
+<li>kết nối từ xa thông qua tính năng MultiTalk</li>
+<li>gắn kết tình cảm gia đình bền chặt</li>
+<li>chia sẻ câu chuyện gia đình với mọi thế hệ</li>
 </ul>
 </div>
 <svg class="svg-pseudo" color="" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
 </svg>
 </div>
-<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/meet_vasco/group3.webp');">
-<img alt="A family sitting around a table, wearing Vasco Translator E1 earpieces, laughing and talking with each other." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/group3.webp" ); ?>"/>
+<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . '/assets/img/e1/groups-family.webp' ); ?>');">
+<img alt="Gia đình đa quốc gia vui vẻ trò chuyện cùng nhau với sự hỗ trợ của Vasco Translator." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/e1/groups-family.webp' ); ?>"/>
 </div>
 </div>
 <div class="doublebox left rounded group-box" data-id="language_learners" style="background-color: #FFF; color: #FFF;">
 <div class="doublebox-content-custom-list">
-<h3 class="h2">For language learners</h3>
-<p>Accelerate your language journey! Build the confidence and get the practice you need to master any language faster than ever before.</p>
+<h3 class="h2">Cho người học ngoại ngữ</h3>
+<p>Tăng tốc lộ trình học ngoại ngữ của bạn! Xây dựng sự tự tin và rèn luyện kỹ năng thực hành để làm chủ ngôn ngữ mới nhanh hơn bao giờ hết.</p>
 <div class="doublebox-custom-list-wrapper">
-<h4>With Vasco Translators, you can:</h4>
+<h4>Với máy phiên dịch Vasco, bạn có thể:</h4>
 <ul>
-<li>learn languages while traveling</li>
-<li>access multiple languages in one device</li>
-<li>communicate without fear of making mistakes</li>
-<li>track your progress</li>
-<li>practice even without the internet connection</li>
-<li>practice authentic accents and speaking patterns</li>
-<li>move from textbooks to actual conversations</li>
-<li>learn by practicing not just studying</li>
+<li>học ngôn ngữ mới ngay trong các chuyến du lịch</li>
+<li>truy cập bài học nhiều ngôn ngữ trên 1 thiết bị</li>
+<li>tự tin giao tiếp không sợ mắc lỗi</li>
+<li>theo dõi tiến độ học tập của bản thân</li>
+<li>luyện tập kể cả khi không có kết nối internet</li>
+<li>luyện phát âm chuẩn ngữ điệu bản xứ</li>
 </ul>
 </div>
 <svg class="svg-pseudo" color="" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
 </svg>
 </div>
-<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/meet_vasco/group4.webp');">
-<img alt="A group of people sitting at a restaurant table by the sea, using Vasco Translator V4 devices to communicate with each other." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/group4.webp" ); ?>"/>
+<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . '/assets/img/landings/the_new/target_groups_q1.webp' ); ?>');">
+<img alt="Người học ngoại ngữ sử dụng Vasco Translator Q1 để luyện tập và giao tiếp." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/landings/the_new/target_groups_q1.webp' ); ?>"/>
 </div>
 </div>
 <div class="doublebox left rounded group-box" data-id="business" style="background-color: #FFF; color: #FFF;">
 <div class="doublebox-content-custom-list">
-<h3 class="h2">For business</h3>
-<p>Expand your global reach and close deals in any language! Build trust with clients worldwide and enter new markets with confidence.</p>
+<h3 class="h2">Cho doanh nghiệp</h3>
+<p>Mở rộng quy mô toàn cầu và chốt hợp đồng bằng mọi ngôn ngữ! Xây dựng niềm tin với đối tác quốc tế và tiến vào thị trường mới một cách tự tin.</p>
 <div class="doublebox-custom-list-wrapper">
-<h4>With Vasco Translators, you can:</h4>
+<h4>Với máy phiên dịch Vasco, bạn có thể:</h4>
 <ul>
-<li>get live translation in any business setting</li>
-<li>avoid expensive mistakes because of misunderstandings</li>
-<li>reduce operational costs</li>
-<li>enter new markets with confidence</li>
-<li>build valuable connections at international events</li>
-<li>faster negotiations and decision-making</li>
-<li>close more deals</li>
-<li>build trust through direct communication</li>
-<li>manage global teams</li>
-<li>represent your brand professionally</li>
-<li>maintain quality standards in every language</li>
+<li>dịch trực tiếp trong mọi cuộc họp kinh doanh</li>
+<li>tránh các sai sót đắt giá do hiểu lầm ngôn ngữ</li>
+<li>tiết kiệm chi phí vận hành và thông dịch viên</li>
+<li>tự tin thâm nhập thị trường quốc tế mới</li>
+<li>thúc đẩy đàm phán và ra quyết định nhanh hơn</li>
+<li>chốt nhiều giao dịch thương mại thành công</li>
 </ul>
 </div>
 <svg class="svg-pseudo" color="" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
 </svg>
 </div>
-<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/meet_vasco/group5.webp');">
-<img alt="A woman holding a Vasco Translator V4 in her hand, shaking hands with another person in an office setting." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/group5.webp" ); ?>"/>
+<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . '/assets/img/e1/groups-business.webp' ); ?>');">
+<img alt="Doanh nhân bắt tay đối tác trong cuộc họp quốc tế với sự hỗ trợ của Vasco Translator." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/e1/groups-business.webp' ); ?>"/>
 </div>
 </div>
 <div class="doublebox left rounded group-box" data-id="providers" style="background-color: #FFF; color: #FFF;">
 <div class="doublebox-content-custom-list">
-<h3 class="h2">For Y tế providers</h3>
-<p>Deliver exceptional patient care regardless of language barriers! Ensure accurate communication with patients from diverse communities worldwide.</p>
+<h3 class="h2">Cho cơ sở y tế</h3>
+<p>Mang đến dịch vụ chăm sóc bệnh nhân vượt trội bất kể rào cản ngôn ngữ! Đảm bảo giao tiếp chính xác với bệnh nhân từ các cộng đồng đa dạng trên thế giới.</p>
 <div class="doublebox-custom-list-wrapper">
-<h4>With Vasco Translators, you can:</h4>
+<h4>Với máy phiên dịch Vasco, bạn có thể:</h4>
 <ul>
-<li>help people regardless of the language they speak</li>
-<li>understand symptoms and concerns accurately</li>
-<li>gather complete medical histories without delays</li>
-<li>ensure accurate translation of diagnosis and treatment plans to patients</li>
-<li>collaborate with international Y tế professionals</li>
-<li>participate fully in international medical events</li>
-<li>eliminate dangerous miscommunications</li>
-<li>translate without compromising privacy</li>
+<li>hỗ trợ chăm sóc bệnh nhân ở mọi ngôn ngữ</li>
+<li>hiểu chính xác triệu chứng và mối lo của bệnh nhân</li>
+<li>thu thập tiền sử bệnh đầy đủ không bị trì hoãn</li>
+<li>đảm bảo dịch chính xác chẩn đoán và phác đồ điều trị</li>
+<li>bảo mật thông tin bệnh nhân tuyệt đối chuẩn HIPAA</li>
 </ul>
 </div>
 <svg class="svg-pseudo" color="" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
 </svg>
 </div>
-<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/meet_vasco/group6.webp');">
-<img alt="Female doctor holding the Vasco V4 translator and speaking to a patient during consultation." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/group6.webp" ); ?>"/>
+<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . '/assets/img/home/about-vasco/about-vasco-section-new-2.webp' ); ?>');">
+<img alt="Bác sĩ đang giao tiếp với bệnh nhân bằng máy phiên dịch Vasco tại cơ sở y tế." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/home/about-vasco/about-vasco-section-new-2.webp' ); ?>"/>
 </div>
 </div>
 <div class="doublebox left rounded group-box" data-id="Giáo dục" style="background-color: #FFF; color: #FFF;">
 <div class="doublebox-content-custom-list">
-<h3 class="h2">For Giáo dục</h3>
-<p>Create inclusive classrooms where every student can thrive! Support multilingual classes and international students effectively.</p>
+<h3 class="h2">Cho ngành giáo dục</h3>
+<p>Xây dựng môi trường lớp học hòa nhập nơi mỗi học sinh đều có thể phát triển! Hỗ trợ hiệu quả các lớp học đa ngôn ngữ và học sinh quốc tế.</p>
 <div class="doublebox-custom-list-wrapper">
-<h4>With Vasco Translators, you can:</h4>
+<h4>Với máy phiên dịch Vasco, bạn có thể:</h4>
 <ul>
-<li>help every child reach their full potential</li>
-<li>communicate effectively with parents</li>
-<li>make lessons accessible to all students</li>
-<li>foster connections between students from different backgrounds</li>
-<li>support international students</li>
-<li>translate important documents</li>
-<li>teach multilingual classes</li>
+<li>giúp học sinh phát huy tối đa tiềm năng</li>
+<li>giao tiếp hiệu quả với phụ huynh quốc tế</li>
+<li>giúp bài giảng tiếp cận với mọi học sinh</li>
+<li>kết nối học sinh đến từ các quốc gia khác nhau</li>
+<li>hỗ trợ học sinh du học sinh quốc tế hòa nhập</li>
 </ul>
 </div>
 <svg class="svg-pseudo" color="" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
 </svg>
 </div>
-<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>landings/meet_vasco/group7.webp');">
-<img alt="A woman giving a speech at a university, wearing a Vasco Translator E1 in her ear." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/group7.webp" ); ?>"/>
+<div class="doublebox-absolute with-list" id="img-change" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . '/assets/img/home/about-vasco/about-vasco-section-new-1.webp' ); ?>');">
+<img alt="Giáo viên đang hỗ trợ học sinh quốc tế trong lớp học đa ngôn ngữ với Vasco Translator." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/home/about-vasco/about-vasco-section-new-1.webp' ); ?>"/>
+</div>
 </div>
 </div>
 </div>
@@ -1522,108 +1462,111 @@ with other Vasco devices" data-product-name="E1">
 <div class="comparison-page-contact-container">
 <div class="container">
 <div class="comparison-page-link-module">
-<h2 class="h1">Are you unsure which translator to choose?</h2>
-<p>We have prepared a comparison of translators to make your choice easier.</p>
-<a class="view-compare-button btn btn-md btn-black" href="./comparison-engine.html">
+<h2 class="h1">Bạn chưa biết nên chọn máy phiên dịch nào?</h2>
+<p>Chúng tôi đã chuẩn bị công cụ so sánh các máy phiên dịch để giúp bạn đưa ra lựa chọn dễ dàng nhất.</p>
+<a class="view-compare-button btn btn-md btn-black" href="<?php echo esc_url( home_url( "/products/page-comparison-engine/" ) ); ?>">
 					So sánh máy phiên dịch
 				</a>
 </div>
 </div>
 </div>
+
+
+
 <section class="faq-section">
 <div class="container">
-<h2 class="h1">FAQ</h2>
+<h2 class="h1">CÂU HỎI THƯỜNG GẶP (FAQ)</h2>
 <div class="accordion-section">
 <div class="accordion-wrapper">
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">How can I translate instantly?</p>
+<p class="accordion-visible">Làm thế nào để tôi dịch tức thì?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
 </path>
 </svg></div>
 </div>
-<p class="accordion-hidden">Simply start your personal translator, speak, type, or take a picture. Vasco will deliver results in seconds.</p>
+<p class="accordion-hidden">Chỉ cần bật máy phiên dịch Vasco của bạn lên, nói, gõ chữ hoặc chụp ảnh. Vasco sẽ trả về kết quả dịch chính xác chỉ trong vài giây.</p>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">How does instant translation work?</p>
+<p class="accordion-visible">Tính năng dịch tức thì hoạt động như thế nào?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
 </path>
 </svg></div>
 </div>
-<p class="accordion-hidden">Vasco uses advanced AI and over 10 translation engines to process your input. It interprets voice, text, or photo; selects the best translation algorithm for your language pair; translates directly (not through English like phone apps); and delivers natural-sounding results with outstanding accuracy.</p>
+<p class="accordion-hidden">Vasco sử dụng công nghệ AI tiên tiến kết hợp với hơn 10 công cụ dịch thuật hàng đầu để xử lý. Máy tự động nhận diện giọng nói, văn bản hoặc hình ảnh; lựa chọn thuật toán dịch tốt nhất cho cặp ngôn ngữ của bạn và dịch trực tiếp (không qua tiếng Anh trung gian như các ứng dụng điện thoại), mang lại kết quả tự nhiên và chính xác tuyệt đối.</p>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">How can I translate words quickly?</p>
+<p class="accordion-visible">Làm sao để dịch từ ngữ một cách nhanh chóng?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
 </path>
 </svg></div>
 </div>
-<p class="accordion-hidden">Choose your preferred input method and Vasco’s advanced translation modes will deliver accurate results in real-time. You can either speak, type, or take a picture – our automatic translator will do the rest.</p>
+<p class="accordion-hidden">Chọn phương thức nhập liệu mong muốn và các chế độ dịch thông minh của Vasco sẽ mang lại kết quả theo thời gian thực. Bạn có thể nói, gõ chữ hoặc chụp ảnh – máy phiên dịch tự động sẽ xử lý phần còn lại.</p>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">Does Vasco work without a Wi-Fi connection?</p>
+<p class="accordion-visible">Vasco có hoạt động khi không có kết nối Wi-Fi không?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
 </path>
 </svg></div>
 </div>
-<p class="accordion-hidden">Yes, Vasco electronic language translator operates without Wi-Fi or roaming costs. It comes with a built-in SIM card, so you can enjoy free and unlimited internet for quick translations forever tại gần 200 quốc gia. Please note: This does not apply to the E1 earbud, which must be paired with the Vasco Translator or the mobile app.</p>
+<p class="accordion-hidden">Có! Máy phiên dịch điện tử Vasco hoạt động không cần Wi-Fi và không tốn phí chuyển vùng (roaming). Máy được tích hợp sẵn SIM dữ liệu miễn phí trọn đời tại gần 200 quốc gia. Lưu ý: Điều này không áp dụng cho tai nghe E1 (tai nghe cần kết nối với máy Vasco hoặc ứng dụng di động).</p>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">How accurate is live translation with Vasco devices?</p>
+<p class="accordion-visible">Độ chính xác dịch trực tiếp của thiết bị Vasco là bao nhiêu?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
 </path>
 </svg></div>
 </div>
-<p class="accordion-hidden">Vasco achieves 99% accuracy using over 10 advanced translation engines that select the best engine for each language pair. Unlike phone apps that rely on one basic algorithm and often translate through English first – lowering quality – Vasco provides direct, precise, and quick translations, so you can communicate clearly every time.</p>
+<p class="accordion-hidden">Vasco đạt độ chính xác lên đến 99% nhờ sử dụng hơn 10 công cụ dịch thuật nâng cao tự động chọn công cụ tốt nhất cho từng cặp ngôn ngữ. Không giống các ứng dụng điện thoại chỉ dùng 1 thuật toán cơ bản và thường dịch trung gian qua tiếng Anh, Vasco cung cấp bản dịch trực tiếp, chuẩn xác và tức thì.</p>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">How long does the battery last during translation?</p>
+<p class="accordion-visible">Thời lượng pin của máy sử dụng được bao lâu?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
 </path>
 </svg></div>
 </div>
-<p class="accordion-hidden">Our language translator devices deliver up to 4-5 days of standard use and 180 hours on standby. This means you can use all of our instant translation features without worrying about running out of power during important conversations and travels.</p>
+<p class="accordion-hidden">Các thiết bị phiên dịch Vasco cung cấp thời gian sử dụng tiêu chuẩn từ 4-5 ngày và lên đến 180 giờ ở chế độ chờ. Bạn có thể thoải mái sử dụng mọi tính năng mà không lo hết pin trong các chuyến đi hay cuộc họp quan trọng.</p>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">Does Vasco use AI for translation?</p>
+<p class="accordion-visible">Vasco có sử dụng trí tuệ nhân tạo (AI) để dịch không?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
 </path>
 </svg></div>
 </div>
-<p class="accordion-hidden">Yes, Vasco translating devices use advanced AI with 10+ dedicated translation systems to deliver fast and accurate translations. The AI recognizes speech, translates text, filters background noise, and converts translations back to natural-sounding output so you can communicate naturally and confidently anywhere in the world.</p>
+<p class="accordion-hidden">Có, các thiết bị Vasco áp dụng công nghệ AI tiên tiến kết hợp với hơn 10 hệ thống dịch thuật chuyên dụng. AI giúp nhận diện giọng nói, lọc tiếng ồn môi trường, dịch thuật ngữ cảnh và phát lại giọng đọc tự nhiên như người bản xứ.</p>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">Is my data safe with Vasco translation devices?</p>
+<p class="accordion-visible">Dữ liệu cá nhân của tôi có được bảo mật trên thiết bị Vasco không?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
 </path>
 </svg></div>
 </div>
-<p class="accordion-hidden">Yes, Vasco instant translation devices prioritize your data security. Our software is never trained on user data or translation input, ensuring your information remains private. We're GDPR and HIPAA compliant and can customize devices for special data protection requirements upon request.</p>
+<p class="accordion-hidden">Tuyệt đối an toàn! Vasco luôn ưu tiên bảo mật dữ liệu người dùng. Phần mềm của chúng tôi không bao giờ lưu trữ hay huấn luyện mô hình trên dữ liệu bản dịch của bạn. Tất cả thiết bị tuân thủ nghiêm ngặt tiêu chuẩn GDPR và HIPAA quốc tế.</p>
 </div>
 <div class="accordion-single">
 <div class="accordion-visible-wrapper">
-<p class="accordion-visible">Can I learn new languages with Vasco devices?</p>
+<p class="accordion-visible">Tôi có thể học ngôn ngữ mới bằng máy Vasco không?</p>
 <div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
 </path>
 </svg></div>
 </div>
-<p class="accordion-hidden">Yes, Vasco helps you learn languages in multiple ways! The built-in learning app offers interactive flashcards in 28 languages, while accurate pronunciation lets you practice speaking like a local. Whether you're studying at home, working abroad, or traveling for authentic cultural experiences, you can learn through real conversations with Vasco.</p>
+<p class="accordion-hidden">Có, Vasco hỗ trợ bạn học ngôn ngữ qua nhiều phương pháp! Ứng dụng học tập tích hợp sẵn cung cấp thẻ ghi nhớ tương tác bằng 28 ngôn ngữ, cùng tính năng phát âm chuẩn giúp bạn tự tin luyện nói như người bản xứ mọi lúc mọi nơi.</p>
 </div>
 </div>
 </div>
