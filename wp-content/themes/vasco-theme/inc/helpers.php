@@ -373,9 +373,22 @@ function vasco_theme_render_product_detail_page( $slug = '' ) {
 	}
 	$languages  = get_post_meta( $product->get_id(), '_product_supported_languages', true );
 
-	// Truy vấn số lượng đánh giá và đánh giá trung bình từ WooCommerce Database
-	$review_count   = $product->get_review_count();
+	// Truy vấn các nhận xét / đánh giá thực tế từ Database WooCommerce trước khi render Tab
+	$comments = get_comments( array(
+		'post_id' => $product->get_id(),
+		'status'  => 'approve',
+	) );
+	$review_count   = ! empty( $comments ) ? count( $comments ) : $product->get_review_count();
 	$average_rating = $product->get_average_rating();
+
+	if ( ! empty( $comments ) ) {
+		$total_stars = 0;
+		foreach ( $comments as $c_item ) {
+			$c_rating     = (int) get_comment_meta( $c_item->comment_ID, 'rating', true );
+			$total_stars += ( $c_rating > 0 ) ? $c_rating : 5;
+		}
+		$average_rating = $review_count > 0 ? ( $total_stars / $review_count ) : 5;
+	}
 
 	echo '<div class="container"><div class="product-tabs-nav">';
 	echo '<a class="product-tab-btn active" href="#about">Về sản phẩm</a>';
@@ -403,12 +416,6 @@ function vasco_theme_render_product_detail_page( $slug = '' ) {
 	} else {
 		echo '<div class="no-reviews-box"><p class="text-muted">Chưa có đánh giá nào cho sản phẩm này. Hãy là người đầu tiên gửi đánh giá trải nghiệm của bạn!</p></div>';
 	}
-
-	// 1. Danh sách các nhận xét / đánh giá thực tế từ Database WooCommerce
-	$comments = get_comments( array(
-		'post_id' => $product->get_id(),
-		'status'  => 'approve',
-	) );
 	if ( ! empty( $comments ) ) {
 		echo '<div class="wc-reviews-list-wrapper mt-4 mb-4">';
 		echo '<ul class="vasco-comments-list" style="list-style:none;padding:0;margin:0;">';
@@ -526,5 +533,19 @@ function vasco_theme_render_product_detail_page( $slug = '' ) {
 
 	wp_reset_postdata();
 }
+
+/**
+ * Tự động duyệt (auto-approve) các Đánh giá sản phẩm (Reviews) ngay khi gửi
+ */
+function vasco_auto_approve_product_reviews( $approved, $commentdata ) {
+	if ( isset( $commentdata['comment_post_ID'] ) ) {
+		$post_type = get_post_type( $commentdata['comment_post_ID'] );
+		if ( 'product' === $post_type ) {
+			return 1; // 1 = Approved ngay lập tức
+		}
+	}
+	return $approved;
+}
+add_filter( 'pre_comment_approved', 'vasco_auto_approve_product_reviews', 10, 2 );
 
 

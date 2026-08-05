@@ -1,0 +1,8 @@
+2026-08-05T06:49:48+00:00 NOTICE Email "customer_note" for order #812 not sent: no_recipient CONTEXT: {"email_type":"customer_note","status":"skipped","recipient":"guest","reason":"no_recipient","order":812}
+2026-08-05T06:49:50+00:00 INFO Email "new_order" for order #812 sent CONTEXT: {"email_type":"new_order","status":"sent","recipient":"adminlocal","order":812}
+2026-08-05T06:49:51+00:00 INFO Email "customer_processing_order" for order #812 sent CONTEXT: {"email_type":"customer_processing_order","status":"sent","recipient":"guest","order":812}
+2026-08-05T06:49:52+00:00 INFO Email "customer_processing_order" for order #812 sent CONTEXT: {"email_type":"customer_processing_order","status":"sent","recipient":"guest","order":812}
+2026-08-05T06:50:25+00:00 NOTICE Email "customer_note" for order #813 not sent: no_recipient CONTEXT: {"email_type":"customer_note","status":"skipped","recipient":"guest","reason":"no_recipient","order":813}
+2026-08-05T06:50:25+00:00 INFO Email "new_order" for order #813 sent CONTEXT: {"email_type":"new_order","status":"sent","recipient":"adminlocal","order":813}
+2026-08-05T06:50:25+00:00 INFO Email "customer_processing_order" for order #813 sent CONTEXT: {"email_type":"customer_processing_order","status":"sent","recipient":"adminlocal","order":813}
+2026-08-05T06:50:26+00:00 INFO Email "customer_processing_order" for order #813 sent CONTEXT: {"email_type":"customer_processing_order","status":"sent","recipient":"adminlocal","order":813}
