@@ -70,7 +70,7 @@ get_header();
 										<div class="swiper-slide"
 											data-product-desc="Máy phiên dịch duy nhất tích hợp công nghệ nhân bản giọng nói và dịch cuộc gọi"
 											data-product-id="Q1"
-											data-product-link="./translators/vasco-translator-q1.html"
+											data-product-link="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>"
 											data-product-name="Vasco Translator Q1">
 											<a class="photo-link" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>"
 												title="Go to product Vasco Translator Q1">
@@ -84,7 +84,7 @@ get_header();
 										<div class="swiper-slide"
 											data-product-desc="Tai nghe phiên dịch cho cuộc trò chuyện trôi chảy không gián đoạn"
 											data-product-id="E1"
-											data-product-link="./translators/vasco-translator-e1.html"
+											data-product-link="<?php echo esc_url( home_url( "/translators/vasco-translator-e1/" ) ); ?>"
 											data-product-name="Vasco Translator E1">
 											<a class="photo-link" href="<?php echo esc_url( home_url( "/translators/vasco-translator-e1/" ) ); ?>"
 												title="Go to product Vasco Translator E1">
@@ -98,7 +98,7 @@ get_header();
 										<div class="swiper-slide"
 											data-product-desc="Máy phiên dịch bỏ túi siêu nhẹ và dễ sử dụng cho mọi người"
 											data-product-id="M4"
-											data-product-link="./translators/vasco-translator-m4.html"
+											data-product-link="<?php echo esc_url( home_url( "/translators/vasco-translator-m4/" ) ); ?>"
 											data-product-name="Vasco Translator M4">
 											<a class="photo-link" href="<?php echo esc_url( home_url( "/translators/vasco-translator-m4/" ) ); ?>"
 												title="Go to product Vasco Translator M4">
@@ -112,7 +112,7 @@ get_header();
 										<div class="swiper-slide"
 											data-product-desc="Thiết bị máy phiên dịch cầm tay tức thì"
 											data-product-id="V4"
-											data-product-link="./translators/vasco-translator-v4.html"
+											data-product-link="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>"
 											data-product-name="Vasco Translator V4">
 											<a class="photo-link" href="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>"
 												title="Go to product Vasco Translator V4">
@@ -411,7 +411,7 @@ get_header();
 										<p>Chúng tôi đã chuẩn bị bảng so sánh các máy phiên dịch để giúp bạn lựa chọn dễ
 											dàng hơn.</p>
 										<a class="view-compare-button btn btn-md btn-black"
-											href="./comparison-engine.html">
+											href="<?php echo esc_url( home_url( "/comparison-engine/" ) ); ?>">
 											So sánh máy phiên dịch
 										</a>
 									</div>

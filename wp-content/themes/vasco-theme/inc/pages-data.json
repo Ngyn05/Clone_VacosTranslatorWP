@@ -28,32 +28,80 @@
     {
         "title": "Vasco Q1",
         "slug": "vasco-translator-q1",
-        "template": "page-vasco-translator-q1.php"
+        "template": "page-vasco-translator-q1.php",
+        "parent": "translators"
     },
     {
         "title": "Vasco V4",
         "slug": "vasco-translator-v4",
-        "template": "page-vasco-translator-v4.php"
+        "template": "page-vasco-translator-v4.php",
+        "parent": "translators"
     },
     {
         "title": "Vasco M4",
         "slug": "vasco-translator-m4",
-        "template": "page-vasco-translator-m4.php"
+        "template": "page-vasco-translator-m4.php",
+        "parent": "translators"
     },
     {
         "title": "Vasco E1",
         "slug": "vasco-translator-e1",
-        "template": "page-vasco-translator-e1.php"
+        "template": "page-vasco-translator-e1.php",
+        "parent": "translators"
     },
     {
-        "title": "Bộ Q1 + E1",
+        "title": "Bộ Q1 Phantom Black + E1",
         "slug": "q1-phantomblack-e1",
-        "template": "page-q1-phantomblack-e1.php"
+        "template": "page-q1-phantomblack-e1.php",
+        "parent": "translators"
     },
     {
-        "title": "Bộ V4 + E1",
+        "title": "Bộ Q1 Slate Blue + E1",
+        "slug": "q1-slateblue-e1",
+        "template": "page-translators-q1-slateblue-e1.php",
+        "parent": "translators"
+    },
+    {
+        "title": "Bộ Q1 Mystic Plum + E1",
+        "slug": "q1-mysticplum-e1",
+        "template": "page-translators-q1-mysticplum-e1.php",
+        "parent": "translators"
+    },
+    {
+        "title": "Bộ Q1 Scarlet Pulse + E1",
+        "slug": "q1-scarletpulse-e1",
+        "template": "page-translators-q1-scarletpulse-e1.php",
+        "parent": "translators"
+    },
+    {
+        "title": "Bộ V4 Black Onyx + E1",
         "slug": "v4-blackonyx-e1",
-        "template": "page-v4-blackonyx-e1.php"
+        "template": "page-v4-blackonyx-e1.php",
+        "parent": "translators"
+    },
+    {
+        "title": "Bộ V4 Cobalt Blue + E1",
+        "slug": "v4-cobaltblue-e1",
+        "template": "page-translators-v4-cobaltblue-e1.php",
+        "parent": "translators"
+    },
+    {
+        "title": "Bộ V4 Pearl White + E1",
+        "slug": "v4-pearlwhite-e1",
+        "template": "page-translators-v4-pearlwhite-e1.php",
+        "parent": "translators"
+    },
+    {
+        "title": "Bộ V4 Ruby Red + E1",
+        "slug": "v4-rubyred-e1",
+        "template": "page-translators-v4-rubyred-e1.php",
+        "parent": "translators"
+    },
+    {
+        "title": "Bộ V4 Stone Gray + E1",
+        "slug": "v4-stonegray-e1",
+        "template": "page-translators-v4-stonegray-e1.php",
+        "parent": "translators"
     },
     {
         "title": "So sánh sản phẩm",
@@ -64,6 +112,16 @@
         "title": "Dịch cuộc gọi",
         "slug": "call-translator",
         "template": "page-call-translator.php"
+    },
+    {
+        "title": "Bộ sản phẩm",
+        "slug": "bundles",
+        "template": "page-bundles.php"
+    },
+    {
+        "title": "Gói sản phẩm",
+        "slug": "packages",
+        "template": "page-packages.php"
     },
     {
         "title": "Khách sạn & Du lịch",
@@ -133,17 +191,20 @@
     {
         "title": "Hỗ trợ Ukraine",
         "slug": "initiatives-help-ukraine",
-        "template": "page-initiatives-help-ukraine.php"
+        "template": "page-initiatives-help-ukraine.php",
+        "parent": "initiatives"
     },
     {
         "title": "Sứ mệnh Y tế PMM",
         "slug": "initiatives-polish-medical-mission-pmm",
-        "template": "page-initiatives-polish-medical-mission-pmm.php"
+        "template": "page-initiatives-polish-medical-mission-pmm.php",
+        "parent": "initiatives"
     },
     {
         "title": "Hợp tác Quinnipiac",
         "slug": "initiatives-quinnipiac",
-        "template": "page-initiatives-quinnipiac.php"
+        "template": "page-initiatives-quinnipiac.php",
+        "parent": "initiatives"
     },
     {
         "title": "Tính năng",
@@ -153,22 +214,26 @@
     {
         "title": "Dịch giọng nói",
         "slug": "features-translate-voice",
-        "template": "page-features-translate-voice.php"
+        "template": "page-features-translate-voice.php",
+        "parent": "features"
     },
     {
         "title": "Dịch văn bản",
         "slug": "features-translate-text",
-        "template": "page-features-translate-text.php"
+        "template": "page-features-translate-text.php",
+        "parent": "features"
     },
     {
         "title": "Dịch hình ảnh",
         "slug": "features-translate-photos",
-        "template": "page-features-translate-photos.php"
+        "template": "page-features-translate-photos.php",
+        "parent": "features"
     },
     {
         "title": "Dịch trò chuyện",
         "slug": "features-translate-chat",
-        "template": "page-features-translate-chat.php"
+        "template": "page-features-translate-chat.php",
+        "parent": "features"
     },
     {
         "title": "Cách hoạt động",
@@ -183,47 +248,56 @@
     {
         "title": "Bao da M4",
         "slug": "accessories-case-for-vasco-translator-m4",
-        "template": "page-accessories-case-for-vasco-translator-m4.php"
+        "template": "page-accessories-case-for-vasco-translator-m4.php",
+        "parent": "accessories"
     },
     {
         "title": "Bao da Q1",
         "slug": "accessories-case-for-vasco-translator-q1",
-        "template": "page-accessories-case-for-vasco-translator-q1.php"
+        "template": "page-accessories-case-for-vasco-translator-q1.php",
+        "parent": "accessories"
     },
     {
         "title": "Bao da V4",
         "slug": "accessories-case-for-vasco-translator-v4",
-        "template": "page-accessories-case-for-vasco-translator-v4.php"
+        "template": "page-accessories-case-for-vasco-translator-v4.php",
+        "parent": "accessories"
     },
     {
         "title": "Ốp lưng M4",
         "slug": "accessories-light-case-for-vasco-translator-m4",
-        "template": "page-accessories-light-case-for-vasco-translator-m4.php"
+        "template": "page-accessories-light-case-for-vasco-translator-m4.php",
+        "parent": "accessories"
     },
     {
         "title": "Ốp lưng Q1",
         "slug": "accessories-light-case-for-vasco-translator-q1",
-        "template": "page-accessories-light-case-for-vasco-translator-q1.php"
+        "template": "page-accessories-light-case-for-vasco-translator-q1.php",
+        "parent": "accessories"
     },
     {
         "title": "Củ sạc US",
         "slug": "accessories-power-adapter-us",
-        "template": "page-accessories-power-adapter-us.php"
+        "template": "page-accessories-power-adapter-us.php",
+        "parent": "accessories"
     },
     {
         "title": "Kính cường lực M4",
         "slug": "accessories-tempered-glass-m4",
-        "template": "page-accessories-tempered-glass-m4.php"
+        "template": "page-accessories-tempered-glass-m4.php",
+        "parent": "accessories"
     },
     {
         "title": "Kính cường lực Q1",
         "slug": "accessories-tempered-glass-q1",
-        "template": "page-accessories-tempered-glass-q1.php"
+        "template": "page-accessories-tempered-glass-q1.php",
+        "parent": "accessories"
     },
     {
         "title": "Kính cường lực V4",
         "slug": "accessories-tempered-glass-v4",
-        "template": "page-accessories-tempered-glass-v4.php"
+        "template": "page-accessories-tempered-glass-v4.php",
+        "parent": "accessories"
     },
     {
         "title": "Tất cả sản phẩm",
