@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Clean Page page-contact.php
  *
@@ -40,14 +40,14 @@ get_header();
 <h2 class="h2"> </h2>
 <div class="info-wrapper">
 <p><strong>Hỗ trợ khách hàng</strong></p>
-<p>Thứ Hai - Thứ Sáu: 9:00 - 16:00 (EST)</p>
-<p><a href="tel:0012243481207">+1 224 348 1207</a></p>
+<p>Thứ Hai - Thứ Bảy: 8:00 - 18:00</p>
+<p><a href="tel:1900638400">1900.63.8400</a></p>
 <p><a href="mailto:support@vasco-electronics.com">support@vasco-electronics.com</a></p>
 </div>
 <div class="info-wrapper">
 <p><strong>Kinh doanh</strong></p>
-<p>Thứ Hai - Thứ Sáu: 9:00 - 16:00 (EST)</p>
-<p><a href="tel:0012243481207">+1 224 348 1207</a></p>
+<p>Thứ Hai - Thứ Bảy: 8:00 - 18:00</p>
+<p><a href="tel:1900638400">1900.63.8400</a></p>
 <p><a href="mailto:sales@vasco-electronics.com">sales@vasco-electronics.com</a></p>
 </div>
 <svg class="svg-pseudo" color="" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">

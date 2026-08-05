@@ -296,48 +296,143 @@
 							</div>
 						</div>
 						<hr class="footer-divider" />
-						<nav aria-labelledby="footer-support" class="footer-suport-info" role="navigation">
-							<div class="footer-column-header footer-support-header" data-id="support">
-								<h4 class="h2" id="footer-support">Hỗ trợ khách hàng</h4>
-								<svg fill="none" height="12" viewbox="0 0 20 12" width="20"
-									xmlns="http://www.w3.org/2000/svg">
-									<path d="M2 2L10 10L18 2" stroke="white" stroke-linecap="square" stroke-width="2">
-									</path>
-								</svg>
+						<nav aria-labelledby="footer-support" class="footer-suport-info" role="navigation" style="padding-bottom: 28px;">
+							<div class="footer-column-header footer-support-header" style="margin-bottom: 24px;">
+								<h4 class="h2" id="footer-support" style="color: #FFFFFF !important;">Hỗ trợ khách hàng</h4>
 							</div>
-							<div class="footer-support footer-column-list" data-id="support">
-								<div aria-labelledby="support-address-1" class="support-address">
-									<div class="footer-right-wrapper">
-										<div class="flex-box">
-											<a href="tel:0012243481207">
-												<svg aria-hidden="true" fill="none" height="17" viewbox="0 0 16 17"
-													width="16" xmlns="http://www.w3.org/2000/svg">
-													<path
-														d="M14.6668 11.7666V13.7666C14.6668 14.4999 14.0668 15.0999 13.3335 15.0999C13.2668 15.0999 13.2668 15.0999 13.2002 15.0999C11.1335 14.8999 9.20016 14.1666 7.46682 13.0333C5.86682 12.0333 4.46682 10.6333 3.46682 9.03325C2.33349 7.29992 1.66682 5.29992 1.40016 3.23325C1.33349 2.56659 1.86682 1.89992 2.60016 1.83325C2.66682 1.83325 2.73349 1.83325 2.73349 1.83325H4.73349C5.40016 1.83325 6.00016 2.29992 6.06682 2.96659C6.13349 3.63325 6.33349 4.23325 6.53349 4.83325C6.73349 5.29992 6.60016 5.89992 6.26682 6.23325L5.40016 7.09992C6.33349 8.76659 7.73349 10.1666 9.40016 11.0999L10.2668 10.2333C10.6668 9.89992 11.2002 9.76659 11.6668 9.96659C12.2668 10.1666 12.8668 10.3666 13.5335 10.4333C14.2002 10.4999 14.6668 11.0999 14.6668 11.7666Z"
-														stroke="currentColor" stroke-linecap="round"
-														stroke-linejoin="round" stroke-width="1.33333"></path>
+							
+							<!-- 3 Columns Layout (Hà Nội, TP.HCM, Hotline) -->
+							<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; align-items: stretch;">
+								
+								<!-- Column 1: Hà Nội -->
+								<div style="background: linear-gradient(145deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%); border: 1px solid rgba(255,255,255,0.15); border-radius: 14px; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 20px rgba(0,0,0,0.25);">
+									<div>
+										<div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
+											<div style="width: 44px; height: 44px; border-radius: 12px; background: rgba(59, 130, 246, 0.2); border: 1px solid rgba(59, 130, 246, 0.4); display: flex; align-items: center; justify-content: center;">
+												<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+													<path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/>
+													<path d="M6 12H4a2 2 0 0 0-2 2v8h4"/>
+													<path d="M18 9h2a2 2 0 0 1 2 2v11h-4"/>
+													<path d="M10 6h4"/>
+													<path d="M10 10h4"/>
+													<path d="M10 14h4"/>
+													<path d="M10 18h4"/>
 												</svg>
-												<p class="body-16">+1 224 348 1207</p>
-											</a>
+											</div>
+											<span class="body-16" style="font-size: 11px; font-weight: 700; text-transform: uppercase; background: rgba(59, 130, 246, 0.2); color: #60A5FA; padding: 4px 10px; border-radius: 20px; border: 1px solid rgba(59, 130, 246, 0.35);">Miền Bắc</span>
 										</div>
-										<div class="flex-box">
-											<a href="mailto:support@vasco-electronics.com" title="e-mail">
-												<svg aria-hidden="true" fill="none" height="17" viewbox="0 0 16 17"
-													width="16" xmlns="http://www.w3.org/2000/svg">
-													<path
-														d="M2.66683 3.16675H13.3335C14.0668 3.16675 14.6668 3.76675 14.6668 4.50008V12.5001C14.6668 13.2334 14.0668 13.8334 13.3335 13.8334H2.66683C1.9335 13.8334 1.3335 13.2334 1.3335 12.5001V4.50008C1.3335 3.76675 1.9335 3.16675 2.66683 3.16675Z"
-														stroke="currentColor" stroke-linecap="round"
-														stroke-linejoin="round" stroke-width="1.33333"></path>
-													<path d="M14.6668 4.5L8.00016 9.16667L1.3335 4.5"
-														stroke="currentColor" stroke-linecap="round"
-														stroke-linejoin="round" stroke-width="1.33333"></path>
-												</svg>
-												<p class="body-16">support@vasco-electronics.com</p>
-											</a>
+										<h5 class="h2" style="font-size: 15px; margin: 0 0 10px; color: #FFFFFF !important; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">VĂN PHÒNG HÀ NỘI</h5>
+										
+										<div class="footer-info" style="line-height: 1.6; display: flex; gap: 10px; align-items: flex-start; margin-bottom: 16px; color: #E2E8F0 !important;">
+											<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px;">
+												<path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+												<circle cx="12" cy="10" r="3"/>
+											</svg>
+											<span>226 Đường Láng, Phường Thịnh Quang, Quận Đống Đa, Hà Nội</span>
 										</div>
 									</div>
+									
+									<div style="padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; gap: 10px;">
+										<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
+											<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+										</svg>
+										<a class="footer-info" href="tel:02473048700" style="color: #60A5FA !important; font-weight: 700; font-size: 16px; letter-spacing: 0.5px; text-decoration: none;">024.7304.8700</a>
+									</div>
+								</div>
+
+								<!-- Column 2: TP. Hồ Chí Minh -->
+								<div style="background: linear-gradient(145deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%); border: 1px solid rgba(255,255,255,0.15); border-radius: 14px; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 20px rgba(0,0,0,0.25);">
+									<div>
+										<div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
+											<div style="width: 44px; height: 44px; border-radius: 12px; background: rgba(59, 130, 246, 0.2); border: 1px solid rgba(59, 130, 246, 0.4); display: flex; align-items: center; justify-content: center;">
+												<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+													<rect x="4" y="2" width="16" height="20" rx="2" ry="2"/>
+													<path d="M9 22v-4h6v4"/>
+													<path d="M8 6h.01"/>
+													<path d="M16 6h.01"/>
+													<path d="M12 6h.01"/>
+													<path d="M12 10h.01"/>
+													<path d="M12 14h.01"/>
+													<path d="M16 10h.01"/>
+													<path d="M16 14h.01"/>
+													<path d="M8 10h.01"/>
+													<path d="M8 14h.01"/>
+												</svg>
+											</div>
+											<span class="body-16" style="font-size: 11px; font-weight: 700; text-transform: uppercase; background: rgba(59, 130, 246, 0.2); color: #60A5FA; padding: 4px 10px; border-radius: 20px; border: 1px solid rgba(59, 130, 246, 0.35);">Miền Nam</span>
+										</div>
+										<h5 class="h2" style="font-size: 15px; margin: 0 0 10px; color: #FFFFFF !important; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">VĂN PHÒNG HỒ CHÍ MINH</h5>
+										
+										<div class="footer-info" style="line-height: 1.6; display: flex; gap: 10px; align-items: flex-start; margin-bottom: 16px; color: #E2E8F0 !important;">
+											<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px;">
+												<path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+												<circle cx="12" cy="10" r="3"/>
+											</svg>
+											<span>137 Hòa Hưng, Phường Hòa Hưng, TP. Hồ Chí Minh</span>
+										</div>
+									</div>
+									
+									<div style="padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; gap: 10px;">
+										<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
+											<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+										</svg>
+										<a class="footer-info" href="tel:02873048700" style="color: #60A5FA !important; font-weight: 700; font-size: 16px; letter-spacing: 0.5px; text-decoration: none;">028.7304.8700</a>
+									</div>
+								</div>
+
+								<!-- Column 3: Hotline Tổng Đài -->
+								<div style="background: linear-gradient(145deg, rgba(37,99,235,0.25) 0%, rgba(29,78,216,0.1) 100%); border: 1px solid rgba(59, 130, 246, 0.6); border-radius: 14px; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 6px 24px rgba(37,99,235,0.3);">
+									<div>
+										<div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
+											<div style="width: 44px; height: 44px; border-radius: 12px; background: rgba(59, 130, 246, 0.3); border: 1px solid rgba(96, 165, 250, 0.6); display: flex; align-items: center; justify-content: center;">
+												<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+													<path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
+													<path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
+												</svg>
+											</div>
+											<span class="body-16" style="font-size: 11px; font-weight: 700; text-transform: uppercase; background: rgba(37, 99, 235, 0.35); color: #93C5FD; padding: 4px 10px; border-radius: 20px; border: 1px solid rgba(96, 165, 250, 0.5);">Tư vấn 24/7</span>
+										</div>
+										<h5 class="h2" style="font-size: 15px; margin: 0 0 14px; color: #FFFFFF !important; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">HOTLINE TỔNG ĐÀI</h5>
+										
+										<a href="tel:1900638400" style="display: flex; align-items: center; justify-content: center; gap: 10px; background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%); color: #ffffff !important; padding: 12px 22px; border-radius: 30px; text-decoration: none; margin-bottom: 12px; box-shadow: 0 4px 16px rgba(37, 99, 235, 0.5); transition: transform 0.2s;">
+											<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+												<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+											</svg>
+											<span style="font-size: 20px; font-weight: 800; letter-spacing: 0.5px;">1900.63.8400</span>
+										</a>
+									</div>
+									<p class="body-16" style="font-size: 12.5px; color: #CBD5E1 !important; margin: 0; text-align: center; line-height: 1.4;">
+										Hỗ trợ và tư vấn khách hàng mọi lúc, mọi nơi
+									</p>
+								</div>
+
+							</div>
+
+							<!-- Commitment Badges Row -->
+							<div style="margin-top: 24px; padding: 14px 24px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center; gap: 28px; font-size: 13.5px; color: #E2E8F0 !important; flex-wrap: wrap;">
+								<div class="footer-info" style="display: flex; align-items: center; gap: 8px; font-weight: 500; color: #E2E8F0 !important;">
+									<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+										<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+										<path d="m9 12 2 2 4-4"/>
+									</svg>
+									<span>Sản phẩm chính hãng</span>
+								</div>
+								<span style="color: rgba(255,255,255,0.3);">|</span>
+								<div class="footer-info" style="display: flex; align-items: center; gap: 8px; font-weight: 500; color: #E2E8F0 !important;">
+									<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+										<path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+									</svg>
+									<span>Bảo hành uy tín</span>
+								</div>
+								<span style="color: rgba(255,255,255,0.3);">|</span>
+								<div class="footer-info" style="display: flex; align-items: center; gap: 8px; font-weight: 500; color: #E2E8F0 !important;">
+									<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+										<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+									</svg>
+									<span>Hỗ trợ tận tâm</span>
 								</div>
 							</div>
+
 						</nav>
 						<hr />
 						<div class="footer-flex">
@@ -467,78 +562,17 @@
 									</defs>
 								</svg>
 							</div>
-							<div class="box-flex media">
-								<a href="#" rel="nofollow" target="_blank" title="Vasco Electronics Facebook"><svg
-										fill="none" height="40" role="img" viewbox="0 0 41 40" width="41"
-										xmlns="http://www.w3.org/2000/svg">
-										<title>Facebook</title>
-										<path
-											d="M23.6084 39.4749H16.1084C15.7769 39.4749 15.459 39.3432 15.2245 39.1088C14.9901 38.8744 14.8584 38.5564 14.8584 38.2249V23.6582H11.0417C10.7102 23.6582 10.3923 23.5265 10.1579 23.2921C9.92344 23.0577 9.79175 22.7398 9.79175 22.4082V16.1832C9.79175 15.8517 9.92344 15.5338 10.1579 15.2994C10.3923 15.0649 10.7102 14.9332 11.0417 14.9332H14.8167V11.0332C14.8167 4.45824 18.8167 0.524902 25.5501 0.524902H30.0834C30.4149 0.524902 30.7329 0.656598 30.9673 0.891019C31.2017 1.12544 31.3334 1.44338 31.3334 1.7749V8.33324C31.3334 8.66476 31.2017 8.9827 30.9673 9.21712C30.7329 9.45154 30.4149 9.58324 30.0834 9.58324H27.0501C26.7432 9.56873 26.4368 9.62149 26.1524 9.73782C25.868 9.85416 25.6124 10.0312 25.4037 10.2567C25.1949 10.4821 25.0379 10.7505 24.9437 11.043C24.8495 11.3355 24.8204 11.645 24.8584 11.9499V14.9499H30.0584C30.2458 14.9479 30.4311 14.989 30.6002 15.0699C30.7692 15.1508 30.9174 15.2694 31.0334 15.4166C31.1507 15.5635 31.2333 15.7349 31.2751 15.9181C31.317 16.1014 31.317 16.2917 31.2751 16.4749L29.8501 22.6916C29.7851 22.9665 29.63 23.2118 29.4095 23.3884C29.1891 23.5651 28.9159 23.663 28.6334 23.6666H24.8584V38.2249C24.8562 38.5557 24.7238 38.8724 24.4899 39.1064C24.2559 39.3403 23.9393 39.4727 23.6084 39.4749ZM17.3167 36.9749H22.3584V22.4082C22.3584 22.0767 22.4901 21.7588 22.7245 21.5244C22.959 21.2899 23.2769 21.1582 23.6084 21.1582H27.6334L28.4667 17.4416H23.6084C23.2769 17.4416 22.959 17.3099 22.7245 17.0755C22.4901 16.841 22.3584 16.5231 22.3584 16.1916V11.9416C22.3584 9.5249 23.8084 7.0749 27.0501 7.0749H28.8084V3.03324H25.5501C20.2584 3.03324 17.3417 5.88324 17.3417 11.0416V16.1916C17.3417 16.5231 17.2101 16.841 16.9756 17.0755C16.7412 17.3099 16.4233 17.4416 16.0917 17.4416H12.2917V21.1666H16.0667C16.3983 21.1666 16.7162 21.2983 16.9506 21.5327C17.1851 21.7671 17.3167 22.085 17.3167 22.4166V36.9749Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="sr-only">Mở trong một cửa sổ mới</span>
+							<div class="box-flex media" style="display: flex; align-items: center; gap: 12px;">
+								<a href="#" target="_blank" title="Facebook" style="width: 40px; height: 40px; border-radius: 50%; border: 1.5px solid rgba(255, 255, 255, 0.4); display: inline-flex; align-items: center; justify-content: center; color: #FFFFFF !important; text-decoration: none; font-weight: 700; font-size: 18px; font-family: system-ui, -apple-system, sans-serif; transition: all 0.2s ease; box-sizing: border-box;">
+									f
 								</a>
-								<a href="#" rel="nofollow" target="_blank" title="Vasco Electronics Youtube"><svg
-										fill="none" height="40" role="img" viewbox="0 0 41 40" width="41"
-										xmlns="http://www.w3.org/2000/svg">
-										<title>Youtube</title>
-										<g clip-path="url(#clip0_9795_6548)">
-											<path
-												d="M28.2251 19.7832C28.2173 19.6874 28.2005 19.5926 28.1751 19.4999C28.1 19.1671 27.9488 18.8561 27.7334 18.5916C27.518 18.327 27.2442 18.1159 26.9334 17.9749L18.6168 14.1666C18.2726 14.007 17.8937 13.9367 17.5151 13.9621C17.1366 13.9876 16.7705 14.108 16.4508 14.3123C16.1311 14.5166 15.868 14.7982 15.6858 15.131C15.5036 15.4638 15.4082 15.8372 15.4084 16.2166V24.0749C15.4106 24.6732 15.6493 25.2463 16.0723 25.6694C16.4954 26.0924 17.0685 26.331 17.6668 26.3332C18.0072 26.3322 18.3431 26.2553 18.6501 26.1082L26.9834 22.0832C27.3091 21.9277 27.5912 21.6943 27.8049 21.4035C28.0186 21.1128 28.1572 20.7737 28.2084 20.4166C28.2045 20.3917 28.2045 20.3664 28.2084 20.3416C28.2207 20.2057 28.2207 20.0691 28.2084 19.9332C28.1942 19.883 28.2002 19.8291 28.2251 19.7832ZM17.9084 23.6582V16.5666L25.4084 20.0249L17.9084 23.6582Z"
-												fill="currentColor"></path>
-											<path
-												d="M20.55 4.55835C2.08337 4.55835 0.866699 6.50002 0.866699 20C0.866699 33.5 2.08337 35.4417 20.55 35.4417C39.0167 35.4417 40.2334 33.5083 40.2334 20C40.2334 6.49168 39.0167 4.55835 20.55 4.55835ZM20.55 32.9417C3.3667 32.9417 3.3667 31.9667 3.3667 20C3.3667 8.03335 3.3667 7.05835 20.55 7.05835C37.7334 7.05835 37.7334 8.03335 37.7334 20C37.7334 31.9667 37.7334 32.9417 20.55 32.9417Z"
-												fill="currentColor"></path>
-										</g>
-										<defs>
-											<clippath id="clip0_9795_6548">
-												<rect fill="currentColor" height="40" transform="translate(0.550049)"
-													width="40"></rect>
-											</clippath>
-										</defs>
+								<a href="#" target="_blank" title="Youtube" style="width: 40px; height: 40px; border-radius: 50%; border: 1.5px solid rgba(255, 255, 255, 0.4); display: inline-flex; align-items: center; justify-content: center; color: #FFFFFF !important; text-decoration: none; transition: all 0.2s ease; box-sizing: border-box;">
+									<svg width="15" height="15" viewBox="0 0 24 24" fill="#FFFFFF" style="margin-left: 2px;">
+										<path d="M8 5v14l11-7z"/>
 									</svg>
-									<span class="sr-only">Mở trong một cửa sổ mới</span>
 								</a>
-								<a href="#" rel="nofollow" target="_blank" title="Vasco Electronics Instagram"><svg
-										fill="none" height="40" role="img" viewbox="0 0 41 40" width="41"
-										xmlns="http://www.w3.org/2000/svg">
-										<title>Instagram</title>
-										<path
-											d="M29.025 37.2249H12.075C9.75498 37.2227 7.53067 36.3001 5.8902 34.6596C4.24974 33.0192 3.32716 30.7949 3.32495 28.4749V11.5249C3.32716 9.20494 4.24974 6.98062 5.8902 5.34015C7.53067 3.69969 9.75498 2.77711 12.075 2.7749H29.025C31.3449 2.77711 33.5692 3.69969 35.2097 5.34015C36.8502 6.98062 37.7727 9.20494 37.7749 11.5249V28.4749C37.7727 30.7949 36.8502 33.0192 35.2097 34.6596C33.5692 36.3001 31.3449 37.2227 29.025 37.2249ZM12.075 5.2749C10.4173 5.2749 8.82764 5.93338 7.65553 7.10548C6.48343 8.27759 5.82495 9.8673 5.82495 11.5249V28.4749C5.82495 30.1325 6.48343 31.7222 7.65553 32.8943C8.82764 34.0664 10.4173 34.7249 12.075 34.7249H29.025C30.6826 34.7249 32.2723 34.0664 33.4444 32.8943C34.6165 31.7222 35.2749 30.1325 35.2749 28.4749V11.5249C35.2749 9.8673 34.6165 8.27759 33.4444 7.10548C32.2723 5.93338 30.6826 5.2749 29.025 5.2749H12.075Z"
-											fill="currentColor"></path>
-										<path
-											d="M20.55 28.7416C18.8211 28.7416 17.131 28.2289 15.6934 27.2684C14.2559 26.3079 13.1354 24.9426 12.4738 23.3453C11.8121 21.7479 11.639 19.9903 11.9763 18.2946C12.3136 16.5988 13.1462 15.0412 14.3687 13.8187C15.5913 12.5961 17.1489 11.7636 18.8446 11.4263C20.5403 11.089 22.298 11.2621 23.8953 11.9237C25.4926 12.5854 26.8579 13.7058 27.8184 15.1434C28.779 16.5809 29.2917 18.271 29.2917 20C29.2873 22.3171 28.3649 24.538 26.7264 26.1764C25.088 27.8148 22.8671 28.7372 20.55 28.7416ZM20.55 13.7416C19.3162 13.7416 18.1101 14.1073 17.0841 14.7924C16.058 15.4775 15.258 16.4513 14.7851 17.5909C14.3122 18.7304 14.1876 19.9846 14.4271 21.1949C14.6666 22.4052 15.2594 23.5174 16.1306 24.3909C17.0019 25.2645 18.1125 25.8603 19.3221 26.103C20.5318 26.3457 21.7863 26.2245 22.9271 25.7546C24.0679 25.2848 25.0438 24.4873 25.7317 23.4631C26.4195 22.4389 26.7884 21.2337 26.7917 20C26.7895 18.3453 26.1312 16.7589 24.9611 15.5889C23.791 14.4188 22.2047 13.7605 20.55 13.7583V13.7416Z"
-											fill="currentColor"></path>
-										<path
-											d="M29.975 12.8417C31.2085 12.8417 32.2084 11.8418 32.2084 10.6083C32.2084 9.3749 31.2085 8.375 29.975 8.375C28.7416 8.375 27.7417 9.3749 27.7417 10.6083C27.7417 11.8418 28.7416 12.8417 29.975 12.8417Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="sr-only">Mở trong một cửa sổ mới</span>
-								</a>
-								<a href="#" rel="nofollow" target="_blank" title="Vasco Electronics Linkedin">
-									<svg class="linkedin-svg" fill="none" height="32" viewbox="0 0 32 32" width="32"
-										xmlns="http://www.w3.org/2000/svg">
-										<path clip-rule="evenodd"
-											d="M10.4597 26.1536V12.2668H5.81525V26.1536H10.4597ZM8.13745 10.3703C8.46352 10.3889 8.78994 10.3406 9.09672 10.2286C9.40351 10.1166 9.6842 9.94314 9.9216 9.71885C10.159 9.49457 10.3481 9.22418 10.4774 8.92425C10.6066 8.62432 10.6733 8.30116 10.6733 7.97457C10.6733 7.64797 10.6066 7.32482 10.4774 7.02489C10.3481 6.72496 10.159 6.45457 9.9216 6.23029C9.6842 6.006 9.40351 5.83254 9.09672 5.72052C8.78994 5.6085 8.46352 5.56029 8.13745 5.57883C7.81192 5.55658 7.48526 5.60095 7.17746 5.70924C6.86966 5.81753 6.58718 5.98746 6.34729 6.20863C6.10739 6.4298 5.91512 6.69758 5.78224 6.99559C5.64935 7.2936 5.57864 7.61558 5.57442 7.94185C5.5702 8.26811 5.63257 8.59181 5.75771 8.89315C5.88285 9.1945 6.06813 9.46715 6.30223 9.69445C6.53633 9.92175 6.81433 10.0989 7.11923 10.2151C7.42413 10.3313 7.74953 10.3841 8.07553 10.3703H8.13745Z"
-											fill="currentColor" fill-rule="evenodd"></path>
-										<path clip-rule="evenodd"
-											d="M13.0135 26.1536H17.6579V18.4129C17.64 18.0324 17.6925 17.6519 17.8127 17.2905C17.9847 16.8005 18.3038 16.3754 18.7263 16.0734C19.1488 15.7714 19.6542 15.6072 20.1736 15.603C21.8456 15.603 22.4958 16.8725 22.4958 18.738V26.1691H27.1402V18.1884C27.1402 13.931 24.8644 11.9417 21.8224 11.9417C20.9784 11.9067 20.1411 12.105 19.4023 12.5146C18.6636 12.9243 18.052 13.5295 17.6346 14.2639V12.2513H12.9902C13.0522 13.5595 12.9902 26.1381 12.9902 26.1381L13.0135 26.1536Z"
-											fill="currentColor" fill-rule="evenodd"></path>
-										<path
-											d="M3.71582 1.16113H28.2842C29.695 1.16113 30.8389 2.30505 30.8389 3.71582V28.2842C30.8389 29.695 29.695 30.8389 28.2842 30.8389H3.71582C2.30505 30.8389 1.16113 29.695 1.16113 28.2842V3.71582C1.16113 2.30505 2.30505 1.16113 3.71582 1.16113Z"
-											stroke="currentColor" stroke-width="2.32221"></path>
-									</svg>
-									<span class="sr-only">Mở trong một cửa sổ mới</span>
-								</a>
-								<a href="#" rel="nofollow" target="_blank" title="Vasco Electronics X">
-									<svg fill="none" height="32" role="img" viewbox="0 0 32 32" width="32"
-										xmlns="http://www.w3.org/2000/svg">
-										<title>X</title>
-										<path clip-rule="evenodd"
-											d="M0.564412 0.273128C0.669681 0.42333 3.1076 3.97181 5.98203 8.15859C8.85646 12.3454 11.515 16.2173 11.89 16.7628C12.265 17.3084 12.5717 17.7657 12.5717 17.7791C12.5717 17.7925 12.4321 17.9646 12.2615 18.1616C12.0908 18.3586 11.6102 18.9163 11.1934 19.4009C10.7766 19.8855 10.0739 20.7022 9.63197 21.2159C9.19003 21.7295 8.41252 22.6335 7.90415 23.2247C7.39581 23.8159 6.48166 24.8787 5.87271 25.5866C3.98933 27.7761 3.71754 28.0923 2.28385 29.7621C1.51832 30.6537 0.784219 31.5063 0.652553 31.6566C0.520888 31.8069 0.413153 31.9457 0.413153 31.965C0.413153 31.9876 0.893999 32 1.7679 32H3.12262L4.61199 30.2643C5.43116 29.3097 6.23923 28.37 6.40769 28.1762C6.77199 27.7571 9.55014 24.5246 9.78365 24.2481C9.87306 24.1423 10.0029 23.9916 10.0723 23.9133C10.1416 23.835 10.6882 23.2 11.2869 22.5022C11.8855 21.8044 12.3918 21.2164 12.4119 21.1955C12.432 21.1746 12.7489 20.8059 13.1162 20.3761C13.4835 19.9464 13.7954 19.5947 13.8092 19.5947C13.8231 19.5947 15.7098 22.3264 18.002 25.6652C20.2942 29.0039 22.2105 31.7948 22.2606 31.8671L22.3515 31.9985L26.9984 31.9993C30.8199 31.9999 31.6422 31.9918 31.6276 31.9537C31.6121 31.9133 29.3857 28.6658 23.6739 20.3524C19.5621 14.3677 19.0154 13.5635 19.0311 13.5227C19.0463 13.483 19.6064 12.8279 23.2884 8.54333C23.92 7.80839 24.7907 6.79471 25.2232 6.29075C25.6557 5.78678 26.0924 5.27929 26.1937 5.163C26.2949 5.0467 26.8271 4.42819 27.3764 3.78855C27.9256 3.1489 28.8594 2.06203 29.4514 1.37329C30.0434 0.684547 30.5495 0.0938153 30.576 0.0605114C30.6216 0.0035246 30.5442 0 29.2484 0H27.8723L27.2603 0.713656C26.4457 1.66344 24.9733 3.37618 24.5552 3.86016C24.3705 4.07401 24.14 4.34277 24.0431 4.45737C23.9462 4.57198 23.755 4.79348 23.6182 4.9496C23.4814 5.10573 22.7921 5.90749 22.0864 6.73128C21.3807 7.55507 20.7936 8.237 20.7818 8.2467C20.77 8.25639 20.6188 8.43179 20.4458 8.63651C20.1432 8.99457 19.8352 9.35299 18.4229 10.9908C17.803 11.7098 17.7712 11.7407 17.719 11.6746C17.6889 11.6365 15.8722 8.99429 13.6819 5.80303L9.6995 0.00073995L5.03627 0.000352767L0.373047 0L0.564412 0.273128ZM4.20399 2.17593C4.23902 2.22939 5.11028 3.47841 6.14017 4.95154C8.0934 7.74541 15.7688 18.7308 20.705 25.7974C22.2824 28.0555 23.5922 29.923 23.6157 29.9474C23.6493 29.9823 24.1086 29.9898 25.7618 29.9827L27.865 29.9736L22.3612 22.0969C19.3341 17.7648 14.9513 11.4925 12.6217 8.15859L8.38609 2.09692L6.26323 2.08782L4.14038 2.07873L4.20399 2.17593Z"
-											fill="currentColor" fill-rule="evenodd"></path>
-									</svg>
-									<span class="sr-only">Mở trong một cửa sổ mới</span>
+								<a href="#" target="_blank" title="LinkedIn" style="width: 40px; height: 40px; border-radius: 50%; border: 1.5px solid rgba(255, 255, 255, 0.4); display: inline-flex; align-items: center; justify-content: center; color: #FFFFFF !important; text-decoration: none; font-weight: 700; font-size: 16px; font-family: system-ui, -apple-system, sans-serif; transition: all 0.2s ease; box-sizing: border-box;">
+									in
 								</a>
 							</div>
 						</div>
@@ -1392,6 +1426,19 @@
     });
 })();
 </script>
+
+<!-- Floating Hotline Direct Call Button -->
+<a href="tel:1900638400" id="vasco-floating-hotline" title="Gọi ngay Hotline 1900.63.8400" style="position: fixed; bottom: 25px; right: 25px; z-index: 999999; display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%); border-radius: 50%; box-shadow: 0 6px 22px rgba(37, 99, 235, 0.55); text-decoration: none; transition: transform 0.25s ease, box-shadow 0.25s ease;">
+	<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+		<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+	</svg>
+</a>
+<style>
+#vasco-floating-hotline:hover {
+	transform: scale(1.08);
+	box-shadow: 0 8px 28px rgba(37, 99, 235, 0.75);
+}
+</style>
 
 <?php wp_footer(); ?>
 </body>

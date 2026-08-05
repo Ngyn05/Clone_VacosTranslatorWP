@@ -382,11 +382,15 @@
 
 	// ── 7. Phone Icon Click Handler ────────────────────────────────
 	document.addEventListener('click', function (e) {
-		var phoneBtn = e.target.closest('#phone-numbers .icon, .phone-number .icon, .phone-icon-link');
+		var phoneBtn = e.target.closest('#phone-numbers .icon, .phone-number .icon, .phone-icon-link, #vasco-floating-hotline');
 		if (phoneBtn) {
+			var href = phoneBtn.getAttribute('href');
+			if (href && href.indexOf('tel:') === 0) {
+				// Allow direct tel: call, do not block or redirect to /contact/
+				return;
+			}
 			e.preventDefault();
-			var contactUrl = (window.VASCO_HOME_URL || '/') + 'contact/';
-			window.location.href = contactUrl;
+			window.location.href = 'tel:1900638400';
 		}
 	});
 })();
