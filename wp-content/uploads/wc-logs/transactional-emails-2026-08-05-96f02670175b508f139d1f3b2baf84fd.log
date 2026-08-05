@@ -10,3 +10,9 @@
 2026-08-05T07:40:13+00:00 INFO Email "new_order" for order #816 sent CONTEXT: {"email_type":"new_order","status":"sent","recipient":"adminlocal","order":816}
 2026-08-05T07:40:13+00:00 INFO Email "customer_processing_order" for order #816 sent CONTEXT: {"email_type":"customer_processing_order","status":"sent","recipient":"guest","order":816}
 2026-08-05T07:40:14+00:00 INFO Email "customer_processing_order" for order #816 sent CONTEXT: {"email_type":"customer_processing_order","status":"sent","recipient":"guest","order":816}
+2026-08-05T07:52:25+00:00 WARNING Test email "new_order" for order #0 failed to send: SMTP Error: Could not authenticate. CONTEXT: {"email_type":"new_order","status":"failed","recipient":"adminlocal","order":0,"is_test":true}
+2026-08-05T07:52:48+00:00 WARNING Test email "new_order" for order #0 failed to send: SMTP Error: Could not authenticate. CONTEXT: {"email_type":"new_order","status":"failed","recipient":"guest","order":0,"is_test":true}
+2026-08-05T07:54:11+00:00 INFO Test email "new_order" for order #0 sent CONTEXT: {"email_type":"new_order","status":"sent","recipient":"guest","order":0,"is_test":true}
+2026-08-05T07:57:09+00:00 INFO Email "new_order" for order #817 sent CONTEXT: {"email_type":"new_order","status":"sent","recipient":"adminlocal","order":817}
+2026-08-05T07:57:13+00:00 INFO Email "customer_processing_order" for order #817 sent CONTEXT: {"email_type":"customer_processing_order","status":"sent","recipient":"adminlocal","order":817}
+2026-08-05T07:57:18+00:00 INFO Email "customer_processing_order" for order #817 sent CONTEXT: {"email_type":"customer_processing_order","status":"sent","recipient":"adminlocal","order":817}

@@ -15,6 +15,11 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Tự động cấu hình PHPMailer khi WordPress gửi mail
  */
 function vasco_configure_smtp( $phpmailer ) {
+	// Nhường quyền cho plugin WP Mail SMTP nếu đang kích hoạt
+	if ( class_exists( 'WPMailSMTP' ) || function_exists( 'wp_mail_smtp' ) ) {
+		return;
+	}
+
 	// Lấy cấu hình từ wp-config.php hoặc môi trường .env
 	$smtp_host  = defined( 'WP_SMTP_HOST' ) ? WP_SMTP_HOST : ( getenv( 'SMTP_HOST' ) ?: '' );
 	$smtp_user  = defined( 'WP_SMTP_USER' ) ? WP_SMTP_USER : ( getenv( 'SMTP_USER' ) ?: '' );
