@@ -218,12 +218,12 @@ add_action( 'after_switch_theme', 'vasco_theme_after_switch' );
 /**
  * Auto sync on Admin Load if not synced yet
  */
-function vasco_theme_auto_sync_on_admin() {
+function vasco_theme_auto_sync_on_admin( $force = false ) {
 	// Disable WooCommerce Coming Soon mode to show real products
 	update_option( 'woocommerce_coming_soon', 'no' );
 	update_option( 'woocommerce_store_pages_only', 'no' );
 
-	if ( get_option( 'vasco_pages_checkout_synced_v10' ) ) {
+	if ( ! $force && ! isset( $_GET['vasco_force_sync'] ) && get_option( 'vasco_pages_checkout_synced_v10' ) ) {
 		return;
 	}
 	vasco_theme_sync_pages( true );
@@ -278,7 +278,7 @@ function vasco_theme_auto_sync_on_admin() {
 }
 add_action( 'admin_init', 'vasco_theme_auto_sync_on_admin' );
 add_action( 'init', function() {
-	if ( current_user_can( 'manage_options' ) ) {
+	if ( current_user_can( 'manage_options' ) || isset( $_GET['vasco_force_sync'] ) ) {
 		vasco_theme_auto_sync_on_admin();
 	}
 } );
