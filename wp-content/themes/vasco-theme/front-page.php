@@ -18,24 +18,21 @@ get_header();
 				<div class="js-content-wrapper" id="content-wrapper">
 					<section id="main">
 						<section class="page-home" id="content">
-							<section class="hero-section" style="min-height: auto;">
+							<section class="hero-section hero-clean-minimal">
 								<div class="number-one number-one-floating hero-badge-anim">
 									<img alt="number one" class="nr-one"
 										src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/icons/no1-badge.svg" ); ?>" />
 								</div>
 								<section class="doubleboxes">
-									<div class="doublebox left" id="box-color-random"
-										style="background-color: #EFECE8; color: #EFECE8;">
-										<div class="container" style="justify-content: center !important;">
-											<div class="doublebox-content hero-content-anim" style="width: 100% !important; max-width: 800px !important; text-align: center !important; align-items: center !important;">
-												<div>
-													<h1 class="h1 hero-title-anim" style="margin-bottom: 0.75rem;">
-														Nói như người bản địa bằng 54 ngôn ngữ với giọng nói độc đáo của
-														bạn.
-													</h1>
-													<p class="hero-subtitle hero-sub-anim" style="margin-bottom: 1.5rem;">Vasco Translator Q1 với công nghệ nhân bản
-														giọng nói.</p>
-												</div>
+									<div class="doublebox left" id="box-color-random">
+										<div class="container">
+											<div class="doublebox-content hero-content-anim">
+												<h1 class="h1 hero-title-anim">
+													Nói như người bản địa bằng <span class="counter-badge-anim">54</span> ngôn ngữ với giọng nói độc đáo của bạn.
+												</h1>
+												<p class="hero-subtitle hero-sub-anim">
+													Vasco Translator Q1 với công nghệ nhân bản giọng nói AI.
+												</p>
 												<a class="btn btn-2xl btn-primary hero-btn-anim" href="<?php echo esc_url( home_url( "/translators/" ) ); ?>" id="btn-change">
 													<img alt="" aria-hidden="true"
 														src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/right-arrow.svg" ); ?>" />

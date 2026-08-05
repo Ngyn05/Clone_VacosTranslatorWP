@@ -231,7 +231,7 @@
 			html += '<div style="background:#EFECE8;border-radius:14px;padding:18px;display:flex;align-items:center;gap:16px;margin-bottom:24px;">';
 			html += '<img src="' + itemImg + '" alt="' + itemName + '" style="width:70px;height:70px;object-fit:contain;border-radius:8px;background:#fff;padding:4px;" />';
 			html += '<div>';
-			html += '<h4 style="margin:0 0 4px 0;font-size:17px;font-weight:700;color:#2D3139;font-family:Georgia, serif;">' + itemName + '</h4>';
+			html += '<h4 style="margin:0 0 4px 0;font-size:17px;font-weight:700;color:#2D3139;font-family:\'Noto Sans\', -apple-system, sans-serif;">' + itemName + '</h4>';
 			html += '<span style="font-size:13px;color:#718096;">Sản phẩm chính hãng Vasco</span>';
 			html += '</div></div>';
 
