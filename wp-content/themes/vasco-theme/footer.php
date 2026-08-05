@@ -84,46 +84,86 @@
 								max-width: 480px !important;
 								width: 100% !important;
 							}
-							.vasco-menu-grid {
-								grid-template-columns: repeat(2, 1fr) !important;
-								gap: 28px 16px !important;
-								text-align: center !important;
+							/* RESPONSIVE FOOTER ACCORDION MENU ON MOBILE (<768PX) */
+							@media (max-width: 768px) {
+								.vasco-menu-grid {
+									grid-template-columns: 1fr !important;
+									gap: 8px !important;
+								}
+								.footer-nav {
+									border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+									padding-bottom: 8px !important;
+									margin-bottom: 4px !important;
+								}
+								.vasco-menu-grid .footer-column-header {
+									display: flex !important;
+									align-items: center !important;
+									justify-content: space-between !important;
+									cursor: pointer !important;
+									padding: 12px 4px !important;
+									user-select: none !important;
+									-webkit-tap-highlight-color: transparent !important;
+								}
+								.vasco-menu-grid .footer-column-header h4 {
+									margin: 0 !important;
+									font-size: 16px !important;
+									font-weight: 700 !important;
+									color: #FFFFFF !important;
+									text-align: left !important;
+								}
+								.vasco-menu-grid .footer-column-header svg {
+									transition: transform 0.3s ease !important;
+									flex-shrink: 0 !important;
+									display: block !important;
+								}
+								.vasco-menu-grid .footer-column-header.active svg,
+								.vasco-menu-grid .footer-nav.active .footer-column-header svg {
+									transform: rotate(180deg) !important;
+								}
+								.vasco-menu-grid .footer-column-list {
+									display: none !important;
+									padding: 10px 0 12px 12px !important;
+									margin: 0 !important;
+									list-style: none !important;
+									text-align: left !important;
+								}
+								.vasco-menu-grid .footer-column-list li {
+									margin-bottom: 10px !important;
+								}
+								.vasco-menu-grid .footer-column-header.active + .footer-column-list,
+								.vasco-menu-grid .footer-nav.active .footer-column-list,
+								.vasco-menu-grid .footer-column-list.open {
+									display: block !important;
+								}
+								.vasco-commitments {
+									flex-direction: column !important;
+									gap: 8px !important;
+									text-align: center !important;
+								}
+								.vasco-commitment-sep {
+									display: none !important;
+								}
+								.footer-dark-bottom .footer-flex {
+									flex-direction: column !important;
+									align-items: center !important;
+									gap: 20px !important;
+									text-align: center !important;
+								}
+								.footer-dark-bottom .box-flex {
+									justify-content: center !important;
+									width: 100% !important;
+								}
 							}
-							.vasco-menu-grid .footer-column-header {
-								justify-content: center !important;
-								text-align: center !important;
-							}
-							.vasco-menu-grid .footer-column-list {
-								align-items: center !important;
-							}
-							.vasco-commitments {
-								flex-direction: column !important;
-								gap: 8px !important;
-								text-align: center !important;
-							}
-							.vasco-commitment-sep {
-								display: none !important;
-							}
-							.footer-dark-bottom .footer-flex {
-								flex-direction: column !important;
-								align-items: center !important;
-								gap: 20px !important;
-								text-align: center !important;
-							}
-							.footer-dark-bottom .box-flex {
-								justify-content: center !important;
-								width: 100% !important;
-							}
-						}
 
-						/* RESPONSIVE MOBILE NHỎ (MAX 480PX) */
-						@media (max-width: 480px) {
-							.vasco-menu-grid {
-								grid-template-columns: 1fr !important;
-								gap: 24px !important;
+							@media (min-width: 769px) {
+								.vasco-menu-grid .footer-column-header svg {
+									display: none !important;
+								}
+								.vasco-menu-grid .footer-column-list {
+									display: block !important;
+								}
 							}
-						}
-					</style>
+						</style>
 
 					<div class="container">
 						<!-- TOP LOGO & SLOGAN -->
@@ -1468,6 +1508,48 @@
 	box-shadow: 0 8px 28px rgba(37, 99, 235, 0.75);
 }
 </style>
+
+<!-- Mobile Footer Accordion JS -->
+<script>
+(function() {
+    function initFooterAccordion() {
+        var headers = document.querySelectorAll('.vasco-menu-grid .footer-column-header');
+        headers.forEach(function(header) {
+            header.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    var nav = header.closest('.footer-nav');
+                    var list = nav ? nav.querySelector('.footer-column-list') : null;
+                    var isActive = header.classList.contains('active') || (nav && nav.classList.contains('active'));
+                    
+                    if (isActive) {
+                        header.classList.remove('active');
+                        if (nav) nav.classList.remove('active');
+                        if (list) {
+                            list.classList.remove('open');
+                            list.style.display = 'none';
+                        }
+                    } else {
+                        header.classList.add('active');
+                        if (nav) nav.classList.add('active');
+                        if (list) {
+                            list.classList.add('open');
+                            list.style.display = 'block';
+                        }
+                    }
+                }
+            });
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initFooterAccordion);
+    } else {
+        initFooterAccordion();
+    }
+})();
+</script>
 
 <?php wp_footer(); ?>
 </body>

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Clean Page page-comparison-engine.php
  *
@@ -83,10 +83,7 @@ foreach ( $compare_slugs as $data_key => $slug ) {
 foreach ( $compare_products as $data_key => $item ) :
 	?>
 	<label class="comparison-page-choose-to-compare-product" data-product="<?php echo esc_attr( $data_key ); ?>">
-		<input aria-label="<?php echo esc_attr( $item['name'] ); ?>" class="visually-hidden" id="<?php echo esc_attr( str_replace( 'product-', 'vasco-', $data_key ) ); ?>" name="<?php echo esc_attr( str_replace( 'product-', 'vasco-', $data_key ) ); ?>" type="checkbox"/>
-		<div class="choose-image">
-			<img alt="<?php echo esc_attr( $item['name'] ); ?>" height="96" src="<?php echo esc_url( $item['image_url'] ); ?>" title="<?php echo esc_attr( $item['name'] ); ?>" width="96" style="object-fit:contain;"/>
-		</div>
+		<input aria-label="<?php echo esc_attr( $item['name'] ); ?>" class="visually-hidden" id="<?php echo esc_attr( str_replace( 'product-', 'vasco-', $data_key ) ); ?>" name="<?php echo esc_attr( str_replace( 'product-', 'vasco-', $data_key ) ); ?>" type="checkbox" checked/>
 		<p class="compare-product-header-name"><?php echo esc_html( $item['name'] ); ?></p>
 	</label>
 <?php endforeach; ?>
@@ -107,7 +104,7 @@ foreach ( $compare_products as $data_key => $item ) :
 <img alt="<?php echo esc_attr( $item['name'] ); ?>" class="product-img" height="180" src="<?php echo esc_url( $item['image_url'] ); ?>" title="<?php echo esc_attr( $item['name'] ); ?>" width="180" style="object-fit:contain;"/>
 <div class="compare-product-header-prices">
 <p class="compare-product-header-price">
-	<?php echo wp_kses_post( $item['price_html'] ); ?>
+	<?php echo esc_html( $item['product'] ? vasco_theme_format_price( $item['product']->get_price() ) : wp_strip_all_tags( $item['price_html'] ) ); ?>
 </p>
 </div>
 <a class="compare-product-header-link compare-product-header-button" href="<?php echo esc_url( $item['permalink'] ); ?>">

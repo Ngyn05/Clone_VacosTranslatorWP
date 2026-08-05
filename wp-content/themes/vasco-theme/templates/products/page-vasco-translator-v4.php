@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Product Page Template page-vasco-translator-v4.php
  *

@@ -46,6 +46,7 @@ body.admin-bar #header {
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Noto Sans';
     src: url('assets/fonts/NotoSans-Light.woff2') format('woff2');
@@ -53,6 +54,7 @@ body.admin-bar #header {
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Noto Sans';
     src: url('assets/fonts/NotoSans-Medium.woff2') format('woff2');
@@ -60,6 +62,7 @@ body.admin-bar #header {
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Noto Sans';
     src: url('assets/fonts/NotoSans-SemiBold.woff2') format('woff2');
@@ -67,6 +70,7 @@ body.admin-bar #header {
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Noto Sans';
     src: url('assets/fonts/NotoSans-Bold.woff2') format('woff2');
@@ -133,8 +137,18 @@ body.admin-bar #header {
 .product-box *,
 .product-title,
 .product-name,
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
     font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -157,6 +171,7 @@ h1, h2, h3, h4, h5, h6,
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -168,9 +183,11 @@ h1, h2, h3, h4, h5, h6,
         opacity: 0;
         transform: scale(0.6) rotate(-10deg);
     }
+
     70% {
         transform: scale(1.08) rotate(3deg);
     }
+
     100% {
         opacity: 1;
         transform: scale(1) rotate(0deg);
@@ -526,6 +543,7 @@ h1, h2, h3, h4, h5, h6,
     pointer-events: none !important;
     display: block !important;
 }
+
 .number-one-floating img {
     width: 80px !important;
     max-width: 80px !important;
@@ -536,6 +554,7 @@ h1, h2, h3, h4, h5, h6,
         top: 10px !important;
         right: 10px !important;
     }
+
     .number-one-floating img {
         width: 50px !important;
         max-width: 50px !important;
@@ -544,7 +563,9 @@ h1, h2, h3, h4, h5, h6,
 
 /* Mobile Header Navigation Dropdown Fix */
 @media (max-width: 991px) {
-    #open-menu, .open-menu {
+
+    #open-menu,
+    .open-menu {
         cursor: pointer !important;
         pointer-events: auto !important;
         z-index: 1000000 !important;
@@ -568,7 +589,7 @@ h1, h2, h3, h4, h5, h6,
         width: 100vw !important;
         height: calc(100vh - 125px) !important;
         background: #ffffff !important;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.2) !important;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
         z-index: 999999 !important;
         padding: 30px 25px 40px 25px !important;
         box-sizing: border-box !important;
@@ -649,9 +670,11 @@ h1, h2, h3, h4, h5, h6,
 dialog.selector-dialog:not([open]) {
     display: none !important;
 }
+
 dialog.selector-dialog {
     display: none;
 }
+
 dialog.selector-dialog[open] {
     display: block !important;
 }
@@ -862,6 +885,7 @@ button[aria-controls*="video"] {
 
 /* 1. Mobile Devices (Max width: 767px) */
 @media (max-width: 767px) {
+
     /* Doubleboxes layout stack vertically */
     .doubleboxes .doublebox,
     .doublebox.left,
@@ -973,6 +997,7 @@ button[aria-controls*="video"] {
 
 /* 4. Desktop & Extra Large Screens (1200px+) */
 @media (min-width: 1200px) {
+
     .container,
     .max-width-container {
         max-width: 1200px !important;
@@ -1058,7 +1083,7 @@ button[aria-controls*="video"] {
     width: 100% !important;
     height: 100% !important;
     object-fit: contain !important;
-    filter: drop-shadow(0 12px 24px rgba(0,0,0,0.06)) !important;
+    filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.06)) !important;
 }
 
 .product-header-section {
@@ -1275,7 +1300,7 @@ button[aria-controls*="video"] {
     border-radius: 16px !important;
     margin: 36px auto !important;
     display: block !important;
-    box-shadow: 0 12px 36px rgba(0,0,0,0.08) !important;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08) !important;
 }
 
 .product-description ul {
@@ -1297,7 +1322,7 @@ button[aria-controls*="video"] {
     border-radius: 12px !important;
     padding: 16px 20px 16px 48px !important;
     position: relative !important;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.02) !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02) !important;
 }
 
 .product-description ul li::before {
@@ -1513,7 +1538,7 @@ button[aria-controls*="video"] {
     border: 1px solid #f1f5f9 !important;
     border-radius: 12px !important;
     padding: 20px !important;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.02) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02) !important;
 }
 
 .wc-reviews-wrapper #reply-title {
@@ -1594,7 +1619,7 @@ button[aria-controls*="video"] {
     border: 1px solid #f1f5f9 !important;
     border-radius: 12px !important;
     padding: 20px !important;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.02) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02) !important;
 }
 
 @media (max-width: 991px) {
@@ -1602,7 +1627,7 @@ button[aria-controls*="video"] {
         grid-template-columns: 1fr !important;
         gap: 24px !important;
     }
-    
+
     .product-action-info-wrapper {
         grid-template-columns: 1fr !important;
     }
@@ -1701,7 +1726,7 @@ article.product-grid-card .product-thumb-wrapper img {
     width: 100% !important;
     height: 100% !important;
     object-fit: contain !important;
-    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.06)) !important;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.06)) !important;
 }
 
 article.product-grid-card .listing-product-body {
@@ -1881,7 +1906,7 @@ article.product-grid-card .product-price {
     max-width: none !important;
     max-height: none !important;
     object-fit: contain !important;
-    filter: drop-shadow(0 15px 30px rgba(0,0,0,0.07)) !important;
+    filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.07)) !important;
     transition: transform 0.3s ease !important;
 }
 
@@ -2010,10 +2035,21 @@ h2.product-title {
     flex-shrink: 0 !important;
 }
 
-.circle.phantom-black { background-color: #1a1a1a !important; }
-.circle.slate-blue { background-color: #4a6fa5 !important; }
-.circle.mystic-plum { background-color: #7b435b !important; }
-.circle.scarlet-pulse { background-color: #c0392b !important; }
+.circle.phantom-black {
+    background-color: #1a1a1a !important;
+}
+
+.circle.slate-blue {
+    background-color: #4a6fa5 !important;
+}
+
+.circle.mystic-plum {
+    background-color: #7b435b !important;
+}
+
+.circle.scarlet-pulse {
+    background-color: #c0392b !important;
+}
 
 /* Bottom Action Bar (Price + Circular Mô Tả + Blue Add to Cart / Notify Button) */
 .product-description-body,
@@ -2114,6 +2150,7 @@ button.add-to-cart:hover {
 
 /* Mobile Responsiveness */
 @media (max-width: 991px) {
+
     .products-translators .product-miniature,
     .products-listing .product-miniature,
     .products .product-miniature,
@@ -2121,14 +2158,14 @@ button.add-to-cart:hover {
         grid-template-columns: 1fr !important;
         gap: 24px !important;
     }
-    
+
     .products-translators .thumbnail-top,
     .products-listing .product-thumb-wrapper,
     .products .product-thumb-wrapper {
         max-width: 280px !important;
         margin: 0 auto !important;
     }
-    
+
     .product-description-body,
     .listing-product-body-bottom {
         flex-wrap: wrap !important;
@@ -2274,7 +2311,7 @@ img:not([src]) {
     gap: 40px !important;
     padding: 40px !important;
     border-radius: 20px !important;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
 }
 
 .vasco-made-for .doublebox-content-custom-list {
@@ -2348,7 +2385,7 @@ img:not([src]) {
     max-width: 100% !important;
     height: auto !important;
     border-radius: 16px !important;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
 }
 
 .technologies-section.sec-2 .slide .tech-info {
@@ -2365,7 +2402,7 @@ img:not([src]) {
     gap: 40px !important;
     padding: 40px !important;
     border-radius: 20px !important;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
 }
 
 .vasco-made-for .doublebox-content-custom-list {
@@ -2436,7 +2473,7 @@ img:not([src]) {
     margin: 0 auto;
     background: #fff;
     border-radius: 24px;
-    box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
     overflow: hidden;
 }
 
@@ -2517,16 +2554,19 @@ img:not([src]) {
 
 /* Responsive tablet */
 @media (max-width: 991px) {
+
     .si-item,
     .si-item--right {
         flex-direction: column !important;
         min-height: auto;
     }
+
     .si-image {
         flex: none;
         width: 100%;
         height: 260px;
     }
+
     .si-text {
         padding: 32px 24px;
     }
@@ -2536,6 +2576,7 @@ img:not([src]) {
     .socialimpact-card-wrapper {
         padding: 30px 12px;
     }
+
     .si-text {
         padding: 24px 20px;
     }
@@ -2543,6 +2584,7 @@ img:not([src]) {
 
 /* HORIZONTAL SCROLL / SWIPE CHO MÀN HÌNH ĐIỆN THOẠI (MAX 768PX) */
 @media (max-width: 768px) {
+
     /* Cho phép cuộn ngang tự nhiên và vuốt cảm ứng trên Swiper */
     .how-vasco-section .swiper,
     .media-awards .swiper,
@@ -2562,7 +2604,8 @@ img:not([src]) {
         display: flex !important;
         flex-wrap: nowrap !important;
         width: max-content !important;
-        transform: none !important; /* vô hiệu hóa transform cố định của Swiper JS nếu bị lỗi lock */
+        transform: none !important;
+        /* vô hiệu hóa transform cố định của Swiper JS nếu bị lỗi lock */
         transition: none !important;
     }
 
@@ -2701,9 +2744,12 @@ img:not([src]) {
 }
 
 @keyframes gentlePulse {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.12);
     }
@@ -2722,12 +2768,335 @@ img:not([src]) {
 }
 
 @keyframes floatBadge {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0) rotate(0deg);
     }
+
     50% {
         transform: translateY(-8px) rotate(2deg);
     }
 }
 
+/* =============================================
+   FIX RESPONSIVE PRODUCT COMPARISON ENGINE (TRANG SO SÁNH)
+   Ảnh tự co khớp 4 ô, giá tiền hiển thị cùng 1 dòng
+   ============================================= */
+.comparison-page .comparison-table-wrapper {
+    width: 100% !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+}
 
+.comparison-page .comparison-table {
+    width: 100% !important;
+    table-layout: fixed !important;
+    border-collapse: collapse !important;
+}
+
+.comparison-page .comparison-table th[scope="col"],
+.comparison-page .comparison-table td {
+    width: 25% !important;
+    max-width: 25% !important;
+    box-sizing: border-box !important;
+    padding: 6px 2px !important;
+    text-align: center !important;
+    vertical-align: top !important;
+    overflow: hidden !important;
+}
+
+/* Ẩn ảnh ở bộ chọn phía trên (chỉ giữ ảnh ở bảng so sánh bên dưới) */
+.comparison-page .choose-image,
+.comparison-page-choose-to-compare .choose-image {
+    display: none !important;
+}
+
+.comparison-page-choose-to-compare {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin: 12px 0 20px 0 !important;
+}
+
+.comparison-page-choose-to-compare-product {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 6px 14px !important;
+    border-radius: 20px !important;
+    border: 1px solid #d1d5db !important;
+    background-color: #f9fafb !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    margin: 0 !important;
+    height: auto !important;
+    width: auto !important;
+}
+
+.comparison-page-choose-to-compare-product p.compare-product-header-name {
+    margin: 0 !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    color: #374151 !important;
+    line-height: 1.2 !important;
+}
+
+.comparison-page-choose-to-compare-product:has(input:checked) {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+}
+
+.comparison-page-choose-to-compare-product:has(input:checked) p.compare-product-header-name {
+    color: #ffffff !important;
+}
+
+/* Ảnh sản phẩm tự động co vừa vặn trong 4 ô */
+.comparison-page .compare-product-header-wrapper img.product-img,
+.comparison-page .choose-image img,
+.comparison-table img.product-img {
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    max-height: 90px !important;
+    object-fit: contain !important;
+    display: block !important;
+    margin: 0 auto 6px auto !important;
+}
+
+/* Giá tiền hiển thị nằm trên CÙNG 1 DÒNG (white-space: nowrap) */
+.comparison-page .compare-product-header-prices,
+.comparison-table .compare-product-header-prices {
+    display: block !important;
+    width: 100% !important;
+    margin: 4px 0 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+}
+
+.comparison-page .compare-product-header-price,
+.comparison-table .compare-product-header-price,
+.comparison-page .compare-product-header-price *,
+.comparison-table .compare-product-header-price * {
+    font-family: 'Noto Sans', sans-serif !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    color: #111827 !important;
+    white-space: nowrap !important;
+    display: inline-block !important;
+    text-align: center !important;
+    max-width: 100% !important;
+}
+
+/* Tối ưu hóa kích thước chữ & ảnh trên thiết bị di động */
+@media (max-width: 991px) {
+
+    .comparison-page .compare-product-header-wrapper img.product-img,
+    .comparison-page .choose-image img,
+    .comparison-table img.product-img {
+        max-height: 70px !important;
+    }
+
+    .comparison-page .compare-product-header-name,
+    .comparison-table .compare-product-header-name {
+        font-size: 12px !important;
+        line-height: 1.2 !important;
+        height: auto !important;
+        word-break: break-word !important;
+        margin-bottom: 4px !important;
+    }
+
+    .comparison-page .compare-product-header-price,
+    .comparison-table .compare-product-header-price,
+    .comparison-page .compare-product-header-price *,
+    .comparison-table .compare-product-header-price * {
+        font-size: clamp(10px, 2.2vw, 13px) !important;
+        letter-spacing: -0.3px !important;
+    }
+
+    .compare-product-header-button {
+        font-size: 10px !important;
+        padding: 5px 2px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        text-align: center !important;
+        white-space: normal !important;
+        letter-spacing: -0.2px !important;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .comparison-page .compare-product-header-wrapper img.product-img,
+    .comparison-page .choose-image img,
+    .comparison-table img.product-img {
+        max-height: 55px !important;
+    }
+
+    .comparison-page .compare-product-header-name,
+    .comparison-table .compare-product-header-name {
+        font-size: 11px !important;
+    }
+
+    .comparison-page .compare-product-header-price,
+    .comparison-table .compare-product-header-price,
+    .comparison-page .compare-product-header-price *,
+    .comparison-table .compare-product-header-price * {
+        font-size: 9.5px !important;
+        letter-spacing: -0.5px !important;
+    }
+
+    .compare-product-header-wrapper {
+        padding: 2px 1px !important;
+    }
+}
+
+/* ==========================================================================
+   PRODUCT DETAIL PAGE RESPONSIVE STYLES (MOBILE & TABLET)
+   ========================================================================== */
+
+@media (max-width: 991px) {
+    .product-header-wrapper {
+        padding: 16px 0 12px !important;
+    }
+
+    .product-header {
+        display: flex !important;
+        flex-direction: column !important;
+        grid-template-columns: none !important;
+        gap: 24px !important;
+        padding: 0 16px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .product-cover-thumbnail-section {
+        grid-column: auto !important;
+        width: 100% !important;
+    }
+
+    .product-header-section {
+        grid-column: auto !important;
+        width: 100% !important;
+    }
+
+    .product-action-info-wrapper {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+
+    .product-cover {
+        height: 380px !important;
+    }
+
+    .swiper-thumbs-container {
+        height: 380px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-header-wrapper {
+        padding: 12px 0 !important;
+    }
+
+    .product-header {
+        padding: 0 12px !important;
+        gap: 16px !important;
+    }
+
+    .js-product-images {
+        flex-direction: column !important;
+        gap: 12px !important;
+        width: 100% !important;
+    }
+
+    .product-cover {
+        width: 100% !important;
+        height: 320px !important;
+        border-radius: 12px !important;
+        padding: 16px !important;
+    }
+
+    .swiper-thumbs-container {
+        display: none !important;
+    }
+
+    .product-name {
+        font-size: 22px !important;
+        line-height: 1.3 !important;
+        margin-bottom: 8px !important;
+    }
+
+    .product-subtitle {
+        font-size: 13.5px !important;
+        line-height: 1.4 !important;
+        margin-bottom: 12px !important;
+    }
+
+    .product-action-info-wrapper {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px !important;
+        margin-top: 8px !important;
+        margin-bottom: 16px !important;
+    }
+
+    .product-extended-description {
+        width: 100% !important;
+        border-radius: 8px !important;
+    }
+
+    .extended-description-icon {
+        padding: 8px 10px !important;
+    }
+
+    .extended-description-icon p {
+        font-size: 11.5px !important;
+    }
+
+    .current-price-value,
+    .product-prices .product-price {
+        font-size: 24px !important;
+    }
+
+    .btn-add-to-cart {
+        width: 100% !important;
+        padding: 14px 16px !important;
+        font-size: 15px !important;
+        justify-content: center !important;
+        border-radius: 8px !important;
+    }
+
+    .product-tabs-nav {
+        overflow-x: auto !important;
+        white-space: nowrap !important;
+        flex-wrap: nowrap !important;
+        padding-bottom: 8px !important;
+        margin-top: 24px !important;
+        margin-bottom: 24px !important;
+        gap: 8px !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+
+    .product-tab-btn {
+        padding: 8px 16px !important;
+        font-size: 13px !important;
+        flex-shrink: 0 !important;
+    }
+
+    .vasco-specs-table-wrapper {
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+
+    .vasco-specs-table-frontend {
+        font-size: 13px !important;
+    }
+
+    .vasco-specs-table-frontend td {
+        padding: 10px 12px !important;
+    }
+}
