@@ -58,6 +58,12 @@ function vasco_theme_setup() {
 }
 add_action( 'after_setup_theme', 'vasco_theme_setup' );
 
+/**
+ * Ưu tiên trình soạn thảo trực quan Classic Visual Editor (TinyMCE) giúp đội ngũ Content viết bài dễ dàng
+ */
+add_filter( 'use_block_editor_for_post', '__return_false', 10 );
+
+
 // Turn off WooCommerce Coming Soon mode automatically
 add_action( 'init', function () {
 	if ( 'yes' === get_option( 'woocommerce_coming_soon' ) ) {

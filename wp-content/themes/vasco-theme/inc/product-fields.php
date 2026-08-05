@@ -353,3 +353,104 @@ function vasco_tab_faq_content() {
 	</div>
 	<?php
 }
+
+// =============================================================
+// POSTS: Metabox Cấu hình Bài viết (Posts) & Geo SEO Meta
+// =============================================================
+
+function vasco_add_post_custom_metabox() {
+	add_meta_box(
+		'vasco_post_settings_metabox',
+		'Cấu hình thông tin bài viết & SEO Meta',
+		'vasco_render_post_custom_metabox',
+		'post',
+		'normal',
+		'high'
+	);
+}
+add_action( 'add_meta_boxes', 'vasco_add_post_custom_metabox' );
+
+function vasco_render_post_custom_metabox( $post ) {
+	wp_nonce_field( 'vasco_post_meta_save_action', 'vasco_post_meta_nonce' );
+
+	$author_name = get_post_meta( $post->ID, '_vasco_author_name', true );
+	$read_time   = get_post_meta( $post->ID, '_vasco_read_time', true );
+	$focus_kw    = get_post_meta( $post->ID, '_yoast_wpseo_focuskw', true );
+	$yoast_title = get_post_meta( $post->ID, '_yoast_wpseo_title', true );
+	$yoast_desc  = get_post_meta( $post->ID, '_yoast_wpseo_metadesc', true );
+	?>
+	<div style="padding:10px 0;">
+		<table class="form-table" style="width:100%;">
+			<tr>
+				<th style="width:22%;"><label for="vasco_author_name">Tác giả bài viết</label></th>
+				<td>
+					<input type="text" id="vasco_author_name" name="vasco_author_name" value="<?php echo esc_attr( $author_name ); ?>" class="regular-text" placeholder="VD: Weronika Górecka" />
+					<p class="description">Tên tác giả hiển thị tại trang danh sách và chi tiết bài viết.</p>
+				</td>
+			</tr>
+			<tr>
+				<th><label for="vasco_read_time">Thời gian đọc</label></th>
+				<td>
+					<input type="text" id="vasco_read_time" name="vasco_read_time" value="<?php echo esc_attr( $read_time ); ?>" class="regular-text" placeholder="VD: 15 phút đọc" />
+					<p class="description">Thời gian ước tính để đọc hết bài viết (VD: 10 phút đọc).</p>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr style="border:0;border-top:1px solid #eee;margin:10px 0;"/></td>
+			</tr>
+			<tr>
+				<th><label for="vasco_focus_kw">Từ khóa SEO chính</label></th>
+				<td>
+					<input type="text" id="vasco_focus_kw" name="vasco_focus_kw" value="<?php echo esc_attr( $focus_kw ); ?>" class="regular-text" placeholder="VD: Ngôn ngữ cổ nhất" />
+				</td>
+			</tr>
+			<tr>
+				<th><label for="vasco_yoast_title">Tiêu đề SEO (Title Tag)</label></th>
+				<td>
+					<input type="text" id="vasco_yoast_title" name="vasco_yoast_title" value="<?php echo esc_attr( $yoast_title ); ?>" class="large-text" placeholder="Tiêu đề hiển thị trên Google..." />
+				</td>
+			</tr>
+			<tr>
+				<th><label for="vasco_yoast_desc">Mô tả SEO (Meta Description)</label></th>
+				<td>
+					<textarea id="vasco_yoast_desc" name="vasco_yoast_desc" rows="3" class="large-text" placeholder="Thẻ mô tả hiển thị trên kết quả tìm kiếm Google..."><?php echo esc_textarea( $yoast_desc ); ?></textarea>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<?php
+}
+
+function vasco_save_post_custom_meta( $post_id ) {
+	if ( ! isset( $_POST['vasco_post_meta_nonce'] ) || ! wp_verify_nonce( $_POST['vasco_post_meta_nonce'], 'vasco_post_meta_save_action' ) ) {
+		return;
+	}
+	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+		return;
+	}
+	if ( ! current_user_can( 'edit_post', $post_id ) ) {
+		return;
+	}
+
+	if ( isset( $_POST['vasco_author_name'] ) ) {
+		update_post_meta( $post_id, '_vasco_author_name', sanitize_text_field( $_POST['vasco_author_name'] ) );
+	}
+	if ( isset( $_POST['vasco_read_time'] ) ) {
+		update_post_meta( $post_id, '_vasco_read_time', sanitize_text_field( $_POST['vasco_read_time'] ) );
+	}
+
+	if ( isset( $_POST['vasco_focus_kw'] ) ) {
+		update_post_meta( $post_id, '_yoast_wpseo_focuskw', sanitize_text_field( $_POST['vasco_focus_kw'] ) );
+	}
+	if ( isset( $_POST['vasco_yoast_title'] ) ) {
+		$title = sanitize_text_field( $_POST['vasco_yoast_title'] );
+		update_post_meta( $post_id, '_yoast_wpseo_title', $title );
+		update_post_meta( $post_id, '_yoast_wpseo_opengraph-title', $title );
+	}
+	if ( isset( $_POST['vasco_yoast_desc'] ) ) {
+		$desc = sanitize_textarea_field( $_POST['vasco_yoast_desc'] );
+		update_post_meta( $post_id, '_yoast_wpseo_metadesc', $desc );
+		update_post_meta( $post_id, '_yoast_wpseo_opengraph-description', $desc );
+	}
+}
+add_action( 'save_post', 'vasco_save_post_custom_meta' );

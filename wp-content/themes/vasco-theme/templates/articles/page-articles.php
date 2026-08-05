@@ -156,12 +156,9 @@ get_header();
                 $excerpt     = get_the_excerpt();
                 $author_name = get_post_meta( $post_id, '_vasco_author_name', true ) ?: get_the_author();
                 $read_time   = get_post_meta( $post_id, '_vasco_read_time', true ) ?: '10 phút đọc';
-                $thumb_meta  = get_post_meta( $post_id, '_vasco_thumb_url', true );
 
                 if ( has_post_thumbnail( $post_id ) ) {
                     $thumb_src = get_the_post_thumbnail_url( $post_id, 'medium_large' );
-                } elseif ( ! empty( $thumb_meta ) ) {
-                    $thumb_src = $thumb_meta;
                 } else {
                     $thumb_src = VASCO_THEME_URI . '/assets/img/happy-people.webp';
                 }

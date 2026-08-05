@@ -174,12 +174,27 @@ function vasco_theme_sync_pages( $clean_old = false ) {
 		}
 	}
 
-	// Set static front page if not set
+	// Set static front page and posts page if not set
 	$front_page = get_page_by_path( 'home' );
 	if ( $front_page ) {
 		update_option( 'show_on_front', 'page' );
 		update_option( 'page_on_front', $front_page->ID );
 	}
+
+	$posts_page = get_page_by_path( 'tin-tuc' );
+	if ( ! $posts_page ) {
+		$posts_page = get_page_by_path( 'articles' );
+	}
+	if ( $posts_page ) {
+		update_option( 'page_for_posts', $posts_page->ID );
+	}
+
+	// ── Cấu hình Permalinks Chuẩn SEO (Post Name) ──
+	update_option( 'permalink_structure', '/%postname%/' );
+
+	// ── Cấu hình Writing Mặc định ──
+	update_option( 'default_post_edit_rows', 20 );
+	update_option( 'default_content_type', 'html' );
 
 	flush_rewrite_rules();
 	return true;
@@ -453,6 +468,14 @@ function vasco_sync_sample_posts() {
 			update_post_meta( $post_id, '_vasco_author_name', $p['author_name'] );
 			update_post_meta( $post_id, '_vasco_read_time', $p['read_time'] );
 			update_post_meta( $post_id, '_vasco_thumb_url', $p['thumb_url'] );
+
+			// Tự động gắn WP Featured Image (thumbnail) nếu chưa có
+			if ( ! has_post_thumbnail( $post_id ) && ! empty( $p['thumb_url'] ) && function_exists( 'vasco_theme_import_product_image' ) ) {
+				$attach_id = vasco_theme_import_product_image( $p['thumb_url'], $p['title'] );
+				if ( $attach_id ) {
+					set_post_thumbnail( $post_id, $attach_id );
+				}
+			}
 
 			// ── Yoast SEO Meta Keys Integration ──
 			if ( ! empty( $p['focus_kw'] ) ) {
