@@ -19,6 +19,13 @@ get_header();
 					<section id="main">
 						<section class="page-home" id="content">
 							<section class="hero-section hero-clean-minimal">
+								<div class="hero-bg-video-wrapper">
+									<img class="hero-bg-motion-img" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hero_product_bg.png" ); ?>" alt="Vasco Product Background" />
+									<video class="hero-bg-video" autoplay loop muted playsinline>
+										<source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.mp4" ); ?>" type="video/mp4" />
+									</video>
+									<div class="hero-bg-overlay"></div>
+								</div>
 								<div class="number-one number-one-floating hero-badge-anim">
 									<img alt="number one" class="nr-one"
 										src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/icons/no1-badge.svg" ); ?>" />
