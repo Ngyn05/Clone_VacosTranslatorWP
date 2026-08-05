@@ -274,13 +274,65 @@ get_header();
         fetch(ajaxUrl, { method: 'POST', body: fd })
             .then(function(r) { return r.json(); })
             .then(function(res) {
-                if (res.success) renderSummary(res.data);
+                if (res.success && res.data && res.data.items && res.data.items.length > 0) {
+                    renderSummary(res.data);
+                } else {
+                    syncLocalCartToWc();
+                }
+            })
+            .catch(function() {
+                syncLocalCartToWc();
             });
+    }
+
+    function syncLocalCartToWc() {
+        try {
+            var localCart = JSON.parse(localStorage.getItem('vasco_cart')) || [];
+            if (localCart.length > 0) {
+                var fd = new FormData();
+                fd.append('action', 'vasco_wc_sync_cart');
+                fd.append('nonce', nonce);
+                fd.append('items', JSON.stringify(localCart));
+                fetch(ajaxUrl, { method: 'POST', body: fd })
+                    .then(function(r) { return r.json(); })
+                    .then(function(res) {
+                        if (res.success && res.data) {
+                            renderSummary(res.data);
+                        } else {
+                            renderSummary({ items: [] });
+                        }
+                    })
+                    .catch(function() { renderSummary({ items: [] }); });
+                return;
+            }
+        } catch(e) {}
+        renderSummary({ items: [] });
     }
 
     function renderSummary(data) {
         var container = document.getElementById('checkout-summary-items');
         var html = '';
+
+        if (data && data.items && data.items.length > 0) {
+            try {
+                var localItems = data.items.map(function(i) {
+                    return {
+                        id: i.product_id,
+                        name: i.name,
+                        price: i.price,
+                        priceText: i.price_fmt,
+                        image: i.image,
+                        link: i.permalink,
+                        quantity: i.quantity
+                    };
+                });
+                localStorage.setItem('vasco_cart', JSON.stringify(localItems));
+                if (window.VascoCart) {
+                    window.VASCO_WC_CART_COUNT = data.count || 0;
+                    window.VascoCart.updateBadge();
+                }
+            } catch(e) {}
+        }
         if (!data.items || data.items.length === 0) {
             html = '<p style="font-size:14px;color:#718096;">Giỏ hàng trống.</p>';
         } else {

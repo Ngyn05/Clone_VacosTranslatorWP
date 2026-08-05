@@ -140,13 +140,37 @@ get_header();
         fetch(ajaxUrl, { method: 'POST', body: fd })
             .then(function(r) { return r.json(); })
             .then(function(res) {
-                if (res.success) {
+                if (res.success && res.data && res.data.items && res.data.items.length > 0) {
                     renderCartItems(res.data);
                 } else {
-                    renderEmptyCart();
+                    syncLocalCartToWc();
                 }
             })
-            .catch(function() { renderEmptyCart(); });
+            .catch(function() { syncLocalCartToWc(); });
+    }
+
+    function syncLocalCartToWc() {
+        try {
+            var localCart = JSON.parse(localStorage.getItem('vasco_cart')) || [];
+            if (localCart.length > 0) {
+                var fd = new FormData();
+                fd.append('action', 'vasco_wc_sync_cart');
+                fd.append('nonce', nonce);
+                fd.append('items', JSON.stringify(localCart));
+                fetch(ajaxUrl, { method: 'POST', body: fd })
+                    .then(function(r) { return r.json(); })
+                    .then(function(res) {
+                        if (res.success && res.data && res.data.items && res.data.items.length > 0) {
+                            renderCartItems(res.data);
+                        } else {
+                            renderEmptyCart();
+                        }
+                    })
+                    .catch(function() { renderEmptyCart(); });
+                return;
+            }
+        } catch(e) {}
+        renderEmptyCart();
     }
 
     function renderCartItems(data) {
@@ -157,6 +181,26 @@ get_header();
             renderEmptyCart();
             return;
         }
+
+        // Tự động đồng bộ localStorage với dữ liệu giỏ hàng WooCommerce mới nhất
+        try {
+            var localItems = data.items.map(function(i) {
+                return {
+                    id: i.product_id,
+                    name: i.name,
+                    price: i.price,
+                    priceText: i.price_fmt,
+                    image: i.image,
+                    link: i.permalink,
+                    quantity: i.quantity
+                };
+            });
+            localStorage.setItem('vasco_cart', JSON.stringify(localItems));
+            if (window.VascoCart) {
+                window.VASCO_WC_CART_COUNT = data.count || 0;
+                window.VascoCart.updateBadge();
+            }
+        } catch(e) {}
 
         var html = '';
         data.items.forEach(function(item) {
@@ -198,6 +242,12 @@ get_header();
     }
 
     function renderEmptyCart() {
+        try { localStorage.removeItem('vasco_cart'); } catch(e) {}
+        if (window.VascoCart) {
+            window.VASCO_WC_CART_COUNT = 0;
+            window.VascoCart.updateBadge();
+        }
+
         var container = document.getElementById('cart-items-container');
         var couponSec = document.getElementById('coupon-section');
         if (couponSec) couponSec.style.display = 'none';

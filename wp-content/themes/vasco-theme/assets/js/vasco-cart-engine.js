@@ -144,12 +144,13 @@
 			self.saveCart(cart);
 			self.showToast(product.name, product);
 
-			var pId = parseInt(product.id, 10);
-			if (pId > 0 && window.VASCO_AJAX_URL && window.VASCO_WC_NONCE) {
+			var pId = parseInt(product.id, 10) || 0;
+			if (window.VASCO_AJAX_URL && window.VASCO_WC_NONCE) {
 				var fd = new FormData();
-				fd.append('action', 'vasco_add_to_wc_cart');
+				fd.append('action', 'vasco_wc_add_to_cart');
 				fd.append('nonce', window.VASCO_WC_NONCE);
 				fd.append('product_id', pId);
+				fd.append('product_name', product.name || '');
 				fd.append('quantity', product.quantity || 1);
 
 				fetch(window.VASCO_AJAX_URL, { method: 'POST', body: fd })
@@ -291,9 +292,18 @@
 		window.VascoCart.updateBadge();
 	}
 
-	// ── 5. Add to Cart Click Delegator ────────────────────────────
+	// ── 5. Add to Cart & Buy Now Click Delegator ──────────────────
 	document.addEventListener('click', function (ev) {
-		var btn = ev.target.closest('.btn-add-to-cart, .add-to-cart, [data-button-action="add-to-cart"], .add_to_cart_button, .product-add-to-cart button, .add-to-cart-btn-full, .add-to-cart-btn-primary');
+		var btn = ev.target.closest('.btn-add-to-cart, .add-to-cart, [data-button-action="add-to-cart"], .add_to_cart_button, .product-add-to-cart button, .add-to-cart-btn-full, .add-to-cart-btn-primary, .btn-buy-now, .buy-now, [data-button-action="buy-now"]');
+		if (!btn) {
+			var potentialBtn = ev.target.closest('button, a.btn, a.button, a');
+			if (potentialBtn) {
+				var txt = (potentialBtn.textContent || '').toLowerCase();
+				if ((txt.indexOf('thêm vào giỏ') !== -1 || txt.indexOf('mua ngay') !== -1 || txt.indexOf('add to cart') !== -1) && txt.indexOf('xem giỏ hàng') === -1) {
+					btn = potentialBtn;
+				}
+			}
+		}
 		if (!btn) return;
 
 		var isCartPageLink = btn.tagName === 'A' && btn.getAttribute('href') && btn.getAttribute('href').indexOf('/cart/') !== -1 && !btn.classList.contains('btn-add-to-cart') && !btn.classList.contains('add-to-cart');
@@ -328,6 +338,13 @@
 		};
 
 		window.VascoCart.addItem(productItem);
+
+		var isBuyNow = btn.classList.contains('btn-buy-now') || btn.classList.contains('buy-now') || (btn.textContent || '').toLowerCase().indexOf('mua ngay') !== -1;
+		if (isBuyNow) {
+			setTimeout(function() {
+				window.location.href = window.VASCO_CHECKOUT_URL || (window.VASCO_HOME_URL || '/') + 'checkout/';
+			}, 300);
+		}
 	}, true);
 
 	// ── 6. Lazyload Image & Path Fixer ─────────────────────────────

@@ -37,6 +37,39 @@ function vasco_wc_add_to_cart() {
 	$quantity     = isset( $_POST['quantity'] ) ? absint( $_POST['quantity'] ) : 1;
 	$variation_id = isset( $_POST['variation_id'] ) ? absint( $_POST['variation_id'] ) : 0;
 
+	// Nếu product_id rỗng hoặc bằng 0, tìm sản phẩm theo tên hoặc lấy sản phẩm mẫu đầu tiên
+	if ( ! $product_id ) {
+		$product_name = isset( $_POST['product_name'] ) ? sanitize_text_field( $_POST['product_name'] ) : '';
+		if ( ! empty( $product_name ) ) {
+			$found = get_page_by_title( $product_name, OBJECT, 'product' );
+			if ( $found ) {
+				$product_id = $found->ID;
+			} else {
+				$posts = get_posts( array(
+					'post_type'   => 'product',
+					's'           => $product_name,
+					'post_status' => 'publish',
+					'numberposts' => 1,
+				) );
+				if ( ! empty( $posts ) ) {
+					$product_id = $posts[0]->ID;
+				}
+			}
+		}
+
+		// Fallback nếu vẫn chưa tìm thấy ID, lấy sản phẩm công khai đầu tiên
+		if ( ! $product_id ) {
+			$all_prods = get_posts( array(
+				'post_type'   => 'product',
+				'post_status' => 'publish',
+				'numberposts' => 1,
+			) );
+			if ( ! empty( $all_prods ) ) {
+				$product_id = $all_prods[0]->ID;
+			}
+		}
+	}
+
 	if ( ! $product_id ) {
 		wp_send_json_error( array( 'message' => 'ID sản phẩm không hợp lệ.' ) );
 	}
@@ -56,6 +89,68 @@ function vasco_wc_add_to_cart() {
 }
 add_action( 'wp_ajax_vasco_wc_add_to_cart', 'vasco_wc_add_to_cart' );
 add_action( 'wp_ajax_nopriv_vasco_wc_add_to_cart', 'vasco_wc_add_to_cart' );
+add_action( 'wp_ajax_vasco_add_to_wc_cart', 'vasco_wc_add_to_cart' );
+add_action( 'wp_ajax_nopriv_vasco_add_to_wc_cart', 'vasco_wc_add_to_cart' );
+
+// ─────────────────────────────────────────────
+// 1.1. AJAX: Đồng bộ hàng loạt sản phẩm từ LocalStorage vào WC Cart (1 Request duy nhất)
+// ─────────────────────────────────────────────
+function vasco_wc_sync_cart() {
+	check_ajax_referer( 'vasco_wc_nonce', 'nonce' );
+
+	if ( ! function_exists( 'WC' ) || ! WC()->cart ) {
+		wp_send_json_error( array( 'message' => 'WooCommerce không khả dụng.' ) );
+	}
+
+	$raw_items = $_POST['items'] ?? '';
+	$items     = is_string( $raw_items ) ? json_decode( wp_unslash( $raw_items ), true ) : (array) $raw_items;
+
+	if ( ! empty( $items ) && is_array( $items ) ) {
+		foreach ( $items as $item ) {
+			$p_id   = isset( $item['id'] ) ? absint( $item['id'] ) : 0;
+			$p_name = isset( $item['name'] ) ? sanitize_text_field( $item['name'] ) : '';
+			$qty    = isset( $item['quantity'] ) ? absint( $item['quantity'] ) : 1;
+
+			if ( ! $p_id && ! empty( $p_name ) ) {
+				$found = get_page_by_title( $p_name, OBJECT, 'product' );
+				if ( $found ) {
+					$p_id = $found->ID;
+				} else {
+					$posts = get_posts( array(
+						'post_type'   => 'product',
+						's'           => $p_name,
+						'post_status' => 'publish',
+						'numberposts' => 1,
+					) );
+					if ( ! empty( $posts ) ) {
+						$p_id = $posts[0]->ID;
+					}
+				}
+			}
+
+			if ( ! $p_id ) {
+				$all_prods = get_posts( array(
+					'post_type'   => 'product',
+					'post_status' => 'publish',
+					'numberposts' => 1,
+				) );
+				if ( ! empty( $all_prods ) ) {
+					$p_id = $all_prods[0]->ID;
+				}
+			}
+
+			if ( $p_id ) {
+				WC()->cart->add_to_cart( $p_id, $qty );
+			}
+		}
+		WC()->cart->calculate_totals();
+	}
+
+	// Trả về dữ liệu giỏ hàng mới nhất
+	vasco_wc_get_cart();
+}
+add_action( 'wp_ajax_vasco_wc_sync_cart', 'vasco_wc_sync_cart' );
+add_action( 'wp_ajax_nopriv_vasco_wc_sync_cart', 'vasco_wc_sync_cart' );
 
 // ─────────────────────────────────────────────
 // 2. AJAX: Lấy toàn bộ dữ liệu giỏ hàng (JSON)
@@ -492,5 +587,16 @@ function vasco_display_product_badge( $product_id = 0 ) {
 	<?php
 }
 add_action( 'woocommerce_before_shop_loop_item_title', 'vasco_display_product_badge', 5 );
+
+// ─────────────────────────────────────────────
+// 13. Tắt hình ảnh sản phẩm trong Email WooCommerce (Chỉ giữ lại Text)
+// ─────────────────────────────────────────────
+function vasco_disable_email_product_images( $args ) {
+	$args['show_image'] = false;
+	return $args;
+}
+add_filter( 'woocommerce_email_order_items_args', 'vasco_disable_email_product_images', 99 );
+add_filter( 'woocommerce_email_order_item_thumbnail', '__return_empty_string', 99 );
+
 
 
