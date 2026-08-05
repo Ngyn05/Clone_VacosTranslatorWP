@@ -1010,100 +1010,162 @@ get_header();
 				src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/join-us/map-section-2.webp" ); ?>" title="Vasco World Map" width="1200px" />
 		</section>
 		<style>
-		.blogs-grid .box img {
+		.blogs-dynamic-grid {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 20px;
+			margin-top: 30px;
+		}
+		@media (max-width: 1024px) {
+			.blogs-dynamic-grid {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+		@media (max-width: 600px) {
+			.blogs-dynamic-grid {
+				grid-template-columns: 1fr;
+			}
+		}
+		.blogs-dynamic-grid .box {
+			background: #fff;
+			border-radius: 16px;
+			overflow: hidden;
+			display: flex;
+			flex-direction: column;
+			box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+			transition: transform 0.25s ease, box-shadow 0.25s ease;
+			border: 1px solid #eaeaea;
+		}
+		.blogs-dynamic-grid .box:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+		}
+		.blogs-dynamic-grid .box img {
 			width: 100% !important;
-			height: 180px !important;
+			height: 190px !important;
 			object-fit: cover !important;
-			border-radius: 16px !important;
+			border-radius: 16px 16px 0 0 !important;
 			display: block !important;
 		}
-		.blogs-grid .box {
+		.blogs-dynamic-grid .blog-body {
+			padding: 14px 14px 12px;
 			display: flex;
 			flex-direction: column;
 		}
-		.blogs-grid .blog-title {
-			font-size: 18px !important;
+		.blogs-dynamic-grid .blog-title {
+			font-size: 15.5px !important;
 			font-weight: 700 !important;
-			line-height: 1.4 !important;
-			margin-top: 15px !important;
-			margin-bottom: 10px !important;
-			color: #222 !important;
+			line-height: 1.35 !important;
+			margin: 0 0 4px 0 !important;
+			color: #1a1a1a !important;
+		}
+		.blogs-dynamic-grid .blog-meta {
+			font-size: 12px;
+			color: #888;
+			margin-bottom: 6px;
+			display: flex;
+			align-items: center;
+			gap: 6px;
+		}
+		.blogs-dynamic-grid .blog-text p {
+			font-size: 13.5px;
+			color: #555;
+			line-height: 1.45;
+			margin: 0 0 8px 0;
+		}
+		.blogs-dynamic-grid .blog-more-link {
+			font-size: 13.5px;
+			font-weight: 700;
+			color: #e30613;
+			text-decoration: none;
+			display: inline-flex;
+			align-items: center;
+			gap: 4px;
+			margin-top: 0;
+		}
+		.blogs-dynamic-grid .blog-more-link:hover {
+			text-decoration: underline;
 		}
 		</style>
 		<section class="blogs">
 			<div class="container">
-				<h2 class="h2-notosans">Khám phá bài viết của chúng tôi</h2>
-				<div class="blogs-grid">
-					<div class="shown-boxes-wrapper">
-						<div class="box">
-							<div>
-								<a class="link-blog" href="<?php echo esc_url( home_url( "/articles-languages-least-spoken-language-in-the-world/" ) ); ?>">
-									<img alt="Ngôn ngữ ít người nói nhất trên thế giới là gì?"
-										src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/07/least_spoken_language.webp" ); ?>"
-										style="width: 100% !important; height: 180px !important; object-fit: cover !important; border-radius: 16px !important; display: block !important;" />
-									<h3 class="h2 blog-title">Ngôn ngữ ít người nói nhất trên thế giới là gì?</h3>
-								</a>
-							</div>
-							<div class="blog-text">
-								<p class="body-16">Trong một thế giới mà giao tiếp là chìa khóa, ngôn ngữ đóng vai trò
-									thiết yếu trong việc kết nối con người từ các nền văn hóa và hoàn cảnh khác nhau.
-								</p>
-							</div>
-						</div>
-						<div class="box">
-							<div>
-								<a class="link-blog" href="<?php echo esc_url( home_url( "/articles-languages-oldest-known-language/" ) ); ?>">
-									<img alt="Ngôn ngữ cổ nhất được biết đến là gì?"
-										src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/07/oldest_language.webp" ); ?>"
-										style="width: 100% !important; height: 180px !important; object-fit: cover !important; border-radius: 16px !important; display: block !important;" />
-									<h3 class="h2 blog-title">Ngôn ngữ cổ nhất được biết đến là gì?</h3>
-								</a>
-							</div>
-							<div class="blog-text">
-								<p class="body-16">Ngôn ngữ là nền tảng của sự tương tác và văn minh nhân loại. Nó cho
-									phép chúng ta thể hiện suy nghĩ, cảm xúc và chia sẻ thông tin.</p>
-							</div>
-						</div>
-					</div>
-					<div class="hidden-boxes-wrapper" data-="">
-						<div class="shown-boxes-wrapper">
+				<h2 class="h2-notosans">KHÁM PHÁ BÀI VIẾT CỦA CHÚNG TÔI</h2>
+				
+				<div class="blogs-dynamic-grid">
+					<?php
+					// Query 4 random posts from Database (post_type = 'post')
+					$random_posts = new WP_Query( array(
+						'post_type'      => 'post',
+						'posts_per_page' => 4,
+						'post_status'    => 'publish',
+						'orderby'        => 'rand',
+					) );
+
+					if ( $random_posts->have_posts() ) :
+						while ( $random_posts->have_posts() ) : $random_posts->the_post();
+							$p_id        = get_the_ID();
+							$p_link      = get_permalink();
+							$p_title     = get_the_title();
+							$p_excerpt   = get_the_excerpt();
+							if ( empty( $p_excerpt ) ) {
+								$p_excerpt = wp_strip_all_tags( get_the_content() );
+							}
+							$p_excerpt   = wp_trim_words( $p_excerpt, 20, '...' );
+							$author_name = get_post_meta( $p_id, '_vasco_author_name', true ) ?: get_the_author();
+							$read_time   = get_post_meta( $p_id, '_vasco_read_time', true ) ?: '10 phút đọc';
+
+							$p_has_thumb = has_post_thumbnail( $p_id );
+							$p_thumb     = '';
+							if ( $p_has_thumb ) {
+								$p_thumb = get_the_post_thumbnail_url( $p_id, 'medium_large' );
+							} else {
+								$post_content = get_the_content();
+								if ( preg_match( '/<img[^>]+src=["\']([^"\']+)["\']/i', $post_content, $matches ) ) {
+									$p_thumb = $matches[1];
+								}
+							}
+							?>
 							<div class="box">
-								<div>
-									<a class="link-blog" href="<?php echo esc_url( home_url( "/articles-languages-how-many-people-speak-more-than-one-language/" ) ); ?>">
-										<img alt="Có bao nhiêu người nói được nhiều hơn một ngôn ngữ?"
-											src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/07/bilingualism.webp" ); ?>"
-											style="width: 100% !important; height: 180px !important; object-fit: cover !important; border-radius: 16px !important; display: block !important;" />
-										<h3 class="h2 blog-title">Có bao nhiêu người nói được nhiều hơn một ngôn ngữ?
-										</h3>
+								<a class="link-blog" href="<?php echo esc_url( $p_link ); ?>" title="<?php echo esc_attr( $p_title ); ?>">
+									<?php if ( ! empty( $p_thumb ) ) : ?>
+										<img alt="<?php echo esc_attr( $p_title ); ?>" src="<?php echo esc_url( $p_thumb ); ?>" loading="lazy" />
+									<?php else : ?>
+										<div style="width: 100%; height: 200px; background: #eef2f5; display: flex; align-items: center; justify-content: center; color: #888; font-size: 13px;">Chưa có ảnh</div>
+									<?php endif; ?>
+								</a>
+								<div class="blog-body">
+									<h3 class="h2 blog-title">
+										<a href="<?php echo esc_url( $p_link ); ?>" style="color: inherit; text-decoration: none;"><?php echo esc_html( $p_title ); ?></a>
+									</h3>
+									
+									<div class="blog-meta">
+										<span><?php echo esc_html( $author_name ); ?></span>
+										<span>•</span>
+										<span><?php echo esc_html( $read_time ); ?></span>
+									</div>
+
+									<div class="blog-text">
+										<p><?php echo esc_html( $p_excerpt ); ?></p>
+									</div>
+
+									<a class="blog-more-link" href="<?php echo esc_url( $p_link ); ?>">
+										Đọc thêm &rarr;
 									</a>
 								</div>
-								<div class="blog-text">
-									<p class="body-16">Có bao nhiêu người nói nhiều hơn một ngôn ngữ? Đó là một câu hỏi
-										tò mò mà nhiều người đặt ra mà chưa có câu trả lời duy nhất.</p>
-								</div>
 							</div>
-							<div class="box">
-								<div>
-									<a class="link-blog" href="<?php echo esc_url( home_url( "/articles-languages-spanish-speaking-countries/" ) ); ?>">
-										<img alt="Những quốc gia nào sử dụng tiếng Tây Ban Nha là ngôn ngữ chính thức?"
-											src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/07/spanish_official_language.webp" ); ?>"
-											style="width: 100% !important; height: 180px !important; object-fit: cover !important; border-radius: 16px !important; display: block !important;" />
-										<h3 class="h2 blog-title">Những quốc gia nào sử dụng tiếng Tây Ban Nha là ngôn
-											ngữ chính thức?</h3>
-									</a>
-								</div>
-								<div class="blog-text">
-									<p class="body-16">Tiếng Tây Ban Nha, với âm điệu du dương và lịch sử phong phú, giữ
-										vị trí nổi bật trong số các ngôn ngữ được nói nhiều nhất trên thế giới.</p>
-								</div>
-							</div>
-						</div>
-					</div>
+							<?php
+						endwhile;
+						wp_reset_postdata();
+					else :
+						?>
+						<p style="grid-column: 1 / -1; text-align: center; color: #666;">Chưa có bài viết nào trong CSDL.</p>
+					<?php endif; ?>
 				</div>
-				<div>
-					<button class="btn btn-md btn-black" data-hide="Thu gọn" data-show="Tìm hiểu thêm" id="blogs-btn">
-						Tìm hiểu thêm
-					</button>
+				
+				<div style="text-align: center; margin-top: 36px;">
+					<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( '/articles/' ) ); ?>" style="display: inline-flex; width: auto;">
+						Xem tất cả bài viết
+					</a>
 				</div>
 			</div>
 		</section>

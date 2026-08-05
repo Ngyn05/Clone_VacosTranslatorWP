@@ -9,6 +9,34 @@ Text Domain: vasco-theme
 */
 
 /* =============================================
+   RESET TOP MARGIN & PADDING CHO CÁC TRANG CÓ KHOẢNG TRẮNG ĐẦU TRANG
+   ============================================= */
+.screen-reader-text,
+a.screen-reader-text {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+#wrapper,
+.js-content-wrapper,
+#notifications {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* Đảm bảo khi Admin Bar hiển thị thì không bị khoảng trắng lớn dưới header */
+body.admin-bar #header {
+    top: 0;
+}
+
+/* =============================================
    FONT DECLARATIONS — Noto Sans (Local, hỗ trợ tiếng Việt)
    ============================================= */
 @font-face {
@@ -2487,3 +2515,62 @@ img:not([src]) {
         padding: 24px 20px;
     }
 }
+
+/* HORIZONTAL SCROLL / SWIPE CHO MÀN HÌNH ĐIỆN THOẠI (MAX 768PX) */
+@media (max-width: 768px) {
+    /* Cho phép cuộn ngang tự nhiên và vuốt cảm ứng trên Swiper */
+    .how-vasco-section .swiper,
+    .media-awards .swiper,
+    .key-features-section .swiper {
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        -webkit-overflow-scrolling: touch !important;
+        touch-action: pan-x pan-y !important;
+        scroll-snap-type: x mandatory !important;
+        scroll-behavior: smooth !important;
+        padding-bottom: 16px !important;
+    }
+
+    .how-vasco-section .swiper-wrapper,
+    .media-awards .swiper-wrapper,
+    .key-features-section .swiper-wrapper {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        width: max-content !important;
+        transform: none !important; /* vô hiệu hóa transform cố định của Swiper JS nếu bị lỗi lock */
+        transition: none !important;
+    }
+
+    /* 1. Khối Ứng dụng của Máy phiên dịch */
+    .how-vasco-section .swiper-slide {
+        flex: 0 0 82vw !important;
+        max-width: 82vw !important;
+        scroll-snap-align: center !important;
+        margin-right: 14px !important;
+    }
+
+    /* 2. Khối Truyền thông nói về chúng tôi */
+    .media-awards .carousel-media .swiper-slide {
+        flex: 0 0 80vw !important;
+        max-width: 80vw !important;
+        scroll-snap-align: center !important;
+        margin-right: 12px !important;
+    }
+
+    /* 3. Khối Giải thưởng */
+    .media-awards .carousel-award .swiper-slide {
+        flex: 0 0 45vw !important;
+        max-width: 45vw !important;
+        scroll-snap-align: center !important;
+        margin-right: 12px !important;
+    }
+
+    /* 4. Khối Tính năng nổi bật */
+    .key-features-section .swiper-slide {
+        flex: 0 0 75vw !important;
+        max-width: 75vw !important;
+        scroll-snap-align: center !important;
+        margin-right: 14px !important;
+    }
+}
+

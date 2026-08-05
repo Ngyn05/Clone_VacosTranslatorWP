@@ -2,61 +2,7 @@
 			<div class="container">
 			</div>
 			<div class="footer-container">
-				<div class="footer-info-top-gray">
-					<div class="container">
-						<div class="newsletter-component">
-							<div class="footer-column-header footer-column-header-newsletter">
-								<h4 class="h2">Tham gia bản tin</h4>
-							</div>
-							<div class="footer-column-list">
-								<p class="newsletter-text">
-									Đăng ký ngay hôm nay &amp; nhận thông tin về các ưu đãi đặc biệt, mẹo du lịch và
-									nhiều hơn nữa.</p>
-								<div class="newsletter block_newsletter">
-									<form class="newsletter-form" id="newsletter-form" method="post">
-										<div class="newsletter-form-wrapper">
-											<p class="my-auto body-16">Tên của bạn</p>
-											<input class="body-16" name="name" placeholder="Tên của bạn" required=""
-												type="text" value="" />
-											<span aria-live="polite" class="sr-only error-message"></span>
-											<p class="my-auto body-16">E-mail</p>
-											<input class="body-16" name="email" placeholder="Địa chỉ email của bạn"
-												required="" type="email" value="" />
-											<span aria-live="polite" class="sr-only error-message"></span>
-											<input name="blockHookName" type="hidden" value="displayFooterNewsletter" />
-											<input name="action" type="hidden" value="0" />
-											<input id="newsletter-form-g-recaptcha-response" name="g-recaptcha-response"
-												type="hidden" value="">
-											<input id="newsletter-form-g-recaptcha-action" name="g-recaptcha-action"
-												type="hidden" value="newsletter_submit" />
-											<div aria-hidden="true" class="ve-hp">
-												<label for="newsletter-form-ve_hp">Leave this field empty</label>
-												<input autocomplete="off" id="newsletter-form-ve_hp" name="ve_hp"
-													tabindex="-1" type="text" value="" />
-											</div>
-											<input name="ve_ts" type="hidden" value="1785403442" />
-											<div class="btn-wrapper">
-												<button aria-describedby="newsletter-consent-text"
-													aria-label="Subscribe to the newsletter"
-													class="btn btn-md btn-primary self-end" name="submitNewsletter"
-													type="submit">
-													THAM GIA
-												</button>
-											</div>
-											</input>
-										</div>
-										<div class="clearfix"></div>
-									</form>
-								</div>
-								<p class="newsletter-accept-text" id="newsletter-consent-text">
-									Tôi muốn đăng ký nhận bản tin và đồng ý nhận thông tin về các sản phẩm mới, khuyến
-									mãi và dịch vụ của VASCO VN theo các điều khoản quy định trong <a
-										href="<?php echo esc_url( home_url( "/privacy-policy/" ) ); ?>" target="_blank">Chính sách bảo mật</a>.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
+				<!-- HIDDEN: <div class="footer-info-top-gray">...</div> -->
 				<div class="footer-dark-bottom">
 					<!-- CSS RESPONSIVE CHO FOOTER -->
 					<style>

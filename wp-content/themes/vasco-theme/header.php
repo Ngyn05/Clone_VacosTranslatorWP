@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
@@ -7,7 +7,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class( 'lang-en country-us currency-usd layout-full-width page-index tax-display-disabled' ); ?> id="index">
+<body <?php body_class( 'lang-en country-us currency-usd layout-full-width page-index tax-display-disabled' ); ?><?php echo is_front_page() ? ' id="index"' : ''; ?>>
 <?php wp_body_open(); ?>
 
 <a class="screen-reader-text" href="#wrapper">
