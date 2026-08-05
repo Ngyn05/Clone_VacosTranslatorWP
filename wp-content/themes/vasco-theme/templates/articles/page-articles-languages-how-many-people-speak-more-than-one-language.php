@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Clean Page page-articles-languages-how-many-people-speak-more-than-one-language.php
  *
@@ -128,8 +128,8 @@ get_header();
 <source type="image/avif"/>
 <img alt="lợi ích của việc song ngữ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2021/07/benefits_of_being_bilingual.jpg" ); ?>" decoding="async" /><noscript><img alt="lợi ích của việc song ngữ" decoding="async" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2021/07/benefits_of_being_bilingual.jpg" ); ?>"/></noscript>
 </picture>
-<div class="cta-button-wrapper" style="text-align: center;">
-<a class="cta-button" href="../../../features/translate-text.html">Dịch văn bản dễ dàng</a>
+<div class="cta-button-wrapper" style="text-align: center; margin: 20px 0;">
+<a class="cta-button" href="<?php echo esc_url( home_url( '/product/vasco-translator-v4/' ) ); ?>" style="background:#e30613; color:#fff; padding:10px 24px; border-radius:24px; text-decoration:none; font-weight:bold;">Khám phá Máy Dịch Vasco V4 &rarr;</a>
 </div></p>
 <p>Đối với những người may mắn được sinh ra trong các gia đình song ngữ,<strong>học nhiều ngôn ngữ cùng lúc</strong>đến một cách tự nhiên. Nhưng với hầu hết mọi người, đó là một kỹ năng được học trong lớp học. Trên thực tế, ở nhiều quốc gia, tiếng Anh đã trở nên phổ biến trong xã hội như một yếu tố giáo dục cơ bản đến mức chỉ song ngữ thôi cũng chưa đủ để có được một công việc tốt (tuy nhiên, điều này không có nghĩa là không có<em>lợi ích của song ngữ</em>ở đó). Tại các quốc gia mà tiếng Anh là ngôn ngữ thứ hai, nhiều công ty quốc tế đã đặt ra yêu cầu về nhiều ngôn ngữ đối với ứng viên. Thông thường điều này bao gồm ngôn ngữ địa phương, cộng thêm tiếng Anh, cộng thêm một ngôn ngữ chuyên biệt hoặc nhiều hơn cho các mục đích kinh doanh cụ thể mà công ty sử dụng. Đối với hầu hết các quốc gia phát triển,<em>những người nói được nhiều hơn một ngôn ngữ</em>thường có công việc tốt hơn và tiến xa hơn trong sự nghiệp so với những người không biết. Nói đến<strong>lợi thế của việc song ngữ</strong>!</p>
 <h2><span class="ez-toc-section" id="How_many_languages_does_the_average_American_speak"></span>Người Mỹ trung bình nói được bao nhiêu ngôn ngữ?<span class="ez-toc-section-end"></span></h2>

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Clean Page page-articles-languages-spanish-speaking-countries.php
  *
@@ -91,8 +91,8 @@ get_header();
 <p><strong>Tiếng Tây Ban Nha</strong>, với âm điệu du dương và lịch sử phong phú, chiếm một vị trí nổi bật trong số các ngôn ngữ được nói nhiều nhất trên thế giới.</p>
 <p>Khi nó lan rộng cội rễ ngôn ngữ của mình qua các lục địa, việc hiểu về<strong><span data-color="var(--blue-10)">các quốc gia nơi tiếng Tây Ban Nha là ngôn ngữ chính thức</span></strong>hoặc nơi tiếng Tây Ban Nha có sự hiện diện mạnh mẽ trở nên ngày càng quan trọng.</p>
 <p>Vì vậy, trong bài viết này, chúng ta sẽ cùng bắt đầu một hành trình hấp dẫn qua<strong><span data-color="var(--blue-10)">danh sách các quốc gia nói tiếng Tây Ban Nha</span></strong>là ngôn ngữ chính thức của họ.</p>
-<p>Từ những cảnh quan hùng vĩ của châu Mỹ Latinh đến những thành phố sôi động của châu Âu và hơn thế nữa, chúng ta sẽ đi sâu vào các<strong><span data-color="var(--blue-10)">quốc gia nơi tiếng Tây Ban Nha là ngôn ngữ chính thức<a href="..">ngôn ngữ</a></span></strong>, hé lộ bức tranh ngôn ngữ của họ.</p>
-<p>Vì vậy, nếu bạn đã từng thắc mắc<strong><span data-color="var(--blue-10)">những quốc gia nào nói tiếng Tây Ban Nha</span>là ngôn ngữ chính thức</strong>hoặc chỉ đơn giản là tò mò về sự ảnh hưởng rộng khắp của ngôn ngữ toàn cầu này, đây là cơ hội hoàn hảo để thỏa mãn sự tò mò của bạn.</p>
+<p>Từ những cảnh quan hùng vĩ của châu Mỹ Latinh đến những thành phố sôi động của châu Âu và hơn thế nữa, chúng ta sẽ đi sâu vào các <strong>danh sách các quốc gia nơi tiếng Tây Ban Nha là ngôn ngữ chính thức</strong>, hé lộ bức tranh ngôn ngữ của họ.</p>
+<p>Vì vậy, nếu bạn đã từng thắc mắc <strong>những quốc gia nào nói tiếng Tây Ban Nha là ngôn ngữ chính thức</strong> hoặc chỉ đơn giản là tò mò về sự ảnh hưởng rộng khắp của ngôn ngữ toàn cầu này, đây là cơ hội hoàn hảo để thỏa mãn sự tò mò của bạn.</p>
 <ul>
 <li><span data-color="var(--blue-10)">Những quốc gia nào nói tiếng Tây Ban Nha</span>là ngôn ngữ chính thức?</li>
 <li><span data-color="var(--blue-10)">Hầu hết các quốc gia có tiếng Tây Ban Nha là ngôn ngữ quốc gia chính thức nằm ở đâu</span>?</li>

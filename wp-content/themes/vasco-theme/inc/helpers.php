@@ -152,11 +152,14 @@ function vasco_theme_render_product_card( $product, $context = array() ) {
 	$description  = $product->get_description();
 	$price_html   = $product->get_price_html();
 	$is_in_stock  = $product->is_in_stock();
-	$flag_html    = '';
 	$is_grid_card = ( 'grid' === $context['card_style'] );
-
-	if ( 'publish' === get_post_status( $product_id ) && get_post_meta( $product_id, '_vasco_wc_seeded', true ) ) {
+	$badge_raw    = get_post_meta( $product_id, '_vasco_product_badge', true );
+	if ( 'new' === $badge_raw || 'Mới' === $badge_raw ) {
 		$flag_html = '<div class="product-flag-wrapper promotion-theme-orange"><div aria-label="Mới" class="body-base product-flag">Mới</div></div>';
+	} elseif ( 'bestseller' === $badge_raw || 'Bán chạy nhất' === $badge_raw ) {
+		$flag_html = '<div class="product-flag-wrapper promotion-theme-blue" style="background:#0066cc;"><div aria-label="Bán chạy nhất" class="body-base product-flag" style="background:#0066cc;">Bán chạy nhất</div></div>';
+	} else {
+		$flag_html = '';
 	}
 
 	// Lấy danh sách màu sắc biến thể động từ WooCommerce Database

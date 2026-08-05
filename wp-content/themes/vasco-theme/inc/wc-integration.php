@@ -423,3 +423,61 @@ add_action( 'wp_logout', function() {
 		WC()->cart->empty_cart();
 	}
 } );
+
+// ─────────────────────────────────────────────
+// 12. Render Custom Product Badge Label (Mới = Cam, Bán chạy nhất = Xanh Dương)
+// ─────────────────────────────────────────────
+function vasco_display_product_badge( $product_id = 0 ) {
+	if ( ! $product_id ) {
+		$product_id = get_the_ID();
+	}
+
+	$badge_raw = get_post_meta( $product_id, '_vasco_product_badge', true );
+	if ( empty( $badge_raw ) ) {
+		return;
+	}
+
+	$badge_label = '';
+	$bg_color    = '#ff7d47'; // Mặc định Cam
+
+	if ( 'new' === $badge_raw || 'Mới' === $badge_raw ) {
+		$badge_label = 'Mới';
+		$bg_color    = '#ff7d47'; // Cam
+	} elseif ( 'bestseller' === $badge_raw || 'Bán chạy nhất' === $badge_raw ) {
+		$badge_label = 'Bán chạy nhất';
+		$bg_color    = '#0066cc'; // Xanh dương
+	} else {
+		// Nhãn tự do nếu có
+		$badge_label = $badge_raw;
+		$bg_color    = '#ff7d47';
+	}
+
+	?>
+	<div class="vasco-product-badge-ribbon badge-type-<?php echo esc_attr( sanitize_html_class( $badge_raw ) ); ?>">
+		<span style="background: <?php echo esc_attr( $bg_color ); ?>;"><?php echo esc_html( $badge_label ); ?></span>
+	</div>
+	<style>
+	.vasco-product-badge-ribbon {
+		position: absolute;
+		top: 12px;
+		left: 0;
+		z-index: 10;
+		display: inline-flex;
+		align-items: center;
+		pointer-events: none;
+	}
+	.vasco-product-badge-ribbon span {
+		color: #ffffff;
+		font-size: 13px;
+		font-weight: 700;
+		padding: 5px 14px 5px 12px;
+		clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%);
+		box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+		letter-spacing: 0.5px;
+	}
+	</style>
+	<?php
+}
+add_action( 'woocommerce_before_shop_loop_item_title', 'vasco_display_product_badge', 5 );
+
+

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Clean Page page-articles-languages-least-spoken-language-in-the-world.php
  *
@@ -87,49 +87,38 @@ get_header();
 <div class="et_pb_text_inner">6 December 2023</div>
 </div><div class="et_pb_module et_pb_post_content et_pb_post_content_0_tb_body">
 <span class="vrt-reading-time" content="PT13M" itemprop="timeRequired"><svg aria-hidden="true" class="vrt-icon" focusable="false" height="16" role="img" viewbox="0 0 24 24" width="16"><path d="M12 1.75a10.25 10.25 0 1 0 0 20.5 10.25 10.25 0 0 0 0-20.5Zm0 18.5a8.25 8.25 0 1 1 0-16.5 8.25 8.25 0 0 1 0 16.5Zm.75-13.5a.75.75 0 0 0-1.5 0v6c0 .2.08.39.22.53l3.5 3.5a.75.75 0 1 0 1.06-1.06l-3.28-3.28V6.75Z"></path></svg><span class="vrt-text">13 phút đọc</span></span>
-<p data-pm-slice="1 1 []">Trong một thế giới mà giao tiếp đóng vai trò then chốt, ngôn ngữ giữ vai trò quan trọng trong việc kết nối con người từ những nền văn hóa và bối cảnh khác nhau.</p>
+<p>Trong một thế giới mà giao tiếp đóng vai trò then chốt, ngôn ngữ giữ vai trò quan trọng trong việc kết nối con người từ những nền văn hóa và hoàn cảnh khác nhau.</p>
 <p>Trong khi hầu hết chúng ta sử dụng những ngôn ngữ phổ biến như tiếng Anh, tiếng Quan Thoại hoặc tiếng Tây Ban Nha, vẫn có vô số ngôn ngữ hiếm và ít người biết đang đứng trước nguy cơ tuyệt chủng.</p>
-<p>Vậy, ngôn ngữ hiếm nhất<a href="..">ngôn ngữ</a>trên thế giới là gì?</p>
-<p>Trong bài viết này, chúng ta sẽ cùng thực hiện một hành trình ngôn ngữ học để khám phá những ngôn ngữ ít người nói và đang bị đe dọa tuyệt chủng nhất trên thế giới, làm sáng tỏ hơn về những ngôn ngữ hiếm nhất trên thế giới.</p>
-<p>Hãy cùng điểm qua một số chủ đề chúng ta sẽ thảo luận ở đây:</p>
+<p>Vậy, ngôn ngữ hiếm nhất trên thế giới là gì?</p>
+<p>Trong bài viết này, chúng ta sẽ cùng thực hiện một hành trình ngôn ngữ học để khám phá những ngôn ngữ ít người nói và đang bị đe dọa tuyệt chủng nhất trên thế giới, làm sáng tỏ hơn về những di sản ngôn ngữ hiếm hoi này.</p>
+<p>Hãy cùng điểm qua một số chủ đề chính:</p>
 <ul>
-<li>Ngôn ngữ ít người nói nhất trên thế giới là gì, hoặc ngôn ngữ ít được biết đến nhất là gì? Nó được sử dụng ở đâu, và ai là những người sử dụng nó?</li>
-<li>Những ngôn ngữ hiếm nhất khác trên thế giới là gì?</li>
-<li>Có bao nhiêu ngôn ngữ đang bị đe dọa tuyệt chủng?</li>
-<li>Tại sao việc bảo tồn các ngôn ngữ hiếm lại quan trọng như vậy?</li>
+<li>Ngôn ngữ ít người nói nhất trên thế giới là gì? Nó được sử dụng ở đâu, và ai là người sử dụng?</li>
+<li>Những ngôn ngữ hiếm nhất khác trên thế giới là gì? (Tiếng Ainu, Pirahã, Manx Gaelic...)</li>
+<li>Có bao nhiêu ngôn ngữ đang bị đe dọa tuyệt chủng trên thế giới?</li>
+<li>Tại sao việc bảo tồn các ngôn ngữ hiếm lại quan trọng với văn minh nhân loại?</li>
 </ul>
-<p>Không cần dài dòng thêm, hãy cùng bắt đầu và tìm hiểu thêm về những ngôn ngữ ít người nói nhất trên thế giới!</p>
 <div class="faq-section">
 <h3>Câu hỏi thường gặp:</h3>
 <h4 class="question1">Ngôn ngữ ít người nói nhất trên thế giới là gì?</h4>
-<div class="answer1">Danh hiệu ngôn ngữ ít người nói nhất trên thế giới thuộc về một số ngôn ngữ đang bị đe dọa tuyệt chủng, nhưng nếu phải chọn một, đó sẽ là tiếng Lemerig. Ngôn ngữ này được nói trên đảo Vanua Lava – một hòn đảo thuộc quần đảo Banks ở Nam Thái Bình Dương – và chỉ còn 2 người nói.</div>
+<div class="answer1">Danh hiệu ngôn ngữ ít người nói nhất trên thế giới thuộc về một số ngôn ngữ đang bị đe dọa tuyệt chủng, nổi bật là tiếng Lemerig - chỉ còn khoảng 2 người nói bản ngữ trên đảo Vanua Lava.</div>
 <h4 class="question2">Tiếng Lemerig được nói ở đâu?</h4>
 <div class="answer2">Tiếng Lemerig được nói trên đảo Vanua Lava, một hòn đảo thuộc quần đảo Banks ở Nam Thái Bình Dương.</div>
 <h4 class="question3">Tiếng Ainu vẫn còn được sử dụng không?</h4>
-<div class="answer3">Có, tiếng Ainu vẫn còn được sử dụng ngày nay. Nó chỉ được sử dụng bởi một vài người nói lớn tuổi, do đó được coi là ngôn ngữ đang bị đe dọa tuyệt chủng.</div>
-<h4 class="question4">Tiếng Ainu gần với ngôn ngữ nào nhất?</h4>
-<div class="answer4">Thực ra, tiếng Ainu không có quan hệ được biết đến với bất kỳ ngôn ngữ nào khác trên thế giới. Đây là một ngôn ngữ cô lập, điều này góp phần tạo nên tính độc đáo của nó.</div>
-<h4 class="question5">Làm thế nào để nói xin chào bằng tiếng Ainu?</h4>
-<div class="answer5">Để chào hỏi bằng tiếng Ainu, người ta có thể nói “irankarapte.” Từ này mang ý nghĩa ấm áp và chân thành, có nghĩa đen là “Hãy cho tôi được nhẹ nhàng chạm vào trái tim bạn.”</div>
-<h4 class="question6">Người Pirahã nói ngôn ngữ gì?</h4>
-<div class="answer6">Người Pirahã, một nhóm bản địa sống trong rừng nhiệt đới Amazon ở Brazil, sử dụng ngôn ngữ Pirahã. Đây là một ngôn ngữ rất độc đáo, đặc trưng bởi việc không có thời động từ, có lối nói huýt sáo, và nhiều đặc điểm khác.</div>
-<h4 class="question7">Tiếng Pirahã thiếu điều gì?</h4>
-<div class="answer7">Tiếng Pirahã thiếu các từ chỉ số đếm cố định. Thay vào đó, nó sử dụng các từ ước lượng như “ít” và “nhiều.” Nó cũng không có thời động từ cố định.</div>
-<h4 class="question8">Ngôn ngữ Pirahã có đệ quy (recursion) không?</h4>
-<div class="answer8" style="margin-bottom: 40px;">Ngôn ngữ Pirahã không có đệ quy. Các câu trong ngôn ngữ này có độ dài và độ phức tạp hạn chế, phản ánh cấu trúc ngôn ngữ độc đáo của nó.</div>
+<div class="answer3">Có, tiếng Ainu vẫn còn được sử dụng ngày nay bởi một vài người nói lớn tuổi tại Nhật Bản.</div>
+<h4 class="question4">Tiếng Pirahã có gì đặc biệt?</h4>
+<div class="answer4">Tiếng Pirahã của bộ tộc trong rừng Amazon không có từ chỉ số đếm cố định, không có thời động từ cố định và có hình thức giao tiếp bằng huýt sáo độc đáo.</div>
 </div>
-<p><picture class="alignnone size-full wp-image-2261" decoding="async" fetchpriority="high">
-<source sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1200px, 100vw" type="image/avif"/>
-<img alt="Ngôi nhà gỗ cũ bên bờ sông."  src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/12/blog-least-spoken-language-PICTURE-4.png" ); ?>"  decoding="async" fetchpriority="high" height="750"  width="1200"/><noscript><img alt="Old wooden house by the river." decoding="async" fetchpriority="high" height="750" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1200px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/12/blog-least-spoken-language-PICTURE-4.png" ); ?>" width="1200"/></noscript>
-</picture>
-</p>
-<div class="ez-toc-v2_0_85 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction" id="ez-toc-container">
-<p class="ez-toc-title" style="cursor:inherit">Mục lục:</p>
-<label class="ez-toc-cssicon-toggle-label" for="ez-toc-cssicon-toggle-item-6a6b12fa9dfad"><span class="ez-toc-cssicon"><span class="eztoc-hide" style="display:none;">Ẩn/Hiện</span><span class="ez-toc-icon-toggle-span"><svg class="list-377408" fill="none" height="20px" style="fill: #999;color:#999" viewbox="0 0 24 24" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"></path></svg><svg baseprofile="tiny" class="arrow-unsorted-368013" height="10px" style="fill: #999;color:#999" version="1.2" viewbox="0 0 24 24" width="10px" xmlns="http://www.w3.org/2000/svg"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"></path></svg></span></span></label><input aria-label="Ẩn/Hiện" id="ez-toc-cssicon-toggle-item-6a6b12fa9dfad" style="display:none" type="checkbox"/><nav><ul class="ez-toc-list ez-toc-list-level-1"><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-1" href="#The_worlds_least_spoken_language_is%E2%80%A6">Ngôn ngữ ít người nói nhất trên thế giới là…?</a><ul class="ez-toc-list-level-3"><li class="ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-2" href="#Is_it_possible_to_learn_the_worlds_rarest_language">Có thể học được ngôn ngữ hiếm nhất trên thế giới không?</a></li></ul></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-3" href="#What_are_the_other_rarest_languages_in_the_world">Những ngôn ngữ hiếm nhất khác trên thế giới là gì?</a><ul class="ez-toc-list-level-3"><li class="ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-4" href="#The_Ainu_language">Tiếng Ainu</a></li><li class="ez-toc-page-1 ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-5" href="#The_Piraha_language">Tiếng Pirahã</a></li><li class="ez-toc-page-1 ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-6" href="#The_Manx_Galeic_language">Tiếng Manx Gaelic</a></li></ul></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-7" href="#How_many_endangered_languages_are_there">Có bao nhiêu ngôn ngữ đang bị đe dọa tuyệt chủng?</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-8" href="#Why_is_preservation_of_rare_languages_so_important">Tại sao việc bảo tồn các ngôn ngữ hiếm lại quan trọng như vậy?</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-9" href="#What_is_the_Least_Spoken_Language_in_the_World_Conclusion">Ngôn ngữ ít người nói nhất trên thế giới là gì: Kết luận</a><ul class="ez-toc-list-level-3"><li class="ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-10" href="#NUTSHELL">TÓM LẠI:</a></li></ul></li></ul></nav></div>
-<h2 data-pm-slice="1 1 []"><span class="ez-toc-section" id="The_worlds_least_spoken_language_is%E2%80%A6"></span>Ngôn ngữ ít người nói nhất trên thế giới<a href="..">ngôn ngữ</a>là…?<span class="ez-toc-section-end"></span></h2>
-<p>Danh hiệu “ngôn ngữ ít người nói nhất” là một danh hiệu đặc biệt, thuộc về một số ngôn ngữ đang bị đe dọa tuyệt chủng chỉ còn lại một số ít người nói. Những ngôn ngữ hiếm gặp này thường ít được chú ý, nhưng chúng là minh chứng cho sự phong phú của văn hóa và lịch sử nhân loại.</p>
-<p>Nhưng nếu phải chọn, ngôn ngữ hiếm nhất trên thế giới là gì, hay ngôn ngữ nào ít người nói nhất?</p>
-<p>Câu trả lời có lẽ là<strong>ngôn ngữ Lemerig, còn được gọi là Sasar hoặc Banks-Inseln</strong>.</p>
+
+<h2>Ngôn ngữ ít người nói nhất trên thế giới là…?</h2>
+<p>Danh hiệu “ngôn ngữ ít người nói nhất” thuộc về các ngôn ngữ đứng trước nguy cơ biến mất hoàn toàn. Tiêu biểu nhất là <strong>ngôn ngữ Lemerig (còn gọi là Sasar hoặc Banks-Inseln)</strong>.</p>
+<p>Chỉ còn 2 người nói ngôn ngữ này tồn tại đến ngày nay trên đảo Vanua Lava (Nam Thái Bình Dương). Lemerig thuộc ngữ hệ Austronesian - ngữ hệ rộng lớn phổ biến tại Đông Nam Á hải đảo.</p>
+
+<div class="vasco-seo-cta-box" style="background:#f8f9fa; border-left:4px solid #e30613; padding:20px; border-radius:8px; margin:25px 0;">
+<h4 style="margin-top:0; color:#111;">💡 Giải pháp vượt qua mọi rào cản ngôn ngữ khi du lịch</h4>
+<p style="margin-bottom:15px;">Dù bạn đi đến bất kỳ đâu trên thế giới, <a href="<?php echo esc_url( home_url( '/product/vasco-translator-v4/' ) ); ?>"><strong>Máy dịch Vasco Translator V4</strong></a> giúp bạn giao tiếp dễ dàng với hơn 108 ngôn ngữ bằng giọng nói, dịch hình ảnh và dịch văn bản tức thì mà không cần Wifi (tích hợp Internet miễn phí trọn đời).</p>
+<a href="<?php echo esc_url( home_url( '/product/vasco-translator-v4/' ) ); ?>" class="button" style="background:#e30613; color:#fff; padding:8px 20px; border-radius:20px; text-decoration:none; display:inline-block; font-weight:bold;">Khám phá Vasco Translator V4 &rarr;</a>
+</div>
 <p>Tại sao?</p>
 <p>Vì chỉ còn 2 người nói ngôn ngữ này<a href="..">ngôn ngữ</a>còn tồn tại đến ngày nay! Endangered Languages Project cho biết có 5 người nói ngôn ngữ ít người nói nhất này vào năm 2003, nhưng con số đã giảm xuống còn 2, theo thông tin từ năm 2012.</p>
 <p>Lemerig là một ngôn ngữ được nói trên đảo Vanua Lava – một hòn đảo thuộc quần đảo Banks ở Nam Thái Bình Dương. Họ định cư tại một khu vực có người nói tiếng Mwotlap sinh sống. Mwotlap, với hơn 2000 người nói, là một trong những ngôn ngữ góp phần vào sự suy giảm của tiếng Lemerig.</p>

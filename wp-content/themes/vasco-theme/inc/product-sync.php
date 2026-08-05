@@ -221,6 +221,11 @@ function vasco_theme_sync_products() {
 		update_post_meta( $product_id, '_manage_stock', 'no' );
 		update_post_meta( $product_id, '_stock_status', 'instock' );
 
+		// ── Đồng bộ Badge (Huy hiệu sản phẩm) ─────────────────────
+		if ( isset( $product['badge'] ) ) {
+			update_post_meta( $product_id, '_vasco_product_badge', sanitize_text_field( $product['badge'] ) );
+		}
+
 		// ── Đồng bộ Thông Số Kỹ Thuật ────────────────────────────
 		if ( ! empty( $product['specs'] ) && is_array( $product['specs'] ) ) {
 			$clean_specs = array();

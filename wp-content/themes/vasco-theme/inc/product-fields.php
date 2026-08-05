@@ -94,6 +94,30 @@ function vasco_render_specs_panel() {
 	<div id="vasco_specs_data" class="panel woocommerce_options_panel">
 		<div class="options_group">
 			<p style="padding:10px 16px;font-size:13px;font-weight:600;border-bottom:1px solid #eee;margin:0;">
+				🏷️ Huy Hiệu Sản Phẩm (Custom Badge)
+			</p>
+			<p style="padding:8px 16px;color:#666;font-size:12px;margin:0;">
+				Chọn loại huy hiệu hiển thị ở góc sản phẩm. Có 3 trạng thái: <strong>Không hiển thị</strong>, <strong>Mới (Màu cam)</strong>, <strong>Bán chạy nhất (Màu xanh dương)</strong>.
+			</p>
+			<?php
+			$badge = get_post_meta( $post->ID, '_vasco_product_badge', true );
+			woocommerce_wp_select( array(
+				'id'          => '_vasco_product_badge',
+				'label'       => 'Huy hiệu (Badge)',
+				'value'       => $badge,
+				'options'     => array(
+					''           => '— Không hiển thị —',
+					'new'        => '🟧 Mới (Màu Cam)',
+					'bestseller' => '🟦 Bán chạy nhất (Màu Xanh Dương)',
+				),
+				'desc_tip'    => true,
+				'description' => 'Huy hiệu hiển thị hình mũi tên ở góc trên bên trái thẻ sản phẩm.',
+			) );
+			?>
+		</div>
+
+		<div class="options_group">
+			<p style="padding:10px 16px;font-size:13px;font-weight:600;border-bottom:1px solid #eee;margin:0;">
 				📋 Thông Số Kỹ Thuật Sản Phẩm
 			</p>
 			<p style="padding:8px 16px;color:#666;font-size:12px;margin:0;">
@@ -209,6 +233,11 @@ function vasco_save_product_fields( $post_id ) {
 	// Permission check
 	if ( ! current_user_can( 'edit_post', $post_id ) ) {
 		return;
+	}
+
+	// Save Product Badge
+	if ( isset( $_POST['_vasco_product_badge'] ) ) {
+		update_post_meta( $post_id, '_vasco_product_badge', sanitize_text_field( $_POST['_vasco_product_badge'] ) );
 	}
 
 	// Save Specs

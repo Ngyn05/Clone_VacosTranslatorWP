@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Clean Page page-articles-languages-oldest-known-language.php
  *
@@ -101,7 +101,7 @@ get_header();
 </ul>
 <p>Vì vậy, cho dù bạn thắc mắc về câu hỏi “liệu tiếng Sanskrit có phải là ngôn ngữ cổ nhất trên thế giới không?”, hay bạn muốn biết ngôn ngữ đầu tiên xuất hiện khi nào, hãy tiếp tục theo dõi.</p>
 <p>Câu trả lời có thể sẽ khiến bạn ngạc nhiên khi chúng ta cùng bắt đầu hành trình khám phá ngôn ngữ sớm nhất, ngôn ngữ cổ nhất còn tồn tại trên thế giới, và đi sâu vào một danh sách toàn diện các ngôn ngữ cổ đại.</p>
-<p>Và nếu bạn yêu ngôn ngữ nói chung, nhưng không hẳn thích học chúng, hãy xem<strong><a href="../../../features/translate-voice.html">máy dịch giọng nói</a></strong>. Với thiết bị này, bạn sẽ có tới 108 ngôn ngữ trong tầm tay. Tuy nhiên, đều là các ngôn ngữ hiện đại!</p>
+<p>Và nếu bạn yêu ngôn ngữ nói chung, nhưng không hẳn thích học chúng, hãy xem <a href="<?php echo esc_url( home_url( '/product/vasco-translator-v4/' ) ); ?>"><strong>Máy dịch Vasco Translator V4</strong></a>. Với thiết bị này, bạn sẽ có tới 108 ngôn ngữ trong tầm tay để tự tin giao tiếp toàn cầu!</p>
 <p>Bây giờ, hãy cùng đi sâu vào chủ đề hôm nay.</p>
 <div class="faq-section">
 <h3>Câu hỏi thường gặp:</h3>
