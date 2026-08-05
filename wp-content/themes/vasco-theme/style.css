@@ -8,6 +8,85 @@ Version: 1.0.6
 Text Domain: vasco-theme
 */
 
+/* =============================================
+   FONT DECLARATIONS — Noto Sans (Local, hỗ trợ tiếng Việt)
+   ============================================= */
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('assets/fonts/NotoSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('assets/fonts/NotoSans-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('assets/fonts/NotoSans-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('assets/fonts/NotoSans-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('assets/fonts/NotoSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* =============================================
+   FOOTER — Đồng bộ font chữ toàn bộ footer
+   Áp dụng Noto Sans (hỗ trợ tiếng Việt) cho tất cả
+   phần tử trong footer, đảm bảo hiển thị rõ ràng.
+   ============================================= */
+.js-footer,
+.js-footer *,
+#footer,
+#footer * {
+    font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* Đảm bảo các thẻ heading trong footer dùng đúng font */
+.js-footer h4,
+.js-footer h5,
+.js-footer .h2,
+#footer h4,
+#footer h5,
+#footer .h2 {
+    font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif !important;
+    font-weight: 700;
+}
+
+/* Link trong footer */
+.js-footer a.footer-info,
+#footer a.footer-info {
+    font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif !important;
+}
+
+/* Text nhỏ / copyright */
+.js-footer .footer-copyright,
+.js-footer .copyright,
+#footer .footer-copyright,
+#footer .copyright {
+    font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif !important;
+}
+
 /* Hero Section Custom Height, Centering & Animations Override */
 .page-home .hero-section,
 .page-home .hero-section .doublebox {

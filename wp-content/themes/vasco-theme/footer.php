@@ -317,7 +317,7 @@
 							<div class="footer-columns vasco-menu-grid">
 								<nav aria-labelledby="footer-0-heading" class="footer-nav" role="navigation">
 									<div class="footer-column-header" data-id="0">
-										<h4 class="h2" id="footer-0-heading">Khu vực khách hàng</h4>
+										<h4 class="h2" id="footer-0-heading">Khách hàng</h4>
 										<svg fill="none" height="12" viewbox="0 0 20 12" width="20"
 											xmlns="http://www.w3.org/2000/svg">
 											<path d="M2 2L10 10L18 2" stroke="white" stroke-linecap="square"
@@ -653,16 +653,20 @@
 								</svg>
 							</div>
 							<div class="box-flex media" style="display: flex; align-items: center; gap: 12px;">
-								<a href="#" target="_blank" title="Facebook" style="width: 40px; height: 40px; border-radius: 50%; border: 1.5px solid rgba(255, 255, 255, 0.4); display: inline-flex; align-items: center; justify-content: center; color: #FFFFFF !important; text-decoration: none; font-weight: 700; font-size: 18px; font-family: system-ui, -apple-system, sans-serif; transition: all 0.2s ease; box-sizing: border-box;">
-									f
-								</a>
-								<a href="#" target="_blank" title="Youtube" style="width: 40px; height: 40px; border-radius: 50%; border: 1.5px solid rgba(255, 255, 255, 0.4); display: inline-flex; align-items: center; justify-content: center; color: #FFFFFF !important; text-decoration: none; transition: all 0.2s ease; box-sizing: border-box;">
-									<svg width="15" height="15" viewBox="0 0 24 24" fill="#FFFFFF" style="margin-left: 2px;">
-										<path d="M8 5v14l11-7z"/>
+								<a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Facebook" style="width: 40px; height: 40px; border-radius: 50%; border: 1.5px solid rgba(255, 255, 255, 0.4); display: inline-flex; align-items: center; justify-content: center; color: #FFFFFF !important; text-decoration: none; transition: all 0.25s ease; box-sizing: border-box;" onmouseover="this.style.borderColor='#60A5FA'; this.style.backgroundColor='rgba(96, 165, 250, 0.15)'; this.style.transform='scale(1.08)';" onmouseout="this.style.borderColor='rgba(255, 255, 255, 0.4)'; this.style.backgroundColor='transparent'; this.style.transform='scale(1)';">
+									<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+										<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
 									</svg>
 								</a>
-								<a href="#" target="_blank" title="LinkedIn" style="width: 40px; height: 40px; border-radius: 50%; border: 1.5px solid rgba(255, 255, 255, 0.4); display: inline-flex; align-items: center; justify-content: center; color: #FFFFFF !important; text-decoration: none; font-weight: 700; font-size: 16px; font-family: system-ui, -apple-system, sans-serif; transition: all 0.2s ease; box-sizing: border-box;">
-									in
+								<a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" title="YouTube" aria-label="YouTube" style="width: 40px; height: 40px; border-radius: 50%; border: 1.5px solid rgba(255, 255, 255, 0.4); display: inline-flex; align-items: center; justify-content: center; color: #FFFFFF !important; text-decoration: none; transition: all 0.25s ease; box-sizing: border-box;" onmouseover="this.style.borderColor='#EF4444'; this.style.backgroundColor='rgba(239, 68, 68, 0.15)'; this.style.transform='scale(1.08)';" onmouseout="this.style.borderColor='rgba(255, 255, 255, 0.4)'; this.style.backgroundColor='transparent'; this.style.transform='scale(1)';">
+									<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+										<path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+									</svg>
+								</a>
+								<a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn" style="width: 40px; height: 40px; border-radius: 50%; border: 1.5px solid rgba(255, 255, 255, 0.4); display: inline-flex; align-items: center; justify-content: center; color: #FFFFFF !important; text-decoration: none; transition: all 0.25s ease; box-sizing: border-box;" onmouseover="this.style.borderColor='#60A5FA'; this.style.backgroundColor='rgba(96, 165, 250, 0.15)'; this.style.transform='scale(1.08)';" onmouseout="this.style.borderColor='rgba(255, 255, 255, 0.4)'; this.style.backgroundColor='transparent'; this.style.transform='scale(1)';">
+									<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+										<path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+									</svg>
 								</a>
 							</div>
 						</div>
