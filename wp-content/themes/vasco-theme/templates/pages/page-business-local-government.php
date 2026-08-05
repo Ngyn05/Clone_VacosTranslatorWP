@@ -639,7 +639,7 @@ get_header();
 </div>
 <div aria-describedby="card5-desc" aria-expanded="false" aria-labelledby="card5-title" class="swiper-slide" role="listitem" tabindex="0">
 <div class="img-wrapper">
-<img alt="The CEO of Vasco Electronics holding the Red Dot award, showcasing the award-winning devices." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/icma/card5-features.webp" ); ?>"/>
+<img alt="The CEO of VASCO VN holding the Red Dot award, showcasing the award-winning devices." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/icma/card5-features.webp" ); ?>"/>
 </div>
 <div class="card-content">
 <div class="feature-title" id="card5-title">
@@ -1351,7 +1351,7 @@ able to understand one another. I use it many times a day.”</p>
 <input name="ve_ts" type="hidden" value="1785226341"/>
 <p class="text-required"><span class="asterisk">*</span> Obligatory</p>
 <div class="gdpr-and-submit-wrapper">
-<p class="gdpr-text">The administrator of personal data is Vasco Electronics S.A. The Administrator processes the personal data indicated in the form in order to handle correspondence, in accordance with the rules specified in the <a href="<?php echo esc_url( home_url( "/privacy-policy/" ) ); ?>" target="_blank">Chính sách bảo mật</a>.</p>
+<p class="gdpr-text">Bên quản lý dữ liệu cá nhân là VASCO VN. Bên quản lý xử lý dữ liệu cá nhân được cung cấp trong biểu mẫu này nhằm mục đích xử lý thư từ liên lạc, theo các quy định được quy định trong <a href="<?php echo esc_url( home_url( "/privacy-policy/" ) ); ?>" target="_blank">Chính sách bảo mật</a>.</p>
 <button class="btn btn-md btn-primary" type="submit">Submit</button>
 </div>
 </input></form>

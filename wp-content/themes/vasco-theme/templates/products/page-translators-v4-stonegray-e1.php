@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Product Detail Proxy Template: page-translators-v4-stonegray-e1.php
  *

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-languages.php
  *
@@ -13,7 +13,7 @@ get_header();
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vasco Electronics - Thông Tin Sản Phẩm & Dịch Vụ</title>
+<title>VASCO VN - Thông Tin Sản Phẩm & Dịch Vụ</title>
 <style>
 body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; background: #f8fafc; color: #1e293b; text-align: center; padding: 20px; }
 .card { background: white; padding: 40px; border-radius: 16px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1); max-width: 500px; width: 100%; }
@@ -24,7 +24,7 @@ p { font-size: 16px; color: #64748b; line-height: 1.6; }
 </head>
 <body>
 <div class="card">
-  <h1>Vasco Electronics</h1>
+  <h1>VASCO VN</h1>
   <p>Trang thông tin bạn chọn đang được cập nhật thêm nội dung. Bạn có thể quay lại trang chủ để khám phá các sản phẩm máy phiên dịch mới nhất.</p>
   <a href="<?php echo esc_url( home_url( "/" ) ); ?>" class="btn">Quay về Trang chủ</a>
 </div>

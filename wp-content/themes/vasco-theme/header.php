@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
@@ -47,7 +47,7 @@
 					</div>
 					<div class="logo">
 						<a href="<?php echo esc_url( home_url( "/" ) ); ?>">
-							<img alt="Vasco Electronics" class="img-fluid" height="20px"
+							<img alt="VASCO VN" class="img-fluid" height="20px"
 								src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/logo.svg" ); ?>" width="110px" />
 						</a>
 					</div>
@@ -607,7 +607,7 @@
 						<div class="product-icons-modal-body basic-dialog-body">
 							<p>Địa điểm giao hàng của bạn</p>
 							<div class="selector-dialog-grid">
-								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics България">
+								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN България">
 									<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 										xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_30_1567)">
@@ -630,7 +630,7 @@
 									<span>България</span>
 								</a>
 								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>"
-									title="Vasco Electronics Česká republika">
+									title="VASCO VN Česká republika">
 									<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 										xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_30_1559)">
@@ -652,7 +652,7 @@
 									</svg>
 									<span>Česká republika</span>
 								</a>
-								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics Danmark">
+								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN Danmark">
 									<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 										xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_30_1558)">
@@ -686,7 +686,7 @@
 									</svg>
 									<span>Danmark</span>
 								</a>
-								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics Deutschland">
+								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN Deutschland">
 									<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 										xmlns="http://www.w3.org/2000/svg">
 										<path
@@ -702,7 +702,7 @@
 									<span>Deutschland</span>
 								</a>
 								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>"
-									title="Vasco Electronics United Kingdom">
+									title="VASCO VN United Kingdom">
 									<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 										xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_30_1556)">
@@ -803,7 +803,7 @@
 									<span>United Kingdom</span>
 								</a>
 								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>"
-									title="Vasco Electronics United States">
+									title="VASCO VN United States">
 									<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 										xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_30_1555)">
@@ -834,7 +834,7 @@
 									</svg>
 									<span>United States</span>
 								</a>
-								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics España">
+								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN España">
 									<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 										xmlns="http://www.w3.org/2000/svg">
 										<path
@@ -849,7 +849,7 @@
 									</svg>
 									<span>España</span>
 								</a>
-								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics Suomi">
+								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN Suomi">
 									<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 										xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_30_1551)">
@@ -868,7 +868,7 @@
 									</svg>
 									<span>Suomi</span>
 								</a>
-								<a class="lang_box switcher" href="#" title="Vasco Electronics Belgique">
+								<a class="lang_box switcher" href="#" title="VASCO VN Belgique">
 									<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 										xmlns="http://www.w3.org/2000/svg">
 										<path
@@ -883,7 +883,7 @@
 									</svg>
 									<span>Belgique</span>
 								</a>
-								<a class="lang_box switcher" href="#" title="Vasco Electronics Canada">
+								<a class="lang_box switcher" href="#" title="VASCO VN Canada">
 									<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 										xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_30_1550)">
@@ -911,7 +911,7 @@
 									</svg>
 									<span>Canada</span>
 								</a>
-								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics France">
+								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN France">
 									<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 										xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_30_1549)">
@@ -933,7 +933,7 @@
 									</svg>
 									<span>France</span>
 								</a>
-								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics Hrvatska">
+								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN Hrvatska">
 									<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 										xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_30_1560)">
@@ -1007,7 +1007,7 @@
 									</svg>
 									<span>Hrvatska</span>
 								</a>
-								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics Magyarország">
+								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN Magyarország">
 									<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 										xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_30_1536)">
@@ -1029,7 +1029,7 @@
 									</svg>
 									<span>Magyarország</span>
 								</a>
-								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics Italia">
+								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN Italia">
 									<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 										xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_30_1531)">
@@ -1051,7 +1051,7 @@
 									</svg>
 									<span>Italia</span>
 								</a>
-								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics 日本">
+								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN 日本">
 									<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 										xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_30_1530)">
@@ -1070,7 +1070,7 @@
 									</svg>
 									<span>日本</span>
 								</a>
-								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics Lietuva">
+								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN Lietuva">
 									<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 										xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_30_1526)">
@@ -1092,7 +1092,7 @@
 									</svg>
 									<span>Lietuva</span>
 								</a>
-								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics Nederland">
+								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN Nederland">
 									<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 										xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_30_1557)">
@@ -1114,7 +1114,7 @@
 									</svg>
 									<span>Nederland</span>
 								</a>
-								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics Polska">
+								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN Polska">
 									<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 										xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_30_1502)">
@@ -1130,7 +1130,7 @@
 									</svg>
 									<span>Polska</span>
 								</a>
-								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics Portugal">
+								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN Portugal">
 									<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 										xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_30_1504)">
@@ -1158,7 +1158,7 @@
 									</svg>
 									<span>Portugal</span>
 								</a>
-								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics România">
+								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN România">
 									<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 										xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_30_1506)">
@@ -1180,7 +1180,7 @@
 									</svg>
 									<span>România</span>
 								</a>
-								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics Slovensko">
+								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN Slovensko">
 									<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 										xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_30_1495)">
@@ -1214,7 +1214,7 @@
 									</svg>
 									<span>Slovensko</span>
 								</a>
-								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics Sverige">
+								<a class="lang_box switcher" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN Sverige">
 									<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 										xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_30_1482)">
@@ -1623,7 +1623,7 @@
 												class="megamenu-column-wrapper megamenu-column-image megamenu-column-image-square">
 												<a href="<?php echo esc_url( home_url( "/meet-vasco/" ) ); ?>" role="menuitem">
 													<div class="img-wrapper">
-														<img alt="A product lineup of Vasco Electronics devices on a light purple background, featuring the large-screen Vasco Translator V4, the purple Vasco Translator Q1, the teal Vasco Translator M4, and the Vasco Translator E1 earbuds with their charging cases."
+														<img alt="A product lineup of VASCO VN devices on a light purple background, featuring the large-screen Vasco Translator V4, the purple Vasco Translator Q1, the teal Vasco Translator M4, and the Vasco Translator E1 earbuds with their charging cases."
 															class="js-menu-lazy-image"
 															data-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/menu/megamenu_how_it_works_img1.webp" ); ?>"
 															decoding="async" fetchpriority="low" loading="lazy" />
@@ -1794,7 +1794,7 @@
 							</div>
 							<div class="languages-wrapper-box-mobile">
 								<div class="languages-box-mobile">
-									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics България">
+									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN България">
 										<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 											xmlns="http://www.w3.org/2000/svg">
 											<g clip-path="url(#clip0_30_1567)">
@@ -1817,7 +1817,7 @@
 										<span>България</span>
 									</a>
 									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>"
-										title="Vasco Electronics Česká republika">
+										title="VASCO VN Česká republika">
 										<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 											xmlns="http://www.w3.org/2000/svg">
 											<g clip-path="url(#clip0_30_1559)">
@@ -1839,7 +1839,7 @@
 										</svg>
 										<span>Česká republika</span>
 									</a>
-									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics Danmark">
+									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN Danmark">
 										<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 											xmlns="http://www.w3.org/2000/svg">
 											<g clip-path="url(#clip0_30_1558)">
@@ -1874,7 +1874,7 @@
 										<span>Danmark</span>
 									</a>
 									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>"
-										title="Vasco Electronics Deutschland">
+										title="VASCO VN Deutschland">
 										<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 											xmlns="http://www.w3.org/2000/svg">
 											<path
@@ -1890,7 +1890,7 @@
 										<span>Deutschland</span>
 									</a>
 									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>"
-										title="Vasco Electronics United Kingdom">
+										title="VASCO VN United Kingdom">
 										<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 											xmlns="http://www.w3.org/2000/svg">
 											<g clip-path="url(#clip0_30_1556)">
@@ -1991,7 +1991,7 @@
 										<span>United Kingdom</span>
 									</a>
 									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>"
-										title="Vasco Electronics United States">
+										title="VASCO VN United States">
 										<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 											xmlns="http://www.w3.org/2000/svg">
 											<g clip-path="url(#clip0_30_1555)">
@@ -2022,7 +2022,7 @@
 										</svg>
 										<span>United States</span>
 									</a>
-									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics España">
+									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN España">
 										<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 											xmlns="http://www.w3.org/2000/svg">
 											<path
@@ -2037,7 +2037,7 @@
 										</svg>
 										<span>España</span>
 									</a>
-									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics Suomi">
+									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN Suomi">
 										<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 											xmlns="http://www.w3.org/2000/svg">
 											<g clip-path="url(#clip0_30_1551)">
@@ -2056,7 +2056,7 @@
 										</svg>
 										<span>Suomi</span>
 									</a>
-									<a class="lang-box-mobile" href="#" title="Vasco Electronics Belgique">
+									<a class="lang-box-mobile" href="#" title="VASCO VN Belgique">
 										<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 											xmlns="http://www.w3.org/2000/svg">
 											<path
@@ -2071,7 +2071,7 @@
 										</svg>
 										<span>Belgique</span>
 									</a>
-									<a class="lang-box-mobile" href="#" title="Vasco Electronics Canada">
+									<a class="lang-box-mobile" href="#" title="VASCO VN Canada">
 										<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 											xmlns="http://www.w3.org/2000/svg">
 											<g clip-path="url(#clip0_30_1550)">
@@ -2099,7 +2099,7 @@
 										</svg>
 										<span>Canada</span>
 									</a>
-									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics France">
+									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN France">
 										<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 											xmlns="http://www.w3.org/2000/svg">
 											<g clip-path="url(#clip0_30_1549)">
@@ -2121,7 +2121,7 @@
 										</svg>
 										<span>France</span>
 									</a>
-									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics Hrvatska">
+									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN Hrvatska">
 										<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 											xmlns="http://www.w3.org/2000/svg">
 											<g clip-path="url(#clip0_30_1560)">
@@ -2196,7 +2196,7 @@
 										<span>Hrvatska</span>
 									</a>
 									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>"
-										title="Vasco Electronics Magyarország">
+										title="VASCO VN Magyarország">
 										<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 											xmlns="http://www.w3.org/2000/svg">
 											<g clip-path="url(#clip0_30_1536)">
@@ -2218,7 +2218,7 @@
 										</svg>
 										<span>Magyarország</span>
 									</a>
-									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics Italia">
+									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN Italia">
 										<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 											xmlns="http://www.w3.org/2000/svg">
 											<g clip-path="url(#clip0_30_1531)">
@@ -2240,7 +2240,7 @@
 										</svg>
 										<span>Italia</span>
 									</a>
-									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics 日本">
+									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN 日本">
 										<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 											xmlns="http://www.w3.org/2000/svg">
 											<g clip-path="url(#clip0_30_1530)">
@@ -2259,7 +2259,7 @@
 										</svg>
 										<span>日本</span>
 									</a>
-									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics Lietuva">
+									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN Lietuva">
 										<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 											xmlns="http://www.w3.org/2000/svg">
 											<g clip-path="url(#clip0_30_1526)">
@@ -2281,7 +2281,7 @@
 										</svg>
 										<span>Lietuva</span>
 									</a>
-									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics Nederland">
+									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN Nederland">
 										<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 											xmlns="http://www.w3.org/2000/svg">
 											<g clip-path="url(#clip0_30_1557)">
@@ -2303,7 +2303,7 @@
 										</svg>
 										<span>Nederland</span>
 									</a>
-									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics Polska">
+									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN Polska">
 										<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 											xmlns="http://www.w3.org/2000/svg">
 											<g clip-path="url(#clip0_30_1502)">
@@ -2320,7 +2320,7 @@
 										</svg>
 										<span>Polska</span>
 									</a>
-									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics Portugal">
+									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN Portugal">
 										<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 											xmlns="http://www.w3.org/2000/svg">
 											<g clip-path="url(#clip0_30_1504)">
@@ -2348,7 +2348,7 @@
 										</svg>
 										<span>Portugal</span>
 									</a>
-									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics România">
+									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN România">
 										<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 											xmlns="http://www.w3.org/2000/svg">
 											<g clip-path="url(#clip0_30_1506)">
@@ -2370,7 +2370,7 @@
 										</svg>
 										<span>România</span>
 									</a>
-									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics Slovensko">
+									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN Slovensko">
 										<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 											xmlns="http://www.w3.org/2000/svg">
 											<g clip-path="url(#clip0_30_1495)">
@@ -2404,7 +2404,7 @@
 										</svg>
 										<span>Slovensko</span>
 									</a>
-									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="Vasco Electronics Sverige">
+									<a class="lang-box-mobile" href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN Sverige">
 										<svg fill="none" height="40" viewbox="0 0 40 40" width="40"
 											xmlns="http://www.w3.org/2000/svg">
 											<g clip-path="url(#clip0_30_1482)">

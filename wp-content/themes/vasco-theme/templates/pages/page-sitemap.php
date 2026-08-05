@@ -64,7 +64,7 @@ get_header();
 <a href="<?php echo esc_url( home_url( "/vasco-translator-q1/" ) ); ?>">Automatic Translator for Business | Vasco Translator Q1</a>
 </li>
 <li>
-<a href="<?php echo esc_url( home_url( "/vasco-translator-v4/" ) ); ?>">Vasco Electronics | Vasco V4 universal translator</a>
+<a href="<?php echo esc_url( home_url( "/vasco-translator-v4/" ) ); ?>">VASCO VN | Vasco V4 universal translator</a>
 </li>
 </ul>
 </li>
@@ -190,7 +190,7 @@ get_header();
 <a href="<?php echo esc_url( home_url( "/how-it-works/" ) ); ?>">How does Vasco Translator work?</a>
 </li>
 <li>
-<a href="<?php echo esc_url( home_url( "/call-translator/" ) ); ?>">Real-Time Dịch cuộc gọi điện thoại | Vasco Electronics</a>
+<a href="<?php echo esc_url( home_url( "/call-translator/" ) ); ?>">Real-Time Dịch cuộc gọi điện thoại | VASCO VN</a>
 </li>
 <li>
 <a href="<?php echo esc_url( home_url( "/" ) ); ?>">Vasco Translators at CES 2026 (New Release &amp; Coming Soon)</a>
@@ -220,13 +220,13 @@ get_header();
 <a href="<?php echo esc_url( home_url( "/shipping/" ) ); ?>">Vasco Translator | Giao hàng &amp; Thanh toán</a>
 </li>
 <li>
-<a href="<?php echo esc_url( home_url( "/initiatives/" ) ); ?>">Vasco Electronics’ social initiatives</a>
+<a href="<?php echo esc_url( home_url( "/initiatives/" ) ); ?>">VASCO VN - Sáng kiến xã hội</a>
 </li>
 <li>
 <a href="<?php echo esc_url( home_url( "/initiatives/polish-medical-mission-pmm/" ) ); ?>">Polish Medical Mission Vasco Emergency Team</a>
 </li>
 <li>
-<a href="<?php echo esc_url( home_url( "/initiatives/quinnipiac/" ) ); ?>">Vasco Electronics helps Quinnipiac University</a>
+<a href="<?php echo esc_url( home_url( "/initiatives/quinnipiac/" ) ); ?>">VASCO VN hỗ trợ Đại học Quinnipiac</a>
 </li>
 <li>
 <a href="<?php echo esc_url( home_url( "/initiatives/help-ukraine/" ) ); ?>">Vasco Helps the Victims of the War in Ukraine</a>

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Cart Page (WooCommerce Integrated & Responsive)
  *
@@ -255,7 +255,7 @@ get_header();
         var html = '<div style="text-align:center; padding: 48px 16px;">';
         html += '  <div style="font-size:56px;margin-bottom:16px;">🛒</div>';
         html += '  <h3 style="font-size:20px;font-weight:700;color:#2D3139;margin-bottom:8px;">Giỏ hàng của bạn đang trống</h3>';
-        html += '  <p style="font-size:14px;color:#718096;margin-bottom:24px;">Hãy khám phá các dòng máy phiên dịch cao cấp từ Vasco Electronics.</p>';
+        html += '  <p style="font-size:14px;color:#718096;margin-bottom:24px;">Hãy khám phá các dòng máy phiên dịch cao cấp từ VASCO VN.</p>';
         html += '  <a href="' + (window.VASCO_HOME_URL || '/') + 'translators/" style="display:inline-block;background:#001480;color:#fff;padding:12px 28px;border-radius:24px;text-decoration:none;font-weight:700;font-size:14px;">KHÁM PHÁ SẢN PHẨM</a>';
         html += '</div>';
         container.innerHTML = html;

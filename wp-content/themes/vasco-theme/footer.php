@@ -50,7 +50,7 @@
 								</div>
 								<p class="newsletter-accept-text" id="newsletter-consent-text">
 									Tôi muốn đăng ký nhận bản tin và đồng ý nhận thông tin về các sản phẩm mới, khuyến
-									mãi và dịch vụ của Vasco Electronics theo các điều khoản quy định trong <a
+									mãi và dịch vụ của VASCO VN theo các điều khoản quy định trong <a
 										href="<?php echo esc_url( home_url( "/privacy-policy/" ) ); ?>" target="_blank">Chính sách bảo mật</a>.
 								</p>
 							</div>
@@ -183,7 +183,7 @@
 						<!-- TOP LOGO & SLOGAN -->
 						<div class="vasco-footer-top">
 							<a href="<?php echo esc_url( home_url( "/" ) ); ?>" title="VASCO VN" style="display: inline-flex; align-items: center; text-decoration: none; gap: 10px;">
-								<img alt="Vasco Electronics" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/logo.svg" ); ?>" style="height: 30px; width: auto; filter: brightness(0) invert(1); display: block;" />
+								<img alt="VASCO VN" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/logo.svg" ); ?>" style="height: 30px; width: auto; filter: brightness(0) invert(1); display: block;" />
 								<span style="color: #60A5FA; font-size: 15px; font-weight: 800; letter-spacing: 1.5px; background: rgba(59, 130, 246, 0.18); border: 1px solid rgba(96, 165, 250, 0.35); padding: 2px 8px; border-radius: 6px;">VN</span>
 							</a>
 							<span style="color: #94A3B8; font-size: 14px; font-weight: 500;">Máy phiên dịch hàng đầu thế giới</span>
@@ -764,7 +764,7 @@
 								</div>
 							</div>
 							<p class="copy-text">
-								Bản quyền © 2026 Vasco Electronics. Bảo lưu mọi quyền.
+								Bản quyền © 2026 VASCO VN. Bảo lưu mọi quyền.
 							</p>
 						</div>
 					</div>

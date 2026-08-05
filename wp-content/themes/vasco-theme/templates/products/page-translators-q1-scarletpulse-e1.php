@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Product Detail Proxy Template: page-translators-q1-scarletpulse-e1.php
  *

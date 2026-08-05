@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Product Detail Proxy Template: page-translators-v4-rubyred-e1.php
  *

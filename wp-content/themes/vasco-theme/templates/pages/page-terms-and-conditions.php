@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-terms-and-conditions.php
  *
@@ -45,7 +45,7 @@ get_header();
 </div>
 <div class="terms-content">
 <div class="container">
-<p>Công ty chịu trách nhiệm về cửa hàng trực tuyến tại <a href="<?php echo esc_url( home_url( "/" ) ); ?>" rel="noopener" target="_blank">vasco-translator.com</a> (sau đây gọi là "Cửa hàng" hoặc "Cửa hàng trực tuyến") là Vasco Electronics LLC, có trụ sở tại 800 N King Street Suite 304 2491, Wilmington, DE 19801. Địa chỉ email <a alt="email" href="mailto:support@vasco-electronics.com" title="e-mail">support@vasco-electronics.com</a>.</p>
+<p>Công ty chịu trách nhiệm về cửa hàng trực tuyến tại <a href="<?php echo esc_url( home_url( "/" ) ); ?>" rel="noopener" target="_blank">vasco-translator.com</a> (sau đây gọi là "Cửa hàng" hoặc "Cửa hàng trực tuyến") là VASCO VN. Địa chỉ email <a alt="email" href="mailto:support@vasco-electronics.com" title="e-mail">support@vasco-electronics.com</a>.</p>
 <h2 class="h2">Định nghĩa:</h2>
 <ul>
 <li><b>BIỂU MẪU LIÊN HỆ VÀ TRÒ CHUYỆN</b> – biểu mẫu và cửa sổ trò chuyện có sẵn trong Cửa hàng trực tuyến cho phép liên hệ với Người bán thông qua trang web của Cửa hàng trực tuyến.</li>
@@ -56,9 +56,9 @@ get_header();
 <li><b>KHÁCH HÀNG</b> - một chủ thể mà các dịch vụ điện tử có thể được cung cấp hoặc người có ý định giao kết hoặc đã giao kết Hợp đồng với Người bán.</li>
 <li><b>TÀI KHOẢN KHÁCH HÀNG</b> - được đánh dấu bằng tên đăng nhập riêng và mật khẩu do khách hàng cung cấp, là cơ sở dữ liệu chứa thông tin khách hàng được sử dụng, trong số các mục đích khác, để theo dõi các đơn hàng đã đặt, dữ liệu thanh toán và các tùy chọn liên quan đến các chức năng được lựa chọn của Cửa hàng.</li>
 <li><b>ĐIỀU KHOẢN DỊCH VỤ</b> - Điều khoản dịch vụ này quy định các điều kiện sử dụng Cửa hàng trực tuyến trong khuôn khổ cung cấp dịch vụ điện tử và các điều kiện chung về mua bán giữa Khách hàng và Người bán vận hành Cửa hàng trực tuyến.</li>
-<li><b>NHÀ CUNG CẤP THẺ SIM</b> - là chủ thể cung cấp thẻ SIM cho các thiết bị và chịu trách nhiệm trực tiếp về chất lượng dịch vụ được cung cấp trong lĩnh vực này, bao gồm việc kích hoạt, vận hành đúng cách của thẻ, việc áp dụng khóa tạm thời hoặc vĩnh viễn, xem xét các khiếu nại liên quan đến hoạt động đúng cách của thẻ SIM. Nhà cung cấp thẻ SIM là Vasco Electronics LLC, có trụ sở tại 2232 Dell Range Blvd, Suite 245 - 3030, Cheyenne, WY 82009.</li>
+<li><b>NHÀ CUNG CẤP THẺ SIM</b> - là chủ thể cung cấp thẻ SIM cho các thiết bị và chịu trách nhiệm trực tiếp về chất lượng dịch vụ được cung cấp trong lĩnh vực này, bao gồm việc kích hoạt, vận hành đúng cách của thẻ, việc áp dụng khóa tạm thời hoặc vĩnh viễn, xem xét các khiếu nại liên quan đến hoạt động đúng cách của thẻ SIM. Nhà cung cấp thẻ SIM là VASCO VN.</li>
 <li><b>CỬA HÀNG</b> - cửa hàng trực tuyến của Người bán có tại <a href="<?php echo esc_url( home_url( "/" ) ); ?>" rel="noopener" target="_blank">vasco-translator.com</a>. Cửa hàng trực tuyến này bán các thiết bị phiên dịch điện tử, phần mềm dịch thuật và phụ kiện điện tử.</li>
-<li><b>NGƯỜI BÁN</b> - Vasco Electronics LLC, có trụ sở tại 2232 Dell Range Blvd, Suite 245 - 3030, Cheyenne, WY 82009. Địa chỉ email <a alt="email" href="mailto:support@vasco-electronics.com." title="e-mail">support@vasco-electronics.com</a>.</li>
+<li><b>NGƯỜI BÁN</b> - VASCO VN. Địa chỉ email <a alt="email" href="mailto:support@vasco-electronics.com." title="e-mail">support@vasco-electronics.com</a>.</li>
 <li><b>SẢN PHẨM</b> - vật phẩm được trình bày trong Cửa hàng trực tuyến có thể là đối tượng của hợp đồng mua bán giữa Khách hàng và Người bán.</li>
 <li><b>HỢP ĐỒNG MUA BÁN</b> - nghĩa là một giao dịch mua bán được thực hiện theo các điều khoản quy định trong Điều khoản dịch vụ và pháp luật hiện hành, giữa Khách hàng và Người bán.</li>
 <li><b>GỬI ĐƠN HÀNG</b> - nghĩa là việc Khách hàng gửi đề nghị giao kết Hợp đồng mua bán đối với các Sản phẩm là đối tượng của đơn hàng, trong đó nêu rõ, đặc biệt là loại và số lượng Sản phẩm. Đơn hàng chỉ có thể được đặt sau khi đã chấp nhận Điều khoản dịch vụ này.</li>

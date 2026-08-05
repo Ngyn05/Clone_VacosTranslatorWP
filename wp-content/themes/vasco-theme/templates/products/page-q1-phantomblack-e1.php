@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Product Page Template page-q1-phantomblack-e1.php
  *
@@ -991,7 +991,7 @@ Người tham gia có quyền rút khỏi hợp đồng mua bán trong vòng 14 
 <div class="dialog-content">
 <h2>Đơn vị chịu trách nhiệm sản phẩm</h2>
 <p>Nhà sản xuất</p>
-<p>Vasco Electronics S.A.<br/>Al. 29 Listopada 20, 31-401 Kraków, Poland<br/>info@vasco-electronics.com</p>
+<p>VASCO VN<br/>Al. 29 Listopada 20, 31-401 Kraków, Poland<br/>info@vasco-electronics.com</p>
 </div>
 </div>
 </dialog>
@@ -1715,7 +1715,7 @@ Vasco Assistant nhận diện được các biểu tượng, ẩm thực vùng m
 <div class="dialog-content">
 <h2>Đơn vị chịu trách nhiệm sản phẩm</h2>
 <p>Nhà sản xuất</p>
-<p>Vasco Electronics S.A.<br/>Al. 29 Listopada 20, 31-401 Kraków, Poland<br/>info@vasco-electronics.com</p>
+<p>VASCO VN<br/>Al. 29 Listopada 20, 31-401 Kraków, Poland<br/>info@vasco-electronics.com</p>
 </div>
 </div>
 </dialog>

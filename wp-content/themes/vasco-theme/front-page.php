@@ -937,7 +937,7 @@ get_header();
 		</section>
 		<section class="about-vasco-section">
 			<div class="container">
-				<h2 class="h2-notosans">Về Vasco Electronics</h2>
+				<h2 class="h2-notosans">Về VASCO VN</h2>
 				<div class="about-vasco-grid">
 					<div class="content-box-big">
 						<h3 class="h2">Sứ mệnh của chúng tôi</h3>

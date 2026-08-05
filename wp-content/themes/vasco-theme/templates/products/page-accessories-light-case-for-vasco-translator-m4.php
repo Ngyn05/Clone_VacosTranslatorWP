@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-accessories-light-case-for-vasco-translator-m4.php
  *
@@ -355,7 +355,7 @@ get_header();
 <div class="dialog-content">
 <h2>Người chịu trách nhiệm</h2>
 <p>Nhà sản xuất</p>
-<p>Vasco Electronics S.A.<br/>Al. 29 Listopada 20, 31-401 Kraków, Poland<br/>info@vasco-electronics.com</p>
+<p>VASCO VN<br/>Al. 29 Listopada 20, 31-401 Kraków, Poland<br/>info@vasco-electronics.com</p>
 </div>
 </div>
 </dialog>

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-articles-languages-spanish-speaking-countries.php
  *
@@ -374,7 +374,7 @@ get_header();
 <div class="cta-button-wrapper" style="text-align: center;">
 <a class="cta-button" href="../../../features/translate-photos.html">Dịch ảnh dễ dàng</a>
 </div>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","@id":"./articles/languages/spanish-speaking-countries/#video-I3i0STGVAtQ","url":"./articles/languages/spanish-speaking-countries/","embedUrl":"https://www.youtube.com/embed/I3i0STGVAtQ","name":"Which countries speak Spanish as an official language?","description":"Language is a remarkable aspect of human culture, carrying within its syllables identities of diverse societies. Spanish, with its melodic cadence and rich history, holds a prominent place among the world's most spoken languages. As&hellip;","thumbnailUrl":["https://i.ytimg.com/vi/I3i0STGVAtQ/hqdefault.jpg"],"inLanguage":"en-US","uploadDate":"2023-06-16T12:44:11+02:00","publisher":{"@type":"Organization","name":"Blog Vasco Electronics","logo":{"@type":"ImageObject","url":"./wp-content/uploads/logo.svg","width":300,"height":80}},"potentialAction":{"@type":"WatchAction","target":"https://www.youtube.com/watch?v=I3i0STGVAtQ"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","@id":"./articles/languages/spanish-speaking-countries/#video-I3i0STGVAtQ","url":"./articles/languages/spanish-speaking-countries/","embedUrl":"https://www.youtube.com/embed/I3i0STGVAtQ","name":"Which countries speak Spanish as an official language?","description":"Language is a remarkable aspect of human culture, carrying within its syllables identities of diverse societies. Spanish, with its melodic cadence and rich history, holds a prominent place among the world's most spoken languages. As&hellip;","thumbnailUrl":["https://i.ytimg.com/vi/I3i0STGVAtQ/hqdefault.jpg"],"inLanguage":"en-US","uploadDate":"2023-06-16T12:44:11+02:00","publisher":{"@type":"Organization","name":"Blog VASCO VN","logo":{"@type":"ImageObject","url":"./wp-content/uploads/logo.svg","width":300,"height":80}},"potentialAction":{"@type":"WatchAction","target":"https://www.youtube.com/watch?v=I3i0STGVAtQ"}}</script>
 </div>
 </div><div class="et_pb_column et_pb_column_1_4 et_pb_column_2_tb_body et_pb_css_mix_blend_mode_passthrough et-last-child">
 <div class="et_pb_module et_pb_blurb et_pb_blurb_0_tb_body et_pb_text_align_left et_pb_blurb_position_left et_pb_bg_layout_light">

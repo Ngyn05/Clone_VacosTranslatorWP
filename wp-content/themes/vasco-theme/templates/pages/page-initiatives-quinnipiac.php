@@ -25,7 +25,7 @@ get_header();
 <li>
 <a href="<?php echo esc_url( home_url( "/initiatives/" ) ); ?>"><span class="breadcrumb-link">Tác động xã hội của chúng tôi</span></a><span class="breadcrumb-divider">&gt;</span>
 </li>
-<li><span aria-current="page" class="breadcrumb-current body-16">Vasco Electronics hỗ trợ Đại học Quinnipiac</span></li>
+<li><span aria-current="page" class="breadcrumb-current body-16">VASCO VN hỗ trợ Đại học Quinnipiac</span></li>
 </ol>
 </nav>
 </div>

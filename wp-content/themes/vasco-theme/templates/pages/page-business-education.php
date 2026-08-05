@@ -273,7 +273,7 @@ Khi tôi đi quanh trường, tôi mang theo Vasco phòng trường hợp gặp 
 <input name="ve_ts" type="hidden" value="1785226338"/>
 <p class="text-required"><span class="asterisk">*</span>Bắt buộc</p>
 <div class="gdpr-and-submit-wrapper">
-<p class="gdpr-text">Bên quản lý dữ liệu cá nhân là Vasco Electronics S.A. Bên quản lý xử lý dữ liệu cá nhân được cung cấp trong biểu mẫu này nhằm mục đích xử lý thư từ liên lạc, theo các quy định được quy định trong<a href="<?php echo esc_url( home_url( "/privacy-policy/" ) ); ?>" target="_blank">Chính sách bảo mật</a>.</p>
+<p class="gdpr-text">Bên quản lý dữ liệu cá nhân là VASCO VN. Bên quản lý xử lý dữ liệu cá nhân được cung cấp trong biểu mẫu này nhằm mục đích xử lý thư từ liên lạc, theo các quy định được quy định trong<a href="<?php echo esc_url( home_url( "/privacy-policy/" ) ); ?>" target="_blank">Chính sách bảo mật</a>.</p>
 <button class="btn btn-md btn-primary" type="submit">Gửi</button>
 </div>
 </input></form>

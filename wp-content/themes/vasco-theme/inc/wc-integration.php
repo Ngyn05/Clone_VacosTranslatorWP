@@ -475,7 +475,7 @@ function vasco_wc_place_order() {
 	$order_received_url = $order->get_checkout_order_received_url();
 
 	wp_send_json_success( array(
-		'message'            => 'Đặt hàng thành công! Cảm ơn bạn đã tin tưởng Vasco Electronics.',
+		'message'            => 'Đặt hàng thành công! Cảm ơn bạn đã tin tưởng VASCO VN.',
 		'order_id'           => $order_id,
 		'order_received_url' => $order_received_url,
 		'redirect'           => home_url( '/order-received/?order_id=' . $order_id . '&order_key=' . $order->get_order_key() ),

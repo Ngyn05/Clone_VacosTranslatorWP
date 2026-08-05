@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Product Detail Proxy Template: page-translators-q1-phantomblack-e1.php
  *

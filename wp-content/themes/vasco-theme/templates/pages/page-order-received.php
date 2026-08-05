@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Order Received Page
  *
@@ -41,7 +41,7 @@ if ( $order_id && function_exists( 'wc_get_order' ) ) {
         <div style="text-align: center; margin-bottom: 40px;">
             <div style="width: 80px; height: 80px; background: #D1FAE5; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 36px;">✅</div>
             <h1 style="font-size: 28px; font-weight: 800; color: #065F46; margin-bottom: 8px;">Đặt hàng thành công!</h1>
-            <p style="font-size: 16px; color: #4A5568;">Cảm ơn bạn đã tin tưởng mua sắm tại <strong>Vasco Electronics</strong>.</p>
+            <p style="font-size: 16px; color: #4A5568;">Cảm ơn bạn đã tin tưởng mua sắm tại <strong>VASCO VN</strong>.</p>
             <?php if ( strpos( $order->get_billing_email(), '@vasco.local' ) === false ) : ?>
             <p style="font-size: 14px; color: #718096;">Email xác nhận đã được gửi tới <strong><?php echo esc_html( $order->get_billing_email() ); ?></strong></p>
             <?php endif; ?>

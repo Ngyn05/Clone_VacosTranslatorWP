@@ -46,7 +46,7 @@ get_header();
 <ol type="I">
 <li>QUY ĐỊNH CHUNG<ol>
 <li>Các điều khoản và điều kiện này (sau đây gọi là "Điều Khoản và Điều Kiện") xác định các điều kiện và quy tắc của chương trình khuyến mãi (sau đây gọi là "Chương Trình Khuyến Mãi") được thực hiện dưới tên "RẺ HƠN KHI MUA THEO BỘ"</li>
-<li>Đơn vị tổ chức Chương Trình Khuyến Mãi là Vasco Electronics S.A. có trụ sở đăng ký tại Krakow, al. 29 Listopada 20, 31-401 Krakow, được đăng ký trong sổ đăng ký doanh nghiệp của Tòa Án Quốc Gia do Tòa Án Khu Vực Krakow - Śródmieście tại Krakow, Ban Thương Mại XI của Sổ Đăng Ký Tòa Án Quốc Gia quản lý, với số KRS 0001191838, NIP: 6772369151, REGON: 12258185 (sau đây gọi là "Đơn Vị Tổ Chức").</li>
+<li>Đơn vị tổ chức Chương Trình Khuyến Mãi là VASCO VN (sau đây gọi là "Đơn Vị Tổ Chức").</li>
 <li>Chương Trình Khuyến Mãi sẽ có hiệu lực<ol type="a">
 <li>đối với các bộ sản phẩm có thiết bị Vasco Translator V4 từ ngày 18.02.2025 đến ngày 31.08.2026;</li>
 <li>đối với các bộ sản phẩm có thiết bị Vasco Translator Q1 từ ngày 16.12.2025 đến ngày 31.08.2026;</li>

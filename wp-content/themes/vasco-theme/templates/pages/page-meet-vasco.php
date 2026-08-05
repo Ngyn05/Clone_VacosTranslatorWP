@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-meet-vasco.php
  *
@@ -1123,7 +1123,7 @@ with other Vasco devices" data-product-name="E1">
 </div>
 <div aria-describedby="card9-desc" aria-expanded="false" aria-labelledby="card9-title" class="swiper-slide" role="listitem" tabindex="0">
 <div class="img-wrapper">
-<img alt="The CEO of Vasco Electronics holding the Red Dot award, showcasing the award-winning devices." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/card9.webp" ); ?>"/>
+<img alt="The CEO of VASCO VN holding the Red Dot award, showcasing the award-winning devices." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/meet_vasco/card9.webp" ); ?>"/>
 </div>
 <div class="card-content">
 <div class="feature-title" id="card9-title">

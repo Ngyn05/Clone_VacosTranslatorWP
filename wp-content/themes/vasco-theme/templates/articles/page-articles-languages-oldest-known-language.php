@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-articles-languages-oldest-known-language.php
  *
@@ -305,7 +305,7 @@ get_header();
 <div class="cta-button-wrapper" style="text-align: center;">
 <a class="cta-button" href="../../../features/translate-photos.html">Dịch ảnh dễ dàng</a>
 </div>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","@id":"./articles/languages/oldest-known-language/#video-hAm-S5UHQHA","url":"./articles/languages/oldest-known-language/","embedUrl":"https://www.youtube.com/embed/hAm-S5UHQHA","name":"What is the oldest known language?","description":"Language is the bedrock of human interaction and civilization. It allows us to express our thoughts, emotions, and to share information. However, have you ever wondered which is the oldest language in the world? Or&hellip;","thumbnailUrl":["https://i.ytimg.com/vi/hAm-S5UHQHA/hqdefault.jpg"],"inLanguage":"en-US","uploadDate":"2023-07-31T12:47:16+02:00","publisher":{"@type":"Organization","name":"Blog Vasco Electronics","logo":{"@type":"ImageObject","url":"./wp-content/uploads/logo.svg","width":300,"height":80}},"potentialAction":{"@type":"WatchAction","target":"https://www.youtube.com/watch?v=hAm-S5UHQHA"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","@id":"./articles/languages/oldest-known-language/#video-hAm-S5UHQHA","url":"./articles/languages/oldest-known-language/","embedUrl":"https://www.youtube.com/embed/hAm-S5UHQHA","name":"What is the oldest known language?","description":"Language is the bedrock of human interaction and civilization. It allows us to express our thoughts, emotions, and to share information. However, have you ever wondered which is the oldest language in the world? Or&hellip;","thumbnailUrl":["https://i.ytimg.com/vi/hAm-S5UHQHA/hqdefault.jpg"],"inLanguage":"en-US","uploadDate":"2023-07-31T12:47:16+02:00","publisher":{"@type":"Organization","name":"Blog VASCO VN","logo":{"@type":"ImageObject","url":"./wp-content/uploads/logo.svg","width":300,"height":80}},"potentialAction":{"@type":"WatchAction","target":"https://www.youtube.com/watch?v=hAm-S5UHQHA"}}</script>
 </div>
 </div><div class="et_pb_column et_pb_column_1_4 et_pb_column_2_tb_body et_pb_css_mix_blend_mode_passthrough et-last-child">
 <div class="et_pb_module et_pb_blurb et_pb_blurb_0_tb_body et_pb_text_align_left et_pb_blurb_position_left et_pb_bg_layout_light">

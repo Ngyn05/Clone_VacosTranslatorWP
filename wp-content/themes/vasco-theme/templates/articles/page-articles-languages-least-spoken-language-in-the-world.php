@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-articles-languages-least-spoken-language-in-the-world.php
  *
@@ -263,7 +263,7 @@ get_header();
 <div class="cta-button-wrapper" style="text-align: center;">
 <a class="cta-button" href="../../../features/translate-text.html">Dịch văn bản dễ dàng</a>
 </div>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","@id":"./articles/languages/least-spoken-language-in-the-world/#video-HWYnyZEOVeE","url":"./articles/languages/least-spoken-language-in-the-world/","embedUrl":"https://www.youtube.com/embed/HWYnyZEOVeE","name":"What is the Least Spoken Language in the World?","description":"In a world where communication is key, languages play a vital role in connecting people from different cultures and backgrounds. While many of us use widely spoken languages like English, Mandarin, or Spanish, there are&hellip;","thumbnailUrl":["https://i.ytimg.com/vi/HWYnyZEOVeE/hqdefault.jpg"],"inLanguage":"en-US","uploadDate":"2023-12-06T10:12:22+01:00","publisher":{"@type":"Organization","name":"Blog Vasco Electronics","logo":{"@type":"ImageObject","url":"./wp-content/uploads/logo.svg","width":300,"height":80}},"potentialAction":{"@type":"WatchAction","target":"https://www.youtube.com/watch?v=HWYnyZEOVeE"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","@id":"./articles/languages/least-spoken-language-in-the-world/#video-HWYnyZEOVeE","url":"./articles/languages/least-spoken-language-in-the-world/","embedUrl":"https://www.youtube.com/embed/HWYnyZEOVeE","name":"What is the Least Spoken Language in the World?","description":"In a world where communication is key, languages play a vital role in connecting people from different cultures and backgrounds. While many of us use widely spoken languages like English, Mandarin, or Spanish, there are&hellip;","thumbnailUrl":["https://i.ytimg.com/vi/HWYnyZEOVeE/hqdefault.jpg"],"inLanguage":"en-US","uploadDate":"2023-12-06T10:12:22+01:00","publisher":{"@type":"Organization","name":"Blog VASCO VN","logo":{"@type":"ImageObject","url":"./wp-content/uploads/logo.svg","width":300,"height":80}},"potentialAction":{"@type":"WatchAction","target":"https://www.youtube.com/watch?v=HWYnyZEOVeE"}}</script>
 </div>
 </div><div class="et_pb_column et_pb_column_1_4 et_pb_column_2_tb_body et_pb_css_mix_blend_mode_passthrough et-last-child">
 <div class="et_pb_module et_pb_blurb et_pb_blurb_0_tb_body et_pb_text_align_left et_pb_blurb_position_left et_pb_bg_layout_light">

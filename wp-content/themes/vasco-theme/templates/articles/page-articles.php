@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Clean Page page-articles.php
  *
@@ -217,7 +217,7 @@ get_header();
   "description": "Các bài viết về ngôn ngữ, văn hóa du lịch và công nghệ máy dịch Vasco.",
   "publisher": {
     "@type": "Organization",
-    "name": "Vasco Electronics",
+    "name": "VASCO VN",
     "url": "<?php echo esc_url( home_url() ); ?>"
   }
 }

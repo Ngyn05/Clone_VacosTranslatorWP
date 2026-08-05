@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Checkout Page (WooCommerce Integrated & Responsive)
  *
@@ -184,7 +184,7 @@ get_header();
 
                                 <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer;">
                                     <input type="checkbox" id="term_newsletter" style="margin-top: 2px; width: 16px; height: 16px; flex-shrink: 0;" />
-                                    <span>Tôi đồng ý nhận các thông tin ưu đãi và khuyến mãi từ Vasco Electronics qua email.</span>
+                                    <span>Tôi đồng ý nhận các thông tin ưu đãi và khuyến mãi từ VASCO VN qua email.</span>
                                 </label>
                             </div>
 
