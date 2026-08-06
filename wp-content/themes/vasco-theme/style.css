@@ -4034,10 +4034,15 @@ img, video, iframe, embed, object, picture {
 /* Exception: Logo Trustpilot giữ nguyên height cố định */
 .trustpilot-logo-img,
 .trustpilot-mini img,
-.product-review-wrapper .trustpilot-logo-img {
+.product-review-wrapper .trustpilot-logo-img,
+.trustpilot-top-logo img,
+.trustpilot-top-logo,
+.trustpilot-top img,
+.trustpilot-widget iframe {
     height: 22px !important;
+    max-height: 22px !important;
     width: auto !important;
-    max-width: none !important;
+    max-width: 140px !important;
 }
 
 @media (max-width: 767px) {
@@ -4046,11 +4051,19 @@ img, video, iframe, embed, object, picture {
     .trustpilot-mini img,
     .product-review-wrapper .trustpilot-logo-img,
     .trustpilot img,
-    [class*="trustpilot"] img {
+    .trustpilot-top-logo img,
+    .trustpilot-top-logo,
+    .trustpilot-top img,
+    [class*="trustpilot"] img,
+    [class*="trustpilot"] svg,
+    .trustpilot-widget iframe {
         height: 18px !important;
+        max-height: 18px !important;
         width: auto !important;
-        max-width: none !important;
+        max-width: 120px !important;
+        display: inline-block !important;
     }
+
 
     .doublebox-absolute img,
     .product-cover img,

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Product Page Template page-vasco-translator-m4.php
  *
@@ -288,22 +288,20 @@ return;
 </div>
 </div>
 </div>
-<section class="product-discounts js-product-discounts">
-</section>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
-<button class="btn btn-lg btn-secondary notify-modal-button font-semibold" data-id-attribute="71" data-id-product="62">
-<img alt="Thông báo cho tôi" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/notify.svg" ); ?>"/>
-						Thông báo cho tôi
-					</button>
+<div class="vasco-buttons-row">
+<a class="btn btn-tu-van-zalo" href="https://zalo.me/0938222123" target="_blank" title="Tư vấn Zalo">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12C2 13.85 2.5 15.58 3.37 17.07L2 22L7.09 20.67C8.54 21.52 10.22 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" fill="#0068FF"/></svg>
+TƯ VẤN NGAY
+</a>
+<button aria-label="MUA NGAY: Vasco Translator M4" class="btn btn-primary btn-lg add-to-cart btn-mua-ngay-orange" data-button-action="add-to-cart" type="submit">
+<span class="txt-main">MUA NGAY</span>
+</button>
 </div>
-<div aria-disabled="true" class="product-amazonpay-actions js-product-amazonpay-actions is-disabled" data-erp-has-quantity="0">
-<div class="amazonPayButton amazonPayProductButton" data-color="Gold" data-design="" data-placement="Product" data-rendered="0" id="AmazonPayProduct62">
 </div>
 </div>
-<p class="product-minimal-quantity js-product-minimal-quantity">
-</p>
-</div>
+
 <div class="product-additional-info js-product-additional-info">
 </div>
 </div>

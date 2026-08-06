@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Clean Page page-call-translator.php
  *
@@ -30,7 +30,7 @@ return;
 <p>Hãy tưởng tượng bạn gặp một vấn đề có thể giải quyết chỉ bằng một cuộc gọi điện thoại—nhưng lại bằng một ngôn ngữ nước ngoài. Với tính năng Dịch cuộc gọi có trên Vasco Translator Q1, bạn có thể cảm thấy tự tin và an tâm ngay cả trong những tình huống bất ngờ nhất. Tính năng này mang đến khả năng dịch cuộc gọi điện thoại theo thời gian thực, giúp bạn hiểu hơn 50 ngôn ngữ. Với sự hỗ trợ từ các đối tác công nghệ của chúng tôi, bạn có thể gọi đến 160 quốc gia—tương đương hơn 80% thế giới! Và điều tuyệt vời nhất? Cả bạn và người bạn đang trò chuyện đều nhận được bản dịch theo thời gian thực.</p>
 <p>Hãy để giọng nói của bạn vươn xa toàn cầu.</p>
 <div class="box-btn-wrapper">
-<a class="btn btn-md btn-primary" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>">
+<a class="btn btn-md btn-primary" href="<?php echo esc_url( home_url( "/product/vasco-translator-q1/" ) ); ?>">
 <img alt="Giỏ hàng" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>
 						MUA VASCO TRANSLATOR Q1
 					</a>
@@ -118,7 +118,7 @@ cho phép sử dụng tính năng này</p>
 <p>Khi khoảng cách không còn là vấn đề, ngôn ngữ cũng không nên là rào cản. Giữ liên lạc với người thân ở khắp nơi trên thế giới, đặt lịch hẹn với chuyên gia ở nước ngoài, hoặc liên hệ với các cơ quan công quyền. Cảm nhận sự tự do khi nói về những điều quan trọng nhất với bạn, mà không có gì bị hiểu sai trong quá trình dịch thuật.</p>
 </div>
 </div>
-<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>">
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/product/vasco-translator-q1/" ) ); ?>">
 <svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
@@ -346,7 +346,7 @@ cho phép sử dụng tính năng này</p>
 <h3 aria-label="q1.name]" id="product-38" tabindex="0">
 											Vasco Translator Q1</h3>
 <p>Máy dịch duy nhất có tính năng nhân bản giọng nói và dịch cuộc gọi điện thoại</p>
-<a aria-label="Tìm hiểu thêm Vasco Translator Q1" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>" target="_blank">
+<a aria-label="Tìm hiểu thêm Vasco Translator Q1" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/product/vasco-translator-q1/" ) ); ?>" target="_blank">
 											Tìm hiểu thêm
 										</a>
 </div>

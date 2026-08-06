@@ -67,12 +67,34 @@ add_action( 'after_setup_theme', 'vasco_theme_setup' );
 add_filter( 'use_block_editor_for_post', '__return_false', 10 );
 
 
-// Turn off WooCommerce Coming Soon mode automatically
+// Rewrite rule & Redirect 301 từ /translators/ sang /product/
 add_action( 'init', function () {
-	if ( 'yes' === get_option( 'woocommerce_coming_soon' ) ) {
-		update_option( 'woocommerce_coming_soon', 'no' );
+	add_rewrite_rule( '^product/([^/]+)/?', 'index.php?vasco_product_slug=$matches[1]', 'top' );
+	add_rewrite_rule( '^translators/([^/]+)/?', 'index.php?vasco_product_slug=$matches[1]', 'top' );
+} );
+
+add_filter( 'query_vars', function ( $vars ) {
+	$vars[] = 'vasco_product_slug';
+	return $vars;
+} );
+
+add_action( 'template_redirect', function () {
+	$slug = get_query_var( 'vasco_product_slug' );
+	if ( ! empty( $slug ) ) {
+		$request_uri = $_SERVER['REQUEST_URI'] ?? '';
+		if ( strpos( $request_uri, '/translators/' ) !== false ) {
+			wp_redirect( home_url( '/product/' . $slug . '/' ), 301 );
+			exit;
+		}
+
+		$template_file = get_template_directory() . '/templates/products/page-' . sanitize_file_name( $slug ) . '.php';
+		if ( file_exists( $template_file ) ) {
+			include $template_file;
+			exit;
+		}
 	}
 } );
+
 
 /**
  * Locate custom page templates in subdirectories under templates/

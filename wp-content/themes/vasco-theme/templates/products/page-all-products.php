@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Clean Page page-all-products.php
  *
@@ -83,7 +83,7 @@ return;
 <div class="product-thumb-wrapper js-variant-spinner-wrapper">
 <div class="product-flags js-product-flags">
 </div>
-<a class="product-link" content="../translators/vasco-translator-q1.html" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>" title="Vasco Translator Q1">
+<a class="product-link" content="../translators/vasco-translator-q1.html" href="<?php echo esc_url( home_url( "/product/vasco-translator-q1/" ) ); ?>" title="Vasco Translator Q1">
 <img alt="Vasco Translator Q1" data-full-size-image-url="./385-og_image/vasco-translator-q1.jpg" height="300" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/385-medium_default/vasco-translator-q1.jpg" ); ?>" width="300"/>
 </a>
 <div class="loading-spinner">
@@ -95,7 +95,7 @@ return;
 </div>
 </div>
 <div class="product-title-wrapper">
-<h3 class="h3 product-title" id="vasco-translator-q1-name"><a aria-label="Xem chi tiết sản phẩm Vasco Translator Q1" class="product-link product-title-link" content="../translators/vasco-translator-q1.html" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>" title="Vasco Translator Q1">Vasco Translator Q1</a></h3>
+<h3 class="h3 product-title" id="vasco-translator-q1-name"><a aria-label="Xem chi tiết sản phẩm Vasco Translator Q1" class="product-link product-title-link" content="../translators/vasco-translator-q1.html" href="<?php echo esc_url( home_url( "/product/vasco-translator-q1/" ) ); ?>" title="Vasco Translator Q1">Vasco Translator Q1</a></h3>
 </div>
 <div class="trustpilot-top trustpilot-top--category">
 <!-- TrustBox widget - Product Mini -->
@@ -156,7 +156,7 @@ return;
 </div>
 </div>
 <div class="product-description-button-wrapper">
-<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>">Mô tả<span class="text-sr-only">Vasco Translator Q1</span></a>
+<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( "/product/vasco-translator-q1/" ) ); ?>">Mô tả<span class="text-sr-only">Vasco Translator Q1</span></a>
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
@@ -181,7 +181,7 @@ return;
 <div aria-label="Mới" class="body-base product-flag">Mới</div>
 </div>
 </div>
-<a class="product-link" content="../translators/vasco-translator-m4.html" href="<?php echo esc_url( home_url( "/translators/vasco-translator-m4/" ) ); ?>" title="Vasco Translator M4">
+<a class="product-link" content="../translators/vasco-translator-m4.html" href="<?php echo esc_url( home_url( "/product/vasco-translator-m4/" ) ); ?>" title="Vasco Translator M4">
 <img alt="Vasco Translator M4" data-full-size-image-url="./488-og_image/vasco-translator-m4.jpg" height="300" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/488-medium_default/vasco-translator-m4.jpg" ); ?>" width="300"/>
 </a>
 <div class="loading-spinner">
@@ -193,7 +193,7 @@ return;
 </div>
 </div>
 <div class="product-title-wrapper">
-<h3 class="h3 product-title" id="vasco-translator-m4-name"><a aria-label="Xem chi tiết sản phẩm Vasco Translator M4" class="product-link product-title-link" content="../translators/vasco-translator-m4.html" href="<?php echo esc_url( home_url( "/translators/vasco-translator-m4/" ) ); ?>" title="Vasco Translator M4">Vasco Translator M4</a></h3>
+<h3 class="h3 product-title" id="vasco-translator-m4-name"><a aria-label="Xem chi tiết sản phẩm Vasco Translator M4" class="product-link product-title-link" content="../translators/vasco-translator-m4.html" href="<?php echo esc_url( home_url( "/product/vasco-translator-m4/" ) ); ?>" title="Vasco Translator M4">Vasco Translator M4</a></h3>
 </div>
 <div class="trustpilot-top trustpilot-top--category">
 <!-- TrustBox widget - Product Mini -->
@@ -249,7 +249,7 @@ return;
 </div>
 </div>
 <div class="product-description-button-wrapper">
-<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( "/translators/vasco-translator-m4/" ) ); ?>">Mô tả<span class="text-sr-only">Vasco Translator M4</span></a>
+<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( "/product/vasco-translator-m4/" ) ); ?>">Mô tả<span class="text-sr-only">Vasco Translator M4</span></a>
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
@@ -274,7 +274,7 @@ return;
 <div aria-label="Bán chạy nhất" class="body-base product-flag">Bán chạy nhất</div>
 </div>
 </div>
-<a class="product-link" content="../translators/vasco-translator-v4.html" href="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>" title="Vasco Translator V4">
+<a class="product-link" content="../translators/vasco-translator-v4.html" href="<?php echo esc_url( home_url( "/product/vasco-translator-v4/" ) ); ?>" title="Vasco Translator V4">
 <img alt="Vasco Translator V4" data-full-size-image-url="./343-og_image/vasco-translator-v4.jpg" height="300" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/343-medium_default/vasco-translator-v4.jpg" ); ?>" width="300"/>
 </a>
 <div class="loading-spinner">
@@ -286,7 +286,7 @@ return;
 </div>
 </div>
 <div class="product-title-wrapper">
-<h3 class="h3 product-title" id="vasco-translator-v4-name"><a aria-label="Xem chi tiết sản phẩm Vasco Translator V4" class="product-link product-title-link" content="../translators/vasco-translator-v4.html" href="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>" title="Vasco Translator V4">Vasco Translator V4</a></h3>
+<h3 class="h3 product-title" id="vasco-translator-v4-name"><a aria-label="Xem chi tiết sản phẩm Vasco Translator V4" class="product-link product-title-link" content="../translators/vasco-translator-v4.html" href="<?php echo esc_url( home_url( "/product/vasco-translator-v4/" ) ); ?>" title="Vasco Translator V4">Vasco Translator V4</a></h3>
 </div>
 <div class="trustpilot-top trustpilot-top--category">
 <!-- TrustBox widget - Product Mini -->
@@ -352,7 +352,7 @@ return;
 </div>
 </div>
 <div class="product-description-button-wrapper">
-<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>">Mô tả<span class="text-sr-only">Vasco Translator V4</span></a>
+<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( "/product/vasco-translator-v4/" ) ); ?>">Mô tả<span class="text-sr-only">Vasco Translator V4</span></a>
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
@@ -374,7 +374,7 @@ return;
 <div class="product-thumb-wrapper js-variant-spinner-wrapper">
 <div class="product-flags js-product-flags">
 </div>
-<a class="product-link" content="../translators/vasco-translator-e1.html" href="<?php echo esc_url( home_url( "/translators/vasco-translator-e1/" ) ); ?>" title="Vasco Translator E1">
+<a class="product-link" content="../translators/vasco-translator-e1.html" href="<?php echo esc_url( home_url( "/product/vasco-translator-e1/" ) ); ?>" title="Vasco Translator E1">
 <img alt="Vasco Translator E1" data-full-size-image-url="./323-og_image/vasco-translator-e1.jpg" height="300" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/323-medium_default/vasco-translator-e1.jpg" ); ?>" width="300"/>
 </a>
 <div class="loading-spinner">
@@ -386,7 +386,7 @@ return;
 </div>
 </div>
 <div class="product-title-wrapper">
-<h3 class="h3 product-title" id="vasco-translator-e1-name"><a aria-label="Xem chi tiết sản phẩm Vasco Translator E1" class="product-link product-title-link" content="../translators/vasco-translator-e1.html" href="<?php echo esc_url( home_url( "/translators/vasco-translator-e1/" ) ); ?>" title="Vasco Translator E1">Vasco Translator E1</a></h3>
+<h3 class="h3 product-title" id="vasco-translator-e1-name"><a aria-label="Xem chi tiết sản phẩm Vasco Translator E1" class="product-link product-title-link" content="../translators/vasco-translator-e1.html" href="<?php echo esc_url( home_url( "/product/vasco-translator-e1/" ) ); ?>" title="Vasco Translator E1">Vasco Translator E1</a></h3>
 </div>
 <div class="trustpilot-top trustpilot-top--category">
 <!-- TrustBox widget - Product Mini -->
@@ -421,7 +421,7 @@ return;
 </div>
 </div>
 <div class="product-description-button-wrapper">
-<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( "/translators/vasco-translator-e1/" ) ); ?>">Mô tả<span class="text-sr-only">Vasco Translator E1</span></a>
+<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( "/product/vasco-translator-e1/" ) ); ?>">Mô tả<span class="text-sr-only">Vasco Translator E1</span></a>
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">

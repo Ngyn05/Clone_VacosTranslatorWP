@@ -74,9 +74,9 @@ get_header();
 										<div class="swiper-slide"
 											data-product-desc="Máy phiên dịch duy nhất tích hợp công nghệ nhân bản giọng nói và dịch cuộc gọi"
 											data-product-id="Q1"
-											data-product-link="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>"
+											data-product-link="<?php echo esc_url( home_url( "/product/vasco-translator-q1/" ) ); ?>"
 											data-product-name="Vasco Translator Q1">
-											<a class="photo-link" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>"
+											<a class="photo-link" href="<?php echo esc_url( home_url( "/product/vasco-translator-q1/" ) ); ?>"
 												title="Go to product Vasco Translator Q1">
 												<img alt="Vasco Translator Q1" decoding="async" height="480"
 													loading="eager"
@@ -88,9 +88,9 @@ get_header();
 										<div class="swiper-slide"
 											data-product-desc="Tai nghe phiên dịch cho cuộc trò chuyện trôi chảy không gián đoạn"
 											data-product-id="E1"
-											data-product-link="<?php echo esc_url( home_url( "/translators/vasco-translator-e1/" ) ); ?>"
+											data-product-link="<?php echo esc_url( home_url( "/product/vasco-translator-e1/" ) ); ?>"
 											data-product-name="Vasco Translator E1">
-											<a class="photo-link" href="<?php echo esc_url( home_url( "/translators/vasco-translator-e1/" ) ); ?>"
+											<a class="photo-link" href="<?php echo esc_url( home_url( "/product/vasco-translator-e1/" ) ); ?>"
 												title="Go to product Vasco Translator E1">
 												<img alt="Vasco Translator E1" decoding="async" fetchpriority="low"
 													height="480" loading="lazy"
@@ -102,9 +102,9 @@ get_header();
 										<div class="swiper-slide"
 											data-product-desc="Máy phiên dịch bỏ túi siêu nhẹ và dễ sử dụng cho mọi người"
 											data-product-id="M4"
-											data-product-link="<?php echo esc_url( home_url( "/translators/vasco-translator-m4/" ) ); ?>"
+											data-product-link="<?php echo esc_url( home_url( "/product/vasco-translator-m4/" ) ); ?>"
 											data-product-name="Vasco Translator M4">
-											<a class="photo-link" href="<?php echo esc_url( home_url( "/translators/vasco-translator-m4/" ) ); ?>"
+											<a class="photo-link" href="<?php echo esc_url( home_url( "/product/vasco-translator-m4/" ) ); ?>"
 												title="Go to product Vasco Translator M4">
 												<img alt="Vasco Translator M4" decoding="async" fetchpriority="low"
 													height="480" loading="lazy"
@@ -116,9 +116,9 @@ get_header();
 										<div class="swiper-slide"
 											data-product-desc="Thiết bị máy phiên dịch cầm tay tức thì"
 											data-product-id="V4"
-											data-product-link="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>"
+											data-product-link="<?php echo esc_url( home_url( "/product/vasco-translator-v4/" ) ); ?>"
 											data-product-name="Vasco Translator V4">
-											<a class="photo-link" href="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>"
+											<a class="photo-link" href="<?php echo esc_url( home_url( "/product/vasco-translator-v4/" ) ); ?>"
 												title="Go to product Vasco Translator V4">
 												<img alt="Vasco Translator V4" decoding="async" fetchpriority="low"
 													height="480" loading="lazy"
@@ -354,7 +354,7 @@ get_header();
 											<p class="product-desc">Máy phiên dịch duy nhất có tính năng nhân bản giọng
 												nói và dịch cuộc gọi</p>
 											<a class="product-link btn btn-md btn-white" data-product-id="Q1"
-												href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>">Tìm hiểu thêm</a>
+												href="<?php echo esc_url( home_url( "/product/vasco-translator-q1/" ) ); ?>">Tìm hiểu thêm</a>
 										</div>
 										<div class="container">
 											<button class="swiper-button-prev btn-carousel-prev"

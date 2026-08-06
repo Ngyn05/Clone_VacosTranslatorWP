@@ -355,9 +355,12 @@ function vasco_theme_render_product_detail_page( $slug = '' ) {
 	echo '<div class="product-actions js-product-actions">';
 	echo '<div class="product-prices-section"><div class="product-prices js-product-prices"><div class="product-price"><div class="current-price"><p class="current-price-value product-price">' . wp_kses_post( $product->get_price_html() ) . '</p></div></div></div></div>';
 	echo '<p class="afterpay-text">hoặc 4 kỳ thanh toán không lãi suất với <strong>Afterpay ⓘ</strong></p>';
-	$single_img_id = $product->get_image_id();
-	$single_img_url = $single_img_id ? wp_get_attachment_image_url( $single_img_id, 'woocommerce_single' ) : wc_placeholder_img_src( 'woocommerce_single' );
-	echo '<div class="product-add-to-cart js-product-add-to-cart"><div class="add"><button aria-label="' . esc_attr( 'MUA NGAY: ' . $product->get_name() ) . '" class="btn btn-primary btn-lg add-to-cart btn-add-to-cart" data-button-action="add-to-cart" data-product-id="' . esc_attr( (string) $product->get_id() ) . '" data-product-name="' . esc_attr( $product->get_name() ) . '" data-product-price="' . esc_attr( (string) $product->get_price() ) . '" data-product-image="' . esc_url( $single_img_url ) . '" type="button"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> MUA NGAY</button></div></div>';
+	echo '<div class="product-add-to-cart js-product-add-to-cart"><div class="add">';
+	echo '<div class="vasco-buttons-row">';
+	echo '<a class="btn btn-tu-van-zalo" href="https://zalo.me/0938222123" target="_blank" title="Tư vấn Zalo"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12C2 13.85 2.5 15.58 3.37 17.07L2 22L7.09 20.67C8.54 21.52 10.22 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" fill="#0068FF"/></svg> TƯ VẤN NGAY</a>';
+	echo '<button aria-label="' . esc_attr( 'MUA NGAY: ' . $product->get_name() ) . '" class="btn btn-primary btn-lg add-to-cart btn-add-to-cart btn-mua-ngay-orange" data-button-action="add-to-cart" data-product-id="' . esc_attr( (string) $product->get_id() ) . '" data-product-name="' . esc_attr( $product->get_name() ) . '" data-product-price="' . esc_attr( (string) $product->get_price() ) . '" data-product-image="' . esc_url( $single_img_url ) . '" type="button"><span class="txt-main">MUA NGAY</span></button>';
+	echo '</div></div></div>';
+
 	echo '</div>';
 	echo '</div>';
 	echo '</div></div></div>';

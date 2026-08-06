@@ -13,7 +13,6 @@ get_header();
         <nav aria-label="Breadcrumbs" class="breadcrumb">
             <ol style="display: flex; gap: 8px; list-style: none; margin: 0; padding: 0; font-size: 14px; color: #6C757D; flex-wrap: wrap;">
                 <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>" style="color: #001480; text-decoration: none;">Trang chủ</a> <span>&gt;</span></li>
-                <li><a href="<?php echo esc_url( home_url( '/cart/' ) ); ?>" style="color: #001480; text-decoration: none;">Giỏ hàng</a> <span>&gt;</span></li>
                 <li style="color: #2D3139; font-weight: 600;">Thanh toán</li>
             </ol>
         </nav>
