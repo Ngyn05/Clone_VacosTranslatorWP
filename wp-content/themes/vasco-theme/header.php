@@ -51,6 +51,16 @@
 								src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/logo.svg" ); ?>" width="110px" />
 						</a>
 					</div>
+					<!-- Cờ VN + Phone icon hiển thị trên mobile -->
+					<div class="lg:hidden" style="display:flex;align-items:center;gap:10px;">
+						<svg width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="border-radius:50%;flex-shrink:0;display:block;">
+							<circle cx="20" cy="20" r="20" fill="#DA251D"/>
+							<polygon fill="#FFFF00" points="20,8 22.47,15.09 30,15.09 24.26,19.27 26.18,26.91 20,22.36 13.82,26.91 15.74,19.27 10,15.09 17.53,15.09"/>
+						</svg>
+						<a class="icon phone-icon-link" href="<?php echo esc_url( home_url( "/contact/" ) ); ?>" title="Liên hệ hỗ trợ" style="display:flex;align-items:center;">
+							<img alt="Phone" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/phone-icon.svg" ); ?>" />
+						</a>
+					</div>
 				</div>
 				<div class="desktop-nav" id="desktop-nav">
 					<nav aria-label="Main menu" role="navigation">
@@ -510,6 +520,7 @@
 					</nav>
 				</div>
 				<div class="right-nav">
+					<!-- Phone icon (desktop) -->
 					<div class="phone-number" id="phone-numbers">
 						<a class="icon phone-icon-link" href="<?php echo esc_url( home_url( "/contact/" ) ); ?>" title="Liên hệ hỗ trợ">
 							<img alt="Phone" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/phone-icon.svg" ); ?>" />
@@ -528,14 +539,15 @@
 									</button>
 								</div>
 								<div class="phone-number-wrapper">
-									<a class="phone-number-item" href="tel:+12243481207" title="United States">
-										<img alt="United States" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/flags/us.svg" ); ?>" />+1 224
-										348 1207</a>
+									<a class="phone-number-item" href="tel:0917834532" title="Việt Nam" style="display:flex;align-items:center;gap:10px;">
+										<svg width="24" height="24" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#DA251D"/><polygon fill="#FFFF00" points="20,8 22.47,15.09 30,15.09 24.26,19.27 26.18,26.91 20,22.36 13.82,26.91 15.74,19.27 10,15.09 17.53,15.09"/></svg>
+										0917.834.532
+									</a>
 									<div class="phone-number-working-hours">
 										<div class="phone-number-placeholder"></div>
 										<div class="phone-number-working-hours-list">
 											<p class="phone-number-working-hours-list-header">Giờ làm việc:</p>
-											<p>Thứ 2 - Thứ 6: 09:00 SA - 05:00 CH</p>
+											<p>Thứ 2 - Thứ 7: 08:00 SA - 08:00 CH</p>
 										</div>
 									</div>
 								</div>

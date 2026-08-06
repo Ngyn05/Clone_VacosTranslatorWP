@@ -37,6 +37,23 @@ body.admin-bar #header {
 }
 
 /* =============================================
+   RESPONSIVE UTILITY CLASSES
+   - .lg:hidden  = ẩn trên desktop (≥992px), hiện trên mobile
+   - .sm:hidden  = ẩn trên mobile (≤991px), hiện trên desktop
+   ============================================= */
+/* Mặc định: ẩn trên desktop */
+.lg\:hidden {
+    display: none !important;
+}
+/* Hiện lại trên mobile */
+@media (max-width: 991px) {
+    .lg\:hidden {
+        display: flex !important;
+    }
+}
+
+
+/* =============================================
    PREVENT HORIZONTAL OVERFLOW & TOP ANNOUNCEMENT BANNER RESPONSIVE
    ============================================= */
 html, body {
@@ -668,6 +685,25 @@ h6,
         cursor: pointer !important;
         pointer-events: auto !important;
         z-index: 1000000 !important;
+    }
+
+    /* Ẩn right-nav (desktop only) trên mobile — phone icon được đặt trong header-box */
+    .right-nav {
+        display: none !important;
+    }
+
+    /* header-box mobile: hamburger | logo | phone — space-between */
+    .header-box {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        width: 100% !important;
+    }
+
+    /* Ẩn phone icon mobile khi ở desktop (chỉ hiện trên mobile) */
+    .phone-icon-link.lg\:hidden {
+        display: flex !important;
     }
 
     .desktop-nav {
@@ -3746,14 +3782,36 @@ img:not([src]) {
     .product-extended-description {
         grid-template-columns: 1fr !important;
     }
+
+    /* Đồng bộ kích thước 2 nút trên mobile */
     .vasco-buttons-row {
         flex-direction: column !important;
-    }
-    .vasco-buttons-row .btn-tu-van-zalo,
-    .vasco-buttons-row .btn-mua-ngay-orange {
+        gap: 10px !important;
         width: 100% !important;
     }
+
+    .vasco-buttons-row .btn-tu-van-zalo,
+    .vasco-buttons-row .btn-mua-ngay-orange,
+    .product-add-to-cart .add-to-cart.btn-mua-ngay-orange {
+        width: 100% !important;
+        flex: unset !important;
+        height: 52px !important;
+        font-size: 15px !important;
+        padding: 0 20px !important;
+        border-radius: 26px !important;
+        letter-spacing: 0.4px !important;
+        justify-content: center !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Đồng bộ font-size cho text bên trong nút Mua Ngay */
+    .vasco-buttons-row .btn-mua-ngay-orange .txt-main,
+    .vasco-buttons-row .btn-mua-ngay-orange .txt-sub {
+        font-size: 15px !important;
+        letter-spacing: 0.4px !important;
+    }
 }
+
 
 /* ==========================================================================
    PRODUCT TABS ALIGNMENT SYSTEM
@@ -3944,3 +4002,375 @@ li.product-feature {
     margin-left: 0 !important;
     padding-left: 20px !important;
 }
+
+
+/* ==========================================================================
+   GLOBAL MOBILE RESPONSIVE v2
+   Breakpoints:
+   - Mobile   : ≤767px
+   - Tablet   : 768px – 991px
+   - Desktop  : ≥992px
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. TYPOGRAPHY SCALE
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+    h1, .h1 { font-size: clamp(1.5rem, 5vw, 2rem) !important; line-height: 1.25 !important; }
+    h2, .h2 { font-size: clamp(1.25rem, 4.5vw, 1.6rem) !important; line-height: 1.3 !important; }
+    h3, .h3 { font-size: clamp(1.05rem, 4vw, 1.25rem) !important; line-height: 1.35 !important; }
+    h4, .h4 { font-size: clamp(0.95rem, 3.5vw, 1.1rem) !important; }
+    p, li, a { font-size: clamp(0.875rem, 3vw, 1rem) !important; }
+}
+
+/* --------------------------------------------------------------------------
+   2. IMAGES & MEDIA — tránh tràn ngang
+   -------------------------------------------------------------------------- */
+img, video, iframe, embed, object, picture {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+/* Exception: Logo Trustpilot giữ nguyên height cố định */
+.trustpilot-logo-img,
+.trustpilot-mini img,
+.product-review-wrapper .trustpilot-logo-img {
+    height: 22px !important;
+    width: auto !important;
+    max-width: none !important;
+}
+
+@media (max-width: 767px) {
+    /* Trustpilot logo thu nhỏ trên mobile */
+    .trustpilot-logo-img,
+    .trustpilot-mini img,
+    .product-review-wrapper .trustpilot-logo-img,
+    .trustpilot img,
+    [class*="trustpilot"] img {
+        height: 18px !important;
+        width: auto !important;
+        max-width: none !important;
+    }
+
+    .doublebox-absolute img,
+    .product-cover img,
+    .product-image img,
+    .thumbnail img,
+    .product-miniature img,
+    .product-card img {
+        width: 100% !important;
+        height: auto !important;
+        object-fit: contain !important;
+    }
+}
+
+
+/* --------------------------------------------------------------------------
+   3. TABLES — horizontal scroll trên mobile
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+    table {
+        display: block !important;
+        width: 100% !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+    .comparison-table,
+    .specs-table,
+    .product-comparison {
+        display: block !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        width: 100% !important;
+        max-width: 100vw !important;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   4. FORMS & INPUTS — full width, touch-friendly
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+    input, textarea, select, button {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    /* Touch target tối thiểu 44px (chuẩn iOS/Android) */
+    button, .btn, a.btn, input[type="submit"],
+    input[type="button"], .add-to-cart, [data-button-action] {
+        min-height: 44px !important;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+    form {
+        width: 100% !important;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   5. CONTAINER & PADDING — giảm trên mobile
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+    .container,
+    .max-width-container,
+    .section-container {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+        box-sizing: border-box !important;
+    }
+        /* Không override section padding chung — mỗi section tự quản lý padding của mình */
+}
+
+/* --------------------------------------------------------------------------
+   6. BREADCRUMB — mobile compact
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+    .breadcrumb,
+    nav.breadcrumb,
+    ol.breadcrumb,
+    .woocommerce-breadcrumb,
+    #breadcrumb {
+        font-size: 11px !important;
+        padding: 8px 16px !important;
+        white-space: nowrap !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        display: flex !important;
+        flex-wrap: nowrap !important;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   7. PRODUCT TABS — scroll ngang trên mobile
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+    .products-catalog-tabs,
+    .tabs-nav,
+    .product-tabs,
+    .category-tabs,
+    ul.nav-tabs,
+    .tab-list {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        gap: 8px !important;
+        padding-bottom: 6px !important;
+        border-bottom: 1px solid #e8e8e8 !important;
+        scrollbar-width: none !important;
+    }
+    .products-catalog-tabs::-webkit-scrollbar,
+    .tabs-nav::-webkit-scrollbar {
+        display: none !important;
+    }
+    .products-catalog-tabs li,
+    .tabs-nav li,
+    .tab-list li {
+        flex-shrink: 0 !important;
+        white-space: nowrap !important;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   8. CATEGORY PRODUCT GRID — responsive columns
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+    /* Tab Máy Dịch: stack thành 1 cột dọc thay vì grid 360px 1fr */
+    #product-translators .product-miniature,
+    .products-translators .product-miniature,
+    .page-translators .product-miniature,
+    .page-template-page-translators .product-miniature,
+    body.page-translators .product-miniature {
+        display: flex !important;
+        flex-direction: column !important;
+        grid-template-columns: unset !important;
+        gap: 16px !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    /* Translators image: full width mobile */
+    #product-translators .product-miniature .thumbnail-top,
+    #product-translators .product-miniature img,
+    .products-translators .product-miniature .thumbnail-top,
+    .products-translators .product-miniature img {
+        width: 100% !important;
+        max-width: 280px !important;
+        margin: 0 auto !important;
+    }
+
+    /* Translators text: center on mobile */
+    #product-translators .product-miniature *,
+    .products-translators .product-miniature * {
+        text-align: center !important;
+        justify-content: center !important;
+    }
+
+    /* Other grids: 1 cột */
+    .products-grid,
+    .products-list,
+    .products-catalog-wrapper .products,
+    #products-list,
+    .product-listing {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    /* 2 cột cho tablet nhỏ */
+    .products-grid,
+    .products-catalog-wrapper .products,
+    #product-accessories .products,
+    #product-bundles .products,
+    #product-all .products,
+    #product-packages .products {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   9. PRODUCT DETAIL PAGES — mobile layout
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+    /* Product hero: stack vertically */
+    .product-hero,
+    .product-info-wrapper,
+    .product-cover-thumbnail-section {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+
+    /* Gallery full width */
+    .product-cover,
+    .product-gallery,
+    .swiper-container,
+    .product-cover-thumbnail-section .swiper {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* Buy box full width */
+    .product-add-to-cart,
+    .product-quantity,
+    .vasco-buttons-row,
+    .vasco-buy-row {
+        width: 100% !important;
+        flex-direction: column !important;
+    }
+
+    .vasco-buttons-row .btn,
+    .vasco-buy-row .btn {
+        width: 100% !important;
+        max-width: none !important;
+    }
+
+    /* Product prices */
+    .product-prices,
+    .product-price-and-shipping {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+
+    /* Spec tabs */
+    .product-tabs .tab-content,
+    .product-accessories,
+    .product-extended-description {
+        padding: 16px !important;
+    }
+
+    /* Buy box trên mobile — inline, không fixed */
+    .vasco-phone-consult-box {
+        position: relative !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        border-radius: 12px !important;
+        margin-top: 12px !important;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   10. FOOTER — giữ nguyên thiết kế gốc, không override
+   -------------------------------------------------------------------------- */
+/* Footer giữ layout và padding như desktop — không responsive override */
+
+
+/* --------------------------------------------------------------------------
+   11. MODALS & DIALOGS — full screen mobile
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+    dialog[open],
+    .modal.active,
+    .modal-dialog {
+        width: 100vw !important;
+        max-width: 100vw !important;
+        margin: 0 !important;
+        border-radius: 0 !important;
+        top: 0 !important;
+        left: 0 !important;
+    }
+
+    /* Phone numbers popup */
+    .phone-numbers-wrapper {
+        width: 280px !important;
+        right: 0 !important;
+        left: auto !important;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   12. HEADER CONTAINER — mobile layout fix
+   -------------------------------------------------------------------------- */
+@media (max-width: 991px) {
+    .header-container {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        padding: 0 16px !important;
+        min-height: 56px !important;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   13. MISC — prevent horizontal overflow trên tất cả sections
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+    /* CHỈ overflow-x: hidden trên các wrapper chính — không dùng * { max-width } */
+    body, html {
+        overflow-x: hidden !important;
+    }
+
+    /* Word wrap cho text */
+    p, li, dt, dd, td, th {
+        overflow-wrap: break-word !important;
+        word-break: break-word !important;
+    }
+
+    /* Horizontal scroll sections (carousels) — exception */
+    .swiper-wrapper,
+    .carousel-track,
+    .smooth-carousel,
+    .swiper-container,
+    .megamenu-childs-wrapper {
+        max-width: none !important;
+    }
+
+    /* Video containers */
+    .video-holder,
+    .video-wrapper {
+        position: relative !important;
+        width: 100% !important;
+        padding-bottom: 56.25% !important;
+        height: 0 !important;
+        overflow: hidden !important;
+    }
+    .video-holder iframe,
+    .video-wrapper iframe {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
