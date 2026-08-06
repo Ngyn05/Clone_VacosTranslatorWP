@@ -127,35 +127,35 @@ return;
 <div class="product-variants-items">
 <p class="body-16" id="pack-bundle-color">Màu sắc:</p>
 <div aria-labelledby="pack-bundle-color" class="product-variants-list" role="radiogroup">
-<a href="../translators/v4-blackonyx-e1.html">
+<a href="<?php echo esc_url( home_url( '/product/v4-blackonyx-e1/' ) ); ?>">
 <label aria-checked="true" aria-label="Vasco Translator V4 Black Onyx + E1" class="input-container product-variants-item product-variants-item-bundle" data-product-id="31" role="radio">
 <div class="circle circle-main black-onyx active" title="Black Onyx"></div>
 <input class="input-color active" data-analytics-type="colour" data-attribute="0" data-product-id="31" name="bundle_color" title="Black Onyx" type="button" value="31"/>
 <span class="radio-label body-16 active">Đen Onyx</span>
 </label>
 </a>
-<a href="./v4-stonegray-e1.html">
+<a href="<?php echo esc_url( home_url( '/product/v4-stonegray-e1/' ) ); ?>">
 <label aria-checked="false" aria-label="Vasco Translator V4 Stone Gray + E1" class="input-container product-variants-item product-variants-item-bundle" data-product-id="32" role="radio">
 <div class="circle circle-main stone-gray" title="Stone Gray"></div>
 <input class="input-color" data-analytics-type="colour" data-attribute="0" data-product-id="32" name="bundle_color" title="Stone Gray" type="button" value="32"/>
 <span class="radio-label body-16">Xám Stone</span>
 </label>
 </a>
-<a href="./v4-cobaltblue-e1.html">
+<a href="<?php echo esc_url( home_url( '/product/v4-cobaltblue-e1/' ) ); ?>">
 <label aria-checked="false" aria-label="Vasco Translator V4 Cobalt Blue + E1" class="input-container product-variants-item product-variants-item-bundle" data-product-id="33" role="radio">
 <div class="circle circle-main cobalt-blue" title="Cobalt Blue"></div>
 <input class="input-color" data-analytics-type="colour" data-attribute="0" data-product-id="33" name="bundle_color" title="Cobalt Blue" type="button" value="33"/>
 <span class="radio-label body-16">Xanh Cobalt</span>
 </label>
 </a>
-<a href="./v4-rubyred-e1.html">
+<a href="<?php echo esc_url( home_url( '/product/v4-rubyred-e1/' ) ); ?>">
 <label aria-checked="false" aria-label="Vasco Translator V4 Ruby Red + E1" class="input-container product-variants-item product-variants-item-bundle" data-product-id="34" role="radio">
 <div class="circle circle-main ruby-red" title="Ruby Red"></div>
 <input class="input-color" data-analytics-type="colour" data-attribute="0" data-product-id="34" name="bundle_color" title="Ruby Red" type="button" value="34"/>
 <span class="radio-label body-16">Đỏ Ruby</span>
 </label>
 </a>
-<a href="./v4-pearlwhite-e1.html">
+<a href="<?php echo esc_url( home_url( '/product/v4-pearlwhite-e1/' ) ); ?>">
 <label aria-checked="false" aria-label="Vasco Translator V4 Pearl White + E1" class="input-container product-variants-item product-variants-item-bundle" data-product-id="35" role="radio">
 <div class="circle circle-main pearl-white" title="Pearl White"></div>
 <input class="input-color" data-analytics-type="colour" data-attribute="0" data-product-id="35" name="bundle_color" title="Pearl White" type="button" value="35"/>
@@ -193,7 +193,7 @@ return;
 </section>
 <div class="bundle-savings">
 <p>Tiết kiệm khi mua theo bộ<span class="saving-price">$123</span></p>
-<a href="../terms-and-conditions-of-the-promotion-cheaper-in-a-set.html">Xem điều khoản khuyến mãi</a>
+<a href="<?php echo esc_url( home_url( '/terms-and-conditions-of-the-promotion-cheaper-in-a-set/' ) ); ?>">Xem điều khoản khuyến mãi</a>
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
@@ -318,7 +318,7 @@ return;
 Chương trình khuyến mãi bao gồm việc áp dụng giảm giá cho việc mua các thiết bị nằm trong Bộ sản phẩm khuyến mãi. Các thiết bị thuộc Bộ sản phẩm khuyến mãi nhưng được mua riêng lẻ (trong hai giao dịch tách biệt) hoặc được thêm vào giỏ hàng theo cách khác ngoài việc chọn sản phẩm được đánh dấu là Bộ sản phẩm khuyến mãi trên Cửa hàng trực tuyến sẽ không được áp dụng giảm giá.
 </li>
 <li>
-Người tham gia có quyền rút khỏi hợp đồng mua bán trong vòng 14 ngày kể từ ngày nhận được Bộ sản phẩm khuyến mãi. Việc rút khỏi hợp đồng có thể áp dụng cho toàn bộ Bộ sản phẩm khuyến mãi hoặc một phần trong đó. Trong trường hợp rút khỏi hợp đồng một phần (trả lại một trong các sản phẩm thuộc Bộ sản phẩm khuyến mãi), Người tham gia sẽ mất quyền được hưởng khoản giảm giá đã áp dụng. Trong trường hợp đó, số tiền được hoàn lại sẽ bị trừ đi giá trị khoản giảm giá đã áp dụng, sao cho số tiền đã thanh toán cho sản phẩm không được trả lại tương ứng với giá của sản phẩm đó tại Cửa hàng trực tuyến, không tính đến chương trình khuyến mãi được áp dụng vào ngày Người tham gia thực hiện việc mua hàng.<br/><br/><a class="underline" href="../terms-and-conditions-of-the-promotion-cheaper-in-a-set.html" style="color:#4966FF" target="_blank">Điều khoản và điều kiện của chương trình khuyến mãi rẻ hơn khi mua theo bộ</a>
+Người tham gia có quyền rút khỏi hợp đồng mua bán trong vòng 14 ngày kể từ ngày nhận được Bộ sản phẩm khuyến mãi. Việc rút khỏi hợp đồng có thể áp dụng cho toàn bộ Bộ sản phẩm khuyến mãi hoặc một phần trong đó. Trong trường hợp rút khỏi hợp đồng một phần (trả lại một trong các sản phẩm thuộc Bộ sản phẩm khuyến mãi), Người tham gia sẽ mất quyền được hưởng khoản giảm giá đã áp dụng. Trong trường hợp đó, số tiền được hoàn lại sẽ bị trừ đi giá trị khoản giảm giá đã áp dụng, sao cho số tiền đã thanh toán cho sản phẩm không được trả lại tương ứng với giá của sản phẩm đó tại Cửa hàng trực tuyến, không tính đến chương trình khuyến mãi được áp dụng vào ngày Người tham gia thực hiện việc mua hàng.<br/><br/><a class="underline" href="<?php echo esc_url( home_url( '/terms-and-conditions-of-the-promotion-cheaper-in-a-set/' ) ); ?>" style="color:#4966FF" target="_blank">Điều khoản và điều kiện của chương trình khuyến mãi rẻ hơn khi mua theo bộ</a>
 </li></ol>
 </div>
 </section>
@@ -973,7 +973,7 @@ Người tham gia có quyền rút khỏi hợp đồng mua bán trong vòng 14 
 </ul>
 </div>
 <div class="doublebox-button-wrapper doublebox-button-wrapper-left">
-<a class="btn btn-md btn-black" href="../business/Y tế.html" target="_blank">
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( '/business-y-te/' ) ); ?>" target="_blank">
 							EXPLORE VASCO AUDIENCE
 							<span class="text-sr-only">Tìm hiểu thêm</span>
 </a>
@@ -1325,7 +1325,7 @@ Người tham gia có quyền rút khỏi hợp đồng mua bán trong vòng 14 
 <a href="#" rel="nofollow" target="_blank">Hướng dẫn sử dụng</a>
 </div>
 <div class="gpsr-box">
-<a href="../assets/docs/v4-declaration.pdf.html" target="_blank">Tuyên bố hợp chuẩn EU (CE)</a>
+<a href="<?php echo esc_url( VASCO_THEME_URI . '/assets/docs/v4-declaration.pdf' ); ?>" target="_blank">Tuyên bố hợp chuẩn EU (CE)</a>
 </div>
 </div>
 </div>
@@ -9001,7 +9001,7 @@ Người tham gia có quyền rút khỏi hợp đồng mua bán trong vòng 14 
 <div class="comparison-page-link-module">
 <h2 class="h1">Are you unsure which translator to choose?</h2>
 <p>We have prepared a comparison of translators to make your choice easier.</p>
-<a class="view-compare-button btn btn-md btn-black" href="../comparison-engine.html">
+<a class="view-compare-button btn btn-md btn-black" href="<?php echo esc_url( home_url( '/comparison-engine/' ) ); ?>">
 					So sánh máy phiên dịch
 				</a>
 </div>

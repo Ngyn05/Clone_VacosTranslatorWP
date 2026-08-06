@@ -34,31 +34,46 @@
 		if (!tabBtn) return;
 
 		var href = tabBtn.getAttribute('href');
-		if (href && href !== '#' && !href.startsWith('javascript:')) return;
+		if (href && href !== '#' && href.indexOf('javascript:') !== 0) return;
 
 		var targetId = tabBtn.getAttribute('data-id') || tabBtn.getAttribute('aria-controls');
 		if (!targetId) return;
+
+		// Alias target IDs for description / about / details
+		if (targetId === 'product-description' || targetId === 'description' || targetId === 'product-details') {
+			var aboutTab = document.getElementById('product-about');
+			if (aboutTab) {
+				targetId = 'product-about';
+			}
+		}
 
 		e.preventDefault();
 
 		var menuContainer = tabBtn.closest('.tab-menu, .product-menu-container, nav');
 		if (menuContainer) {
-			menuContainer.querySelectorAll('.menu-link').forEach(function (b) {
+			menuContainer.querySelectorAll('.menu-link, button').forEach(function (b) {
 				b.classList.remove('current', 'active', 'active-tab');
 			});
 			tabBtn.classList.add('current', 'active');
 		}
 
 		var allTabs = document.querySelectorAll('.tab-content > .tab, .tab-content > div[id^="product-"]');
+		var foundMatch = false;
 		allTabs.forEach(function (tab) {
-			if (tab.id === targetId || tab.classList.contains(targetId)) {
+			if (tab.id === targetId || tab.classList.contains(targetId) || ((targetId === 'product-about' || targetId === 'product-description') && (tab.id === 'product-about' || tab.id === 'product-description' || tab.id === 'product-details'))) {
 				tab.classList.add('active-tab', 'active', 'current');
 				tab.style.setProperty('display', 'block', 'important');
+				foundMatch = true;
 			} else {
 				tab.classList.remove('active-tab', 'active', 'current');
 				tab.style.setProperty('display', 'none', 'important');
 			}
 		});
+
+		if (!foundMatch && allTabs.length > 0) {
+			allTabs[0].classList.add('active-tab', 'active', 'current');
+			allTabs[0].style.setProperty('display', 'block', 'important');
+		}
 	});
 
 	// ── 2. Universal FAQ Accordion Toggle ─────────────────────────
@@ -492,4 +507,22 @@
 		initVascoProductBuyActions();
 	}
 
+	// ── 9. Universal Product Description & Title Link Click Delegator ────
+	document.addEventListener('click', function (e) {
+		var descBtn = e.target.closest('.btn-description, .product-description-button-wrapper a, a.btn-secondary, a.product-title-link, a.product-link');
+		if (!descBtn) return;
+
+		// Skip buy buttons or add-to-cart actions
+		if (descBtn.classList.contains('add-to-cart') || descBtn.classList.contains('btn-primary') || descBtn.hasAttribute('data-button-action')) {
+			return;
+		}
+
+		var href = descBtn.getAttribute('href');
+		if (href && href !== '#' && href.indexOf('javascript:') !== 0 && href !== 'undefined' && href !== 'null') {
+			e.stopPropagation();
+			window.location.href = href;
+		}
+	}, true);
+
 })();
+

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Product Page Template page-vasco-translator-e1.php
  *
@@ -964,7 +964,7 @@ TƯ VẤN NGAY
 </ul>
 </div>
 <div class="btn-wrapper">
-<a aria-describedby="lang-number lang-desc" class="btn btn-black btn-md" href="../translators/q1-phantomblack-e1.html">
+<a aria-describedby="lang-number lang-desc" class="btn btn-black btn-md" href="<?php echo esc_url( home_url( '/product/q1-phantomblack-e1/' ) ); ?>">
 							Đọc thêm about Q1 + E1 bundle
 						</a>
 </div>
@@ -986,7 +986,7 @@ TƯ VẤN NGAY
 </ul>
 </div>
 <div class="btn-wrapper">
-<a aria-describedby="lang-number lang-desc" class="btn btn-black btn-md" href="../translators/v4-blackonyx-e1.html">
+<a aria-describedby="lang-number lang-desc" class="btn btn-black btn-md" href="<?php echo esc_url( home_url( '/product/v4-blackonyx-e1/' ) ); ?>">
 							Đọc thêm about V4 + E1 bundle
 						</a>
 </div>
@@ -1013,7 +1013,7 @@ TƯ VẤN NGAY
 </ul>
 </div>
 <div class="doublebox-button-wrapper doublebox-button-wrapper-left">
-<a class="btn btn-md btn-black" href="../business/Y tế.html" target="_blank">
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( '/business-y-te/' ) ); ?>" target="_blank">
 							EXPLORE VASCO AUDIENCE
 							<span class="text-sr-only">Tìm hiểu thêm</span>
 </a>
@@ -3478,7 +3478,7 @@ TƯ VẤN NGAY
 <div class="comparison-page-link-module">
 <h2 class="h1">Are you unsure which translator to choose?</h2>
 <p>We have prepared a comparison of translators to make your choice easier.</p>
-<a class="view-compare-button btn btn-md btn-black" href="../comparison-engine.html">
+<a class="view-compare-button btn btn-md btn-black" href="<?php echo esc_url( home_url( '/comparison-engine/' ) ); ?>">
 					So sánh máy phiên dịch
 				</a>
 </div>

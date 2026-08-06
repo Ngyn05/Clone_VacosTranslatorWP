@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Clean Page page-articles-languages-oldest-known-language.php
  *
@@ -176,7 +176,7 @@ get_header();
 <p>Sự sáng tạo này đã để lại cho chúng ta một bản ghi về các<strong><a href="..">ngôn ngữ</a> </strong>cổ đại đã được sử dụng trong nhiều nền văn minh khác nhau.</p>
 <h3><span class="ez-toc-section" id="Deciphering_Ancient_Scripts"></span>Giải mã các văn bản cổ<span class="ez-toc-section-end"></span></h3>
 <p>Quá trình giải mã các văn bản cổ giống như việc ghép lại một câu đố phức tạp. Ví dụ, tấm bia Rosetta đã đóng vai trò then chốt trong việc hiểu chữ tượng hình Ai Cập vì nó trình bày cùng một văn bản bằng hai loại chữ viết: tiếng Hy Lạp, có thể đọc được, và chữ tượng hình Ai Cập, không thể đọc được.<div class="cta-button-wrapper" style="text-align: center;">
-<a class="cta-button" href="../../../features/translate-text.html">Dịch văn bản dễ dàng</a>
+<a class="cta-button" href="<?php echo esc_url( home_url( '/features/translate-text/' ) ); ?>">Dịch văn bản dễ dàng</a>
 </div></p>
 <p>Những bước đột phá như vậy đã hé lộ những bí mật của các ngôn ngữ viết cổ đại, mang lại những hiểu biết quý giá về quá khứ của chúng ta.</p>
 <h3><span class="ez-toc-section" id="Examination_of_the_Oldest_Known_Written_Languages"></span>Xem xét các ngôn ngữ viết cổ nhất được biết đến<a href="..">Ngôn ngữ</a><span class="ez-toc-section-end"></span></h3>
@@ -258,7 +258,7 @@ get_header();
 <p>Trong khi câu trả lời tuyệt đối cho câu hỏi “Ngôn ngữ cổ nhất trên thế giới là gì?” vẫn còn đang được các nhà ngôn ngữ học tranh luận, cuộc khám phá của chúng ta cho thấy rằng ngôn ngữ không chỉ đơn thuần là hệ thống giao tiếp. Chúng là những cánh cửa nhìn vào quá khứ, định hình hiện tại của chúng ta, và chắc chắn sẽ đóng vai trò quan trọng trong tương lai.</p>
 <p>Khi chúng ta tiếp tục tìm kiếm câu trả lời, những câu hỏi như “Ngôn ngữ cổ nhất mà con người biết đến là gì?” hay “ngôn ngữ nào cổ nhất?” vẫn là động lực thúc đẩy các học giả và những người đam mê. Việc nghiên cứu và bảo tồn các ngôn ngữ cổ tiếp tục nhận được sự quan tâm trong thời đại số, được thúc đẩy bởi công nghệ và sự quan tâm mới đối với di sản ngôn ngữ của chúng ta.</p>
 <p>Giữa tất cả những điều này, có một sự thật rõ ràng: cho dù đó là ngôn ngữ nói cổ nhất trên thế giới hay ngôn ngữ cổ nhất trên thế giới vẫn còn được sử dụng ngày nay, mỗi ngôn ngữ đều có một vị trí độc đáo trong biên niên sử lịch sử nhân loại. Hành trình ngôn ngữ chung của chúng ta, với vô số ngôn ngữ cổ đại, là minh chứng cho lịch sử chung của chúng ta và sự tiến hóa hấp dẫn của giao tiếp nhân loại.</p>
-<p>Và hãy nhớ, nếu bạn muốn có các ngôn ngữ hiện đại trong tầm tay, hãy chắc chắn xem<strong><a href="../../../features/index.html">máy dịch thông minh</a> </strong>của chúng tôi. Giao tiếp với hơn 90% dân số thế giới, không còn rào cản ngôn ngữ! Vasco cho phép bạn<strong><a href="../../../features/translate-voice.html">dịch âm thanh</a></strong>, văn bản từ ảnh chụp và nhiều tính năng khác. Hãy chắc chắn khám phá nó, và mở ra những khả năng ngôn ngữ mới.</p>
+<p>Và hãy nhớ, nếu bạn muốn có các ngôn ngữ hiện đại trong tầm tay, hãy chắc chắn xem<strong><a href="<?php echo esc_url( home_url( '/features/' ) ); ?>">máy dịch thông minh</a> </strong>của chúng tôi. Giao tiếp với hơn 90% dân số thế giới, không còn rào cản ngôn ngữ! Vasco cho phép bạn<strong><a href="<?php echo esc_url( home_url( '/features/translate-voice/' ) ); ?>">dịch âm thanh</a></strong>, văn bản từ ảnh chụp và nhiều tính năng khác. Hãy chắc chắn khám phá nó, và mở ra những khả năng ngôn ngữ mới.</p>
 <table border="1" cellpadding="10" cellspacing="0">
 <tbody>
 <tr>
@@ -303,7 +303,7 @@ get_header();
 <p>Trong cuộc khám phá của chúng ta về các ngôn ngữ cổ nhất được biết đến trên thế giới, chúng ta đi sâu vào lĩnh vực của cả hình thức giao tiếp nói và viết. Chúng ta bắt đầu bằng cách nêu ra những thách thức trong việc truy tìm ngôn ngữ nói đầu tiên và thảo luận về các ứng viên như tiếng Sumer, tiếng Ai Cập, tiếng Tamil, tiếng Trung và tiếng Sanskrit. Sau đó, trọng tâm chuyển sang các ngôn ngữ viết, nơi chúng ta khám phá nguồn gốc của chữ hình nêm Sumer, chữ tượng hình Ai Cập và chữ viết Trung Quốc cổ đại. Qua các nghiên cứu điển hình, chúng ta đi sâu vào đặc điểm của các ngôn ngữ cổ này, cách giải mã chúng, và ảnh hưởng lâu dài của chúng đối với các xã hội hiện đại. Bài viết kết thúc bằng cách nhấn mạnh việc tiếp tục nghiên cứu và bảo tồn các ngôn ngữ này trong thời đại số, nêu bật vai trò không thể thiếu của chúng trong lịch sử nhân loại và sự tiến hóa hấp dẫn của giao tiếp con người.</p>
 <div class="answer5"></div>
 <div class="cta-button-wrapper" style="text-align: center;">
-<a class="cta-button" href="../../../features/translate-photos.html">Dịch ảnh dễ dàng</a>
+<a class="cta-button" href="<?php echo esc_url( home_url( '/features/translate-photos/' ) ); ?>">Dịch ảnh dễ dàng</a>
 </div>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","@id":"./articles/languages/oldest-known-language/#video-hAm-S5UHQHA","url":"./articles/languages/oldest-known-language/","embedUrl":"https://www.youtube.com/embed/hAm-S5UHQHA","name":"What is the oldest known language?","description":"Language is the bedrock of human interaction and civilization. It allows us to express our thoughts, emotions, and to share information. However, have you ever wondered which is the oldest language in the world? Or&hellip;","thumbnailUrl":["https://i.ytimg.com/vi/hAm-S5UHQHA/hqdefault.jpg"],"inLanguage":"en-US","uploadDate":"2023-07-31T12:47:16+02:00","publisher":{"@type":"Organization","name":"Blog VASCO VN","logo":{"@type":"ImageObject","url":"./wp-content/uploads/logo.svg","width":300,"height":80}},"potentialAction":{"@type":"WatchAction","target":"https://www.youtube.com/watch?v=hAm-S5UHQHA"}}</script>
 </div>

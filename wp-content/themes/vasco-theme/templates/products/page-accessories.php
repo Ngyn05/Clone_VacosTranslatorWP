@@ -73,7 +73,7 @@ return;
 <div class="product-thumb-wrapper js-variant-spinner-wrapper">
 <div class="product-flags js-product-flags">
 </div>
-<a class="product-link" content="../translators/vasco-translator-q1.html" href="./case-for-vasco-translator-q1.html" title="Túi đựng có khóa kéo cho Vasco Translator Q1">
+<a class="product-link" content="../translators/vasco-translator-q1.html" href="<?php echo esc_url( home_url( '/product/case-for-vasco-translator-q1/' ) ); ?>" title="Túi đựng có khóa kéo cho Vasco Translator Q1">
 <img alt="Túi bảo vệ cho Vasco Translator Q1" data-full-size-image-url="./438-og_image/case-for-vasco-translator-q1.jpg" height="300" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/438-medium_default/case-for-vasco-translator-q1.jpg" ); ?>" width="300"/>
 </a>
 <div class="loading-spinner">
@@ -85,7 +85,7 @@ return;
 </div>
 </div>
 <div class="product-title-wrapper">
-<h3 class="h3 product-title" id="zipped-case-for-vasco-translator-q1-name"><a aria-label="Xem chi tiết sản phẩm Túi đựng có khóa kéo cho Vasco Translator Q1" class="product-link product-title-link" content="../translators/vasco-translator-q1.html" href="../accessories/case-for-vasco-translator-q1.html" title="Túi đựng có khóa kéo cho Vasco Translator Q1">Túi đựng có khóa kéo cho Vasco Translator Q1</a></h3>
+<h3 class="h3 product-title" id="zipped-case-for-vasco-translator-q1-name"><a aria-label="Xem chi tiết sản phẩm Túi đựng có khóa kéo cho Vasco Translator Q1" class="product-link product-title-link" content="../translators/vasco-translator-q1.html" href="<?php echo esc_url( home_url( '/product/case-for-vasco-translator-q1/' ) ); ?>" title="Túi đựng có khóa kéo cho Vasco Translator Q1">Túi đựng có khóa kéo cho Vasco Translator Q1</a></h3>
 </div>
 <div class="trustpilot-top trustpilot-top--category">
 <!-- TrustBox widget - Product Mini -->
@@ -120,7 +120,7 @@ return;
 </div>
 </div>
 <div class="product-description-button-wrapper">
-<a class="btn btn-md btn-secondary" href="./case-for-vasco-translator-q1.html">Mô tả<span class="text-sr-only">Túi đựng có khóa kéo cho Vasco Translator Q1</span></a>
+<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( '/product/case-for-vasco-translator-q1/' ) ); ?>">Mô tả<span class="text-sr-only">Túi đựng có khóa kéo cho Vasco Translator Q1</span></a>
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
@@ -145,7 +145,7 @@ return;
 <div aria-label="Mới" class="body-base product-flag">Mới</div>
 </div>
 </div>
-<a class="product-link" content="../translators/vasco-translator-m4.html" href="./case-for-vasco-translator-m4.html" title="Túi đựng có khóa kéo cho Vasco Translator M4">
+<a class="product-link" content="../translators/vasco-translator-m4.html" href="<?php echo esc_url( home_url( '/product/case-for-vasco-translator-m4/' ) ); ?>" title="Túi đựng có khóa kéo cho Vasco Translator M4">
 <img alt="Túi Bảo Vệ cho Vasco Translator M4" data-full-size-image-url="./455-og_image/case-for-vasco-translator-m4.jpg" height="300" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/455-medium_default/case-for-vasco-translator-m4.jpg" ); ?>" width="300"/>
 </a>
 <div class="loading-spinner">
@@ -157,7 +157,7 @@ return;
 </div>
 </div>
 <div class="product-title-wrapper">
-<h3 class="h3 product-title" id="zipped-case-for-vasco-translator-m4-name"><a aria-label="Xem chi tiết sản phẩm Túi đựng có khóa kéo cho Vasco Translator M4" class="product-link product-title-link" content="../translators/vasco-translator-m4.html" href="../accessories/case-for-vasco-translator-m4.html" title="Túi đựng có khóa kéo cho Vasco Translator M4">Túi đựng có khóa kéo cho Vasco Translator M4</a></h3>
+<h3 class="h3 product-title" id="zipped-case-for-vasco-translator-m4-name"><a aria-label="Xem chi tiết sản phẩm Túi đựng có khóa kéo cho Vasco Translator M4" class="product-link product-title-link" content="../translators/vasco-translator-m4.html" href="<?php echo esc_url( home_url( '/product/case-for-vasco-translator-m4/' ) ); ?>" title="Túi đựng có khóa kéo cho Vasco Translator M4">Túi đựng có khóa kéo cho Vasco Translator M4</a></h3>
 </div>
 <div class="trustpilot-top trustpilot-top--category">
 <!-- TrustBox widget - Product Mini -->
@@ -192,7 +192,7 @@ return;
 </div>
 </div>
 <div class="product-description-button-wrapper">
-<a class="btn btn-md btn-secondary" href="./case-for-vasco-translator-m4.html">Mô tả<span class="text-sr-only">Túi đựng có khóa kéo cho Vasco Translator M4</span></a>
+<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( '/product/case-for-vasco-translator-m4/' ) ); ?>">Mô tả<span class="text-sr-only">Túi đựng có khóa kéo cho Vasco Translator M4</span></a>
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
@@ -214,7 +214,7 @@ return;
 <div class="product-thumb-wrapper js-variant-spinner-wrapper">
 <div class="product-flags js-product-flags">
 </div>
-<a class="product-link" content="../translators/vasco-translator-v4.html" href="./case-for-vasco-translator-v4.html" title="Túi đựng có khóa kéo cho Vasco Translator V4">
+<a class="product-link" content="../translators/vasco-translator-v4.html" href="<?php echo esc_url( home_url( '/product/case-for-vasco-translator-v4/' ) ); ?>" title="Túi đựng có khóa kéo cho Vasco Translator V4">
 <img alt="Túi đựng có khóa kéo cho Vasco Translator V4" data-full-size-image-url="./518-og_image/case-for-vasco-translator-v4.jpg" height="300" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/518-medium_default/case-for-vasco-translator-v4.jpg" ); ?>" width="300"/>
 </a>
 <div class="loading-spinner">
@@ -226,7 +226,7 @@ return;
 </div>
 </div>
 <div class="product-title-wrapper">
-<h3 class="h3 product-title" id="zipped-case-for-vasco-translator-v4-name"><a aria-label="Xem chi tiết sản phẩm Túi đựng có khóa kéo cho Vasco Translator V4" class="product-link product-title-link" content="../translators/vasco-translator-v4.html" href="./case-for-vasco-translator-v4.html" title="Túi đựng có khóa kéo cho Vasco Translator V4">Túi đựng có khóa kéo cho Vasco Translator V4</a></h3>
+<h3 class="h3 product-title" id="zipped-case-for-vasco-translator-v4-name"><a aria-label="Xem chi tiết sản phẩm Túi đựng có khóa kéo cho Vasco Translator V4" class="product-link product-title-link" content="../translators/vasco-translator-v4.html" href="<?php echo esc_url( home_url( '/product/case-for-vasco-translator-v4/' ) ); ?>" title="Túi đựng có khóa kéo cho Vasco Translator V4">Túi đựng có khóa kéo cho Vasco Translator V4</a></h3>
 </div>
 <div class="trustpilot-top trustpilot-top--category">
 <!-- TrustBox widget - Product Mini -->
@@ -261,7 +261,7 @@ return;
 </div>
 </div>
 <div class="product-description-button-wrapper">
-<a class="btn btn-md btn-secondary" href="./case-for-vasco-translator-v4.html">Mô tả<span class="text-sr-only">Túi đựng có khóa kéo cho Vasco Translator V4</span></a>
+<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( '/product/case-for-vasco-translator-v4/' ) ); ?>">Mô tả<span class="text-sr-only">Túi đựng có khóa kéo cho Vasco Translator V4</span></a>
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
@@ -286,7 +286,7 @@ return;
 <div aria-label="Mới" class="body-base product-flag">Mới</div>
 </div>
 </div>
-<a class="product-link" content="../translators/vasco-translator-q1.html" href="./light-case-for-vasco-translator-q1.html" title="Túi đựng cho Vasco Translator Q1">
+<a class="product-link" content="../translators/vasco-translator-q1.html" href="<?php echo esc_url( home_url( '/product/light-case-for-vasco-translator-q1/' ) ); ?>" title="Túi đựng cho Vasco Translator Q1">
 <img alt="Túi đựng cho Vasco Translator Q1" data-full-size-image-url="./466-og_image/light-case-for-vasco-translator-q1.jpg" height="300" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/466-medium_default/light-case-for-vasco-translator-q1.jpg" ); ?>" width="300"/>
 </a>
 <div class="loading-spinner">
@@ -298,7 +298,7 @@ return;
 </div>
 </div>
 <div class="product-title-wrapper">
-<h3 class="h3 product-title" id="case-for-vasco-translator-q1-name"><a aria-label="Xem chi tiết sản phẩm Túi đựng cho Vasco Translator Q1" class="product-link product-title-link" content="../translators/vasco-translator-q1.html" href="./light-case-for-vasco-translator-q1.html" title="Túi đựng cho Vasco Translator Q1">Túi đựng cho Vasco Translator Q1</a></h3>
+<h3 class="h3 product-title" id="case-for-vasco-translator-q1-name"><a aria-label="Xem chi tiết sản phẩm Túi đựng cho Vasco Translator Q1" class="product-link product-title-link" content="../translators/vasco-translator-q1.html" href="<?php echo esc_url( home_url( '/product/light-case-for-vasco-translator-q1/' ) ); ?>" title="Túi đựng cho Vasco Translator Q1">Túi đựng cho Vasco Translator Q1</a></h3>
 </div>
 <div class="trustpilot-top trustpilot-top--category">
 <!-- TrustBox widget - Product Mini -->
@@ -354,7 +354,7 @@ return;
 </div>
 </div>
 <div class="product-description-button-wrapper">
-<a class="btn btn-md btn-secondary" href="./light-case-for-vasco-translator-q1.html">Mô tả<span class="text-sr-only">Túi đựng cho Vasco Translator Q1</span></a>
+<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( '/product/light-case-for-vasco-translator-q1/' ) ); ?>">Mô tả<span class="text-sr-only">Túi đựng cho Vasco Translator Q1</span></a>
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
@@ -379,7 +379,7 @@ return;
 <div aria-label="Mới" class="body-base product-flag">Mới</div>
 </div>
 </div>
-<a class="product-link" content="../translators/vasco-translator-m4.html" href="./light-case-for-vasco-translator-m4.html" title="Túi đựng cho Vasco Translator M4">
+<a class="product-link" content="../translators/vasco-translator-m4.html" href="<?php echo esc_url( home_url( '/product/light-case-for-vasco-translator-m4/' ) ); ?>" title="Túi đựng cho Vasco Translator M4">
 <img alt="Túi đựng cho Vasco Translator M4" data-full-size-image-url="./524-og_image/light-case-for-vasco-translator-m4.jpg" height="300" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/524-medium_default/light-case-for-vasco-translator-m4.jpg" ); ?>" width="300"/>
 </a>
 <div class="loading-spinner">
@@ -391,7 +391,7 @@ return;
 </div>
 </div>
 <div class="product-title-wrapper">
-<h3 class="h3 product-title" id="case-for-vasco-translator-m4-name"><a aria-label="Xem chi tiết sản phẩm Túi đựng cho Vasco Translator M4" class="product-link product-title-link" content="../translators/vasco-translator-m4.html" href="./light-case-for-vasco-translator-m4.html" title="Túi đựng cho Vasco Translator M4">Túi đựng cho Vasco Translator M4</a></h3>
+<h3 class="h3 product-title" id="case-for-vasco-translator-m4-name"><a aria-label="Xem chi tiết sản phẩm Túi đựng cho Vasco Translator M4" class="product-link product-title-link" content="../translators/vasco-translator-m4.html" href="<?php echo esc_url( home_url( '/product/light-case-for-vasco-translator-m4/' ) ); ?>" title="Túi đựng cho Vasco Translator M4">Túi đựng cho Vasco Translator M4</a></h3>
 </div>
 <div class="trustpilot-top trustpilot-top--category">
 <!-- TrustBox widget - Product Mini -->
@@ -447,7 +447,7 @@ return;
 </div>
 </div>
 <div class="product-description-button-wrapper">
-<a class="btn btn-md btn-secondary" href="./light-case-for-vasco-translator-m4.html">Mô tả<span class="text-sr-only">Túi đựng cho Vasco Translator M4</span></a>
+<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( '/product/light-case-for-vasco-translator-m4/' ) ); ?>">Mô tả<span class="text-sr-only">Túi đựng cho Vasco Translator M4</span></a>
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
@@ -469,7 +469,7 @@ return;
 <div class="product-thumb-wrapper js-variant-spinner-wrapper">
 <div class="product-flags js-product-flags">
 </div>
-<a class="product-link" content="../translators/vasco-translator-q1.html" href="./tempered-glass-q1.html" title="Miếng dán kính cường lực cho Vasco Translator Q1">
+<a class="product-link" content="../translators/vasco-translator-q1.html" href="<?php echo esc_url( home_url( '/product/tempered-glass-q1/' ) ); ?>" title="Miếng dán kính cường lực cho Vasco Translator Q1">
 <img alt="Miếng dán kính cường lực cho Vasco Translator Q1" data-full-size-image-url="./381-og_image/tempered-glass-q1.jpg" height="300" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/381-medium_default/tempered-glass-q1.jpg" ); ?>" width="300"/>
 </a>
 <div class="loading-spinner">
@@ -481,7 +481,7 @@ return;
 </div>
 </div>
 <div class="product-title-wrapper">
-<h3 class="h3 product-title" id="tempered-glass-screen-protector-for-vasco-translator-q1-name"><a aria-label="Xem chi tiết sản phẩm Miếng dán kính cường lực cho Vasco Translator Q1" class="product-link product-title-link" content="../translators/vasco-translator-q1.html" href="../accessories/tempered-glass-q1.html" title="Miếng dán kính cường lực cho Vasco Translator Q1">Miếng dán kính cường lực cho Vasco Translator Q1</a></h3>
+<h3 class="h3 product-title" id="tempered-glass-screen-protector-for-vasco-translator-q1-name"><a aria-label="Xem chi tiết sản phẩm Miếng dán kính cường lực cho Vasco Translator Q1" class="product-link product-title-link" content="../translators/vasco-translator-q1.html" href="<?php echo esc_url( home_url( '/product/tempered-glass-q1/' ) ); ?>" title="Miếng dán kính cường lực cho Vasco Translator Q1">Miếng dán kính cường lực cho Vasco Translator Q1</a></h3>
 </div>
 <div class="trustpilot-top trustpilot-top--category">
 <!-- TrustBox widget - Product Mini -->
@@ -516,7 +516,7 @@ return;
 </div>
 </div>
 <div class="product-description-button-wrapper">
-<a class="btn btn-md btn-secondary" href="./tempered-glass-q1.html">Mô tả<span class="text-sr-only">Miếng dán kính cường lực cho Vasco Translator Q1</span></a>
+<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( '/product/tempered-glass-q1/' ) ); ?>">Mô tả<span class="text-sr-only">Miếng dán kính cường lực cho Vasco Translator Q1</span></a>
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
@@ -541,7 +541,7 @@ return;
 <div aria-label="Mới" class="body-base product-flag">Mới</div>
 </div>
 </div>
-<a class="product-link" content="../translators/vasco-translator-m4.html" href="./tempered-glass-m4.html" title="Miếng dán kính cường lực cho Vasco Translator M4">
+<a class="product-link" content="../translators/vasco-translator-m4.html" href="<?php echo esc_url( home_url( '/product/tempered-glass-m4/' ) ); ?>" title="Miếng dán kính cường lực cho Vasco Translator M4">
 <img alt="Miếng dán kính cường lực cho Vasco Translator M4" data-full-size-image-url="./484-og_image/tempered-glass-m4.jpg" height="300" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/484-medium_default/tempered-glass-m4.jpg" ); ?>" width="300"/>
 </a>
 <div class="loading-spinner">
@@ -553,7 +553,7 @@ return;
 </div>
 </div>
 <div class="product-title-wrapper">
-<h3 class="h3 product-title" id="tempered-glass-screen-protector-for-vasco-translator-m4-name"><a aria-label="Xem chi tiết sản phẩm Miếng dán kính cường lực cho Vasco Translator M4" class="product-link product-title-link" content="../translators/vasco-translator-m4.html" href="../accessories/tempered-glass-m4.html" title="Miếng dán kính cường lực cho Vasco Translator M4">Miếng dán kính cường lực cho Vasco Translator M4</a></h3>
+<h3 class="h3 product-title" id="tempered-glass-screen-protector-for-vasco-translator-m4-name"><a aria-label="Xem chi tiết sản phẩm Miếng dán kính cường lực cho Vasco Translator M4" class="product-link product-title-link" content="../translators/vasco-translator-m4.html" href="<?php echo esc_url( home_url( '/product/tempered-glass-m4/' ) ); ?>" title="Miếng dán kính cường lực cho Vasco Translator M4">Miếng dán kính cường lực cho Vasco Translator M4</a></h3>
 </div>
 <div class="trustpilot-top trustpilot-top--category">
 <!-- TrustBox widget - Product Mini -->
@@ -588,7 +588,7 @@ return;
 </div>
 </div>
 <div class="product-description-button-wrapper">
-<a class="btn btn-md btn-secondary" href="./tempered-glass-m4.html">Mô tả<span class="text-sr-only">Miếng dán kính cường lực cho Vasco Translator M4</span></a>
+<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( '/product/tempered-glass-m4/' ) ); ?>">Mô tả<span class="text-sr-only">Miếng dán kính cường lực cho Vasco Translator M4</span></a>
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
@@ -610,7 +610,7 @@ return;
 <div class="product-thumb-wrapper js-variant-spinner-wrapper">
 <div class="product-flags js-product-flags">
 </div>
-<a class="product-link" content="../translators/vasco-translator-v4.html" href="./tempered-glass-v4.html" title="Miếng dán màn hình cho Vasco Translator V4">
+<a class="product-link" content="../translators/vasco-translator-v4.html" href="<?php echo esc_url( home_url( '/product/tempered-glass-v4/' ) ); ?>" title="Miếng dán màn hình cho Vasco Translator V4">
 <img alt="Miếng dán màn hình cho Vasco Translator V4" data-full-size-image-url="./287-og_image/tempered-glass-v4.jpg" height="300" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/287-medium_default/tempered-glass-v4.jpg" ); ?>" width="300"/>
 </a>
 <div class="loading-spinner">
@@ -622,7 +622,7 @@ return;
 </div>
 </div>
 <div class="product-title-wrapper">
-<h3 class="h3 product-title" id="screen-protector-for-vasco-translator-v4-name"><a aria-label="Xem chi tiết sản phẩm Miếng dán màn hình cho Vasco Translator V4" class="product-link product-title-link" content="../translators/vasco-translator-v4.html" href="./tempered-glass-v4.html" title="Miếng dán màn hình cho Vasco Translator V4">Miếng dán màn hình cho Vasco Translator V4</a></h3>
+<h3 class="h3 product-title" id="screen-protector-for-vasco-translator-v4-name"><a aria-label="Xem chi tiết sản phẩm Miếng dán màn hình cho Vasco Translator V4" class="product-link product-title-link" content="../translators/vasco-translator-v4.html" href="<?php echo esc_url( home_url( '/product/tempered-glass-v4/' ) ); ?>" title="Miếng dán màn hình cho Vasco Translator V4">Miếng dán màn hình cho Vasco Translator V4</a></h3>
 </div>
 <div class="trustpilot-top trustpilot-top--category">
 <!-- TrustBox widget - Product Mini -->
@@ -657,7 +657,7 @@ return;
 </div>
 </div>
 <div class="product-description-button-wrapper">
-<a class="btn btn-md btn-secondary" href="./tempered-glass-v4.html">Mô tả<span class="text-sr-only">Miếng dán màn hình cho Vasco Translator V4</span></a>
+<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( '/product/tempered-glass-v4/' ) ); ?>">Mô tả<span class="text-sr-only">Miếng dán màn hình cho Vasco Translator V4</span></a>
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
@@ -679,7 +679,7 @@ return;
 <div class="product-thumb-wrapper js-variant-spinner-wrapper">
 <div class="product-flags js-product-flags">
 </div>
-<a class="product-link" content="./accessories/power-adapter-us" href="./power-adapter-us.html" title="Bộ đổi nguồn (phích cắm US)">
+<a class="product-link" content="./accessories/power-adapter-us" href="<?php echo esc_url( home_url( '/product/power-adapter-us/' ) ); ?>" title="Bộ đổi nguồn (phích cắm US)">
 <img alt="Bộ đổi nguồn (phích cắm US)" data-full-size-image-url="./449-og_image/power-adapter-us.jpg" height="300" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/449-medium_default/power-adapter-us.jpg" ); ?>" width="300"/>
 </a>
 <div class="loading-spinner">
@@ -691,7 +691,7 @@ return;
 </div>
 </div>
 <div class="product-title-wrapper">
-<h3 class="h3 product-title" id="power-adapter-(us-plug)-name"><a aria-label="Xem chi tiết sản phẩm Bộ đổi nguồn (phích cắm US)" class="product-link product-title-link" content="./accessories/power-adapter-us" href="./power-adapter-us.html" title="Bộ đổi nguồn (phích cắm US)">Bộ đổi nguồn (phích cắm US)</a></h3>
+<h3 class="h3 product-title" id="power-adapter-(us-plug)-name"><a aria-label="Xem chi tiết sản phẩm Bộ đổi nguồn (phích cắm US)" class="product-link product-title-link" content="./accessories/power-adapter-us" href="<?php echo esc_url( home_url( '/product/power-adapter-us/' ) ); ?>" title="Bộ đổi nguồn (phích cắm US)">Bộ đổi nguồn (phích cắm US)</a></h3>
 </div>
 <div class="trustpilot-top trustpilot-top--category">
 <!-- TrustBox widget - Product Mini -->
@@ -726,7 +726,7 @@ return;
 </div>
 </div>
 <div class="product-description-button-wrapper">
-<a class="btn btn-md btn-secondary" href="./power-adapter-us.html">Mô tả<span class="text-sr-only">Bộ đổi nguồn (phích cắm US)</span></a>
+<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( '/product/power-adapter-us/' ) ); ?>">Mô tả<span class="text-sr-only">Bộ đổi nguồn (phích cắm US)</span></a>
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Product Page Template page-vasco-translator-q1.php
  *
@@ -11,6 +11,7 @@ vasco_theme_render_product_detail_page();
 get_footer();
 return;
 ?>
+
 
 
 <section class="relative" id="wrapper">
@@ -1265,7 +1266,7 @@ Vasco Assistant nhận diện được các biểu tượng, ẩm thực vùng m
 <a href="#" rel="nofollow" target="_blank">Hướng dẫn sử dụng</a>
 </div>
 <div class="gpsr-box">
-<a href="../assets/docs/q1-declaration.pdf.html" target="_blank">Tuyên bố hợp chuẩn EU (CE)</a>
+<a href="<?php echo esc_url( VASCO_THEME_URI . '/assets/docs/q1-declaration.pdf' ); ?>" target="_blank">Tuyên bố hợp chuẩn EU (CE)</a>
 </div>
 </div>
 </div>
@@ -11130,7 +11131,7 @@ Vasco Assistant nhận diện được các biểu tượng, ẩm thực vùng m
 <div class="comparison-page-link-module">
 <h2 class="h1">Bạn chưa chắc chắn nên chọn máy phiên dịch nào?</h2>
 <p>Chúng tôi đã chuẩn bị sẵn bảng so sánh các máy phiên dịch để giúp bạn dễ dàng lựa chọn hơn.</p>
-<a class="view-compare-button btn btn-md btn-black" href="../comparison-engine.html">
+<a class="view-compare-button btn btn-md btn-black" href="<?php echo esc_url( home_url( '/comparison-engine/' ) ); ?>">
 					So sánh máy phiên dịch
 				</a>
 </div>

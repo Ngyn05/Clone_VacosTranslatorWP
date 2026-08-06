@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Clean Page page-articles-languages-spanish-speaking-countries.php
  *
@@ -220,7 +220,7 @@ get_header();
 <p>Tiếng Tây Ban Nha đóng vai trò như một cầu nối, thúc đẩy kết nối giữa các cộng đồng đa dạng và thúc đẩy sự hòa nhập.</p>
 <p>Nó giúp giao tiếp, sự hiểu biết và xóa bỏ các rào cản, củng cố các mối quan hệ xã hội và thúc đẩy cảm giác đoàn kết giữa người Mỹ từ nhiều hoàn cảnh khác nhau.</p>
 <p><strong>Tiếng Tây Ban Nha đã trở thành một phần không thể thiếu trong cấu trúc xã hội Hoa Kỳ</strong>, làm phong phú thêm bức tranh văn hóa, ngôn ngữ và xã hội của Hoa Kỳ.<div class="cta-button-wrapper" style="text-align: center;">
-<a class="cta-button" href="../../../features/translate-voice.html">Dịch giọng nói dễ dàng</a>
+<a class="cta-button" href="<?php echo esc_url( home_url( '/features/translate-voice/' ) ); ?>">Dịch giọng nói dễ dàng</a>
 </div></p>
 <p>Từ cội nguồn lịch sử đến ảnh hưởng hiện tại, ngôn ngữ này kết nối các khoảng cách, tạo điều kiện cho các kết nối và tôn vinh các cộng đồng đa dạng đóng góp vào bản sắc Hoa Kỳ sôi động và đang phát triển.</p>
 <p>Khi dân số nói tiếng Tây Ban Nha tiếp tục tăng và khả năng sử dụng tiếng Tây Ban Nha ngày càng trở nên có giá trị,<strong><a href="..">tác động của ngôn ngữ này</a>sẽ chỉ tiếp tục mở rộng</strong>.</p>
@@ -273,7 +273,7 @@ get_header();
 <p>Điều quan trọng cần lưu ý là các xếp hạng này dựa trên ước tính và có thể khác nhau tùy theo nguồn và phương pháp được sử dụng.</p>
 <p>Số lượng người nói tiếng Tây Ban Nha ở mỗi quốc gia bị ảnh hưởng bởi các yếu tố như quy mô dân số, bối cảnh lịch sử, xu hướng di cư và di sản văn hóa.</p>
 <p>Tuy nhiên, xếp hạng này cung cấp một cái nhìn tổng quan chung về các quốc gia nơi tiếng Tây Ban Nha được nói rộng rãi nhất.</p>
-<p>Hãy nhớ rằng bạn có thể giao tiếp tốt ở tất cả các nơi trên với sự trợ giúp của Vasco<strong><a href="../../../translators/vasco-translator-m3.html"><u>thiết bị dịch thời gian thực</u></a></strong>.</p>
+<p>Hãy nhớ rằng bạn có thể giao tiếp tốt ở tất cả các nơi trên với sự trợ giúp của Vasco<strong><a href="<?php echo esc_url( home_url( '/translators/' ) ); ?>"><u>thiết bị dịch thời gian thực</u></a></strong>.</p>
 <p><picture class="alignnone size-full wp-image-1915" decoding="async">
 <source sizes="(max-width: 1200px) 100vw, 1200px" type="image/avif"/>
 <img alt="Hình ảnh những cuốn sách cũ trên kệ."  src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2023/07/J6.png" ); ?>"  decoding="async" height="628"  width="1200"/><noscript><img alt="A picture showing old books on a shelf." decoding="async" height="628" sizes="(max-width: 1200px) 100vw, 1200px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2023/07/J6.png" ); ?>" width="1200"/></noscript>
@@ -296,7 +296,7 @@ get_header();
 <p>Khi chúng ta tiếp tục khám phá và trân trọng các quốc gia nói tiếng Tây Ban Nha, chúng ta phát hiện ra một bức tranh phong phú về các phương ngữ, truyền thống và di sản văn hóa sống động.</p>
 <p><strong>Đón nhận tiếng Tây Ban Nha nghĩa là đón nhận sự kết nối và vẻ đẹp của các quốc gia đa dạng</strong>cùng chia sẻ mối liên kết ngôn ngữ này.</p>
 <p>Vì vậy, hãy cùng tôn vinh tiếng Tây Ban Nha và tác động sâu sắc của nó trên trường quốc tế.</p>
-<p>Với thực tế rằng việc học tiếng Tây Ban Nha là quan trọng, những người mới bắt đầu luôn có thể sử dụng Vasco<strong><a href="../../../features/translate-voice.html"><u>máy dịch giọng nói</u></a></strong>, với các tính năng bổ sung như<strong><a href="../../../features/translate-photos.html"><u>dịch ảnh</u></a></strong>, <strong><a href="../../../features/translate-text.html"><u>dịch văn bản</u></a></strong>và<strong><a href="../../../features/translate-chat.html">dịch cuộc gọi điện thoại</a></strong>.</p>
+<p>Với thực tế rằng việc học tiếng Tây Ban Nha là quan trọng, những người mới bắt đầu luôn có thể sử dụng Vasco<strong><a href="<?php echo esc_url( home_url( '/features/translate-voice/' ) ); ?>"><u>máy dịch giọng nói</u></a></strong>, với các tính năng bổ sung như<strong><a href="<?php echo esc_url( home_url( '/features/translate-photos/' ) ); ?>"><u>dịch ảnh</u></a></strong>, <strong><a href="<?php echo esc_url( home_url( '/features/translate-text/' ) ); ?>"><u>dịch văn bản</u></a></strong>và<strong><a href="<?php echo esc_url( home_url( '/features/translate-chat/' ) ); ?>">dịch cuộc gọi điện thoại</a></strong>.</p>
 <p><strong>¡Viva el idioma español!</strong></p>
 <table border="1" cellpadding="10" cellspacing="0">
 <tbody>
@@ -372,7 +372,7 @@ get_header();
 <p>Tiếng Tây Ban Nha, một ngôn ngữ toàn cầu với gần 500 triệu người nói, là ngôn ngữ chính thức tại 20 quốc gia trải dài qua châu Âu, Nam Mỹ, Bắc Mỹ, Trung Mỹ, vùng Caribe và châu Phi. Ở châu Âu, tiếng Tây Ban Nha là ngôn ngữ chính thức chỉ tại Tây Ban Nha. Ở Nam Mỹ, nó là ngôn ngữ chính thức tại Colombia, Argentina, Peru, Chile, Bolivia, Ecuador, Paraguay, Uruguay và Venezuela. Ở Bắc Mỹ, đây là ngôn ngữ chính thức của Mexico và được nói rộng rãi tại Hoa Kỳ. Các quốc gia Trung Mỹ và các đảo Caribe như Cuba, Cộng hòa Dominica và Puerto Rico cũng có tiếng Tây Ban Nha là ngôn ngữ chính thức. Ở châu Phi, Guinea Xích Đạo công nhận tiếng Tây Ban Nha là ngôn ngữ chính thức. Mặc dù có sự hiện diện toàn cầu, tiếng Tây Ban Nha chỉ đứng thứ tư trong số các ngôn ngữ được nói nhiều nhất trên thế giới.</p>
 <div class="answer9"></div>
 <div class="cta-button-wrapper" style="text-align: center;">
-<a class="cta-button" href="../../../features/translate-photos.html">Dịch ảnh dễ dàng</a>
+<a class="cta-button" href="<?php echo esc_url( home_url( '/features/translate-photos/' ) ); ?>">Dịch ảnh dễ dàng</a>
 </div>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","@id":"./articles/languages/spanish-speaking-countries/#video-I3i0STGVAtQ","url":"./articles/languages/spanish-speaking-countries/","embedUrl":"https://www.youtube.com/embed/I3i0STGVAtQ","name":"Which countries speak Spanish as an official language?","description":"Language is a remarkable aspect of human culture, carrying within its syllables identities of diverse societies. Spanish, with its melodic cadence and rich history, holds a prominent place among the world's most spoken languages. As&hellip;","thumbnailUrl":["https://i.ytimg.com/vi/I3i0STGVAtQ/hqdefault.jpg"],"inLanguage":"en-US","uploadDate":"2023-06-16T12:44:11+02:00","publisher":{"@type":"Organization","name":"Blog VASCO VN","logo":{"@type":"ImageObject","url":"./wp-content/uploads/logo.svg","width":300,"height":80}},"potentialAction":{"@type":"WatchAction","target":"https://www.youtube.com/watch?v=I3i0STGVAtQ"}}</script>
 </div>

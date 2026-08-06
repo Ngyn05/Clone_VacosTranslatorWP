@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Template Name: Product Page Template page-vasco-translator-v4.php
  *
@@ -884,7 +884,7 @@ TƯ VẤN NGAY
 <a href="#" rel="nofollow" target="_blank">Hướng dẫn sử dụng</a>
 </div>
 <div class="gpsr-box">
-<a href="../assets/docs/v4-declaration.pdf.html" target="_blank">Tuyên bố hợp chuẩn EU (CE)</a>
+<a href="<?php echo esc_url( VASCO_THEME_URI . '/assets/docs/v4-declaration.pdf' ); ?>" target="_blank">Tuyên bố hợp chuẩn EU (CE)</a>
 </div>
 </div>
 </div>
@@ -9846,9 +9846,9 @@ TƯ VẤN NGAY
 </div>
 </div>
 <div class="accordion-hidden">
-<p>To <a href="../features/translate-photos.html">translate images</a> with Vasco Translator V4, follow just a few steps.</p>
+<p>To <a href="<?php echo esc_url( home_url( '/features/translate-photos/' ) ); ?>">translate images</a> with Vasco Translator V4, follow just a few steps.</p>
 <ul>
-<li>Open the '<a href="../features/translate-photos.html">Dịch hình ảnh</a>' from the main menu on the device.</li>
+<li>Open the '<a href="<?php echo esc_url( home_url( '/features/translate-photos/' ) ); ?>">Dịch hình ảnh</a>' from the main menu on the device.</li>
 <li>Choose your preferred target languages.</li>
 <li>Take a picture of the text you want to translate.</li>
 <li>Once the photo is captured, the device will automatically recognize and translate the text, displaying the translation on the screen.</li>
@@ -9863,7 +9863,7 @@ TƯ VẤN NGAY
 </svg></div>
 </div>
 <div class="accordion-hidden">
-<p>If you wonder how to use the <a href="../features/translate-voice.html">Dịch giọng nói</a> feature, follow these steps.</p>
+<p>If you wonder how to use the <a href="<?php echo esc_url( home_url( '/features/translate-voice/' ) ); ?>">Dịch giọng nói</a> feature, follow these steps.</p>
 <ul>
 <li>Open the 'Dịch giọng nói' feature on your device.</li>
 <li>Choose your preferred source and target languages.</li>
@@ -9882,7 +9882,7 @@ TƯ VẤN NGAY
 </svg></div>
 </div>
 <div class="accordion-hidden">
-<p>To use the <a href="../features/translate-text.html">Dịch văn bản</a>, follow these steps.</p>
+<p>To use the <a href="<?php echo esc_url( home_url( '/features/translate-text/' ) ); ?>">Dịch văn bản</a>, follow these steps.</p>
 <ul>
 <li>Access the 'Dịch văn bản' feature on the Vasco Translator V4 device.</li>
 <li>Select the desired language pair.</li>
@@ -9899,7 +9899,7 @@ TƯ VẤN NGAY
 </svg></div>
 </div>
 <div class="accordion-hidden">
-<p>To <a href="../features/translate-chat.html">chat with translation</a> using Vasco Translator V4, follow these steps.</p>
+<p>To <a href="<?php echo esc_url( home_url( '/features/translate-chat/' ) ); ?>">chat with translation</a> using Vasco Translator V4, follow these steps.</p>
 <ul>
 <li>Select the Ứng dụng dịch nhóm MultiTalk from the main menu of the Vasco Translator V4 device.</li>
 <li>Create or join an existing chat with translation.</li>
@@ -10008,7 +10008,7 @@ TƯ VẤN NGAY
 <div class="comparison-page-link-module">
 <h2 class="h1">Are you unsure which translator to choose?</h2>
 <p>We have prepared a comparison of translators to make your choice easier.</p>
-<a class="view-compare-button btn btn-md btn-black" href="../comparison-engine.html">
+<a class="view-compare-button btn btn-md btn-black" href="<?php echo esc_url( home_url( '/comparison-engine/' ) ); ?>">
 					So sánh máy phiên dịch
 				</a>
 </div>

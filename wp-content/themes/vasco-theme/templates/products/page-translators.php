@@ -66,7 +66,7 @@ return;
 </div>
 <div class="container">
 <div class="comparison-page-link">
-<a class="comparison-page-link-anchor view-compare-button" href="../comparison-engine.html">
+<a class="comparison-page-link-anchor view-compare-button" href="<?php echo esc_url( home_url( '/comparison-engine/' ) ); ?>">
 <svg fill="none" height="20" viewbox="0 0 12 20" width="12" xmlns="http://www.w3.org/2000/svg">
 <path d="M2 18L10 10L2 2" stroke="#4966FF" stroke-linecap="square" stroke-width="2"></path>
 </svg>
@@ -598,7 +598,7 @@ return;
 																																								$799																									</span>
 <div class="bundle-savings">
 <p>Tiết kiệm khi mua theo bộ<span class="saving-price">$139</span></p>
-<a href="../terms-and-conditions-of-the-promotion-cheaper-in-a-set.html">Xem điều khoản khuyến mãi</a>
+<a href="<?php echo esc_url( home_url( '/terms-and-conditions-of-the-promotion-cheaper-in-a-set/' ) ); ?>">Xem điều khoản khuyến mãi</a>
 </div>
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
@@ -627,7 +627,7 @@ return;
 <div aria-label="Rẻ hơn khi mua theo bộ" class="body-base product-flag">Rẻ hơn khi mua theo bộ</div>
 </div>
 </div>
-<a class="product-link" content="vasco-translator-q1.html" href="./q1-slateblue-e1.html" title="Vasco Translator Q1 Slate Blue + E1">
+<a class="product-link" content="vasco-translator-q1.html" href="<?php echo esc_url( home_url( '/product/q1-slateblue-e1/' ) ); ?>" title="Vasco Translator Q1 Slate Blue + E1">
 <img alt="Vasco Translator Q1 Slate Blue + E1" data-full-size-image-url="./428-og_image/q1-slateblue-e1.jpg" height="480" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/428-medium_default/q1-slateblue-e1.jpg" ); ?>" width="480"/>
 </a>
 <div class="loading-spinner">
@@ -639,7 +639,7 @@ return;
 </div>
 <div class="product-description">
 <div class="product-description-head">
-<a aria-label="Xem chi tiết sản phẩm Vasco Translator Q1 Slate Blue + E1" class="product-link product-title-link" content="vasco-translator-q1.html" href="./q1-slateblue-e1.html" title="Vasco Translator Q1 Slate Blue + E1">
+<a aria-label="Xem chi tiết sản phẩm Vasco Translator Q1 Slate Blue + E1" class="product-link product-title-link" content="vasco-translator-q1.html" href="<?php echo esc_url( home_url( '/product/q1-slateblue-e1/' ) ); ?>" title="Vasco Translator Q1 Slate Blue + E1">
 <h2 class="product-title product-name" id="vasco-translator-q1-slate-blue-+-e1-name">Vasco Translator Q1 Slate Blue + E1</h2>
 </a>
 <h3 class="product-subtitle">Bộ sản phẩm hiện đại nhất với Internet miễn phí trọn đời cho việc dịch thuật</h3>
@@ -701,7 +701,7 @@ return;
 <div class="product-add-to-cart-block">
 <div class="add-to-cart-and-price">
 <div class="product_button_description">
-<a class="btn btn-md btn-secondary btn-description" href="./q1-slateblue-e1.html">Mô tả<span class="text-sr-only">Vasco Translator Q1 Slate Blue + E1</span></a>
+<a class="btn btn-md btn-secondary btn-description" href="<?php echo esc_url( home_url( '/product/q1-slateblue-e1/' ) ); ?>">Mô tả<span class="text-sr-only">Vasco Translator Q1 Slate Blue + E1</span></a>
 </div>
 <div class="product-price-and-shipping product-price order-first md:order-none">
 <span class="regular-price-wrapper">
@@ -714,7 +714,7 @@ return;
 																																								$799																									</span>
 <div class="bundle-savings">
 <p>Tiết kiệm khi mua theo bộ<span class="saving-price">$139</span></p>
-<a href="../terms-and-conditions-of-the-promotion-cheaper-in-a-set.html">Xem điều khoản khuyến mãi</a>
+<a href="<?php echo esc_url( home_url( '/terms-and-conditions-of-the-promotion-cheaper-in-a-set/' ) ); ?>">Xem điều khoản khuyến mãi</a>
 </div>
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
@@ -743,7 +743,7 @@ return;
 <div aria-label="Rẻ hơn khi mua theo bộ" class="body-base product-flag">Rẻ hơn khi mua theo bộ</div>
 </div>
 </div>
-<a class="product-link" content="vasco-translator-q1.html" href="./q1-mysticplum-e1.html" title="Vasco Translator Q1 Mystic Plum + E1">
+<a class="product-link" content="vasco-translator-q1.html" href="<?php echo esc_url( home_url( '/product/q1-mysticplum-e1/' ) ); ?>" title="Vasco Translator Q1 Mystic Plum + E1">
 <img alt="Vasco Translator Q1 Mystic Plum + E1" data-full-size-image-url="./425-og_image/q1-mysticplum-e1.jpg" height="480" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/425-medium_default/q1-mysticplum-e1.jpg" ); ?>" width="480"/>
 </a>
 <div class="loading-spinner">
@@ -755,7 +755,7 @@ return;
 </div>
 <div class="product-description">
 <div class="product-description-head">
-<a aria-label="Xem chi tiết sản phẩm Vasco Translator Q1 Mystic Plum + E1" class="product-link product-title-link" content="vasco-translator-q1.html" href="./q1-mysticplum-e1.html" title="Vasco Translator Q1 Mystic Plum + E1">
+<a aria-label="Xem chi tiết sản phẩm Vasco Translator Q1 Mystic Plum + E1" class="product-link product-title-link" content="vasco-translator-q1.html" href="<?php echo esc_url( home_url( '/product/q1-mysticplum-e1/' ) ); ?>" title="Vasco Translator Q1 Mystic Plum + E1">
 <h2 class="product-title product-name" id="vasco-translator-q1-mystic-plum-+-e1-name">Vasco Translator Q1 Mystic Plum + E1</h2>
 </a>
 <h3 class="product-subtitle">Bộ sản phẩm hiện đại nhất với Internet miễn phí trọn đời cho việc dịch thuật</h3>
@@ -817,7 +817,7 @@ return;
 <div class="product-add-to-cart-block">
 <div class="add-to-cart-and-price">
 <div class="product_button_description">
-<a class="btn btn-md btn-secondary btn-description" href="./q1-mysticplum-e1.html">Mô tả<span class="text-sr-only">Vasco Translator Q1 Mystic Plum + E1</span></a>
+<a class="btn btn-md btn-secondary btn-description" href="<?php echo esc_url( home_url( '/product/q1-mysticplum-e1/' ) ); ?>">Mô tả<span class="text-sr-only">Vasco Translator Q1 Mystic Plum + E1</span></a>
 </div>
 <div class="product-price-and-shipping product-price order-first md:order-none">
 <span class="regular-price-wrapper">
@@ -830,7 +830,7 @@ return;
 																																								$799																									</span>
 <div class="bundle-savings">
 <p>Tiết kiệm khi mua theo bộ<span class="saving-price">$139</span></p>
-<a href="../terms-and-conditions-of-the-promotion-cheaper-in-a-set.html">Xem điều khoản khuyến mãi</a>
+<a href="<?php echo esc_url( home_url( '/terms-and-conditions-of-the-promotion-cheaper-in-a-set/' ) ); ?>">Xem điều khoản khuyến mãi</a>
 </div>
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
@@ -859,7 +859,7 @@ return;
 <div aria-label="Rẻ hơn khi mua theo bộ" class="body-base product-flag">Rẻ hơn khi mua theo bộ</div>
 </div>
 </div>
-<a class="product-link" content="vasco-translator-q1.html" href="./q1-scarletpulse-e1.html" title="Vasco Translator Q1 Scarlet Pulse + E1">
+<a class="product-link" content="vasco-translator-q1.html" href="<?php echo esc_url( home_url( '/product/q1-scarletpulse-e1/' ) ); ?>" title="Vasco Translator Q1 Scarlet Pulse + E1">
 <img alt="Vasco Translator Q1 Scarlet Pulse + E1" data-full-size-image-url="./427-og_image/q1-scarletpulse-e1.jpg" height="480" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/427-medium_default/q1-scarletpulse-e1.jpg" ); ?>" width="480"/>
 </a>
 <div class="loading-spinner">
@@ -871,7 +871,7 @@ return;
 </div>
 <div class="product-description">
 <div class="product-description-head">
-<a aria-label="Xem chi tiết sản phẩm Vasco Translator Q1 Scarlet Pulse + E1" class="product-link product-title-link" content="vasco-translator-q1.html" href="./q1-scarletpulse-e1.html" title="Vasco Translator Q1 Scarlet Pulse + E1">
+<a aria-label="Xem chi tiết sản phẩm Vasco Translator Q1 Scarlet Pulse + E1" class="product-link product-title-link" content="vasco-translator-q1.html" href="<?php echo esc_url( home_url( '/product/q1-scarletpulse-e1/' ) ); ?>" title="Vasco Translator Q1 Scarlet Pulse + E1">
 <h2 class="product-title product-name" id="vasco-translator-q1-scarlet-pulse-+-e1-name">Vasco Translator Q1 Scarlet Pulse + E1</h2>
 </a>
 <h3 class="product-subtitle">Bộ sản phẩm hiện đại nhất với Internet miễn phí trọn đời cho việc dịch thuật</h3>
@@ -933,7 +933,7 @@ return;
 <div class="product-add-to-cart-block">
 <div class="add-to-cart-and-price">
 <div class="product_button_description">
-<a class="btn btn-md btn-secondary btn-description" href="./q1-scarletpulse-e1.html">Mô tả<span class="text-sr-only">Vasco Translator Q1 Scarlet Pulse + E1</span></a>
+<a class="btn btn-md btn-secondary btn-description" href="<?php echo esc_url( home_url( '/product/q1-scarletpulse-e1/' ) ); ?>">Mô tả<span class="text-sr-only">Vasco Translator Q1 Scarlet Pulse + E1</span></a>
 </div>
 <div class="product-price-and-shipping product-price order-first md:order-none">
 <span class="regular-price-wrapper">
@@ -946,7 +946,7 @@ return;
 																																								$799																									</span>
 <div class="bundle-savings">
 <p>Tiết kiệm khi mua theo bộ<span class="saving-price">$139</span></p>
-<a href="../terms-and-conditions-of-the-promotion-cheaper-in-a-set.html">Xem điều khoản khuyến mãi</a>
+<a href="<?php echo esc_url( home_url( '/terms-and-conditions-of-the-promotion-cheaper-in-a-set/' ) ); ?>">Xem điều khoản khuyến mãi</a>
 </div>
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
@@ -1067,7 +1067,7 @@ return;
 																																								$715																									</span>
 <div class="bundle-savings">
 <p>Tiết kiệm khi mua theo bộ<span class="saving-price">$123</span></p>
-<a href="../terms-and-conditions-of-the-promotion-cheaper-in-a-set.html">Xem điều khoản khuyến mãi</a>
+<a href="<?php echo esc_url( home_url( '/terms-and-conditions-of-the-promotion-cheaper-in-a-set/' ) ); ?>">Xem điều khoản khuyến mãi</a>
 </div>
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
@@ -1096,7 +1096,7 @@ return;
 <div aria-label="Rẻ hơn khi mua theo bộ" class="body-base product-flag">Rẻ hơn khi mua theo bộ</div>
 </div>
 </div>
-<a class="product-link" content="vasco-translator-v4.html" href="./v4-cobaltblue-e1.html" title="Vasco Translator V4 Cobalt Blue + E1">
+<a class="product-link" content="vasco-translator-v4.html" href="<?php echo esc_url( home_url( '/product/v4-cobaltblue-e1/' ) ); ?>" title="Vasco Translator V4 Cobalt Blue + E1">
 <img alt="Vasco Translator V4 Cobalt Blue + E1" data-full-size-image-url="./331-og_image/v4-cobaltblue-e1.jpg" height="480" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/331-medium_default/v4-cobaltblue-e1.jpg" ); ?>" width="480"/>
 </a>
 <div class="loading-spinner">
@@ -1108,7 +1108,7 @@ return;
 </div>
 <div class="product-description">
 <div class="product-description-head">
-<a aria-label="Xem chi tiết sản phẩm Vasco Translator V4 Cobalt Blue + E1" class="product-link product-title-link" content="vasco-translator-v4.html" href="./v4-cobaltblue-e1.html" title="Vasco Translator V4 Cobalt Blue + E1">
+<a aria-label="Xem chi tiết sản phẩm Vasco Translator V4 Cobalt Blue + E1" class="product-link product-title-link" content="vasco-translator-v4.html" href="<?php echo esc_url( home_url( '/product/v4-cobaltblue-e1/' ) ); ?>" title="Vasco Translator V4 Cobalt Blue + E1">
 <h2 class="product-title product-name" id="vasco-translator-v4-cobalt-blue-+-e1-name">Vasco Translator V4 Cobalt Blue + E1</h2>
 </a>
 <h3 class="product-subtitle">Bộ sản phẩm đặc biệt với Internet miễn phí cho dịch thuật</h3>
@@ -1175,7 +1175,7 @@ return;
 <div class="product-add-to-cart-block">
 <div class="add-to-cart-and-price">
 <div class="product_button_description">
-<a class="btn btn-md btn-secondary btn-description" href="./v4-cobaltblue-e1.html">Mô tả<span class="text-sr-only">Vasco Translator V4 Cobalt Blue + E1</span></a>
+<a class="btn btn-md btn-secondary btn-description" href="<?php echo esc_url( home_url( '/product/v4-cobaltblue-e1/' ) ); ?>">Mô tả<span class="text-sr-only">Vasco Translator V4 Cobalt Blue + E1</span></a>
 </div>
 <div class="product-price-and-shipping product-price order-first md:order-none">
 <span class="regular-price-wrapper">
@@ -1188,7 +1188,7 @@ return;
 																																								$715																									</span>
 <div class="bundle-savings">
 <p>Tiết kiệm khi mua theo bộ<span class="saving-price">$123</span></p>
-<a href="../terms-and-conditions-of-the-promotion-cheaper-in-a-set.html">Xem điều khoản khuyến mãi</a>
+<a href="<?php echo esc_url( home_url( '/terms-and-conditions-of-the-promotion-cheaper-in-a-set/' ) ); ?>">Xem điều khoản khuyến mãi</a>
 </div>
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
@@ -1217,7 +1217,7 @@ return;
 <div aria-label="Rẻ hơn khi mua theo bộ" class="body-base product-flag">Rẻ hơn khi mua theo bộ</div>
 </div>
 </div>
-<a class="product-link" content="vasco-translator-v4.html" href="./v4-pearlwhite-e1.html" title="Vasco Translator V4 Pearl White + E1">
+<a class="product-link" content="vasco-translator-v4.html" href="<?php echo esc_url( home_url( '/product/v4-pearlwhite-e1/' ) ); ?>" title="Vasco Translator V4 Pearl White + E1">
 <img alt="Vasco Translator V4 Pearl White + E1" data-full-size-image-url="./332-og_image/v4-pearlwhite-e1.jpg" height="480" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/332-medium_default/v4-pearlwhite-e1.jpg" ); ?>" width="480"/>
 </a>
 <div class="loading-spinner">
@@ -1229,7 +1229,7 @@ return;
 </div>
 <div class="product-description">
 <div class="product-description-head">
-<a aria-label="Xem chi tiết sản phẩm Vasco Translator V4 Pearl White + E1" class="product-link product-title-link" content="vasco-translator-v4.html" href="./v4-pearlwhite-e1.html" title="Vasco Translator V4 Pearl White + E1">
+<a aria-label="Xem chi tiết sản phẩm Vasco Translator V4 Pearl White + E1" class="product-link product-title-link" content="vasco-translator-v4.html" href="<?php echo esc_url( home_url( '/product/v4-pearlwhite-e1/' ) ); ?>" title="Vasco Translator V4 Pearl White + E1">
 <h2 class="product-title product-name" id="vasco-translator-v4-pearl-white-+-e1-name">Vasco Translator V4 Pearl White + E1</h2>
 </a>
 <h3 class="product-subtitle">Bộ sản phẩm đặc biệt với Internet miễn phí cho dịch thuật</h3>
@@ -1296,7 +1296,7 @@ return;
 <div class="product-add-to-cart-block">
 <div class="add-to-cart-and-price">
 <div class="product_button_description">
-<a class="btn btn-md btn-secondary btn-description" href="./v4-pearlwhite-e1.html">Mô tả<span class="text-sr-only">Vasco Translator V4 Pearl White + E1</span></a>
+<a class="btn btn-md btn-secondary btn-description" href="<?php echo esc_url( home_url( '/product/v4-pearlwhite-e1/' ) ); ?>">Mô tả<span class="text-sr-only">Vasco Translator V4 Pearl White + E1</span></a>
 </div>
 <div class="product-price-and-shipping product-price order-first md:order-none">
 <span class="regular-price-wrapper">
@@ -1309,7 +1309,7 @@ return;
 																																								$715																									</span>
 <div class="bundle-savings">
 <p>Tiết kiệm khi mua theo bộ<span class="saving-price">$123</span></p>
-<a href="../terms-and-conditions-of-the-promotion-cheaper-in-a-set.html">Xem điều khoản khuyến mãi</a>
+<a href="<?php echo esc_url( home_url( '/terms-and-conditions-of-the-promotion-cheaper-in-a-set/' ) ); ?>">Xem điều khoản khuyến mãi</a>
 </div>
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
@@ -1338,7 +1338,7 @@ return;
 <div aria-label="Rẻ hơn khi mua theo bộ" class="body-base product-flag">Rẻ hơn khi mua theo bộ</div>
 </div>
 </div>
-<a class="product-link" content="vasco-translator-v4.html" href="./v4-rubyred-e1.html" title="Vasco Translator V4 Ruby Red + E1">
+<a class="product-link" content="vasco-translator-v4.html" href="<?php echo esc_url( home_url( '/product/v4-rubyred-e1/' ) ); ?>" title="Vasco Translator V4 Ruby Red + E1">
 <img alt="Vasco Translator V4 Ruby Red + E1" data-full-size-image-url="./333-og_image/v4-rubyred-e1.jpg" height="480" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/333-medium_default/v4-rubyred-e1.jpg" ); ?>" width="480"/>
 </a>
 <div class="loading-spinner">
@@ -1350,7 +1350,7 @@ return;
 </div>
 <div class="product-description">
 <div class="product-description-head">
-<a aria-label="Xem chi tiết sản phẩm Vasco Translator V4 Ruby Red + E1" class="product-link product-title-link" content="vasco-translator-v4.html" href="./v4-rubyred-e1.html" title="Vasco Translator V4 Ruby Red + E1">
+<a aria-label="Xem chi tiết sản phẩm Vasco Translator V4 Ruby Red + E1" class="product-link product-title-link" content="vasco-translator-v4.html" href="<?php echo esc_url( home_url( '/product/v4-rubyred-e1/' ) ); ?>" title="Vasco Translator V4 Ruby Red + E1">
 <h2 class="product-title product-name" id="vasco-translator-v4-ruby-red-+-e1-name">Vasco Translator V4 Ruby Red + E1</h2>
 </a>
 <h3 class="product-subtitle">Bộ sản phẩm đặc biệt với Internet miễn phí cho dịch thuật</h3>
@@ -1417,7 +1417,7 @@ return;
 <div class="product-add-to-cart-block">
 <div class="add-to-cart-and-price">
 <div class="product_button_description">
-<a class="btn btn-md btn-secondary btn-description" href="./v4-rubyred-e1.html">Mô tả<span class="text-sr-only">Vasco Translator V4 Ruby Red + E1</span></a>
+<a class="btn btn-md btn-secondary btn-description" href="<?php echo esc_url( home_url( '/product/v4-rubyred-e1/' ) ); ?>">Mô tả<span class="text-sr-only">Vasco Translator V4 Ruby Red + E1</span></a>
 </div>
 <div class="product-price-and-shipping product-price order-first md:order-none">
 <span class="regular-price-wrapper">
@@ -1430,7 +1430,7 @@ return;
 																																								$715																									</span>
 <div class="bundle-savings">
 <p>Tiết kiệm khi mua theo bộ<span class="saving-price">$123</span></p>
-<a href="../terms-and-conditions-of-the-promotion-cheaper-in-a-set.html">Xem điều khoản khuyến mãi</a>
+<a href="<?php echo esc_url( home_url( '/terms-and-conditions-of-the-promotion-cheaper-in-a-set/' ) ); ?>">Xem điều khoản khuyến mãi</a>
 </div>
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
@@ -1459,7 +1459,7 @@ return;
 <div aria-label="Rẻ hơn khi mua theo bộ" class="body-base product-flag">Rẻ hơn khi mua theo bộ</div>
 </div>
 </div>
-<a class="product-link" content="vasco-translator-v4.html" href="./v4-stonegray-e1.html" title="Vasco Translator V4 Stone Gray + E1">
+<a class="product-link" content="vasco-translator-v4.html" href="<?php echo esc_url( home_url( '/product/v4-stonegray-e1/' ) ); ?>" title="Vasco Translator V4 Stone Gray + E1">
 <img alt="Vasco Translator V4 Stone Gray + E1" data-full-size-image-url="./334-og_image/v4-stonegray-e1.jpg" height="480" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/334-medium_default/v4-stonegray-e1.jpg" ); ?>" width="480"/>
 </a>
 <div class="loading-spinner">
@@ -1471,7 +1471,7 @@ return;
 </div>
 <div class="product-description">
 <div class="product-description-head">
-<a aria-label="Xem chi tiết sản phẩm Vasco Translator V4 Stone Gray + E1" class="product-link product-title-link" content="vasco-translator-v4.html" href="./v4-stonegray-e1.html" title="Vasco Translator V4 Stone Gray + E1">
+<a aria-label="Xem chi tiết sản phẩm Vasco Translator V4 Stone Gray + E1" class="product-link product-title-link" content="vasco-translator-v4.html" href="<?php echo esc_url( home_url( '/product/v4-stonegray-e1/' ) ); ?>" title="Vasco Translator V4 Stone Gray + E1">
 <h2 class="product-title product-name" id="vasco-translator-v4-stone-gray-+-e1-name">Vasco Translator V4 Stone Gray + E1</h2>
 </a>
 <h3 class="product-subtitle">Bộ sản phẩm đặc biệt với Internet miễn phí cho dịch thuật</h3>
@@ -1538,7 +1538,7 @@ return;
 <div class="product-add-to-cart-block">
 <div class="add-to-cart-and-price">
 <div class="product_button_description">
-<a class="btn btn-md btn-secondary btn-description" href="./v4-stonegray-e1.html">Mô tả<span class="text-sr-only">Vasco Translator V4 Stone Gray + E1</span></a>
+<a class="btn btn-md btn-secondary btn-description" href="<?php echo esc_url( home_url( '/product/v4-stonegray-e1/' ) ); ?>">Mô tả<span class="text-sr-only">Vasco Translator V4 Stone Gray + E1</span></a>
 </div>
 <div class="product-price-and-shipping product-price order-first md:order-none">
 <span class="regular-price-wrapper">
@@ -1551,7 +1551,7 @@ return;
 																																								$715																									</span>
 <div class="bundle-savings">
 <p>Tiết kiệm khi mua theo bộ<span class="saving-price">$123</span></p>
-<a href="../terms-and-conditions-of-the-promotion-cheaper-in-a-set.html">Xem điều khoản khuyến mãi</a>
+<a href="<?php echo esc_url( home_url( '/terms-and-conditions-of-the-promotion-cheaper-in-a-set/' ) ); ?>">Xem điều khoản khuyến mãi</a>
 </div>
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
@@ -1921,7 +1921,7 @@ return;
 <div class="container">
 <div class="doublebox-content">
 <h3 class="h2">Hiểu rõ môi trường xung quanh khi ở nước ngoài</h3>
-<p>Gặp khó khăn khi đọc thực đơn nhà hàng bằng tiếng nước ngoài? Với<a href="../features/translate-photos.html" rel="noopener" target="_blank">Dịch ảnh</a>tính năng này, bạn sẽ hiểu mọi thứ chỉ với một lần chụp. Đang làm việc hoặc học tập ở nước ngoài? Dịch hợp đồng lao động hoặc hợp đồng thuê nhà, và hiểu ngay các điều khoản chi tiết.</p>
+<p>Gặp khó khăn khi đọc thực đơn nhà hàng bằng tiếng nước ngoài? Với<a href="<?php echo esc_url( home_url( '/features/translate-photos/' ) ); ?>" rel="noopener" target="_blank">Dịch ảnh</a>tính năng này, bạn sẽ hiểu mọi thứ chỉ với một lần chụp. Đang làm việc hoặc học tập ở nước ngoài? Dịch hợp đồng lao động hoặc hợp đồng thuê nhà, và hiểu ngay các điều khoản chi tiết.</p>
 <p>Với máy dịch ngôn ngữ cầm tay Vasco, bạn nắm giữ chìa khóa mở ra cả thế giới ngay trong lòng bàn tay.</p>
 <svg class="svg-pseudo" color="" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>

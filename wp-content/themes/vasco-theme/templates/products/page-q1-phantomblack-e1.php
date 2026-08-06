@@ -127,28 +127,28 @@ return;
 <div class="product-variants-items">
 <p class="body-16" id="pack-bundle-color">Màu sắc:</p>
 <div aria-labelledby="pack-bundle-color" class="product-variants-list" role="radiogroup">
-<a href="../translators/q1-phantomblack-e1.html">
+<a href="<?php echo esc_url( home_url( '/product/q1-phantomblack-e1/' ) ); ?>">
 <label aria-checked="true" aria-label="Vasco Translator Q1 Phantom Black + E1" class="input-container product-variants-item product-variants-item-bundle" data-product-id="43" role="radio">
 <div class="circle circle-main phantom-black active" title="Phantom Black"></div>
 <input class="input-color active" data-analytics-type="colour" data-attribute="0" data-product-id="43" name="bundle_color" title="Phantom Black" type="button" value="43"/>
 <span class="radio-label body-16 active">Đen Phantom</span>
 </label>
 </a>
-<a href="./q1-slateblue-e1.html">
+<a href="<?php echo esc_url( home_url( '/product/q1-slateblue-e1/' ) ); ?>">
 <label aria-checked="false" aria-label="Vasco Translator Q1 Slate Blue + E1" class="input-container product-variants-item product-variants-item-bundle" data-product-id="44" role="radio">
 <div class="circle circle-main slate-blue" title="Slate Blue"></div>
 <input class="input-color" data-analytics-type="colour" data-attribute="0" data-product-id="44" name="bundle_color" title="Slate Blue" type="button" value="44"/>
 <span class="radio-label body-16">Xanh Slate</span>
 </label>
 </a>
-<a href="./q1-mysticplum-e1.html">
+<a href="<?php echo esc_url( home_url( '/product/q1-mysticplum-e1/' ) ); ?>">
 <label aria-checked="false" aria-label="Vasco Translator Q1 Mystic Plum + E1" class="input-container product-variants-item product-variants-item-bundle" data-product-id="45" role="radio">
 <div class="circle circle-main mystic-plum" title="Mystic Plum"></div>
 <input class="input-color" data-analytics-type="colour" data-attribute="0" data-product-id="45" name="bundle_color" title="Mystic Plum" type="button" value="45"/>
 <span class="radio-label body-16">Mận Mystic</span>
 </label>
 </a>
-<a href="./q1-scarletpulse-e1.html">
+<a href="<?php echo esc_url( home_url( '/product/q1-scarletpulse-e1/' ) ); ?>">
 <label aria-checked="false" aria-label="Vasco Translator Q1 Scarlet Pulse + E1" class="input-container product-variants-item product-variants-item-bundle" data-product-id="46" role="radio">
 <div class="circle circle-main scarlet-pulse" title="Scarlet Pulse"></div>
 <input class="input-color" data-analytics-type="colour" data-attribute="0" data-product-id="46" name="bundle_color" title="Scarlet Pulse" type="button" value="46"/>
@@ -186,7 +186,7 @@ return;
 </section>
 <div class="bundle-savings">
 <p>Tiết kiệm khi mua theo bộ<span class="saving-price">$139</span></p>
-<a href="../terms-and-conditions-of-the-promotion-cheaper-in-a-set.html">Xem điều khoản khuyến mãi</a>
+<a href="<?php echo esc_url( home_url( '/terms-and-conditions-of-the-promotion-cheaper-in-a-set/' ) ); ?>">Xem điều khoản khuyến mãi</a>
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
@@ -304,7 +304,7 @@ return;
 Chương trình khuyến mãi bao gồm việc áp dụng chiết khấu khi mua các thiết bị trong Bộ sản phẩm khuyến mãi. Các thiết bị thuộc Bộ sản phẩm khuyến mãi nếu được mua riêng lẻ (trong hai giao dịch riêng biệt) hoặc được thêm vào giỏ hàng theo cách khác ngoài việc chọn sản phẩm được đánh dấu là Bộ sản phẩm khuyến mãi trên Cửa hàng trực tuyến sẽ không được áp dụng chiết khấu.
 </li>
 <li>
-Người tham gia có quyền rút khỏi hợp đồng mua bán trong vòng 14 ngày kể từ ngày nhận được Bộ sản phẩm khuyến mãi. Việc rút khỏi hợp đồng có thể áp dụng cho toàn bộ Bộ sản phẩm khuyến mãi hoặc một phần trong đó. Trong trường hợp rút khỏi hợp đồng một phần (trả lại một trong các sản phẩm thuộc Bộ sản phẩm khuyến mãi), Người tham gia sẽ mất quyền hưởng chiết khấu đã áp dụng. Trong trường hợp đó, số tiền được hoàn lại sẽ bị giảm trừ theo giá trị chiết khấu đã áp dụng, sao cho giá đã thanh toán cho sản phẩm không được trả lại tương ứng với giá của sản phẩm đó tại Cửa hàng trực tuyến, không bao gồm chương trình khuyến mãi được thiết lập vào ngày Người tham gia mua hàng.<br/><br/><a class="underline" href="../terms-and-conditions-of-the-promotion-cheaper-in-a-set.html" style="color:#4966FF" target="_blank">Điều khoản và điều kiện của chương trình khuyến mãi rẻ hơn khi mua theo bộ</a>
+Người tham gia có quyền rút khỏi hợp đồng mua bán trong vòng 14 ngày kể từ ngày nhận được Bộ sản phẩm khuyến mãi. Việc rút khỏi hợp đồng có thể áp dụng cho toàn bộ Bộ sản phẩm khuyến mãi hoặc một phần trong đó. Trong trường hợp rút khỏi hợp đồng một phần (trả lại một trong các sản phẩm thuộc Bộ sản phẩm khuyến mãi), Người tham gia sẽ mất quyền hưởng chiết khấu đã áp dụng. Trong trường hợp đó, số tiền được hoàn lại sẽ bị giảm trừ theo giá trị chiết khấu đã áp dụng, sao cho giá đã thanh toán cho sản phẩm không được trả lại tương ứng với giá của sản phẩm đó tại Cửa hàng trực tuyến, không bao gồm chương trình khuyến mãi được thiết lập vào ngày Người tham gia mua hàng.<br/><br/><a class="underline" href="<?php echo esc_url( home_url( '/terms-and-conditions-of-the-promotion-cheaper-in-a-set/' ) ); ?>" style="color:#4966FF" target="_blank">Điều khoản và điều kiện của chương trình khuyến mãi rẻ hơn khi mua theo bộ</a>
 </li></ol>
 </div>
 </section>
@@ -959,7 +959,7 @@ Người tham gia có quyền rút khỏi hợp đồng mua bán trong vòng 14 
 </ul>
 </div>
 <div class="doublebox-button-wrapper doublebox-button-wrapper-left">
-<a class="btn btn-md btn-black" href="../business/Y tế.html" target="_blank">
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( '/business-y-te/' ) ); ?>" target="_blank">
 							EXPLORE VASCO AUDIENCE
 							<span class="text-sr-only">Tìm hiểu thêm</span>
 </a>
@@ -1742,7 +1742,7 @@ Vasco Assistant nhận diện được các biểu tượng, ẩm thực vùng m
 <a href="#" rel="nofollow" target="_blank">Hướng dẫn sử dụng</a>
 </div>
 <div class="gpsr-box">
-<a href="../assets/docs/q1-declaration.pdf.html" target="_blank">Tuyên bố hợp chuẩn EU (CE)</a>
+<a href="<?php echo esc_url( VASCO_THEME_URI . '/assets/docs/q1-declaration.pdf' ); ?>" target="_blank">Tuyên bố hợp chuẩn EU (CE)</a>
 </div>
 </div>
 </div>
@@ -9768,7 +9768,7 @@ Vasco Assistant nhận diện được các biểu tượng, ẩm thực vùng m
 </svg></div>
 </div>
 <div class="accordion-hidden">
-<p>You can find the full list of countries with internet coverage on the <a href="../coverage-map.html">Internet Coverage Map</a>.</p>
+<p>You can find the full list of countries with internet coverage on the <a href="<?php echo esc_url( home_url( '/coverage-map/' ) ); ?>">Internet Coverage Map</a>.</p>
 </div>
 </div>
 <div class="accordion-single">
@@ -9848,7 +9848,7 @@ Vasco Assistant nhận diện được các biểu tượng, ẩm thực vùng m
 <div class="comparison-page-link-module">
 <h2 class="h1">Are you unsure which translator to choose?</h2>
 <p>We have prepared a comparison of translators to make your choice easier.</p>
-<a class="view-compare-button btn btn-md btn-black" href="../comparison-engine.html">
+<a class="view-compare-button btn btn-md btn-black" href="<?php echo esc_url( home_url( '/comparison-engine/' ) ); ?>">
 					So sánh máy phiên dịch
 				</a>
 </div>

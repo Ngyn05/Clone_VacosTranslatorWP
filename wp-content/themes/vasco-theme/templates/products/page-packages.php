@@ -73,7 +73,7 @@ return;
 <div class="product-thumb-wrapper js-variant-spinner-wrapper">
 <div class="product-flags js-product-flags">
 </div>
-<a class="product-link" content="./packages/call-translator" href="../call-translator.html" title="Gói nạp thêm Dịch Cuộc Gọi Điện Thoại">
+<a class="product-link" content="./packages/call-translator" href="<?php echo esc_url( home_url( '/call-translator/' ) ); ?>" title="Gói nạp thêm Dịch Cuộc Gọi Điện Thoại">
 <img alt="Gói nạp thêm Dịch Cuộc Gọi Điện Thoại" data-full-size-image-url="./515-og_image/call-translator.jpg" height="300" loading="lazy" src="./515-medium_default/call-translator.jpg" width="300"/>
 </a>
 <div class="loading-spinner">
@@ -85,7 +85,7 @@ return;
 </div>
 </div>
 <div class="product-title-wrapper">
-<h3 class="h3 product-title" id="phone-call-translator-top-up-name"><a aria-label="Xem chi tiết sản phẩm Dịch cuộc gọi điện thoại Top-Up" class="product-link product-title-link" content="./packages/call-translator" href="../call-translator.html" title="Gói nạp thêm Dịch Cuộc Gọi Điện Thoại">Gói nạp thêm Dịch Cuộc Gọi Điện Thoại</a></h3>
+<h3 class="h3 product-title" id="phone-call-translator-top-up-name"><a aria-label="Xem chi tiết sản phẩm Dịch cuộc gọi điện thoại Top-Up" class="product-link product-title-link" content="./packages/call-translator" href="<?php echo esc_url( home_url( '/call-translator/' ) ); ?>" title="Gói nạp thêm Dịch Cuộc Gọi Điện Thoại">Gói nạp thêm Dịch Cuộc Gọi Điện Thoại</a></h3>
 </div>
 <div class="trustpilot-top trustpilot-top--category">
 <!-- TrustBox widget - Product Mini -->
@@ -139,7 +139,7 @@ return;
 </div>
 </div>
 <div class="product-description-button-wrapper">
-<a class="btn btn-md btn-secondary" href="../call-translator.html">Mô tả<span class="text-sr-only">Gói nạp thêm Dịch Cuộc Gọi Điện Thoại</span></a>
+<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( '/call-translator/' ) ); ?>">Mô tả<span class="text-sr-only">Gói nạp thêm Dịch Cuộc Gọi Điện Thoại</span></a>
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">

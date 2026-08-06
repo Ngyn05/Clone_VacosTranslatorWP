@@ -277,9 +277,14 @@ function vasco_theme_render_catalog_page( $args = array() ) {
 function vasco_theme_render_product_detail_page( $slug = '' ) {
 	$current_slug = sanitize_title( (string) $slug );
 	if ( '' === $current_slug ) {
-		$queried_object = get_queried_object();
-		if ( $queried_object && ! empty( $queried_object->post_name ) ) {
-			$current_slug = sanitize_title( $queried_object->post_name );
+		// Uu tien slug duoc set boi template_include router
+		if ( ! empty( $GLOBALS['vasco_current_product_slug'] ) ) {
+			$current_slug = sanitize_title( (string) $GLOBALS['vasco_current_product_slug'] );
+		} else {
+			$queried_object = get_queried_object();
+			if ( $queried_object && ! empty( $queried_object->post_name ) ) {
+				$current_slug = sanitize_title( $queried_object->post_name );
+			}
 		}
 	}
 
@@ -305,6 +310,12 @@ function vasco_theme_render_product_detail_page( $slug = '' ) {
 	$image_ids     = ! empty( $image_ids ) ? $image_ids : array( 0 );
 	$short_desc    = $product->get_short_description();
 	$description   = $product->get_description();
+
+	// URL ảnh chính để dùng trong nút MUA NGAY (data-product-image)
+	$featured_img_id = $product->get_image_id();
+	$single_img_url  = $featured_img_id
+		? (string) wp_get_attachment_image_url( $featured_img_id, 'woocommerce_single' )
+		: (string) wc_placeholder_img_src( 'woocommerce_single' );
 
 	echo '<section class="relative" id="wrapper"><aside id="notifications"><div class="container"></div></aside><div><div class="breadcrumb-container"><div class="container"><nav aria-label="Đường dẫn điều hướng" class="breadcrumb" data-depth="3"><ol><li><a href="' . esc_url( home_url( '/' ) ) . '"><span class="breadcrumb-link">Trang chủ</span></a><span class="breadcrumb-divider">&gt;</span></li>';
 	if ( $category_label ) {
@@ -355,12 +366,32 @@ function vasco_theme_render_product_detail_page( $slug = '' ) {
 	echo $colors_html;
 	echo '<div class="product-actions js-product-actions">';
 	echo '<div class="product-prices-section"><div class="product-prices js-product-prices"><div class="product-price"><div class="current-price"><p class="current-price-value product-price">' . wp_kses_post( $product->get_price_html() ) . '</p></div></div></div></div>';
-	echo '<p class="afterpay-text">hoặc 4 kỳ thanh toán không lãi suất với <strong>Afterpay ⓘ</strong></p>';
+
+	// Badge: Được dùng thử trước khi thanh toán
+	echo '<p class="vasco-try-before-pay"><span class="vasco-check-icon">✅</span> <span>(Được dùng thử trước khi thanh toán)</span></p>';
+
 	echo '<div class="product-add-to-cart js-product-add-to-cart"><div class="add">';
 	echo '<div class="vasco-buttons-row">';
 	echo '<a class="btn btn-tu-van-zalo" href="https://zalo.me/0938222123" target="_blank" title="Tư vấn Zalo"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12C2 13.85 2.5 15.58 3.37 17.07L2 22L7.09 20.67C8.54 21.52 10.22 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" fill="#0068FF"/></svg> TƯ VẤN NGAY</a>';
 	echo '<button aria-label="' . esc_attr( 'MUA NGAY: ' . $product->get_name() ) . '" class="btn btn-primary btn-lg add-to-cart btn-add-to-cart btn-mua-ngay-orange" data-button-action="add-to-cart" data-product-id="' . esc_attr( (string) $product->get_id() ) . '" data-product-name="' . esc_attr( $product->get_name() ) . '" data-product-price="' . esc_attr( (string) $product->get_price() ) . '" data-product-image="' . esc_url( $single_img_url ) . '" type="button"><span class="txt-main">MUA NGAY</span></button>';
 	echo '</div></div></div>';
+
+	// Form tư vấn số điện thoại
+	echo '<div class="vasco-phone-consult-box">';
+	echo '<p class="vasco-phone-consult-text">📞 Hãy để lại <strong class="highlight-orange">số điện thoại</strong>, chúng tôi sẽ gọi ngay cho bạn <strong class="highlight-yellow">tư vấn miễn phí!</strong></p>';
+	echo '<div class="vasco-phone-consult-form">';
+	echo '<input type="tel" class="vasco-phone-input" id="vasco-phone-input-' . esc_attr( (string) $product->get_id() ) . '" placeholder="Nhập sđt tư vấn miễn phí..." maxlength="12" />';
+	echo '<button type="button" class="vasco-phone-submit" onclick="vascoSendPhoneConsult(this)">GỬI ĐI</button>';
+	echo '</div></div>';
+	echo '<script>
+function vascoSendPhoneConsult(btn) {
+	var input = btn.previousElementSibling;
+	var phone = input ? input.value.trim() : "";
+	if (!phone) { input && input.focus(); return; }
+	var zaloUrl = "https://zalo.me/0938222123?phone=" + encodeURIComponent(phone);
+	window.open(zaloUrl, "_blank");
+}
+</script>';
 
 	echo '</div>';
 	echo '</div>';

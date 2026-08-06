@@ -5732,8 +5732,76 @@ body.home p, body.home span, body.home a, body.home button,
     font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
 }
 
+/* ── Dynamic Product Page: Try Before Pay Badge ── */
+.vasco-try-before-pay {
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    color: #2e7d32 !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    margin: 10px 0 16px !important;
+}
+.vasco-try-before-pay .vasco-check-icon {
+    font-size: 16px !important;
+    line-height: 1 !important;
+}
 
-
-
-
+/* ── Dynamic Product Page: Phone Consultation Form ── */
+.vasco-phone-consult-box .vasco-phone-consult-text {
+    display: block !important;
+    color: #ffffff !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    margin: 0 0 12px !important;
+    line-height: 1.6 !important;
+}
+.vasco-phone-consult-box .vasco-phone-icon {
+    font-size: 18px !important;
+    flex-shrink: 0 !important;
+    margin-top: 1px !important;
+}
+.vasco-phone-consult-box .highlight-orange {
+    color: #FFD54F !important;
+    font-weight: 700 !important;
+}
+.vasco-phone-consult-box .highlight-yellow {
+    color: #FFD54F !important;
+    font-weight: 700 !important;
+}
+.vasco-phone-consult-form {
+    display: flex !important;
+    gap: 8px !important;
+    align-items: center !important;
+}
+.vasco-phone-input {
+    flex: 1 !important;
+    border: none !important;
+    border-radius: 50px !important;
+    padding: 12px 20px !important;
+    font-size: 14px !important;
+    color: #333 !important;
+    background: #ffffff !important;
+    outline: none !important;
+    min-width: 0 !important;
+}
+.vasco-phone-input::placeholder {
+    color: #aaa !important;
+}
+.vasco-phone-submit {
+    background: #b71c1c !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 50px !important;
+    padding: 12px 22px !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    cursor: pointer !important;
+    white-space: nowrap !important;
+    transition: background 0.2s ease !important;
+    flex-shrink: 0 !important;
+}
+.vasco-phone-submit:hover {
+    background: #7f0000 !important;
+}
 
