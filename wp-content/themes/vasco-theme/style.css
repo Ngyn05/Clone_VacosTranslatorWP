@@ -1431,7 +1431,7 @@ button[aria-controls*="video"] {
     text-align: center !important;
     margin: 40px 0 24px 0 !important;
     color: #0f172a !important;
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
+    font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
     letter-spacing: -0.5px !important;
 }
 
@@ -5561,6 +5561,178 @@ article.product-horizontal-card .add-to-cart-btn-primary:hover {
         height: 44px !important;
     }
 }
+
+/* ==========================================================================
+   COMPACT WHITESPACE FOR "TÍNH NĂNG NỔI BẬT" SECTION (.key-features-section)
+   ========================================================================== */
+.key-features-section {
+    padding: 16px 0 16px 0 !important;
+    margin: 0 !important;
+    min-height: 0 !important;
+    height: auto !important;
+}
+
+.key-features-section .container,
+.key-features-section .key-features-flex {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    gap: 10px !important;
+    min-height: 0 !important;
+}
+
+.key-features-section h2.h2-notosans,
+.key-features-section .h2-notosans,
+.key-features-section h2 {
+    margin-bottom: 12px !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    font-size: 1.35rem !important;
+    text-align: center !important;
+    letter-spacing: 0.05em !important;
+    text-transform: uppercase !important;
+}
+
+.key-features-section .swiper-carousel,
+.key-features-section .swiper,
+.key-features-section .swiper-container {
+    margin-top: 0 !important;
+    margin-bottom: 8px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    min-height: 0 !important;
+    height: auto !important;
+}
+
+.key-features-section .swiper-wrapper {
+    min-height: 0 !important;
+    height: auto !important;
+    align-items: stretch !important;
+}
+
+.key-features-section .swiper-slide {
+    height: auto !important;
+    min-height: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+}
+
+/* Compact feature card inside slide */
+.key-features-section .key,
+.key-features-section .swiper-slide .key {
+    padding: 12px 14px !important;
+    margin: 0 !important;
+    min-height: 0 !important;
+    height: auto !important;
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 12px !important;
+}
+
+.key-features-section .key img {
+    height: 56px !important;
+    width: 56px !important;
+    margin-bottom: 8px !important;
+    margin-top: 0 !important;
+}
+
+.key-features-section .key h3,
+.key-features-section .key h3.h2 {
+    font-size: 1.15rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 4px !important;
+    margin-top: 0 !important;
+    color: #1e293b !important;
+    font-weight: 700 !important;
+}
+
+.key-features-section .key p {
+    font-size: 0.825rem !important;
+    line-height: 1.35 !important;
+    color: #64748b !important;
+    margin: 0 !important;
+    max-width: 240px !important;
+}
+
+/* Compact button bar directly under slides (pull buttons UP close to icons!) */
+.key-features-section .flex-box {
+    margin-top: 8px !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    gap: 12px !important;
+}
+
+.key-features-section .flex-box a.btn {
+    padding: 6px 18px !important;
+    font-size: 0.8rem !important;
+    height: 36px !important;
+    border-radius: 20px !important;
+    margin: 0 !important;
+}
+
+@media (max-width: 767px) {
+    .key-features-section {
+        padding: 12px 0 12px 0 !important;
+    }
+
+    .key-features-section h2.h2-notosans,
+    .key-features-section .h2-notosans {
+        margin-bottom: 8px !important;
+        font-size: 1.15rem !important;
+    }
+
+    .key-features-section .flex-box {
+        margin-top: 8px !important;
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+
+    .key-features-section .flex-box a.btn {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+}
+
+/* ==========================================================================
+   HOMEPAGE FONT SYNCHRONIZATION — ĐỒNG BỘ 100% FONT CHỮ TRANG CHỦ (NOTO SANS)
+   ========================================================================== */
+body#index,
+body#index *,
+body.home,
+body.home *,
+.page-index,
+.page-index *,
+#wrapper,
+#wrapper * {
+    font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    text-rendering: optimizeLegibility !important;
+}
+
+/* Đảm bảo Tiêu đề, Nút bấm, Thẻ tính năng, Banner, Đánh giá dùng font nhất quán */
+body#index h1, body#index h2, body#index h3, body#index h4, body#index h5, body#index h6,
+body#index .h1, body#index .h2, body#index .h3, body#index .h4, body#index .h5, body#index .h6,
+body#index p, body#index span, body#index a, body#index button, body#index input, body#index label,
+body.home h1, body.home h2, body.home h3, body.home h4, body.home h5, body.home h6,
+body.home p, body.home span, body.home a, body.home button,
+.key-features-section *,
+.how-vasco-section *,
+.hero-clean-minimal *,
+.media-awards *,
+.translator-banner-section *,
+.vasco-translators-grid *,
+.home-reviews-section * {
+    font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+
 
 
 
