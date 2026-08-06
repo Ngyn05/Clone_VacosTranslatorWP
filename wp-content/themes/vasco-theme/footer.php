@@ -854,207 +854,133 @@
 
 </main><?php // End main ?>
 <!-- Nút Về đầu trang đã được xóa theo yêu cầu -->
-	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ps_emailalerts/js/mailalerts.js" ); ?>" type="text/javascript"></script>
-	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets<?php echo esc_url( VASCO_THEME_URI . '/assets/' ); ?>modules/ps_emailsubscription/views/js/ps_emailsubscription.js" ); ?>"
-		type="text/javascript"></script>
-	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_custom_pages/views/assets/js/events.js" ); ?>" type="text/javascript"></script>
-	<script src="https://www.google.com/recaptcha/api.js?render=6LevRV4sAAAAANeEy-YCBKBGXi619AFoSelbsaFC"
-		type="text/javascript"></script>
-	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_gdpr_info/views/js/js.cookie.min.js" ); ?>" type="text/javascript"></script>
-	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_gdpr_info/views/js/ve_gdpr.js" ); ?>" type="text/javascript"></script>
-	<script src="https://static-na.payments-amazon.com/checkout.js" type="text/javascript"></script>
-	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets/js/jquery/plugins/fancybox/jquery.fancybox.js" ); ?>" type="text/javascript"></script>
-	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/amazonpay/views/js/button.js" ); ?>" type="text/javascript"></script>
-	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets<?php echo esc_url( VASCO_THEME_URI . '/assets/' ); ?>modules/ps_shoppingcart/ps_shoppingcart.js" ); ?>" type="text/javascript"></script>
-	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_analytics/views/js/ve-logger.js" ); ?>" type="text/javascript"></script>
-	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_checkboxes/views/assets/js/ve_checkboxes.js" ); ?>" type="text/javascript"></script>
-	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_analytics/views/js/datalayer.9bb08a1c.js" ); ?>" type="text/javascript"></script>
-	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets/modules/ve_discounts/views/js/timer.js" ); ?>" type="text/javascript"></script>
-	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets/js/theme-xdI8XRYL.js" ); ?>" type="module"></script>
-	<script src="<?php echo esc_url( VASCO_THEME_URI . "/assets/js/index-Dp7Wv8_s.js" ); ?>" type="module"></script>
-	<script data-keepinline="true" type="text/javascript">
-		window.trustpilot_trustbox_settings = { "trustboxes": [], "activeTrustbox": 0, "pageUrls": { "landing": "https:\/\/vasco-translator.com\/", "category": "https:\/\/vasco-translator.com\/translators\/", "product": "https:\/\/vasco-translator.com\/translators\/vasco-translator-v4#\/color-black_onyx" } };
-	</script>
-	<!-- GUARANTEED MEGAMENU HOVER ENGINE WITH SNAPPY CLOSE -->
-	<style id="guaranteed-megamenu-css">
-		@media (min-width: 992px) {
 
-			header,
-			.header,
-			#desktop-nav {
-				position: relative !important;
-				z-index: 10000 !important;
-			}
+<script id="footer-inline-click-handlers">
+(function() {
+	function initMobileMenuNav() {
+		var burger = document.getElementById('open-menu') || document.querySelector('.open-menu, #open-menu, .burger-menu');
+		var nav = document.getElementById('desktop-nav') || document.querySelector('.desktop-nav, .mobile-menu, .mobile-nav');
+		var overlay = document.getElementById('overlay-menu') || document.querySelector('.overlay-menu');
+		var header = document.getElementById('header');
 
-			.desktop-nav .menu-item-wrapper {
-				position: static !important;
-			}
-
-			.desktop-nav .menu-item-wrapper:hover {
-				background-color: #efece8 !important;
-			}
-
-			.desktop-nav .menu-item-wrapper:hover .arrow-rotate,
-			.desktop-nav .menu-item-wrapper.open .arrow-rotate {
-				transform: rotate(180deg) !important;
-			}
-
-			.megamenu-childs-wrapper {
-				position: absolute !important;
-				top: 100% !important;
-				left: 0 !important;
-				right: 0 !important;
-				width: 100% !important;
-				background-color: #ffffff !important;
-				box-shadow: 0 20px 40px rgba(0, 0, 0, 0.16) !important;
-				border-bottom-left-radius: 24px !important;
-				border-bottom-right-radius: 24px !important;
-				border-top: 1px solid #efece8 !important;
-				padding: 32px 0 !important;
-				pointer-events: auto !important;
-			}
-
-			.megamenu-childs-wrapper[hidden] {
-				display: none !important;
+		function updateMobileNavPosition() {
+			if (nav && header) {
+				var h = header.offsetHeight;
+				nav.style.top = h + 'px';
+				nav.style.height = 'calc(100vh - ' + h + 'px)';
 			}
 		}
-	</style>
-	<script id="guaranteed-megamenu-js">
-		(function () {
-			function setupHoverMegamenus() {
-				var wrappers = document.querySelectorAll('.menu-item-wrapper');
-				wrappers.forEach(function (wrapper) {
-					var submenu = wrapper.querySelector('.megamenu-childs-wrapper');
-					var link = wrapper.querySelector('.nav-link');
-					if (!submenu) return;
 
-					var closeTimer = null;
+		function openMobileMenu() {
+			if (!nav) return;
+			updateMobileNavPosition();
+			nav.classList.add('active', 'open', 'show-mobile');
+			if (burger) burger.classList.add('is-active', 'active', 'open');
+			if (overlay) overlay.classList.add('active', 'show');
+			document.body.classList.add('menu-open', 'noscroll');
+		}
 
-					function loadLazyImages() {
-						var imgs = submenu.querySelectorAll('img[data-src]');
-						imgs.forEach(function (img) {
-							var ds = img.getAttribute('data-src');
-							if (ds) {
-								img.src = ds;
-							}
-						});
-					}
+		function closeMobileMenu() {
+			if (!nav) return;
+			nav.classList.remove('active', 'open', 'show-mobile');
+			if (burger) burger.classList.remove('is-active', 'active', 'open');
+			if (overlay) overlay.classList.remove('active', 'show');
+			document.body.classList.remove('menu-open', 'noscroll');
+		}
 
-					function openMenu() {
-						if (closeTimer) {
-							clearTimeout(closeTimer);
-							closeTimer = null;
-						}
-						loadLazyImages();
-						submenu.removeAttribute('hidden');
-						submenu.style.cssText = 'display: flex !important; visibility: visible !important; opacity: 1 !important; z-index: 99999 !important; pointer-events: auto !important;';
-						wrapper.classList.add('open');
-						if (link) link.setAttribute('aria-expanded', 'true');
-					}
-
-					function closeMenu() {
-						if (closeTimer) clearTimeout(closeTimer);
-						closeTimer = setTimeout(function () {
-							submenu.setAttribute('hidden', '');
-							submenu.style.cssText = '';
-							wrapper.classList.remove('open');
-							if (link) link.setAttribute('aria-expanded', 'false');
-						}, 100); // Fast 100ms close when mouse moves out
-					}
-
-					wrapper.addEventListener('mouseenter', openMenu);
-					wrapper.addEventListener('mouseleave', closeMenu);
-					submenu.addEventListener('mouseenter', openMenu);
-					submenu.addEventListener('mouseleave', closeMenu);
-
-					if (link) {
-						link.addEventListener('mouseenter', openMenu);
-						link.addEventListener('mouseleave', closeMenu);
-						link.addEventListener('click', function (e) {
-							if (window.innerWidth < 992) {
-								e.preventDefault();
-								if (wrapper.classList.contains('open')) {
-									closeMenu();
-								} else {
-									openMenu();
-								}
-							}
-						});
-					}
-				});
+		function toggleMobileMenu(e) {
+			if (e) {
+				e.preventDefault();
+				e.stopPropagation();
 			}
-
-			if (document.readyState === 'loading') {
-				document.addEventListener('DOMContentLoaded', setupHoverMegamenus);
+			if (!nav) return;
+			var isOpen = nav.classList.contains('active') || nav.classList.contains('open') || nav.classList.contains('show-mobile');
+			if (isOpen) {
+				closeMobileMenu();
 			} else {
-				setupHoverMegamenus();
+				openMobileMenu();
 			}
-		})();
-	</script>
-	<!-- MOBILE MENU & CTA CLICK NAV ENGINE -->
-	<!-- MOBILE MENU & CTA CLICK NAV ENGINE -->
-	<script id="custom-mobile-menu-fix">
-		(function () {
-			function initMobileMenuNav() {
-				var burger = document.querySelector('#open-menu, .open-menu, .burger-menu');
-				var navTarget = document.querySelector('.mobile-menu, #mobile-menu, .mobile-nav, #desktop-nav, .desktop-nav');
+		}
 
-				if (burger && navTarget) {
-					burger.addEventListener('click', function (e) {
+		if (burger) {
+			burger.addEventListener('click', toggleMobileMenu);
+		}
+
+		if (overlay) {
+			overlay.addEventListener('click', closeMobileMenu);
+		}
+
+		// Global click handler for mobile nav dropdown toggle icons vs actual page links
+		document.addEventListener('click', function(e) {
+			if (window.innerWidth > 991) return;
+
+			// Handle main menu item dropdown toggles
+			var hasChildTarget = e.target.closest('.nav-link.has-child, .arrow-rotate');
+			if (hasChildTarget) {
+				var linkEl = hasChildTarget.closest('.has-child') || hasChildTarget;
+				var parentWrapper = linkEl.closest('.menu-item-wrapper');
+				if (parentWrapper) {
+					var submenu = parentWrapper.querySelector('.megamenu-childs-wrapper');
+					if (submenu) {
 						e.preventDefault();
 						e.stopPropagation();
-						navTarget.classList.toggle('active');
-						navTarget.classList.toggle('open');
-						navTarget.classList.toggle('show-mobile');
-						burger.classList.toggle('is-active');
-					});
+						var isHidden = submenu.hasAttribute('hidden') || getComputedStyle(submenu).display === 'none';
+						if (isHidden) {
+							submenu.removeAttribute('hidden');
+							submenu.style.setProperty('display', 'block', 'important');
+							if (linkEl) linkEl.setAttribute('aria-expanded', 'true');
+							parentWrapper.classList.add('open', 'is-open');
+						} else {
+							submenu.setAttribute('hidden', '');
+							submenu.style.setProperty('display', 'none', 'important');
+							if (linkEl) linkEl.setAttribute('aria-expanded', 'false');
+							parentWrapper.classList.remove('open', 'is-open');
+						}
+						updateMobileNavPosition();
+					}
 				}
+				return;
+			}
 
-				// Global click handler for mobile nav dropdown toggle icons vs actual page links
-				document.addEventListener('click', function(e) {
-					var arrowBtn = e.target.closest('.arrow-rotate, .arrow-rotate-sub');
-					if (arrowBtn && window.innerWidth <= 991) {
+			// Sub-column header accordion inside megamenu for mobile
+			var colTitle = e.target.closest('.megamenu-column-title, .arrow-rotate-sub');
+			if (colTitle) {
+				var colWrapper = colTitle.closest('.megamenu-column-wrapper');
+				if (colWrapper) {
+					var colContent = colWrapper.querySelector('.megamenu-column-content, ul');
+					if (colContent) {
 						e.preventDefault();
 						e.stopPropagation();
-						var link = arrowBtn.closest('.has-child, .megamenu-column-title');
-						var parentWrapper = arrowBtn.closest('.menu-item-wrapper, .megamenu-column-wrapper');
-						if (parentWrapper) {
-							var submenu = parentWrapper.querySelector('.megamenu-childs-wrapper, .megamenu-column-content, ul');
-							if (submenu) {
-								var isHidden = submenu.hasAttribute('hidden') || getComputedStyle(submenu).display === 'none';
-								if (isHidden) {
-									submenu.removeAttribute('hidden');
-									submenu.style.display = 'block';
-									if (link) link.setAttribute('aria-expanded', 'true');
-								} else {
-									submenu.setAttribute('hidden', '');
-									submenu.style.display = 'none';
-									if (link) link.setAttribute('aria-expanded', 'false');
-								}
-							}
+						var isColHidden = colContent.hasAttribute('hidden') || getComputedStyle(colContent).display === 'none';
+						if (isColHidden) {
+							colContent.removeAttribute('hidden');
+							colContent.style.setProperty('display', 'block', 'important');
+							colWrapper.classList.add('open');
+						} else {
+							colContent.setAttribute('hidden', '');
+							colContent.style.setProperty('display', 'none', 'important');
+							colWrapper.classList.remove('open');
 						}
-						return;
+						updateMobileNavPosition();
 					}
-
-					// Direct link navigation fix inside mobile menu
-					var link = e.target.closest('a[href]');
-					if (link) {
-						var href = link.getAttribute('href');
-						if (href && href !== '#' && !href.startsWith('javascript:')) {
-							// If it's a normal link, allow browser navigation
-							window.location.href = link.href;
-						}
-					}
-				});
+				}
+				return;
+			}
+		});
 
 				// Product Detail Tab Switcher Fix (Về sản phẩm, Thông số kỹ thuật, Ngôn ngữ hỗ trợ, FAQ)
 				document.addEventListener('click', function(e) {
-					var tabBtn = e.target.closest('.tab-menu .menu-link, .product-menu-container .menu-link, [data-id^="product-"]');
+					var tabBtn = e.target.closest('button.menu-link, .product-menu-container button, [data-id^="product-"]');
 					if (tabBtn) {
-						e.preventDefault();
-						e.stopPropagation();
+						var href = tabBtn.getAttribute('href');
+						if (href && href !== '#' && !href.startsWith('javascript:')) {
+							return; // Allow category navigation links (/bundles/, /accessories/) to proceed
+						}
 						var targetId = tabBtn.getAttribute('data-id') || tabBtn.getAttribute('aria-controls');
 						if (!targetId) return;
+
+						e.preventDefault();
+						e.stopPropagation();
 
 						// Update button active state
 						var menuContainer = tabBtn.closest('.tab-menu, .product-menu-container, nav');
@@ -1318,82 +1244,11 @@
 
 </html>
 
-<script id="wp-link-fixer">
+<script id="global-dom-helpers">
 (function() {
-    function fixAllLinks() {
-        document.querySelectorAll('a[href]').forEach(function(link) {
-            var href = link.getAttribute('href');
-            if (href) {
-                // Remove trailing .html
-                if (href.endsWith('.html')) {
-                    href = href.substring(0, href.length - 5) + '/';
-                }
-                // Handle relative ./
-                if (href.startsWith('./')) {
-                    href = '<?php echo esc_url( home_url( "/" ) ); ?>' + href.substring(2);
-                }
-                link.setAttribute('href', href);
-            }
-        });
-    }
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', fixAllLinks);
-    } else {
-        fixAllLinks();
-    }
-})();
-</script>
-
-
-<script id="global-dom-link-sweeper">
-(function() {
-    var homeUrl = '<?php echo esc_url( home_url( "/" ) ); ?>';
-
-    function cleanUrl(url) {
-        if (!url) return url;
-        // Strip origin if present to handle local vs relative
-        var path = url.replace(/^(https?:\\/\\/[^\\/]+)/, '');
-        // Clean .html
-        path = path.replace(/\.html(#|\?|$)/, '$1');
-        // Clean leading ./ or ../
-        path = path.replace(/^(\.\/|\.\.\/)+/, '/');
-        if (!path.startsWith('/')) {
-            path = '/' + path;
-        }
-        return homeUrl.replace(/\/$/, '') + path;
-    }
-
-    function sweepDOM() {
-        document.querySelectorAll('a[href], button[data-href], [onclick*="location"]').forEach(function(el) {
-            var href = el.getAttribute('href');
-            if (href && !href.startsWith('#') && !href.startsWith('javascript:') && !href.startsWith('tel:') && !href.startsWith('mailto:')) {
-                el.setAttribute('href', cleanUrl(href));
-            }
-            var dataHref = el.getAttribute('data-href');
-            if (dataHref) {
-                el.setAttribute('data-href', cleanUrl(dataHref));
-            }
-        });
-    }
-
-    // Global Click Event Interceptor
-    document.addEventListener('click', function(e) {
-        var target = e.target.closest('a[href]');
-        if (target) {
-            var href = target.getAttribute('href');
-            if (href && !href.startsWith('#') && !href.startsWith('javascript:') && !href.startsWith('tel:') && !href.startsWith('mailto:')) {
-                var fixedUrl = cleanUrl(href);
-                if (target.getAttribute('href') !== fixedUrl) {
-                    target.setAttribute('href', fixedUrl);
-                }
-            }
-        }
-    }, true);
-
     // Global Image Error Fallback Handler
     document.addEventListener('error', function(e) {
         if (e.target && e.target.tagName === 'IMG') {
-            // Avoid loop or replacing accessory images with wrong megamenu banner
             if (e.target.closest('#vasco-side-drawer, #cart-content-area, .product-miniature, .product-cover')) {
                 return;
             }
@@ -1407,57 +1262,36 @@
 
     // Translate Payment Installment Text (Klarna / Sezzle / Afterpay / Square)
     function translatePaymentInstallments() {
-        // Direct string replacements on all text nodes across DOM & Shadow DOM
         function processNode(node) {
+            if (!node || !node.parentNode) return;
+            var parentTag = node.parentNode.tagName;
+            if (parentTag === 'SCRIPT' || parentTag === 'STYLE' || parentTag === 'NOSCRIPT') return;
+
             if (node.nodeType === 3 && node.nodeValue) {
                 if (node.nodeValue.indexOf('interest-free') !== -1 || node.nodeValue.indexOf('payments of') !== -1) {
-                    node.nodeValue = node.nodeValue
-                        .replace(/or\s+4\s+interest-free\s+payments\s+of/gi, 'hoặc 4 kỳ thanh toán không lãi suất chỉ')
-                        .replace(/interest-free\s+payments/gi, 'thanh toán không lãi suất')
-                        .replace(/\s+with$/gi, ' với')
-                        .replace(/\s+with\s+/gi, ' với ');
+                    var val = node.nodeValue;
+                    val = val.replace(/or 4 interest-free payments of/gi, 'hoặc 4 kỳ thanh toán không lãi suất chỉ');
+                    val = val.replace(/interest-free payments/gi, 'thanh toán không lãi suất');
+                    val = val.replace(/ with /gi, ' với ');
+                    node.nodeValue = val;
                 }
             }
         }
 
-        // Walk main document
         var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
         var n;
         while (n = walker.nextNode()) {
             processNode(n);
         }
-
-        // Walk Custom Web Components & Shadow Roots
-        document.querySelectorAll('square-placement, .AfterpaySimulator, [class*="afterpay"], [id*="afterpay"]').forEach(function(el) {
-            var root = el.shadowRoot || el;
-            if (root) {
-                var innerWalker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
-                var inNode;
-                while (inNode = innerWalker.nextNode()) {
-                    processNode(inNode);
-                }
-            }
-        });
     }
 
     if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', function() {
-            sweepDOM();
-            translatePaymentInstallments();
-        });
+        document.addEventListener('DOMContentLoaded', translatePaymentInstallments);
     } else {
-        sweepDOM();
         translatePaymentInstallments();
     }
-    // Periodic sweep for dynamically rendered JS components/megamenus & widgets
-    setInterval(function() {
-        sweepDOM();
-        translatePaymentInstallments();
-    }, 500);
-})();
 
-// Tab Blur / Switch Tab Title Animation Effect ("Your translator is waiting 🌍")
-(function() {
+    // Tab Blur / Switch Tab Title Animation Effect ("Your translator is waiting 🌍")
     var originalTitle = document.title;
     var isBlurred = false;
     var titleInterval = null;

@@ -302,5 +302,41 @@ body.admin-bar #header {
 	}
 }
 
+/* ── Desktop Megamenu Hover Persistence & Compact Viewport Fit ── */
+@media (min-width: 992px) {
+	.desktop-nav .menu-item-wrapper {
+		position: static !important;
+	}
+	.desktop-nav .menu-item-wrapper:hover > .megamenu-childs-wrapper,
+	.desktop-nav .megamenu-childs-wrapper:hover,
+	.desktop-nav .menu-item-wrapper.open > .megamenu-childs-wrapper,
+	.desktop-nav .menu-item-wrapper.is-open > .megamenu-childs-wrapper {
+		display: block !important;
+		visibility: visible !important;
+		opacity: 1 !important;
+		pointer-events: auto !important;
+	}
+	.desktop-nav .megamenu-childs-wrapper {
+		transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out !important;
+		max-height: calc(100vh - var(--header-height, 90px) - 20px) !important;
+		overflow-y: auto !important;
+		box-sizing: border-box !important;
+	}
+	.desktop-nav .megamenu-container {
+		padding: 16px 20px !important;
+	}
+	.desktop-nav .megamenu-column-content li {
+		margin-bottom: 4px !important;
+	}
+	.desktop-nav .megamenu-column-content li a {
+		padding: 4px 0 !important;
+	}
+	.desktop-nav .megamenu-column-image img {
+		max-height: 230px !important;
+		object-fit: cover !important;
+	}
+}
+
+
 
 

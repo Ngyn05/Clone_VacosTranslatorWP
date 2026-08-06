@@ -21,9 +21,6 @@ get_header();
 							<section class="hero-section hero-clean-minimal">
 								<div class="hero-bg-video-wrapper">
 									<img class="hero-bg-motion-img" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hero_product_bg.png" ); ?>" alt="Vasco Product Background" />
-									<video class="hero-bg-video" autoplay loop muted playsinline>
-										<source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.mp4" ); ?>" type="video/mp4" />
-									</video>
 									<div class="hero-bg-overlay"></div>
 								</div>
 								<div class="number-one number-one-floating hero-badge-anim">
@@ -969,7 +966,7 @@ get_header();
 								cung cấp viện trợ y tế trong vòng 24–48 giờ sau sự cố. Khi thiên tai và khủng hoảng nhân
 								đạo xảy ra, Đội tự hào mang lại sự giúp đỡ cho những nạn nhân gặp khó khăn.</p>
 							<div class="btn-wrapper">
-								<a class="btn btn-md btn-black" href="./initiatives.html" title="Tác động xã hội">
+								<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/initiatives/" ) ); ?>" title="Tác động xã hội">
 									Tìm hiểu thêm <span class="text-sr-only">o naszych inicjatywach</span>
 								</a>
 							</div>

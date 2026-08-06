@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Clean Page page-how-it-works.php
  *
@@ -49,11 +49,6 @@ get_header();
 <div class="doublebox-absolute">
 <div class="video-holder" style="background-image: url('<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.webp" ); ?>'); background-size: cover; background-position: center; min-height: 100%;">
 <img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.webp" ); ?>" alt="Vasco Translator" style="width:100%;height:100%;object-fit:cover;display:block;"/>
-<video aria-describedby="video-desc1" autoplay="" data-setup="{}" id="how-it-works-hero-video" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.webp" ); ?>" preload="auto" style="display:none;">
-<source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.webm" ); ?>" type="video/webm"/>
-<source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.mp4" ); ?>" type="video/mp4"/>
-<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/index-video.webp" ); ?>" alt="Vasco Translator" style="width:100%;height:100%;object-fit:cover;"/>
-</video>
 
 <p class="sr-only" id="video-desc1">[index.doublebox1.img1.alt]</p>
 </div>

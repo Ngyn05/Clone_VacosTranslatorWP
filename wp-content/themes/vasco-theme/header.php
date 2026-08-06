@@ -75,7 +75,7 @@
 											<div class="megamenu-column-content">
 												<ul aria-labelledby="nav-title-shop" role="menu">
 													<?php
-													$translators = vasco_theme_get_wc_products_for_category( 'translators', 4 );
+													$translators = vasco_theme_get_wc_products_for_category( 'translators', 3 );
 													if ( ! empty( $translators ) ) :
 														foreach ( $translators as $prod ) :
 															$img_url = vasco_theme_get_wc_product_image_url( $prod, 'thumbnail' );
@@ -98,7 +98,6 @@
 														<li><a href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>">Vasco Translator Q1</a></li>
 														<li><a href="<?php echo esc_url( home_url( "/translators/vasco-translator-m4/" ) ); ?>">Vasco Translator M4</a></li>
 														<li><a href="<?php echo esc_url( home_url( "/translators/vasco-translator-v4/" ) ); ?>">Vasco Translator V4</a></li>
-														<li><a href="<?php echo esc_url( home_url( "/translators/vasco-translator-e1/" ) ); ?>">Vasco Translator E1</a></li>
 													<?php endif; ?>
 												</ul>
 												<a class="link-all" href="<?php echo esc_url( home_url( "/translators/" ) ); ?>"><svg fill="none"
@@ -165,7 +164,7 @@
 											<div class="megamenu-column-content">
 												<ul aria-labelledby="nav-title-shop" role="menu">
 													<?php
-													$accessories = vasco_theme_get_wc_products_for_category( 'accessories', 4 );
+													$accessories = vasco_theme_get_wc_products_for_category( 'accessories', 3 );
 													if ( ! empty( $accessories ) ) :
 														foreach ( $accessories as $prod ) :
 															$img_url = vasco_theme_get_wc_product_image_url( $prod, 'thumbnail' );
@@ -188,7 +187,6 @@
 														<li><a href="<?php echo esc_url( home_url( "/accessories/tempered-glass-q1/" ) ); ?>">Kính cường lực bảo vệ màn hình Vasco Translator Q1</a></li>
 														<li><a href="<?php echo esc_url( home_url( "/accessories/tempered-glass-m4/" ) ); ?>">Kính cường lực bảo vệ màn hình Vasco Translator M4</a></li>
 														<li><a href="<?php echo esc_url( home_url( "/accessories/case-for-vasco-translator-q1/" ) ); ?>">Bao da khoá kéo cho Vasco Translator Q1</a></li>
-														<li><a href="<?php echo esc_url( home_url( "/accessories/case-for-vasco-translator-m4/" ) ); ?>">Bao da khoá kéo cho Vasco Translator M4</a></li>
 													<?php endif; ?>
 												</ul>
 												<a class="link-all" href="<?php echo esc_url( home_url( "/accessories/" ) ); ?>"><svg fill="none"

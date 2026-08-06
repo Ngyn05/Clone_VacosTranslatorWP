@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Checkout Page (WooCommerce Integrated & Responsive)
  *
@@ -139,7 +139,8 @@ get_header();
                             <!-- Phone (Required) -->
                             <div class="checkout-form-row" style="margin-bottom: 20px;">
                                 <label for="billing_phone">Số điện thoại<span style="color: #5A67D8;">*</span></label>
-                                <input type="tel" id="billing_phone" required placeholder="Nhập số điện thoại nhận hàng (VD: 0901234567)..." />
+                                <input type="tel" id="billing_phone" required placeholder="Nhập số điện thoại nhận hàng (VD: 0901234567)..." autocomplete="tel" inputmode="numeric" maxlength="14" style="width: 100%; padding: 10px 14px; border: 1px solid #CBD5E0; border-radius: 6px; box-sizing: border-box; font-size: 14px; transition: border-color 0.2s ease;" />
+                                <small id="billing_phone_feedback" style="display: none; margin-top: 6px; font-size: 12.5px; font-weight: 600;"></small>
                             </div>
 
                             <!-- Email (Optional) - Đưa lên sau SĐT -->
@@ -358,8 +359,84 @@ get_header();
         }
     }
 
+    // ── Real-time Phone Formatting & Validation (VN standard: 03, 05, 07, 08, 09, 02) ──
+    function formatPhoneNumber(val) {
+        if (!val) return '';
+        var raw = val.replace(/\D/g, '');
+        // Convert +84 or 84 to 0
+        if (raw.indexOf('84') === 0 && raw.length > 9) {
+            raw = '0' + raw.substring(2);
+        }
+        // Limit to max 11 digits
+        if (raw.length > 11) {
+            raw = raw.substring(0, 11);
+        }
+        // Format display
+        if (raw.length <= 4) {
+            return raw;
+        } else if (raw.length <= 7) {
+            return raw.substring(0, 4) + ' ' + raw.substring(4);
+        } else if (raw.length <= 10) {
+            return raw.substring(0, 4) + ' ' + raw.substring(4, 7) + ' ' + raw.substring(7);
+        } else {
+            return raw.substring(0, 3) + ' ' + raw.substring(3, 7) + ' ' + raw.substring(7);
+        }
+    }
+
+    window.validatePhoneInput = function(showErrorState) {
+        var inputEl = document.getElementById('billing_phone');
+        var feedbackEl = document.getElementById('billing_phone_feedback');
+        if (!inputEl) return false;
+
+        var raw = inputEl.value.replace(/\D/g, '');
+        if (raw.indexOf('84') === 0 && raw.length > 9) {
+            raw = '0' + raw.substring(2);
+        }
+
+        // Standard VN regex: 03, 05, 07, 08, 09 (10 digits) or 02x (11 digits landline)
+        var isValid = /^(0[357892][0-9]{8,9})$/.test(raw);
+
+        if (!raw) {
+            if (showErrorState && feedbackEl) {
+                feedbackEl.style.display = 'block';
+                feedbackEl.style.color = '#E53E3E';
+                feedbackEl.textContent = '⚠️ Vui lòng nhập số điện thoại nhận hàng.';
+                inputEl.style.borderColor = '#E53E3E';
+            }
+            return false;
+        }
+
+        if (!isValid) {
+            if (showErrorState && feedbackEl) {
+                feedbackEl.style.display = 'block';
+                feedbackEl.style.color = '#E53E3E';
+                feedbackEl.textContent = '⚠️ Số điện thoại không hợp lệ (Phải bắt đầu bằng 03, 05, 07, 08, 09 hoặc 02 và gồm 10-11 chữ số).';
+                inputEl.style.borderColor = '#E53E3E';
+            }
+            return false;
+        }
+
+        if (feedbackEl) {
+            feedbackEl.style.display = 'block';
+            feedbackEl.style.color = '#38A169';
+            feedbackEl.textContent = '✓ Số điện thoại hợp lệ';
+        }
+        inputEl.style.borderColor = '#38A169';
+        return true;
+    };
+
     // ── Accordion Steps ──
     window.goToStep = function(stepNum) {
+        if (stepNum > 1) {
+            if (!window.validatePhoneInput(true)) {
+                var phoneInput = document.getElementById('billing_phone');
+                if (phoneInput) {
+                    phoneInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    phoneInput.focus();
+                }
+                return;
+            }
+        }
         for (var i = 1; i <= 3; i++) {
             var stepEl  = document.getElementById('step-' + i);
             var bodyEl  = document.getElementById('step-' + i + '-body');
@@ -402,7 +479,7 @@ get_header();
         var fullName = document.getElementById('billing_full_name')?.value.trim() || '';
         var email    = document.getElementById('billing_email')?.value.trim() || '';
         var address  = document.getElementById('billing_address_1')?.value.trim() || '';
-        var phone    = document.getElementById('billing_phone')?.value.trim() || '';
+        var rawPhone = document.getElementById('billing_phone')?.value.trim() || '';
         var payment  = document.querySelector('input[name="payment_method"]:checked')?.value || 'cod';
         var notes    = document.getElementById('order_notes')?.value || '';
         var errorEl  = document.getElementById('checkout-error');
@@ -415,7 +492,19 @@ get_header();
 
         errorEl.style.display = 'none';
 
-        if (!phone) { showError('Vui lòng nhập số điện thoại.'); return; }
+        if (!window.validatePhoneInput(true)) {
+            var phoneInput = document.getElementById('billing_phone');
+            if (phoneInput) {
+                phoneInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                phoneInput.focus();
+            }
+            return;
+        }
+
+        var cleanPhone = rawPhone.replace(/\D/g, '');
+        if (cleanPhone.indexOf('84') === 0 && cleanPhone.length > 9) {
+            cleanPhone = '0' + cleanPhone.substring(2);
+        }
 
         var btn = document.getElementById('place-order-btn');
         btn.textContent = '⏳ Đang xử lý...';
@@ -427,7 +516,7 @@ get_header();
         fd.append('nonce', nonce);
         fd.append('billing_full_name', fullName);
         fd.append('billing_email', email);
-        fd.append('billing_phone', phone);
+        fd.append('billing_phone', cleanPhone);
         fd.append('billing_address_1', address);
         fd.append('billing_country', 'VN');
         fd.append('payment_method', payment);
@@ -455,6 +544,17 @@ get_header();
     };
 
     document.addEventListener('DOMContentLoaded', function() {
+        var phoneInput = document.getElementById('billing_phone');
+        if (phoneInput) {
+            phoneInput.addEventListener('input', function(e) {
+                this.value = formatPhoneNumber(this.value);
+                window.validatePhoneInput(false);
+            });
+
+            phoneInput.addEventListener('blur', function() {
+                window.validatePhoneInput(true);
+            });
+        }
         loadCheckoutSummary();
     });
 })();

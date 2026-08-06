@@ -13,12 +13,16 @@
 
 	// ── 1. Universal Product Tab Switcher ──────────────────────────
 	document.addEventListener('click', function (e) {
-		var tabBtn = e.target.closest('.tab-menu .menu-link, .product-menu-container .menu-link, [data-id^="product-"]');
+		var tabBtn = e.target.closest('button.menu-link, .product-menu-container button, [data-id^="product-"]');
 		if (!tabBtn) return;
 
-		e.preventDefault();
+		var href = tabBtn.getAttribute('href');
+		if (href && href !== '#' && !href.startsWith('javascript:')) return;
+
 		var targetId = tabBtn.getAttribute('data-id') || tabBtn.getAttribute('aria-controls');
 		if (!targetId) return;
+
+		e.preventDefault();
 
 		var menuContainer = tabBtn.closest('.tab-menu, .product-menu-container, nav');
 		if (menuContainer) {

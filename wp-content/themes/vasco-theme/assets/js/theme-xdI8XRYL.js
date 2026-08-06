@@ -1,12 +1,8 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["../assets/cart-modal-C1E_2DFn.js","../assets/dialog-BE5C2ZW3.js","../assets/loading-spinner-IQ_6KCmN.js","../assets/rolldown-runtime-C8AdG69S.js","../assets/animation-E2gjKDJg.js","../assets/drawer-tkWpXgDw.js","../assets/shared-C7N2bOYi.js","../assets/carousel-CwDpB8Cz.js","../assets/debounce-BY8Hu9sM.js","../assets/a11y-N6uFk4og.js","../assets/swiper-BeXrhkc_.js","../assets/autoplay-B8bxufiG.js","../assets/header-By5nkkeM.js","../assets/trustedby-logo-carousel-Dny6NQVU.js","../assets/footer-BwncCAkG.js","../assets/discount-popup-DM7DMII9.js","../assets/floating-carousel-BkfMTQi9.js"])))=>i.map(i=>d[i]);
-import{t as e}from"../assets/lazy-load-BIVtDcTT.js";import{t}from"../assets/preload-helper-BDd-SnbG.js";e(`.blockcart, #blockcart-wrapper, #blockcart-modal`,()=>t(()=>import(`../assets/cart-modal-C1E_2DFn.js`),__vite__mapDeps([0,1,2,3,4]),import.meta.url)),e(`.blockcart, #blockcart-wrapper, #blockcart-modal`,async()=>{let{initDrawerCrossSelling:e}=await t(async()=>{let{initDrawerCrossSelling:e}=await import(`../assets/drawer-tkWpXgDw.js`);return{initDrawerCrossSelling:e}},__vite__mapDeps([5,6,7,3,8,9,10,11,2,4]),import.meta.url);e()}),e(`#header, .header, #open-menu, #blockcart-wrapper, .language_selector, #phone-numbers, .smooth-scroll`,()=>t(()=>import(`../assets/header-By5nkkeM.js`),__vite__mapDeps([12,0,1,2,3,4]),import.meta.url)),e(`.swiper-carousel`,async()=>{let{default:e}=await t(async()=>{let{default:e}=await import(`../assets/carousel-CwDpB8Cz.js`).then(e=>e.t);return{default:e}},__vite__mapDeps([7,3,8,9,10,11]),import.meta.url);e()}),e(`.trustedby-logo-carousel`,async()=>{let{default:e}=await t(async()=>{let{default:e}=await import(`../assets/trustedby-logo-carousel-Dny6NQVU.js`);return{default:e}},__vite__mapDeps([13,10]),import.meta.url);e()}),e(`.footer-column-header, .newsletter-component`,()=>t(()=>import(`../assets/footer-BwncCAkG.js`),__vite__mapDeps([14,4]),import.meta.url)),e(`.discount-popup`,()=>t(()=>import(`../assets/discount-popup-DM7DMII9.js`),__vite__mapDeps([15,1]),import.meta.url)),e(`[id$="-g-recaptcha-response"], [id$="-g-recaptcha-action"], form[data-recaptcha], .g-recaptcha`,()=>t(()=>import(`../assets/recaptcha-Stf6prNV.js`),[],import.meta.url)),e(`.tooltip`,async()=>{let{default:e}=await t(async()=>{let{default:e}=await import(`../assets/tooltip-DBbyUPNz.js`);return{default:e}},[],import.meta.url);e()}),e(`body[data-titles]`,async()=>{let{default:e}=await t(async()=>{let{default:e}=await import(`../assets/dynamic-title-V9O3iWuS.js`);return{default:e}},[],import.meta.url);e()}),e(`.floating-carousel`,async()=>{let{initCarousels:e}=await t(async()=>{let{initCarousels:e}=await import(`../assets/floating-carousel-BkfMTQi9.js`);return{initCarousels:e}},__vite__mapDeps([16,7,3,8,9,10,11]),import.meta.url);e(document.querySelectorAll(`.floating-carousel`))}),e(`[data-global-back-to-top]`,async()=>{let{initScrollToTop:e}=await t(async()=>{let{initScrollToTop:e}=await import(`../assets/scrollToTop-C1U1zAzb.js`);return{initScrollToTop:e}},[],import.meta.url);e()});
-
-
 /* Header Megamenu Dropdown Hover & Click Toggle Handler */
 (function() {
     function initHeaderMegamenu() {
         function loadLazyImages(container) {
-            var imgs = (container || document).querySelectorAll('.js-menu-lazy-image[data-src]');
+            var imgs = (container || document).querySelectorAll('.js-menu-lazy-image[data-src], img[data-src]');
             imgs.forEach(function(img) {
                 var dataSrc = img.getAttribute('data-src');
                 if (dataSrc && (!img.src || img.src.includes('data:'))) {
@@ -15,43 +11,89 @@ import{t as e}from"../assets/lazy-load-BIVtDcTT.js";import{t}from"../assets/prel
             });
         }
 
-        // Load images on start
         loadLazyImages();
 
-        // Toggle megamenus on hover / focus / click
         var wrappers = document.querySelectorAll('.menu-item-wrapper');
         wrappers.forEach(function(wrapper) {
             var submenu = wrapper.querySelector('.megamenu-childs-wrapper');
             var link = wrapper.querySelector('.nav-link');
             if (!submenu) return;
 
+            var closeTimer = null;
+
             function openMenu() {
+                if (closeTimer) {
+                    clearTimeout(closeTimer);
+                    closeTimer = null;
+                }
                 loadLazyImages(submenu);
                 submenu.removeAttribute('hidden');
-                wrapper.classList.add('open');
+                submenu.style.setProperty('display', 'block', 'important');
+                submenu.style.setProperty('visibility', 'visible', 'important');
+                submenu.style.setProperty('opacity', '1', 'important');
+                wrapper.classList.add('open', 'is-open');
                 if (link) link.setAttribute('aria-expanded', 'true');
             }
 
-            function closeMenu() {
-                submenu.setAttribute('hidden', '');
-                wrapper.classList.remove('open');
-                if (link) link.setAttribute('aria-expanded', 'false');
+            function scheduleClose() {
+                if (closeTimer) clearTimeout(closeTimer);
+                closeTimer = setTimeout(function() {
+                    submenu.setAttribute('hidden', '');
+                    submenu.style.setProperty('display', 'none', 'important');
+                    wrapper.classList.remove('open', 'is-open');
+                    if (link) link.setAttribute('aria-expanded', 'false');
+                }, 300); // 300ms grace period so mouse moves smoothly across megamenu
             }
 
-            wrapper.addEventListener('mouseenter', openMenu);
-            wrapper.addEventListener('mouseleave', closeMenu);
+            // ── Desktop Hover Handlers with 300ms Grace Period ──
+            wrapper.addEventListener('mouseenter', function() {
+                if (window.innerWidth >= 992) openMenu();
+            });
+            wrapper.addEventListener('mouseleave', function() {
+                if (window.innerWidth >= 992) scheduleClose();
+            });
+            submenu.addEventListener('mouseenter', function() {
+                if (window.innerWidth >= 992) openMenu();
+            });
+            submenu.addEventListener('mouseleave', function() {
+                if (window.innerWidth >= 992) scheduleClose();
+            });
 
+            // ── Mobile Accordion Toggle Handlers ──
             if (link) {
                 link.addEventListener('click', function(e) {
                     if (window.innerWidth < 992) {
+                        var href = link.getAttribute('href');
+                        // 1. Cửa Hàng (Shop) -> Mở trực tiếp trang Cửa hàng
+                        if (link.id === 'nav-title-shop' || (href && href.indexOf('/translators/') !== -1)) {
+                            if (href && href !== '#' && !href.startsWith('javascript:')) {
+                                window.location.href = href;
+                            }
+                            return;
+                        }
+
+                        // 2. Các mục khác -> Toggle Accordion
                         e.preventDefault();
-                        if (wrapper.classList.contains('open')) {
-                            closeMenu();
+                        e.stopPropagation();
+
+                        var isOpen = wrapper.classList.contains('open') || wrapper.classList.contains('is-open');
+
+                        if (isOpen) {
+                            if (closeTimer) clearTimeout(closeTimer);
+                            submenu.setAttribute('hidden', '');
+                            submenu.style.setProperty('display', 'none', 'important');
+                            wrapper.classList.remove('open', 'is-open');
+                            if (link) link.setAttribute('aria-expanded', 'false');
                         } else {
                             wrappers.forEach(function(w) { 
-                                w.classList.remove('open');
+                                w.classList.remove('open', 'is-open');
                                 var sub = w.querySelector('.megamenu-childs-wrapper');
-                                if (sub) sub.setAttribute('hidden', '');
+                                var lk = w.querySelector('.nav-link');
+                                if (sub) {
+                                    sub.setAttribute('hidden', '');
+                                    sub.style.setProperty('display', 'none', 'important');
+                                }
+                                if (lk) lk.setAttribute('aria-expanded', 'false');
                             });
                             openMenu();
                         }

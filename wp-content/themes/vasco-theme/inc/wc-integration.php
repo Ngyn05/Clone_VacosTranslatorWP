@@ -376,10 +376,15 @@ function vasco_wc_place_order() {
 		$last_name  = isset( $parts[1] ) ? $parts[1] : $parts[0];
 	}
 
-	// Validate dữ liệu bắt buộc (Chỉ bắt buộc Số điện thoại)
-	if ( empty( $phone ) ) {
-		wp_send_json_error( array( 'message' => 'Vui lòng nhập số điện thoại.' ) );
+	// Validate & Chuẩn hóa Số điện thoại (Bắt buộc, 10-11 chữ số chuẩn Việt Nam)
+	$clean_phone = preg_replace( '/\D/', '', $phone );
+	if ( strpos( $clean_phone, '84' ) === 0 && strlen( $clean_phone ) > 9 ) {
+		$clean_phone = '0' . substr( $clean_phone, 2 );
 	}
+	if ( empty( $clean_phone ) || ! preg_match( '/^(0[357892][0-9]{8,9})$/', $clean_phone ) ) {
+		wp_send_json_error( array( 'message' => 'Số điện thoại không hợp lệ. Vui lòng nhập số điện thoại Việt Nam hợp lệ (VD: 0901234567 hoặc 02473048700).' ) );
+	}
+	$phone = $clean_phone;
 
 	// Gán giá trị mặc định cho các trường tùy chọn nếu khách không nhập
 	if ( empty( $first_name ) && empty( $last_name ) ) {
