@@ -469,7 +469,7 @@
 			var html = '<div class="vasco-buy-action-box">';
 			html += '  <div class="vasco-buttons-row">';
 			html += '    <a href="https://zalo.me/0917834532" target="_blank" rel="noopener noreferrer" class="btn-tu-van-zalo">';
-			html += '      <svg width="22" height="22" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="24" fill="#FFFFFF"/><text x="24" y="29.5" font-family="-apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="13" font-weight="900" fill="#0068FF" text-anchor="middle" letter-spacing="-0.5px">Zalo</text></svg>';
+			html += '      <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 3C8.8 3 3 8.4 3 15c0 3.7 1.8 6.9 4.6 9.2L6 29l5.3-2.6c1.5.4 3.1.6 4.7.6 7.2 0 13-5.4 13-12S23.2 3 16 3z" fill="#FFFFFF"/><text x="16" y="18.5" font-family="-apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="8.5" font-weight="900" fill="#0068FF" text-anchor="middle" letter-spacing="-0.3px">Zalo</text></svg>';
 			html += '      <span>TƯ VẤN NGAY</span>';
 			html += '    </a>';
 			html += '    <button type="submit" class="btn btn-primary add-to-cart btn-mua-ngay-orange" ' + (pId ? 'data-product-id="' + pId + '" ' : '') + (pName ? 'data-product-name="' + pName + '" ' : '') + 'data-button-action="add-to-cart">';

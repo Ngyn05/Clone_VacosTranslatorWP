@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Product Page Template page-vasco-translator-q1.php
  *
@@ -310,8 +310,8 @@ return;
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
 <div class="vasco-buttons-row">
-<a class="btn btn-tu-van-zalo" href="https://zalo.me/0938222123" target="_blank" title="Tư vấn Zalo">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12C2 13.85 2.5 15.58 3.37 17.07L2 22L7.09 20.67C8.54 21.52 10.22 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" fill="#0068FF"/></svg>
+<a class="btn btn-tu-van-zalo" href="https://zalo.me/0917834532" target="_blank" title="Tư vấn Zalo">
+<svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 3C8.8 3 3 8.4 3 15c0 3.7 1.8 6.9 4.6 9.2L6 29l5.3-2.6c1.5.4 3.1.6 4.7.6 7.2 0 13-5.4 13-12S23.2 3 16 3z" fill="#FFFFFF"/><text x="16" y="18.5" font-family="-apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="8.5" font-weight="900" fill="#0068FF" text-anchor="middle" letter-spacing="-0.3px">Zalo</text></svg>
 TƯ VẤN NGAY
 </a>
 <button aria-label="MUA NGAY: Vasco Translator Q1" class="btn btn-primary btn-lg add-to-cart btn-mua-ngay-orange" data-button-action="add-to-cart" type="submit">
