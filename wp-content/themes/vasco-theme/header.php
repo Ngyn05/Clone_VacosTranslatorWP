@@ -2437,6 +2437,73 @@
 						</div>
 					</div>
 				</div>
-			</div>
 			<div class="overlay-menu" id="overlay-menu"></div>
+			<script>
+				(function() {
+					var header = document.getElementById("header");
+					if (!header) return;
+
+					function updateHeaderDimensions() {
+						if (header) {
+							var h = header.offsetHeight;
+							document.body.style.paddingTop = h + "px";
+							document.documentElement.style.setProperty('--header-height', h + 'px');
+
+							var activeNav = document.querySelector('.desktop-nav.active, .mobile-menu.active, .mobile-nav.active');
+							if (activeNav) {
+								activeNav.style.top = h + "px";
+								activeNav.style.height = "calc(100vh - " + h + "px)";
+							}
+						}
+					}
+
+					updateHeaderDimensions();
+					window.addEventListener("resize", updateHeaderDimensions);
+					window.addEventListener("orientationchange", updateHeaderDimensions);
+					window.addEventListener("load", updateHeaderDimensions);
+					setTimeout(updateHeaderDimensions, 100);
+					setTimeout(updateHeaderDimensions, 400);
+
+					var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+					var scrollThreshold = 4;
+
+					window.addEventListener("scroll", function() {
+						var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+						if (scrollTop < 0) scrollTop = 0;
+
+						// Khi menu mobile đang mở, giữ header luôn hiển thị
+						var isMobileMenuOpen = document.querySelector('.desktop-nav.active, .mobile-menu.active, .mobile-nav.active, #open-menu.is-active, .is-active');
+						if (isMobileMenuOpen) {
+							header.classList.remove("header--hide");
+							header.classList.add("header--show");
+							return;
+						}
+
+						if (scrollTop <= 40) {
+							header.classList.remove("header--hide");
+							header.classList.add("header--show");
+							lastScrollTop = scrollTop;
+							return;
+						}
+
+						if (Math.abs(scrollTop - lastScrollTop) <= scrollThreshold) {
+							return;
+						}
+
+						if (scrollTop > lastScrollTop) {
+							// Cuộn xuống (Scroll Down) -> Hiện thanh trên
+							header.classList.remove("header--hide");
+							header.classList.add("header--show");
+						} else {
+							// Cuộn lên (Scroll Up) -> Ẩn thanh trên
+							header.classList.remove("header--show");
+							header.classList.add("header--hide");
+						}
+
+						lastScrollTop = scrollTop;
+					}, { passive: true });
+				})();
+			</script>
+
 		</header>
+

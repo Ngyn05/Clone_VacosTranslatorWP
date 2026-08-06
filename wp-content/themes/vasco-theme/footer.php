@@ -1491,12 +1491,94 @@
 })();
 </script>
 
-<!-- Floating Hotline Direct Call Button -->
-<a href="tel:1900638400" id="vasco-floating-hotline" title="Gọi ngay Hotline 1900.63.8400" style="position: fixed; bottom: 25px; right: 25px; z-index: 999999; display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%); border-radius: 50%; box-shadow: 0 6px 22px rgba(37, 99, 235, 0.55); text-decoration: none; transition: transform 0.25s ease, box-shadow 0.25s ease;">
-	<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-		<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-	</svg>
-</a>
+<!-- Floating Contact Quick Menu Widget (1 Khung Sổ Ra) -->
+<div id="vasco-contact-widget-wrapper" style="position: fixed; bottom: 25px; right: 25px; z-index: 999999; display: flex; flex-direction: column; align-items: flex-end;">
+
+	<!-- Quick Contact Popup Box -->
+	<div id="vasco-contact-popup" class="vasco-contact-popup" style="display: none; width: 290px; background: #ffffff; border-radius: 18px; box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18); border: 1px solid rgba(0, 0, 0, 0.08); margin-bottom: 14px; overflow: hidden; transform-origin: bottom right; transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease; opacity: 0;">
+		<div style="background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%); padding: 14px 18px; color: #ffffff; display: flex; align-items: center; justify-content: space-between;">
+			<div style="display: flex; align-items: center; gap: 8px;">
+				<span style="font-weight: 700; font-size: 15px; letter-spacing: 0.3px;">Liên hệ với Vasco VN</span>
+			</div>
+			<button id="vasco-contact-close-btn" type="button" aria-label="Đóng" style="background: rgba(255,255,255,0.2); border: none; color: #fff; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0;">
+				<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+			</button>
+		</div>
+		<div style="padding: 10px; display: flex; flex-direction: column; gap: 8px; background: #f8fafc;">
+			<!-- Option 1: SĐT / Hotline -->
+			<a href="tel:1900638400" class="vasco-contact-item" style="display: flex; align-items: center; gap: 12px; padding: 10px 12px; background: #ffffff; border-radius: 12px; text-decoration: none; border: 1px solid #e2e8f0; transition: all 0.2s ease;">
+				<div style="width: 38px; height: 38px; border-radius: 10px; background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%); display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 3px 10px rgba(37, 99, 235, 0.35);">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+					</svg>
+				</div>
+				<div style="display: flex; flex-direction: column;">
+					<span style="font-size: 12.5px; font-weight: 700; color: #1e293b;">Số điện thoại Hotline</span>
+					<span style="font-size: 13.5px; font-weight: 800; color: #2563EB;">1900.63.8400</span>
+				</div>
+			</a>
+
+			<!-- Option 2: Zalo Chat -->
+			<a href="https://zalo.me/0917834532" target="_blank" rel="noopener noreferrer" class="vasco-contact-item" style="display: flex; align-items: center; gap: 12px; padding: 10px 12px; background: #ffffff; border-radius: 12px; text-decoration: none; border: 1px solid #e2e8f0; transition: all 0.2s ease;">
+
+				<div style="width: 38px; height: 38px; border-radius: 10px; background: linear-gradient(135deg, #0068FF 0%, #0052C4 100%); display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 3px 10px rgba(0, 104, 255, 0.35);">
+					<svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+						<path d="M16 3C8.8 3 3 8.4 3 15c0 3.7 1.8 6.9 4.6 9.2L6 29l5.3-2.6c1.5.4 3.1.6 4.7.6 7.2 0 13-5.4 13-12S23.2 3 16 3z" fill="#FFFFFF"/>
+						<text x="16" y="18.5" font-family="-apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="8.5" font-weight="900" fill="#0068FF" text-anchor="middle" letter-spacing="-0.3px">Zalo</text>
+					</svg>
+				</div>
+				<div style="display: flex; flex-direction: column;">
+					<span style="font-size: 12.5px; font-weight: 700; color: #1e293b;">Chat qua Zalo</span>
+					<span style="font-size: 12px; font-weight: 600; color: #0068FF;">Nhắn tin tư vấn ngay</span>
+				</div>
+			</a>
+
+
+			<!-- Option 3: Địa chỉ Hà Nội -->
+			<a href="https://www.google.com/maps/place/C%C3%B4ng+Ty+C%C3%B4ng+Ngh%E1%BB%87+Vi%E1%BB%85n+Th%C3%B4ng+Vi%E1%BB%87t+Nam/@21.0085992,105.8147659,20z/data=!4m6!3m5!1s0x3135ac9c09dd5847:0xe0ce01e78ea4164f!8m2!3d21.006971!4d105.815825!16s%2Fg%2F11bbw_4s1h?entry=ttu&amp;g_ep=EgoyMDI2MDgwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="vasco-contact-item" style="display: flex; align-items: center; gap: 12px; padding: 10px 12px; background: #ffffff; border-radius: 12px; text-decoration: none; border: 1px solid #e2e8f0; transition: all 0.2s ease;">
+				<div style="width: 38px; height: 38px; border-radius: 10px; background: linear-gradient(135deg, #EA4335 0%, #DC2626 100%); display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 3px 10px rgba(234, 67, 53, 0.35);">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+						<circle cx="12" cy="10" r="3"></circle>
+					</svg>
+				</div>
+				<div style="display: flex; flex-direction: column;">
+					<span style="font-size: 12.5px; font-weight: 700; color: #1e293b;">Văn phòng Hà Nội</span>
+					<span style="font-size: 11px; font-weight: 500; color: #64748b; line-height: 1.3;">226 Đường Láng, Đống Đa, HN</span>
+				</div>
+			</a>
+
+			<!-- Option 4: Địa chỉ TP.HCM -->
+			<a href="https://www.google.com/maps/place/137+Ho%C3%A0+H%C6%B0ng,+H%C3%B2a+H%C6%B0ng,+H%E1%BB%93+Ch%C3%AD+Minh,+Vietnam/@10.7778946,106.6715067,20z/data=!4m6!3m5!1s0x31752ed99682b5d1:0x63a96bd76a356b6d!8m2!3d10.7780958!4d106.6716272!16s%2Fg%2F11rmzj4ghr?entry=ttu&amp;g_ep=EgoyMDI2MDgwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="vasco-contact-item" style="display: flex; align-items: center; gap: 12px; padding: 10px 12px; background: #ffffff; border-radius: 12px; text-decoration: none; border: 1px solid #e2e8f0; transition: all 0.2s ease;">
+				<div style="width: 38px; height: 38px; border-radius: 10px; background: linear-gradient(135deg, #EA4335 0%, #DC2626 100%); display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 3px 10px rgba(234, 67, 53, 0.35);">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+						<circle cx="12" cy="10" r="3"></circle>
+					</svg>
+				</div>
+				<div style="display: flex; flex-direction: column;">
+					<span style="font-size: 12.5px; font-weight: 700; color: #1e293b;">Văn phòng TP.HCM</span>
+					<span style="font-size: 11px; font-weight: 500; color: #64748b; line-height: 1.3;">137 Hòa Hưng, P.12, Q.10, HCM</span>
+				</div>
+			</a>
+
+
+		</div>
+	</div>
+
+	<!-- Floating Main Button -->
+	<button id="vasco-floating-hotline" title="Liên hệ tư vấn" type="button" aria-label="Liên hệ tư vấn" style="position: relative; display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%); border-radius: 50%; box-shadow: 0 6px 22px rgba(37, 99, 235, 0.55); border: none; cursor: pointer; transition: transform 0.25s ease, box-shadow 0.25s ease; outline: none;">
+		<span class="vasco-pulse-ring"></span>
+		<svg id="vasco-phone-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.3s ease;">
+			<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+		</svg>
+		<svg id="vasco-close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display: none; transition: transform 0.3s ease;">
+			<line x1="18" y1="6" x2="6" y2="18"></line>
+			<line x1="6" y1="6" x2="18" y2="18"></line>
+		</svg>
+	</button>
+</div>
+
 <style>
 .global-back-to-top, .global-back-to-top-button, [data-global-back-to-top] {
 	display: none !important;
@@ -1507,7 +1589,110 @@
 	transform: scale(1.08);
 	box-shadow: 0 8px 28px rgba(37, 99, 235, 0.75);
 }
+.vasco-contact-item:hover {
+	background: #f1f5f9 !important;
+	border-color: #cbd5e1 !important;
+	transform: translateX(-3px);
+}
+.vasco-pulse-ring {
+	position: absolute;
+	top: -4px;
+	left: -4px;
+	right: -4px;
+	bottom: -4px;
+	border-radius: 50%;
+	border: 2px solid rgba(37, 99, 235, 0.6);
+	animation: vascoPulse 2s infinite;
+	pointer-events: none;
+}
+@keyframes vascoPulse {
+	0% {
+		transform: scale(1);
+		opacity: 0.8;
+	}
+	70% {
+		transform: scale(1.3);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1.3);
+		opacity: 0;
+	}
+}
 </style>
+
+<script>
+(function() {
+	function initContactWidget() {
+		var btn = document.getElementById("vasco-floating-hotline");
+		var popup = document.getElementById("vasco-contact-popup");
+		var closeBtn = document.getElementById("vasco-contact-close-btn");
+		var phoneIcon = document.getElementById("vasco-phone-icon");
+		var closeIcon = document.getElementById("vasco-close-icon");
+
+		if (!btn || !popup) return;
+
+		function togglePopup(e) {
+			if (e) {
+				e.preventDefault();
+				e.stopPropagation();
+			}
+			var isOpen = popup.style.display === "block" && popup.style.opacity === "1";
+
+			if (isOpen) {
+				closeMenu();
+			} else {
+				openMenu();
+			}
+		}
+
+		function openMenu() {
+			popup.style.display = "block";
+			setTimeout(function() {
+				popup.style.transform = "scale(1)";
+				popup.style.opacity = "1";
+			}, 10);
+			if (phoneIcon && closeIcon) {
+				phoneIcon.style.display = "none";
+				closeIcon.style.display = "block";
+			}
+		}
+
+		function closeMenu() {
+			popup.style.transform = "scale(0.9)";
+			popup.style.opacity = "0";
+			setTimeout(function() {
+				popup.style.display = "none";
+			}, 250);
+			if (phoneIcon && closeIcon) {
+				phoneIcon.style.display = "block";
+				closeIcon.style.display = "none";
+			}
+		}
+
+		btn.addEventListener("click", togglePopup);
+		if (closeBtn) {
+			closeBtn.addEventListener("click", closeMenu);
+		}
+
+		document.addEventListener("click", function(e) {
+			var wrapper = document.getElementById("vasco-contact-widget-wrapper");
+			if (wrapper && !wrapper.contains(e.target)) {
+				closeMenu();
+			}
+		});
+	}
+
+	if (document.readyState === "loading") {
+		document.addEventListener("DOMContentLoaded", initContactWidget);
+	} else {
+		initContactWidget();
+	}
+})();
+</script>
+
+
+
 
 <!-- Mobile Footer Accordion JS -->
 <script>

@@ -386,7 +386,7 @@
 
 	// ── 7. Phone Icon Click Handler ────────────────────────────────
 	document.addEventListener('click', function (e) {
-		var phoneBtn = e.target.closest('#phone-numbers .icon, .phone-number .icon, .phone-icon-link, #vasco-floating-hotline');
+		var phoneBtn = e.target.closest('#phone-numbers .icon, .phone-number .icon, .phone-icon-link');
 		if (phoneBtn) {
 			var href = phoneBtn.getAttribute('href');
 			if (href && href.indexOf('tel:') === 0) {
@@ -397,4 +397,5 @@
 			window.location.href = 'tel:1900638400';
 		}
 	});
+
 })();
