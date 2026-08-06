@@ -124,7 +124,7 @@ return;
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
-<button aria-label="Thêm vào giỏ hàng: Túi đựng có khóa kéo cho Vasco Translator Q1" class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>Thêm vào giỏ hàng</button>
+<button aria-label="MUA NGAY: Túi đựng có khóa kéo cho Vasco Translator Q1" class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>MUA NGAY</button>
 <button aria-hidden="true" class="btn btn-secondary notify-modal-button font-semibold" data-id-attribute="0" data-id-product="51" style="display:none">
 <img alt="Thông báo cho tôi" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/notify.svg" ); ?>"/>Thông báo cho tôi</button>
 </div>
@@ -196,7 +196,7 @@ return;
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
-<button aria-label="Thêm vào giỏ hàng: Túi đựng có khóa kéo cho Vasco Translator M4" class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>Thêm vào giỏ hàng</button>
+<button aria-label="MUA NGAY: Túi đựng có khóa kéo cho Vasco Translator M4" class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>MUA NGAY</button>
 <button aria-hidden="true" class="btn btn-secondary notify-modal-button font-semibold" data-id-attribute="0" data-id-product="60" style="display:none">
 <img alt="Thông báo cho tôi" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/notify.svg" ); ?>"/>Thông báo cho tôi</button>
 </div>
@@ -265,7 +265,7 @@ return;
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
-<button aria-label="Thêm vào giỏ hàng: Túi đựng có khóa kéo cho Vasco Translator V4" class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>Thêm vào giỏ hàng</button>
+<button aria-label="MUA NGAY: Túi đựng có khóa kéo cho Vasco Translator V4" class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>MUA NGAY</button>
 <button aria-hidden="true" class="btn btn-secondary notify-modal-button font-semibold" data-id-attribute="0" data-id-product="15" style="display:none">
 <img alt="Thông báo cho tôi" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/notify.svg" ); ?>"/>Thông báo cho tôi</button>
 </div>
@@ -358,7 +358,7 @@ return;
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
-<button aria-label="Thêm vào giỏ hàng: Túi đựng cho Vasco Translator Q1" class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>Thêm vào giỏ hàng</button>
+<button aria-label="MUA NGAY: Túi đựng cho Vasco Translator Q1" class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>MUA NGAY</button>
 <button aria-hidden="true" class="btn btn-secondary notify-modal-button font-semibold" data-id-attribute="33" data-id-product="64" style="display:none">
 <img alt="Thông báo cho tôi" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/notify.svg" ); ?>"/>Thông báo cho tôi</button>
 </div>
@@ -451,7 +451,7 @@ return;
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
-<button aria-label="Thêm vào giỏ hàng: Túi đựng cho Vasco Translator M4" class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>Thêm vào giỏ hàng</button>
+<button aria-label="MUA NGAY: Túi đựng cho Vasco Translator M4" class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>MUA NGAY</button>
 <button aria-hidden="true" class="btn btn-secondary notify-modal-button font-semibold" data-id-attribute="36" data-id-product="63" style="display:none">
 <img alt="Thông báo cho tôi" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/notify.svg" ); ?>"/>Thông báo cho tôi</button>
 </div>
@@ -520,7 +520,7 @@ return;
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
-<button aria-label="Thêm vào giỏ hàng: Miếng dán kính cường lực cho Vasco Translator Q1" class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>Thêm vào giỏ hàng</button>
+<button aria-label="MUA NGAY: Miếng dán kính cường lực cho Vasco Translator Q1" class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>MUA NGAY</button>
 <button aria-hidden="true" class="btn btn-secondary notify-modal-button font-semibold" data-id-attribute="0" data-id-product="40" style="display:none">
 <img alt="Thông báo cho tôi" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/notify.svg" ); ?>"/>Thông báo cho tôi</button>
 </div>
@@ -592,7 +592,7 @@ return;
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
-<button aria-label="Thêm vào giỏ hàng: Miếng dán kính cường lực cho Vasco Translator M4" class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>Thêm vào giỏ hàng</button>
+<button aria-label="MUA NGAY: Miếng dán kính cường lực cho Vasco Translator M4" class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>MUA NGAY</button>
 <button aria-hidden="true" class="btn btn-secondary notify-modal-button font-semibold" data-id-attribute="0" data-id-product="61" style="display:none">
 <img alt="Thông báo cho tôi" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/notify.svg" ); ?>"/>Thông báo cho tôi</button>
 </div>
@@ -661,7 +661,7 @@ return;
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
-<button aria-label="Thêm vào giỏ hàng: Miếng dán màn hình cho Vasco Translator V4" class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>Thêm vào giỏ hàng</button>
+<button aria-label="MUA NGAY: Miếng dán màn hình cho Vasco Translator V4" class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>MUA NGAY</button>
 <button aria-hidden="true" class="btn btn-secondary notify-modal-button font-semibold" data-id-attribute="0" data-id-product="17" style="display:none">
 <img alt="Thông báo cho tôi" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/notify.svg" ); ?>"/>Thông báo cho tôi</button>
 </div>
@@ -730,7 +730,7 @@ return;
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
-<button aria-label="Thêm vào giỏ hàng: Bộ đổi nguồn (phích cắm US)" class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>Thêm vào giỏ hàng</button>
+<button aria-label="MUA NGAY: Bộ đổi nguồn (phích cắm US)" class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>MUA NGAY</button>
 <button aria-hidden="true" class="btn btn-secondary notify-modal-button font-semibold" data-id-attribute="0" data-id-product="53" style="display:none">
 <img alt="Thông báo cho tôi" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/notify.svg" ); ?>"/>Thông báo cho tôi</button>
 </div>

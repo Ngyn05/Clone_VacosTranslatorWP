@@ -29,7 +29,7 @@ function vasco_theme_enqueue_all_assets() {
 
 	// 2. Enqueue Custom Fields and Main Theme Style
 	wp_enqueue_style( 'vasco-custom-fields', VASCO_THEME_URI . '/assets/css/vasco-custom-fields.css', array(), VASCO_THEME_VERSION );
-	wp_enqueue_style( 'vasco-main-style', VASCO_THEME_URI . '/style.css', array( 'vasco-css-5', 'vasco-custom-fields' ), VASCO_THEME_VERSION );
+	wp_enqueue_style( 'vasco-main-style', VASCO_THEME_URI . '/style.css', array( 'vasco-css-5', 'vasco-custom-fields' ), time() );
 	wp_enqueue_script( 'vasco-custom-fields-js', VASCO_THEME_URI . '/assets/js/vasco-custom-fields.js', array(), VASCO_THEME_VERSION, true );
 
 	// 3. Enqueue jQuery Core & Helper Scripts
@@ -44,7 +44,7 @@ function vasco_theme_enqueue_all_assets() {
 
 
 	// 5. Enqueue Standalone Vasco Cart Engine
-	wp_enqueue_script( 'vasco-cart-engine', VASCO_THEME_URI . '/assets/js/vasco-cart-engine.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
+	wp_enqueue_script( 'vasco-cart-engine', VASCO_THEME_URI . '/assets/js/vasco-cart-engine.js', array( 'jquery' ), time(), true );
 
 	// Fetch suggested accessories dynamically from WooCommerce
 	$suggested_accessories = array();

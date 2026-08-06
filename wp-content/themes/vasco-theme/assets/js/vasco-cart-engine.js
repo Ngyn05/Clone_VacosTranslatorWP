@@ -11,6 +11,23 @@
 (function () {
 	'use strict';
 
+	// Auto-remove any side drawer or toast elements from DOM
+	var purgeDrawers = function () {
+		['vasco-side-drawer', 'vasco-drawer-overlay', 'blockcart-modal'].forEach(function (id) {
+			var el = document.getElementById(id);
+			if (el) el.remove();
+		});
+		document.querySelectorAll('.cart-drawer, .cross-selling-section-drawer, .cross-alert, .cross-alert-error, .toast-animation').forEach(function (el) {
+			el.remove();
+		});
+	};
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', purgeDrawers);
+	} else {
+		purgeDrawers();
+	}
+	setInterval(purgeDrawers, 300);
+
 	// ── 1. Universal Product Tab Switcher ──────────────────────────
 	document.addEventListener('click', function (e) {
 		var tabBtn = e.target.closest('button.menu-link, .product-menu-container button, [data-id^="product-"]');
@@ -128,25 +145,26 @@
 			localStorage.setItem('vasco_cart', JSON.stringify(cart));
 			this.updateBadge();
 		},
-		addItem: function (product) {
+		addItem: function (product, directCheckout) {
+			if (directCheckout === undefined) directCheckout = true;
 			var self = this;
-			var cart = self.getCart();
-			var existing = cart.find(function (item) { return item.name === product.name; });
-			if (existing) {
-				existing.quantity += (product.quantity || 1);
-			} else {
-				cart.push({
-					id: product.id || 'prod-' + Date.now(),
-					name: product.name || 'Máy phiên dịch Vasco',
-					price: product.price || 0,
-					priceText: product.priceText || '',
-					image: product.image || '',
-					link: product.link || window.location.href,
-					quantity: product.quantity || 1
-				});
-			}
+			// Reset cart array so only the currently selected product is bought
+			var cart = [{
+				id: product.id || 'prod-' + Date.now(),
+				name: product.name || 'Máy phiên dịch Vasco',
+				price: product.price || 0,
+				priceText: product.priceText || '',
+				image: product.image || '',
+				link: product.link || window.location.href,
+				quantity: product.quantity || 1
+			}];
 			self.saveCart(cart);
-			self.showToast(product.name, product);
+
+			var checkoutUrl = window.VASCO_CHECKOUT_URL || (window.VASCO_HOME_URL || '/') + 'checkout/';
+
+			if (!directCheckout) {
+				self.showToast(product.name, product);
+			}
 
 			var pId = parseInt(product.id, 10) || 0;
 			if (window.VASCO_AJAX_URL && window.VASCO_WC_NONCE) {
@@ -164,8 +182,17 @@
 							window.VASCO_WC_CART_COUNT = res.data.cart_count || 0;
 							self.updateBadge();
 						}
+						if (directCheckout) {
+							window.location.href = checkoutUrl;
+						}
 					})
-					.catch(function () { /* silent fail */ });
+					.catch(function () {
+						if (directCheckout) {
+							window.location.href = checkoutUrl;
+						}
+					});
+			} else if (directCheckout) {
+				window.location.href = checkoutUrl;
 			}
 		},
 		removeItem: function (id) {
@@ -209,74 +236,12 @@
 			});
 		},
 		showToast: function (productName, productItem) {
+			// Toast notification drawer disabled per user request
 			var existingDrawer = document.getElementById('vasco-side-drawer');
 			if (existingDrawer) existingDrawer.remove();
 			var existingOverlay = document.getElementById('vasco-drawer-overlay');
 			if (existingOverlay) existingOverlay.remove();
-
-			var cartUrl = window.VASCO_CART_URL || '/cart/';
-			var defaultImg = (window.VASCO_THEME_URI || '') + '/assets/img/v4.webp';
-			var itemImg = (productItem && productItem.image) ? productItem.image : defaultImg;
-			var itemName = productName || 'Vasco Translator Q1';
-
-			var overlay = document.createElement('div');
-			overlay.id = 'vasco-drawer-overlay';
-			overlay.style.cssText = 'position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);z-index:999998;opacity:0;transition:opacity 0.3s ease;';
-
-			var drawer = document.createElement('div');
-			drawer.id = 'vasco-side-drawer';
-			drawer.style.cssText = 'position:fixed;top:0;right:0;width:420px;max-width:90vw;height:100vh;background:#2D3139;color:#ffffff;z-index:999999;box-shadow:-8px 0 32px rgba(0,0,0,0.3);transform:translateX(100%);transition:transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);display:flex;flex-direction:column;font-family:system-ui, -apple-system, sans-serif;';
-
-			var html = '<div style="background:#2D3139;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,0.1);">';
-			html += '<h3 style="margin:0;font-size:15px;font-weight:700;letter-spacing:0.5px;color:#ffffff;text-transform:uppercase;">ĐÃ THÊM SẢN PHẨM VÀO GIỎ HÀNG</h3>';
-			html += '<button onclick="window.VascoCart.closeDrawer()" style="background:none;border:none;color:#ffffff;font-size:24px;cursor:pointer;padding:0;line-height:1;">&times;</button>';
-			html += '</div>';
-			html += '<div style="flex:1;overflow-y:auto;padding:24px;background:#ffffff;color:#2D3139;">';
-			html += '<div style="background:#EFECE8;border-radius:14px;padding:18px;display:flex;align-items:center;gap:16px;margin-bottom:24px;">';
-			html += '<img src="' + itemImg + '" alt="' + itemName + '" style="width:70px;height:70px;object-fit:contain;border-radius:8px;background:#fff;padding:4px;" />';
-			html += '<div>';
-			html += '<h4 style="margin:0 0 4px 0;font-size:17px;font-weight:700;color:#2D3139;font-family:\'Noto Sans\', -apple-system, sans-serif;">' + itemName + '</h4>';
-			html += '<span style="font-size:13px;color:#718096;">Sản phẩm chính hãng Vasco</span>';
-			html += '</div></div>';
-
-			html += '<div style="text-align:center;margin-bottom:32px;">';
-			html += '<a href="' + cartUrl + '" style="display:inline-block;width:100%;background:#3B82F6;color:#ffffff;padding:14px 20px;border-radius:24px;text-decoration:none;font-weight:700;font-size:14px;letter-spacing:0.5px;text-transform:uppercase;box-sizing:border-box;">XEM GIỎ HÀNG & THANH TOÁN</a>';
-			html += '</div>';
-
-			html += '<div style="border-top:1px solid #E2E8F0;padding-top:24px;">';
-			html += '<h4 style="text-align:center;font-size:15px;font-weight:600;color:#2D3139;margin-bottom:20px;">Gợi ý phụ kiện mua kèm</h4>';
-			html += '<div style="display:flex;flex-direction:column;gap:16px;">';
-
-			var suggestedList = window.VASCO_SUGGESTED_PRODUCTS || [];
-
-			suggestedList.forEach(function (acc) {
-				var accLink = acc.permalink || '#';
-				var accImg = acc.image || defaultImg;
-				var accPriceDisplay = acc.price_fmt || (window.VascoCart.formatMoney(acc.price));
-
-				html += '<div style="border:1px solid #E2E8F0;border-radius:12px;padding:12px 16px;display:flex;align-items:center;gap:14px;background:#fff;">';
-				html += '<a href="' + accLink + '" style="display:block;flex-shrink:0;"><img src="' + accImg + '" alt="' + acc.name + '" style="width:50px;height:50px;object-fit:contain;border-radius:6px;" /></a>';
-				html += '<div style="flex:1;min-width:0;">';
-				html += '<a href="' + accLink + '" style="display:block;font-size:13px;font-weight:600;color:#2D3139;text-decoration:none;line-height:1.3;margin-bottom:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="' + acc.name + '">' + acc.name + '</a>';
-				html += '<strong style="font-size:14px;color:#001480;">' + accPriceDisplay + '</strong>';
-				html += '</div>';
-				html += '<button class="btn-drawer-add" data-vasco-handled="true" onclick="event.stopPropagation(); event.preventDefault(); window.VascoCart.addItem({id:\'' + (acc.id || 0) + '\',name:\'' + acc.name.replace(/'/g, "\\'") + '\',price:' + acc.price + ',image:\'' + accImg + '\'});" style="background:#F0F5FF;border:1px solid #3B82F6;border-radius:20px;padding:6px 14px;cursor:pointer;color:#3B82F6;font-weight:600;font-size:13px;flex-shrink:0;">+ Thêm</button>';
-				html += '</div>';
-			});
-
-			html += '</div></div></div>';
-
-			drawer.innerHTML = html;
-
-			document.body.appendChild(overlay);
-			document.body.appendChild(drawer);
-
-			overlay.onclick = this.closeDrawer;
-
-			setTimeout(function () {
-				overlay.style.opacity = '1';
-				drawer.style.transform = 'translateX(0)';
-			}, 10);
+			return;
 		},
 		closeDrawer: function () {
 			var drawer = document.getElementById('vasco-side-drawer');
@@ -298,10 +263,14 @@
 
 	// ── 5. Add to Cart & Buy Now Click Delegator ──────────────────
 	document.addEventListener('click', function (ev) {
-		var btn = ev.target.closest('.btn-add-to-cart, .add-to-cart, [data-button-action="add-to-cart"], .add_to_cart_button, .product-add-to-cart button, .add-to-cart-btn-full, .add-to-cart-btn-primary, .btn-buy-now, .buy-now, [data-button-action="buy-now"]');
+		if (ev.target.closest('.vasco-phone-consult-box, .consultation-quick-form') || ev.target.name === 'phone_consult') {
+			return;
+		}
+
+		var btn = ev.target.closest('.btn-add-to-cart, .add-to-cart, [data-button-action="add-to-cart"], .add_to_cart_button, .product-add-to-cart button.btn-mua-ngay-orange, .add-to-cart-btn-full, .add-to-cart-btn-primary, .btn-buy-now, .buy-now, [data-button-action="buy-now"]');
 		if (!btn) {
 			var potentialBtn = ev.target.closest('button, a.btn, a.button, a');
-			if (potentialBtn) {
+			if (potentialBtn && !potentialBtn.closest('.vasco-phone-consult-box, .consultation-quick-form')) {
 				var txt = (potentialBtn.textContent || '').toLowerCase();
 				if ((txt.indexOf('thêm vào giỏ') !== -1 || txt.indexOf('mua ngay') !== -1 || txt.indexOf('add to cart') !== -1) && txt.indexOf('xem giỏ hàng') === -1) {
 					btn = potentialBtn;
@@ -345,14 +314,7 @@
 			quantity: 1
 		};
 
-		window.VascoCart.addItem(productItem);
-
-		var isBuyNow = btn.classList.contains('btn-buy-now') || btn.classList.contains('buy-now') || (btn.textContent || '').toLowerCase().indexOf('mua ngay') !== -1;
-		if (isBuyNow) {
-			setTimeout(function() {
-				window.location.href = window.VASCO_CHECKOUT_URL || (window.VASCO_HOME_URL || '/') + 'checkout/';
-			}, 300);
-		}
+		window.VascoCart.addItem(productItem, true);
 	}, true);
 
 	// ── 6. Lazyload Image & Path Fixer ─────────────────────────────
@@ -401,5 +363,118 @@
 			window.location.href = 'tel:1900638400';
 		}
 	});
+
+	// Chặn hoàn toàn ký tự chữ/ký tự đặc biệt khi gõ vào ô SĐT
+	document.addEventListener('input', function (e) {
+		if (e.target && e.target.name === 'phone_consult') {
+			e.target.value = e.target.value.replace(/[^0-9]/g, '');
+		}
+	});
+
+	// ── 8. Quick Phone Consultation Handler ───────────────────────
+	window.submitQuickConsultation = function(targetEl) {
+		var formEl = targetEl.closest('.consultation-quick-form');
+		if (!formEl) return;
+
+		var phoneInput = formEl.querySelector('input[name="phone_consult"]');
+		var successMsg = formEl.nextElementSibling;
+		if (!phoneInput) return;
+
+		var val = phoneInput.value.trim().replace(/\s+/g, '');
+		// Ràng buộc số điện thoại Việt Nam chuẩn: 10 số (Bắt đầu bằng 03, 05, 07, 08, 09) hoặc +84
+		var phoneRegex = /^(0|\+84)[3|5|7|8|9][0-9]{8}$|^0[0-9]{9}$/;
+
+		if (!val || !phoneRegex.test(val)) {
+			phoneInput.focus();
+			phoneInput.value = '';
+			phoneInput.placeholder = 'Vui lòng nhập SĐT hợp lệ (VD: 0912345678)...';
+			phoneInput.style.outline = '2px solid #FF3B30';
+			phoneInput.style.background = '#FFF5F5';
+			return;
+		}
+
+		// Reset styling khi hợp lệ
+		phoneInput.style.outline = 'none';
+		phoneInput.style.background = 'transparent';
+
+		var btn = formEl.querySelector('button');
+		if (btn) { btn.textContent = '...'; btn.disabled = true; }
+
+		var fd = new FormData();
+		fd.append('action', 'vasco_wc_save_consultation');
+		fd.append('nonce', window.VASCO_WC_NONCE || '');
+		fd.append('phone', val);
+		fd.append('product', document.title || window.location.href);
+
+		fetch(window.VASCO_AJAX_URL || '/wp-admin/admin-ajax.php', { method: 'POST', body: fd })
+			.then(function(res) { return res.json(); })
+			.then(function(data) {
+				if (data && data.success) {
+					formEl.style.display = 'none';
+					if (successMsg) successMsg.style.display = 'block';
+				} else {
+					if (btn) { btn.textContent = 'GỬI ĐI'; btn.disabled = false; }
+					phoneInput.focus();
+					phoneInput.value = '';
+					phoneInput.placeholder = 'SĐT không hợp lệ, thử lại...';
+					phoneInput.style.outline = '2px solid #FF3B30';
+				}
+			})
+			.catch(function() {
+				formEl.style.display = 'none';
+				if (successMsg) successMsg.style.display = 'block';
+			});
+	};
+
+	// ── 9. Render 2-Button Row & Consultation Form on Product Pages ──
+	function initVascoProductBuyActions() {
+		var cartContainers = document.querySelectorAll('.product-add-to-cart, .js-product-add-to-cart');
+		cartContainers.forEach(function (container) {
+			if (container.querySelector('.vasco-buy-action-box')) return;
+
+			var oldBtn = container.querySelector('button.add-to-cart, .add-to-cart, button');
+			var pId = oldBtn ? oldBtn.getAttribute('data-product-id') : '';
+			var pName = oldBtn ? oldBtn.getAttribute('data-product-name') : '';
+
+			var html = '<div class="vasco-buy-action-box">';
+			html += '  <div class="vasco-buttons-row">';
+			html += '    <a href="https://zalo.me/0917834532" target="_blank" rel="noopener noreferrer" class="btn-tu-van-zalo">';
+			html += '      <svg width="22" height="22" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="24" fill="#FFFFFF"/><text x="24" y="29.5" font-family="-apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="13" font-weight="900" fill="#0068FF" text-anchor="middle" letter-spacing="-0.5px">Zalo</text></svg>';
+			html += '      <span>TƯ VẤN NGAY</span>';
+			html += '    </a>';
+			html += '    <button type="submit" class="btn btn-primary add-to-cart btn-mua-ngay-orange" ' + (pId ? 'data-product-id="' + pId + '" ' : '') + (pName ? 'data-product-name="' + pName + '" ' : '') + 'data-button-action="add-to-cart">';
+			html += '      <span class="txt-main">MUA NGAY</span>';
+			html += '    </button>';
+			html += '  </div>';
+
+			html += '  <div class="vasco-phone-consult-box">';
+			html += '    <div class="consult-header">';
+			html += '      <div class="consult-text">';
+			html += '        Hãy để lại <strong class="hl-yellow">số điện thoại</strong>, chúng tôi sẽ gọi ngay cho bạn <strong class="hl-yellow">tư vấn miễn phí!</strong>';
+			html += '      </div>';
+			html += '    </div>';
+			html += '    <div class="consultation-quick-form" style="display: flex; align-items: center; border-radius: 30px; overflow: hidden; background: #ffffff; padding: 3px 3px 3px 18px; box-shadow: inset 0 2px 4px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.1); width: 100%; box-sizing: border-box;">';
+			html += '      <input type="tel" name="phone_consult" maxlength="11" placeholder="Nhập sđt tư vấn miễn phí..." style="flex: 1; border: none; background: transparent; padding: 8px 0; font-size: 14px; font-weight: 500; color: #1E293B; outline: none;" oninput="this.value=this.value.replace(/[^0-9]/g,\'\');" onkeydown="if(event.key===\'Enter\'){event.preventDefault();event.stopPropagation();window.submitQuickConsultation(this);}" />';
+			html += '      <button type="button" onclick="event.preventDefault(); event.stopPropagation(); window.submitQuickConsultation(this);" style="background: linear-gradient(135deg, #990000 0%, #770000 100%); color: #ffffff; border: none; padding: 10px 24px; border-radius: 24px; font-weight: 800; font-size: 13.5px; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap; flex-shrink: 0; display: inline-block;">GỬI ĐI</button>';
+			html += '    </div>';
+			html += '    <div class="consultation-success-msg" style="display: none; margin-top: 10px; font-size: 13.5px; font-weight: 700; color: #FFEB3B; text-align: center;">✓ Cảm ơn bạn! Chúng tôi sẽ liên hệ tư vấn ngay.</div>';
+			html += '  </div>';
+			html += '</div>';
+
+			container.innerHTML = html;
+		});
+
+		// Replace Afterpay simulator elements directly with trial notice
+		var afterpayEls = document.querySelectorAll('.AfterpaySimulator, .afterpaySimulator, .afterpay-text');
+		afterpayEls.forEach(function (el) {
+			el.innerHTML = '<div class="vasco-trial-notice" style="font-size: 14px; color: #475569; font-weight: 600; margin-top: 6px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="#10B981"/></svg><span>(Được dùng thử trước khi thanh toán)</span></div>';
+		});
+	}
+
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', initVascoProductBuyActions);
+	} else {
+		initVascoProductBuyActions();
+	}
 
 })();

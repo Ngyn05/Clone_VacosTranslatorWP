@@ -301,10 +301,8 @@ return;
 </style>
 <script async="" data-max="2000" data-min="1" src="https://js.squarecdn.com/square-marketplace.js" />
 </script>
-<!-- Afterpay.js -->
-<div class="AfterpaySimulator ps-version-8-2" style="margin-top: 10px; font-size: 0.95rem; color: #333;">
-<span>hoặc 4 kỳ thanh toán không lãi suất chỉ $137.25 với</span>
-<span style="font-weight: bold; color: #000; margin-left: 4px;">Afterpay ⓘ</span>
+<div class="AfterpaySimulator ps-version-8-2" style="margin-top: 6px;">
+<div class="vasco-trial-notice" style="font-size: 14px; color: #475569; font-weight: 600; margin-top: 6px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="#10B981"/></svg><span>(Được dùng thử trước khi thanh toán)</span></div>
 </div>
 </div>
 </div>
@@ -312,8 +310,8 @@ return;
 </section>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
-<button aria-label="Thêm vào giỏ hàng: Vasco Translator Q1" class="btn btn-primary btn-lg add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>
-						Thêm vào giỏ hàng
+<button aria-label="MUA NGAY: Vasco Translator Q1" class="btn btn-primary btn-lg add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>
+						MUA NGAY
 					</button>
 </div>
 <div aria-disabled="false" class="product-amazonpay-actions js-product-amazonpay-actions" data-erp-has-quantity="1">
@@ -11103,8 +11101,8 @@ Vasco Assistant nhận diện được các biểu tượng, ẩm thực vùng m
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
-<button aria-label="Thêm vào giỏ hàng: Vasco Translator Q1" class="btn btn-primary btn-lg add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>
-						Thêm vào giỏ hàng
+<button aria-label="MUA NGAY: Vasco Translator Q1" class="btn btn-primary btn-lg add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>
+						MUA NGAY
 					</button>
 </div>
 <div aria-disabled="false" class="product-amazonpay-actions js-product-amazonpay-actions" data-erp-has-quantity="1">

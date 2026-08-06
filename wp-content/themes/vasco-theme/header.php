@@ -1243,7 +1243,7 @@
 							</div>
 						</div>
 					</dialog>
-					<div id="blockcart-wrapper">
+					<div id="blockcart-wrapper" style="display:none !important;">
 						<div class="blockcart cart-preview"
 							data-refresh-url="//vasco-translator.com/module/ps_shoppingcart/ajax">
 							<div class="header">

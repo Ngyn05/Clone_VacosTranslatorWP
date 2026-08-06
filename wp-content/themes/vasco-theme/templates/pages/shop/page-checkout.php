@@ -149,47 +149,22 @@ get_header();
                                 <input type="email" id="billing_email" placeholder="Nhập email nhận hóa đơn (tùy chọn)..." />
                             </div>
 
-                            <!-- Full Name (Combined) -->
-                            <div style="margin-bottom: 20px;">
-                                <label style="display: block; font-weight: 700; font-size: 14px; margin-bottom: 6px; color: #2D3139;" for="billing_full_name">Họ và tên</label>
-                                <input type="text" id="billing_full_name" placeholder="Nhập đầy đủ họ và tên (tùy chọn)..." style="width: 100%; padding: 10px 14px; border: 1px solid #CBD5E0; border-radius: 6px; box-sizing: border-box; font-size: 14px;" />
+                            <!-- Full Name and Address (Same Line) -->
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px;">
+                                <div>
+                                    <label style="display: block; font-weight: 700; font-size: 14px; margin-bottom: 6px; color: #2D3139;" for="billing_full_name">Họ và tên</label>
+                                    <input type="text" id="billing_full_name" placeholder="Nhập đầy đủ họ và tên (tùy chọn)..." style="width: 100%; padding: 10px 14px; border: 1px solid #CBD5E0; border-radius: 6px; box-sizing: border-box; font-size: 14px;" />
+                                </div>
+                                <div>
+                                    <label style="display: block; font-weight: 700; font-size: 14px; margin-bottom: 6px; color: #2D3139;" for="billing_address_1">Địa chỉ</label>
+                                    <input type="text" id="billing_address_1" placeholder="Nhập số nhà, tên đường, phường/xã, quận/huyện, tỉnh/thành phố (tùy chọn)..." style="width: 100%; padding: 10px 14px; border: 1px solid #CBD5E0; border-radius: 6px; box-sizing: border-box; font-size: 14px;" />
+                                </div>
                             </div>
 
-                            <!-- Address (Combined) -->
-                            <div style="margin-bottom: 20px;">
-                                <label style="display: block; font-weight: 700; font-size: 14px; margin-bottom: 6px; color: #2D3139;" for="billing_address_1">Địa chỉ</label>
-                                <input type="text" id="billing_address_1" placeholder="Nhập số nhà, tên đường, phường/xã, quận/huyện, tỉnh/thành phố (tùy chọn)..." style="width: 100%; padding: 10px 14px; border: 1px solid #CBD5E0; border-radius: 6px; box-sizing: border-box; font-size: 14px;" />
-                            </div>
-
-                            <div style="margin-bottom: 20px;">
+                            <div style="margin-bottom: 24px;">
                                 <label style="display: block; font-weight: 700; font-size: 14px; margin-bottom: 6px; color: #2D3139;" for="order_notes">Ghi chú đơn hàng</label>
                                 <textarea id="order_notes" placeholder="Ghi chú về đơn hàng, chỉ dẫn địa điểm giao hàng..." rows="3" style="width: 100%; padding: 10px 14px; border: 1px solid #CBD5E0; border-radius: 6px; box-sizing: border-box; font-size: 14px; resize: vertical;"></textarea>
                             </div>
-
-                            <!-- Terms & Checkboxes -->
-                            <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 24px; font-size: 13px; color: #4A5568;">
-                                <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer;">
-                                    <input type="checkbox" id="check_all" onchange="toggleSelectAllTerms(this)" style="margin-top: 2px; width: 16px; height: 16px; flex-shrink: 0;" />
-                                    <strong style="color: #2D3139;">Chọn tất cả</strong>
-                                </label>
-
-                                <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer;">
-                                    <input type="checkbox" class="term-check" id="term_tos" required style="margin-top: 2px; width: 16px; height: 16px; flex-shrink: 0;" />
-                                    <span>Tôi đã đọc và đồng ý với <a href="<?php echo esc_url( home_url( '/terms-and-conditions/' ) ); ?>" style="color: #5A67D8; text-decoration: underline;">Điều khoản dịch vụ</a><span style="color: #5A67D8;">*</span></span>
-                                </label>
-
-                                <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer;">
-                                    <input type="checkbox" class="term-check" id="term_privacy" required style="margin-top: 2px; width: 16px; height: 16px; flex-shrink: 0;" />
-                                    <span>Tôi đã đọc và đồng ý với <a href="<?php echo esc_url( home_url( '/privacy-policy/' ) ); ?>" style="color: #5A67D8; text-decoration: underline;">Chính sách bảo mật</a><span style="color: #5A67D8;">*</span></span>
-                                </label>
-
-                                <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer;">
-                                    <input type="checkbox" id="term_newsletter" style="margin-top: 2px; width: 16px; height: 16px; flex-shrink: 0;" />
-                                    <span>Tôi đồng ý nhận các thông tin ưu đãi và khuyến mãi từ VASCO VN qua email.</span>
-                                </label>
-                            </div>
-
-                            <div style="font-size: 12px; color: #718096; margin-bottom: 24px;">* Thông tin bắt buộc</div>
 
                             <div style="text-align: right;">
                                 <button type="submit" style="background: #3B82F6; color: #ffffff; border: none; padding: 12px 36px; border-radius: 24px; font-weight: 700; font-size: 14px; letter-spacing: 0.5px; cursor: pointer; text-transform: uppercase; width: 100%; max-width: 220px;">TIẾP TỤC</button>
@@ -198,15 +173,17 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Step 2: Shipping Method -->
+                <!-- Step 2: Combined Shipping & Payment Method -->
                 <div class="checkout-step" id="step-2" style="background: #ffffff; border-radius: 12px; border: 1px solid #E2E8F0; padding: 20px 28px; margin-bottom: 20px;">
                     <div class="step-header" style="display: flex; align-items: center; gap: 14px; cursor: pointer;" onclick="goToStep(2)">
                         <span style="display: flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; border: 2px solid #A0AEC0; color: #718096; font-weight: 700; font-size: 14px; flex-shrink: 0;" id="num-2">2</span>
-                        <h2 style="font-size: 16px; font-weight: 700; color: #718096; letter-spacing: 0.5px; margin: 0; text-transform: uppercase;" id="title-2">2. PHƯƠNG THỨC VẬN CHUYỂN</h2>
+                        <h2 style="font-size: 16px; font-weight: 700; color: #718096; letter-spacing: 0.5px; margin: 0; text-transform: uppercase;" id="title-2">2. VẬN CHUYỂN & THANH TOÁN</h2>
                     </div>
 
                     <div id="step-2-body" style="display: none;">
-                        <label style="display: flex; align-items: center; justify-content: space-between; padding: 16px; border: 1px solid #3B82F6; background: #F0F5FF; border-radius: 8px; margin-bottom: 20px; cursor: pointer; flex-wrap: wrap; gap: 12px;">
+                        <!-- Shipping Method -->
+                        <h3 style="font-size: 14px; font-weight: 700; color: #2D3139; margin: 0 0 12px 0; text-transform: uppercase;">Phương thức vận chuyển</h3>
+                        <label style="display: flex; align-items: center; justify-content: space-between; padding: 16px; border: 1px solid #3B82F6; background: #F0F5FF; border-radius: 8px; margin-bottom: 24px; cursor: pointer; flex-wrap: wrap; gap: 12px;">
                             <div style="display: flex; align-items: center; gap: 12px;">
                                 <input type="radio" checked name="shipping_method" value="free_shipping" style="width: 18px; height: 18px; flex-shrink: 0;" />
                                 <div>
@@ -216,20 +193,9 @@ get_header();
                             </div>
                             <strong style="color: #10B981;">MIỄN PHÍ</strong>
                         </label>
-                        <div style="text-align: right;">
-                            <button type="button" onclick="goToStep(3)" style="background: #3B82F6; color: #ffffff; border: none; padding: 12px 36px; border-radius: 24px; font-weight: 700; font-size: 14px; cursor: pointer; text-transform: uppercase; width: 100%; max-width: 220px;">TIẾP TỤC</button>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Step 3: Payment Method -->
-                <div class="checkout-step" id="step-3" style="background: #ffffff; border-radius: 12px; border: 1px solid #E2E8F0; padding: 20px 28px; margin-bottom: 20px;">
-                    <div class="step-header" style="display: flex; align-items: center; gap: 14px; cursor: pointer;" onclick="goToStep(3)">
-                        <span style="display: flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; border: 2px solid #A0AEC0; color: #718096; font-weight: 700; font-size: 14px; flex-shrink: 0;" id="num-3">3</span>
-                        <h2 style="font-size: 16px; font-weight: 700; color: #718096; letter-spacing: 0.5px; margin: 0; text-transform: uppercase;" id="title-3">3. PHƯƠNG THỨC THANH TOÁN</h2>
-                    </div>
-
-                    <div id="step-3-body" style="display: none;">
+                        <!-- Payment Method -->
+                        <h3 style="font-size: 14px; font-weight: 700; color: #2D3139; margin: 0 0 12px 0; text-transform: uppercase;">Phương thức thanh toán</h3>
                         <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px;">
                             <label id="pay-cod-label" style="display: flex; align-items: center; gap: 12px; padding: 14px 18px; border: 2px solid #3B82F6; background: #F0F5FF; border-radius: 8px; cursor: pointer;">
                                 <input type="radio" name="payment_method" value="cod" id="pay_cod" checked style="width: 18px; height: 18px; flex-shrink: 0;" onchange="togglePayment()" />
@@ -437,7 +403,7 @@ get_header();
                 return;
             }
         }
-        for (var i = 1; i <= 3; i++) {
+        for (var i = 1; i <= 2; i++) {
             var stepEl  = document.getElementById('step-' + i);
             var bodyEl  = document.getElementById('step-' + i + '-body');
             var numEl   = document.getElementById('num-' + i);
@@ -469,10 +435,7 @@ get_header();
         if (bacsLabel) { bacsLabel.style.border = !isCod ? '2px solid #3B82F6' : '1px solid #CBD5E0'; bacsLabel.style.background = !isCod ? '#F0F5FF' : '#fff'; }
     };
 
-    // ── Terms ──
-    window.toggleSelectAllTerms = function(mainCheck) {
-        document.querySelectorAll('.term-check').forEach(function(c) { c.checked = mainCheck.checked; });
-    };
+
 
     // ── Place Order → WooCommerce ──
     window.placeOrder = function() {

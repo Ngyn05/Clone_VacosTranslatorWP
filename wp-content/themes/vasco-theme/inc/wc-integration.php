@@ -112,6 +112,9 @@ function vasco_wc_add_to_cart() {
 		wp_send_json_error( array( 'message' => 'Không tìm thấy ID sản phẩm tương ứng.' ) );
 	}
 
+	// Xóa toàn bộ sản phẩm cũ trong giỏ hàng trước khi mua sản phẩm mới (chỉ giữ 1 sản phẩm mua ngay)
+	WC()->cart->empty_cart();
+
 	$result = WC()->cart->add_to_cart( $product_id, $quantity, $variation_id );
 
 	if ( $result ) {
@@ -128,6 +131,17 @@ function vasco_wc_add_to_cart() {
 add_action( 'wp_ajax_vasco_wc_add_to_cart', 'vasco_wc_add_to_cart' );
 add_action( 'wp_ajax_nopriv_vasco_wc_add_to_cart', 'vasco_wc_add_to_cart' );
 add_action( 'wp_ajax_vasco_add_to_wc_cart', 'vasco_wc_add_to_cart' );
+
+/**
+ * Tự động chuyển hướng từ trang /cart/ sang trang /checkout/
+ */
+function vasco_redirect_cart_to_checkout() {
+	if ( function_exists( 'is_cart' ) && is_cart() ) {
+		wp_safe_redirect( wc_get_checkout_url(), 301 );
+		exit;
+	}
+}
+add_action( 'template_redirect', 'vasco_redirect_cart_to_checkout' );
 add_action( 'wp_ajax_nopriv_vasco_add_to_wc_cart', 'vasco_wc_add_to_cart' );
 
 // ─────────────────────────────────────────────
@@ -606,6 +620,96 @@ function vasco_display_product_badge( $product_id = 0 ) {
 	<?php
 }
 add_action( 'woocommerce_before_shop_loop_item_title', 'vasco_display_product_badge', 5 );
+
+/**
+ * AJAX handler cho Yêu cầu Tư vấn Nhanh qua SĐT (Gửi Email về Admin)
+ */
+function vasco_wc_save_consultation() {
+	$phone   = isset( $_POST['phone'] ) ? sanitize_text_field( $_POST['phone'] ) : '';
+	$product = isset( $_POST['product'] ) ? sanitize_text_field( $_POST['product'] ) : '';
+
+	// Ràng buộc kiểm tra Số điện thoại Việt Nam hợp lệ (10 số, bắt đầu bằng 0 hoặc +84)
+	$clean_phone = preg_replace( '/[^0-9]/', '', $phone );
+	if ( empty( $clean_phone ) || strlen( $clean_phone ) < 9 || strlen( $clean_phone ) > 12 ) {
+		wp_send_json_error( array( 'message' => 'Số điện thoại không hợp lệ.' ) );
+		return;
+	}
+
+	if ( ! empty( $phone ) ) {
+		// Múi giờ Việt Nam (UTC+7)
+		$vn_tz          = new DateTimeZone( 'Asia/Ho_Chi_Minh' );
+		$dt             = new DateTime( 'now', $vn_tz );
+		$time_formatted = $dt->format( 'd/m/Y H:i:s' );
+		$mysql_formatted = $dt->format( 'Y-m-d H:i:s' );
+
+		// 1. Lưu vào option quản trị để tra cứu
+		$consultations   = get_option( 'vasco_consultation_requests', array() );
+		$consultations[] = array(
+			'phone'   => $phone,
+			'product' => $product,
+			'time'    => $mysql_formatted,
+			'ip'      => $_SERVER['REMOTE_ADDR'] ?? '',
+		);
+		update_option( 'vasco_consultation_requests', array_slice( $consultations, -200 ) );
+
+		// 2. Gửi Email thông báo trực tiếp cho Admin
+		$admin_email = get_option( 'admin_email' );
+		if ( $admin_email ) {
+			$subject = '[TƯ VẤN KHÁCH HÀNG] SĐT yêu cầu gọi lại: ' . $phone;
+			
+			$headers = array(
+				'Content-Type: text/html; charset=UTF-8',
+				'From: Vasco VN <' . $admin_email . '>',
+			);
+
+			$message  = '<div style="font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Helvetica, Arial, sans-serif; background-color: #F8FAFC; padding: 30px 15px;">';
+			$message .= '  <div style="max-width: 560px; margin: 0 auto; background: #FFFFFF; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08); border: 1px solid #E2E8F0;">';
+			$message .= '    <div style="background: #FF6B00; height: 6px; width: 100%;"></div>';
+			$message .= '    <div style="background: #FFFFFF; padding: 25px 30px 18px 30px; text-align: center; border-bottom: 1px solid #F1F5F9;">';
+			$message .= '      <div style="font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 900; letter-spacing: 8px; color: #0F172A; text-transform: uppercase; margin: 0 0 4px 0; line-height: 1;">VASCO</div>';
+			$message .= '      <div style="font-size: 10px; text-transform: uppercase; letter-spacing: 2.5px; color: #64748B; font-weight: 700; margin-top: 4px;">Hệ Thống Quản Trị Yêu Cầu Tư Vấn</div>';
+			$message .= '    </div>';
+			$message .= '    <div style="background: linear-gradient(135deg, #FF6B00 0%, #E65100 100%); padding: 16px 24px; text-align: center; color: #FFFFFF;">';
+			$message .= '      <div style="font-size: 17px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px;">YÊU CẦU TƯ VẤN KHÁCH HÀNG MỚI</div>';
+			$message .= '    </div>';
+			$message .= '    <div style="padding: 28px 30px;">';
+			$message .= '      <p style="margin: 0 0 20px 0; font-size: 14.5px; color: #475569; line-height: 1.5;">Xin chào Quản trị viên,<br>Hệ thống vừa ghi nhận một số điện thoại đăng ký tư vấn từ website Vasco VN. Chi tiết thông tin bên dưới:</p>';
+			$message .= '      <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 20px; margin-bottom: 25px;">';
+			$message .= '        <table style="width: 100%; border-collapse: collapse; font-size: 14px; color: #334155;">';
+			$message .= '          <tr>';
+			$message .= '            <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; font-weight: 700; width: 140px; color: #64748B;">Số điện thoại:</td>';
+			$message .= '            <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; font-size: 20px; font-weight: 900; color: #0068FF;">';
+			$message .= '              <a href="tel:' . esc_attr( $phone ) . '" style="color: #0068FF; text-decoration: none;">' . esc_html( $phone ) . '</a>';
+			$message .= '            </td>';
+			$message .= '          </tr>';
+			$message .= '          <tr>';
+			$message .= '            <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; font-weight: 700; color: #64748B;">Sản phẩm:</td>';
+			$message .= '            <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; font-weight: 700; color: #0F172A;">' . esc_html( $product ) . '</td>';
+			$message .= '          </tr>';
+			$message .= '          <tr>';
+			$message .= '            <td style="padding: 10px 0; font-weight: 700; color: #64748B;">Thời gian gửi:</td>';
+			$message .= '            <td style="padding: 10px 0; font-weight: 600; color: #334155;">' . $time_formatted . ' (Giờ Việt Nam)</td>';
+			$message .= '          </tr>';
+			$message .= '        </table>';
+			$message .= '      </div>';
+			$message .= '      <div style="text-align: center; margin-bottom: 25px;">';
+			$message .= '        <a href="tel:' . esc_attr( $phone ) . '" style="background: linear-gradient(135deg, #0068FF 0%, #0052CC 100%); color: #ffffff; padding: 14px 36px; border-radius: 30px; text-decoration: none; font-weight: 800; font-size: 15px; display: inline-block; box-shadow: 0 4px 14px rgba(0, 104, 255, 0.35); text-transform: uppercase; letter-spacing: 0.5px;">GỌI CHO KHÁCH HÀNG NGAY</a>';
+			$message .= '      </div>';
+			$message .= '      <p style="margin: 0; font-size: 13px; color: #94A3B8; text-align: center; line-height: 1.5;">Vui lòng liên hệ lại cho khách hàng sớm nhất có thể để hỗ trợ tư vấn sản phẩm.</p>';
+			$message .= '    </div>';
+			$message .= '    <div style="background: #F1F5F9; border-top: 1px solid #E2E8F0; padding: 18px 24px; text-align: center; font-size: 12px; color: #64748B;">';
+			$message .= '      © ' . date( 'Y' ) . ' Vasco Vietnam. Email thông báo tự động từ Hệ thống Quản trị Vasco.';
+			$message .= '    </div>';
+			$message .= '  </div>';
+			$message .= '</div>';
+
+			wp_mail( $admin_email, $subject, $message, $headers );
+		}
+	}
+	wp_send_json_success( array( 'message' => 'Đã gửi yêu cầu tư vấn thành công!' ) );
+}
+add_action( 'wp_ajax_vasco_wc_save_consultation', 'vasco_wc_save_consultation' );
+add_action( 'wp_ajax_nopriv_vasco_wc_save_consultation', 'vasco_wc_save_consultation' );
 
 // ─────────────────────────────────────────────
 // 13. Tắt hình ảnh sản phẩm trong Email WooCommerce (Chỉ giữ lại Text)

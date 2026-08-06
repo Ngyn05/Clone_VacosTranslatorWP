@@ -143,7 +143,7 @@ return;
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
-<button aria-label="Thêm vào giỏ hàng: Dịch cuộc gọi điện thoại Top-Up" class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>Thêm vào giỏ hàng</button>
+<button aria-label="MUA NGAY: Dịch cuộc gọi điện thoại Top-Up" class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>MUA NGAY</button>
 <button aria-hidden="true" class="btn btn-secondary notify-modal-button font-semibold" data-id-attribute="1010" data-id-product="65" style="display:none">
 <img alt="Thông báo cho tôi" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/notify.svg" ); ?>"/>Thông báo cho tôi</button>
 </div>

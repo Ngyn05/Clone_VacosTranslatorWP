@@ -3466,3 +3466,291 @@ img:not([src]) {
         padding: 10px 12px !important;
     }
 }
+
+/* Hide side drawer notification, add to cart toasts, cross-sell popups, header cart icons and cart UI */
+#vasco-side-drawer,
+#vasco-drawer-overl/* ─────────────────────────────────────────────────────────────
+   ULTRA-BALANCED PRODUCT DETAIL COLUMN LAYOUT RESET
+   ───────────────────────────────────────────────────────────── */
+
+/* 1. Ensure the entire product action column stretches 100% */
+.product-header-section,
+.product-action-info-wrapper,
+.product-actions,
+#add-to-cart-or-refresh,
+.product-prices-section,
+.product-prices,
+.product-price,
+.current-price,
+.product-add-to-cart,
+.js-product-add-to-cart,
+.add,
+.vasco-buy-action-box {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box !important;
+    text-align: left !important;
+    float: none !important;
+    clear: both !important;
+}
+
+/* 2. Force single-column flex flow for product action wrapper */
+.product-action-info-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 16px !important;
+    margin-top: 16px !important;
+    margin-bottom: 24px !important;
+}
+
+/* 3. Warranty & Service Highlights Card - Full Width 100% */
+.product-extended-description {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)) !important;
+    align-items: center !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 12px !important;
+    background: #F8FAFC !important;
+    padding: 12px 18px !important;
+    gap: 12px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    margin-bottom: 16px !important;
+}
+
+.extended-description-icon {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    border-bottom: none !important;
+    padding: 4px 0 !important;
+}
+
+.extended-description-icon p {
+    font-size: 13px !important;
+    color: #334155 !important;
+    font-weight: 600 !important;
+    margin: 0 !important;
+    white-space: nowrap !important;
+}
+
+/* 4. Price & Trial Notice - Clean left alignment */
+.product-prices-section {
+    margin-bottom: 12px !important;
+}
+
+.current-price-value,
+.product-prices .product-price {
+    font-size: 32px !important;
+    font-weight: 800 !important;
+    color: #0F172A !important;
+    line-height: 1.1 !important;
+    margin: 0 0 6px 0 !important;
+}
+
+.vasco-trial-notice {
+    font-size: 14px !important;
+    color: #059669 !important;
+    font-weight: 700 !important;
+    margin-bottom: 18px !important;
+    margin-top: 4px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+/* 5. Two Buttons Row - Equal width 50/50 flex alignment */
+.vasco-buttons-row {
+    display: flex !important;
+    gap: 14px !important;
+    margin-bottom: 18px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    align-items: center !important;
+}
+
+.vasco-buttons-row .btn-tu-van-zalo {
+    flex: 1 !important;
+    width: 50% !important;
+    height: 50px !important;
+    background: linear-gradient(135deg, #0068FF 0%, #0052cc 100%) !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    padding: 0 16px !important;
+    border-radius: 25px !important;
+    font-weight: 800 !important;
+    font-size: 14.5px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.3px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    box-shadow: 0 4px 14px rgba(0, 104, 255, 0.3) !important;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    box-sizing: border-box !important;
+    border: none !important;
+    line-height: 1 !important;
+    margin: 0 !important;
+}
+
+.vasco-buttons-row .btn-tu-van-zalo:hover {
+    background: linear-gradient(135deg, #0056d6 0%, #003fa3 100%) !important;
+    box-shadow: 0 6px 20px rgba(0, 104, 255, 0.45) !important;
+    transform: translateY(-2px) !important;
+    color: #ffffff !important;
+}
+
+.vasco-buttons-row .btn-mua-ngay-orange,
+.product-add-to-cart .add-to-cart.btn-mua-ngay-orange {
+    flex: 1 !important;
+    width: 50% !important;
+    height: 50px !important;
+    background: linear-gradient(135deg, #FF6B00 0%, #E65100 100%) !important;
+    color: #ffffff !important;
+    border: none !important;
+    padding: 0 16px !important;
+    border-radius: 25px !important;
+    cursor: pointer !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 4px 16px rgba(255, 107, 0, 0.35) !important;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+}
+
+.vasco-buttons-row .btn-mua-ngay-orange:hover,
+.product-add-to-cart .add-to-cart.btn-mua-ngay-orange:hover {
+    background: linear-gradient(135deg, #FF5500 0%, #CC4000 100%) !important;
+    box-shadow: 0 6px 22px rgba(255, 107, 0, 0.5) !important;
+    transform: translateY(-2px) !important;
+    color: #ffffff !important;
+}
+
+.vasco-buttons-row .btn-mua-ngay-orange .txt-main {
+    font-weight: 900 !important;
+    font-size: 15.5px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    line-height: 1 !important;
+    color: #ffffff !important;
+}
+
+/* 6. Phone Consultation Card - Full Width 100% Card */
+.vasco-phone-consult-box {
+    background: linear-gradient(135deg, #FF6B00 0%, #E65100 100%) !important;
+    border-radius: 16px !important;
+    padding: 18px 22px !important;
+    color: #ffffff !important;
+    box-shadow: 0 8px 24px rgba(230, 81, 0, 0.25) !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.vasco-phone-consult-box .consult-header {
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+    margin-bottom: 14px !important;
+}
+
+.vasco-phone-consult-box .phone-icon-badge {
+    width: 42px !important;
+    height: 42px !important;
+    background: rgba(255, 255, 255, 0.22) !important;
+    backdrop-filter: blur(4px) !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0 !important;
+}
+
+.vasco-phone-consult-box .consult-text {
+    font-size: 14.5px !important;
+    font-weight: 600 !important;
+    line-height: 1.45 !important;
+    color: #ffffff !important;
+}
+
+.vasco-phone-consult-box .consult-text strong.hl-yellow {
+    color: #FFEB3B !important;
+    font-weight: 800 !important;
+}
+
+.vasco-phone-consult-box .consultation-quick-form {
+    display: flex !important;
+    align-items: center !important;
+    border-radius: 30px !important;
+    overflow: hidden !important;
+    background: #ffffff !important;
+    padding: 3px 3px 3px 18px !important;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.1) !important;
+    margin: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.vasco-phone-consult-box .consultation-quick-form input[type="tel"] {
+    flex: 1 !important;
+    border: none !important;
+    background: transparent !important;
+    padding: 8px 0 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #1E293B !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.vasco-phone-consult-box .consultation-quick-form input[type="tel"]::placeholder {
+    color: #94A3B8 !important;
+}
+
+.vasco-phone-consult-box .consultation-quick-form button,
+.vasco-phone-consult-box .consultation-quick-form button[type="button"],
+.vasco-phone-consult-box .consultation-quick-form button[type="submit"] {
+    background: #990000 !important;
+    background: linear-gradient(135deg, #990000 0%, #770000 100%) !important;
+    color: #ffffff !important;
+    border: none !important;
+    padding: 10px 24px !important;
+    border-radius: 24px !important;
+    font-weight: 800 !important;
+    font-size: 13.5px !important;
+    cursor: pointer !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    white-space: nowrap !important;
+    transition: all 0.2s ease !important;
+    box-shadow: 0 2px 8px rgba(153, 0, 0, 0.4) !important;
+    display: inline-block !important;
+    flex-shrink: 0 !important;
+}
+
+.vasco-phone-consult-box .consultation-quick-form button:hover,
+.vasco-phone-consult-box .consultation-quick-form button[type="button"]:hover,
+.vasco-phone-consult-box .consultation-quick-form button[type="submit"]:hover {
+    background: linear-gradient(135deg, #770000 0%, #550000 100%) !important;
+    transform: scale(1.02) !important;
+}
+
+@media (max-width: 576px) {
+    .product-extended-description {
+        grid-template-columns: 1fr !important;
+    }
+    .vasco-buttons-row {
+        flex-direction: column !important;
+    }
+    .vasco-buttons-row .btn-tu-van-zalo,
+    .vasco-buttons-row .btn-mua-ngay-orange {
+        width: 100% !important;
+    }
+}

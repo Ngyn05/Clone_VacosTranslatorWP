@@ -210,7 +210,7 @@ return;
 </section>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
-<button aria-label="Thêm vào giỏ hàng: Miếng dán kính cường lực cho Vasco Translator Q1" class="btn btn-primary btn-lg add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>Thêm vào giỏ hàng</button>
+<button aria-label="MUA NGAY: Miếng dán kính cường lực cho Vasco Translator Q1" class="btn btn-primary btn-lg add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>MUA NGAY</button>
 </div>
 <div aria-disabled="false" class="product-amazonpay-actions js-product-amazonpay-actions" data-erp-has-quantity="1">
 <div class="amazonPayButton amazonPayProductButton" data-color="Gold" data-design="" data-placement="Product" data-rendered="0" id="AmazonPayProduct40">

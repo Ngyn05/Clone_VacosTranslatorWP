@@ -267,8 +267,8 @@ return;
 </section>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
-<button aria-label="Thêm vào giỏ hàng: Vasco Translator E1" class="btn btn-primary btn-lg add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>
-						Thêm vào giỏ hàng
+<button aria-label="MUA NGAY: Vasco Translator E1" class="btn btn-primary btn-lg add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>
+						MUA NGAY
 					</button>
 </div>
 <div aria-disabled="false" class="product-amazonpay-actions js-product-amazonpay-actions" data-erp-has-quantity="1">
@@ -3449,8 +3449,8 @@ return;
 </div>
 <div class="product-add-to-cart js-product-add-to-cart">
 <div class="add">
-<button aria-label="Thêm vào giỏ hàng: Vasco Translator E1" class="btn btn-primary btn-lg add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>
-						Thêm vào giỏ hàng
+<button aria-label="MUA NGAY: Vasco Translator E1" class="btn btn-primary btn-lg add-to-cart" data-button-action="add-to-cart" type="submit"> <img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>
+						MUA NGAY
 					</button>
 </div>
 <div aria-disabled="false" class="product-amazonpay-actions js-product-amazonpay-actions" data-erp-has-quantity="1">
