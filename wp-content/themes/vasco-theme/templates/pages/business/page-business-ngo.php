@@ -47,7 +47,7 @@ get_header();
 </div>
 </div>
 <div class="doublebox-absolute" id="img-change">
-<img alt="Thu hẹp khoảng cách văn hóa và trao quyền cho cộng đồng người nhập cư" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>"/>
+<img alt="Thu hẹp khoảng cách văn hóa và trao quyền cho cộng đồng người nhập cư" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.webp" ); ?>"/>
 </div>
 </div>
 </section>
@@ -57,12 +57,12 @@ get_header();
 <h2 class="h2-notosans">Vasco Translator giúp nâng cao chất lượng dịch vụ của bạn như thế nào</h2>
 <div class="grid-section">
 <div class="card">
-<img alt="Đánh giá &amp; tiếp nhận liền mạch" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
+<img alt="Đánh giá &amp; tiếp nhận liền mạch" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.webp" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
 <h3 class="h2">Đánh giá &amp; tiếp nhận liền mạch</h3>
 <p>Thực hiện đánh giá nhu cầu toàn diện bằng bất kỳ ngôn ngữ nào. Tinh gọn quy trình tiếp nhận và đảm bảo ghi chép chính xác nhu cầu của khách hàng, từ nhà ở đến các yêu cầu y tế.</p>
 </div>
 <div class="card card-bottom">
-<img alt="Tiếp cận cộng đồng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hitchhiker-travel.png" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
+<img alt="Tiếp cận cộng đồng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hitchhiker-travel.webp" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
 <h3 class="h2">Tiếp cận cộng đồng</h3>
 <p>Xây dựng niềm tin với cộng đồng người nhập cư qua giao tiếp rõ ràng, trực tiếp. Hỗ trợ các sự kiện cộng đồng và buổi cung cấp thông tin mà không gặp rào cản ngôn ngữ.</p>
 </div>
@@ -115,7 +115,7 @@ get_header();
 </div>
 </div>
 <div class="doublebox-absolute" id="img-change">
-<img alt="Vasco Translator cho NGO" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>"/>
+<img alt="Vasco Translator cho NGO" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.webp" ); ?>"/>
 </div>
 </div>
 </section>
@@ -230,7 +230,7 @@ get_header();
 <section class="image-text-section type-gray">
 <div class="container image-text-section-wrapper">
 <div class="image-section">
-<img alt="Tác động thực sự của Vasco đối với dịch vụ hỗ trợ người nhập cư là gì?" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>"/>
+<img alt="Tác động thực sự của Vasco đối với dịch vụ hỗ trợ người nhập cư là gì?" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.webp" ); ?>"/>
 </div>
 <div class="text-section">
 <h2 class="h1">Tác động thực sự của Vasco đối với dịch vụ hỗ trợ người nhập cư là gì?</h2>

@@ -43,7 +43,7 @@ get_header();
 </div>
 </div>
 <div class="doublebox-absolute" id="img-change">
-<img alt="Trao quyền cho đội ngũ của bạn phục vụ khách hàng toàn cầu" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hospitality-customer-support.png" ); ?>"/>
+<img alt="Trao quyền cho đội ngũ của bạn phục vụ khách hàng toàn cầu" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hospitality-customer-support.webp" ); ?>"/>
 </div>
 </div>
 </section>

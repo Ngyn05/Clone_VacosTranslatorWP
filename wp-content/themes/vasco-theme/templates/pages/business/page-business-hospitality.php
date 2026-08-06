@@ -43,7 +43,7 @@ get_header();
 </div>
 </div>
 <div class="doublebox-absolute" id="img-change">
-<img alt="Trao quyền cho đội ngũ của bạn phục vụ khách hàng toàn cầu" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hospitality-customer-support.png" ); ?>"/>
+<img alt="Trao quyền cho đội ngũ của bạn phục vụ khách hàng toàn cầu" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hospitality-customer-support.webp" ); ?>"/>
 </div>
 </div>
 </section>
@@ -53,12 +53,12 @@ get_header();
 <h2 class="h2-notosans">Vasco Translator vượt qua các thách thức của ngành khách sạn đa ngôn ngữ như thế nào</h2>
 <div class="grid-section">
 <div class="card">
-<img alt="Tương tác liền mạch với khách hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hospitality-customer-support.png" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
+<img alt="Tương tác liền mạch với khách hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hospitality-customer-support.webp" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
 <h3 class="h2">Tương tác liền mạch với khách hàng</h3>
 <p>Thực hiện đánh giá nhu cầu kỹ lưỡng và tối ưu hóa quy trình tiếp nhận bằng bất kỳ ngôn ngữ nào. Đảm bảo ghi nhận chính xác các yêu cầu của khách, từ yêu cầu đặc biệt đến nhu cầu ăn uống.</p>
 </div>
 <div class="card card-bottom">
-<img alt="Nâng cao trải nghiệm khách hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hitchhiker-travel.png" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
+<img alt="Nâng cao trải nghiệm khách hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hitchhiker-travel.webp" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
 <h3 class="h2">Nâng cao trải nghiệm khách hàng</h3>
 <p>Xây dựng niềm tin và sự trung thành bằng cách giao tiếp rõ ràng với du khách quốc tế. Đảm bảo các tương tác dịch vụ liền mạch, từ nhận phòng đến hỗ trợ concierge.</p>
 </div>
@@ -107,7 +107,7 @@ get_header();
 </div>
 </div>
 <div class="doublebox-absolute" id="img-change">
-<img alt="Vasco Translator cho Khách sạn" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hospitality-customer-support.png" ); ?>"/>
+<img alt="Vasco Translator cho Khách sạn" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hospitality-customer-support.webp" ); ?>"/>
 </div>
 </div>
 </section>
@@ -213,7 +213,7 @@ get_header();
 <section class="image-text-section type-gray">
 <div class="container image-text-section-wrapper">
 <div class="image-section">
-<img alt="Tác động thực tế của Vasco Translator trong ngành khách sạn" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hospitality-customer-support.png" ); ?>"/>
+<img alt="Tác động thực tế của Vasco Translator trong ngành khách sạn" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hospitality-customer-support.webp" ); ?>"/>
 </div>
 <div class="text-section">
 <h2 class="h1">Tác động thực tế của Vasco Translator trong ngành khách sạn</h2>

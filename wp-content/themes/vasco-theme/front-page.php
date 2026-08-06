@@ -20,7 +20,7 @@ get_header();
 						<section class="page-home" id="content">
 							<section class="hero-section hero-clean-minimal">
 								<div class="hero-bg-video-wrapper">
-									<img class="hero-bg-motion-img" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hero_product_bg.png" ); ?>" alt="Vasco Product Background" />
+									<img class="hero-bg-motion-img" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hero_product_bg.webp" ); ?>" alt="Vasco Product Background" fetchpriority="high" decoding="async" />
 									<div class="hero-bg-overlay"></div>
 								</div>
 								<div class="number-one number-one-floating hero-badge-anim">
@@ -600,7 +600,7 @@ get_header();
 													<img alt="A smiling couple takes a selfie in an airport terminal; the woman holds travel documents and a passport, while sunlight streams through large windows behind them."
 														decoding="async" fetchpriority="low" height="129px"
 														loading="lazy"
-														width="300px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hitchhiker-travel.png" ); ?>" >
+														width="300px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hitchhiker-travel.webp" ); ?>" >
 												</picture>
 												<h3 class="h2" id="panel1" tabindex="0">Du Lịch Tự Tin</h3>
 												<p tabindex="0">
@@ -617,7 +617,7 @@ get_header();
 													<img alt="A manager holding a tablet smiles while addressing a group of five employees standing together in a restaurant or café setting. Everyone appears engaged and attentive."
 														decoding="async" fetchpriority="low" height="129px"
 														loading="lazy"
-														width="300px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>" >
+														width="300px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.webp" ); ?>" >
 												</picture>
 												<h3 class="h2" id="panel2" tabindex="0">Kết Nối Toàn Cầu</h3>
 												<p tabindex="0">
@@ -635,7 +635,7 @@ get_header();
 													<img alt="Two workers in orange safety uniforms and white hard hats have a discussion at an industrial facility, surrounded by pipes and machinery."
 														decoding="async" fetchpriority="low" height="129px"
 														loading="lazy"
-														width="300px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hospitality-customer-support.png" ); ?>" >
+														width="300px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hospitality-customer-support.webp" ); ?>" >
 												</picture>
 												<h3 class="h2" id="panel3" tabindex="0">Làm Việc Hiệu Quả</h3>
 												<p tabindex="0">
@@ -651,7 +651,7 @@ get_header();
 													<img alt="Two smiling paramedics in uniform stand outside, with an ambulance parked behind them."
 														decoding="async" fetchpriority="low" height="129px"
 														loading="lazy"
-														width="300px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/paramedics-healthcare.png" ); ?>" >
+														width="300px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/paramedics-healthcare.webp" ); ?>" >
 												</picture>
 												<h3 class="h2" id="panel4" tabindex="0">Ứng Phó Nhanh Chóng</h3>
 												<p tabindex="0">

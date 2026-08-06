@@ -33,7 +33,7 @@ get_header();
 </div>
 </div>
 <div class="doublebox-absolute">
-<img alt="Một phụ nữ đứng trên sân khấu hội nghị được chiếu sáng rực rỡ, đang thuyết trình trước khán giả. Cô mặc áo khoác blazer màu nâu, áo phông trắng, và đeo thẻ ID hội nghị. Cô cầm bộ điều khiển thuyết trình ở tay phải và ra dấu bằng tay trái. Phía sau cô, một màn hình lớn hiển thị mã QR nổi bật cho dịch vụ 'Vasco Assistance' và một hình minh họa nhỏ về điện thoại đang quét mã. Khán giả bị làm mờ ở phía trước." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>"/>
+<img alt="Một phụ nữ đứng trên sân khấu hội nghị được chiếu sáng rực rỡ, đang thuyết trình trước khán giả. Cô mặc áo khoác blazer màu nâu, áo phông trắng, và đeo thẻ ID hội nghị. Cô cầm bộ điều khiển thuyết trình ở tay phải và ra dấu bằng tay trái. Phía sau cô, một màn hình lớn hiển thị mã QR nổi bật cho dịch vụ 'Vasco Assistance' và một hình minh họa nhỏ về điện thoại đang quét mã. Khán giả bị làm mờ ở phía trước." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.webp" ); ?>"/>
 </div>
 </div>
 </section>

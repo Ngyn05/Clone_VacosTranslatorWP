@@ -47,7 +47,7 @@ get_header();
 </div>
 </div>
 <div class="doublebox-absolute" id="img-change">
-<img alt="Trao quyền cho đội ngũ quốc tế trong khu vực sản xuất" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>"/>
+<img alt="Trao quyền cho đội ngũ quốc tế trong khu vực sản xuất" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.webp" ); ?>"/>
 </div>
 </div>
 </section>
@@ -56,12 +56,12 @@ get_header();
 <h2 class="h2-notosans">Dịch thuật đột phá cho khu vực sản xuất của bạn</h2>
 <div class="grid-section">
 <div class="card">
-<img alt="Vận hành tinh gọn" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
+<img alt="Vận hành tinh gọn" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.webp" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
 <h3 class="h2">Vận hành tinh gọn</h3>
 <p>Xóa bỏ rào cản giao tiếp trong các giai đoạn sản xuất quan trọng—từ lập kế hoạch đến kiểm soát chất lượng. Đảm bảo hiểu rõ các quy trình an toàn, hướng dẫn vận hành và yêu cầu tuân thủ.</p>
 </div>
 <div class="card card-bottom">
-<img alt="Nâng cao an toàn và tuân thủ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hitchhiker-travel.png" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
+<img alt="Nâng cao an toàn và tuân thủ" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hitchhiker-travel.webp" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
 <h3 class="h2">Nâng cao an toàn và tuân thủ</h3>
 <p>Trang bị cho đội ngũ lao động di cư và quốc tế đa dạng của bạn công cụ đa ngôn ngữ. Giúp họ có khả năng báo cáo sự cố hiệu quả, hiểu quy trình an toàn và tuân theo các quy định.</p>
 </div>
@@ -114,7 +114,7 @@ get_header();
 </div>
 </div>
 <div class="doublebox-absolute" id="img-change">
-<img alt="Trao quyền cho tổ chức của bạn với Vasco Translator V4" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>"/>
+<img alt="Trao quyền cho tổ chức của bạn với Vasco Translator V4" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.webp" ); ?>"/>
 </div>
 </div>
 </section>
@@ -228,7 +228,7 @@ get_header();
 <section class="image-text-section type-gray">
 <div class="container image-text-section-wrapper">
 <div class="image-section">
-<img alt="Tinh gọn sản xuất và nâng cao an toàn với Vasco Translator V4" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>"/>
+<img alt="Tinh gọn sản xuất và nâng cao an toàn với Vasco Translator V4" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.webp" ); ?>"/>
 </div>
 <div class="text-section">
 <h2 class="h1">Tinh gọn sản xuất và nâng cao an toàn với Vasco Translator V4</h2>

@@ -43,7 +43,7 @@ get_header();
 </div>
 </div>
 <div class="doublebox-absolute" id="img-change">
-<img alt="Vasco Translator V4: Chúng tôi dịch, bạn bảo vệ" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>"/>
+<img alt="Vasco Translator V4: Chúng tôi dịch, bạn bảo vệ" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.webp" ); ?>"/>
 </div>
 </div>
 </section>
@@ -53,12 +53,12 @@ get_header();
 <h2 class="h2-notosans" id="how-vasco-section-heading">Vasco Translator xây dựng niềm tin giữa cảnh sát và cộng đồng địa phương như thế nào</h2>
 <div class="grid-section">
 <div class="card">
-<img alt="Hạ nhiệt tình huống ngay lập tức" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
+<img alt="Hạ nhiệt tình huống ngay lập tức" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.webp" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
 <h3 class="h2">Hạ nhiệt tình huống ngay lập tức</h3>
 <p>Với dịch vụ dịch thuật dành cho cảnh sát tức thì trong hơn 110 ngôn ngữ, cảnh sát có thể ngay lập tức giải thích lý do tiếp cận và thu thập thông tin quan trọng mà không cần chờ phiên dịch viên. Thao tác một chạm của thiết bị giúp giao tiếp nhanh chóng trong các tình huống áp lực cao, hỗ trợ hạ nhiệt tình huống trước khi trở nên nguy hiểm.</p>
 </div>
 <div class="card card-bottom">
-<img alt="Điều tra thành công" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hitchhiker-travel.png" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
+<img alt="Điều tra thành công" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hitchhiker-travel.webp" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
 <h3 class="h2">Điều tra thành công</h3>
 <p>Các cuộc điều tra phức tạp yêu cầu giao tiếp chi tiết và chính xác. Tính năng dịch giọng nói của Vasco Translator ghi lại các lời khai của nhân chứng và nạn nhân với độ chính xác vượt trội, loại bỏ nguy cơ các chi tiết quan trọng bị mất hoặc hiểu sai.</p>
 </div>
@@ -121,7 +121,7 @@ get_header();
 </div>
 </div>
 <div class="doublebox-absolute" id="img-change">
-<img alt="Vasco Translator cho Cảnh sát" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>"/>
+<img alt="Vasco Translator cho Cảnh sát" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.webp" ); ?>"/>
 </div>
 </div>
 </section>
@@ -227,7 +227,7 @@ get_header();
 <section class="image-text-section type-gray">
 <div class="container image-text-section-wrapper">
 <div class="image-section">
-<img alt="Nâng cao an toàn cho cảnh sát và quan hệ với cộng đồng với Vasco Translator V4" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>"/>
+<img alt="Nâng cao an toàn cho cảnh sát và quan hệ với cộng đồng với Vasco Translator V4" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.webp" ); ?>"/>
 </div>
 <div class="text-section">
 <h2 class="h1">Nâng cao an toàn cho cảnh sát và quan hệ với cộng đồng với Vasco Translator V4</h2>

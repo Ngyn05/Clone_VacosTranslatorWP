@@ -51,7 +51,7 @@ get_header();
 </div>
 </div>
 <div class="doublebox-absolute">
-<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/paramedics-healthcare.png" ); ?>"/>
+<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/paramedics-healthcare.webp" ); ?>"/>
 </div>
 </div>
 <div class="doublebox right" style="background-color: #efece8; color: #efece8;">

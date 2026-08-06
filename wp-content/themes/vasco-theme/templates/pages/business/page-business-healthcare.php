@@ -32,7 +32,7 @@ get_header();
 </div>
 </div>
 <div class="doublebox-absolute" id="img-change">
-<img alt="Chăm sóc y tế với Vasco Translator" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/paramedics-healthcare.png" ); ?>"/>
+<img alt="Chăm sóc y tế với Vasco Translator" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/paramedics-healthcare.webp" ); ?>"/>
 </div>
 </div>
 </section>
@@ -42,7 +42,7 @@ get_header();
 <h2 class="h2-notosans">Các tính năng của Vasco Translator V4 hỗ trợ NHÀ CUNG CẤP DỊCH VỤ Y TẾ</h2>
 <div class="youtube-section">
 <div class="video-holder" style="width:100%;max-width:800px;margin:0 auto 20px auto;border-radius:12px;overflow:hidden;">
-<img alt="Minh họa cách sử dụng máy dịch Vasco" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/paramedics-healthcare.png" ); ?>" style="width:100%;height:auto;display:block;border-radius:12px;"/>
+<img alt="Minh họa cách sử dụng máy dịch Vasco" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/paramedics-healthcare.webp" ); ?>" style="width:100%;height:auto;display:block;border-radius:12px;"/>
 </div>
 <div class="flex-small-text">
 <p>112 ngôn ngữ trong tầm tay khi việc chăm sóc bệnh nhân là điều quan trọng nhất.</p>
@@ -55,7 +55,7 @@ get_header();
 <h2 class="h2-notosans">VASCO TRANSLATOR CÓ THỂ HỖ TRỢ CÁC CHUYÊN GIA Y TẾ NHƯ THẾ NÀO</h2>
 <div class="grid-section">
 <div class="card">
-<img alt="Giao tiếp với bệnh nhân" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/paramedics-healthcare.png" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
+<img alt="Giao tiếp với bệnh nhân" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/paramedics-healthcare.webp" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
 <h3 class="h2">Giao tiếp với bệnh nhân</h3>
 <p>Giao tiếp rõ ràng và chẩn đoán bệnh nhân hiệu quả hơn, bất kể ngôn ngữ họ sử dụng. Bản dịch có thể được in dưới dạng PDF để lưu vào hồ sơ bệnh nhân.</p>
 </div>
@@ -65,7 +65,7 @@ get_header();
 <p>Bệnh nhân và nhà cung cấp dịch vụ y tế nhanh chóng hiểu nhau nhờ các bản dịch chính xác trong 112 ngôn ngữ. Camera tích hợp giúp việc này trở nên nhanh chóng và dễ dàng.</p>
 </div>
 <div class="card">
-<img alt="Hợp tác ý nghĩa" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
+<img alt="Hợp tác ý nghĩa" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.webp" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
 <h3 class="h2">Hợp tác ý nghĩa</h3>
 <p>Tận dụng tối đa các hội nghị và tạo thêm nhiều cơ hội kết nối bằng cách xóa bỏ khoảng cách ngôn ngữ. Các hợp tác toàn cầu trở nên liền mạch hơn.</p>
 </div>

@@ -33,7 +33,7 @@ get_header();
 </div>
 </div>
 <div class="doublebox-absolute" id="img-change">
-<img alt="Một giáo viên đang giảng bài trong lớp học, với các học sinh tò mò lắng nghe chăm chú." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>"/>
+<img alt="Một giáo viên đang giảng bài trong lớp học, với các học sinh tò mò lắng nghe chăm chú." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.webp" ); ?>"/>
 </div>
 </div>
 </section>
@@ -48,7 +48,7 @@ get_header();
 <p>Việc học trở nên công bằng cho mọi học sinh khi rào cản ngôn ngữ không còn là trở ngại.</p>
 </div>
 <div class="card card-bottom">
-<img alt="Giao tiếp liền mạch" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
+<img alt="Giao tiếp liền mạch" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.webp" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
 <h3 class="h2">Giao tiếp liền mạch</h3>
 <p>Giáo viên, học sinh và phụ huynh có thể giao tiếp hiệu quả về tiến độ học tập trong lớp.</p>
 </div>
@@ -63,7 +63,7 @@ get_header();
 <section class="doubleboxes">
 <div class="doublebox right" style="background-color: #D9ECEF; color: #D9ECEF;">
 <div class="doublebox-absolute">
-<img alt="Vasco Translator tại Quinnipiac University" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.png" ); ?>"/>
+<img alt="Vasco Translator tại Quinnipiac University" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.webp" ); ?>"/>
 </div>
 <div class="container">
 <div class="doublebox-content">
