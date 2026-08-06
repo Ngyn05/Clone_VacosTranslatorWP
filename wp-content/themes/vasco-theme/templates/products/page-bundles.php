@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Clean Page page-bundles.php
  *
@@ -75,7 +75,7 @@ return;
 </div>
 </div>
 <div id="js-product-list">
-<div class="products products-translators">
+<div class="products products-grid-listing">
 <div class="listing-translators js-product product">
 <article aria-labelledby="vasco-translator-q1-phantom-black-+-e1-name" class="container product-miniature js-product-miniature" data-has-quantity="1" data-id-product="43" data-id-product-attribute="0" tabindex="0">
 <div class="thumbnail-container">
