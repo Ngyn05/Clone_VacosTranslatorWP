@@ -252,13 +252,13 @@ function vasco_theme_render_catalog_page( $args = array() ) {
 		$products = vasco_theme_get_wc_products_for_category( '', -1 );
 	}
 
-	$is_grid_cat = in_array( $args['active_tab'], array( 'all-products', 'accessories', 'packages' ), true );
+	$is_grid_cat = in_array( $args['active_tab'], array( 'all-products', 'accessories', 'packages', 'bundles' ), true );
 	$wrapper_class = $is_grid_cat ? 'products products-grid-listing' : 'products products-horizontal-listing';
 	$card_style    = $is_grid_cat ? 'grid' : 'horizontal';
 
 	echo '<section class="relative" id="wrapper"><aside id="notifications"><div class="container"></div></aside><div><div class="breadcrumb-container"><div class="container"><nav aria-label="Đường dẫn điều hướng" class="breadcrumb" data-depth="2"><ol><li><a href="' . esc_url( home_url( '/' ) ) . '"><span class="breadcrumb-link">Trang chủ</span></a><span class="breadcrumb-divider">&gt;</span></li><li><span aria-current="page" class="breadcrumb-current">' . esc_html( $args['heading'] ) . '</span></li></ol></nav></div></div><div class="js-content-wrapper" id="content-wrapper"><section id="main">';
 	vasco_theme_render_catalog_tabs( $args['active_tab'] );
-	echo '<section class="products-catalog-wrapper" id="products"><div class="number-one"><img alt="số một" class="nr-one" src="' . esc_url( VASCO_THEME_URI . '/assets/img/icons/no1-badge.svg' ) . '"/></div><div class="category-header"><div class="container"><h1 class="h1">' . esc_html( $args['heading'] ) . '</h1></div></div><hr/>';
+	echo '<section class="products-catalog-wrapper" id="products"><div class="category-header"><div class="container"><h1 class="h1">' . esc_html( $args['heading'] ) . '</h1></div></div><hr/>';
 	if ( ! empty( $args['show_compare'] ) ) {
 		echo '<div class="container"><div class="comparison-page-link"><a class="comparison-page-link-anchor view-compare-button" href="' . esc_url( home_url( '/comparison-engine/' ) ) . '"><svg fill="none" height="20" viewbox="0 0 12 20" width="12" xmlns="http://www.w3.org/2000/svg"><path d="M2 18L10 10L2 2" stroke="#4966FF" stroke-linecap="square" stroke-width="2"></path></svg><p>So sánh các máy dịch</p></a></div></div>';
 	}

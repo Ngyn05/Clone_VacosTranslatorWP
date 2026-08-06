@@ -214,8 +214,8 @@ p.stars {
 	.product-grid-container,
 	.products-grid-wrapper,
 	.product-list-section {
-		grid-template-columns: 1fr !important;
-		gap: 16px !important;
+		grid-template-columns: repeat(2, 1fr) !important;
+		gap: 32px 8px !important;
 	}
 	.vasco-spec-name,
 	.vasco-spec-value {
