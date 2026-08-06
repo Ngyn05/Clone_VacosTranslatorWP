@@ -37,12 +37,75 @@ body.admin-bar #header {
 }
 
 /* =============================================
-   PREVENT HORIZONTAL OVERFLOW & SCOPE GLOBAL NO.1 BADGE TO HOMEPAGE ONLY
+   PREVENT HORIZONTAL OVERFLOW & TOP ANNOUNCEMENT BANNER RESPONSIVE
    ============================================= */
 html, body {
     overflow-x: hidden !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
+}
+
+#banners-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    background: #ff8a5c !important;
+}
+
+#banners-wrapper a {
+    text-decoration: none !important;
+    color: #1e293b !important;
+    display: block !important;
+}
+
+.banner.promotion-theme-orange {
+    background: #ff8a5c !important;
+    padding: 8px 12px !important;
+    text-align: center !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.banner-wrapper {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+}
+
+.banner-copy p,
+.marquee p {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    color: #1e293b !important;
+    text-align: center !important;
+    line-height: 1.4 !important;
+}
+
+@media (max-width: 767px) {
+    .banner.promotion-theme-orange {
+        padding: 6px 12px !important;
+    }
+
+    .banner-copy p,
+    .marquee p {
+        font-size: 11.5px !important;
+        line-height: 1.35 !important;
+        white-space: normal !important;
+        word-break: break-word !important;
+        text-align: center !important;
+    }
+
+    .marquee {
+        display: none !important;
+    }
+
+    .banner-copy {
+        display: block !important;
+        width: 100% !important;
+    }
 }
 
 #wrapper, main, header, footer, .container, .products-catalog-wrapper, .products-grid-listing {
@@ -1856,6 +1919,7 @@ article.product-horizontal-card {
         text-align: center !important;
         display: -webkit-box !important;
         -webkit-line-clamp: 2 !important;
+        line-clamp: 2 !important;
         -webkit-box-orient: vertical !important;
         overflow: hidden !important;
         height: 30px !important;
