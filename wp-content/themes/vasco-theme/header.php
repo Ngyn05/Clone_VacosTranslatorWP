@@ -259,11 +259,7 @@
 															Về Chúng Tôi
 														</a>
 													</li>
-													<li>
-														<a href="<?php echo esc_url( home_url( "/newsroom/" ) ); ?>" role="menuitem">
-															Tin tức
-														</a>
-													</li>
+
 													<li>
 														<a href="<?php echo esc_url( home_url( "/initiatives/" ) ); ?>" role="menuitem">
 															Tác động xã hội
@@ -1514,11 +1510,7 @@
 																Về Chúng Tôi
 															</a>
 														</li>
-														<li>
-															<a href="<?php echo esc_url( home_url( "/newsroom/" ) ); ?>" role="menuitem">
-																Tin tức
-															</a>
-														</li>
+
 														<li>
 															<a href="<?php echo esc_url( home_url( "/initiatives/" ) ); ?>" role="menuitem">
 																Tác động xã hội

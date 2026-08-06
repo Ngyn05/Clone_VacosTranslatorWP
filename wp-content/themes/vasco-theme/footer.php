@@ -470,11 +470,7 @@
 												Truyền thông nói về chúng tôi
 											</a>
 										</li>
-										<li>
-											<a class="footer-info" href="<?php echo esc_url( home_url( "/newsroom/" ) ); ?>" title="Newsroom">
-												Tin tức
-											</a>
-										</li>
+
 										<li>
 											<a class="footer-info" href="<?php echo esc_url( home_url( "/privacy-policy/" ) ); ?>" rel="nofollow"
 												title="Privacy policy">

@@ -2810,11 +2810,11 @@ img:not([src]) {
     overflow: hidden;
 }
 
-/* Mỗi row: text 1 bên, ảnh 1 bên */
+/* Mỗi row: text 1 bên, ảnh 1 bên, căn giữa dọc */
 .si-item {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
+    align-items: center;
     min-height: 380px;
 }
 
@@ -2868,14 +2868,21 @@ img:not([src]) {
     width: 45%;
     overflow: hidden;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
-.si-image img {
+.si-image img,
+.si-image video {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    max-height: 420px;
+    object-fit: contain;
     object-position: center;
     display: block;
+    border-radius: 16px;
 }
 
 /* Đường kẻ ngăn cách giữa 3 khối */
@@ -2885,8 +2892,15 @@ img:not([src]) {
     border-top: 1px solid #e8e8e8;
 }
 
-/* Responsive tablet */
+/* Responsive Tablet & Mobile */
 @media (max-width: 991px) {
+    .socialimpact-card-wrapper {
+        padding: 40px 16px;
+    }
+
+    .socialimpact-inner-card {
+        border-radius: 20px;
+    }
 
     .si-item,
     .si-item--right {
@@ -2894,24 +2908,117 @@ img:not([src]) {
         min-height: auto;
     }
 
+    /* Ảnh hiển thị đầy đủ, không bị cắt xén trên di động */
     .si-image {
         flex: none;
         width: 100%;
-        height: 260px;
+        height: auto;
+        min-height: 200px;
+        order: -1;
+        padding: 16px 16px 8px 16px;
     }
 
-    .si-text {
-        padding: 32px 24px;
-    }
-}
-
-@media (max-width: 575px) {
-    .socialimpact-card-wrapper {
-        padding: 30px 12px;
+    .si-image img,
+    .si-image video {
+        width: 100%;
+        height: auto;
+        max-height: 320px;
+        object-fit: contain;
+        border-radius: 14px;
     }
 
     .si-text {
         padding: 24px 20px;
+        width: 100%;
+    }
+    
+    .si-text .h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .socialimpact-top {
+        padding: 20px 12px 10px;
+        text-align: center;
+    }
+
+    .socialimpact-top .h1 {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+
+    .socialimpact-subtitle {
+        font-size: 0.92rem;
+        line-height: 1.6;
+    }
+
+    .socialimpact-card-wrapper {
+        padding: 20px 10px;
+    }
+
+    .socialimpact-inner-card {
+        border-radius: 16px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    }
+
+    .si-image {
+        height: auto;
+        min-height: 180px;
+        padding: 12px 12px 4px 12px;
+    }
+
+    .si-image img,
+    .si-image video {
+        width: 100%;
+        height: auto;
+        max-height: 260px;
+        object-fit: contain;
+        border-radius: 12px;
+    }
+
+    .si-text {
+        padding: 20px 16px;
+    }
+
+    .si-text .h2 {
+        font-size: 1.2rem;
+        line-height: 1.35;
+        margin-bottom: 6px;
+    }
+
+    .si-text .box-subtitle {
+        font-size: 0.88rem;
+        margin-bottom: 10px;
+        line-height: 1.4;
+    }
+
+    .si-text p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+
+    .si-text ul {
+        padding-left: 18px;
+        margin-bottom: 16px;
+    }
+
+    .si-text ul li {
+        font-size: 0.88rem;
+        line-height: 1.5;
+        margin-bottom: 6px;
+    }
+
+    /* Nút CTA dàn đều full-width trên di động */
+    .si-text .btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 12px 20px;
+        font-size: 0.95rem;
     }
 }
 
@@ -4386,4 +4493,202 @@ img, video, iframe, embed, object, picture {
         height: 100% !important;
     }
 }
+
+/* --------------------------------------------------------------------------
+   14. EVENTS SLIDER (Từ quá khứ đến tương lai) — RESPONSIVE STYLES
+   -------------------------------------------------------------------------- */
+.events-slider {
+    padding: 60px 0;
+    background: #e9f3f5;
+    overflow: hidden;
+}
+
+.events-slider .text-container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 36px;
+    padding: 0 16px;
+}
+
+.events-slider .text-container h2.h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #1e293b;
+}
+
+.events-slider .text-container p {
+    color: #475569;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.events-slider .event-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px 16px 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-events {
+    width: auto;
+    max-width: 100%;
+    overflow: visible !important;
+}
+
+.swiper-events .swiper-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    align-items: stretch;
+}
+
+.swiper-events .swiper-slide {
+    flex: 0 0 280px !important;
+    width: 280px !important;
+    min-height: 380px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 24px 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #1e293b;
+}
+
+.swiper-events .swiper-slide:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-events .swiper-slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+    transition: transform 0.4s ease;
+}
+
+.swiper-events .swiper-slide:hover img {
+    transform: scale(1.05);
+}
+
+.swiper-events .swiper-slide::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 20%, rgba(15, 23, 42, 0.88) 80%);
+    z-index: 2;
+}
+
+.swiper-events .event-text {
+    position: relative;
+    z-index: 3;
+    color: #ffffff;
+    text-align: left;
+}
+
+.swiper-events .event-text p:first-child {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.35;
+    margin-bottom: 8px;
+}
+
+.swiper-events .event-text p:last-child {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.88);
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+    .events-slider .event-wrapper {
+        justify-content: flex-start;
+    }
+
+    .swiper-events .swiper-wrapper {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 767px) {
+    .events-slider {
+        padding: 36px 0;
+    }
+
+    .events-slider .text-container h2.h1 {
+        font-size: 1.6rem;
+    }
+
+    .events-slider .text-container p {
+        font-size: 0.92rem;
+    }
+
+    .swiper-events .swiper-slide {
+        flex: 0 0 240px !important;
+        width: 240px !important;
+        min-height: 340px;
+        padding: 18px 16px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   15. MEGAMENU CARDS — Fit khít ảnh 100% không viền/khoảng trắng
+   -------------------------------------------------------------------------- */
+.megamenu-column-image {
+    overflow: hidden !important;
+    border-radius: 20px !important;
+    background: #0d0d0d !important;
+}
+
+.megamenu-column-image a {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    width: 100% !important;
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    text-decoration: none !important;
+    background: #0d0d0d !important;
+}
+
+.megamenu-column-image .img-wrapper {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    line-height: 0 !important;
+    display: block !important;
+}
+
+.megamenu-column-image img,
+.desktop-nav .megamenu-column-image img {
+    width: 100% !important;
+    height: 180px !important;
+    max-height: 200px !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
 
