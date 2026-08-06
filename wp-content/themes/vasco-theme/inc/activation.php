@@ -90,6 +90,13 @@ function vasco_theme_sync_pages( $clean_old = false ) {
 				}
 			} else {
 				$created_ids[ $slug ] = $page_check_id;
+				// Luôn cập nhật tiêu đề tiếng Việt chuẩn vào Database
+				wp_update_post(
+					array(
+						'ID'         => $page_check_id,
+						'post_title' => $title,
+					)
+				);
 				$template = ! empty( $page['template'] ) ? $page['template'] : 'page-' . $slug . '.php';
 				if ( file_exists( get_template_directory() . '/' . $template ) ) {
 					update_post_meta( $page_check_id, '_wp_page_template', $template );
@@ -151,14 +158,13 @@ function vasco_theme_sync_pages( $clean_old = false ) {
 					}
 				}
 			} else {
-				if ( ! empty( $parent_id ) ) {
-					wp_update_post(
-						array(
-							'ID'          => $child_check_id,
-							'post_parent' => $parent_id,
-						)
-					);
-				}
+				wp_update_post(
+					array(
+						'ID'          => $child_check_id,
+						'post_title'  => $title,
+						'post_parent' => $parent_id ? $parent_id : 0,
+					)
+				);
 				$template = ! empty( $page['template'] ) ? $page['template'] : 'page-' . $slug . '.php';
 				if ( file_exists( get_template_directory() . '/' . $template ) ) {
 					update_post_meta( $child_check_id, '_wp_page_template', $template );

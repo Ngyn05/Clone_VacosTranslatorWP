@@ -104,3 +104,54 @@ function vasco_theme_custom_page_template( $template ) {
 	return $template;
 }
 add_filter( 'page_template', 'vasco_theme_custom_page_template' );
+
+/**
+ * Tự động đồng bộ Tiêu đề trang (Document Title / Browser Tab Title) 100% Tiếng Việt
+ */
+function vasco_theme_document_title_parts( $title_parts ) {
+	$vietnamese_map = array(
+		'bundles'                                   => 'Bộ Sản Phẩm',
+		'packages'                                  => 'Gói Sản Phẩm',
+		'accessories'                               => 'Phụ Kiện',
+		'translators'                               => 'Máy Dịch',
+		'all-products'                              => 'Tất Cả Sản Phẩm',
+		'comparison-engine'                         => 'So Sánh Máy Dịch',
+		'call-translator'                           => 'Dịch Cuộc Gọi',
+		'newsroom'                                  => 'Phòng Báo Chí & Tin Tức',
+		'tin-tuc'                                   => 'Bài Viết Tin Tức',
+		'privacy-policy'                            => 'Chính Sách Bảo Mật',
+		'terms-and-conditions'                      => 'Điều Khoản Sử Dụng',
+		'returns'                                   => 'Chính Sách Đổi Trả',
+		'shipping'                                  => 'Chính Sách Vận Chuyển',
+		'checkout'                                  => 'Thanh Toán',
+		'cart'                                      => 'Giỏ Hàng',
+		'sitemap'                                   => 'Sơ Đồ Trang',
+		'downloads'                                 => 'Tải Về',
+		'coverage-map'                              => 'Bản Đồ Phủ Sóng',
+		'business-hospitality'                      => 'Khách Sạn & Du Lịch',
+		'business-education'                        => 'Giáo Dục',
+		'business-healthcare'                       => 'Y Tế',
+		'business-law-enforcement'                  => 'Bảo Vệ & Pháp Luật',
+		'business-local-government'                 => 'Chính Quyền Phường Xã',
+		'business-manufacturing'                    => 'Sản Xuất',
+		'business-ngo'                              => 'Tổ Chức Phi Lợi Nhuận',
+		'business-vasco-audience'                   => 'Đối Tượng Sử Dụng',
+		'initiatives'                               => 'Tác Động Xã Hội',
+		'features'                                  => 'Tính Năng',
+		'how-it-works'                              => 'Cách Hoạt Động',
+		'meet-vasco'                                => 'Giới Thiệu Vasco',
+		'about-us'                                  => 'Về Chúng Tôi',
+		'contact'                                   => 'Liên Hệ',
+		'media-about-us'                            => 'Truyền Thông',
+	);
+
+	if ( is_page() ) {
+		$page = get_queried_object();
+		if ( $page && isset( $page->post_name ) && isset( $vietnamese_map[ $page->post_name ] ) ) {
+			$title_parts['title'] = $vietnamese_map[ $page->post_name ];
+		}
+	}
+
+	return $title_parts;
+}
+add_filter( 'document_title_parts', 'vasco_theme_document_title_parts', 999 );
