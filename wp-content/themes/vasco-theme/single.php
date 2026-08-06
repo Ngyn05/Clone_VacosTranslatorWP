@@ -5,6 +5,20 @@
  * @package VascoTheme
  */
 
+global $post;
+$slug = $post ? $post->post_name : '';
+
+$article_custom_template        = VASCO_THEME_DIR . '/templates/articles/page-articles-' . $slug . '.php';
+$article_custom_template_direct = VASCO_THEME_DIR . '/templates/articles/page-' . $slug . '.php';
+
+if ( file_exists( $article_custom_template ) ) {
+	include $article_custom_template;
+	return;
+} elseif ( file_exists( $article_custom_template_direct ) ) {
+	include $article_custom_template_direct;
+	return;
+}
+
 get_header();
 ?>
 

@@ -31,7 +31,7 @@ get_header();
 <article class="et_pb_post clearfix et_pb_blog_item_0_0 post-24649 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-k-ruszkowski" id="post-24649">
 <div class="et_pb_image_container"><a class="entry-featured-image-url" href="./vasco-expert-how-hotels-overcome-world-cup-language-barriers"><picture class="" decoding="async" fetchpriority="high">
 <source sizes="(max-width:479px) 479px, 100vw" type="image/avif"/>
-<img alt="Chuyên gia Vasco: Cách các khách sạn vượt qua rào cản ngôn ngữ trong World Cup" decoding="async" fetchpriority="high" height="250" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/06/Aleksanderalski-crop-400x250.jpeg" ); ?>" width="400"/>
+<img alt="Chuyên gia Vasco: Cách các khách sạn vượt qua rào cản ngôn ngữ trong World Cup" decoding="async" fetchpriority="high" height="250" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2026/06/Aleksanderalski-crop-400x250.jpeg" ); ?>" width="400"/>
 </picture>
 </a></div>
 <h2 class="entry-title"><a href="./vasco-expert-how-hotels-overcome-world-cup-language-barriers">Chuyên gia Vasco: Cách các khách sạn vượt qua rào cản ngôn ngữ trong World Cup</a></h2>
@@ -41,7 +41,7 @@ get_header();
 <article class="et_pb_post clearfix et_pb_blog_item_0_1 post-4221 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-s-przepiora" id="post-4221">
 <div class="et_pb_image_container"><a class="entry-featured-image-url" href="./red-dot-2025"><picture class="" decoding="async">
 <source sizes="(max-width:479px) 479px, 100vw" type="image/avif"/>
-<img alt="Vasco được trao giải thưởng cao nhất tại Red Dot 2025" data-lazy-sizes="(max-width:479px) 479px, 100vw" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2025/09/Red_Dot_Vasco-400x250.png" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2025/09/Red_Dot_Vasco.png 479w, ./articles/wp-content/uploads/2025/09/Red_Dot_Vasco-400x250.png 480w" decoding="async" height="250" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20250'%3E%3C/svg%3E" width="400"/><noscript><img alt="Vasco được trao giải thưởng cao nhất tại Red Dot 2025" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2025/09/Red_Dot_Vasco-400x250.png" ); ?>" width="400"/></noscript>
+<img alt="Vasco được trao giải thưởng cao nhất tại Red Dot 2025" data-lazy-sizes="(max-width:479px) 479px, 100vw" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2025/09/Red_Dot_Vasco-400x250.png" ); ?>" data-lazy-srcset="./articles/uploads/2025/09/Red_Dot_Vasco.png 479w, ./articles/uploads/2025/09/Red_Dot_Vasco-400x250.png 480w" decoding="async" height="250" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20250'%3E%3C/svg%3E" width="400"/><noscript><img alt="Vasco được trao giải thưởng cao nhất tại Red Dot 2025" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2025/09/Red_Dot_Vasco-400x250.png" ); ?>" width="400"/></noscript>
 </picture>
 </a></div>
 <h2 class="entry-title"><a href="./red-dot-2025">Vasco được trao giải thưởng cao nhất tại Red Dot 2025</a></h2>
@@ -51,7 +51,7 @@ get_header();
 <article class="et_pb_post clearfix et_pb_blog_item_0_2 post-3827 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-m-baros" id="post-3827">
 <div class="et_pb_image_container"><a class="entry-featured-image-url" href="./vasco-financial-times-2025"><picture class="" decoding="async">
 <source sizes="(max-width:479px) 479px, 100vw" type="image/avif"/>
-<img alt="Vasco lần thứ hai có mặt trong danh sách FT 1000!" data-lazy-sizes="(max-width:479px) 479px, 100vw" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2025/03/vasco_translator_m3v4_1-400x250.jpg" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2025/03/vasco_translator_m3v4_1.jpg 479w, ./articles/wp-content/uploads/2025/03/vasco_translator_m3v4_1-400x250.jpg 480w" decoding="async" height="250" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20250'%3E%3C/svg%3E" width="400"/><noscript><img alt="Vasco lần thứ hai có mặt trong danh sách FT 1000!" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2025/03/vasco_translator_m3v4_1-400x250.jpg" ); ?>" width="400"/></noscript>
+<img alt="Vasco lần thứ hai có mặt trong danh sách FT 1000!" data-lazy-sizes="(max-width:479px) 479px, 100vw" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2025/03/vasco_translator_m3v4_1-400x250.jpg" ); ?>" data-lazy-srcset="./articles/uploads/2025/03/vasco_translator_m3v4_1.jpg 479w, ./articles/uploads/2025/03/vasco_translator_m3v4_1-400x250.jpg 480w" decoding="async" height="250" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20250'%3E%3C/svg%3E" width="400"/><noscript><img alt="Vasco lần thứ hai có mặt trong danh sách FT 1000!" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2025/03/vasco_translator_m3v4_1-400x250.jpg" ); ?>" width="400"/></noscript>
 </picture>
 </a></div>
 <h2 class="entry-title"><a href="./vasco-financial-times-2025">Vasco lần thứ hai có mặt trong danh sách FT 1000!</a></h2>
@@ -61,7 +61,7 @@ get_header();
 <article class="et_pb_post clearfix et_pb_blog_item_0_3 post-3710 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-m-baros" id="post-3710">
 <div class="et_pb_image_container"><a class="entry-featured-image-url" href="./vasco-ces-las-vegas"><picture class="" decoding="async">
 <source sizes="(max-width:479px) 479px, 100vw" type="image/avif"/>
-<img alt="Vasco lần thứ năm tham gia CES tại Las Vegas" data-lazy-sizes="(max-width:479px) 479px, 100vw" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2025/01/2025_01_07_VASCO_CES2025_DAY1-10-1-400x250.jpg" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2025/01/2025_01_07_VASCO_CES2025_DAY1-10-1-scaled.jpg 479w, ./articles/wp-content/uploads/2025/01/2025_01_07_VASCO_CES2025_DAY1-10-1-400x250.jpg 480w" decoding="async" height="250" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20250'%3E%3C/svg%3E" width="400"/><noscript><img alt="Vasco lần thứ năm tham gia CES tại Las Vegas" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2025/01/2025_01_07_VASCO_CES2025_DAY1-10-1-400x250.jpg" ); ?>" width="400"/></noscript>
+<img alt="Vasco lần thứ năm tham gia CES tại Las Vegas" data-lazy-sizes="(max-width:479px) 479px, 100vw" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2025/01/2025_01_07_VASCO_CES2025_DAY1-10-1-400x250.jpg" ); ?>" data-lazy-srcset="./articles/uploads/2025/01/2025_01_07_VASCO_CES2025_DAY1-10-1-scaled.jpg 479w, ./articles/uploads/2025/01/2025_01_07_VASCO_CES2025_DAY1-10-1-400x250.jpg 480w" decoding="async" height="250" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20250'%3E%3C/svg%3E" width="400"/><noscript><img alt="Vasco lần thứ năm tham gia CES tại Las Vegas" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2025/01/2025_01_07_VASCO_CES2025_DAY1-10-1-400x250.jpg" ); ?>" width="400"/></noscript>
 </picture>
 </a></div>
 <h2 class="entry-title"><a href="./vasco-ces-las-vegas">Vasco lần thứ năm tham gia CES tại Las Vegas</a></h2>
@@ -71,7 +71,7 @@ get_header();
 <article class="et_pb_post clearfix et_pb_blog_item_0_4 post-3589 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-a-noskowska" id="post-3589">
 <div class="et_pb_image_container"><a class="entry-featured-image-url" href="./vasco-breaks-down-business-barriers-in-china"><picture class="" decoding="async">
 <source sizes="(max-width:479px) 479px, 100vw" type="image/avif"/>
-<img alt="Vasco phá vỡ các rào cản kinh doanh tại Trung Quốc" data-lazy-sizes="(max-width:479px) 479px, 100vw" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/11/AA-80-2-400x250.jpg" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2024/11/AA-80-2-scaled.jpg 479w, ./articles/wp-content/uploads/2024/11/AA-80-2-400x250.jpg 480w" decoding="async" height="250" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20250'%3E%3C/svg%3E" width="400"/><noscript><img alt="Vasco phá vỡ các rào cản kinh doanh tại Trung Quốc" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/11/AA-80-2-400x250.jpg" ); ?>" width="400"/></noscript>
+<img alt="Vasco phá vỡ các rào cản kinh doanh tại Trung Quốc" data-lazy-sizes="(max-width:479px) 479px, 100vw" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2024/11/AA-80-2-400x250.jpg" ); ?>" data-lazy-srcset="./articles/uploads/2024/11/AA-80-2-scaled.jpg 479w, ./articles/uploads/2024/11/AA-80-2-400x250.jpg 480w" decoding="async" height="250" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20250'%3E%3C/svg%3E" width="400"/><noscript><img alt="Vasco phá vỡ các rào cản kinh doanh tại Trung Quốc" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2024/11/AA-80-2-400x250.jpg" ); ?>" width="400"/></noscript>
 </picture>
 </a></div>
 <h2 class="entry-title"><a href="./vasco-breaks-down-business-barriers-in-china">Vasco phá vỡ các rào cản kinh doanh tại Trung Quốc</a></h2>
@@ -81,7 +81,7 @@ get_header();
 <article class="et_pb_post clearfix et_pb_blog_item_0_5 post-3584 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-a-noskowska" id="post-3584">
 <div class="et_pb_image_container"><a class="entry-featured-image-url" href="./bbc-recognises-vasco"><picture class="" decoding="async">
 <source sizes="(max-width:479px) 479px, 100vw" type="image/avif"/>
-<img alt="BBC công nhận vai trò của Vasco trong việc vượt qua rào cản ngôn ngữ" data-lazy-sizes="(max-width:479px) 479px, 100vw" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/11/BBC-1200x700-EN-400x250.jpg" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2024/11/BBC-1200x700-EN.jpg 479w, ./articles/wp-content/uploads/2024/11/BBC-1200x700-EN-400x250.jpg 480w" decoding="async" height="250" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20250'%3E%3C/svg%3E" width="400"/><noscript><img alt="BBC công nhận vai trò của Vasco trong việc vượt qua rào cản ngôn ngữ" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/11/BBC-1200x700-EN-400x250.jpg" ); ?>" width="400"/></noscript>
+<img alt="BBC công nhận vai trò của Vasco trong việc vượt qua rào cản ngôn ngữ" data-lazy-sizes="(max-width:479px) 479px, 100vw" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2024/11/BBC-1200x700-EN-400x250.jpg" ); ?>" data-lazy-srcset="./articles/uploads/2024/11/BBC-1200x700-EN.jpg 479w, ./articles/uploads/2024/11/BBC-1200x700-EN-400x250.jpg 480w" decoding="async" height="250" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20250'%3E%3C/svg%3E" width="400"/><noscript><img alt="BBC công nhận vai trò của Vasco trong việc vượt qua rào cản ngôn ngữ" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2024/11/BBC-1200x700-EN-400x250.jpg" ); ?>" width="400"/></noscript>
 </picture>
 </a></div>
 <h2 class="entry-title"><a href="./bbc-recognises-vasco">BBC công nhận vai trò của Vasco trong việc vượt qua rào cản ngôn ngữ</a></h2>
@@ -91,7 +91,7 @@ get_header();
 <article class="et_pb_post clearfix et_pb_blog_item_0_6 post-3550 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-a-noskowska" id="post-3550">
 <div class="et_pb_image_container"><a class="entry-featured-image-url" href="./vasco-donates-children-of-madagascar"><picture class="" decoding="async">
 <source sizes="(max-width:479px) 479px, 100vw" type="image/avif"/>
-<img alt="Vasco tặng máy dịch cho Children of Madagascar" data-lazy-sizes="(max-width:479px) 479px, 100vw" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/10/Madagaskar-400x250.jpg" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2024/10/Madagaskar.jpg 479w, ./articles/wp-content/uploads/2024/10/Madagaskar-400x250.jpg 480w" decoding="async" height="250" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20250'%3E%3C/svg%3E" width="400"/><noscript><img alt="Vasco tặng máy dịch cho Children of Madagascar" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/10/Madagaskar-400x250.jpg" ); ?>" width="400"/></noscript>
+<img alt="Vasco tặng máy dịch cho Children of Madagascar" data-lazy-sizes="(max-width:479px) 479px, 100vw" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2024/10/Madagaskar-400x250.jpg" ); ?>" data-lazy-srcset="./articles/uploads/2024/10/Madagaskar.jpg 479w, ./articles/uploads/2024/10/Madagaskar-400x250.jpg 480w" decoding="async" height="250" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20250'%3E%3C/svg%3E" width="400"/><noscript><img alt="Vasco tặng máy dịch cho Children of Madagascar" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2024/10/Madagaskar-400x250.jpg" ); ?>" width="400"/></noscript>
 </picture>
 </a></div>
 <h2 class="entry-title"><a href="./vasco-donates-children-of-madagascar">Vasco tặng máy dịch cho Children of Madagascar</a></h2>
@@ -101,7 +101,7 @@ get_header();
 <article class="et_pb_post clearfix et_pb_blog_item_0_7 post-3578 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-m-baros" id="post-3578">
 <div class="et_pb_image_container"><a class="entry-featured-image-url" href="./pmm-emergency-team"><picture class="" decoding="async">
 <source sizes="(max-width:479px) 479px, 100vw" type="image/avif"/>
-<img alt="Tên mới cho Đội Cấp cứu PMM" data-lazy-sizes="(max-width:479px) 479px, 100vw" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/11/PMM-400x250.jpg" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2024/11/PMM.jpg 479w, ./articles/wp-content/uploads/2024/11/PMM-400x250.jpg 480w" decoding="async" height="250" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20250'%3E%3C/svg%3E" width="400"/><noscript><img alt="Tên mới cho Đội Cấp cứu PMM" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/11/PMM-400x250.jpg" ); ?>" width="400"/></noscript>
+<img alt="Tên mới cho Đội Cấp cứu PMM" data-lazy-sizes="(max-width:479px) 479px, 100vw" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2024/11/PMM-400x250.jpg" ); ?>" data-lazy-srcset="./articles/uploads/2024/11/PMM.jpg 479w, ./articles/uploads/2024/11/PMM-400x250.jpg 480w" decoding="async" height="250" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20250'%3E%3C/svg%3E" width="400"/><noscript><img alt="Tên mới cho Đội Cấp cứu PMM" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2024/11/PMM-400x250.jpg" ); ?>" width="400"/></noscript>
 </picture>
 </a></div>
 <h2 class="entry-title"><a href="./pmm-emergency-team">Tên mới cho Đội Cấp cứu PMM</a></h2>
@@ -111,7 +111,7 @@ get_header();
 <article class="et_pb_post clearfix et_pb_blog_item_0_8 post-3571 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-m-baros" id="post-3571">
 <div class="et_pb_image_container"><a class="entry-featured-image-url" href="./vasco-once-again-supports-city-helpers-project"><picture class="" decoding="async">
 <source sizes="(max-width:479px) 479px, 100vw" type="image/avif"/>
-<img alt="Vasco tiếp tục hỗ trợ dự án City Helpers" data-lazy-sizes="(max-width:479px) 479px, 100vw" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/11/Projekt-bez-nazwy-1-400x250.png" ); ?>" data-lazy-srcset="./articles/wp-content/uploads/2024/11/Projekt-bez-nazwy-1.png 479w, ./articles/wp-content/uploads/2024/11/Projekt-bez-nazwy-1-400x250.png 480w" decoding="async" height="250" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20250'%3E%3C/svg%3E" width="400"/><noscript><img alt="Vasco tiếp tục hỗ trợ dự án City Helpers" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/11/Projekt-bez-nazwy-1-400x250.png" ); ?>" width="400"/></noscript>
+<img alt="Vasco tiếp tục hỗ trợ dự án City Helpers" data-lazy-sizes="(max-width:479px) 479px, 100vw" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2024/11/Projekt-bez-nazwy-1-400x250.png" ); ?>" data-lazy-srcset="./articles/uploads/2024/11/Projekt-bez-nazwy-1.png 479w, ./articles/uploads/2024/11/Projekt-bez-nazwy-1-400x250.png 480w" decoding="async" height="250" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20250'%3E%3C/svg%3E" width="400"/><noscript><img alt="Vasco tiếp tục hỗ trợ dự án City Helpers" decoding="async" height="250" sizes="(max-width:479px) 479px, 100vw" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2024/11/Projekt-bez-nazwy-1-400x250.png" ); ?>" width="400"/></noscript>
 </picture>
 </a></div>
 <h2 class="entry-title"><a href="./vasco-once-again-supports-city-helpers-project">Vasco tiếp tục hỗ trợ dự án City Helpers</a></h2>
@@ -146,7 +146,7 @@ get_header();
 <div class="et_pb_module et_pb_image et_pb_image_0_tb_body">
 <span class="et_pb_image_wrap"><picture class="wp-image-22584" decoding="async" title="Q1_blog">
 <source type="image/avif"/>
-<img alt="" decoding="async" height="260" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/05/Q1_blog.png" ); ?>" width="120"/>
+<img alt="" decoding="async" height="260" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2026/05/Q1_blog.png" ); ?>" width="120"/>
 </picture>
 </span>
 </div><div class="et_pb_module et_pb_text et_pb_text_3_tb_body et_pb_text_align_left et_pb_bg_layout_dark">
@@ -160,7 +160,7 @@ get_header();
 <div class="et_pb_module et_pb_image et_pb_image_1_tb_body">
 <span class="et_pb_image_wrap"><picture class="wp-image-22585" decoding="async" title="M4_blog">
 <source type="image/avif"/>
-<img alt="" decoding="async" height="260" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/05/M4_blog.png" ); ?>" width="120"/>
+<img alt="" decoding="async" height="260" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2026/05/M4_blog.png" ); ?>" width="120"/>
 </picture>
 </span>
 </div><div class="et_pb_module et_pb_text et_pb_text_5_tb_body et_pb_text_align_left et_pb_bg_layout_dark">
@@ -174,7 +174,7 @@ get_header();
 <div class="et_pb_module et_pb_image et_pb_image_2_tb_body">
 <span class="et_pb_image_wrap"><picture class="wp-image-2102" decoding="async" title="V_blog">
 <source type="image/avif"/>
-<img alt="" decoding="async" height="260" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/10/V_blog.png" ); ?>" width="120"/>
+<img alt="" decoding="async" height="260" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2023/10/V_blog.png" ); ?>" width="120"/>
 </picture>
 </span>
 </div><div class="et_pb_module et_pb_text et_pb_text_7_tb_body et_pb_text_align_left et_pb_bg_layout_dark">

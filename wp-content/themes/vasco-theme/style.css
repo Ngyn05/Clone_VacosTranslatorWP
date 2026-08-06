@@ -3754,3 +3754,193 @@ img:not([src]) {
         width: 100% !important;
     }
 }
+
+/* ==========================================================================
+   PRODUCT TABS ALIGNMENT SYSTEM
+   - Máy dịch tab (#product-translators): Left Aligned (Row Layout: 360px 1fr)
+   - All other tabs (Phụ kiện, Bộ sản phẩm, Tất cả, Gói SP): Center Aligned
+   ========================================================================== */
+
+/* 1. Default for ALL tabs (Phụ kiện, Bộ sản phẩm, Tất cả sản phẩm, Gói sản phẩm) -> CENTER ALIGNED */
+.product-miniature,
+.product-card,
+article.product-miniature,
+.grid-item,
+#product-accessories .product-miniature,
+#product-bundles .product-miniature,
+#product-all .product-miniature,
+#product-packages .product-miniature,
+.products-accessories .product-miniature,
+.products-bundles .product-miniature,
+.products-all .product-miniature,
+.products-packages .product-miniature {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.product-miniature *,
+#product-accessories .product-miniature *,
+#product-bundles .product-miniature *,
+#product-all .product-miniature *,
+#product-packages .product-miniature * {
+    text-align: center !important;
+}
+
+.product-miniature .product-title,
+.product-miniature .product-title a,
+.product-miniature h1,
+.product-miniature h2,
+.product-miniature h3,
+.product-miniature h4,
+.product-miniature .product-name,
+.product-miniature .product-price-and-shipping,
+.product-miniature .price,
+.product-miniature .current-price,
+.product-miniature .product-price,
+.product-miniature .current-price-value,
+.product-miniature .trustpilot,
+.product-miniature .product-rating,
+.product-miniature .rating,
+.product-miniature .product-add-to-cart,
+.product-miniature .highlighted-informations,
+.product-miniature .thumbnail-top {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+}
+
+.product-miniature .btn,
+.product-miniature button,
+.product-miniature a.btn,
+.product-miniature a.button,
+.product-miniature .add-to-cart,
+.product-miniature .btn-add-to-cart,
+.product-miniature .btn-description,
+.product-miniature .btn-secondary,
+.product-miniature [data-button-action="add-to-cart"] {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    max-width: 220px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    border-radius: 25px !important;
+}
+
+/* 2. EXCLUSIVELY for "Máy Dịch" Tab -> LEFT ALIGNED */
+#product-translators .product-miniature,
+.products-translators .product-miniature,
+.page-translators .product-miniature,
+.page-template-page-translators .product-miniature,
+body.page-translators .product-miniature {
+    text-align: left !important;
+    display: grid !important;
+    grid-template-columns: 360px 1fr !important;
+    align-items: start !important;
+    justify-content: start !important;
+    gap: 48px !important;
+}
+
+#product-translators .product-miniature *,
+.products-translators .product-miniature *,
+.page-translators .product-miniature * {
+    text-align: left !important;
+}
+
+#product-translators .product-miniature .product-description,
+#product-translators .product-miniature .product-title,
+#product-translators .product-miniature .product-title a,
+#product-translators .product-miniature .product-price-and-shipping,
+#product-translators .product-miniature .price,
+#product-translators .product-miniature .current-price,
+#product-translators .product-miniature .product-price,
+#product-translators .product-miniature .current-price-value,
+#product-translators .product-miniature .trustpilot,
+#product-translators .product-miniature .product-rating,
+#product-translators .product-miniature .rating,
+#product-translators .product-miniature .product-add-to-cart,
+#product-translators .product-miniature .highlighted-informations,
+#product-translators .product-miniature .thumbnail-top,
+.products-translators .product-miniature .product-description,
+.products-translators .product-miniature .product-title,
+.products-translators .product-miniature .product-title a,
+.products-translators .product-miniature .product-price-and-shipping,
+.products-translators .product-miniature .price,
+.products-translators .product-miniature .current-price,
+.products-translators .product-miniature .product-price,
+.products-translators .product-miniature .current-price-value,
+.products-translators .product-miniature .trustpilot,
+.products-translators .product-miniature .product-rating,
+.products-translators .product-miniature .rating,
+.products-translators .product-miniature .product-add-to-cart,
+.products-translators .product-miniature .highlighted-informations,
+.products-translators .product-miniature .thumbnail-top {
+    text-align: left !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+}
+
+#product-translators .product-miniature .btn,
+#product-translators .product-miniature button,
+#product-translators .product-miniature a.btn,
+#product-translators .product-miniature a.button,
+#product-translators .product-miniature .add-to-cart,
+#product-translators .product-miniature .btn-add-to-cart,
+#product-translators .product-miniature .btn-description,
+#product-translators .product-miniature .btn-secondary,
+.products-translators .product-miniature .btn,
+.products-translators .product-miniature button,
+.products-translators .product-miniature a.btn,
+.products-translators .product-miniature a.button,
+.products-translators .product-miniature .add-to-cart,
+.products-translators .product-miniature .btn-add-to-cart,
+.products-translators .product-miniature .btn-description,
+.products-translators .product-miniature .btn-secondary {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    max-width: 220px !important;
+    width: 100% !important;
+}
+
+/* ==========================================================================
+   PRODUCT DESCRIPTIONS & BULLET LISTS - FORCE LEFT ALIGNMENT
+   ========================================================================== */
+.product-description,
+.product-description *,
+.product-description-short,
+.product-description-short *,
+.product-description-body,
+.product-description-body *,
+.description-short,
+.description-short *,
+.product-miniature ul,
+.product-miniature ol,
+.product-miniature li,
+ul.product-features,
+li.product-feature {
+    text-align: left !important;
+}
+
+.product-miniature ul,
+.product-miniature ol,
+.product-description ul,
+.product-description ol {
+    margin-left: 0 !important;
+    padding-left: 20px !important;
+}

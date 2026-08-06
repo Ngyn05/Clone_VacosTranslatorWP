@@ -387,7 +387,7 @@ function vasco_sync_sample_posts() {
 			'title'         => 'Ngôn ngữ ít người nói nhất trên thế giới là gì?',
 			'excerpt'       => 'Trong một thế giới mà giao tiếp là chìa khóa, ngôn ngữ đóng vai trò thiết yếu trong việc kết nối con người từ các nền văn hóa và hoàn cảnh khác nhau.',
 			'template_file' => 'page-articles-languages-least-spoken-language-in-the-world.php',
-			'thumb_url'     => VASCO_THEME_URI . '/assets/articles/wp-content/uploads/2024/07/least_spoken_language.webp',
+			'thumb_url'     => VASCO_THEME_URI . '/assets/articles/uploads/2024/07/least_spoken_language.webp',
 			'author_name'   => 'Mateusz Lewandowski',
 			'read_time'     => '13 phút đọc',
 			'focus_kw'      => 'Ngôn ngữ ít người nói nhất',

@@ -31,7 +31,7 @@ get_header();
 <article class="et_pb_post clearfix et_pb_blog_item_0_0 post-3734 post type-post status-publish format-standard has-post-thumbnail hentry category-press-release tag-m-baros" id="post-3734">
 <div class="et_pb_image_container"><a class="entry-featured-image-url" href="./vasco-ces-2025"><picture class="" decoding="async" fetchpriority="high">
 <source sizes="(max-width:479px) 479px, 100vw" type="image/avif"/>
-<img alt="Vasco ra mắt các giải pháp đột phá mới tại CES 2025" decoding="async" fetchpriority="high" height="250" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2025/01/2025_01_07_VASCO_CES2025_DAY2-16-400x250.jpg" ); ?>" width="400"/>
+<img alt="Vasco ra mắt các giải pháp đột phá mới tại CES 2025" decoding="async" fetchpriority="high" height="250" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2025/01/2025_01_07_VASCO_CES2025_DAY2-16-400x250.jpg" ); ?>" width="400"/>
 </picture>
 </a></div>
 <h2 class="entry-title"><a href="./vasco-ces-2025">Vasco ra mắt các giải pháp đột phá mới tại CES 2025</a></h2>
@@ -41,7 +41,7 @@ get_header();
 <article class="et_pb_post clearfix et_pb_blog_item_0_1 post-3562 post type-post status-publish format-standard has-post-thumbnail hentry category-press-release tag-m-baros" id="post-3562">
 <div class="et_pb_image_container"><a class="entry-featured-image-url" href="./vasco-financial-times-ranking"><picture class="" decoding="async">
 <source sizes="(max-width:479px) 479px, 100vw" type="image/avif"/>
-<img alt="Vasco được vinh danh trong bảng xếp hạng uy tín của Financial Times" decoding="async" height="250" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/11/Vasco_main-photo-1-400x250.png" ); ?>" width="400"/>
+<img alt="Vasco được vinh danh trong bảng xếp hạng uy tín của Financial Times" decoding="async" height="250" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2024/11/Vasco_main-photo-1-400x250.png" ); ?>" width="400"/>
 </picture>
 </a></div>
 <h2 class="entry-title"><a href="./vasco-financial-times-ranking">Vasco được vinh danh trong bảng xếp hạng uy tín của Financial Times</a></h2>
@@ -51,7 +51,7 @@ get_header();
 <article class="et_pb_post clearfix et_pb_blog_item_0_2 post-3024 post type-post status-publish format-standard has-post-thumbnail hentry category-press-release tag-a-noskowska" id="post-3024">
 <div class="et_pb_image_container"><a class="entry-featured-image-url" href="./vasc-collision-canada"><picture class="" decoding="async">
 <source sizes="(max-width:479px) 479px, 100vw" type="image/avif"/>
-<img alt="Vasco phá vỡ rào cản ngôn ngữ qua việc mở rộng sang Canada" decoding="async" height="250" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/06/B778-4PP06372B_Easy-Resize.com_-400x250.jpg" ); ?>" width="400"/>
+<img alt="Vasco phá vỡ rào cản ngôn ngữ qua việc mở rộng sang Canada" decoding="async" height="250" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2024/06/B778-4PP06372B_Easy-Resize.com_-400x250.jpg" ); ?>" width="400"/>
 </picture>
 </a></div>
 <h2 class="entry-title"><a href="./vasc-collision-canada">Vasco phá vỡ rào cản ngôn ngữ qua việc mở rộng sang Canada</a></h2>
@@ -61,7 +61,7 @@ get_header();
 <article class="et_pb_post clearfix et_pb_blog_item_0_3 post-2631 post type-post status-publish format-standard has-post-thumbnail hentry category-press-release tag-hipaa tag-m-baros tag-vasco" id="post-2631">
 <div class="et_pb_image_container"><a class="entry-featured-image-url" href="./vasco-announces-hipaa-compliance"><picture class="" decoding="async">
 <source sizes="(max-width:479px) 479px, 100vw" type="image/avif"/>
-<img alt="VASCO VN công bố các thiết bị dịch thuật tuân thủ HIPAA" decoding="async" height="250" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/03/iStock-1473559425-400x250.jpg" ); ?>" width="400"/>
+<img alt="VASCO VN công bố các thiết bị dịch thuật tuân thủ HIPAA" decoding="async" height="250" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2024/03/iStock-1473559425-400x250.jpg" ); ?>" width="400"/>
 </picture>
 </a></div>
 <h2 class="entry-title"><a href="./vasco-announces-hipaa-compliance">VASCO VN công bố các thiết bị dịch thuật tuân thủ HIPAA</a></h2>
@@ -69,7 +69,7 @@ get_header();
 </div><a class="more-link" href="./vasco-announces-hipaa-compliance">đọc thêm</a></div>
 </article>
 <article class="et_pb_post clearfix et_pb_blog_item_0_4 post-2535 post type-post status-publish format-standard has-post-thumbnail hentry category-press-release tag-m-baros" id="post-2535">
-<div class="et_pb_image_container"><a class="entry-featured-image-url" href="./best-of-ces-2024-list"><img alt="Vasco Translator E1 có tên trong danh sách “Best of CES 2024” của New York Times" class="" decoding="async" height="250" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/02/Sluchawki-Vasco-Translator-E1.jpg-400x250.webp" ); ?>" width="400"/></a></div>
+<div class="et_pb_image_container"><a class="entry-featured-image-url" href="./best-of-ces-2024-list"><img alt="Vasco Translator E1 có tên trong danh sách “Best of CES 2024” của New York Times" class="" decoding="async" height="250" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2024/02/Sluchawki-Vasco-Translator-E1.jpg-400x250.webp" ); ?>" width="400"/></a></div>
 <h2 class="entry-title"><a href="./best-of-ces-2024-list">Vasco Translator E1 có tên trong danh sách “Best of CES 2024” của New York Times</a></h2>
 <p class="post-meta">bởi<span class="author vcard"><a href="../author/m-baros" rel="author" title="Bài viết của Marta Baros">Marta Baros</a></span> | <span class="published">Jan 24, 2024</span> | <a href="<?php echo esc_url( home_url( "/" ) ); ?>" rel="tag">Thông cáo báo chí</a></p><div class="post-content"><div class="post-content-inner"><p><span class="vrt-reading-time" content="PT3M" itemprop="timeRequired"><svg aria-hidden="true" class="vrt-icon" focusable="false" height="16" role="img" viewbox="0 0 24 24" width="16"><path d="M12 1.75a10.25 10.25 0 1 0 0 20.5 10.25 10.25 0 0 0 0-20.5Zm0 18.5a8.25 8.25 0 1 1 0-16.5 8.25 8.25 0 0 1 0 16.5Zm.75-13.5a.75.75 0 0 0-1.5 0v6c0 .2.08.39.22.53l3.5 3.5a.75.75 0 1 0 1.06-1.06l-3.28-3.28V6.75Z"></path></svg><span class="vrt-text">3 phút đọc</span></span><br/>Nhà sản xuất thiết bị dịch thuật của Ba Lan đã trình làng sản phẩm mới nhất của mình tại triển lãm điện tử tiêu dùng lớn nhất thế giới, CES tại Las Vegas. New York Times đã đưa tai nghe Vasco vào danh sách 14 sáng kiến công nghệ được chờ đợi nhất tại CES 2024. Vasco Translator E1 trước đó đã được trao giải trong cuộc thi NY Product Designs. …</p>
 </div><a class="more-link" href="./best-of-ces-2024-list">đọc thêm</a></div>
@@ -77,7 +77,7 @@ get_header();
 <article class="et_pb_post clearfix et_pb_blog_item_0_5 post-2357 post type-post status-publish format-standard has-post-thumbnail hentry category-press-release tag-a-noskowska" id="post-2357">
 <div class="et_pb_image_container"><a class="entry-featured-image-url" href="./vasco-focuses-on-a-close-knit-team"><picture class="" decoding="async">
 <source sizes="(max-width:479px) 479px, 100vw" type="image/avif"/>
-<img alt="Vasco tại Kraków tập trung vào một tập thể gắn kết, các hoạt động xã hội và sản phẩm mới" decoding="async" height="250" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/01/Summary-of-2022-400x250.jpg" ); ?>" width="400"/>
+<img alt="Vasco tại Kraków tập trung vào một tập thể gắn kết, các hoạt động xã hội và sản phẩm mới" decoding="async" height="250" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2024/01/Summary-of-2022-400x250.jpg" ); ?>" width="400"/>
 </picture>
 </a></div>
 <h2 class="entry-title"><a href="./vasco-focuses-on-a-close-knit-team">Vasco tại Kraków tập trung vào một tập thể gắn kết, các hoạt động xã hội và sản phẩm mới</a></h2>
@@ -87,7 +87,7 @@ get_header();
 <article class="et_pb_post clearfix et_pb_blog_item_0_6 post-2349 post type-post status-publish format-standard has-post-thumbnail hentry category-press-release tag-m-baros" id="post-2349">
 <div class="et_pb_image_container"><a class="entry-featured-image-url" href="./vasco-electronics-at-ces-in-las-vegas"><picture class="" decoding="async">
 <source sizes="(max-width:479px) 479px, 100vw" type="image/avif"/>
-<img alt="Máy dịch điện tử từ Ba Lan tại CES ở Las Vegas" decoding="async" height="250" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/01/News-6-400x250.jpg" ); ?>" width="400"/>
+<img alt="Máy dịch điện tử từ Ba Lan tại CES ở Las Vegas" decoding="async" height="250" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2024/01/News-6-400x250.jpg" ); ?>" width="400"/>
 </picture>
 </a></div>
 <h2 class="entry-title"><a href="./vasco-electronics-at-ces-in-las-vegas">Máy dịch điện tử từ Ba Lan tại CES ở Las Vegas</a></h2>
@@ -97,7 +97,7 @@ get_header();
 <article class="et_pb_post clearfix et_pb_blog_item_0_7 post-2353 post type-post status-publish format-standard has-post-thumbnail hentry category-press-release tag-a-noskowska" id="post-2353">
 <div class="et_pb_image_container"><a class="entry-featured-image-url" href="./vasco-ceo-a-finalist-in-the-ey"><picture class="" decoding="async">
 <source sizes="(max-width:479px) 479px, 100vw" type="image/avif"/>
-<img alt="Chủ sở hữu VASCO VN lọt vào vòng chung kết cuộc thi EY Entrepreneur of the Year" decoding="async" height="250" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/01/Photo-30.11.2022-400x250.jpg" ); ?>" width="400"/>
+<img alt="Chủ sở hữu VASCO VN lọt vào vòng chung kết cuộc thi EY Entrepreneur of the Year" decoding="async" height="250" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2024/01/Photo-30.11.2022-400x250.jpg" ); ?>" width="400"/>
 </picture>
 </a></div>
 <h2 class="entry-title"><a href="./vasco-ceo-a-finalist-in-the-ey">Chủ sở hữu VASCO VN lọt vào vòng chung kết cuộc thi EY Entrepreneur of the Year</a></h2>
@@ -105,7 +105,7 @@ get_header();
 </div><a class="more-link" href="./vasco-ceo-a-finalist-in-the-ey">đọc thêm</a></div>
 </article>
 <article class="et_pb_post clearfix et_pb_blog_item_0_8 post-2355 post type-post status-publish format-standard has-post-thumbnail hentry category-press-release tag-a-noskowska" id="post-2355">
-<div class="et_pb_image_container"><a class="entry-featured-image-url" href="./vasco-with-pmm"><img alt="Polish Medical Mission hợp tác với VASCO VN, cùng chung tay hỗ trợ các nạn nhân chiến tranh và thảm họa" class="" decoding="async" height="250" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2024/01/News-13.jpg-400x250.webp" ); ?>" width="400"/></a></div>
+<div class="et_pb_image_container"><a class="entry-featured-image-url" href="./vasco-with-pmm"><img alt="Polish Medical Mission hợp tác với VASCO VN, cùng chung tay hỗ trợ các nạn nhân chiến tranh và thảm họa" class="" decoding="async" height="250" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2024/01/News-13.jpg-400x250.webp" ); ?>" width="400"/></a></div>
 <h2 class="entry-title"><a href="./vasco-with-pmm">Polish Medical Mission hợp tác với VASCO VN, cùng chung tay hỗ trợ các nạn nhân chiến tranh và thảm họa</a></h2>
 <p class="post-meta">bởi<span class="author vcard"><a href="../author/a-noskowska" rel="author" title="Bài viết của Agnieszka Noskowska">Agnieszka Noskowska</a></span> | <span class="published">Mar 14, 2022</span> | <a href="<?php echo esc_url( home_url( "/" ) ); ?>" rel="tag">Thông cáo báo chí</a></p><div class="post-content"><div class="post-content-inner"><p><span class="vrt-reading-time" content="PT4M" itemprop="timeRequired"><svg aria-hidden="true" class="vrt-icon" focusable="false" height="16" role="img" viewbox="0 0 24 24" width="16"><path d="M12 1.75a10.25 10.25 0 1 0 0 20.5 10.25 10.25 0 0 0 0-20.5Zm0 18.5a8.25 8.25 0 1 1 0-16.5 8.25 8.25 0 0 1 0 16.5Zm.75-13.5a.75.75 0 0 0-1.5 0v6c0 .2.08.39.22.53l3.5 3.5a.75.75 0 1 0 1.06-1.06l-3.28-3.28V6.75Z"></path></svg><span class="vrt-text">4 phút đọc</span></span><br/>Polish Medical Mission và VASCO VN đang cùng nhau thành lập một Đội Cứu hộ Y tế Phản ứng Nhanh. Đội này sẽ gia nhập cùng hơn ba mươi đội cứu hộ cùng loại đã tồn tại trên thế giới và hai đội tại Ba Lan được Tổ chức Y tế Thế giới (WHO) công nhận. Việc đẩy nhanh thành lập đội là phản ứng trước nhu cầu hỗ trợ khẩn cấp…</p>
 </div><a class="more-link" href="./vasco-with-pmm">đọc thêm</a></div>
@@ -138,7 +138,7 @@ get_header();
 <div class="et_pb_module et_pb_image et_pb_image_0_tb_body">
 <span class="et_pb_image_wrap"><picture class="wp-image-22584" decoding="async" title="Q1_blog">
 <source type="image/avif"/>
-<img alt="" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/05/Q1_blog.png" ); ?>" decoding="async" height="260" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20120%20260'%3E%3C/svg%3E" width="120"/><noscript><img alt="" decoding="async" height="260" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/05/Q1_blog.png" ); ?>" width="120"/></noscript>
+<img alt="" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2026/05/Q1_blog.png" ); ?>" decoding="async" height="260" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20120%20260'%3E%3C/svg%3E" width="120"/><noscript><img alt="" decoding="async" height="260" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2026/05/Q1_blog.png" ); ?>" width="120"/></noscript>
 </picture>
 </span>
 </div><div class="et_pb_module et_pb_text et_pb_text_3_tb_body et_pb_text_align_left et_pb_bg_layout_dark">
@@ -152,7 +152,7 @@ get_header();
 <div class="et_pb_module et_pb_image et_pb_image_1_tb_body">
 <span class="et_pb_image_wrap"><picture class="wp-image-22585" decoding="async" title="M4_blog">
 <source type="image/avif"/>
-<img alt="" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/05/M4_blog.png" ); ?>" decoding="async" height="260" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20120%20260'%3E%3C/svg%3E" width="120"/><noscript><img alt="" decoding="async" height="260" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2026/05/M4_blog.png" ); ?>" width="120"/></noscript>
+<img alt="" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2026/05/M4_blog.png" ); ?>" decoding="async" height="260" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20120%20260'%3E%3C/svg%3E" width="120"/><noscript><img alt="" decoding="async" height="260" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2026/05/M4_blog.png" ); ?>" width="120"/></noscript>
 </picture>
 </span>
 </div><div class="et_pb_module et_pb_text et_pb_text_5_tb_body et_pb_text_align_left et_pb_bg_layout_dark">
@@ -166,7 +166,7 @@ get_header();
 <div class="et_pb_module et_pb_image et_pb_image_2_tb_body">
 <span class="et_pb_image_wrap"><picture class="wp-image-2102" decoding="async" title="V_blog">
 <source type="image/avif"/>
-<img alt="" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/10/V_blog.png" ); ?>" decoding="async" height="260" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20120%20260'%3E%3C/svg%3E" width="120"/><noscript><img alt="" decoding="async" height="260" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/wp-content/uploads/2023/10/V_blog.png" ); ?>" width="120"/></noscript>
+<img alt="" data-lazy-src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2023/10/V_blog.png" ); ?>" decoding="async" height="260" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20120%20260'%3E%3C/svg%3E" width="120"/><noscript><img alt="" decoding="async" height="260" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/articles/uploads/2023/10/V_blog.png" ); ?>" width="120"/></noscript>
 </picture>
 </span>
 </div><div class="et_pb_module et_pb_text et_pb_text_7_tb_body et_pb_text_align_left et_pb_bg_layout_dark">

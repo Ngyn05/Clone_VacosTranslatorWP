@@ -428,8 +428,23 @@
 
 	// ── 9. Render 2-Button Row & Consultation Form on Product Pages ──
 	function initVascoProductBuyActions() {
-		var cartContainers = document.querySelectorAll('.product-add-to-cart, .js-product-add-to-cart');
+		// Clean up any boxes mistakenly rendered inside category / catalog miniatures
+		var miniatureBoxes = document.querySelectorAll('.product-miniature .vasco-buy-action-box, .product-card .vasco-buy-action-box, .grid-item .vasco-buy-action-box, .products-grid .vasco-buy-action-box');
+		miniatureBoxes.forEach(function(el) { el.remove(); });
+
+		// Only run on single product detail pages
+		var isSingleProduct = document.body.classList.contains('single-product') ||
+		                      document.body.classList.contains('page-template-page-vasco-translator-q1') ||
+		                      document.body.classList.contains('page-template-page-vasco-translator-v4') ||
+		                      document.body.classList.contains('page-template-page-vasco-translator-m4') ||
+		                      document.body.classList.contains('page-template-page-vasco-translator-e1') ||
+		                      document.querySelector('.product-detail, .product-information, #product-detail, #add-to-cart-or-refresh');
+
+		if (!isSingleProduct) return;
+
+		var cartContainers = document.querySelectorAll('.product-detail .product-add-to-cart, .product-information .product-add-to-cart, #product-detail .product-add-to-cart, .product-actions .product-add-to-cart, #add-to-cart-or-refresh .product-add-to-cart');
 		cartContainers.forEach(function (container) {
+			if (container.closest('.product-miniature, .product-card, .grid-item, .products-grid')) return;
 			if (container.querySelector('.vasco-buy-action-box')) return;
 
 			var oldBtn = container.querySelector('button.add-to-cart, .add-to-cart, button');
