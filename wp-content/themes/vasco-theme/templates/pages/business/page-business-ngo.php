@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Clean Page page-business-ngo.php
  *
@@ -8,308 +8,181 @@
 get_header();
 ?>
 
-
 <section class="relative" id="wrapper">
 <aside id="notifications">
 <div class="container">
 </div>
 </aside>
 <div>
-<div class="js-content-wrapper" id="content-wrapper">
-<section class="doubleboxes">
-<div class="doublebox left" id="box-color-random" style="background-color: #EFECE8; color: #EFECE8;">
+<div class="breadcrumb-container">
 <div class="container">
-<div class="doublebox-content">
-<h1 class="h1">Thu hẹp khoảng cách văn hóa và hỗ trợ cộng đồng người nhập cư</h1>
-<p>Thay đổi cách bạn phục vụ cộng đồng người nhập cư với công nghệ dịch thuật tức thì, đáng tin cậy từ Vasco. Hỗ trợ các nhóm dân cư đa dạng hiệu quả hơn trong khi vẫn duy trì sự riêng tư và tin tưởng.</p>
-<div class="box-btn-wrapper">
-<button class="btn btn-md btn-black scrollToForm">
-<svg fill="none" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_5570_13472)">
-<path clip-rule="evenodd" d="M2.53859 0.66973C2.55866 0.667906 2.5788 0.666992 2.59895 0.666992H4.73228C5.68715 0.666992 6.62308 1.34174 6.72898 2.40066C6.78638 2.97473 6.9573 3.50025 7.15702 4.09969C7.45018 4.81859 7.25082 5.69126 6.73702 6.20506L6.23684 6.70524C7.01209 7.93405 8.06523 8.98718 9.29404 9.76243L9.79421 9.26225C9.80846 9.24801 9.82335 9.23441 9.83883 9.22151C10.375 8.77469 11.1573 8.53838 11.8998 8.84234C12.4992 9.04203 13.0246 9.2129 13.5986 9.2703C14.6575 9.37619 15.3323 10.3121 15.3323 11.267V13.267C15.3323 14.3685 14.4338 15.267 13.3323 15.267H13.1989C13.1775 15.267 13.1561 15.266 13.1347 15.2639C10.9521 15.0527 8.91883 14.2792 7.10647 13.0954C5.42498 12.0432 3.9561 10.5743 2.90391 8.89279C1.7098 7.06436 1.015 4.96757 0.737765 2.81897C0.73695 2.81266 0.736226 2.80633 0.735592 2.79999C0.631096 1.75503 1.44593 0.769064 2.53859 0.66973ZM2.63447 2.00033C2.27739 2.04664 2.03835 2.37945 2.06163 2.65986C2.31841 4.6382 2.95539 6.5351 4.0236 8.16883L4.03095 8.18033C4.97729 9.69448 6.3048 11.022 7.81895 11.9683L7.83045 11.9757C9.47439 13.0506 11.295 13.7407 13.2316 13.9337H13.3319C13.697 13.9337 13.999 13.6321 13.999 13.267V11.267C13.999 10.8885 13.7404 10.6245 13.4659 10.597C12.725 10.5229 12.0651 10.3029 11.4806 10.108L11.4548 10.0994C11.4373 10.0936 11.42 10.087 11.403 10.0798C11.2255 10.0037 10.9639 10.0301 10.7131 10.229L9.87035 11.0717C9.65929 11.2828 9.33365 11.3278 9.07321 11.182C7.29927 10.1886 5.81069 8.70001 4.81728 6.92606C4.67144 6.66563 4.71648 6.33999 4.92755 6.12892L5.79421 5.26225C5.94024 5.11623 6.00913 4.80537 5.91952 4.59627C5.91224 4.57929 5.90567 4.56201 5.89983 4.54448L5.89124 4.51873C5.69635 3.93417 5.47636 3.27431 5.40226 2.53333C5.37482 2.25891 5.11075 2.00033 4.73228 2.00033H2.63447Z" fill="#2D3139" fill-rule="evenodd"></path>
-</g>
-<defs>
-<clippath id="clip0_5570_13472">
-<rect fill="white" height="16" width="16"></rect>
-</clippath>
-</defs>
-</svg>
-							YÊU CẦU BÁO GIÁ ƯU ĐÃI CHO NGO
-						</button>
-<a class="btn btn-md btn-primary" href="<?php echo esc_url( home_url( "/" ) ); ?>">
-<img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>
-								Mua ngay
-						</a>
-</div>
-<svg class="svg-pseudo" color="" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">
-<path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
-</svg>
+<nav aria-label="Đường dẫn điều hướng" class="breadcrumb">
+<ol>
+<li class="body-16">
+<a href="<?php echo esc_url( home_url( "/" ) ); ?>"><span class="breadcrumb-link">Trang chủ</span></a><span class="breadcrumb-divider">&gt;</span>
+</li>
+<li class="body-16">
+<a href="<?php echo esc_url( home_url( "/all-products/" ) ); ?>"><span class="breadcrumb-link">Doanh nghiệp</span></a><span class="breadcrumb-divider">&gt;</span>
+</li>
+<li><span aria-current="page" class="breadcrumb-current body-16">Phi chính phủ (NGO)</span></li>
+</ol>
+</nav>
 </div>
 </div>
-<div class="doublebox-absolute" id="img-change">
-<img alt="Thu hẹp khoảng cách văn hóa và trao quyền cho cộng đồng người nhập cư" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.webp" ); ?>"/>
+
+<div class="js-content-wrapper" id="content-wrapper">
+<div class="socialimpact-pages">
+
+<!-- Top Banner -->
+<div class="socialimpact-top">
+<div class="container">
+<h1 class="h1">Giải Pháp Cho Các Tổ Chức Phi Chính Phủ (NGO)</h1>
+<p class="socialimpact-subtitle">Thu hẹp khoảng cách văn hóa, hỗ trợ cộng đồng người tị nạn và nâng cao hiệu quả trợ giúp nhân đạo tại gần 200 quốc gia trên thế giới.</p>
+</div>
+</div>
+
+<!-- Main Card Wrapper -->
+<section class="socialimpact-card-wrapper">
+<div class="socialimpact-inner-card">
+
+<!-- Block 1: Đánh Giá & Tiếp Nhận Liền Mạch -->
+<div class="si-item si-item--left">
+<div class="si-text">
+<h2 class="h2">Đánh Giá & Tiếp Nhận Người Tị Nạn Liền Mạch</h2>
+<h3 class="box-subtitle">Ghi nhận thông tin & nhu cầu khẩn cấp bằng 110+ ngôn ngữ</h3>
+<p>Thực hiện đánh giá nhu cầu trợ giúp toàn diện mà không bị gián đoạn. Vasco giúp các tình nguyện viên dễ dàng ghi chép chính xác từ yêu cầu y tế đến nhà ở khẩn cấp.</p>
+<ul>
+<li>Tiếp nhận & tư vấn trực tiếp cho người nhập cư ngay tại biên giới</li>
+<li>Hỗ trợ dịch giọng nói 2 chiều tốc độ 0.5s chuẩn ngữ cảnh</li>
+<li>Miễn phí 4G Internet trọn đời tại gần 200 quốc gia toàn cầu</li>
+</ul>
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/all-products/" ) ); ?>">Khám phá giải pháp <span class="text-sr-only">Vasco</span></a>
+</div>
+<div class="si-image">
+<img alt="Tình nguyện viên hỗ trợ người tị nạn tại trại trú ẩn" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/social-impact/social-impact-new-1.webp' ); ?>"/>
+</div>
+</div>
+
+<hr class="si-divider"/>
+
+<!-- Block 2: Tiếp Cận Cộng Đồng & Xây Dựng Niềm Tin -->
+<div class="si-item si-item--right">
+<div class="si-image">
+<img alt="Giao tiếp trực tiếp gạt bỏ rào cản ngôn ngữ với cộng đồng" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/social-impact/social-impact-new-2.webp' ); ?>"/>
+</div>
+<div class="si-text">
+<h2 class="h2">Tiếp Cận Cộng Đồng & Xây Dựng Niềm Tin</h2>
+<h3 class="box-subtitle">Giao tiếp trực tiếp chân thành gạt bỏ rào cản ngôn ngữ</h3>
+<p>Dễ dàng tổ chức các buổi hội thảo hướng dẫn, sự kiện hỗ trợ cộng đồng và tuyên truyền chính sách xã hội mà không cần thông qua nhiều tầng phiên dịch.</p>
+<ul>
+<li>Màng loa ngoài âm lượng lớn 99dB nghe rõ ở các trung tâm trợ giúp</li>
+<li>Pin dung lượng cao hoạt động liên tục nhiều ngày trong điều kiện dã ngoại</li>
+<li>Giao diện màn hình cảm ứng 5-inch trực quan dễ sử dụng</li>
+</ul>
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/all-products/" ) ); ?>">Xem các mẫu máy <span class="text-sr-only">Vasco</span></a>
+</div>
+</div>
+
+<hr class="si-divider"/>
+
+<!-- Block 3: Bảo Mật Thông Tin & Tự Trị Cá Nhân -->
+<div class="si-item si-item--left">
+<div class="si-text">
+<h2 class="h2">Bảo Mật Thông Tin & Quyền Riêng Tư</h2>
+<h3 class="box-subtitle">Thực hiện các cuộc trao đổi nhạy cảm không cần bên thứ 3</h3>
+<p>Cho phép các nhân viên xã hội trò chuyện trực tiếp riêng tư với nạn nhân, giữ kín thông tin cá nhân theo đúng tiêu chuẩn bảo mật GDPR Châu Âu.</p>
+<ul>
+<li>Không lưu trữ hay tự ý chia sẻ dữ liệu thoại/văn bản bệnh nhân</li>
+<li>Xuất bản dịch dạng file PDF lưu trữ hồ sơ công việc tiện lợi</li>
+<li>Chương trình hỗ trợ mượn máy ưu đãi dành riêng cho các tổ chức NGO</li>
+</ul>
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/all-products/" ) ); ?>">Tìm hiểu thêm <span class="text-sr-only">Vasco</span></a>
+</div>
+<div class="si-image">
+<img alt="Hỗ trợ nhân đạo bảo mật riêng tư" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/social-impact/social-impact-new-3.webp' ); ?>"/>
+</div>
+</div>
+
+</div><!-- .socialimpact-inner-card -->
+</section><!-- .socialimpact-card-wrapper -->
+
+<!-- Core Section: Tại Sao Các Tổ Chức NGO Chọn Vasco -->
+<section aria-labelledby="key-features-heading" class="key-features-section container" style="margin: 60px auto;">
+<div class="key-features-flex">
+<h2 class="h2-notosans text-center" id="key-features-heading" style="margin-bottom: 12px;">TẠI SAO CÁC TỔ CHỨC NGO CHỌN VASCO TRANSLATOR?</h2>
+<h3 class="h1 text-center" style="margin-bottom: 36px; max-width: 800px; margin-left: auto; margin-right: auto;">Giải pháp hỗ trợ nhân đạo toàn cầu kết nối hơn 200 quốc gia</h3>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px;">
+<div style="background: #ffffff; padding: 24px; border-radius: 16px; border: 1px solid #e2e8f0; text-align: center;">
+<h4 class="h2" style="font-size: 1.2rem; margin-bottom: 8px;">Dịch Thuật 110+ Ngôn Ngữ</h4>
+<p style="color: #64748b; font-size: 0.9rem;">Dễ dàng tiếp nhận và trò chuyện với người tị nạn từ khắp mọi nơi.</p>
+</div>
+<div style="background: #ffffff; padding: 24px; border-radius: 16px; border: 1px solid #e2e8f0; text-align: center;">
+<h4 class="h2" style="font-size: 1.2rem; margin-bottom: 8px;">SIM 4G Miễn Phí Trọn Đời</h4>
+<p style="color: #64748b; font-size: 0.9rem;">Kết nối Internet dã ngoại tại gần 200 quốc gia hoàn toàn miễn phí.</p>
+</div>
+<div style="background: #ffffff; padding: 24px; border-radius: 16px; border: 1px solid #e2e8f0; text-align: center;">
+<h4 class="h2" style="font-size: 1.2rem; margin-bottom: 8px;">Bảo Mật GDPR Riêng Tư</h4>
+<p style="color: #64748b; font-size: 0.9rem;">Đảm bảo tính riêng tư cho các cuộc tham vấn nhạy cảm.</p>
+</div>
+<div style="background: #ffffff; padding: 24px; border-radius: 16px; border: 1px solid #e2e8f0; text-align: center;">
+<h4 class="h2" style="font-size: 1.2rem; margin-bottom: 8px;">Chương Trình Hỗ Trợ NGO</h4>
+<p style="color: #64748b; font-size: 0.9rem;">Chương trình cho mượn và tài trợ 500+ máy cho các tổ chức từ thiện.</p>
+</div>
 </div>
 </div>
 </section>
 
-<section class="how-vasco-section">
-<div class="how-vasco-flex container">
-<h2 class="h2-notosans">Vasco Translator giúp nâng cao chất lượng dịch vụ của bạn như thế nào</h2>
-<div class="grid-section">
-<div class="card">
-<img alt="Đánh giá &amp; tiếp nhận liền mạch" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.webp" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
-<h3 class="h2">Đánh giá &amp; tiếp nhận liền mạch</h3>
-<p>Thực hiện đánh giá nhu cầu toàn diện bằng bất kỳ ngôn ngữ nào. Tinh gọn quy trình tiếp nhận và đảm bảo ghi chép chính xác nhu cầu của khách hàng, từ nhà ở đến các yêu cầu y tế.</p>
-</div>
-<div class="card card-bottom">
-<img alt="Tiếp cận cộng đồng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hitchhiker-travel.webp" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
-<h3 class="h2">Tiếp cận cộng đồng</h3>
-<p>Xây dựng niềm tin với cộng đồng người nhập cư qua giao tiếp rõ ràng, trực tiếp. Hỗ trợ các sự kiện cộng đồng và buổi cung cấp thông tin mà không gặp rào cản ngôn ngữ.</p>
-</div>
-<div class="card">
-<img alt="Hỗ trợ bảo mật" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/happy-people.webp" ); ?>" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0;"/>
-<h3 class="h2">Hỗ trợ bảo mật</h3>
-<p>Duy trì tính bảo mật trong khi cung cấp các dịch vụ quan trọng. Thực hiện các cuộc trò chuyện nhạy cảm mà không cần có bên phiên dịch thứ ba.</p>
-</div>
-</div>
-</div>
-</section>
-<section class="doubleboxes">
-<div class="doublebox right" id="box-color-random" style="background-color: #E0E2F2; color: #E0E2F2;">
+<!-- Single Featured Product -->
+<section aria-labelledby="vasco-products-heading" class="vasco-products">
 <div class="container">
-<div class="doublebox-content">
-<h2 class="h1">Trao quyền cho tổ chức của bạn với Vasco Translator V4</h2>
-<p>Vasco Translator V4 có thể hỗ trợ các tổ chức phục vụ cộng đồng người nhập cư và người tị nạn. Xem tại sao &amp; bằng cách nào.</p>
-<div class="heading-list-wrapper">
-<p class="font-bold">Tính năng chính:</p>
-<div class="list-wrapper"><ul><li>Dịch thuật tức thì với hơn 110 ngôn ngữ</li><li>SIM tích hợp sẵn cho kết nối Internet miễn phí &amp; trọn đời</li><li>Màn hình cảm ứng 5 inch dễ thao tác</li><li>Pin bền, sử dụng cả ngày</li><li>Thiết kế bền bỉ chịu được điều kiện ngoài trời</li></ul></div>
-</div>
-<div class="box-btn-wrapper">
-<button class="btn btn-md btn-black scrollToForm">
-<svg fill="none" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_5570_13472)">
-<path clip-rule="evenodd" d="M2.53859 0.66973C2.55866 0.667906 2.5788 0.666992 2.59895 0.666992H4.73228C5.68715 0.666992 6.62308 1.34174 6.72898 2.40066C6.78638 2.97473 6.9573 3.50025 7.15702 4.09969C7.45018 4.81859 7.25082 5.69126 6.73702 6.20506L6.23684 6.70524C7.01209 7.93405 8.06523 8.98718 9.29404 9.76243L9.79421 9.26225C9.80846 9.24801 9.82335 9.23441 9.83883 9.22151C10.375 8.77469 11.1573 8.53838 11.8998 8.84234C12.4992 9.04203 13.0246 9.2129 13.5986 9.2703C14.6575 9.37619 15.3323 10.3121 15.3323 11.267V13.267C15.3323 14.3685 14.4338 15.267 13.3323 15.267H13.1989C13.1775 15.267 13.1561 15.266 13.1347 15.2639C10.9521 15.0527 8.91883 14.2792 7.10647 13.0954C5.42498 12.0432 3.9561 10.5743 2.90391 8.89279C1.7098 7.06436 1.015 4.96757 0.737765 2.81897C0.73695 2.81266 0.736226 2.80633 0.735592 2.79999C0.631096 1.75503 1.44593 0.769064 2.53859 0.66973ZM2.63447 2.00033C2.27739 2.04664 2.03835 2.37945 2.06163 2.65986C2.31841 4.6382 2.95539 6.5351 4.0236 8.16883L4.03095 8.18033C4.97729 9.69448 6.3048 11.022 7.81895 11.9683L7.83045 11.9757C9.47439 13.0506 11.295 13.7407 13.2316 13.9337H13.3319C13.697 13.9337 13.999 13.6321 13.999 13.267V11.267C13.999 10.8885 13.7404 10.6245 13.4659 10.597C12.725 10.5229 12.0651 10.3029 11.4806 10.108L11.4548 10.0994C11.4373 10.0936 11.42 10.087 11.403 10.0798C11.2255 10.0037 10.9639 10.0301 10.7131 10.229L9.87035 11.0717C9.65929 11.2828 9.33365 11.3278 9.07321 11.182C7.29927 10.1886 5.81069 8.70001 4.81728 6.92606C4.67144 6.66563 4.71648 6.33999 4.92755 6.12892L5.79421 5.26225C5.94024 5.11623 6.00913 4.80537 5.91952 4.59627C5.91224 4.57929 5.90567 4.56201 5.89983 4.54448L5.89124 4.51873C5.69635 3.93417 5.47636 3.27431 5.40226 2.53333C5.37482 2.25891 5.11075 2.00033 4.73228 2.00033H2.63447Z" fill="#2D3139" fill-rule="evenodd"></path>
-</g>
-<defs>
-<clippath id="clip0_5570_13472">
-<rect fill="white" height="16" width="16"></rect>
-</clippath>
-</defs>
-</svg>
-							nhận ưu đãi số lượng lớn
-						</button>
-</div>
-<div class="heading-list-wrapper">
-<p class="font-bold">Hoàn hảo cho:</p>
-<div class="list-wrapper"><ul><li>Đánh giá nhu cầu ban đầu</li><li>Tư vấn hỗ trợ pháp lý</li><li>Giới thiệu dịch vụ y tế</li><li>Chương trình tiếp cận cộng đồng</li></ul></div>
-</div>
-<div class="box-btn-wrapper">
-<a class="btn btn-md btn-primary" href="<?php echo esc_url( home_url( "/" ) ); ?>">
-<img alt="Giỏ hàng" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>
-								Mua ngay
-						</a>
-</div>
-<svg class="svg-pseudo" color="" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">
-<path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
-</svg>
-</div>
-</div>
-<div class="doublebox-absolute" id="img-change">
-<img alt="Vasco Translator cho NGO" class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.webp" ); ?>"/>
-</div>
-</div>
-</section>
-<section class="features-swiper">
-<div class="container">
-<div class="features-section-top">
-<h2 class="h1">Tìm hiểu thêm về các tính năng của Vasco Translator V4</h2>
-<p>Chúng tôi hiểu rằng các tổ chức phi chính phủ (NGO) cần một công nghệ đáng tin cậy. Hãy xem cách các thiết bị Vasco có thể nâng cao giao tiếp giữa tình nguyện viên và các gia đình người nhập cư.</p>
-</div>
-<div class="features-flex">
-<div class="features-miniatures">
-<div class="align-items-center description-icons">
-<button aria-labelledby="feature-title-0" class="description-icon active" data-id="0" role="button" tabindex="0" type="button">
-<img alt="Dịch tài liệu liền mạch" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/photo.svg" ); ?>" width="64px"/>
-<p>Dịch tài liệu liền mạch</p>
-</button>
-<button aria-labelledby="feature-title-1" class="description-icon" data-id="1" role="button" tabindex="0" type="button">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/globe.svg" ); ?>" width="64px"/>
-<p>Hỗ trợ đa ngôn ngữ</p>
-</button>
-<button aria-labelledby="feature-title-2" class="description-icon" data-id="2" role="button" tabindex="0" type="button">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/touch.svg" ); ?>" width="64px"/>
-<p>Vận hành dễ dàng</p>
-</button>
-<button aria-labelledby="feature-title-3" class="description-icon" data-id="3" role="button" tabindex="0" type="button">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/battery.svg" ); ?>" width="64px"/>
-<p>Pin bền lâu</p>
-</button>
-<button aria-labelledby="feature-title-4" class="description-icon" data-id="4" role="button" tabindex="0" type="button">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/screen.svg" ); ?>" width="64px"/>
-<p>Thiết kế bền bỉ, gọn nhẹ</p>
-</button>
-</div>
-<div class="description-icons">
-<button aria-labelledby="feature-title-5" class="description-icon" data-id="5" role="button" tabindex="0" type="button">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/translation.svg" ); ?>" width="64px"/>
-<p>Phát âm tự nhiên</p>
-</button>
-<button aria-labelledby="feature-title-6" class="description-icon" data-id="6" role="button" tabindex="0" type="button">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/mic.svg" ); ?>" width="64px"/>
-<p>Nhận diện giọng nói chính xác</p>
-</button>
-<button aria-labelledby="feature-title-7" class="description-icon" data-id="7" role="button" tabindex="0" type="button">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/learn.svg" ); ?>" width="64px"/>
-<p>Nâng cao kỹ năng ngôn ngữ</p>
-</button>
-<button aria-labelledby="feature-title-8" class="description-icon" data-id="8" role="button" tabindex="0" type="button">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/internet.svg" ); ?>" width="64px"/>
-<p>Kết nối miễn phí trọn đời</p>
-</button>
-</div>
-</div>
-<div class="features-content">
-<div class="swiper swiper-features" id="swiper-features">
-<div class="swiper-wrapper">
-<div aria-labelledby="feature-title-0" class="swiper-slide active" data-feature="0" role="button" tabindex="0">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/photo.svg" ); ?>" width="64px"/>
-<p class="feature-title" id="feature-title-0">Dịch tài liệu liền mạch</p>
-<p>Nhanh chóng dịch các mẫu tiếp nhận, tài liệu pháp lý và thông tin dịch vụ với tính năng Dịch hình ảnh của chúng tôi. Hỗ trợ hơn 110 ngôn ngữ.</p>
-</div>
-<div aria-labelledby="feature-title-1" class="swiper-slide" data-feature="1" role="button" tabindex="0">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/globe.svg" ); ?>" width="64px"/>
-<p class="feature-title" id="feature-title-1">Hỗ trợ đa ngôn ngữ</p>
-<p>Truy cập hơn 10 công cụ dịch thuật chất lượng cao, phủ hơn 110 ngôn ngữ. Mỗi cặp ngôn ngữ có một công cụ dịch được chỉ định sẵn để đảm bảo kết quả tốt nhất. Để so sánh: hầu hết các ứng dụng dịch trực tuyến chỉ có 1 công cụ!</p>
-</div>
-<div aria-labelledby="feature-title-2" class="swiper-slide" data-feature="2" role="button" tabindex="0">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/touch.svg" ); ?>" width="64px"/>
-<p class="feature-title" id="feature-title-2">Vận hành dễ dàng</p>
-<p>Dịch chỉ bằng một nút bấm giúp tiết kiệm thời gian quý báu trong quá trình cung cấp dịch vụ quan trọng. Thiết kế đạt giải thưởng của chúng tôi giúp nhân viên tập trung vào việc hỗ trợ khách hàng hơn là xử lý công nghệ.</p>
-</div>
-<div aria-labelledby="feature-title-3" class="swiper-slide" data-feature="3" role="button" tabindex="0">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/battery.svg" ); ?>" width="64px"/>
-<p class="feature-title" id="feature-title-3">Pin bền lâu</p>
-<p>Thời lượng pin 180 giờ đảm bảo dịch vụ đáng tin cậy trong suốt nhiều ngày làm việc thực địa và tiếp cận cộng đồng (tương đương 5-6 ngày sử dụng thông thường).</p>
-</div>
-<div aria-labelledby="feature-title-4" class="swiper-slide" data-feature="4" role="button" tabindex="0">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/screen.svg" ); ?>" width="64px"/>
-<p class="feature-title" id="feature-title-4">Thiết kế bền bỉ, gọn nhẹ</p>
-<p>Chịu được các yêu cầu khắt khe của dịch vụ lưu động với cấu trúc chống bụi, chống va đập và chống nước.</p>
-</div>
-<div aria-labelledby="feature-title-5" class="swiper-slide" data-feature="5" role="button" tabindex="0">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/translation.svg" ); ?>" width="64px"/>
-<p class="feature-title" id="feature-title-5">Phát âm tự nhiên</p>
-<p>Tin tưởng vào bản dịch với cách phát âm tự nhiên như người bản xứ và độ chính xác cao, yếu tố thiết yếu để xây dựng sự tin tưởng lẫn nhau.</p>
-</div>
-<div aria-labelledby="feature-title-6" class="swiper-slide" data-feature="6" role="button" tabindex="0">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/mic.svg" ); ?>" width="64px"/>
-<p class="feature-title" id="feature-title-6">Nhận diện giọng nói chính xác</p>
-<p>Công nghệ khử tiếng ồn tiên tiến đảm bảo bản dịch chính xác trong môi trường dịch vụ bận rộn, loại bỏ 99% tiếng ồn xung quanh để giao tiếp rõ ràng trong quá trình tiếp nhận và tư vấn</p>
-</div>
-<div aria-labelledby="feature-title-7" class="swiper-slide" data-feature="7" role="button" tabindex="0">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/learn.svg" ); ?>" width="64px"/>
-<p class="feature-title" id="feature-title-7">Nâng cao kỹ năng ngôn ngữ</p>
-<p>Giúp nhân viên xây dựng vốn từ vựng cơ bản bằng 28 ngôn ngữ, trong khi vẫn có thể dựa vào Vasco Translator cho những giao tiếp phức tạp hơn.</p>
-</div>
-<div aria-labelledby="feature-title-8" class="swiper-slide" data-feature="8" role="button" tabindex="0">
-<img aria-hidden="true" height="64px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/product-features/internet.svg" ); ?>" width="64px"/>
-<p class="feature-title" id="feature-title-8">Kết nối miễn phí trọn đời</p>
-<p>Luôn kết nối với Internet miễn phí, đáng tin cậy nhờ thẻ SIM tích hợp sẵn. Hoạt động tại gần 200 quốc gia và mang lại kết nối không giới hạn cho việc dịch thuật. Không cần kết nối Wi-Fi.</p>
-</div>
-</div>
-<div class="features-custom-navigation">
-<div class="swiper-button-prev btn-features-prev"></div>
-<div class="swiper-pagination swiper-pagination-features"></div>
-<div class="swiper-button-next btn-features-next"></div>
-</div>
+<h2 class="h2-notosans" id="vasco-products-heading">Sản phẩm tích hợp tính năng này</h2>
+<div class="single-product-featured">
+<div class="box">
+<img alt="Vasco Translator Q1" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/q1.webp" ); ?>"/>
+<div class="product-description">
+<h3>Vasco Translator Q1</h3>
+<p>Thiết bị dịch thuật cầm tay chuyên dụng cho hoạt động hỗ trợ nhân đạo, kết nối 4G miễn phí trọn đời tại 200 quốc gia.</p>
+<a class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/product/vasco-translator-q1/" ) ); ?>">
+Tìm hiểu thêm
+</a>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section class="image-text-section type-gray">
-<div class="container image-text-section-wrapper">
-<div class="image-section">
-<img alt="Tác động thực sự của Vasco đối với dịch vụ hỗ trợ người nhập cư là gì?" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/vasco-audience-presentation.webp" ); ?>"/>
+
+<!-- Core Section: FAQ NGO -->
+<section class="container faq-section" style="margin: 60px auto;">
+<h2 class="h1 text-center" style="margin-bottom: 32px;">Câu Hỏi Thường Gặp Của Các Tổ Chức NGO</h2>
+<div class="accordion-section">
+<div class="accordion-wrapper">
+<div class="accordion-single">
+<div class="accordion-visible-wrapper">
+<p class="accordion-visible">Tổ chức NGO có được mượn thử máy trước khi quyết định không?</p>
+<div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2"></path>
+</svg></div>
 </div>
-<div class="text-section">
-<h2 class="h1">Tác động thực sự của Vasco đối với dịch vụ hỗ trợ người nhập cư là gì?</h2>
-<p class="scenario-text">Hãy xem xét tình huống sau. Một gia đình mới nhập cư cần hỗ trợ về nhà ở và y tế, nhưng rào cản ngôn ngữ khiến họ không thể truyền đạt chính xác nhu cầu của mình. Nhân viên gặp khó khăn trong việc thu thập thông tin quan trọng, và gia đình này ngày càng cảm thấy nản lòng, không muốn tiếp tục tìm kiếm sự giúp đỡ.</p>
-<div class="paragraphs">
-<p>Thiết bị máy phiên dịch Vasco thay đổi hoàn toàn tình huống khó khăn này. Với công cụ này, đội ngũ của bạn có thể ngay lập tức thiết lập giao tiếp rõ ràng, hiểu được nhu cầu cụ thể và cung cấp sự hỗ trợ phù hợp, tạo nên một trải nghiệm dịch vụ hiệu quả và đầy tôn trọng hơn.</p>
+<p class="accordion-hidden">Có, Vasco cung cấp chương trình mượn máy thử nghiệm có thể hoàn trả dành cho các tổ chức hỗ trợ nhân đạo và tị nạn.</p>
+</div>
+<div class="accordion-single">
+<div class="accordion-visible-wrapper">
+<p class="accordion-visible">SIM 4G có hoạt động tốt ở các vùng hẻo lánh dã ngoại không?</p>
+<div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2"></path>
+</svg></div>
+</div>
+<p class="accordion-hidden">SIM tích hợp sẵn của Vasco tự động kết nối với mạng di động mạnh nhất tại gần 200 quốc gia mà không cần cài đặt phức tạp.</p>
 </div>
 </div>
-</div>
-</section>
-<section class="text-divided type-gray">
-<div class="container">
-<div class="text-wrapper minus">
-<p class="font-bold">Không có thiết bị Vasco Translator:</p>
-<div class="list-wrapper"><ul><li>Các nhu cầu quan trọng có thể bị hiểu sai hoặc bị bỏ sót</li><li>Khách hàng có thể cảm thấy e ngại và ngần ngại khi tìm kiếm dịch vụ</li><li>Nhân viên gặp khó khăn trong việc cung cấp hỗ trợ toàn diện</li><li>Việc cung cấp dịch vụ bị trì hoãn do rào cản ngôn ngữ</li></ul></div>
-</div>
-<div class="divider"></div>
-<div class="text-wrapper plus">
-<p class="font-bold">Với Vasco Translator V4:</p>
-<div class="list-wrapper"><ul><li>Thực hiện đánh giá nhu cầu chính xác bằng bất kỳ ngôn ngữ nào</li><li>Xây dựng niềm tin qua giao tiếp trực tiếp, bảo mật</li><li>Xử lý các mẫu tiếp nhận và hồ sơ hiệu quả</li><li>Cung cấp hỗ trợ ngay lập tức mà không cần chờ phiên dịch viên</li><li>Đảm bảo giới thiệu chính xác đến các dịch vụ phù hợp</li></ul></div>
-</div>
-</div>
-</section>
-<section class="caption type-gray">
-<div class="container">
-<p>Nói một cách đơn giản, với Vasco Translator, tổ chức của bạn có thể cung cấp sự hỗ trợ hiệu quả và đầy tôn trọng hơn cho cộng đồng người nhập cư. Hãy cùng nhau đảm bảo mỗi cá nhân đều nhận được sự giúp đỡ họ cần, bất kể rào cản ngôn ngữ.</p>
 </div>
 </section>
-<section class="container freshdesk-form-section" id="freshdesk-form-section">
-<h2 class="h1">Bước tiếp theo là gì?</h2>
-<p>Giao tiếp bằng hơn 110 ngôn ngữ chỉ cách bạn một cuộc gọi ngắn. Hãy liên hệ với chúng tôi, và chúng ta sẽ cùng bàn về một giải pháp phù hợp với nhu cầu của bạn.</p>
-<form action="" class="freshdesk-form" id="freshdesk-form" method="post">
-<div class="form-input">
-<label for="b2b-firstname">Tên<span class="asterisk">*</span></label>
-<input name="b2b-firstname" placeholder="Nhập tên của bạn" required="" type="text"/>
-</div>
-<div class="form-input">
-<label for="b2b-lastname">Họ<span class="asterisk">*</span></label>
-<input name="b2b-lastname" placeholder="Nhập họ của bạn" required="" type="text"/>
-</div>
-<div class="form-input">
-<label for="b2b-email">Email công việc<span class="asterisk">*</span></label>
-<input name="b2b-email" placeholder="Nhập email" required="" type="email"/>
-</div>
-<div class="form-input">
-<label for="b2b-phonenumber">Số điện thoại<span class="asterisk">*</span></label>
-<input id="phone" inputmode="tel" name="b2b-phonenumber" placeholder="Nhập số điện thoại của bạn" required="" type="tel"/>
-</div>
-<input name="b2b-landingId" type="hidden" value="b2b-ngo"/>
-<input id="freshdesk-form-g-recaptcha-response" name="g-recaptcha-response" type="hidden" value=""/>
-<input id="freshdesk-form-g-recaptcha-action" name="g-recaptcha-action" type="hidden" value="freshdesk_submit">
-<div aria-hidden="true" class="ve-hp">
-<label for="freshdesk-form-ve_hp">Để trống trường này</label>
-<input autocomplete="off" id="freshdesk-form-ve_hp" name="ve_hp" tabindex="-1" type="text" value=""/>
-</div>
-<input name="ve_ts" type="hidden" value="1785226131"/>
-<p class="text-required"><span class="asterisk">*</span> Bắt buộc</p>
-<div class="gdpr-and-submit-wrapper">
-<p class="gdpr-text">Bên quản lý dữ liệu cá nhân là VASCO VN. Bên quản lý xử lý dữ liệu cá nhân được cung cấp trong biểu mẫu này nhằm mục đích xử lý liên lạc, theo các quy định được nêu trong <a href="<?php echo esc_url( home_url( "/privacy-policy/" ) ); ?>" target="_blank">Chính sách bảo mật</a>.</p>
-<button class="btn btn-md btn-primary" type="submit">Gửi</button>
-</div>
-</input></form>
-<div class="freshdesk-confirmation-screen" id="freshdesk-confirmation-screen">
-<svg fill="none" height="150" viewbox="0 0 150 150" width="150" xmlns="http://www.w3.org/2000/svg">
-<path d="M105.639 49H126.919C131.917 49.0132 136.706 51.0045 140.24 54.5385C143.774 58.0726 145.766 62.8621 145.779 67.86V124.09C145.776 129.096 143.79 133.897 140.255 137.441C136.72 140.985 131.925 142.984 126.919 143H23.0788C18.0765 142.984 13.284 140.988 9.74964 137.448C6.21527 133.908 4.22666 129.112 4.21875 124.11V67.88C4.22667 62.8786 6.2156 58.084 9.75025 54.5456C13.2849 51.0072 18.0774 49.0132 23.0788 49H46.0788" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.111"></path>
-<path d="M125.831 65.98L76.3914 115.43L26.9414 65.98" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.111"></path>
-<path d="M109.469 105.08L130.389 126" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.111"></path>
-<path d="M40.5294 105.08L19.6094 126" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.111"></path>
-<path d="M61.4102 49.3L75.8702 71.0101" stroke="#8F8BEF" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.185"></path>
-<path d="M75.8711 71.0099L91.3611 49.8799" stroke="#8F8BEF" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.185"></path>
-<path d="M75.8711 7.03003V71.01" stroke="#8F8BEF" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.185"></path>
-</svg>
-<p class="h1">Cảm ơn bạn đã liên hệ với chúng tôi!</p>
-<p>Đội ngũ của chúng tôi sẽ liên hệ với bạn sớm để tìm ra giải pháp phù hợp với nhu cầu của bạn. Nếu bạn có câu hỏi khẩn cấp, bạn có thể liên hệ với chúng tôi bằng cách nhấn vào nút dưới đây.</p>
-<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/contact/" ) ); ?>">LIÊN HỆ NGAY</a>
+
+</div><!-- .socialimpact-pages -->
+</div><!-- .js-content-wrapper -->
 </div>
 </section>
 <hr/>
-
 
 <?php
 get_footer();

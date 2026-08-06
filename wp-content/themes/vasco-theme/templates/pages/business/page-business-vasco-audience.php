@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Clean Page page-business-vasco-audience.php
  *
@@ -8,222 +8,181 @@
 get_header();
 ?>
 
-<!DOCTYPE html>
+<section class="relative" id="wrapper">
+<aside id="notifications">
+<div class="container">
+</div>
+</aside>
+<div>
+<div class="breadcrumb-container">
+<div class="container">
+<nav aria-label="Đường dẫn điều hướng" class="breadcrumb">
+<ol>
+<li class="body-16">
+<a href="<?php echo esc_url( home_url( "/" ) ); ?>"><span class="breadcrumb-link">Trang chủ</span></a><span class="breadcrumb-divider">&gt;</span>
+</li>
+<li class="body-16">
+<a href="<?php echo esc_url( home_url( "/all-products/" ) ); ?>"><span class="breadcrumb-link">Doanh nghiệp</span></a><span class="breadcrumb-divider">&gt;</span>
+</li>
+<li><span aria-current="page" class="breadcrumb-current body-16">Vasco Audience</span></li>
+</ol>
+</nav>
+</div>
+</div>
 
-<html lang="pl">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="../favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="../favicon.ico" rel="icon" type="image/x-icon"/>
-<link href="../favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
-<link href="../favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-<link href="../apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
-<link href="../manifest.json" rel="manifest"/>
-<meta content="#111827" name="theme-color"/>
-<link href="#" rel="preconnect"/>
-<link crossorigin="" href="#" rel="preconnect"/>
-<title>Vasco Audience | Tłumaczenia na żywo bez sprzętu</title>
-<style>
-      body{margin:0;font-family:system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
-      #root{min-height:100vh}
-      .min-h-screen{min-height:100vh}
-      .bg-white{background-color:#fff}
-      .text-gray-900{color:#111827}
-      .font-sans{font-family:ui-sans-serif,system-ui,sans-serif}
-    </style>
-<!-- Google Consent Mode v2 — must load BEFORE GTM -->
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('consent', 'default', {
-      analytics_storage: 'denied',
-      ad_storage: 'denied',
-      ad_user_data: 'denied',
-      ad_personalization: 'denied'
-    });
-    (function(){
-      try {
-        var c = localStorage.getItem('vasco-cookie-consent');
-        if (c === 'accepted') {
-          gtag('consent', 'update', {
-            analytics_storage: 'granted',
-            ad_storage: 'granted',
-            ad_user_data: 'granted',
-            ad_personalization: 'granted'
-          });
-        }
-      } catch(e){}
-    })();
-    </script>
-<!-- End Google Consent Mode v2 -->
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WZBDT6KF');</script>
-<!-- End Google Tag Manager -->
-<!-- Contentsquare / Hotjar -->
-<script async="" src="https://t.contentsquare.net/uxa/4caffd57f93f5.js" /></script>
-<!-- End Contentsquare / Hotjar -->
-<script crossorigin="" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/index-DF1SitB8.js" ); ?>" type="module"></script>
-<link crossorigin="" href="../assets/vendor-helmet-Bl0NkVNc.js" rel="modulepreload"/>
-<link crossorigin="" href="../assets/vendor-motion-B-DXh1kW.js" rel="modulepreload"/>
-<link crossorigin="" href="../assets/vendor-router-CvRv0Qke.js" rel="modulepreload"/>
-<link crossorigin="" href="../assets/vendor-i18n-oX0ZlWwM.js" rel="modulepreload"/>
-<link crossorigin="" href="../assets/vendor-icons-CDibjtYT.js" rel="modulepreload"/>
-<link crossorigin="" href="../assets/index-Bac-we2J.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="..<?php echo esc_url( VASCO_THEME_URI . '/assets/' ); ?>css/smooth-carousel.css"/>
-</head>
-<body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-WZBDT6KF" style="display:none;visibility:hidden" width="0"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<div id="root"></div>
-<!-- GUARANTEED MEGAMENU HOVER ENGINE WITH SNAPPY CLOSE -->
-<style id="guaranteed-megamenu-css">
-  @media (min-width: 992px) {
-    header, .header, #desktop-nav {
-      position: relative !important;
-      z-index: 10000 !important;
-    }
-    .desktop-nav .menu-item-wrapper {
-      position: static !important;
-    }
-    .desktop-nav .menu-item-wrapper:hover {
-      background-color: #efece8 !important;
-    }
-    .desktop-nav .menu-item-wrapper:hover .arrow-rotate,
-    .desktop-nav .menu-item-wrapper.open .arrow-rotate {
-      transform: rotate(180deg) !important;
-    }
-    .megamenu-childs-wrapper {
-      position: absolute !important;
-      top: 100% !important;
-      left: 0 !important;
-      right: 0 !important;
-      width: 100% !important;
-      background-color: #ffffff !important;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.16) !important;
-      border-bottom-left-radius: 24px !important;
-      border-bottom-right-radius: 24px !important;
-      border-top: 1px solid #efece8 !important;
-      padding: 32px 0 !important;
-      pointer-events: auto !important;
-    }
-    .megamenu-childs-wrapper[hidden] {
-      display: none !important;
-    }
-  }
-</style>
-<script id="guaranteed-megamenu-js">
-(function() {
-  function setupHoverMegamenus() {
-    var wrappers = document.querySelectorAll('.menu-item-wrapper');
-    wrappers.forEach(function(wrapper) {
-      var submenu = wrapper.querySelector('.megamenu-childs-wrapper');
-      var link = wrapper.querySelector('.nav-link');
-      if (!submenu) return;
+<div class="js-content-wrapper" id="content-wrapper">
+<div class="socialimpact-pages">
 
-      var closeTimer = null;
+<!-- Top Banner -->
+<div class="socialimpact-top">
+<div class="container">
+<h1 class="h1">Vasco Audience - Dịch Thuật Trực Tiếp Cho Hội Thảo & Sự Kiện</h1>
+<p class="socialimpact-subtitle">Giải pháp phiên dịch trực tuyến cho phép hàng trăm người tham gia hội thảo, bài giảng hoặc cuộc họp đa ngôn ngữ lắng nghe bản dịch bằng chính điện thoại của họ mà không cần thiết bị tai nghe đắt đỏ.</p>
+</div>
+</div>
 
-      function loadLazyImages() {
-        var imgs = submenu.querySelectorAll('img[data-src]');
-        imgs.forEach(function(img) {
-          var ds = img.getAttribute('data-src');
-          if (ds) {
-            img.src = ds;
-          }
-        });
-      }
+<!-- Main Card Wrapper -->
+<section class="socialimpact-card-wrapper">
+<div class="socialimpact-inner-card">
 
-      function openMenu() {
-        if (closeTimer) {
-          clearTimeout(closeTimer);
-          closeTimer = null;
-        }
-        loadLazyImages();
-        submenu.removeAttribute('hidden');
-        submenu.style.cssText = 'display: flex !important; visibility: visible !important; opacity: 1 !important; z-index: 99999 !important; pointer-events: auto !important;';
-        wrapper.classList.add('open');
-        if (link) link.setAttribute('aria-expanded', 'true');
-      }
+<!-- Block 1: Quét Mã QR Tham Gia Tức Thời -->
+<div class="si-item si-item--left">
+<div class="si-text">
+<h2 class="h2">Tham Gia Tức Thời Bằng Mã QR</h2>
+<h3 class="box-subtitle">Không cần cài đặt ứng dụng phức tạp hay thuê thiết bị cabin đắt đỏ</h3>
+<p>Khán giả chỉ cần dùng camera điện thoại quét mã QR hiển thị trên màn hình hội thảo là có thể bắt đầu nghe bản dịch bằng ngôn ngữ mẹ đẻ ngay lập tức.</p>
+<ul>
+<li>Hỗ trợ lên tới 100+ người nghe đồng thời trong cùng một phòng hội thảo</li>
+<li>Dịch trực tiếp bài phát biểu của diễn giả sang hơn 110+ ngôn ngữ</li>
+<li>Tối ưu chi phí tổ chức sự kiện đa quốc gia đáng kể</li>
+</ul>
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/all-products/" ) ); ?>">Khám phá Vasco Audience <span class="text-sr-only">Vasco</span></a>
+</div>
+<div class="si-image">
+<img alt="Quét mã QR tham gia phòng hội thảo dịch trực tiếp" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/q1/vasco-audience.webp' ); ?>"/>
+</div>
+</div>
 
-      function closeMenu() {
-        if (closeTimer) clearTimeout(closeTimer);
-        closeTimer = setTimeout(function() {
-          submenu.setAttribute('hidden', '');
-          submenu.style.cssText = '';
-          wrapper.classList.remove('open');
-          if (link) link.setAttribute('aria-expanded', 'false');
-        }, 100); // Fast 100ms close when mouse moves out
-      }
+<hr class="si-divider"/>
 
-      wrapper.addEventListener('mouseenter', openMenu);
-      wrapper.addEventListener('mouseleave', closeMenu);
-      submenu.addEventListener('mouseenter', openMenu);
-      submenu.addEventListener('mouseleave', closeMenu);
+<!-- Block 2: Dịch Thuật AI Tốc Độ Cao & Loa Ngoài Chuẩn -->
+<div class="si-item si-item--right">
+<div class="si-image">
+<img alt="Diễn giả bài phát biểu hội thảo đa ngôn ngữ" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/vasco-audience-presentation.webp' ); ?>"/>
+</div>
+<div class="si-text">
+<h2 class="h2">Tốc Độ Phiên Dịch AI Thời Gian Thực</h2>
+<h3 class="box-subtitle">Bản dịch hiển thị dạng văn bản & phát âm thanh phụ đề mượt mà</h3>
+<p>Công nghệ AI nhận diện giọng nói diễn giả và truyền tải bản dịch phụ đề trực tiếp tới thiết bị của người nghe với độ trễ cực thấp dưới 0.5 giây.</p>
+<ul>
+<li>Tùy chọn đọc phụ đề âm thanh hoặc xem văn bản trực tiếp trên điện thoại</li>
+<li>Tích hợp công nghệ lọc nhiễu mic hội trường chuyên nghiệp</li>
+<li>Xuất toàn bộ biên bản cuộc họp / hội thảo dạng văn bản sau sự kiện</li>
+</ul>
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/all-products/" ) ); ?>">Xem demo tính năng <span class="text-sr-only">Vasco</span></a>
+</div>
+</div>
 
-      if (link) {
-        link.addEventListener('mouseenter', openMenu);
-        link.addEventListener('mouseleave', closeMenu);
-        link.addEventListener('click', function(e) {
-          if (window.innerWidth < 992) {
-            e.preventDefault();
-            if (wrapper.classList.contains('open')) {
-              closeMenu();
-            } else {
-              openMenu();
-            }
-          }
-        });
-      }
-    });
-  }
+<hr class="si-divider"/>
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', setupHoverMegamenus);
-  } else {
-    setupHoverMegamenus();
-  }
-})();
-</script>
-<!-- MOBILE MENU & CTA CLICK NAV ENGINE -->
-<!-- MOBILE MENU & CTA CLICK NAV ENGINE -->
-<script id="custom-mobile-menu-fix">
-(function() {
-  function initMobileMenuNav() {
-    var burger = document.querySelector('#open-menu, .open-menu, .burger-menu');
-    var mobileMenu = document.querySelector('.mobile-menu, #mobile-menu, .mobile-nav');
-    
-    if (burger && mobileMenu) {
-      burger.addEventListener('click', function(e) {
-        mobileMenu.classList.toggle('active');
-        mobileMenu.classList.toggle('open');
-      });
-    }
+<!-- Block 3: Phù Hợp Cho Mọi Quy Mô Sự Kiện -->
+<div class="si-item si-item--left">
+<div class="si-text">
+<h2 class="h2">Giải Pháp Cho Mọi Quy Mô Sự Kiện & Hội Thảo</h2>
+<h3 class="box-subtitle">Từ cuộc họp nội bộ doanh nghiệp đến hội thảo quốc tế hàng nghìn người</h3>
+<p>Ứng dụng linh hoạt cho các lớp học đa quốc gia, tour du lịch đoàn đông người, hội nghị cổ đông và các buổi đào tạo trực tuyến đa ngôn ngữ.</p>
+<ul>
+<li>Không giới hạn địa lý, hỗ trợ cả tham gia trực tiếp & online</li>
+<li>Bảo mật đường truyền dữ liệu cuộc họp tuyệt đối chuẩn GDPR</li>
+<li>Giao diện tùy chỉnh thương hiệu doanh nghiệp chuyên nghiệp</li>
+</ul>
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/all-products/" ) ); ?>">Tìm hiểu thêm <span class="text-sr-only">Vasco</span></a>
+</div>
+<div class="si-image">
+<img alt="Khán giả nhóm đa ngôn ngữ tại sự kiện hội thảo" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/q1/group.webp' ); ?>"/>
+</div>
+</div>
 
-    // Ensure all links with valid href navigate correctly
-    document.querySelectorAll('a[href]').forEach(function(link) {
-      var href = link.getAttribute('href');
-      if (href && href !== '#' && !href.startsWith('javascript:')) {
-        link.style.cursor = 'pointer';
-      }
-    });
-  }
+</div><!-- .socialimpact-inner-card -->
+</section><!-- .socialimpact-card-wrapper -->
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initMobileMenuNav);
-  } else {
-    initMobileMenuNav();
-  }
-})();
-</script>
-  <script src="..<?php echo esc_url( VASCO_THEME_URI . '/assets/' ); ?>js/smooth-carousel.js"></script>
-</body>
-</html>
+<!-- Core Section: Lợi Ích Vasco Audience -->
+<section aria-labelledby="key-features-heading" class="key-features-section container" style="margin: 60px auto;">
+<div class="key-features-flex">
+<h2 class="h2-notosans text-center" id="key-features-heading" style="margin-bottom: 12px;">TẠI SAO NÊN DÙNG VASCO AUDIENCE?</h2>
+<h3 class="h1 text-center" style="margin-bottom: 36px; max-width: 800px; margin-left: auto; margin-right: auto;">Giải pháp phiên dịch hội thảo thời gian thực không cần lắp đặt thiết bị cabin</h3>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px;">
+<div style="background: #ffffff; padding: 24px; border-radius: 16px; border: 1px solid #e2e8f0; text-align: center;">
+<h4 class="h2" style="font-size: 1.2rem; margin-bottom: 8px;">100+ Người Nghe Đồng Thời</h4>
+<p style="color: #64748b; font-size: 0.9rem;">Khán giả nghe bản dịch trực tiếp ngay trên smartphone cá nhân.</p>
+</div>
+<div style="background: #ffffff; padding: 24px; border-radius: 16px; border: 1px solid #e2e8f0; text-align: center;">
+<h4 class="h2" style="font-size: 1.2rem; margin-bottom: 8px;">Quét QR Tham Gia Ngay</h4>
+<p style="color: #64748b; font-size: 0.9rem;">Không cần cài ứng dụng hay đăng ký tài khoản phức tạp.</p>
+</div>
+<div style="background: #ffffff; padding: 24px; border-radius: 16px; border: 1px solid #e2e8f0; text-align: center;">
+<h4 class="h2" style="font-size: 1.2rem; margin-bottom: 8px;">Dịch AI Trực Tiếp 110+ Ngôn Ngữ</h4>
+<p style="color: #64748b; font-size: 0.9rem;">Mỗi người nghe tự chọn ngôn ngữ mẹ đẻ của họ.</p>
+</div>
+<div style="background: #ffffff; padding: 24px; border-radius: 16px; border: 1px solid #e2e8f0; text-align: center;">
+<h4 class="h2" style="font-size: 1.2rem; margin-bottom: 8px;">Tối Ưu Chi Phí Sự Kiện</h4>
+<p style="color: #64748b; font-size: 0.9rem;">Cắt giảm chi phí thuê cabin phiên dịch & tai nghe đắt đỏ.</p>
+</div>
+</div>
+</div>
+</section>
 
+<!-- Single Featured Product -->
+<section aria-labelledby="vasco-products-heading" class="vasco-products">
+<div class="container">
+<h2 class="h2-notosans" id="vasco-products-heading">Sản phẩm tích hợp tính năng này</h2>
+<div class="single-product-featured">
+<div class="box">
+<img alt="Vasco Translator Q1" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/q1.webp" ); ?>"/>
+<div class="product-description">
+<h3>Vasco Translator Q1</h3>
+<p>Thiết bị phát sóng và chủ trì các phòng hội thảo Vasco Audience chuyên nghiệp với kết nối 4G miễn phí trọn đời.</p>
+<a class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/product/vasco-translator-q1/" ) ); ?>">
+Tìm hiểu thêm
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Core Section: FAQ Vasco Audience -->
+<section class="container faq-section" style="margin: 60px auto;">
+<h2 class="h1 text-center" style="margin-bottom: 32px;">Câu Hỏi Thường Gặp Về Vasco Audience</h2>
+<div class="accordion-section">
+<div class="accordion-wrapper">
+<div class="accordion-single">
+<div class="accordion-visible-wrapper">
+<p class="accordion-visible">Khán giả có cần tải ứng dụng về máy để nghe dịch không?</p>
+<div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2"></path>
+</svg></div>
+</div>
+<p class="accordion-hidden">Không, khán giả chỉ cần quét mã QR trên màn hình hội thảo là trang web phiên dịch sẽ mở trực tiếp trên trình duyệt điện thoại.</p>
+</div>
+<div class="accordion-single">
+<div class="accordion-visible-wrapper">
+<p class="accordion-visible">Số lượng người nghe tối đa trong một phòng hội thảo là bao nhiêu?</p>
+<div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2"></path>
+</svg></div>
+</div>
+<p class="accordion-hidden">Hệ thống hỗ trợ lên tới 100+ người nghe đồng thời trong cùng một phòng dịch trực tiếp.</p>
+</div>
+</div>
+</div>
+</section>
+
+</div><!-- .socialimpact-pages -->
+</div><!-- .js-content-wrapper -->
+</div>
+</section>
+<hr/>
 
 <?php
 get_footer();

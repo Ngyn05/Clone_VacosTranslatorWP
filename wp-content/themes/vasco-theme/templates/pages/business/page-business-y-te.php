@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Doanh Nghiệp - Y Tế
  *
@@ -144,55 +144,7 @@ get_header();
 </div>
 </section>
 <hr/>
-<section class="container freshdesk-form-section" id="freshdesk-form-section">
-<h2 class="h1">Bước tiếp theo là gì?</h2>
-<p>Giao tiếp hơn 110 ngôn ngữ chỉ cách bạn một cuộc gọi nhanh. Hãy liên hệ với chúng tôi, và chúng tôi sẽ cùng bàn về một đề xuất phù hợp với nhu cầu của bạn.</p>
-<form action="" class="freshdesk-form" id="freshdesk-form" method="post">
-<div class="form-input">
-<label for="b2b-firstname">Tên<span class="asterisk">*</span></label>
-<input name="b2b-firstname" placeholder="Nhập tên của bạn" required="" type="text"/>
-</div>
-<div class="form-input">
-<label for="b2b-lastname">Họ<span class="asterisk">*</span></label>
-<input name="b2b-lastname" placeholder="Nhập họ của bạn" required="" type="text"/>
-</div>
-<div class="form-input">
-<label for="b2b-email">Email công việc<span class="asterisk">*</span></label>
-<input name="b2b-email" placeholder="Nhập email" required="" type="email"/>
-</div>
-<div class="form-input">
-<label for="b2b-phonenumber">Số điện thoại<span class="asterisk">*</span></label>
-<input id="phone" inputmode="tel" name="b2b-phonenumber" placeholder="Nhập số điện thoại của bạn" required="" type="tel"/>
-</div>
-<input name="b2b-landingId" type="hidden" tế="" value="b2b-Y"/>
-<input id="freshdesk-form-g-recaptcha-response" name="g-recaptcha-response" type="hidden" value=""/>
-<input id="freshdesk-form-g-recaptcha-action" name="g-recaptcha-action" type="hidden" value="freshdesk_submit">
-<div aria-hidden="true" class="ve-hp">
-<label for="freshdesk-form-ve_hp">Để trống trường này</label>
-<input autocomplete="off" id="freshdesk-form-ve_hp" name="ve_hp" tabindex="-1" type="text" value=""/>
-</div>
-<input name="ve_ts" type="hidden" value="1785226340"/>
-<p class="text-required"><span class="asterisk">*</span>Bắt buộc</p>
-<div class="gdpr-and-submit-wrapper">
-<p class="gdpr-text">Bên quản lý dữ liệu cá nhân là VASCO VN. Bên quản lý xử lý dữ liệu cá nhân được cung cấp trong biểu mẫu này nhằm mục đích xử lý thư từ liên lạc, theo các quy định được quy định trong<a href="<?php echo esc_url( home_url( "/privacy-policy/" ) ); ?>" target="_blank">Chính sách bảo mật</a>.</p>
-<button class="btn btn-md btn-primary" type="submit">Gửi</button>
-</div>
-</input></form>
-<div class="freshdesk-confirmation-screen" id="freshdesk-confirmation-screen">
-<svg fill="none" height="150" viewbox="0 0 150 150" width="150" xmlns="http://www.w3.org/2000/svg">
-<path d="M105.639 49H126.919C131.917 49.0132 136.706 51.0045 140.24 54.5385C143.774 58.0726 145.766 62.8621 145.779 67.86V124.09C145.776 129.096 143.79 133.897 140.255 137.441C136.72 140.985 131.925 142.984 126.919 143H23.0788C18.0765 142.984 13.284 140.988 9.74964 137.448C6.21527 133.908 4.22666 129.112 4.21875 124.11V67.88C4.22667 62.8786 6.2156 58.084 9.75025 54.5456C13.2849 51.0072 18.0774 49.0132 23.0788 49H46.0788" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.111"></path>
-<path d="M125.831 65.98L76.3914 115.43L26.9414 65.98" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.111"></path>
-<path d="M109.469 105.08L130.389 126" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.111"></path>
-<path d="M40.5294 105.08L19.6094 126" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.111"></path>
-<path d="M61.4102 49.3L75.8702 71.0101" stroke="#8F8BEF" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.185"></path>
-<path d="M75.8711 71.0099L91.3611 49.8799" stroke="#8F8BEF" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.185"></path>
-<path d="M75.8711 7.03003V71.01" stroke="#8F8BEF" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.185"></path>
-</svg>
-<p class="h1">Cảm ơn bạn đã liên hệ với chúng tôi!</p>
-<p>Đội ngũ của chúng tôi sẽ liên hệ với bạn sớm để tìm ra đề xuất phù hợp với nhu cầu của bạn. Nếu bạn có câu hỏi khẩn cấp, bạn có thể liên hệ với chúng tôi bằng cách nhấn vào nút bên dưới.</p>
-<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/contact/" ) ); ?>">ĐẾN TRANG LIÊN HỆ</a>
-</div>
-</section>
+
 <section aria-labelledby="vasco-products-heading" class="vasco-products" tabindex="0">
 <div class="container">
 <div class="products-flex">

@@ -461,7 +461,7 @@
 														</a>
 													</li>
 													<li>
-														<a href="<?php echo esc_url( home_url( "/business-law-enforcement/" ) ); ?>" role="menuitem">
+														<a href="<?php echo esc_url( home_url( "/business-local-government/" ) ); ?>" role="menuitem">
 															Chính quyền địa phương
 														</a>
 													</li>
@@ -477,7 +477,7 @@
 											<div class="megamenu-column-content">
 												<ul aria-labelledby="nav-title-for_business" role="menu">
 													<li>
-														<a href="<?php echo esc_url( home_url( "/business-healthcare/" ) ); ?>" role="menuitem">
+														<a href="<?php echo esc_url( home_url( "/business-vasco-audience/" ) ); ?>" role="menuitem">
 															Vasco Audience - Dịch nhóm
 														</a>
 													</li>
@@ -486,7 +486,7 @@
 										</div>
 										<div
 											class="megamenu-column-wrapper megamenu-column-image megamenu-column-image-square">
-											<a href="<?php echo esc_url( home_url( "/business-healthcare/" ) ); ?>" role="menuitem">
+											<a href="<?php echo esc_url( home_url( "/business-vasco-audience/" ) ); ?>" role="menuitem">
 												<div class="img-wrapper">
 													<img alt="Vasco Audience"
 														class="js-menu-lazy-image"
@@ -1718,7 +1718,7 @@
 															</a>
 														</li>
 														<li>
-															<a href="<?php echo esc_url( home_url( "/business-law-enforcement/" ) ); ?>" role="menuitem">
+															<a href="<?php echo esc_url( home_url( "/business-local-government/" ) ); ?>" role="menuitem">
 																Chính quyền địa phương
 															</a>
 														</li>
@@ -1734,7 +1734,7 @@
 												<div class="megamenu-column-content">
 													<ul aria-labelledby="nav-title-for_business" role="menu">
 														<li>
-															<a href="<?php echo esc_url( home_url( "/business-healthcare/" ) ); ?>" role="menuitem">
+															<a href="<?php echo esc_url( home_url( "/business-vasco-audience/" ) ); ?>" role="menuitem">
 																Vasco Audience - Dịch nhóm
 															</a>
 														</li>
@@ -1743,7 +1743,7 @@
 											</div>
 											<div
 												class="megamenu-column-wrapper megamenu-column-image megamenu-column-image-square">
-												<a href="<?php echo esc_url( home_url( "/business-healthcare/" ) ); ?>" role="menuitem">
+												<a href="<?php echo esc_url( home_url( "/business-vasco-audience/" ) ); ?>" role="menuitem">
 													<div class="img-wrapper">
 														<img alt="A large conference room screen displays the “Join Vasco Audience” instructions, showing guidance for participants on how to access the session."
 															class="js-menu-lazy-image"

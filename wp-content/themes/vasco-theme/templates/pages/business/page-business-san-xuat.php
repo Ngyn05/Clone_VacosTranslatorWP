@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Doanh Nghiệp - Sản Xuất
  *
@@ -327,55 +327,7 @@ get_header();
 <p>Empower your production team with Vasco Translator V4, and keep your operations running smoothly - no matter the language barriers. Let’s work together to create a safer, more efficient, and connected production environment.</p>
 </div>
 </section>
-<section class="container freshdesk-form-section" id="freshdesk-form-section">
-<h2 class="h1">What’s next?</h2>
-<p>Speaking 110+ languages is only a quick call away. Reach out to us, and we’ll talk about an offer tailored to your needs.</p>
-<form action="" class="freshdesk-form" id="freshdesk-form" method="post">
-<div class="form-input">
-<label for="b2b-firstname">Tên<span class="asterisk">*</span></label>
-<input name="b2b-firstname" placeholder="Enter your name" required="" type="text"/>
-</div>
-<div class="form-input">
-<label for="b2b-lastname">Họ<span class="asterisk">*</span></label>
-<input name="b2b-lastname" placeholder="Enter your last name" required="" type="text"/>
-</div>
-<div class="form-input">
-<label for="b2b-email">Business e-mail<span class="asterisk">*</span></label>
-<input name="b2b-email" placeholder="Enter e-mail" required="" type="email"/>
-</div>
-<div class="form-input">
-<label for="b2b-phonenumber">Số điện thoại<span class="asterisk">*</span></label>
-<input id="phone" inputmode="tel" name="b2b-phonenumber" placeholder="Enter your phone number" required="" type="tel"/>
-</div>
-<input name="b2b-landingId" type="hidden" value="b2b-factories"/>
-<input id="freshdesk-form-g-recaptcha-response" name="g-recaptcha-response" type="hidden" value=""/>
-<input id="freshdesk-form-g-recaptcha-action" name="g-recaptcha-action" type="hidden" value="freshdesk_submit">
-<div aria-hidden="true" class="ve-hp">
-<label for="freshdesk-form-ve_hp">Leave this field empty</label>
-<input autocomplete="off" id="freshdesk-form-ve_hp" name="ve_hp" tabindex="-1" type="text" value=""/>
-</div>
-<input name="ve_ts" type="hidden" value="1785226338"/>
-<p class="text-required"><span class="asterisk">*</span> Obligatory</p>
-<div class="gdpr-and-submit-wrapper">
-<p class="gdpr-text">Bên quản lý dữ liệu cá nhân là VASCO VN. Bên quản lý xử lý dữ liệu cá nhân được cung cấp trong biểu mẫu này nhằm mục đích xử lý thư từ liên lạc, theo các quy định được quy định trong <a href="<?php echo esc_url( home_url( "/privacy-policy/" ) ); ?>" target="_blank">Chính sách bảo mật</a>.</p>
-<button class="btn btn-md btn-primary" type="submit">Submit</button>
-</div>
-</input></form>
-<div class="freshdesk-confirmation-screen" id="freshdesk-confirmation-screen">
-<svg fill="none" height="150" viewbox="0 0 150 150" width="150" xmlns="http://www.w3.org/2000/svg">
-<path d="M105.639 49H126.919C131.917 49.0132 136.706 51.0045 140.24 54.5385C143.774 58.0726 145.766 62.8621 145.779 67.86V124.09C145.776 129.096 143.79 133.897 140.255 137.441C136.72 140.985 131.925 142.984 126.919 143H23.0788C18.0765 142.984 13.284 140.988 9.74964 137.448C6.21527 133.908 4.22666 129.112 4.21875 124.11V67.88C4.22667 62.8786 6.2156 58.084 9.75025 54.5456C13.2849 51.0072 18.0774 49.0132 23.0788 49H46.0788" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.111"></path>
-<path d="M125.831 65.98L76.3914 115.43L26.9414 65.98" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.111"></path>
-<path d="M109.469 105.08L130.389 126" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.111"></path>
-<path d="M40.5294 105.08L19.6094 126" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.111"></path>
-<path d="M61.4102 49.3L75.8702 71.0101" stroke="#8F8BEF" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.185"></path>
-<path d="M75.8711 71.0099L91.3611 49.8799" stroke="#8F8BEF" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.185"></path>
-<path d="M75.8711 7.03003V71.01" stroke="#8F8BEF" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.185"></path>
-</svg>
-<p class="h1">Thank you for contacting us!</p>
-<p>Our team will contact you soon for finding an offer tailored to your needs. If you have urgent questions, You can contact us by clicking the button below.</p>
-<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/contact/" ) ); ?>">LIÊN HỆ NGAY</a>
-</div>
-</section>
+
 </div>
 </div>
 </section>
