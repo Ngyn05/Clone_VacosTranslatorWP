@@ -2415,37 +2415,46 @@ h2.product-title {
     letter-spacing: -0.5px !important;
 }
 
-/* Circular MÔ TẢ Button */
+/* Sleek Pill MÔ TẢ Button */
 .btn-circle-desc,
 .product-description-button-wrapper .btn-secondary,
 .btn-description-circle,
 a.product-link-description {
-    width: 50px !important;
-    height: 50px !important;
-    min-width: 50px !important;
-    border-radius: 50% !important;
-    border: 1.5px solid #94a3b8 !important;
-    background: transparent !important;
-    color: #4f46e5 !important;
-    font-size: 11px !important;
+    width: auto !important;
+    height: 38px !important;
+    min-width: 90px !important;
+    padding: 0 20px !important;
+    border-radius: 20px !important;
+    border: 1.5px solid #0f172a !important;
+    background: #ffffff !important;
+    color: #0f172a !important;
+    font-size: 0.85rem !important;
     font-weight: 700 !important;
-    display: flex !important;
-    flex-direction: column !important;
+    display: inline-flex !important;
+    flex-direction: row !important;
     align-items: center !important;
     justify-content: center !important;
     text-align: center !important;
-    line-height: 1.1 !important;
+    line-height: 1 !important;
     text-decoration: none !important;
     transition: all 0.2s ease !important;
     text-transform: uppercase !important;
+    letter-spacing: 0.03em !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04) !important;
+    white-space: nowrap !important;
+}
+
+.btn-circle-desc br {
+    display: none !important;
 }
 
 .btn-circle-desc:hover,
 .product-description-button-wrapper .btn-secondary:hover {
-    border-color: #4361ee !important;
-    background: #f8fafc !important;
-    color: #4361ee !important;
-    transform: scale(1.04) !important;
+    border-color: #2563eb !important;
+    background: #2563eb !important;
+    color: #ffffff !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25) !important;
 }
 
 /* THÊM VÀO GIỎ HÀNG & THÔNG BÁO CHO TÔI Buttons */
@@ -4953,5 +4962,606 @@ picture {
         font-size: 0.95rem !important;
     }
 }
+
+/* ==========================================================================
+   TRANSLATOR PRODUCTS (MÁY DỊCH) - MODERN PREMIUM REDESIGN
+   ========================================================================== */
+
+/* 1. Main Card Container - Compact & Tight */
+.products-translators .product-miniature,
+article.product-horizontal-card,
+#product-translators .product-miniature {
+    display: grid !important;
+    grid-template-columns: 280px 1fr !important;
+    gap: 24px !important;
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 16px !important;
+    padding: 20px 24px !important;
+    margin-bottom: 20px !important;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04) !important;
+    align-items: center !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.products-translators .product-miniature:hover,
+article.product-horizontal-card:hover,
+#product-translators .product-miniature:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08) !important;
+    border-color: #cbd5e1 !important;
+}
+
+/* Accent top bar effect on hover */
+.products-translators .product-miniature::before,
+article.product-horizontal-card::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 3px !important;
+    background: linear-gradient(90deg, #2563eb, #3b82f6, #60a5fa) !important;
+    opacity: 0 !important;
+    transition: opacity 0.3s ease !important;
+}
+
+.products-translators .product-miniature:hover::before,
+article.product-horizontal-card:hover::before {
+    opacity: 1 !important;
+}
+
+/* 2. Product Thumbnail Wrapper */
+.products-translators .thumbnail-container,
+.products-translators .listing-product-head,
+article.product-horizontal-card .listing-product-head {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.products-translators .product-thumb-wrapper,
+.products-translators .thumbnail-top {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 260px !important;
+    background: linear-gradient(145deg, #f8fafc 0%, #f1f5f9 100%) !important;
+    border-radius: 12px !important;
+    padding: 16px 12px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.8) !important;
+}
+
+.products-translators .product-thumb-wrapper img,
+.products-translators .thumbnail-top img {
+    max-width: 100% !important;
+    max-height: 260px !important;
+    height: auto !important;
+    object-fit: contain !important;
+    filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.1)) !important;
+    transition: transform 0.3s ease !important;
+}
+
+.products-translators .product-miniature:hover img,
+article.product-horizontal-card:hover img {
+    transform: scale(1.03) !important;
+}
+
+/* 3. Product Description Body & Head */
+.products-translators .product-description,
+.products-translators .product-description-head,
+article.product-horizontal-card .listing-product-body {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+    width: 100% !important;
+}
+
+.products-translators .product-title,
+.products-translators .product-name,
+.product-miniature .product-title,
+.product-miniature .product-name,
+article.product-horizontal-card .product-title,
+h2.product-name,
+h2.product-title {
+    font-size: 1.85rem !important;
+    font-weight: 900 !important;
+    color: #0f172a !important;
+    letter-spacing: -0.03em !important;
+    line-height: 1.25 !important;
+    margin: 0 0 6px 0 !important;
+    position: relative !important;
+    display: block !important;
+}
+
+.products-translators .product-title a,
+.product-miniature .product-title a,
+article.product-horizontal-card .product-title a,
+a.product-title-link {
+    color: #0f172a !important;
+    font-weight: 900 !important;
+    text-decoration: none !important;
+    -webkit-text-fill-color: #0f172a !important;
+    background: none !important;
+    transition: color 0.2s ease !important;
+}
+
+.products-translators .product-title a:hover,
+.product-miniature .product-title a:hover,
+article.product-horizontal-card .product-title a:hover,
+a.product-title-link:hover {
+    color: #2563eb !important;
+    -webkit-text-fill-color: #2563eb !important;
+}
+
+.products-translators .product-subtitle,
+article.product-horizontal-card .product-subtitle {
+    font-size: 0.9rem !important;
+    font-weight: 400 !important;
+    color: #475569 !important;
+    line-height: 1.4 !important;
+    margin: 0 0 6px 0 !important;
+}
+
+/* Trustpilot Rating Pill - Compact */
+.products-translators .trustpilot-top,
+.products-translators .trustpilot-mini,
+article.product-horizontal-card .trustpilot-mini {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    background: #f1f5f9 !important;
+    padding: 4px 10px !important;
+    border-radius: 16px !important;
+    width: fit-content !important;
+    margin-bottom: 8px !important;
+}
+
+.products-translators .trustpilot-mini img,
+.products-translators .trustpilot-top img {
+    height: 15px !important;
+    width: auto !important;
+}
+
+/* 4. Feature Bullet Points - Standard Clean Bullets */
+.products-translators .product-description ul,
+.products-translators .product-long-description ul,
+article.product-horizontal-card .product-long-description ul {
+    list-style: disc !important;
+    padding-left: 20px !important;
+    margin: 0 0 16px 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 6px !important;
+}
+
+.products-translators .product-description li,
+.products-translators .product-long-description li,
+article.product-horizontal-card .product-long-description li {
+    position: static !important;
+    padding-left: 0 !important;
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+    color: #334155 !important;
+    text-align: left !important;
+    margin-bottom: 0 !important;
+}
+
+.products-translators .product-description li::before,
+.products-translators .product-long-description li::before,
+article.product-horizontal-card .product-long-description li::before {
+    display: none !important;
+}
+
+/* Bold label highlighting inside li */
+.products-translators .product-description li strong,
+.products-translators .product-long-description li strong,
+article.product-horizontal-card .product-long-description li strong {
+    color: #0f172a !important;
+    font-weight: 600 !important;
+}
+
+/* 5. Color Swatches Section - Pill Badges like Sample Image */
+.products-translators .product-variants-items,
+article.product-horizontal-card .product-variants-items {
+    margin-top: 12px !important;
+    margin-bottom: 20px !important;
+}
+
+.products-translators #legend-color,
+article.product-horizontal-card #legend-color {
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    color: #334155 !important;
+    margin-bottom: 8px !important;
+}
+
+.products-translators .product-variants-list,
+article.product-horizontal-card .product-variants-list {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+    align-items: center !important;
+}
+
+.products-translators .product-variants-item,
+article.product-horizontal-card .product-variants-item {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    cursor: pointer !important;
+    padding: 6px 14px !important;
+    border-radius: 8px !important;
+    background: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+    transition: all 0.2s ease !important;
+}
+
+.products-translators .product-variants-item:hover,
+.products-translators .product-variants-item.active,
+article.product-horizontal-card .product-variants-item.active {
+    background: #ffffff !important;
+    border-color: #0f172a !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08) !important;
+}
+
+.products-translators .circle,
+article.product-horizontal-card .circle {
+    width: 16px !important;
+    height: 16px !important;
+    border-radius: 50% !important;
+    flex-shrink: 0 !important;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15) !important;
+}
+
+.products-translators .radio-label,
+article.product-horizontal-card .radio-label {
+    font-size: 0.85rem !important;
+    font-weight: 500 !important;
+    color: #1e293b !important;
+}
+
+/* 6. Action Bar: 1 Single Horizontal Row (MÔ TẢ on Left, Price + MUA NGAY on Right) */
+.products-translators .product-description-body,
+.products-translators .add-to-cart-and-price,
+.products-translators .product-add-to-cart-block,
+article.product-horizontal-card .product-description-body,
+article.product-horizontal-card .add-to-cart-and-price {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 20px !important;
+    padding-top: 16px !important;
+    border-top: none !important;
+    margin-top: 12px !important;
+    width: 100% !important;
+    flex-wrap: nowrap !important;
+}
+
+/* Left: MÔ TẢ / DESCRIPTION button */
+.products-translators .product_button_description,
+.products-translators .btn-secondary,
+.products-translators .btn-description,
+.products-translators .btn-circle-desc,
+.product-miniature .btn-circle-desc,
+article.product-horizontal-card .btn-circle-desc {
+    border: 1.5px solid #6366f1 !important;
+    background: #ffffff !important;
+    color: #4f46e5 !important;
+    font-weight: 700 !important;
+    font-size: 0.85rem !important;
+    padding: 8px 24px !important;
+    border-radius: 24px !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.2s ease !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.03em !important;
+    width: auto !important;
+    height: 38px !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    white-space: nowrap !important;
+    line-height: 1 !important;
+    align-self: center !important;
+    box-shadow: none !important;
+}
+
+.products-translators .btn-secondary:hover,
+.products-translators .btn-description:hover,
+.products-translators .btn-circle-desc:hover,
+article.product-horizontal-card .btn-circle-desc:hover {
+    background: #f5f3ff !important;
+    border-color: #4f46e5 !important;
+    color: #4338ca !important;
+}
+
+/* Right Row for Price + Buy Button */
+.products-translators .price-and-buy-wrapper,
+article.product-horizontal-card .price-and-buy-wrapper,
+.products-translators .add-to-cart-and-price {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 24px !important;
+    margin-left: auto !important;
+}
+
+.products-translators .product-price,
+.products-translators .product-price-and-shipping,
+article.product-horizontal-card .product-price {
+    font-size: 1.75rem !important;
+    font-weight: 800 !important;
+    color: #1e293b !important;
+    letter-spacing: -0.02em !important;
+    line-height: 1 !important;
+    margin: 0 !important;
+    text-align: right !important;
+    white-space: nowrap !important;
+    order: 1 !important;
+}
+
+.products-translators .product-add-to-cart,
+article.product-horizontal-card .product-add-to-cart {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin: 0 !important;
+    order: 2 !important;
+}
+
+.products-translators .btn-primary,
+.products-translators .add-to-cart,
+.products-translators .add-to-cart-btn-primary,
+article.product-horizontal-card .add-to-cart-btn-primary {
+    background: #4f46e5 !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    font-size: 0.875rem !important;
+    padding: 10px 24px !important;
+    border-radius: 24px !important;
+    border: none !important;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3) !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    cursor: pointer !important;
+    transition: all 0.25s ease !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.02em !important;
+    white-space: nowrap !important;
+    max-width: none !important;
+}
+
+.products-translators .btn-primary:hover,
+.products-translators .add-to-cart:hover,
+.products-translators .add-to-cart-btn-primary:hover,
+article.product-horizontal-card .add-to-cart-btn-primary:hover {
+    background: #4338ca !important;
+    box-shadow: 0 6px 16px rgba(79, 70, 229, 0.45) !important;
+    transform: translateY(-1px) !important;
+    color: #ffffff !important;
+}
+
+/* ==========================================================================
+   MOBILE & ALL-DEVICE RESPONSIVE OPTIMIZATION FOR TRANSLATOR PRODUCTS
+   ========================================================================== */
+
+/* 1. Tablet Responsive (768px – 991px) */
+@media (max-width: 991px) {
+    .products-translators .product-miniature,
+    article.product-horizontal-card,
+    #product-translators .product-miniature {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        padding: 20px 18px !important;
+        border-radius: 16px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .products-translators .product-thumb-wrapper,
+    .products-translators .thumbnail-top {
+        max-width: 100% !important;
+        padding: 16px 12px !important;
+        border-radius: 12px !important;
+    }
+
+    .products-translators .product-thumb-wrapper img,
+    .products-translators .thumbnail-top img {
+        max-height: 240px !important;
+    }
+
+    .products-translators .product-title,
+    .products-translators .product-name,
+    article.product-horizontal-card .product-title {
+        font-size: 1.5rem !important;
+    }
+
+    .products-translators .product-subtitle,
+    article.product-horizontal-card .product-subtitle {
+        font-size: 0.875rem !important;
+    }
+
+    .products-translators .product-description-body,
+    .products-translators .add-to-cart-and-price,
+    article.product-horizontal-card .product-description-body {
+        flex-wrap: wrap !important;
+        gap: 14px !important;
+        padding-top: 14px !important;
+        margin-top: 14px !important;
+    }
+
+    .products-translators .price-and-buy-wrapper,
+    article.product-horizontal-card .price-and-buy-wrapper {
+        gap: 16px !important;
+    }
+
+    .products-translators .product-price,
+    article.product-horizontal-card .product-price {
+        font-size: 1.5rem !important;
+    }
+}
+
+/* 2. Standard Mobile (≤ 767px) */
+@media (max-width: 767px) {
+    .products-translators .product-miniature,
+    article.product-horizontal-card,
+    #product-translators .product-miniature {
+        grid-template-columns: 1fr !important;
+        gap: 14px !important;
+        padding: 16px 14px !important;
+        border-radius: 14px !important;
+        margin-bottom: 16px !important;
+        box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05) !important;
+    }
+
+    .products-translators .product-thumb-wrapper,
+    .products-translators .thumbnail-top {
+        padding: 12px 8px !important;
+    }
+
+    .products-translators .product-thumb-wrapper img,
+    .products-translators .thumbnail-top img {
+        max-height: 200px !important;
+    }
+
+    .products-translators .product-title,
+    .products-translators .product-name,
+    article.product-horizontal-card .product-title {
+        font-size: 1.3rem !important;
+        line-height: 1.25 !important;
+    }
+
+    .products-translators .product-subtitle,
+    article.product-horizontal-card .product-subtitle {
+        font-size: 0.825rem !important;
+        line-height: 1.4 !important;
+    }
+
+    .products-translators .product-description ul,
+    .products-translators .product-long-description ul,
+    article.product-horizontal-card .product-long-description ul {
+        padding-left: 16px !important;
+        gap: 4px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .products-translators .product-description li,
+    .products-translators .product-long-description li,
+    article.product-horizontal-card .product-long-description li {
+        font-size: 0.825rem !important;
+        line-height: 1.45 !important;
+    }
+
+    .products-translators .product-variants-list,
+    article.product-horizontal-card .product-variants-list {
+        gap: 6px !important;
+    }
+
+    .products-translators .product-variants-item,
+    article.product-horizontal-card .product-variants-item {
+        padding: 4px 10px !important;
+    }
+
+    .products-translators .radio-label,
+    article.product-horizontal-card .radio-label {
+        font-size: 0.775rem !important;
+    }
+
+    /* Action bar on Mobile: Price on top row, Buttons side by side or stacked below */
+    .products-translators .product-description-body,
+    .products-translators .add-to-cart-and-price,
+    article.product-horizontal-card .product-description-body {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 12px !important;
+        margin-top: 10px !important;
+        padding-top: 12px !important;
+    }
+
+    .products-translators .price-and-buy-wrapper,
+    article.product-horizontal-card .price-and-buy-wrapper {
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+        order: 1 !important;
+    }
+
+    .products-translators .product-price,
+    article.product-horizontal-card .product-price {
+        font-size: 1.4rem !important;
+    }
+
+    .products-translators .product_button_description,
+    .products-translators .btn-description,
+    .products-translators .btn-circle-desc,
+    article.product-horizontal-card .btn-circle-desc {
+        width: 100% !important;
+        height: 40px !important;
+        justify-content: center !important;
+        font-size: 0.825rem !important;
+        order: 2 !important;
+    }
+
+    .products-translators .btn-primary,
+    .products-translators .add-to-cart,
+    .products-translators .add-to-cart-btn-primary,
+    article.product-horizontal-card .add-to-cart-btn-primary {
+        padding: 10px 18px !important;
+        font-size: 0.825rem !important;
+        height: 42px !important;
+        justify-content: center !important;
+    }
+}
+
+/* 3. Small Mobile (≤ 480px) - Touch-friendly Optimization */
+@media (max-width: 480px) {
+    .products-translators .product-miniature,
+    article.product-horizontal-card,
+    #product-translators .product-miniature {
+        padding: 14px 10px !important;
+        border-radius: 12px !important;
+    }
+
+    .products-translators .product-title,
+    article.product-horizontal-card .product-title {
+        font-size: 1.2rem !important;
+    }
+
+    .products-translators .price-and-buy-wrapper,
+    article.product-horizontal-card .price-and-buy-wrapper {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 8px !important;
+        text-align: center !important;
+    }
+
+    .products-translators .product-price,
+    article.product-horizontal-card .product-price {
+        text-align: center !important;
+        font-size: 1.45rem !important;
+    }
+
+    .products-translators .btn-primary,
+    .products-translators .add-to-cart,
+    .products-translators .add-to-cart-btn-primary,
+    article.product-horizontal-card .add-to-cart-btn-primary {
+        width: 100% !important;
+        justify-content: center !important;
+        height: 44px !important;
+    }
+}
+
+
 
 
