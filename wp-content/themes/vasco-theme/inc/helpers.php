@@ -381,15 +381,66 @@ function vasco_theme_render_product_detail_page( $slug = '' ) {
 	echo '<p class="vasco-phone-consult-text">📞 Hãy để lại <strong class="highlight-orange">số điện thoại</strong>, chúng tôi sẽ gọi ngay cho bạn <strong class="highlight-yellow">tư vấn miễn phí!</strong></p>';
 	echo '<div class="vasco-phone-consult-form">';
 	echo '<input type="tel" class="vasco-phone-input" id="vasco-phone-input-' . esc_attr( (string) $product->get_id() ) . '" placeholder="Nhập sđt tư vấn miễn phí..." maxlength="12" />';
-	echo '<button type="button" class="vasco-phone-submit" onclick="vascoSendPhoneConsult(this)">GỬI ĐI</button>';
-	echo '</div></div>';
+	echo '<button type="button" class="vasco-phone-submit" onclick="vascoSendPhoneConsult(this, \'' . esc_js( $product->get_name() ) . '\')">GỬI ĐI</button>';
+	echo '</div>';
+	echo '<div class="vasco-phone-consult-msg" style="display:none; margin-top:8px; font-size:13px; font-weight:600; color:#fff;"></div>';
+	echo '</div>';
 	echo '<script>
-function vascoSendPhoneConsult(btn) {
+function vascoSendPhoneConsult(btn, productName) {
+	var box = btn.closest(".vasco-phone-consult-box");
 	var input = btn.previousElementSibling;
+	var msgDiv = box.querySelector(".vasco-phone-consult-msg");
 	var phone = input ? input.value.trim() : "";
-	if (!phone) { input && input.focus(); return; }
-	var zaloUrl = "https://zalo.me/0938222123?phone=" + encodeURIComponent(phone);
-	window.open(zaloUrl, "_blank");
+	
+	var cleanPhone = phone.replace(/[^0-9]/g, "");
+	if (!cleanPhone || cleanPhone.length < 9 || cleanPhone.length > 12) {
+		if (msgDiv) {
+			msgDiv.style.display = "block";
+			msgDiv.style.color = "#FFD54F";
+			msgDiv.innerText = "Vui lòng nhập số điện thoại hợp lệ (9-12 chữ số).";
+		}
+		input && input.focus();
+		return;
+	}
+
+	btn.disabled = true;
+	var origText = btn.innerText;
+	btn.innerText = "ĐANG GỬI...";
+
+	var formData = new FormData();
+	formData.append("action", "vasco_wc_save_consultation");
+	formData.append("phone", phone);
+	formData.append("product", productName || "Sản phẩm Vasco");
+
+	fetch("' . esc_url( admin_url( 'admin-ajax.php' ) ) . '", {
+		method: "POST",
+		body: formData
+	})
+	.then(function(res){ return res.json(); })
+	.then(function(data){
+		btn.disabled = false;
+		btn.innerText = origText;
+		if(msgDiv) {
+			msgDiv.style.display = "block";
+			if(data.success) {
+				msgDiv.style.color = "#81C784";
+				msgDiv.innerText = "✅ " + (data.data && data.data.message ? data.data.message : "Đã gửi yêu cầu thành công! Chúng tôi sẽ liên hệ lại sớm.");
+				input.value = "";
+			} else {
+				msgDiv.style.color = "#FFD54F";
+				msgDiv.innerText = "⚠️ " + (data.data && data.data.message ? data.data.message : "Gửi thất bại, vui lòng thử lại.");
+			}
+		}
+	})
+	.catch(function(){
+		btn.disabled = false;
+		btn.innerText = origText;
+		if(msgDiv) {
+			msgDiv.style.display = "block";
+			msgDiv.style.color = "#FFD54F";
+			msgDiv.innerText = "⚠️ Có lỗi xảy ra, vui lòng thử lại.";
+		}
+	});
 }
 </script>';
 
