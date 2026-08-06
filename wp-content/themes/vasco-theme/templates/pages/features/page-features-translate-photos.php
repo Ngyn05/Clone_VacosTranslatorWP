@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Clean Page page-features-translate-photos.php
  *
@@ -8,7 +8,6 @@
 get_header();
 ?>
 
-
 <section class="relative" id="wrapper">
 <aside id="notifications">
 <div class="container">
@@ -17,186 +16,126 @@ get_header();
 <div>
 <div class="breadcrumb-container">
 <div class="container">
-<nav aria-label="Breadcrumbs" class="breadcrumb">
+<nav aria-label="Đường dẫn điều hướng" class="breadcrumb">
 <ol>
 <li class="body-16">
 <a href="<?php echo esc_url( home_url( "/" ) ); ?>"><span class="breadcrumb-link">Trang chủ</span></a><span class="breadcrumb-divider">&gt;</span>
 </li>
-<li>
-<a href="<?php echo esc_url( home_url( "/" ) ); ?>"><span class="breadcrumb-link">Tính năng</span></a><span class="breadcrumb-divider">&gt;</span>
+<li class="body-16">
+<a href="<?php echo esc_url( home_url( "/features/" ) ); ?>"><span class="breadcrumb-link">Tính năng</span></a><span class="breadcrumb-divider">&gt;</span>
 </li>
-<li><span aria-current="page" class="breadcrumb-current body-16">Dịch hình ảnh</span>
-</li>
+<li><span aria-current="page" class="breadcrumb-current body-16">Dịch hình ảnh</span></li>
 </ol>
 </nav>
 </div>
 </div>
-<div class="js-content-wrapper" id="content-wrapper">
-<section class="feature-voice">
 
+<div class="js-content-wrapper" id="content-wrapper">
+<div class="socialimpact-pages">
+
+<!-- Top Banner -->
+<div class="socialimpact-top">
 <div class="container">
-<div class="heading-wrapper heading-wrapper-photo">
-<div class="heading">
-<h1 class="h1">Dịch hình ảnh</h1>
-<p class="body-base">Nhanh chóng hiểu môi trường xung quanh</p>
+<h1 class="h1">Dịch Hình Ảnh Sắc Nét</h1>
+<p class="socialimpact-subtitle">Hiểu ngay mọi menu nhà hàng, bảng hiệu giao thông, lịch trình chuyến bay và tài liệu công việc nước ngoài bằng một thao tác chụp ảnh đơn giản.</p>
 </div>
 </div>
+
+<!-- Main Card Wrapper -->
+<section class="socialimpact-card-wrapper">
+<div class="socialimpact-inner-card">
+
+<!-- Block 1: Camera Sony 8MP Sắc Nét -->
+<div class="si-item si-item--left">
+<div class="si-text">
+<h2 class="h2">Camera Sắc Nét & Nhận Diện 112+ Ngôn Ngữ</h2>
+<h3 class="box-subtitle">Chụp ảnh để hiểu ngay nội dung bảng hiệu & thực đơn</h3>
+<p>Máy được trang bị ống kính camera Sony 8-Megapixel cao cấp kết hợp đèn flash hỗ trợ, cho phép chụp rõ nét và dịch chữ đè trực tiếp lên ảnh chỉ trong 0.5s.</p>
+<ul>
+<li>Tự động nhận diện chữ viết và ngôn ngữ gốc trên ảnh</li>
+<li>Đè bản dịch nét mịn trùng khớp vị trí dòng chữ ban đầu</li>
+<li>Hỗ trợ tới 112+ ngôn ngữ chữ viết trên toàn thế giới</li>
+</ul>
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/all-products/" ) ); ?>">Khám phá sản phẩm <span class="text-sr-only">Vasco</span></a>
 </div>
-<section class="feature-page-content">
-<div class="voice-box-wrapper" style="background-color: #E2F3DF;">
-<div class="voice-box-left container">
-<div class="voice-text-box">
-<h2 class="h1">Tiết kiệm thời gian và tự tin hơn</h2>
-<p class="voice-box-subtitle">Dịch nhanh chữ viết trong hình ảnh, ở bất cứ đâu bạn đến. Camera Sony 8-megapixel chất lượng cao cho phép bạn chụp ảnh bất kỳ văn bản nào và dịch các chữ trong hình ảnh đó.</p>
-<p class="body-16 box-text-upper">Cho dù là biển báo ở nhà ga hay thực đơn khi bạn ở nước ngoài, chỉ cần chụp ảnh và dịch bất cứ thứ gì trước mắt bạn.</p>
-<p class="body-16">Đây cũng là công cụ tuyệt vời khi bạn đang vội. Hiểu ngay lịch trình, biển hiệu hay các món trong thực đơn. Chỉ trong chớp mắt, dịch ảnh mọi thứ khi đang di chuyển!</p>
-<ul class="body-16"><li>Dịch hình ảnh nhanh chóng</li><li>Độ chính xác 99% dựa trên 10 công cụ dịch thuật</li><li>Hiểu các loại chữ viết nước ngoài thông qua dịch hình ảnh</li></ul>
-<div class="last-box-element">
-<a class="btn btn-md btn-black body-16 last-box-element" href="<?php echo esc_url( home_url( "/vasco-translator-v4/" ) ); ?>#product-languages" target="_blank">
-							Kiểm tra danh sách ngôn ngữ hỗ trợ
-						</a>
-</div>
-</div>
-<div class="voice-img-box">
-<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/features/photo-new-1.webp" ); ?>"/>
-</div>
-</div>
-</div>
-<div class="voice-box-wrapper" style="background-color: #EFECE8;">
-<div class="voice-box-right container">
-<div class="voice-img-box">
-<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/features/photo-new-2.webp" ); ?>"/>
-</div>
-<div class="voice-text-box">
-<h2 class="h1">Tự tin về ngôn ngữ trong công việc quốc tế</h2>
-<p class="body-16 box-text-upper">Bạn lo lắng về rào cản ngôn ngữ trong môi trường đa ngôn ngữ?</p>
-<p class="body-16">Tính năng dịch hình ảnh giúp bạn hiểu các tài liệu bằng 112 ngôn ngữ. Chỉ cần chụp ảnh và dịch bất kỳ văn bản nào để xem bản dịch tức thì, dễ đọc.</p>
-<ul class="body-16 last-box-element"><li>Dịch văn bản trong hình ảnh cho tài liệu</li><li>Tự tin và an tâm khi ký hợp đồng</li><li>Dịch hình ảnh giúp bạn tự tin hơn khi tư vấn cho khách hàng nước ngoài</li></ul>
+<div class="si-image">
+<img alt="Camera Sắc Nét & Nhận Diện Ngôn Ngữ" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/features/photo-new-1.webp' ); ?>"/>
 </div>
 </div>
+
+<hr class="si-divider"/>
+
+<!-- Block 2: Tự Tin Trong Công Việc & Du Lịch -->
+<div class="si-item si-item--right">
+<div class="si-image">
+<img alt="Tự Tin Trong Công Việc & Du Lịch" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/features/photo-new-2.webp' ); ?>"/>
 </div>
-<div class="voice-box-wrapper" style="background-color: #E0E2F2;">
-<div class="voice-box-left container">
-<div class="voice-text-box">
-<h2 class="h1">Thoải mái và an toàn khi du lịch</h2>
-<p class="body-16 box-paragraph-gap">Các biển báo với chữ viết và ký tự lạ có thể gây khó hiểu, nhưng tính năng dịch hình ảnh của chúng tôi sẽ giúp bạn!</p>
-<p class="body-16">Dịch trực tiếp từ camera và cảm thấy thoải mái ở bất cứ đâu trên thế giới!</p>
-<ul class="body-16 last-box-element"><li>Hiểu thực đơn &amp; gọi những món ăn địa phương ngon miệng</li><li>Tham quan các triển lãm &amp; bảo tàng địa phương, và dịch ảnh các mô tả</li><li>Cảm thấy an toàn ở nơi công cộng khi có thể dịch mọi bảng chữ bằng camera</li></ul>
-</div>
-<div class="voice-img-box">
-<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/features/photo-new-3.webp" ); ?>"/>
-</div>
-</div>
-</div>
-<div class="voice-box-wrapper" style="background-color: #EFECE8;">
-<div class="voice-box-right container">
-<div class="voice-img-box">
-<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/device-photos/features/en/v4_blue.webp" ); ?>"/>
-</div>
-<div class="voice-text-box">
-<h2 class="h1">Chụp ảnh và dịch sang 112 ngôn ngữ</h2>
-<p class="body-16 box-paragraph-gap">Internet không phải lúc nào cũng có sẵn khi bạn đi du lịch, và phí chuyển vùng có thể tăng lên nhanh chóng. Đặc biệt nếu bạn muốn dịch từ các tệp hình ảnh cần kết nối mạnh. Nhưng với Vasco, bạn sẽ luôn được kết nối!</p>
-<p class="body-16">Thẻ SIM tích hợp sẵn đảm bảo kết nối miễn phí cho việc dịch thuật tại gần 200 quốc gia, không có phí ẩn. Bạn sẽ có quyền truy cập trọn đời vào tính năng dịch hình ảnh mà không giới hạn, vĩnh viễn!</p>
-<ul class="body-16"><li>Kết nối trọn đời tại gần 200 quốc gia</li><li>Có 112 ngôn ngữ trong tầm tay để dịch văn bản trong hình ảnh</li><li>Nhận bản dịch hình ảnh nhanh &amp; chính xác</li></ul>
-<div class="voice-btn-wrapper last-box-element">
-<div>
-<a class="btn btn-md btn-black body-16 last-box-element mt-0" href="<?php echo esc_url( home_url( "/vasco-translator-v4/" ) ); ?>#product-languages" target="_blank">
-								Kiểm tra danh sách ngôn ngữ hỗ trợ
-							</a>
-</div>
-<div>
-<a class="btn btn-md btn-black body-16 last-box-element mt-0" href="<?php echo esc_url( home_url( "/coverage-map/" ) ); ?>" target="_blank">Xem bản đồ phủ sóng Internet</a>
+<div class="si-text">
+<h2 class="h2">Tự Tin Đọc Tài Liệu & Hợp Đồng Quốc Tế</h2>
+<h3 class="box-subtitle">Xóa bỏ rào cản chữ viết phương ngữ và ký tự cổ</h3>
+<p>Dù là bảng chữ cái tiếng Trung, Nhật, Hàn, Thái hay Ả Rập phức tạp, Vasco đều tự động phân tích và dịch trực tiếp sang tiếng Việt rõ nghĩa.</p>
+<ul>
+<li>Đọc hiểu tài liệu, thông báo công ty & hướng dẫn sản phẩm</li>
+<li>An tâm tự tin khi di chuyển tại các ga tàu, sân bay nước ngoài</li>
+<li>Độ chính xác bản dịch đạt 99% dựa trên 10 công cụ AI</li>
+</ul>
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/all-products/" ) ); ?>">Xem các mẫu máy <span class="text-sr-only">Vasco</span></a>
 </div>
 </div>
+
+<hr class="si-divider"/>
+
+<!-- Block 3: Internet 4G Miễn Phí Trọn Đời -->
+<div class="si-item si-item--left">
+<div class="si-text">
+<h2 class="h2">Dữ Liệu Internet 4G Miễn Phí Trọn Đời</h2>
+<h3 class="box-subtitle">Dịch ảnh mọi lúc mọi nơi tại 200 quốc gia mà không tốn phí 4G</h3>
+<p>Khác với các ứng dụng di động yêu cầu cước 4G roaming đắt đỏ để tải ảnh lên máy chủ, Vasco tích hợp SIM 4G kết nối miễn phí trọn đời cho mọi tác vụ dịch ảnh.</p>
+<ul>
+<li>Hoàn toàn không tốn tiền cước 4G hay phí dịch vụ duy trì</li>
+<li>Tự động kết nối mạng viễn thông mạnh nhất tại gần 200 quốc gia</li>
+<li>Truy cập trọn đời không giới hạn số lượng ảnh chụp</li>
+</ul>
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/all-products/" ) ); ?>">Mua ngay thiết bị <span class="text-sr-only">Vasco</span></a>
+</div>
+<div class="si-image">
+<img alt="Dữ Liệu Internet 4G Miễn Phí Trọn Đời" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/features/photo-new-3.webp' ); ?>"/>
 </div>
 </div>
-</div>
-<div class="voice-box-wrapper" style="background-color: #FFF7DC;">
-<div class="voice-box-left container">
-<div class="voice-text-box">
-<h2 class="h1">Hơn cả một tính năng Dịch hình ảnh</h2>
-<p class="voice-box-subtitle">Với tính năng dịch ảnh, bạn sẽ ngay lập tức cảm thấy tự tin hơn khi ở nước ngoài. Biển báo giao thông, thông tin nhà ga, tài liệu kinh doanh và chính phủ, chúng tôi đều hỗ trợ bạn.</p>
-<p class="body-16 box-text-upper">Khả năng dịch từ hình ảnh giúp trải nghiệm du lịch của bạn trở nên tự nhiên, thú vị và thoải mái hơn. Đặc biệt tại các quốc gia có hệ chữ viết xa lạ.</p>
-<ul class="body-16"><li>Dịch giọng nói bằng 82 ngôn ngữ</li><li>Dịch văn bản bằng 107 ngôn ngữ</li><li>Học từ vựng mới bằng 28 ngôn ngữ</li><li>Dịch các cuộc hội thoại đa ngôn ngữ cho tới 100 thành viên</li></ul>
-</div>
-<div class="voice-img-box">
-<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/v4.webp" ); ?>"/>
-</div>
-</div>
-</div>
-</section>
-<section aria-labelledby="vasco-products-heading" class="vasco-products" tabindex="0">
+
+</div><!-- .socialimpact-inner-card -->
+</section><!-- .socialimpact-card-wrapper -->
+
+<!-- Single Featured Product -->
+<section aria-labelledby="vasco-products-heading" class="vasco-products">
 <div class="container">
-<div class="products-flex">
-<h2 class="h2-notosans" id="vasco-products-heading">Các sản phẩm tích hợp tính năng này</h2>
-<div class="products-wrapper">
-<div aria-roledescription="carousel" class="swiper swiper-products-slider" role="region">
-<div class="swiper-wrapper" role="list">
-<div aria-labelledby="product-38" class="swiper-slide" role="listitem" tabindex="0">
+<h2 class="h2-notosans" id="vasco-products-heading">Sản phẩm tích hợp tính năng này</h2>
+<div class="single-product-featured">
 <div class="box">
-<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/q1.webp" ); ?>"/>
+<img alt="Vasco Translator Q1" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/q1.webp" ); ?>"/>
 <div class="product-description">
-<h3 aria-label="q1.name]" id="product-38" tabindex="0">
-												Vasco Translator Q1</h3>
-<p>Máy dịch duy nhất có tính năng nhân bản giọng nói và dịch cuộc gọi điện thoại</p>
-<a aria-label="Tìm hiểu thêm Vasco Translator Q1" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/vasco-translator-q1/" ) ); ?>" target="_blank">
-												Tìm hiểu thêm
-											</a>
-</div>
-</div>
-</div>
-<div aria-labelledby="product-62" class="swiper-slide" role="listitem" tabindex="0">
-<div class="box">
-<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/e1.webp" ); ?>"/>
-<div class="product-description">
-<h3 aria-label="m4.name]" id="product-62" tabindex="0">
-												Vasco Translator M4</h3>
-<p>Máy dịch bỏ túi nhẹ và dễ sử dụng cho mọi người</p>
-<a aria-label="Tìm hiểu thêm Vasco Translator M4" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/vasco-translator-m4/" ) ); ?>" target="_blank">
-												Tìm hiểu thêm
-											</a>
-</div>
-</div>
-</div>
-<div aria-labelledby="product-14" class="swiper-slide" role="listitem" tabindex="0">
-<div class="box">
-<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/v4.webp" ); ?>"/>
-<div class="product-description">
-<h3 aria-label="v4.name]" id="product-14" tabindex="0">
-												Vasco Translator V4</h3>
-<p>Thiết bị dịch điện tử tức thời</p>
-<a aria-label="Tìm hiểu thêm Vasco Translator V4" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/vasco-translator-v4/" ) ); ?>" target="_blank">
-												Tìm hiểu thêm
-											</a>
-</div>
-</div>
-</div>
-</div>
-<div class="custom-navigation">
-<div class="swiper-button-prev btn-product-prev" data-label-prev="Slide trước"></div>
-<div class="swiper-button-next btn-product-next" data-label-next="Slide tiếp theo"></div>
-</div>
+<h3>Vasco Translator Q1</h3>
+<p>Máy dịch cao cấp sở hữu camera sắc nét với tính năng dịch hình ảnh thần tốc hơn 113+ ngôn ngữ.</p>
+<a class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/product/vasco-translator-q1/" ) ); ?>">
+Tìm hiểu thêm
+</a>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section class="container">
-<div class="voice-btn-wrapper voice-btn-end">
-<div>
-<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( "/" ) ); ?>">QUAY LẠI TÍNH NĂNG</a>
+
+<!-- Bottom Navigation Links -->
+<div class="feature-navigation-bottom container">
+	<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( "/features-translate-voice/" ) ); ?>">&larr; TÍNH NĂNG TRƯỚC</a>
+	<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( "/features-translate-text/" ) ); ?>">TÍNH NĂNG TIẾP THEO &rarr;</a>
 </div>
-<div>
-<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( "/features/translate-chat/" ) ); ?>">XEM TÍNH NĂNG TIẾP THEO</a>
-</div>
-</div>
-</section>
-</section>
-</div>
+
+</div><!-- .socialimpact-pages -->
+</div><!-- .js-content-wrapper -->
 </div>
 </section>
 <hr/>
-
 
 <?php
 get_footer();

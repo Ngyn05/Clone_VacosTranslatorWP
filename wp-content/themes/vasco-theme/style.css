@@ -45,6 +45,7 @@ body.admin-bar #header {
 .lg\:hidden {
     display: none !important;
 }
+
 /* Hiện lại trên mobile */
 @media (max-width: 991px) {
     .lg\:hidden {
@@ -56,7 +57,8 @@ body.admin-bar #header {
 /* =============================================
    PREVENT HORIZONTAL OVERFLOW & TOP ANNOUNCEMENT BANNER RESPONSIVE
    ============================================= */
-html, body {
+html,
+body {
     overflow-x: hidden !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
@@ -125,7 +127,13 @@ html, body {
     }
 }
 
-#wrapper, main, header, footer, .container, .products-catalog-wrapper, .products-grid-listing {
+#wrapper,
+main,
+header,
+footer,
+.container,
+.products-catalog-wrapper,
+.products-grid-listing {
     max-width: 100% !important;
     box-sizing: border-box !important;
 }
@@ -1812,6 +1820,7 @@ article.product-horizontal-card {
 }
 
 @media (max-width: 991px) {
+
     .products-horizontal-listing .product-miniature,
     .products-translators .product-miniature,
     article.product-horizontal-card {
@@ -2931,7 +2940,7 @@ img:not([src]) {
         padding: 24px 20px;
         width: 100%;
     }
-    
+
     .si-text .h2 {
         font-size: 1.3rem;
     }
@@ -3612,7 +3621,8 @@ img:not([src]) {
 
 /* Hide side drawer notification, add to cart toasts, cross-sell popups, header cart icons and cart UI */
 #vasco-side-drawer,
-#vasco-drawer-overl/* ─────────────────────────────────────────────────────────────
+#vasco-drawer-overl
+/* ─────────────────────────────────────────────────────────────
    ULTRA-BALANCED PRODUCT DETAIL COLUMN LAYOUT RESET
    ───────────────────────────────────────────────────────────── */
 
@@ -3835,7 +3845,7 @@ img:not([src]) {
     overflow: hidden !important;
     background: #ffffff !important;
     padding: 3px 3px 3px 18px !important;
-    box-shadow: inset 0 2px 4px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.1) !important;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06), 0 4px 12px rgba(0, 0, 0, 0.1) !important;
     margin: 0 !important;
     width: 100% !important;
     box-sizing: border-box !important;
@@ -4123,17 +4133,46 @@ li.product-feature {
    1. TYPOGRAPHY SCALE
    -------------------------------------------------------------------------- */
 @media (max-width: 767px) {
-    h1, .h1 { font-size: clamp(1.5rem, 5vw, 2rem) !important; line-height: 1.25 !important; }
-    h2, .h2 { font-size: clamp(1.25rem, 4.5vw, 1.6rem) !important; line-height: 1.3 !important; }
-    h3, .h3 { font-size: clamp(1.05rem, 4vw, 1.25rem) !important; line-height: 1.35 !important; }
-    h4, .h4 { font-size: clamp(0.95rem, 3.5vw, 1.1rem) !important; }
-    p, li, a { font-size: clamp(0.875rem, 3vw, 1rem) !important; }
+
+    h1,
+    .h1 {
+        font-size: clamp(1.5rem, 5vw, 2rem) !important;
+        line-height: 1.25 !important;
+    }
+
+    h2,
+    .h2 {
+        font-size: clamp(1.25rem, 4.5vw, 1.6rem) !important;
+        line-height: 1.3 !important;
+    }
+
+    h3,
+    .h3 {
+        font-size: clamp(1.05rem, 4vw, 1.25rem) !important;
+        line-height: 1.35 !important;
+    }
+
+    h4,
+    .h4 {
+        font-size: clamp(0.95rem, 3.5vw, 1.1rem) !important;
+    }
+
+    p,
+    li,
+    a {
+        font-size: clamp(0.875rem, 3vw, 1rem) !important;
+    }
 }
 
 /* --------------------------------------------------------------------------
    2. IMAGES & MEDIA — tránh tràn ngang
    -------------------------------------------------------------------------- */
-img, video, iframe, embed, object, picture {
+img,
+video,
+iframe,
+embed,
+object,
+picture {
     max-width: 100% !important;
     height: auto !important;
 }
@@ -4153,6 +4192,7 @@ img, video, iframe, embed, object, picture {
 }
 
 @media (max-width: 767px) {
+
     /* Trustpilot logo thu nhỏ trên mobile */
     .trustpilot-logo-img,
     .trustpilot-mini img,
@@ -4195,6 +4235,7 @@ img, video, iframe, embed, object, picture {
         overflow-x: auto !important;
         -webkit-overflow-scrolling: touch !important;
     }
+
     .comparison-table,
     .specs-table,
     .product-comparison {
@@ -4210,17 +4251,28 @@ img, video, iframe, embed, object, picture {
    4. FORMS & INPUTS — full width, touch-friendly
    -------------------------------------------------------------------------- */
 @media (max-width: 767px) {
-    input, textarea, select, button {
+
+    input,
+    textarea,
+    select,
+    button {
         max-width: 100% !important;
         box-sizing: border-box !important;
     }
+
     /* Touch target tối thiểu 44px (chuẩn iOS/Android) */
-    button, .btn, a.btn, input[type="submit"],
-    input[type="button"], .add-to-cart, [data-button-action] {
+    button,
+    .btn,
+    a.btn,
+    input[type="submit"],
+    input[type="button"],
+    .add-to-cart,
+    [data-button-action] {
         min-height: 44px !important;
         padding-top: 10px !important;
         padding-bottom: 10px !important;
     }
+
     form {
         width: 100% !important;
     }
@@ -4230,6 +4282,7 @@ img, video, iframe, embed, object, picture {
    5. CONTAINER & PADDING — giảm trên mobile
    -------------------------------------------------------------------------- */
 @media (max-width: 767px) {
+
     .container,
     .max-width-container,
     .section-container {
@@ -4237,13 +4290,15 @@ img, video, iframe, embed, object, picture {
         padding-right: 16px !important;
         box-sizing: border-box !important;
     }
-        /* Không override section padding chung — mỗi section tự quản lý padding của mình */
+
+    /* Không override section padding chung — mỗi section tự quản lý padding của mình */
 }
 
 /* --------------------------------------------------------------------------
    6. BREADCRUMB — mobile compact
    -------------------------------------------------------------------------- */
 @media (max-width: 767px) {
+
     .breadcrumb,
     nav.breadcrumb,
     ol.breadcrumb,
@@ -4263,6 +4318,7 @@ img, video, iframe, embed, object, picture {
    7. PRODUCT TABS — scroll ngang trên mobile
    -------------------------------------------------------------------------- */
 @media (max-width: 767px) {
+
     .products-catalog-tabs,
     .tabs-nav,
     .product-tabs,
@@ -4278,10 +4334,12 @@ img, video, iframe, embed, object, picture {
         border-bottom: 1px solid #e8e8e8 !important;
         scrollbar-width: none !important;
     }
+
     .products-catalog-tabs::-webkit-scrollbar,
     .tabs-nav::-webkit-scrollbar {
         display: none !important;
     }
+
     .products-catalog-tabs li,
     .tabs-nav li,
     .tab-list li {
@@ -4294,6 +4352,7 @@ img, video, iframe, embed, object, picture {
    8. CATEGORY PRODUCT GRID — responsive columns
    -------------------------------------------------------------------------- */
 @media (max-width: 767px) {
+
     /* Tab Máy Dịch: stack thành 1 cột dọc thay vì grid 360px 1fr */
     #product-translators .product-miniature,
     .products-translators .product-miniature,
@@ -4337,6 +4396,7 @@ img, video, iframe, embed, object, picture {
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
+
     /* 2 cột cho tablet nhỏ */
     .products-grid,
     .products-catalog-wrapper .products,
@@ -4353,6 +4413,7 @@ img, video, iframe, embed, object, picture {
    9. PRODUCT DETAIL PAGES — mobile layout
    -------------------------------------------------------------------------- */
 @media (max-width: 767px) {
+
     /* Product hero: stack vertically */
     .product-hero,
     .product-info-wrapper,
@@ -4419,6 +4480,7 @@ img, video, iframe, embed, object, picture {
    11. MODALS & DIALOGS — full screen mobile
    -------------------------------------------------------------------------- */
 @media (max-width: 767px) {
+
     dialog[open],
     .modal.active,
     .modal-dialog {
@@ -4455,13 +4517,20 @@ img, video, iframe, embed, object, picture {
    13. MISC — prevent horizontal overflow trên tất cả sections
    -------------------------------------------------------------------------- */
 @media (max-width: 767px) {
+
     /* CHỈ overflow-x: hidden trên các wrapper chính — không dùng * { max-width } */
-    body, html {
+    body,
+    html {
         overflow-x: hidden !important;
     }
 
     /* Word wrap cho text */
-    p, li, dt, dd, td, th {
+    p,
+    li,
+    dt,
+    dd,
+    td,
+    th {
         overflow-wrap: break-word !important;
         word-break: break-word !important;
     }
@@ -4484,6 +4553,7 @@ img, video, iframe, embed, object, picture {
         height: 0 !important;
         overflow: hidden !important;
     }
+
     .video-holder iframe,
     .video-wrapper iframe {
         position: absolute !important;
@@ -4644,51 +4714,244 @@ img, video, iframe, embed, object, picture {
 }
 
 /* --------------------------------------------------------------------------
-   15. MEGAMENU CARDS — Fit khít ảnh 100% không viền/khoảng trắng
+   16. VASCO PRODUCTS SECTION (Căn giữa duy nhất 1 sản phẩm - Style Chuyên Nghiệp)
    -------------------------------------------------------------------------- */
-.megamenu-column-image {
-    overflow: hidden !important;
-    border-radius: 20px !important;
-    background: #0d0d0d !important;
+.vasco-products {
+    padding: 70px 0;
+    background: linear-gradient(135deg, #4c416e 0%, #362e50 100%) !important;
+    color: #ffffff !important;
+    overflow: hidden;
 }
 
-.megamenu-column-image a {
+.vasco-products #vasco-products-heading,
+.vasco-products .h2-notosans {
+    text-align: center;
+    color: #ffffff !important;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 44px;
+}
+
+.vasco-products .products-wrapper,
+.vasco-products .single-product-featured {
     display: flex !important;
-    flex-direction: column !important;
-    height: 100% !important;
-    width: 100% !important;
-    border-radius: 20px !important;
-    overflow: hidden !important;
-    text-decoration: none !important;
-    background: #0d0d0d !important;
+    justify-content: center !important;
+    align-items: center !important;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 16px;
 }
 
-.megamenu-column-image .img-wrapper {
+.vasco-products .box {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 48px !important;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.05) 100%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    border-radius: 28px !important;
+    padding: 40px 50px !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25) !important;
+    backdrop-filter: blur(12px) !important;
+    max-width: 820px !important;
     width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    overflow: hidden !important;
-    border-top-left-radius: 20px !important;
-    border-top-right-radius: 20px !important;
-    line-height: 0 !important;
-    display: block !important;
+    margin: 0 auto !important;
 }
 
-.megamenu-column-image img,
-.desktop-nav .megamenu-column-image img {
-    width: 100% !important;
-    height: 180px !important;
-    max-height: 200px !important;
-    object-fit: cover !important;
-    object-position: center !important;
+.vasco-products .box img {
+    max-height: 260px !important;
+    width: auto !important;
+    max-width: 220px !important;
+    object-fit: contain !important;
     display: block !important;
-    margin: 0 !important;
-    padding: 0 !important;
+    flex-shrink: 0 !important;
+    filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.3));
+    transition: transform 0.4s ease !important;
+}
+
+.vasco-products .box:hover img {
+    transform: scale(1.05) !important;
+}
+
+.vasco-products .product-description {
+    flex: 1 !important;
+    text-align: left !important;
+}
+
+.vasco-products .product-description h3 {
+    color: #ffffff !important;
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    line-height: 1.25 !important;
+    margin-bottom: 12px !important;
+}
+
+.vasco-products .product-description p {
+    color: rgba(255, 255, 255, 0.92) !important;
+    font-size: 1.05rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 28px !important;
+}
+
+.vasco-products .product-description a.btn,
+.vasco-products .product-description .btn-white {
+    display: inline-block !important;
+    background: #ffffff !important;
+    color: #362e50 !important;
     border: none !important;
-    border-top-left-radius: 20px !important;
-    border-top-right-radius: 20px !important;
-    border-bottom-left-radius: 0 !important;
-    border-bottom-right-radius: 0 !important;
+    padding: 12px 32px !important;
+    border-radius: 30px !important;
+    font-weight: 700 !important;
+    font-size: 0.95rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    text-decoration: none !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;
+    transition: all 0.3s ease !important;
+}
+
+.vasco-products .product-description a.btn:hover,
+.vasco-products .product-description .btn-white:hover {
+    background: #f8fafc !important;
+    color: #1e1735 !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25) !important;
+}
+
+@media (max-width: 767px) {
+    .vasco-products {
+        padding: 44px 0;
+    }
+
+    .vasco-products #vasco-products-heading,
+    .vasco-products .h2-notosans {
+        font-size: 1.3rem;
+        margin-bottom: 24px;
+    }
+
+    .vasco-products .box {
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 30px 20px !important;
+        gap: 24px !important;
+    }
+
+    .vasco-products .box img {
+        max-height: 220px !important;
+    }
+
+    .vasco-products .product-description {
+        text-align: center !important;
+    }
+
+    .vasco-products .product-description h3 {
+        font-size: 1.4rem !important;
+    }
+
+    .vasco-products .product-description p {
+        font-size: 0.95rem !important;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   17. FEATURE NAVIGATION BUTTONS (Tính năng trước / Tính năng tiếp theo)
+   -------------------------------------------------------------------------- */
+.feature-navigation-bottom {
+    margin: 50px auto 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-navigation-bottom .btn-secondary {
+    border: 1px solid #1e293b !important;
+    color: #1e293b !important;
+    background: transparent !important;
+    padding: 12px 28px !important;
+    border-radius: 30px !important;
+    font-weight: 700 !important;
+    font-size: 0.9rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.04em !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+}
+
+.feature-navigation-bottom .btn-secondary:hover {
+    background: #1e293b !important;
+    color: #ffffff !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* --------------------------------------------------------------------------
+   18. TOP BANNER & HERO HEADING FORMATTING ("Hiểu. Mọi nơi.")
+   -------------------------------------------------------------------------- */
+.socialimpact-top,
+.heading-wrapper-text,
+.meet-vasco-title-wrapper,
+.features-title-wrapper {
+    background: #f8fafc !important;
+    padding: 56px 20px 40px !important;
+    text-align: center !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+    margin-bottom: 40px !important;
+    width: 100% !important;
+}
+
+.socialimpact-top h1.h1,
+.heading-wrapper-text h1.h1,
+.meet-vasco-title-wrapper h1.h1,
+.features-title-wrapper h1.h1 {
+    font-size: 2.8rem !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    margin-bottom: 16px !important;
+    line-height: 1.25 !important;
+    text-align: center !important;
+    letter-spacing: -0.02em !important;
+}
+
+.socialimpact-top .socialimpact-subtitle,
+.heading-wrapper-text .socialimpact-subtitle,
+.meet-vasco-title-wrapper .socialimpact-subtitle,
+.features-title-wrapper .socialimpact-subtitle {
+    font-size: 1.15rem !important;
+    color: #475569 !important;
+    max-width: 820px !important;
+    margin: 0 auto !important;
+    line-height: 1.65 !important;
+    text-align: center !important;
+}
+
+@media (max-width: 767px) {
+    .socialimpact-top,
+    .heading-wrapper-text,
+    .meet-vasco-title-wrapper,
+    .features-title-wrapper {
+        padding: 36px 16px 28px !important;
+        margin-bottom: 24px !important;
+    }
+
+    .socialimpact-top h1.h1,
+    .heading-wrapper-text h1.h1,
+    .meet-vasco-title-wrapper h1.h1,
+    .features-title-wrapper h1.h1 {
+        font-size: 1.8rem !important;
+        margin-bottom: 10px !important;
+    }
+
+    .socialimpact-top .socialimpact-subtitle,
+    .heading-wrapper-text .socialimpact-subtitle,
+    .meet-vasco-title-wrapper .socialimpact-subtitle,
+    .features-title-wrapper .socialimpact-subtitle {
+        font-size: 0.95rem !important;
+    }
 }
 
 

@@ -6,12 +6,7 @@
  */
 
 get_header();
-
-vasco_theme_render_product_detail_page();
-get_footer();
-return;
 ?>
-
 
 <section class="relative" id="wrapper">
 <aside id="notifications">
@@ -19,598 +14,147 @@ return;
 </div>
 </aside>
 <div>
+<div class="breadcrumb-container">
+<div class="container">
+<nav aria-label="Đường dẫn điều hướng" class="breadcrumb">
+<ol>
+<li class="body-16">
+<a href="<?php echo esc_url( home_url( "/" ) ); ?>"><span class="breadcrumb-link">Trang chủ</span></a><span class="breadcrumb-divider">&gt;</span>
+</li>
+<li><span aria-current="page" class="breadcrumb-current body-16">Dịch Cuộc Gọi</span></li>
+</ol>
+</nav>
+</div>
+</div>
+
 <div class="js-content-wrapper" id="content-wrapper">
-<section class="doubleboxes">
-<div class="doublebox hero left" style="background-color: #D9ECEF; color: #D9ECEF;">
+<div class="socialimpact-pages">
+
+<!-- Top Banner -->
+<div class="socialimpact-top">
 <div class="container">
-<div class="doublebox-content">
-<h1 class="h1">
-					Luôn kết nối với thế giới
-				</h1>
-<p>Hãy tưởng tượng bạn gặp một vấn đề có thể giải quyết chỉ bằng một cuộc gọi điện thoại—nhưng lại bằng một ngôn ngữ nước ngoài. Với tính năng Dịch cuộc gọi có trên Vasco Translator Q1, bạn có thể cảm thấy tự tin và an tâm ngay cả trong những tình huống bất ngờ nhất. Tính năng này mang đến khả năng dịch cuộc gọi điện thoại theo thời gian thực, giúp bạn hiểu hơn 50 ngôn ngữ. Với sự hỗ trợ từ các đối tác công nghệ của chúng tôi, bạn có thể gọi đến 160 quốc gia—tương đương hơn 80% thế giới! Và điều tuyệt vời nhất? Cả bạn và người bạn đang trò chuyện đều nhận được bản dịch theo thời gian thực.</p>
-<p>Hãy để giọng nói của bạn vươn xa toàn cầu.</p>
-<div class="box-btn-wrapper">
-<a class="btn btn-md btn-primary" href="<?php echo esc_url( home_url( "/product/vasco-translator-q1/" ) ); ?>">
-<img alt="Giỏ hàng" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>
-						MUA VASCO TRANSLATOR Q1
-					</a>
-</div>
-<svg class="svg-pseudo" color="" fill="none" height="48" viewbox="0 0 24 48" width="24" xmlns="http://www.w3.org/2000/svg">
-<path d="M2.93362 6.29957L21.0462 17.5978C21.9252 18.1457 22.6722 19.0407 23.1966 20.1741C23.7209 21.3076 24 22.6307 24 23.9829C24 25.3351 23.7209 26.6583 23.1966 27.7917C22.6722 28.9252 21.9252 29.8201 21.0462 30.3681L2.95791 41.6149C2.07625 42.1584 1.32668 43.0522 0.801213 44.1865C0.280873 45.3097 0.00273451 46.6204 2.00603e-05 47.9604L2.00603e-05 48C-6.69205e-06 47.9868 -6.68146e-06 47.9736 2.00603e-05 47.9604L2.00603e-05 3.8147e-06C0.0114239 1.33398 0.293609 2.63561 0.813323 3.75166C1.33304 4.8677 2.06869 5.75168 2.93362 6.29957Z" fill="currentColor"></path>
-</svg>
+<h1 class="h1">Dịch Cuộc Gọi Điện Thoại</h1>
+<p class="socialimpact-subtitle">Thực hiện cuộc gọi xuyên biên giới 2 chiều mượt mà. Vasco tự động dịch trực tiếp giọng nói theo thời gian thực tới hơn 160 quốc gia.</p>
 </div>
 </div>
-<div class="doublebox-absolute" id="img-change">
-<img alt="Hai người đứng trong một nhà ga sân bay sáng sủa, nhìn vào một tấm bản đồ giấy và một thiết bị điện tử cầm tay nhỏ màu đỏ. Người bên trái có tóc thẳng màu cam, đeo kính râm và mặc áo thun đen. Người bên phải có tóc xoăn màu nâu, đeo kính, mặc áo thun vàng và váy hồng. Phía sau là những ô cửa kính lớn nhìn ra sân bay với một chiếc máy bay và tháp kiểm soát không lưu, cùng bảng thông tin chuyến bay kỹ thuật số bên cạnh hàng ghế chờ trống." class="hero-image" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/call_lp/hero.webp" ); ?>"/>
+
+<!-- Main Card Wrapper -->
+<section class="socialimpact-card-wrapper">
+<div class="socialimpact-inner-card">
+
+<!-- Block 1: Dịch Cuộc Gọi Xuyên Biên Giới -->
+<div class="si-item si-item--left">
+<div class="si-text">
+<h2 class="h2">Dịch Cuộc Gọi 2 Chiều Trực Tiếp</h2>
+<h3 class="box-subtitle">Liên lạc điện thoại mượt mà với đối tác & người thân toàn cầu</h3>
+<p>Dịch cuộc gọi điện thoại cho phép bạn thực hiện cuộc gọi đến bất kỳ số điện thoại nào trên thế giới. Giọng nói của hai bên được tự động dịch và phát lại tức thì.</p>
+<ul>
+<li>Tạo sự thuận tiện tối đa khi làm việc với đối tác nước ngoài</li>
+<li>Không yêu cầu người nhận cuộc gọi phải cài đặt ứng dụng</li>
+<li>Hỗ trợ dịch giọng nói chuẩn xác 2 chiều thời gian thực</li>
+</ul>
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/product/vasco-translator-q1/" ) ); ?>">Khám phá thiết bị <span class="text-sr-only">Vasco</span></a>
+</div>
+<div class="si-image">
+<img alt="Dịch Cuộc Gọi 2 Chiều Trực Tiếp" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/q1/group.webp' ); ?>"/>
+</div>
+</div>
+
+<hr class="si-divider"/>
+
+<!-- Block 2: Nhân Bản Giọng Nói AI Trong Cuộc Gọi -->
+<div class="si-item si-item--right">
+<div class="si-image">
+<img alt="Nhân Bản Giọng Nói Trong Cuộc Gọi" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/q1/voice.webp' ); ?>"/>
+</div>
+<div class="si-text">
+<h2 class="h2">Nhân Bản Giọng Nói AI Trong Cuộc Gọi</h2>
+<h3 class="box-subtitle">Phát lại bản dịch bằng chính âm điệu giọng nói của bạn</h3>
+<p>Kết hợp công nghệ nhân bản giọng nói AI, đối phương ở đầu dây bên kia sẽ nghe thấy bản dịch bằng đúng màu sắc âm điệu giọng nói thực của bạn.</p>
+<ul>
+<li>Giữ sự chân thực và tự nhiên trong từng cuộc gọi</li>
+<li>Tăng tính bảo mật và sự tin tưởng khi đàm phán</li>
+<li>Tính năng độc quyền duy nhất có trên Vasco Translator Q1</li>
+</ul>
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/product/vasco-translator-q1/" ) ); ?>">Trải nghiệm tính năng <span class="text-sr-only">Vasco</span></a>
+</div>
+</div>
+
+</div><!-- .socialimpact-inner-card -->
+</section><!-- .socialimpact-card-wrapper -->
+
+<!-- Unique Section 1: Thống Kê Con Số Dịch Cuộc Gọi -->
+<section class="container" style="margin: 50px auto; text-align: center;">
+<h2 class="h2-notosans" style="margin-bottom: 36px;">DỊCH CUỘC GỌI QUA NHỮNG CON SỐ</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px;">
+<div style="background: #f8fafc; padding: 24px; border-radius: 16px; border: 1px solid #e2e8f0;">
+<h3 style="font-size: 2.5rem; font-weight: 700; color: #0f172a; margin-bottom: 6px;">160</h3>
+<p style="color: #475569; font-size: 0.95rem;">Quốc gia có thể kết nối cuộc gọi</p>
+</div>
+<div style="background: #f8fafc; padding: 24px; border-radius: 16px; border: 1px solid #e2e8f0;">
+<h3 style="font-size: 2.5rem; font-weight: 700; color: #0f172a; margin-bottom: 6px;">53</h3>
+<p style="color: #475569; font-size: 0.95rem;">Ngôn ngữ hỗ trợ dịch cuộc gọi</p>
+</div>
+<div style="background: #f8fafc; padding: 24px; border-radius: 16px; border: 1px solid #e2e8f0;">
+<h3 style="font-size: 2.5rem; font-weight: 700; color: #0f172a; margin-bottom: 6px;">42</h3>
+<p style="color: #475569; font-size: 0.95rem;">Mã quốc gia hỗ trợ gọi đi</p>
+</div>
+<div style="background: #f8fafc; padding: 24px; border-radius: 16px; border: 1px solid #e2e8f0;">
+<h3 style="font-size: 2.5rem; font-weight: 700; color: #0f172a; margin-bottom: 6px;">99%</h3>
+<p style="color: #475569; font-size: 0.95rem;">Độ chính xác dịch thuật AI</p>
 </div>
 </div>
 </section>
-<section class="yt">
+
+<!-- Unique Section 2: Gói Nạp Tiền Linh Hoạt -->
+<section class="container" style="margin: 50px auto; text-align: center;">
+<h2 class="h1" style="margin-bottom: 12px;">Nạp Tiền Linh Hoạt</h2>
+<p style="max-width: 760px; margin: 0 auto 36px; color: #475569; line-height: 1.6;">Tính năng dịch cuộc gọi đi kèm 10 phút miễn phí khi mua máy. Bạn có thể dễ dàng nạp thêm thời lượng gọi linh hoạt tùy theo nhu cầu sử dụng.</p>
+<div style="display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;">
+<div style="flex: 1; min-width: 260px; max-width: 360px; background: #ffffff; border: 2px solid #e2e8f0; border-radius: 20px; padding: 32px 24px; box-shadow: 0 10px 25px rgba(0,0,0,0.05);">
+<h3 style="font-size: 1.3rem; font-weight: 700; color: #0f172a; margin-bottom: 8px;">Gói Cơ Bản</h3>
+<p style="font-size: 2.2rem; font-weight: 800; color: #2563eb; margin-bottom: 16px;">$7 <span style="font-size: 0.9rem; color: #64748b; font-weight: 400;">/ 10 phút</span></p>
+<p style="color: #475569; font-size: 0.92rem; line-height: 1.5;">Thích hợp cho các cuộc gọi khẩn cấp hoặc liên hệ ngắn với đối tác.</p>
+</div>
+<div style="flex: 1; min-width: 260px; max-width: 360px; background: #ffffff; border: 2px solid #2563eb; border-radius: 20px; padding: 32px 24px; box-shadow: 0 12px 30px rgba(37,99,235,0.12); position: relative;">
+<span style="position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: #2563eb; color: #fff; padding: 4px 16px; border-radius: 20px; font-size: 0.78rem; font-weight: 700; text-transform: uppercase;">Phổ Biến Nhất</span>
+<h3 style="font-size: 1.3rem; font-weight: 700; color: #0f172a; margin-bottom: 8px;">Gói Nâng Cao</h3>
+<p style="font-size: 2.2rem; font-weight: 800; color: #2563eb; margin-bottom: 16px;">$19 <span style="font-size: 0.9rem; color: #64748b; font-weight: 400;">/ 30 phút</span></p>
+<p style="color: #475569; font-size: 0.92rem; line-height: 1.5;">Lựa chọn lý tưởng cho các chuyến du lịch hoặc trao đổi công việc thường xuyên.</p>
+</div>
+</div>
+</section>
+
+<!-- Single Featured Product -->
+<section aria-labelledby="vasco-products-heading" class="vasco-products">
 <div class="container">
-<div aria-labelledby="yt-title" class="youtube-section">
-<h2 class="h1" id="yt-title">Xin chào, ai đang gọi vậy?</h2>
-<p>Có những khoảnh khắc mà từng lời nói đều quan trọng—đặc biệt khi người ở đầu dây bên kia nói một ngôn ngữ bạn hoàn toàn không hiểu. Khi không thể nhìn thấy cử chỉ hay biểu cảm khuôn mặt, sự hỗ trợ ngôn ngữ chuyên nghiệp có thể tạo nên khác biệt lớn. May mắn thay, với tính năng dịch cuộc gọi điện thoại, mọi cuộc trò chuyện đều trở nên rõ ràng tuyệt đối. Bạn nói ngôn ngữ của mình, còn người gọi nói ngôn ngữ của họ. Tất cả đều diễn ra thông qua Vasco Translator Q1.</p>
-</div>
-</div>
-</section>
-<section aria-labelledby="vasco-numbers-heading" class="vasco-numbers-section">
-<div class="container">
-<h2 class="h2-notosans" id="vasco-numbers-heading">Dịch cuộc gọi thoại qua con số</h2>
-<div class="vasco-numbers-wrapper" role="list">
-<div class="vasco-numbers-single-wrapper" role="listitem" tabindex="0">
-<div class="number-paragraph">
-<h3 class="number" id="lang-number">160</h3>
-</div>
-<p class="number-description" id="lang-desc">
-					quốc gia bạn có thể kết nối</p>
-</div>
-<div class="vasco-numbers-single-wrapper" role="listitem" tabindex="0">
-<div class="number-paragraph">
-<h3 class="number" id="country-number">53</h3>
-</div>
-<p class="number-description" id="country-desc">
-					ngôn ngữ được hỗ trợ bởi tính năng Dịch cuộc gọi</p>
-</div>
-<div class="vasco-numbers-single-wrapper" role="listitem" tabindex="0">
-<div class="number-paragraph">
-<h3 class="number" id="engines-number">42</h3>
-</div>
-<p class="number-description" id="engines-desc">
-					mã quốc gia
-cho phép sử dụng tính năng này</p>
-</div>
-<div class="vasco-numbers-single-wrapper" role="listitem" tabindex="0">
-<div class="number-paragraph">
-<h3 class="number" id="awards-number">99</h3>%
-				</div>
-<p class="number-description" id="awards-desc">
-					độ chính xác dịch thuật</p>
-</div>
-</div>
-</div>
-</section>
-<section class="how-vasco-section">
-<div class="how-vasco-flex container">
-<h2 class="h2-notosans">SỰ HỖ TRỢ TIN CẬY TRONG MỌI TÌNH HUỐNG</h2>
-<div class="grid-section">
-<div class="card">
-<picture>
-<source media="(min-width: 700px)"/>
-<img alt='Ảnh chụp một người đàn ông và một người phụ nữ mắc kẹt bên lề một xa lộ sa mạc vắng vẻ, cạnh biển báo nổi bật "ROUTE US 66". Người đàn ông mặc áo sơ mi denim và quần jeans, đứng nói chuyện qua một thiết bị điện tử, trong khi người phụ nữ mặc áo kẻ sọc đứng khoanh tay, trông có vẻ hơi sốt ruột. Phía sau họ là chiếc xe cơ bắp cổ điển màu xanh đậm với một bánh trước bị xẹp rõ rệt. Con đường dài trải dài đến những ngọn núi thấp phía xa dưới bầu trời nhiều mây.' height="129px" width="300px"/>
-</picture>
-<h3 class="h2">Khi đi du lịch</h3>
-<p>Ngay cả chuyến đi được lên kế hoạch kỹ lưỡng nhất cũng có thể đầy bất ngờ. Dù bạn đang gọi cứu hộ vì thủng lốp trên Route 66, hay cố gắng đặt tấm ván lướt sóng cuối cùng trên một bãi biển đông đúc ở Bồ Đào Nha—với tính năng dịch cuộc gọi điện thoại theo thời gian thực, bạn sẽ luôn tự tin dù ở bất cứ đâu.</p>
-</div>
-<div class="card card-bottom">
-<picture>
-<source media="(min-width: 700px)"/>
-<img alt="Ảnh chụp góc nghiêng một người đàn ông mặc áo sơ mi cài nút màu xanh nhạt, ngồi tại bàn làm việc bằng gỗ trong một văn phòng hiện đại. Anh đang cầm và sử dụng một thiết bị cầm tay nhỏ, màu tối với giao diện hiển thị trên màn hình. Trước mặt anh trên bàn là một màn hình máy tính để bàn lớn đang tắt, một bàn phím trắng và một số giấy tờ. Những ô cửa sổ lớn phía sau cho thấy đường chân trời thành phố mờ ảo cùng vài chậu cây nhỏ, tạo nên không gian làm việc sáng sủa và chuyên nghiệp." height="129px" width="300px"/>
-</picture>
-<h3 class="h2">Tại nơi làm việc</h3>
-<p>Hoàn thành công việc chỉ với một cuộc gọi. Vasco Translator Q1 phát huy tối đa hiệu quả trong những môi trường mà thời gian là tiền bạc. Liên hệ với nhà cung cấp từ Trung Quốc, tài xế từ Romania, hay người bán hàng từ Argentina. Trò chuyện tự do và giữ cho công việc kinh doanh của bạn luôn suôn sẻ, không bị trì hoãn. Từ giờ trở đi, thương mại quốc tế nằm trong tầm tay bạn.</p>
-</div>
-<div class="card">
-<picture>
-<source media="(min-width: 700px)"/>
-<img alt="Ảnh cận cảnh bàn tay một người đang cầm thiết bị cầm tay màu xanh đậm có logo VA ở mặt sau. Phía sau, trong nền mờ nhẹ, một chàng trai trẻ tươi cười mặc áo thun kẻ sọc đen trắng đang nằm thư giãn trên ghế sofa màu sáng. Bối cảnh là một phòng khách hiện đại, sáng sủa với ánh sáng dịu nhẹ và thấp thoáng cây xanh trong nhà." height="129px" width="300px"/>
-</picture>
-<h3 class="h2">Trong cuộc sống hàng ngày</h3>
-<p>Khi khoảng cách không còn là vấn đề, ngôn ngữ cũng không nên là rào cản. Giữ liên lạc với người thân ở khắp nơi trên thế giới, đặt lịch hẹn với chuyên gia ở nước ngoài, hoặc liên hệ với các cơ quan công quyền. Cảm nhận sự tự do khi nói về những điều quan trọng nhất với bạn, mà không có gì bị hiểu sai trong quá trình dịch thuật.</p>
-</div>
-</div>
-<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/product/vasco-translator-q1/" ) ); ?>">
-<svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-<path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-<path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-<path d="M1 1H5L7.7 14.4C7.9 15.4 8.7 16 9.7 16H19.4C20.4 16 21.2 15.3 21.4 14.4L23 6H6" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-			MUA VASCO TRANSLATOR Q1
-		</a>
-</div>
-</section>
-<section class="how-vasco-section bottom">
-<div class="how-vasco-flex container">
-<h2 class="h1">Xem tính năng dịch cuộc gọi hoạt động như thế nào</h2>
-<p class="subtitle">Một cấp độ giao tiếp quốc tế hoàn toàn mới chỉ trong 3 bước đơn giản</p>
-<div class="grid-section">
-<div class="card">
-<picture>
-<source media="(min-width: 700px)"/>
-<img alt="Ảnh cận cảnh bàn tay một người đang cầm thiết bị điện tử Vasco màu xanh đậm trên một chiếc bàn gỗ. Màn hình hiển thị màn hình “Thông tin pháp lý” với các ô đã tích chọn để đồng ý điều khoản và chính sách bảo mật, phía trên nút “Xác nhận” màu xanh nổi bật. Ở phía trước trên bàn là một cuốn sổ tay màu xám đã đóng lại cùng một cây bút đen và một chiếc cốc gốm. Nền phía sau được làm mờ nhẹ, ấm áp, cho thấy không gian phòng ấm cúng với một chậu cây, một khung ảnh và một giá sách bằng gỗ." height="129px" width="300px"/>
-</picture>
-<h3 class="h2">Xác thực danh tính của bạn</h3>
-<p>Đồng ý với Điều khoản và Điều kiện cùng Chính sách bảo mật. Cung cấp họ, tên và số điện thoại của bạn để nhận mã xác thực. Sau đó, làm theo hướng dẫn ngắn.</p>
-</div>
-<div class="card card-bottom">
-<picture>
-<source media="(min-width: 700px)"/>
-<img alt='Ảnh cận cảnh hai người đang tương tác với một thiết bị mới. Một người cầm thiết bị điện tử cầm tay màu tím đậm hiển thị bàn phím số quay số trên màn hình. Một người phụ nữ tóc nâu dài mặc áo trắng đứng bên cạnh, đưa tay chạm hoặc chỉ vào màn hình. Phía sau, một hộp sản phẩm màu trắng đang mở được giơ lên, hiển thị logo đồ họa có ghi "No. 1" ở mặt trong nắp hộp.' height="129px" width="300px"/>
-</picture>
-<h3 class="h2">Kết nối cuộc gọi</h3>
-<p>Nhập số điện thoại và ngôn ngữ của người bạn muốn kết nối, đối tác công nghệ của chúng tôi sẽ thực hiện cuộc gọi. Chờ một chút—người bạn gọi đến sẽ nghe một thông báo giải thích rằng bạn đang sử dụng máy phiên dịch.</p>
-</div>
-<div class="card">
-<picture>
-<source media="(min-width: 700px)"/>
-<img alt="A close-up photograph of a hand holding a dark blue Vasco electronic device. The device's screen displays an outgoing call interface showing the number &quot;+33 (0)20 7898 9880&quot; and the word &quot;CALLING...&quot;. In the background, a person stands wearing an open, yellow-and-white vertically striped shirt over a plain white t-shirt." height="129px" width="300px"/>
-</picture>
-<h3 class="h2">Tận hưởng cuộc trò chuyện</h3>
-<p>Nói chuyện tự do. Tính năng này hoạt động ở chế độ loa ngoài, với bản dịch theo thời gian thực hiển thị trên màn hình. Mỗi người dùng đều nghe được cả giọng nói gốc và bản dịch.</p>
-</div>
-</div>
-</div>
-</section>
-<section class="more-features">
-<div class="container">
-<h2 class="h2-notosans">HÃY GỌI ĐÂY LÀ MỘT BƯỚC ĐỘT PHÁ! THIẾT BỊ NHỎ, KHẢ NĂNG LỚN</h2>
-<div class="feature-list" id="feature-list">
-<div class="list">
-<button class="feature active" data-id="voice_translator">
-<svg fill="none" height="64" viewbox="0 0 64 64" width="64" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_62981_7120)">
-<path d="M32 64C49.6731 64 64 49.6731 64 32C64 14.3269 49.6731 0 32 0C14.3269 0 0 14.3269 0 32C0 49.6731 14.3269 64 32 64Z" fill="#EFECE8"></path>
-<path d="M48.0303 32.0002C48.0303 23.1472 40.854 15.9701 32.001 15.97C23.1479 15.97 15.9707 23.1471 15.9707 32.0002C15.9709 40.8532 23.1479 48.0295 32.001 48.0295C40.8539 48.0294 48.0301 40.8532 48.0303 32.0002ZM50.0303 32.0002C50.0301 41.9577 41.9585 50.0294 32.001 50.0295C22.0434 50.0295 13.9709 41.9578 13.9707 32.0002C13.9707 22.0426 22.0433 13.97 32.001 13.97C41.9585 13.9701 50.0303 22.0426 50.0303 32.0002Z" fill="#2D3139"></path>
-<path d="M32.0012 13.97C32.2819 13.97 32.55 14.088 32.7395 14.2952C37.1635 19.1346 39.6767 25.4276 39.8117 31.9797C39.812 31.9933 39.812 32.0071 39.8117 32.0208C39.6767 38.5728 37.1634 44.865 32.7395 49.7043C32.55 49.9116 32.282 50.0295 32.0012 50.0295C31.7557 50.0294 31.52 49.9398 31.3381 49.7786L31.2639 49.7043L30.8547 49.2463C26.6852 44.4714 24.3224 38.368 24.1916 32.0208C24.1913 32.0071 24.1913 31.9933 24.1916 31.9797C24.3266 25.4276 26.8399 19.1346 31.2639 14.2952C31.4532 14.0882 31.7207 13.9701 32.0012 13.97ZM32.0012 16.4885C28.3687 20.8392 26.3136 26.3134 26.1916 31.9993C26.3133 37.6853 28.3689 43.1591 32.0012 47.51C35.6337 43.159 37.6891 37.6855 37.8108 31.9993C37.6888 26.3132 35.6338 20.8393 32.0012 16.4885Z" fill="#2D3139"></path>
-<path d="M17.6222 22.1662C17.9943 21.7581 18.6272 21.7287 19.0353 22.1007C22.5911 25.3428 27.1913 27.1798 32.0031 27.2892C36.8124 27.189 41.4214 25.343 44.9669 22.1017C45.3745 21.7294 46.0064 21.7579 46.3791 22.1652C46.7517 22.5728 46.7241 23.2056 46.3166 23.5783C42.4074 27.1521 37.3244 29.1853 32.0216 29.2902C32.0078 29.2905 31.9935 29.2905 31.9796 29.2902C26.6788 29.1749 21.6069 27.1526 17.6877 23.5793C17.2796 23.2072 17.2502 22.5743 17.6222 22.1662Z" fill="#2D3139"></path>
-<path d="M32.0236 34.71C37.3244 34.8253 42.3964 36.8475 46.3156 40.4209C46.7236 40.793 46.7521 41.4259 46.38 41.834C46.0079 42.2418 45.3759 42.2704 44.9679 41.8984C41.412 38.6563 36.8111 36.8192 31.9992 36.71C27.1901 36.8104 22.5816 38.6573 19.0363 41.8984C18.6287 42.2709 17.9958 42.2425 17.6232 41.835C17.2506 41.4274 17.2791 40.7945 17.6867 40.4219C21.5959 36.848 26.6787 34.8148 31.9816 34.71H32.0236Z" fill="#2D3139"></path>
-</g>
-<defs>
-<clippath id="clip0_62981_7120">
-<rect fill="white" height="64" width="64"></rect>
-</clippath>
-</defs>
-</svg>
-<h3>Phạm vi toàn cầu</h3>
-</button>
-<hr/>
-<button class="feature" data-id="photo_translator">
-<svg fill="none" height="64" viewbox="0 0 64 64" width="64" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_62981_7134)">
-<path d="M32 64C49.6731 64 64 49.6731 64 32C64 14.3269 49.6731 0 32 0C14.3269 0 0 14.3269 0 32C0 49.6731 14.3269 64 32 64Z" fill="#EFECE8"></path>
-<path d="M32.3438 9.62142C33.6778 9.17691 35.0475 9.59855 36.1201 10.4388C37.1967 11.2822 38.0581 12.5976 38.4932 14.1742C38.7423 15.0769 38.6875 16.1645 38.543 17.1976C38.3951 18.2546 38.1321 19.3841 37.8809 20.4173C37.6236 21.4753 37.3841 22.4098 37.251 23.1585C37.1888 23.5082 37.1584 23.7768 37.1543 23.971C37.1894 23.9804 37.2283 23.9921 37.2725 24.0023C37.6023 24.0781 38.0724 24.1438 38.6602 24.1966C39.8282 24.3016 41.3362 24.3449 42.8447 24.3548C44.3479 24.3647 45.8298 24.3419 46.9375 24.3158C47.4908 24.3027 47.9502 24.289 48.2705 24.2786C48.4306 24.2734 48.5565 24.269 48.6416 24.2659C48.6841 24.2644 48.7166 24.2629 48.7383 24.262C48.7396 24.262 48.7409 24.2611 48.7422 24.2611C48.7533 24.2602 48.7671 24.2601 48.7832 24.2591C48.8174 24.2571 48.863 24.2553 48.918 24.2542C49.0275 24.2522 49.1773 24.2544 49.3555 24.2689C49.7079 24.2974 50.195 24.3768 50.708 24.5882C51.728 25.0086 52.7494 25.9176 53.0684 27.6439L53.1221 28.0003C53.274 29.262 52.8302 30.3482 52.3467 31.1224C52.1693 31.4065 51.9786 31.6582 51.7979 31.8753C51.8456 31.9266 51.8949 31.9803 51.9424 32.0394C52.44 32.658 52.7701 33.5591 52.7295 34.9007C52.6806 36.5317 51.7296 37.4428 50.9092 37.9261C50.9476 37.995 50.9855 38.0665 51.0205 38.1409C51.2594 38.6492 51.4053 39.2723 51.3682 40.0765C51.3107 41.3169 50.6316 42.188 49.9473 42.7454C49.6848 42.9592 49.4104 43.1348 49.1504 43.2796C49.432 43.8017 49.642 44.4882 49.5986 45.3411L49.5977 45.346C49.4994 47.0946 48.4728 48.1939 47.5635 48.8167C47.1097 49.1275 46.6671 49.3345 46.3398 49.4642C46.1749 49.5296 46.0351 49.5761 45.9336 49.6077C45.8829 49.6236 45.8415 49.6362 45.8105 49.6449C45.7953 49.6491 45.7824 49.652 45.7725 49.6546C45.7674 49.6559 45.7624 49.6576 45.7588 49.6585C45.7571 49.659 45.7553 49.6592 45.7539 49.6595L45.752 49.6605H45.751L45.5098 48.6898L45.75 49.6605L45.6318 49.6898H29.0293C28.032 49.6897 27.0566 49.4423 26.1826 48.9818L25.8145 48.7708L25.8115 48.7689L26.3398 47.9202L26.3486 47.9056L25.8115 48.7689L22.9512 46.9886L24.0078 45.2913L26.8652 47.0687L27.1152 47.2122C27.7083 47.5247 28.3645 47.6897 29.0293 47.6898H45.3623C45.4214 47.6708 45.5041 47.6438 45.6025 47.6048C45.8312 47.5142 46.1337 47.3718 46.4336 47.1663C47.0317 46.7566 47.5488 46.155 47.6006 45.2337C47.6393 44.4358 47.2611 43.9824 47.0762 43.8187L47.7432 43.0658L47.7393 43.0697L47.0762 43.8187L47.0537 43.7982L47.0322 43.7777L46.9346 43.6663C46.4883 43.0876 46.6446 42.153 47.4473 41.8607L47.457 41.8568L47.7891 42.8001L47.791 42.805L47.457 41.8568C47.7635 41.7489 48.2665 41.5352 48.6846 41.1947C49.0925 40.8622 49.3475 40.4731 49.3701 39.9837C49.393 39.488 49.3046 39.1908 49.2109 38.9915C49.0989 38.7532 48.9799 38.6276 48.7627 38.3314L48.7549 38.3206L48.7471 38.3089C48.3076 37.6737 48.5325 36.7187 49.3633 36.4417L49.3701 36.4388L49.377 36.4368C49.9133 36.2666 50.6997 35.8423 50.7295 34.8402V34.5023C50.7022 33.7739 50.5061 33.4454 50.3838 33.2933C50.3041 33.1942 50.2167 33.121 50.1152 33.0492C50.001 32.9683 50.0672 33.0177 49.9307 32.9222C49.8867 32.8914 49.7784 32.8155 49.6729 32.7064V32.7074C49.5048 32.5393 49.3575 32.2779 49.3574 31.9515C49.3574 31.6444 49.4907 31.3521 49.7246 31.1527C49.9005 30.9969 50.3123 30.6042 50.6504 30.0628C50.9941 29.5124 51.2145 28.8884 51.1367 28.2406L51.1055 28.0277C50.9233 27.0071 50.3935 26.6212 49.9463 26.4368C49.6769 26.3258 49.405 26.2791 49.1943 26.262C49.0911 26.2537 49.0078 26.2532 48.9551 26.2542C48.9295 26.2547 48.9115 26.2556 48.9023 26.2562V26.2552L48.877 26.2581L48.8486 26.2591H48.8457C48.8442 26.2592 48.8416 26.26 48.8389 26.2601C48.833 26.2603 48.8245 26.2606 48.8135 26.2611C48.7907 26.2619 48.7566 26.2624 48.7129 26.264C48.6256 26.2671 48.4981 26.2724 48.3359 26.2777C48.0107 26.2882 47.5454 26.3016 46.9854 26.3148C45.866 26.3412 44.3623 26.3649 42.832 26.3548C41.307 26.3448 39.733 26.3013 38.4814 26.1888C37.8594 26.1329 37.2844 26.0573 36.8242 25.9515C36.5956 25.8989 36.3641 25.8317 36.1572 25.7415C35.9773 25.6631 35.6832 25.512 35.4756 25.221C35.1877 24.8172 35.1524 24.3269 35.1533 24.0033C35.1544 23.6361 35.2083 23.2236 35.2822 22.8079C35.4297 21.9788 35.6923 20.953 35.9375 19.9447C36.1887 18.9118 36.4288 17.8684 36.5615 16.9202C36.6975 15.9482 36.7012 15.1986 36.5654 14.7064C36.2306 13.4931 35.5875 12.5632 34.8867 12.014C34.1819 11.4619 33.5013 11.3436 32.9756 11.5189C32.6624 11.6233 32.4778 11.7608 32.3525 11.9066C32.2213 12.0594 32.1098 12.2746 32.0244 12.595C31.8389 13.2915 31.836 14.196 31.7988 15.4691C31.7598 16.8086 31.3792 18.4386 30.8574 20.0804C30.3305 21.7381 29.6377 23.4745 28.9316 25.0492C28.1772 26.7316 27.0972 28.1068 26.2217 29.0521C25.7814 29.5274 25.3864 29.9014 25.0986 30.1585C24.9546 30.2872 24.8364 30.3872 24.7529 30.4564C24.7113 30.4909 24.678 30.5184 24.6543 30.5374C24.6426 30.5468 24.633 30.5544 24.626 30.5599C24.6225 30.5626 24.6194 30.565 24.6172 30.5667C24.6161 30.5675 24.615 30.5681 24.6143 30.5687L24.6133 30.5697C24.6131 30.5698 24.6119 30.5698 23.999 29.7796C23.4378 29.0561 23.3908 28.9955 23.3867 28.9906H23.3857C23.3861 28.9903 23.3866 28.9894 23.3877 28.9886C23.3907 28.9862 23.3966 28.9821 23.4043 28.9759C23.4197 28.9636 23.4447 28.9436 23.4775 28.9163C23.5433 28.8619 23.6417 28.7781 23.7656 28.6673C24.0144 28.4451 24.364 28.1147 24.7549 27.6927C25.5418 26.843 26.4719 25.6481 27.1074 24.2308C27.7913 22.7056 28.4531 21.042 28.9512 19.4749C29.4543 17.8918 29.7689 16.471 29.7998 15.4105C29.8327 14.2839 29.8299 13.0637 30.0918 12.0804C30.2302 11.5609 30.455 11.0473 30.8359 10.6038C31.2229 10.1534 31.7271 9.82696 32.3438 9.62142Z" fill="#2D3139"></path>
-<path d="M24.7695 45.8003C24.7694 47.9423 23.0316 49.6799 20.8896 49.6802H13.1895C11.8172 49.6802 10.6992 48.5622 10.6992 47.1899V29.0757L10.7578 29.0171C10.9714 27.9969 11.8755 27.2301 12.959 27.23H20.8291C23.0014 27.23 24.7695 28.9981 24.7695 31.1704V45.8003ZM12.709 29.894L12.6992 29.9038V47.1899C12.6992 47.4577 12.9217 47.6802 13.1895 47.6802H20.8896C21.9271 47.6799 22.7694 46.8377 22.7695 45.8003V31.1704C22.7695 30.1027 21.8968 29.23 20.8291 29.23H12.959C12.8214 29.2301 12.709 29.3423 12.709 29.48V29.894Z" fill="#2D3139"></path>
-</g>
-<defs>
-<clippath id="clip0_62981_7134">
-<rect fill="white" height="64" width="64"></rect>
-</clippath>
-</defs>
-</svg>
-<h3>Vận hành dễ dàng, trực quan</h3>
-</button>
-<hr/>
-<button class="feature" data-id="text_translator">
-<svg fill="none" height="64" viewbox="0 0 64 64" width="64" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_62981_7146)">
-<path d="M32 64C49.6731 64 64 49.6731 64 32C64 14.3269 49.6731 0 32 0C14.3269 0 0 14.3269 0 32C0 49.6731 14.3269 64 32 64Z" fill="#EFECE8"></path>
-<path d="M49.6299 31.5205C49.6299 29.9145 48.3289 28.6201 46.7295 28.6201H38.9199C37.3139 28.6201 36.0195 29.9211 36.0195 31.5205V33.4697H34.0195V31.5205C34.0195 28.8199 36.206 26.6201 38.9199 26.6201H46.7295C49.4301 26.6201 51.6299 28.8066 51.6299 31.5205V33.4697H49.6299V31.5205Z" fill="#2D3139"></path>
-<path d="M46.2002 19.4504C46.2002 17.8489 44.9022 16.5503 43.3008 16.55C41.6992 16.55 40.4004 17.8488 40.4004 19.4504C40.4006 21.0519 41.6993 22.3499 43.3008 22.3499C44.9021 22.3496 46.2 21.0518 46.2002 19.4504ZM48.2002 19.4504C48.2 22.1563 46.0067 24.3496 43.3008 24.3499C40.5947 24.3499 38.4006 22.1565 38.4004 19.4504C38.4004 16.7442 40.5946 14.55 43.3008 14.55C46.0068 14.5503 48.2002 16.7444 48.2002 19.4504Z" fill="#2D3139"></path>
-<path d="M23.3408 31.4404C23.3408 29.8344 22.0398 28.54 20.4404 28.54H12.6309C11.0248 28.54 9.73047 29.841 9.73047 31.4404V33.3896H7.73047V31.4404C7.73047 28.7398 9.91691 26.54 12.6309 26.54H20.4404C23.141 26.54 25.3408 28.7265 25.3408 31.4404V33.3896H23.3408V31.4404Z" fill="#2D3139"></path>
-<path d="M19.9189 19.3704C19.9189 17.7689 18.621 16.4702 17.0195 16.47C15.4179 16.47 14.1191 17.7687 14.1191 19.3704C14.1194 20.9718 15.418 22.2698 17.0195 22.2698C18.6208 22.2696 19.9187 20.9717 19.9189 19.3704ZM21.9189 19.3704C21.9187 22.0762 19.7254 24.2696 17.0195 24.2698C14.3135 24.2698 12.1194 22.0764 12.1191 19.3704C12.1191 16.6642 14.3133 14.47 17.0195 14.47C19.7255 14.4702 21.9189 16.6643 21.9189 19.3704Z" fill="#2D3139"></path>
-<path d="M46.1407 59.0803V52.3645C46.1403 52.3626 46.1401 52.3606 46.1397 52.3586C46.1316 52.3122 46.1177 52.2403 46.0958 52.1526C46.0509 51.9729 45.9776 51.7458 45.8672 51.5295C45.6438 51.0918 45.3701 50.8597 44.9512 50.8596C44.2501 50.8596 43.7941 51.0963 43.5167 51.3088C43.3735 51.4185 43.2728 51.5258 43.212 51.5999L43.1524 51.678L43.0635 51.8049C42.8264 52.0937 42.4427 52.2295 42.0694 52.1448C41.6429 52.0478 41.3287 51.6853 41.294 51.2493L41.2247 50.386C41.1799 50.2535 41.0593 49.965 40.8409 49.7209C40.6349 49.4909 40.3604 49.3127 39.9346 49.3098C39.2187 49.3065 38.7515 49.5661 38.459 49.8098C38.3079 49.9358 38.2005 50.0609 38.1338 50.1497C38.1008 50.1936 38.0788 50.2271 38.0674 50.2454C38.0618 50.2544 38.0589 50.2596 38.0586 50.26C38.0587 50.26 38.0587 50.2588 38.0596 50.2571C38.0602 50.256 38.0616 50.2539 38.0626 50.2522C38.063 50.2514 38.063 50.2502 38.0635 50.2493L38.0655 50.2473L38.0645 50.2463C37.85 50.6528 37.3866 50.8616 36.9405 50.7512C36.4942 50.6407 36.1807 50.2393 36.1807 49.7795V48.6643C36.1723 48.6289 36.1599 48.58 36.1417 48.5217C36.0958 48.3753 36.0217 48.1885 35.9102 48.01C35.7009 47.6752 35.3945 47.3998 34.8213 47.3997C33.8984 47.3997 33.5053 47.704 33.337 47.887C33.2399 47.9925 33.1836 48.0956 33.1534 48.1653C33.1385 48.1996 33.1308 48.224 33.128 48.2336C33.1267 48.2381 33.1262 48.239 33.127 48.2356C33.1275 48.2336 33.129 48.2302 33.1299 48.2258C33.1304 48.2237 33.1303 48.2208 33.1309 48.218L33.1104 48.301C32.9774 48.7565 32.5379 49.0614 32.0567 49.0159C31.5433 48.9672 31.1504 48.5355 31.1504 48.0198V40.7385C31.1454 40.7077 31.1365 40.6584 31.1202 40.5969C31.085 40.4643 31.0225 40.2952 30.919 40.1331C30.7433 39.8578 30.4007 39.51 29.5508 39.51C29.1186 39.51 28.861 39.6155 28.7012 39.7219C28.5353 39.8325 28.4119 39.9871 28.3194 40.1721C28.2249 40.3612 28.1726 40.5625 28.1456 40.7249C28.1325 40.8034 28.126 40.8666 28.1231 40.9065C28.1217 40.9257 28.1214 40.9393 28.1211 40.9456V56.0999C28.1211 56.4661 27.9204 56.8037 27.5987 56.9788C27.2771 57.1536 26.8856 57.1384 26.5782 56.9397L22.4776 54.2874C22.4704 54.2841 22.4622 54.2807 22.4532 54.2766C22.4037 54.2545 22.3267 54.2212 22.2286 54.1838C22.0303 54.1083 21.7545 54.018 21.4434 53.9553C20.7859 53.823 20.1575 53.8501 19.7051 54.1516L19.7012 54.1555C19.2468 54.4549 19.1329 54.8704 19.1309 55.3176C19.1375 55.5653 19.2435 55.7979 19.418 55.9631L26.6583 62.8137L26.7286 62.8879C27.0596 63.2716 27.0529 63.8507 26.6973 64.2268C26.3415 64.6029 25.7629 64.6425 25.3614 64.3333L25.2833 64.2668L18.044 57.4163C17.4803 56.883 17.1461 56.1385 17.1309 55.3489C17.1308 55.3427 17.1309 55.3365 17.1309 55.3303C17.1309 54.5233 17.3585 53.3053 18.5958 52.4875C19.7032 51.7492 20.9805 51.8218 21.8379 51.9944C22.2842 52.0842 22.6691 52.2119 22.9415 52.3157C23.0784 52.3679 23.19 52.4149 23.2696 52.4504C23.3094 52.4682 23.3417 52.4832 23.3653 52.4944C23.377 52.4999 23.3862 52.5054 23.3936 52.509C23.3972 52.5108 23.4008 52.5117 23.4034 52.5129C23.4047 52.5136 23.4062 52.5144 23.4073 52.5149L23.4083 52.5159H23.4092C23.4093 52.5159 23.409 52.5163 23.3819 52.5706L23.4092 52.5168C23.4416 52.5331 23.4736 52.5509 23.504 52.5706L26.1211 54.262V40.9397H27.1211C26.1211 40.9397 26.1211 40.9392 26.1211 40.9387V40.9172C26.1213 40.9071 26.1216 40.894 26.1221 40.8792C26.1231 40.8496 26.1247 40.8105 26.128 40.7639C26.1346 40.6709 26.1481 40.5446 26.1729 40.3958C26.2218 40.1025 26.3211 39.6959 26.5303 39.2776C26.7415 38.8553 27.0745 38.4028 27.5918 38.0579C28.1155 37.7088 28.7685 37.51 29.5508 37.51C31.1309 37.51 32.0887 38.2471 32.6055 39.0569C32.8482 39.4372 32.9801 39.8109 33.0528 40.0852C33.0895 40.2237 33.113 40.3417 33.127 40.4299C33.134 40.474 33.1383 40.5115 33.1417 40.5403C33.1433 40.5545 33.1446 40.5672 33.1456 40.5774C33.146 40.5823 33.1462 40.5872 33.1465 40.5911C33.1467 40.593 33.1474 40.5953 33.1475 40.5969V40.6008C33.1439 40.6016 33.0848 40.6067 32.1504 40.6799L33.1475 40.6018C33.1495 40.6278 33.1504 40.6539 33.1504 40.6799V45.6809C33.6125 45.5067 34.1654 45.3997 34.8213 45.3997C36.2676 45.3998 37.1409 46.2054 37.6065 46.9504C37.7839 47.2343 37.9056 47.5135 37.9893 47.7454C38.5108 47.4882 39.1609 47.3058 39.9463 47.3098H39.9473C41.0514 47.317 41.8321 47.8296 42.3311 48.387C42.6161 48.7053 42.8131 49.0418 42.9454 49.3196C43.4695 49.056 44.1348 48.8596 44.9512 48.8596C46.432 48.8598 47.253 49.8434 47.6495 50.6204C47.8491 51.0115 47.9673 51.3923 48.0362 51.6682C48.0711 51.8081 48.0943 51.9265 48.1094 52.0129C48.117 52.0561 48.1231 52.0917 48.127 52.1184C48.129 52.1318 48.1307 52.1438 48.1319 52.1526C48.1324 52.1567 48.1325 52.1603 48.1329 52.1633C48.1331 52.1649 48.1337 52.1669 48.1338 52.1682V52.1711L48.1407 52.2903V59.0803C48.1405 59.6325 47.6929 60.0803 47.1407 60.0803C46.5886 60.0802 46.1408 59.6324 46.1407 59.0803ZM33.1319 48.2131L33.1329 48.2102V48.2092L33.1319 48.2083V48.2131Z" fill="#2D3139"></path>
-<path d="M53.8379 14.2231C56.8684 17.2537 56.8684 22.177 53.8379 25.2075L52.4238 23.7935C54.6733 21.544 54.6733 17.8867 52.4238 15.6372L53.8379 14.2231ZM51.4482 16.6128C53.1602 18.3248 53.1567 21.0965 51.4512 22.8149L50.0312 21.4058C50.9657 20.4642 50.9622 18.9549 50.0342 18.0269L51.4482 16.6128Z" fill="#2D3139"></path>
-<path d="M27.5566 14.1431C30.5872 17.1736 30.5872 22.0969 27.5566 25.1274L26.1426 23.7134C28.3921 21.4639 28.3921 17.8066 26.1426 15.5571L27.5566 14.1431ZM25.167 16.5327C26.879 18.2447 26.8754 21.0164 25.1699 22.7349L23.75 21.3257C24.6845 20.3841 24.6809 18.8748 23.7529 17.9468L25.167 16.5327Z" fill="#2D3139"></path>
-</g>
-<defs>
-<clippath id="clip0_62981_7146">
-<rect fill="white" height="64" width="64"></rect>
-</clippath>
-</defs>
-</svg>
-<h3>Danh bạ liên hệ</h3>
-</button>
-<hr/>
-<button class="feature" data-id="MultiTalk">
-<svg fill="none" height="64" viewbox="0 0 64 64" width="64" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_62981_7163)">
-<path d="M32 64C49.6731 64 64 49.6731 64 32C64 14.3269 49.6731 0 32 0C14.3269 0 0 14.3269 0 32C0 49.6731 14.3269 64 32 64Z" fill="#EFECE8"></path>
-<path d="M48.5 45.2302V38.5144C48.4997 38.5125 48.4994 38.5105 48.499 38.5085C48.4909 38.4621 48.477 38.3902 48.4551 38.3025C48.4102 38.1228 48.3369 37.8958 48.2266 37.6794C48.0031 37.2417 47.7294 37.0096 47.3105 37.0095C46.6094 37.0095 46.1534 37.2462 45.876 37.4587C45.7328 37.5684 45.6322 37.6757 45.5713 37.7498L45.5117 37.8279L45.4229 37.9548C45.1857 38.2436 44.802 38.3794 44.4287 38.2947C44.0022 38.1978 43.688 37.8352 43.6533 37.3992L43.584 36.5359C43.5392 36.4034 43.4187 36.1149 43.2002 35.8708C42.9942 35.6408 42.7197 35.4626 42.2939 35.4597C41.5781 35.4564 41.1109 35.716 40.8184 35.9597C40.6672 36.0857 40.5598 36.2108 40.4932 36.2996C40.4602 36.3435 40.4381 36.377 40.4268 36.3953C40.4211 36.4043 40.4182 36.4095 40.418 36.4099C40.418 36.4099 40.418 36.4088 40.4189 36.407C40.4196 36.4059 40.4209 36.4039 40.4219 36.4021C40.4223 36.4013 40.4224 36.4001 40.4229 36.3992L40.4248 36.3972L40.4238 36.3962C40.2093 36.8027 39.7459 37.0115 39.2998 36.9011C38.8536 36.7907 38.54 36.3892 38.54 35.9294V34.8142C38.5316 34.7788 38.5192 34.7299 38.501 34.6716C38.4551 34.5252 38.3811 34.3384 38.2695 34.1599C38.0603 33.8251 37.7538 33.5497 37.1807 33.5496C36.2578 33.5496 35.8646 33.8539 35.6963 34.0369C35.5992 34.1424 35.543 34.2455 35.5127 34.3152C35.4978 34.3495 35.4902 34.3739 35.4873 34.3835C35.486 34.388 35.4855 34.3889 35.4863 34.3855C35.4868 34.3835 35.4883 34.3801 35.4893 34.3757C35.4897 34.3736 35.4897 34.3707 35.4902 34.3679L35.4697 34.4509C35.3368 34.9064 34.8972 35.2113 34.416 35.1658C33.9026 35.1171 33.5098 34.6854 33.5098 34.1697V26.8884C33.5048 26.8576 33.4958 26.8083 33.4795 26.7468C33.4444 26.6143 33.3818 26.4451 33.2783 26.283C33.1026 26.0077 32.76 25.6599 31.9102 25.6599C31.4779 25.6599 31.2203 25.7654 31.0605 25.8718C30.8946 25.9824 30.7713 26.137 30.6787 26.322C30.5842 26.5111 30.5319 26.7124 30.5049 26.8748C30.4918 26.9533 30.4853 27.0165 30.4824 27.0564C30.481 27.0756 30.4807 27.0892 30.4805 27.0955V42.2498C30.4805 42.616 30.2797 42.9536 29.958 43.1287C29.6364 43.3035 29.2449 43.2883 28.9375 43.0896L24.8369 40.4373C24.8298 40.434 24.8215 40.4306 24.8125 40.4265C24.763 40.4044 24.686 40.3711 24.5879 40.3337C24.3896 40.2582 24.1138 40.1679 23.8027 40.1052C23.1452 39.9729 22.5168 40 22.0645 40.3015L22.0605 40.3054L21.9043 40.4236C21.579 40.7097 21.492 41.0767 21.4902 41.4675C21.4968 41.7153 21.6028 41.9478 21.7773 42.113L35.1875 54.7937C35.5885 55.1732 35.6059 55.8056 35.2266 56.2068C34.8472 56.6079 34.2148 56.626 33.8135 56.2468L20.4033 43.5662C19.91 43.0995 19.5925 42.4715 19.5107 41.7927L19.4902 41.4988V41.4802C19.4902 40.6732 19.7179 39.4552 20.9551 38.6375C22.0625 37.8991 23.3399 37.9717 24.1973 38.1443C24.6435 38.2341 25.0285 38.3618 25.3008 38.4656C25.4377 38.5178 25.5493 38.5648 25.6289 38.6003C25.6687 38.6181 25.701 38.6331 25.7246 38.6443C25.7363 38.6498 25.7455 38.6553 25.7529 38.6589C25.7566 38.6607 25.7601 38.6616 25.7627 38.6628C25.764 38.6635 25.7656 38.6643 25.7666 38.6648L25.7676 38.6658H25.7686C25.7687 38.6658 25.7684 38.6662 25.7412 38.7205L25.7686 38.6667C25.8009 38.683 25.8329 38.7008 25.8633 38.7205L28.4805 40.4119V27.0896H29.4805C28.4805 27.0896 28.4805 27.0891 28.4805 27.0886V27.0671C28.4806 27.057 28.481 27.0439 28.4814 27.0291C28.4824 26.9995 28.484 26.9604 28.4873 26.9138C28.494 26.8208 28.5074 26.6945 28.5322 26.5457C28.5811 26.2524 28.6805 25.8458 28.8896 25.4275C29.1008 25.0052 29.4338 24.5527 29.9512 24.2078C30.4748 23.8587 31.1278 23.6599 31.9102 23.6599C33.4903 23.6599 34.448 24.397 34.9648 25.2068C35.2075 25.5871 35.3394 25.9608 35.4121 26.2351C35.4488 26.3736 35.4724 26.4916 35.4863 26.5798C35.4933 26.6239 35.4976 26.6614 35.501 26.6902C35.5026 26.7044 35.5039 26.7172 35.5049 26.7273C35.5054 26.7322 35.5055 26.7371 35.5059 26.741C35.506 26.7429 35.5067 26.7452 35.5068 26.7468V26.7507C35.5032 26.7515 35.4445 26.7566 34.5098 26.8298L35.5068 26.7517C35.5089 26.7777 35.5098 26.8038 35.5098 26.8298V31.8308C35.9718 31.6566 36.5247 31.5496 37.1807 31.5496C38.6269 31.5497 39.5002 32.3553 39.9658 33.1003C40.1432 33.3842 40.2649 33.6634 40.3486 33.8953C40.8701 33.6381 41.5202 33.4558 42.3057 33.4597H42.3066L42.3027 33.9636L42.3008 34.3152L42.3066 33.4597C43.4108 33.4669 44.1915 33.9795 44.6904 34.5369C44.9754 34.8552 45.1724 35.1917 45.3047 35.4695C45.8288 35.2059 46.4941 35.0095 47.3105 35.0095C48.7913 35.0097 49.6123 35.9933 50.0088 36.7703C50.2084 37.1614 50.3266 37.5422 50.3955 37.8181C50.4304 37.958 50.4536 38.0764 50.4688 38.1628C50.4763 38.206 50.4824 38.2416 50.4863 38.2683C50.4883 38.2817 50.49 38.2937 50.4912 38.3025C50.4917 38.3066 50.4918 38.3102 50.4922 38.3132C50.4924 38.3148 50.493 38.3168 50.4932 38.3181V38.321L50.5 38.4402V45.2302C50.4998 45.7824 50.0522 46.2302 49.5 46.2302C48.9479 46.2301 48.5002 45.7823 48.5 45.2302ZM35.4912 34.363L35.4922 34.3601V34.3591L35.4912 34.3582V34.363Z" fill="#2D3139"></path>
-<path d="M33.9902 18.0801C33.9902 16.7712 32.929 15.71 31.6201 15.71C30.3112 15.71 29.25 16.7712 29.25 18.0801C29.2501 19.3889 30.3112 20.4502 31.6201 20.4502C32.9289 20.4501 33.9902 19.3889 33.9902 18.0801ZM35.9902 18.0801C35.9902 20.4935 34.0335 22.4501 31.6201 22.4502C29.2067 22.4502 27.2501 20.4935 27.25 18.0801C27.25 15.6666 29.2066 13.71 31.6201 13.71C34.0335 13.71 35.9902 15.6666 35.9902 18.0801Z" fill="#2D3139"></path>
-<path d="M40.2295 18.0696C40.2293 13.322 36.3765 9.46997 31.6289 9.46997C26.8815 9.47018 23.0295 13.3222 23.0293 18.0696C23.0293 20.4446 23.9874 22.5931 25.5469 24.1526L24.1318 25.5667C22.2115 23.6461 21.0293 20.9943 21.0293 18.0696C21.0295 12.2176 25.7769 7.47018 31.6289 7.46997C37.4811 7.46997 42.2293 12.2175 42.2295 18.0696C42.2295 21.5256 40.5821 24.5873 38.0215 26.5188L36.8174 24.9211C38.8965 23.3526 40.2295 20.8734 40.2295 18.0696Z" fill="#2D3139"></path>
-</g>
-<defs>
-<clippath id="clip0_62981_7163">
-<rect fill="white" height="64" width="64"></rect>
-</clippath>
-</defs>
-</svg>
-<h3>Quay số nhanh</h3>
-</button>
-<hr/>
-<button class="feature" data-id="call_translator">
-<svg fill="none" height="64" viewbox="0 0 64 64" width="64" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_62981_7178)">
-<path d="M32 64C49.6731 64 64 49.6731 64 32C64 14.3269 49.6731 0 32 0C14.3269 0 0 14.3269 0 32C0 49.6731 14.3269 64 32 64Z" fill="#EFECE8"></path>
-<path d="M50.073 32.0091H48.7299L48.3802 25.1399H50.4227L50.073 32.0091ZM48.3242 34.2335C48.3242 33.8418 48.4268 33.5667 48.632 33.4081C48.8372 33.2402 49.0937 33.1563 49.4015 33.1563C49.6906 33.1563 49.9378 33.2356 50.1429 33.3941C50.3575 33.5527 50.4647 33.8325 50.4647 34.2335C50.4647 34.6159 50.3575 34.8911 50.1429 35.0589C49.9378 35.2268 49.6906 35.3108 49.4015 35.3108C49.0937 35.3108 48.8372 35.2268 48.632 35.0589C48.4268 34.8911 48.3242 34.6159 48.3242 34.2335Z" fill="#2D3139"></path>
-<path d="M41.3552 25C41.8775 25 42.3345 25.0839 42.7262 25.2518C43.1273 25.4197 43.4397 25.6669 43.6636 25.9933C43.8968 26.3104 44.0133 26.6975 44.0133 27.1545C44.0133 27.7794 43.8221 28.3064 43.4397 28.7354C43.0573 29.1644 42.5817 29.5422 42.0127 29.8686L44.2372 32.0231C44.4424 31.7153 44.6149 31.3842 44.7548 31.0298C44.904 30.666 45.03 30.293 45.1326 29.9106H46.9513C46.8021 30.4608 46.6015 31.0204 46.3497 31.5894C46.0979 32.149 45.7761 32.662 45.3844 33.1283L47.4269 35.1289H45.2025L44.2512 34.2056C44.046 34.3641 43.8268 34.5087 43.5936 34.6392C43.3605 34.7698 43.1133 34.8817 42.8522 34.975C42.6003 35.0683 42.3299 35.1382 42.0407 35.1849C41.7516 35.2408 41.4438 35.2688 41.1174 35.2688C40.4085 35.2688 39.793 35.1569 39.2707 34.933C38.7577 34.6999 38.3613 34.3734 38.0815 33.9537C37.811 33.534 37.6758 33.0397 37.6758 32.4708C37.6758 31.9951 37.7504 31.5847 37.8996 31.2396C38.0582 30.8945 38.282 30.5914 38.5712 30.3303C38.8696 30.0691 39.224 29.8266 39.6344 29.6028C39.4012 29.3416 39.2054 29.0898 39.0468 28.8473C38.8883 28.5955 38.767 28.3437 38.6831 28.0918C38.5991 27.8307 38.5572 27.5509 38.5572 27.2524C38.5572 26.7861 38.6737 26.385 38.9069 26.0493C39.1401 25.7042 39.4665 25.443 39.8862 25.2658C40.3059 25.0886 40.7956 25 41.3552 25ZM40.6697 30.666C40.4272 30.8153 40.222 30.9738 40.0541 31.1417C39.8862 31.3003 39.7557 31.4775 39.6624 31.6733C39.5691 31.8599 39.5225 32.079 39.5225 32.3309C39.5225 32.7692 39.681 33.119 39.9982 33.3801C40.3153 33.6413 40.721 33.7719 41.2153 33.7719C41.635 33.7719 42.0034 33.7112 42.3205 33.59C42.647 33.4687 42.9314 33.3148 43.1739 33.1283L40.6697 30.666ZM41.3272 26.371C41.0381 26.371 40.7816 26.4503 40.5578 26.6089C40.3339 26.7581 40.222 27.0006 40.222 27.3364C40.222 27.6068 40.2873 27.8633 40.4179 28.1058C40.5578 28.3483 40.7536 28.6048 41.0054 28.8753C41.4625 28.6235 41.7982 28.3763 42.0127 28.1338C42.2366 27.8913 42.3485 27.6115 42.3485 27.2944C42.3485 26.9959 42.2459 26.7674 42.0407 26.6089C41.8449 26.4503 41.607 26.371 41.3272 26.371Z" fill="#2D3139"></path>
-<path d="M36.299 30.1204C36.299 30.5494 36.2477 30.9738 36.1451 31.3935C36.0425 31.8132 35.8839 32.191 35.6694 32.5267C35.4642 32.8625 35.2078 33.133 34.9 33.3381C34.5922 33.534 34.2284 33.6319 33.8087 33.6319C33.4263 33.6319 33.1046 33.5387 32.8434 33.3521C32.5916 33.1563 32.4237 32.9138 32.3398 32.6246H32.2558C32.0693 32.9045 31.8175 33.1423 31.5003 33.3381C31.1832 33.534 30.7962 33.6319 30.3392 33.6319C29.5557 33.6319 28.9495 33.3894 28.5204 32.9045C28.0914 32.4101 27.8769 31.7666 27.8769 30.9738C27.8769 30.3489 28.0075 29.7986 28.2686 29.323C28.5298 28.8473 28.8982 28.4742 29.3738 28.2037C29.8495 27.9239 30.4091 27.784 31.0527 27.784C31.4817 27.784 31.9154 27.8213 32.3538 27.896C32.8014 27.9706 33.1465 28.0545 33.389 28.1478L33.2491 31.0018C33.2398 31.123 33.2351 31.2303 33.2351 31.3236C33.2351 31.4075 33.2351 31.4635 33.2351 31.4914C33.2351 31.9111 33.3004 32.191 33.431 32.3309C33.5709 32.4708 33.7248 32.5407 33.8927 32.5407C34.1352 32.5407 34.3357 32.4288 34.4943 32.2049C34.6621 31.9811 34.788 31.6873 34.872 31.3236C34.9559 30.9598 34.9979 30.5541 34.9979 30.1064C34.9979 29.295 34.83 28.6048 34.4943 28.0359C34.1678 27.4669 33.7201 27.0332 33.1512 26.7348C32.5823 26.4363 31.934 26.2871 31.2066 26.2871C30.4418 26.2871 29.7702 26.4083 29.192 26.6508C28.6137 26.8933 28.124 27.2338 27.723 27.6721C27.3313 28.1012 27.0328 28.6095 26.8276 29.1971C26.6318 29.7846 26.5338 30.4282 26.5338 31.1277C26.5338 31.9951 26.6877 32.7319 26.9955 33.3381C27.3126 33.9351 27.7696 34.3921 28.3665 34.7092C28.9728 35.017 29.7143 35.1709 30.591 35.1709C31.1413 35.1709 31.6962 35.1102 32.2558 34.989C32.8154 34.8677 33.3237 34.7232 33.7808 34.5553V35.7305C33.3517 35.9077 32.8714 36.0522 32.3398 36.1642C31.8081 36.2761 31.2345 36.3321 30.619 36.3321C29.4811 36.3321 28.5111 36.1269 27.709 35.7165C26.9069 35.3061 26.2913 34.7185 25.8623 33.9537C25.4333 33.1796 25.2188 32.2516 25.2188 31.1697C25.2188 30.3116 25.354 29.5188 25.6245 28.7913C25.9043 28.0545 26.3053 27.4156 26.8276 26.8747C27.3499 26.3244 27.9795 25.9 28.7163 25.6016C29.4531 25.2938 30.2785 25.1399 31.1926 25.1399C31.9294 25.1399 32.6102 25.2565 33.2351 25.4896C33.86 25.7135 34.401 26.0446 34.858 26.483C35.315 26.912 35.6694 27.4343 35.9213 28.0499C36.1731 28.6561 36.299 29.3463 36.299 30.1204ZM29.2759 31.0018C29.2759 31.5427 29.3878 31.9345 29.6117 32.177C29.8355 32.4195 30.134 32.5407 30.507 32.5407C30.992 32.5407 31.3371 32.3635 31.5423 32.0091C31.7475 31.6453 31.8688 31.1743 31.9061 30.5961L31.99 28.9872C31.8781 28.9592 31.7475 28.9359 31.5983 28.9172C31.4491 28.8986 31.2858 28.8893 31.1086 28.8893C30.6609 28.8893 30.3019 28.9919 30.0314 29.1971C29.7609 29.4022 29.565 29.6681 29.4438 29.9945C29.3319 30.3116 29.2759 30.6474 29.2759 31.0018Z" fill="#2D3139"></path>
-<path d="M22.2174 29.2389L21.8536 31.0717H23.6724V32.3028H21.6158L21.0702 35.1288H19.7691L20.3147 32.3028H18.7338L18.2022 35.1288H16.9151L17.4327 32.3028H15.7539V31.0717H17.6706L18.0343 29.2389H16.2576V28.0078H18.2582L18.8038 25.1538H20.1049L19.5732 28.0078H21.1681L21.7137 25.1538H22.9868L22.4552 28.0078H24.134V29.2389H22.2174ZM18.9577 31.0717H20.5525L20.9163 29.2389H19.3214L18.9577 31.0717Z" fill="#2D3139"></path>
-<path d="M53.9597 36.87C53.9597 38.28 52.8097 39.43 51.3997 39.43H16.0497L10.9297 44.55V24.09C10.9297 22.68 12.0797 21.53 13.4897 21.53H51.3997C52.8097 21.53 53.9597 22.68 53.9597 24.09V36.88V36.87Z" stroke="#2D3139" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</g>
-<defs>
-<clippath id="clip0_62981_7178">
-<rect fill="white" height="64" width="64"></rect>
-</clippath>
-</defs>
-</svg>
-<h3>Bộ lọc từ ngữ không phù hợp</h3>
-</button>
-<hr/>
-<button class="feature" data-id="vasco_my_voice">
-<svg fill="none" height="64" viewbox="0 0 64 64" width="64" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_62981_7194)">
-<path d="M32 64C49.6731 64 64 49.6731 64 32C64 14.3269 49.6731 0 32 0C14.3269 0 0 14.3269 0 32C0 49.6731 14.3269 64 32 64Z" fill="#EFECE8"></path>
-<path d="M32.8955 52.5373C32.614 52.6778 32.2824 52.678 32.001 52.5373L32.4492 51.6427L32.8955 52.5373ZM47.1611 18.9445L32.4482 13.425L17.7363 18.9445V32.0002C17.7364 37.4449 21.3825 42.1019 25.251 45.4875C27.1639 47.1616 29.0819 48.4807 30.5234 49.382C31.2431 49.832 31.8417 50.1769 32.2578 50.4074C32.326 50.4451 32.3902 50.4783 32.4482 50.5099C32.5066 50.4782 32.5711 50.4453 32.6396 50.4074C33.0558 50.1771 33.6543 49.8327 34.374 49.383C35.8155 48.4823 37.7335 47.1641 39.6465 45.4904C43.5147 42.1059 47.1611 37.4488 47.1611 32.0002V18.9445ZM49.1611 32.0002C49.1611 38.3414 44.9518 43.506 40.9639 46.9953C38.9489 48.7583 36.9381 50.1392 35.4336 51.0793C34.6804 51.5499 34.0515 51.9122 33.6084 52.1574C33.3868 52.28 33.2111 52.3731 33.0898 52.4367C33.0292 52.4685 32.9819 52.4932 32.9492 52.5099C32.933 52.5182 32.9201 52.5249 32.9111 52.5294C32.9068 52.5316 32.9029 52.5331 32.9004 52.5343C32.8992 52.5349 32.8982 52.5359 32.8975 52.5363H32.8965L32.4492 51.6427L32.001 52.5363H32C31.9992 52.5359 31.9974 52.535 31.9961 52.5343C31.9935 52.533 31.9897 52.5316 31.9854 52.5294C31.9765 52.525 31.9642 52.5181 31.9482 52.5099C31.9156 52.4932 31.8682 52.4685 31.8076 52.4367C31.6864 52.373 31.5107 52.2791 31.2891 52.1564C30.846 51.911 30.217 51.5491 29.4639 51.0783C27.9594 50.1376 25.9485 48.7558 23.9336 46.9923C19.9459 43.5023 15.7364 38.3377 15.7363 32.0002V18.2521C15.7365 17.8356 15.9949 17.463 16.3848 17.3166L32.0977 11.4211L32.4482 12.3576H32.4492L32.0977 11.4211C32.324 11.3362 32.5735 11.3362 32.7998 11.4211L48.5127 17.3166L48.6523 17.381C48.9633 17.5561 49.161 17.8875 49.1611 18.2521V32.0002Z" fill="#2D3139"></path>
-<path d="M32.8975 47.9088C32.6158 48.0497 32.2846 48.0497 32.0029 47.9088L32.4502 47.0152L32.8975 47.9088ZM43.8926 21.2623L32.4502 16.9723L21.0078 21.2623V31.4596C21.0078 35.6781 23.8367 39.3137 26.8877 41.984C28.392 43.3006 29.9012 44.3388 31.0361 45.0484C31.6026 45.4026 32.0737 45.6731 32.4004 45.8541C32.4172 45.8634 32.4341 45.8716 32.4502 45.8805C32.4662 45.8716 32.4832 45.8634 32.5 45.8541C32.8267 45.6731 33.2978 45.4026 33.8643 45.0484C34.9992 44.3388 36.5084 43.3006 38.0127 41.984C41.0637 39.3137 43.8926 35.6781 43.8926 31.4596V21.2623ZM45.8926 31.4596C45.8926 36.571 42.5004 40.7142 39.3301 43.4889C37.724 44.8946 36.1227 45.9957 34.9248 46.7447C34.3249 47.1198 33.8234 47.4082 33.4697 47.6041C33.2928 47.7021 33.152 47.7766 33.0547 47.8277C33.0064 47.8531 32.9688 47.8728 32.9424 47.8863C32.9291 47.8931 32.9185 47.8992 32.9111 47.9029C32.9076 47.9047 32.9045 47.9057 32.9023 47.9068C32.9012 47.9074 32.9001 47.9084 32.8994 47.9088H32.8984L32.4502 47.0152L32.002 47.9088H32.001C32.0003 47.9084 31.9991 47.9074 31.998 47.9068C31.9959 47.9058 31.9927 47.9047 31.9893 47.9029C31.9819 47.8992 31.9721 47.893 31.959 47.8863C31.9325 47.8728 31.8943 47.8533 31.8457 47.8277C31.7485 47.7767 31.6084 47.702 31.4316 47.6041C31.0779 47.4082 30.5756 47.1199 29.9756 46.7447C28.7777 45.9957 27.1764 44.8946 25.5703 43.4889C22.4 40.7142 19.0078 36.571 19.0078 31.4596V20.5699C19.0078 20.1531 19.2669 19.7797 19.6572 19.6334L32.0996 14.9684C32.3259 14.8836 32.5755 14.8835 32.8018 14.9684L45.2441 19.6334L45.3838 19.6988C45.6948 19.874 45.8926 20.2052 45.8926 20.5699V31.4596Z" fill="#2D3139"></path>
-<path d="M41.4746 26.6995L31.9199 36.2473L31.2129 35.5393V35.5403L31.9199 36.2473C31.5538 36.6131 30.9747 36.6359 30.582 36.3157L30.5068 36.2473L25.7285 31.4778L27.1426 30.0627L31.2119 34.1252L40.0615 25.2854L41.4746 26.6995Z" fill="#2D3139"></path>
-</g>
-<defs>
-<clippath id="clip0_62981_7194">
-<rect fill="white" height="64" width="64"></rect>
-</clippath>
-</defs>
-</svg>
-<h3>Bảo mật và riêng tư</h3>
-</button>
-</div>
-<div class="feature-boxes">
-<div class="feature-box active" data-id="voice_translator">
-<div class="video">
-<img alt="Ảnh chụp một người đàn ông trung niên có râu và tóc hoa râm, mặc áo polo ngắn tay màu xanh nhạt và quần trắng. Anh đứng với tay phải đút trong túi quần, nhìn xuống máy phiên dịch cầm trên tay trái. Phía sau là một màn hình cong khổng lồ hiển thị toàn cảnh không gian sâu: một Trái Đất lớn, màu xanh lạnh chiếm phần bên phải, trong khi những tinh vân vàng rực và các ánh đèn thành phố xa xăm lấp lánh trong khoảng không tối bên trái, cùng những vì sao rải rác. Ánh sáng xanh từ hình chiếu Trái Đất tạo nên một sắc thái trên người anh." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/call_lp/icons_panel1.webp" ); ?>"/>
-</div>
-<div class="feature-info">
-<h3 class="h2">Phạm vi toàn cầu</h3>
-<p class="not-subtitle">Trò chuyện với bất kỳ ai bạn muốn, bất cứ khi nào bạn muốn. Dịch vụ này hoạt động ở mọi nơi Vasco Translator Q1 có sóng—tức là tại gần 200 quốc gia trên toàn thế giới! Tính năng này hỗ trợ 53 ngôn ngữ, và nhờ các đối tác công nghệ của chúng tôi, bạn có thể kết nối với 160 quốc gia. Dịch vụ này khả dụng cho người dùng có số điện thoại từ 42 quốc gia (cần thiết để xác thực). Với tính năng này, cả thế giới nằm trong tầm tay bạn.</p>
-</div>
-</div>
-<div class="feature-box" data-id="photo_translator">
-<div class="video">
-<img alt="Ảnh cận cảnh tập trung vào bàn tay một người đang cầm thiết bị cầm tay màu xanh đậm có logo VA ở mặt sau. Phía sau, trong nền được làm mờ nhẹ, một chàng trai trẻ tươi cười mặc áo thun kẻ sọc đen trắng đang nằm thư giãn trên ghế sofa màu sáng. Bối cảnh là một phòng khách hiện đại, sáng sủa với ánh sáng dịu nhẹ và thấp thoáng cây xanh trong nhà." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/call_lp/icons_panel2.webp" ); ?>"/>
-</div>
-<div class="feature-info">
-<h3 class="h2">Vận hành dễ dàng, trực quan</h3>
-<p class="not-subtitle">Sử dụng vô cùng đơn giản. Với hướng dẫn tương tác của chúng tôi, bạn sẽ nhanh chóng học được cách dịch các cuộc gọi điện thoại theo thời gian thực—và nếu có quên điều gì, bạn luôn có thể xem lại.</p>
-</div>
-</div>
-<div class="feature-box" data-id="text_translator">
-<div class="video">
-<img alt="Ảnh cận cảnh một bàn tay đang cầm thiết bị điện tử Vasco màu đỏ phía trên một tập sách hướng dẫn du lịch đang mở. Màn hình thiết bị hiển thị menu “Danh bạ” với nội dung “Không có liên hệ đã lưu. Thêm liên hệ mới ngay hoặc sau khi thực hiện cuộc gọi.” cùng với tùy chọn “THÊM LIÊN HỆ”. Phía sau là một bãi cỏ xanh mờ nhạt, cùng với cánh tay của một người khác mặc áo màu đỏ." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/call_lp/icons_panel3.webp" ); ?>"/>
-</div>
-<div class="feature-info">
-<h3 class="h2">Danh bạ liên hệ</h3>
-<p class="not-subtitle">Muốn có mọi thứ ở một nơi? Lưu số điện thoại trực tiếp trên thiết bị và gán ngôn ngữ cho từng số. Từ giờ, những liên hệ quan trọng nhất của bạn luôn trong tầm tay.</p>
-</div>
-</div>
-<div class="feature-box" data-id="MultiTalk">
-<div class="video">
-<img alt="Ảnh chụp bốn người đang quây quần bên một chiếc bàn tròn nhỏ màu trắng trong một căn phòng sáng, tối giản. Bên trái, một người đàn ông có tóc xoăn nâu, mặc áo kẻ sọc đỏ trắng, đang cầm một thiết bị điện tử cầm tay màu tối hiển thị bàn phím số trên màn hình. Ngồi ở giữa, một người phụ nữ mặc áo thun vàng và áo gile màu kem tựa cằm lên tay, đang mỉm cười. Phía sau cô là một người phụ nữ tóc xoăn mặc áo màu beige, còn một người đàn ông tóc hoa râm có râu ngồi bên phải, mặc áo cardigan xám và cầm một chiếc cốc màu đen. Trên bàn có các cốc cà phê, báo và một chiếc bình trang trí nhỏ dưới ánh sáng dịu nhẹ." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/call_lp/icons_panel4.webp" ); ?>"/>
-</div>
-<div class="feature-info">
-<h3 class="h2">Quay số nhanh</h3>
-<p class="not-subtitle">Khi thời gian là yếu tố quan trọng, không có chỗ cho những thiết lập phức tạp. Chọn một liên hệ trong danh sách, và Vasco Translator Q1 sẽ tự động kích hoạt ngôn ngữ đã gán và bắt đầu cuộc trò chuyện.</p>
-</div>
-</div>
-<div class="feature-box" data-id="call_translator">
-<div class="video">
-<img alt="Ảnh cận cảnh một bàn tay đang cầm thiết bị điện tử Vasco màu tím. Màn hình thiết bị hiển thị menu thiết lập “Bộ lọc từ ngữ không phù hợp”, cho thấy tính năng đang ở trạng thái “Đã bật” với công tắc gạt màu xanh đang mở và nội dung ghi “Bật tùy chọn này để lọc bỏ ngôn từ thô lỗ khỏi các bản dịch.” Nền phía sau là một khăn trải bàn kẻ ô đỏ, trắng, xanh, với một bàn tay khác đang đưa tới một chiếc cốc trong suốt trang trí hình quả đào ở góc trên bên phải." src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/call_lp/icons_panel5.webp" ); ?>"/>
-</div>
-<div class="feature-info">
-<h3 class="h2">Bộ lọc từ ngữ không phù hợp</h3>
-<p class="not-subtitle">Tính năng dịch cuộc gọi điện thoại không chỉ mang lại độ chính xác dịch thuật 96%, mà còn phát hiện và kiểm duyệt ngôn từ thô lỗ. Giữ giọng điệu chuyên nghiệp ngay cả khi cảm xúc dâng cao.</p>
-</div>
-</div>
-<div class="feature-box" data-id="vasco_my_voice">
-<div class="video">
-<img alt='Ảnh cận cảnh hai người đang tương tác với một thiết bị mới. Một người cầm thiết bị điện tử cầm tay màu tím đậm hiển thị bàn phím số quay số trên màn hình. Một người phụ nữ tóc nâu dài mặc áo trắng đứng bên cạnh, đưa tay chạm hoặc chỉ vào màn hình. Phía sau, một hộp sản phẩm màu trắng đang mở được giơ lên, hiển thị logo đồ họa có ghi "No. 1" ở mặt trong nắp hộp.' src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/call_lp/icons_panel6.webp" ); ?>"/>
-</div>
-<div class="feature-info">
-<h3 class="h2">Bảo mật và riêng tư</h3>
-<p class="not-subtitle">Các cuộc trò chuyện của bạn chỉ diễn ra giữa bạn và người nhận. Bản ghi và nhật ký cuộc gọi sẽ tự động bị xóa ngay khi bạn thoát khỏi màn hình gọi, đảm bảo quyền riêng tư và an toàn tuyệt đối.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section aria-labelledby="vasco-products-heading" class="vasco-products" tabindex="0">
-<div class="container">
-<div class="products-flex">
-<h2 class="h2-notosans" id="vasco-products-heading">Khám phá thiết bị biến mọi thứ thành hiện thực</h2>
-<div class="products-wrapper">
-<div aria-roledescription="carousel" class="swiper swiper-products-slider" role="region">
-<div class="swiper-wrapper" role="list">
-<div aria-labelledby="product-38" class="swiper-slide" role="listitem" tabindex="0">
+<h2 class="h2-notosans" id="vasco-products-heading">Sản phẩm tích hợp tính năng này</h2>
+<div class="single-product-featured">
 <div class="box">
-<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/q1.webp" ); ?>"/>
+<img alt="Vasco Translator Q1" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/q1.webp" ); ?>"/>
 <div class="product-description">
-<h3 aria-label="q1.name]" id="product-38" tabindex="0">
-											Vasco Translator Q1</h3>
-<p>Máy dịch duy nhất có tính năng nhân bản giọng nói và dịch cuộc gọi điện thoại</p>
-<a aria-label="Tìm hiểu thêm Vasco Translator Q1" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/product/vasco-translator-q1/" ) ); ?>" target="_blank">
-											Tìm hiểu thêm
-										</a>
-</div>
-</div>
-</div>
-</div>
-<div class="custom-navigation">
-<div class="swiper-button-prev btn-product-prev" data-label-prev="Slide trước"></div>
-<div class="swiper-button-next btn-product-next" data-label-next="Slide tiếp theo"></div>
-</div>
+<h3>Vasco Translator Q1</h3>
+<p>Máy dịch duy nhất có tính năng nhân bản giọng nói AI và dịch cuộc gọi điện thoại 2 chiều trực tiếp.</p>
+<a class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/product/vasco-translator-q1/" ) ); ?>">
+Tìm hiểu thêm
+</a>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section class="financial-plans" id="price-plans">
-<div class="container content-wrapper">
-<h2 class="h1">Nạp tiền linh hoạt</h2>
-<p class="subtitle">Trò chuyện thoải mái theo ý bạn. Tính năng dịch cuộc gọi điện thoại theo thời gian thực đi kèm 10 phút miễn phí để bạn bắt đầu. Muốn nhiều hơn? Hãy chọn gói phù hợp với phong cách trò chuyện của bạn.</p>
-<div class="plans-wrapper">
-<div class="plan-box">
-<div class="box-header">
-<div class="label-wrapper empty">
-</div>
-<p class="title">Cơ bản</p>
-<p class="price">$7</p>
-<svg class="price-plan-pseudo" fill="none" height="25" viewbox="0 0 48 25" width="48" xmlns="http://www.w3.org/2000/svg">
-<path d="M41.0686 3.05585L29.9416 21.9231C29.4019 22.8388 28.5206 23.6169 27.4043 24.1631C26.288 24.7093 24.9849 25 23.6532 25C22.3215 25 21.0184 24.7093 19.9021 24.1631C18.7858 23.6169 17.9044 22.8388 17.3648 21.9231L6.28839 3.08116C5.75311 2.16277 4.87285 1.38196 3.75573 0.834597C2.6495 0.292577 1.35873 0.00284845 0.0390122 2.08961e-05L0 2.08961e-05C0.0130068 -6.97089e-06 0.0260109 -6.95986e-06 0.0390122 2.08961e-05L47.2727 2.08961e-05C45.959 0.0118999 44.6771 0.305843 43.5779 0.847212C42.4788 1.38858 41.6082 2.15488 41.0686 3.05585Z" fill="#E0E2F2"></path>
-</svg>
-</div>
-<div class="box-body">
-<p class="body-subtitle">Cho những cuộc trò chuyện thỉnh thoảng</p>
-<div class="adventages-wraper"><ul>
-<li>giá mỗi phút dịch $$</li>
-<li>10 phút dịch cuộc gọi điện thoại</li>
-</ul></div>
-<a class="btn btn-md btn-primary" href="./call-translator.html">
-<img alt="giỏ hàng" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>
-							CHỌN CƠ BẢN
-						</a>
-</div>
-</div>
-<div class="plan-box">
-<div class="box-header">
-<div class="label-wrapper">
-<p class="label-text">tiết kiệm 4%</p>
-<svg class="price-plan-label-pseudo" fill="none" height="32" viewbox="0 0 17 32" width="17" xmlns="http://www.w3.org/2000/svg">
-<path d="M0.342773 0C1.40364 0 2.42173 0.42173 3.17188 1.17188L15.1719 13.1719C16.7336 14.7339 16.7336 17.2661 15.1719 18.8281L3.17188 30.8281C2.42173 31.5783 1.40364 32 0.342773 32H0V0H0.342773Z" fill="#FFD260"></path>
-</svg>
-</div>
-<p class="title">Tiêu chuẩn</p>
-<p class="price">$33</p>
-<svg class="price-plan-pseudo" fill="none" height="25" viewbox="0 0 48 25" width="48" xmlns="http://www.w3.org/2000/svg">
-<path d="M41.0686 3.05585L29.9416 21.9231C29.4019 22.8388 28.5206 23.6169 27.4043 24.1631C26.288 24.7093 24.9849 25 23.6532 25C22.3215 25 21.0184 24.7093 19.9021 24.1631C18.7858 23.6169 17.9044 22.8388 17.3648 21.9231L6.28839 3.08116C5.75311 2.16277 4.87285 1.38196 3.75573 0.834597C2.6495 0.292577 1.35873 0.00284845 0.0390122 2.08961e-05L0 2.08961e-05C0.0130068 -6.97089e-06 0.0260109 -6.95986e-06 0.0390122 2.08961e-05L47.2727 2.08961e-05C45.959 0.0118999 44.6771 0.305843 43.5779 0.847212C42.4788 1.38858 41.6082 2.15488 41.0686 3.05585Z" fill="#6F61A5"></path>
-</svg>
-</div>
-<div class="box-body">
-<p class="body-subtitle">Cho các cuộc gọi thường xuyên</p>
-<div class="adventages-wraper"><ul>
-<li>giá mỗi phút dịch $$</li>
-<li>50 phút dịch cuộc gọi điện thoại</li>
-</ul></div>
-<a class="btn btn-md btn-primary" href="./call-translator.html">
-<img alt="giỏ hàng" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>
-							CHỌN TIÊU CHUẨN
-						</a>
-</div>
-</div>
-<div class="plan-box">
-<div class="box-header">
-<div class="label-wrapper">
-<p class="label-text">tiết kiệm 8%</p>
-<svg class="price-plan-label-pseudo" fill="none" height="32" viewbox="0 0 17 32" width="17" xmlns="http://www.w3.org/2000/svg">
-<path d="M0.342773 0C1.40364 0 2.42173 0.42173 3.17188 1.17188L15.1719 13.1719C16.7336 14.7339 16.7336 17.2661 15.1719 18.8281L3.17188 30.8281C2.42173 31.5783 1.40364 32 0.342773 32H0V0H0.342773Z" fill="#FFD260"></path>
-</svg>
-</div>
-<p class="title">Cao cấp</p>
-<p class="price">$64</p>
-<svg class="price-plan-pseudo" fill="none" height="25" viewbox="0 0 48 25" width="48" xmlns="http://www.w3.org/2000/svg">
-<path d="M41.0686 3.05585L29.9416 21.9231C29.4019 22.8388 28.5206 23.6169 27.4043 24.1631C26.288 24.7093 24.9849 25 23.6532 25C22.3215 25 21.0184 24.7093 19.9021 24.1631C18.7858 23.6169 17.9044 22.8388 17.3648 21.9231L6.28839 3.08116C5.75311 2.16277 4.87285 1.38196 3.75573 0.834597C2.6495 0.292577 1.35873 0.00284845 0.0390122 2.08961e-05L0 2.08961e-05C0.0130068 -6.97089e-06 0.0260109 -6.95986e-06 0.0390122 2.08961e-05L47.2727 2.08961e-05C45.959 0.0118999 44.6771 0.305843 43.5779 0.847212C42.4788 1.38858 41.6082 2.15488 41.0686 3.05585Z" fill="#E0E2F2"></path>
-</svg>
-</div>
-<div class="box-body">
-<p class="body-subtitle">Cho những cuộc trò chuyện dài hơn</p>
-<div class="adventages-wraper"><ul>
-<li>giá mỗi phút dịch $$</li>
-<li>100 phút dịch cuộc gọi điện thoại</li>
-</ul></div>
-<a class="btn btn-md btn-primary" href="./call-translator.html">
-<img alt="giỏ hàng" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/basket.svg" ); ?>"/>
-							CHỌN CAO CẤP
-						</a>
-</div>
-</div>
-</div>
-<p class="addition">Chưa chắc nên chọn gói nào? Chúng tôi luôn sẵn sàng giúp bạn chọn lựa chọn tốt nhất.</p>
-<a class="btn btn-black btn-md" href="<?php echo esc_url( home_url( "/contact/" ) ); ?>">LIÊN HỆ VỚI CHÚNG TÔI</a>
-</div>
-</section>
-<section class="container faq-section">
-<h2 class="h1">Câu hỏi thường gặp</h2>
-<div class="accordion-section">
-<div class="accordion-wrapper">
-<div class="accordion-single">
-<div class="accordion-visible-wrapper">
-<p class="accordion-visible">Tính năng Dịch cuộc gọi hoạt động như thế nào trong các cuộc gọi điện thoại theo thời gian thực?</p>
-<div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
-</path>
-</svg></div>
-</div>
-<p class="accordion-hidden">Dịch cuộc gọi điện thoại theo thời gian thực rất đơn giản và dễ sử dụng. Sau khi xác thực danh tính nhanh, bạn chỉ cần nhập số điện thoại của người muốn gọi và chọn ngôn ngữ của họ. Đối tác công nghệ của chúng tôi sẽ thực hiện cuộc gọi, và người nhận sẽ được thông báo rằng bạn đang sử dụng tính năng Dịch cuộc gọi điện thoại.
 
-Cuộc trò chuyện diễn ra ở chế độ loa ngoài, với bản dịch theo thời gian thực hiển thị trên màn hình. Cả hai người tham gia đều nghe được giọng nói gốc và sau đó là bản dịch.</p>
+<!-- Bottom Navigation Links -->
+<div class="feature-navigation-bottom container">
+	<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( "/features-translate-text/" ) ); ?>">&larr; TÍNH NĂNG TRƯỚC</a>
+	<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( "/features-translate-chat/" ) ); ?>">TÍNH NĂNG TIẾP THEO &rarr;</a>
 </div>
-<div class="accordion-single">
-<div class="accordion-visible-wrapper">
-<p class="accordion-visible">Tính năng Dịch cuộc gọi có hoạt động hai chiều trong cuộc gọi điện thoại không?</p>
-<div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
-</path>
-</svg></div>
-</div>
-<p class="accordion-hidden">Có. Tính năng này cung cấp bản dịch hai chiều. Cả bạn và người nhận đều sẽ nghe được bản dịch cuộc gọi điện thoại theo thời gian thực bằng ngôn ngữ của mình, giúp cuộc trao đổi diễn ra trôi chảy và tự nhiên mà không gặp rào cản ngôn ngữ nào.</p>
-</div>
-<div class="accordion-single">
-<div class="accordion-visible-wrapper">
-<p class="accordion-visible">Tính năng Dịch cuộc gọi trực tiếp có thể sử dụng được khi đi du lịch nước ngoài không?</p>
-<div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
-</path>
-</svg></div>
-</div>
-<p class="accordion-hidden">Có, máy dịch cuộc gọi điện thoại hoạt động ở bất cứ đâu Vasco Translator Q1 có sóng—phủ sóng gần 200 quốc gia trên toàn thế giới. Bạn không cần lo lắng về SIM địa phương hay truy cập Wi-Fi.</p>
-</div>
-<div class="accordion-single">
-<div class="accordion-visible-wrapper">
-<p class="accordion-visible">Tính năng Dịch cuộc gọi có hoạt động ở chế độ loa ngoài không?</p>
-<div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
-</path>
-</svg></div>
-</div>
-<p class="accordion-hidden">Có, thiết bị hoạt động ở chế độ loa ngoài. Ngoài ra, bản dịch cuộc gọi còn được hiển thị trên màn hình theo thời gian thực. Điều này giúp bạn theo dõi từng lời trên màn hình, đảm bảo không bỏ lỡ hay hiểu nhầm điều gì trong cuộc trò chuyện.</p>
-</div>
-<div class="accordion-single">
-<div class="accordion-visible-wrapper">
-<p class="accordion-visible">Các cuộc trò chuyện được dịch bởi tính năng Dịch cuộc gọi điện thoại có được bảo mật và riêng tư không?</p>
-<div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
-</path>
-</svg></div>
-</div>
-<p class="accordion-hidden">Chắc chắn rồi. Bảo mật và riêng tư luôn là ưu tiên hàng đầu của chúng tôi. Sử dụng tính năng dịch cuộc gọi điện thoại trên Vasco Translator Q1 hoàn toàn riêng tư và an toàn. Cuộc trò chuyện chỉ diễn ra giữa những người tham gia; tất cả bản ghi và nhật ký cuộc gọi sẽ tự động bị xóa ngay khi bạn thoát khỏi màn hình gọi và không thể khôi phục lại.</p>
-</div>
-<div class="accordion-single">
-<div class="accordion-visible-wrapper">
-<p class="accordion-visible">Tôi có thể sử dụng tính năng Dịch cuộc gọi mà không biết ngôn ngữ của người kia không?</p>
-<div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
-</path>
-</svg></div>
-</div>
-<p class="accordion-hidden">Có. Tính năng này được thiết kế đặc biệt cho giao tiếp quốc tế. Nhờ các đối tác công nghệ của chúng tôi, bạn có thể tự do gọi điện cho người ở nước ngoài mà không cần biết một từ nào trong ngôn ngữ của họ. Vasco Translator Q1 hoạt động như tính năng Dịch cuộc gọi trực tiếp cá nhân của bạn, mang lại sự độc lập và tự tin để xử lý mọi cuộc trò chuyện.</p>
-</div>
-<div class="accordion-single">
-<div class="accordion-visible-wrapper">
-<p class="accordion-visible">Tính năng Dịch cuộc gọi điện thoại có sẵn ngay sau khi mua thiết bị không?</p>
-<div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
-</path>
-</svg></div>
-</div>
-<p class="accordion-hidden">Có, tính năng này có thể sử dụng ngay khi mở hộp. Bạn chỉ cần hoàn thành xác nhận danh tính nhanh và xác minh số điện thoại. Để giúp bạn bắt đầu, chúng tôi cung cấp 10 phút miễn phí dịch cuộc gọi điện thoại theo thời gian thực. Sau khi dùng hết, bạn có thể tiếp tục trò chuyện bằng cách chọn một trong các gói linh hoạt của chúng tôi.</p>
-</div>
-<div class="accordion-single">
-<div class="accordion-visible-wrapper">
-<p class="accordion-visible">Làm thế nào để nạp thêm phút cho tính năng Dịch cuộc gọi?</p>
-<div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
-</path>
-</svg></div>
-</div>
-<p class="accordion-hidden">Để nạp thêm phút cho dịch vụ dịch cuộc gọi điện thoại, bạn chỉ cần chọn một trong ba gói có sẵn trên trang web của chúng tôi hoặc liên hệ với bộ phận hỗ trợ khách hàng để được trợ giúp.</p>
-</div>
-<div class="accordion-single">
-<div class="accordion-visible-wrapper">
-<p class="accordion-visible">Tôi có thể thêm thẻ tín dụng để thanh toán phút của tính năng Dịch cuộc gọi được trừ tự động không?</p>
-<div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
-</path>
-</svg></div>
-</div>
-<p class="accordion-hidden">Không. Hiện tại, chúng tôi chưa cung cấp tính năng tự động gia hạn hoặc thanh toán định kỳ. Bạn có toàn quyền kiểm soát và có thể quyết định chính xác thời điểm và gói mà bạn muốn mua.</p>
-</div>
-<div class="accordion-single">
-<div class="accordion-visible-wrapper">
-<p class="accordion-visible">Tại sao mức giá của tính năng Dịch cuộc gọi lại giống nhau cho các cuộc gọi trong và ngoài EU?</p>
-<div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
-</path>
-</svg></div>
-</div>
-<p class="accordion-hidden">Chi phí không thay đổi dù bạn ở quốc gia nào, vì mức phí được áp dụng cho dịch vụ dịch thuật, không phải cho kết nối mạng di động. Vasco cung cấp dịch vụ dịch thuật theo thời gian thực chất lượng cao, thay vì dịch vụ viễn thông truyền thống. </p>
-</div>
-<div class="accordion-single">
-<div class="accordion-visible-wrapper">
-<p class="accordion-visible">Những quốc gia nào có thể sử dụng dịch vụ Dịch cuộc gọi này?</p>
-<div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
-</path>
-</svg></div>
-</div>
-<p class="accordion-hidden">Với tính năng dịch cuộc gọi điện thoại, bạn sẽ hiểu được 53 ngôn ngữ:
-Tiếng Afrikaans, Tiếng Ả Rập, Tiếng Bengal, Tiếng Bulgaria, Tiếng Catalan, Tiếng Trung (Quảng Đông), Tiếng Trung (Giản thể), Tiếng Trung (Phồn thể), Tiếng Croatia, Tiếng Séc, Tiếng Đan Mạch, Tiếng Hà Lan, Tiếng Anh (Úc), Tiếng Anh (Ấn Độ), Tiếng Anh (Anh), Tiếng Anh (Mỹ), Tiếng Estonia, Tiếng Filipino, Tiếng Phần Lan, Tiếng Pháp (Canada), Tiếng Pháp (Pháp), Tiếng Đức, Tiếng Hy Lạp, Tiếng Gujarat, Tiếng Hindi, Tiếng Hungary, Tiếng Iceland, Tiếng Indonesia, Tiếng Ý, Tiếng Nhật, Tiếng Kannada, Tiếng Hàn, Tiếng Latvia, Tiếng Litva, Tiếng Malayalam, Tiếng Malaysia, Tiếng Na Uy (Bokmål), Tiếng Ba Lan, Tiếng Bồ Đào Nha (Brazil), Tiếng Bồ Đào Nha (Bồ Đào Nha), Tiếng Punjab, Tiếng Romania, Tiếng Nga, Tiếng Serbia, Tiếng Slovak, Tiếng Tây Ban Nha (Châu Mỹ), Tiếng Tây Ban Nha (Tây Ban Nha), Tiếng Thụy Điển, Tiếng Tamil, Tiếng Thái, Tiếng Thổ Nhĩ Kỳ, Tiếng Ukraine, Tiếng Việt.
-Tính năng Dịch cuộc gọi khả dụng cho người có số điện thoại tại 42 quốc gia:
-Albania, Úc, Áo, Bỉ, Brazil, Bulgaria, Canada, Trung Quốc, Croatia, Cộng hòa Séc, Đan Mạch, Estonia, Phần Lan, Pháp, Đức, Hy Lạp, Hungary, Ấn Độ, Ireland, Ý, Nhật Bản, Latvia, Litva, Mexico, Hà Lan, Na Uy, Ba Lan, Bồ Đào Nha, Qatar, Romania, Ả Rập Xê Út, Slovakia, Slovenia, Hàn Quốc, Tây Ban Nha, Thụy Điển, Thụy Sĩ, Thổ Nhĩ Kỳ, Ukraine, Các Tiểu vương quốc Ả Rập Thống nhất, Vương quốc Anh, Hoa Kỳ.
-Tính năng này cho phép giao tiếp với người dân tại 160 quốc gia:
-Afghanistan, Albania, Andorra, Angola, Anguilla, Antigua và Barbuda, Argentina, Armenia, Aruba, Úc, Áo, Azerbaijan, Bahamas, Bahrain, Bangladesh, Barbados, Bỉ, Belize, Bermuda, Bhutan, Bolivia, Bosnia và Herzegovina, Botswana, Brazil, Brunei, Bulgaria, Campuchia, Cameroon, Canada, Cape Verde, Quần đảo Cayman, Chile, Trung Quốc, Đảo Christmas, Quần đảo Cocos (Keeling), Colombia, Costa Rica, Croatia, Cyprus, Cộng hòa Séc, Đan Mạch, Dominica, Cộng hòa Dominica, Ecuador, Ai Cập, El Salvador, Eritrea, Estonia, Eswatini, Ethiopia, Quần đảo Faroe, Fiji, Philippines, Phần Lan, Pháp, Guiana thuộc Pháp, Polynesia thuộc Pháp, Georgia, Đức, Ghana, Gibraltar, Hy Lạp, Greenland, Guadeloupe, Guam, Guatemala, Guyana, Hồng Kông, Honduras, Iceland, Ấn Độ, Indonesia, Iraq, Ireland, Israel, Ý, Jamaica, Nhật Bản, Jordan, Kazakhstan, Kenya, Kuwait, Lào, Latvia, Lebanon, Libya, Liechtenstein, Litva, Luxembourg, Ma Cao, Malaysia, Malta, Martinique, Quần đảo Marshall, Mauritius, Mayotte, Mexico, Micronesia, Moldova, Monaco, Mông Cổ, Montserrat, Myanmar, Namibia, Nepal, Hà Lan, Antille thuộc Hà Lan, New Caledonia, New Zealand, Nicaragua, Nigeria, Bắc Cyprus, Bắc Macedonia, Na Uy, Oman, Pakistan, Palestine, Panama, Paraguay, Peru, Ba Lan, Bồ Đào Nha, Puerto Rico, Qatar, Romania, Saint Kitts và Nevis, Saint Lucia, Saint Vincent và Grenadines, Samoa thuộc Mỹ, San Marino, Ả Rập Xê Út, Serbia, Singapore, Slovakia, Slovenia, Nam Phi, Hàn Quốc, Tây Ban Nha, Sri Lanka, Thụy Điển, Thụy Sĩ, Đài Loan, Tajikistan, Tanzania, Thái Lan, Trinidad và Tobago, Thổ Nhĩ Kỳ, Turkmenistan, Quần đảo Turks và Caicos, Ukraine, Các Tiểu vương quốc Ả Rập Thống nhất, Vương quốc Anh, Hoa Kỳ, Quần đảo Virgin thuộc Mỹ, Uruguay, Uzbekistan, Venezuela, Việt Nam, Hungary. </p>
-</div>
-<div class="accordion-single">
-<div class="accordion-visible-wrapper">
-<p class="accordion-visible">Tính năng dịch cuộc gọi có hai chiều không, nghĩa là người kia có thể gọi lại cho tôi trên thiết bị không?</p>
-<div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
-</path>
-</svg></div>
-</div>
-<p class="accordion-hidden">Không. Thông qua các đối tác công nghệ của chúng tôi, Vasco Translator Q1 chỉ hỗ trợ gọi đi, nghĩa là người nhận không thể gọi ngược lại trực tiếp cho thiết bị của bạn. Tuy nhiên, tính năng Dịch cuộc gọi vẫn cung cấp bản dịch cuộc gọi điện thoại hai chiều đầy đủ theo thời gian thực trong suốt cuộc trò chuyện—cả bạn và người nhận đều sẽ nghe được mọi thứ bằng ngôn ngữ của mình.</p>
-</div>
-<div class="accordion-single">
-<div class="accordion-visible-wrapper">
-<p class="accordion-visible">Tôi có thể nhận cuộc gọi bằng tính năng Dịch cuộc gọi điện thoại, hay chỉ có thể gọi đi?</p>
-<div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
-</path>
-</svg></div>
-</div>
-<p class="accordion-hidden">Vasco Translator Q1 được thiết kế đặc biệt để thực hiện cuộc gọi đi. Trong khi bạn có thể sử dụng tính năng Dịch cuộc gọi trực tiếp cho bất kỳ cuộc gọi đi nào, việc nhận cuộc gọi đến hiện chưa được hỗ trợ.</p>
-</div>
-<div class="accordion-single">
-<div class="accordion-visible-wrapper">
-<p class="accordion-visible">Tại sao số điện thoại hoặc tên của tôi không hiển thị trên điện thoại của người nhận khi gọi từ Q1 bằng tính năng Dịch cuộc gọi?</p>
-<div><svg fill="none" height="25" viewbox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.5 8.5L12.5 16.5L20.5 8.5" stroke="currentColor" stroke-linecap="square" stroke-width="2">
-</path>
-</svg></div>
-</div>
-<p class="accordion-hidden">Khi bạn thực hiện cuộc gọi bằng tính năng dịch cuộc gọi điện thoại, số điện thoại riêng của bạn sẽ được ẩn đi. Thay vào đó, đối tác công nghệ của chúng tôi sẽ hiển thị một số Vasco riêng biệt trên màn hình của người nhận. Điều này đảm bảo thêm một lớp bảo mật và quyền riêng tư, giữ an toàn cho thông tin cá nhân của bạn.</p>
-</div>
-</div>
+
+</div><!-- .socialimpact-pages -->
+</div><!-- .js-content-wrapper -->
 </div>
 </section>
 <hr/>
-<section class="more-questions container">
-<h2 class="h1">Bạn có thêm câu hỏi?</h2>
-<p>Chúng tôi rất vui được giải đáp và giúp bạn chọn giải pháp phù hợp với nhu cầu của mình.</p>
-<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/contact/" ) ); ?>">LIÊN HỆ NGAY</a>
-</section>
-</div>
-</div>
-</section>
-<hr/>
-
 
 <?php
 get_footer();

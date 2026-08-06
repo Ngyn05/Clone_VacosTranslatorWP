@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Clean Page page-features-translate-chat.php
  *
@@ -8,7 +8,6 @@
 get_header();
 ?>
 
-
 <section class="relative" id="wrapper">
 <aside id="notifications">
 <div class="container">
@@ -17,197 +16,125 @@ get_header();
 <div>
 <div class="breadcrumb-container">
 <div class="container">
-<nav aria-label="Breadcrumbs" class="breadcrumb">
+<nav aria-label="Đường dẫn điều hướng" class="breadcrumb">
 <ol>
 <li class="body-16">
 <a href="<?php echo esc_url( home_url( "/" ) ); ?>"><span class="breadcrumb-link">Trang chủ</span></a><span class="breadcrumb-divider">&gt;</span>
 </li>
-<li>
-<a href="<?php echo esc_url( home_url( "/" ) ); ?>"><span class="breadcrumb-link">Tính năng</span></a><span class="breadcrumb-divider">&gt;</span>
+<li class="body-16">
+<a href="<?php echo esc_url( home_url( "/features/" ) ); ?>"><span class="breadcrumb-link">Tính năng</span></a><span class="breadcrumb-divider">&gt;</span>
 </li>
 <li><span aria-current="page" class="breadcrumb-current body-16">MultiTalk</span></li>
 </ol>
 </nav>
 </div>
 </div>
-<div class="js-content-wrapper" id="content-wrapper">
-<section class="feature-voice">
 
+<div class="js-content-wrapper" id="content-wrapper">
+<div class="socialimpact-pages">
+
+<!-- Top Banner -->
+<div class="socialimpact-top">
 <div class="container">
-<div class="heading-wrapper heading-wrapper-MultiTalk">
-<div class="heading">
-<h1 class="h1">MultiTalk</h1>
-<p class="body-base">Trò chuyện với dịch thuật tự động</p>
+<h1 class="h1">Nhiều Người Nói Chuyện (MultiTalk)</h1>
+<p class="socialimpact-subtitle">Giải pháp kết nối trò chuyện nhóm đa ngôn ngữ trực tiếp lên tới 100 người. Mỗi thành viên phát biểu hoặc nhắn tin bằng tiếng mẹ đẻ và nhận bản dịch riêng của mình.</p>
 </div>
 </div>
-</div>
-<section class="feature-page-content">
-<div class="voice-box-wrapper" style="background-color: #E0E2F2;">
-<div class="voice-box-left container">
-<div class="voice-text-box">
-<h2 class="h1">Kết nối với bạn bè và đồng nghiệp trên toàn thế giới</h2>
-<p class="voice-box-subtitle">Rào cản ngôn ngữ đang cản trở bạn giao tiếp với đồng nghiệp? Bạn muốn kết nối sâu sắc hơn với những người bạn ở nước ngoài? MultiTalk chính là giải pháp!</p>
-<p class="body-16 box-text-upper">Với ứng dụng trò chuyện đa ngôn ngữ của chúng tôi, bạn có thể trò chuyện bằng nhiều ngôn ngữ khác nhau. Tin nhắn được dịch theo thời gian thực, giúp cuộc trò chuyện diễn ra tự nhiên.</p>
-<p class="body-16">Bạn chỉ cần tải ứng dụng từ Google Play Store hoặc App Store. Bạn cũng có thể sử dụng MultiTalk miễn phí cùng máy phiên dịch Vasco của mình. Xem cách bắt đầu:</p>
-<ul class="body-16">
-<li>Tạo một cuộc trò chuyện đa ngôn ngữ với tối đa 100 người dùng</li>
-<li>Gửi mã QR hoặc tên cuộc trò chuyện để khách tham gia</li>
-<li>Chọn ngôn ngữ ưa thích của bạn và trò chuyện với dịch thuật tự động</li>
+
+<!-- Main Card Wrapper -->
+<section class="socialimpact-card-wrapper">
+<div class="socialimpact-inner-card">
+
+<!-- Block 1: Kết Nối Nhóm 100 Người -->
+<div class="si-item si-item--left">
+<div class="si-text">
+<h2 class="h2">Trò Chuyện Nhóm Đa Ngôn Ngữ Đến 100 Người</h2>
+<h3 class="box-subtitle">Thảo luận hội thảo & đoàn du lịch quốc tế mượt mà</h3>
+<p>Với ứng dụng MultiTalk độc quyền, bạn có thể tạo phòng trò chuyện trực tiếp với tối đa 100 người tham gia đến từ nhiều quốc gia khác nhau.</p>
+<ul>
+<li>Tạo phòng họp nhóm & chia sẻ mã QR tham gia tức thì</li>
+<li>Mỗi thành viên nhận bản dịch đúng bằng ngôn ngữ mẹ đẻ</li>
+<li>Dịch 2 chiều đồng thời theo thời gian thực</li>
 </ul>
-<div class="last-box-element">
-<a class="btn btn-md btn-black body-16 last-box-element" href="<?php echo esc_url( home_url( "/vasco-translator-v4/" ) ); ?>#product-languages" target="_blank">
-							Kiểm tra danh sách ngôn ngữ hỗ trợ
-						</a>
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/all-products/" ) ); ?>">Khám phá sản phẩm <span class="text-sr-only">Vasco</span></a>
+</div>
+<div class="si-image">
+<img alt="Trò Chuyện Nhóm Đa Ngôn Ngữ" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/features/MultiTalk-new-1.webp' ); ?>"/>
 </div>
 </div>
-<div class="voice-img-box">
-<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/features/MultiTalk-new-1.webp" ); ?>"/>
+
+<hr class="si-divider"/>
+
+<!-- Block 2: Trình Dịch Trò Chuyện Trực Quan -->
+<div class="si-item si-item--right">
+<div class="si-image">
+<img alt="Trình Dịch Trò Chuyện Trực Quan" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/features/MultiTalk-new-2.webp' ); ?>"/>
 </div>
-</div>
-</div>
-<div class="voice-box-wrapper" style="background-color: #EFECE8;">
-<div class="voice-box-right container">
-<div class="voice-img-box">
-<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/features/MultiTalk-new-2.webp" ); ?>"/>
-</div>
-<div class="voice-text-box">
-<h2 class="h1">Trình dịch trò chuyện đa ngôn ngữ trực quan, dễ sử dụng</h2>
-<p class="body-16 box-text-upper">MultiTalk giúp việc trò chuyện bằng nhiều ngôn ngữ trở nên đơn giản. Bắt đầu bằng cách tạo cuộc trò chuyện, chọn một tên, sau đó mời mọi người tham gia. Khách tham gia trò chuyện qua mã QR hoặc tên nhóm.</p>
-<p class="body-16">Họ chọn ngôn ngữ ưa thích và cuộc trò chuyện bắt đầu. Mọi người có thể trò chuyện bằng các ngôn ngữ khác nhau bằng cách nói hoặc gõ tin nhắn, và tin nhắn sẽ được tự động dịch cho từng người nhận.</p>
-<ul class="body-16 last-box-element">
-<li>Trò chuyện theo thời gian thực với bản dịch bằng nhiều ngôn ngữ khác nhau</li>
-<li>Dịch giọng nói và văn bản theo ngôn ngữ ưa thích của mỗi người</li>
-<li>Ứng dụng trò chuyện đa ngôn ngữ trực quan, dễ sử dụng</li>
+<div class="si-text">
+<h2 class="h2">Trình Dịch Trò Chuyện Trực Quan, Dễ Sử Dụng</h2>
+<h3 class="box-subtitle">Gửi tin nhắn hoặc nói chuyện bằng tiếng mẹ đẻ của bạn</h3>
+<p>MultiTalk giúp việc giao tiếp nhóm đa ngôn ngữ trở nên tự nhiên hơn bao giờ hết. Mọi tin nhắn gửi đi đều được 10 engine AI xử lý và phân phối chính xác tới từng người nhận.</p>
+<ul>
+<li>Hỗ trợ cả dịch giọng nói và văn bản tức thì</li>
+<li>Độ chính xác dịch thuật AI lên đến 99%</li>
+<li>Giao diện thân thiện, quét mã QR tham gia trong 3 giây</li>
 </ul>
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/all-products/" ) ); ?>">Xem các mẫu máy <span class="text-sr-only">Vasco</span></a>
 </div>
 </div>
-</div>
-<div class="voice-box-wrapper" style="background-color: #FFF7DC;">
-<div class="voice-box-left container">
-<div class="voice-text-box">
-<h2 class="h1">Trò chuyện đáng tin cậy &amp; chính xác với dịch thuật tức thì</h2>
-<p class="body-16 box-paragraph-gap">Ứng dụng trò chuyện đa ngôn ngữ của chúng tôi sở hữu sức mạnh của 10 công cụ dịch thuật, mang lại kết quả chính xác nhất mọi lúc.</p>
-<p class="body-16">Rào cản ngôn ngữ được xóa bỏ ngay lập tức, đảm bảo cuộc trò chuyện nhóm diễn ra trôi chảy, tự nhiên với bản dịch chính xác cho mọi người.</p>
-<ul class="body-16 last-box-element">
-<li>Dịch tự động với độ chính xác lên đến 99%</li>
-<li>Chất lượng cao ngay cả với các cặp ngôn ngữ ít phổ biến</li>
-<li>Xóa bỏ khoảng cách ngôn ngữ với trình dịch trò chuyện đa ngôn ngữ này</li>
+
+<hr class="si-divider"/>
+
+<!-- Block 3: Internet 4G Miễn Phí Trọn Đời -->
+<div class="si-item si-item--left">
+<div class="si-text">
+<h2 class="h2">Kết Nối 4G Miễn Phí Trọn Đời</h2>
+<h3 class="box-subtitle">Trò chuyện nhóm tại 200 quốc gia không tốn cước roaming</h3>
+<p>Đi kèm SIM 4G tích hợp sẵn, MultiTalk cho phép bạn duy trì phòng trò chuyện nhóm mọi lúc mọi nơi mà không lo tốn chi phí dữ liệu hay tìm kiếm Wi-Fi.</p>
+<ul>
+<li>Tự động kết nối mạng tại 200 quốc gia toàn cầu</li>
+<li>Miễn phí internet trọn đời không giới hạn</li>
+<li>Bảo mật tuyệt đối thông tin cuộc họp nội bộ</li>
 </ul>
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/all-products/" ) ); ?>">Mua ngay thiết bị <span class="text-sr-only">Vasco</span></a>
 </div>
-<div class="voice-img-box">
-<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/features/MultiTalk-new-3.webp" ); ?>"/>
-</div>
-</div>
-</div>
-<div class="voice-box-wrapper" style="background-color: #EFECE8;">
-<div class="voice-box-right container">
-<div class="voice-img-box">
-<video autoplay="" loop="" muted="" playsinline="" poster="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/' ); ?>fe-MultiTalk-poster.webp" preload="metadata">
-<source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/fe-MultiTalk-video.webm" ); ?>" type="video/webm"/>
-<source src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/fe-MultiTalk-video.mp4" ); ?>" type="video/mp4"/>
-</video>
-</div>
-<div class="voice-text-box">
-<h2 class="h1">Nhắn tin bằng bất kỳ ngôn ngữ nào, ở bất cứ đâu</h2>
-<p class="body-16 box-paragraph-gap">MultiTalk có sẵn trên Vasco Translator V4, nhưng bạn cũng có thể tải ứng dụng từ Google Play và App Store. Giống như các thiết bị khác của chúng tôi, nó đi kèm thẻ SIM tích hợp sẵn, kết nối Internet tại gần 200 quốc gia. Hoàn toàn miễn phí, không giới hạn và có giá trị vĩnh viễn!</p>
-<p class="body-16">Thiết bị dịch Vasco là một khoản đầu tư tuyệt vời cho mọi hoạt động giao tiếp đa ngôn ngữ, chuyến công tác và du lịch nước ngoài của bạn. Quên đi những khoản phí chuyển vùng đắt đỏ!</p>
-<ul class="body-16">
-<li>Tận hưởng kết nối không giới hạn, trọn đời tại gần 200 quốc gia</li>
-<li>Tiết kiệm phí chuyển vùng khi ở nước ngoài</li>
-<li>Kết nối với mọi người trên toàn thế giới</li>
-</ul>
-<div class="voice-btn-wrapper last-box-element">
-<div>
-<a class="btn btn-md btn-black body-16 last-box-element mt-0" href="<?php echo esc_url( home_url( "/vasco-translator-v4/" ) ); ?>#product-languages" target="_blank">
-								Kiểm tra danh sách ngôn ngữ hỗ trợ
-							</a>
-</div>
-<div>
-<a class="btn btn-md btn-black body-16 last-box-element mt-0" href="<?php echo esc_url( home_url( "/coverage-map/" ) ); ?>" target="_blank">Xem bản đồ phủ sóng Internet</a>
+<div class="si-image">
+<img alt="Kết Nối 4G Miễn Phí Trọn Đời" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/features/MultiTalk-new-3.webp' ); ?>"/>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div class="voice-box-wrapper" style="background-color: #D9ECEF;">
-<div class="voice-box-left container">
-<div class="voice-text-box">
-<h2 class="h1">Hơn cả một trình dịch trò chuyện đa ngôn ngữ</h2>
-<p class="voice-box-subtitle">Khả năng trò chuyện bằng nhiều ngôn ngữ khác nhau là một lợi ích lớn, giúp bạn dễ dàng giao tiếp với bạn bè và đồng nghiệp đa ngôn ngữ. Nhưng máy phiên dịch Vasco còn mang lại nhiều hơn thế.</p>
-<p class="body-16 box-text-upper">Với Vasco, bạn có thể hiểu hơn 90% dân số thế giới. Bên cạnh trình dịch trò chuyện đa ngôn ngữ, chúng tôi còn cung cấp nhiều tính năng hữu ích khác để giúp bạn làm việc và du lịch khi ngôn ngữ trở thành rào cản.</p>
-<p class="body-16">Chúng tôi sẽ giúp bạn cảm thấy như người bản địa, dù bạn đi đến đâu!</p>
-<ul class="body-16">
-<li>Dịch giọng nói</li>
-<li>Dịch hình ảnh</li>
-<li>Dịch văn bản</li>
-<li>Dịch cuộc gọi điện thoại</li>
-</ul>
-</div>
-<div class="voice-img-box">
-<img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/v4.webp" ); ?>"/>
-</div>
-</div>
-</div>
-</section>
-<section aria-labelledby="vasco-products-heading" class="vasco-products" tabindex="0">
+
+</div><!-- .socialimpact-inner-card -->
+</section><!-- .socialimpact-card-wrapper -->
+
+<!-- Single Featured Product -->
+<section aria-labelledby="vasco-products-heading" class="vasco-products">
 <div class="container">
-<div class="products-flex">
-<h2 class="h2-notosans" id="vasco-products-heading">Các sản phẩm tích hợp tính năng này</h2>
-<div class="products-wrapper">
-<div aria-roledescription="carousel" class="swiper swiper-products-slider" role="region">
-<div class="swiper-wrapper" role="list">
-<div aria-labelledby="product-38" class="swiper-slide" role="listitem" tabindex="0">
+<h2 class="h2-notosans" id="vasco-products-heading">Sản phẩm tích hợp tính năng này</h2>
+<div class="single-product-featured">
 <div class="box">
-<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/q1.webp" ); ?>"/>
+<img alt="Vasco Translator Q1" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/q1.webp" ); ?>"/>
 <div class="product-description">
-<h3 aria-label="q1.name]" id="product-38" tabindex="0">
-												Vasco Translator Q1</h3>
-<p>Máy dịch duy nhất có tính năng nhân bản giọng nói và dịch cuộc gọi điện thoại</p>
-<a aria-label="Tìm hiểu thêm Vasco Translator Q1" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/vasco-translator-q1/" ) ); ?>" target="_blank">
-												Tìm hiểu thêm
-											</a>
-</div>
-</div>
-</div>
-<div aria-labelledby="product-14" class="swiper-slide" role="listitem" tabindex="0">
-<div class="box">
-<img src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/homepage-carousel/v4.webp" ); ?>"/>
-<div class="product-description">
-<h3 aria-label="v4.name]" id="product-14" tabindex="0">
-												Vasco Translator V4</h3>
-<p>Thiết bị dịch điện tử tức thời</p>
-<a aria-label="Tìm hiểu thêm Vasco Translator V4" class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/vasco-translator-v4/" ) ); ?>" target="_blank">
-												Tìm hiểu thêm
-											</a>
-</div>
-</div>
-</div>
-</div>
-<div class="custom-navigation">
-<div class="swiper-button-prev btn-product-prev" data-label-prev="Slide trước"></div>
-<div class="swiper-button-next btn-product-next" data-label-next="Slide tiếp theo"></div>
-</div>
+<h3>Vasco Translator Q1</h3>
+<p>Máy dịch cao cấp hỗ trợ tính năng trò chuyện nhóm đa ngôn ngữ MultiTalk lên tới 100 thành viên.</p>
+<a class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/product/vasco-translator-q1/" ) ); ?>">
+Tìm hiểu thêm
+</a>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section class="container">
-<div class="voice-btn-wrapper voice-btn-end">
-<div>
-<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( "/" ) ); ?>">QUAY LẠI TÍNH NĂNG</a>
+
+<!-- Bottom Navigation Links -->
+<div class="feature-navigation-bottom container">
+	<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( "/call-translator/" ) ); ?>">&larr; TÍNH NĂNG TRƯỚC</a>
 </div>
-<div>
-<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( "/features/translate-text/" ) ); ?>">XEM TÍNH NĂNG TIẾP THEO</a>
-</div>
-</div>
-</section>
-</section>
-</div>
+
+</div><!-- .socialimpact-pages -->
+</div><!-- .js-content-wrapper -->
 </div>
 </section>
 <hr/>
-
 
 <?php
 get_footer();
