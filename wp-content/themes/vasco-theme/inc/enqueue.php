@@ -13,16 +13,22 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Enqueue Frontend Styles and Scripts
  */
 function vasco_theme_enqueue_all_assets() {
-	// 0. Enqueue Core WordPress Dashicons for Admin Bar icons
-	wp_enqueue_style( 'dashicons' );
+	// 0. Enqueue Core WordPress Dashicons only for logged in users / admin bar
+	if ( is_user_logged_in() ) {
+		wp_enqueue_style( 'dashicons' );
+	}
 
 	// 1. Enqueue CSS files from source
+	wp_enqueue_style( 'vasco-css-5', VASCO_THEME_URI . '/assets/css/theme-DXqo8zvY.css', array(), VASCO_THEME_VERSION );
+	wp_enqueue_style( 'vasco-custom-fields', VASCO_THEME_URI . '/assets/css/vasco-custom-fields.css', array(), VASCO_THEME_VERSION );
+	wp_enqueue_style( 'vasco-main-style', VASCO_THEME_URI . '/style.css', array( 'vasco-css-5', 'vasco-custom-fields' ), VASCO_THEME_VERSION );
+
+	// Non-critical page-specific or module stylesheets
 	wp_enqueue_style( 'vasco-css-0', VASCO_THEME_URI . '/assets/css/category-BkrAaUZX.css', array(), VASCO_THEME_VERSION );
 	wp_enqueue_style( 'vasco-css-1', VASCO_THEME_URI . '/assets/css/index-BdfBdicE.css', array(), VASCO_THEME_VERSION );
 	wp_enqueue_style( 'vasco-css-2', VASCO_THEME_URI . '/assets/css/landing-Dc8GznoV.css', array(), VASCO_THEME_VERSION );
 	wp_enqueue_style( 'vasco-css-3', VASCO_THEME_URI . '/assets/css/product-Dcv3kZVH.css', array(), VASCO_THEME_VERSION );
 	wp_enqueue_style( 'vasco-css-4', VASCO_THEME_URI . '/assets/css/smooth-carousel.css', array(), VASCO_THEME_VERSION );
-	wp_enqueue_style( 'vasco-css-5', VASCO_THEME_URI . '/assets/css/theme-DXqo8zvY.css', array(), VASCO_THEME_VERSION );
 	wp_enqueue_style( 'vasco-css-6', VASCO_THEME_URI . '/assets/js/jquery/plugins/fancybox/jquery.fancybox.css', array(), VASCO_THEME_VERSION );
 	wp_enqueue_style( 'vasco-css-7', VASCO_THEME_URI . '/assets/modules/amazonpay/views/css/front.css', array(), VASCO_THEME_VERSION );
 	wp_enqueue_style( 'vasco-css-8', VASCO_THEME_URI . '/assets/modules/paypal/views/css/paypal_fo.css', array(), VASCO_THEME_VERSION );
@@ -30,9 +36,6 @@ function vasco_theme_enqueue_all_assets() {
 	wp_enqueue_style( 'vasco-css-10', VASCO_THEME_URI . '/assets/modules/ve_gdpr_info/views/css/ve_gdpr.css', array(), VASCO_THEME_VERSION );
 	wp_enqueue_style( 'vasco-css-11', VASCO_THEME_URI . '/assets/modules/ve_notifyproducts/views/assets/css/notifyproduct.css', array(), VASCO_THEME_VERSION );
 
-	// 2. Enqueue Custom Fields and Main Theme Style
-	wp_enqueue_style( 'vasco-custom-fields', VASCO_THEME_URI . '/assets/css/vasco-custom-fields.css', array(), VASCO_THEME_VERSION );
-	wp_enqueue_style( 'vasco-main-style', VASCO_THEME_URI . '/style.css', array( 'vasco-css-5', 'vasco-custom-fields' ), time() );
 	wp_enqueue_script( 'vasco-custom-fields-js', VASCO_THEME_URI . '/assets/js/vasco-custom-fields.js', array(), VASCO_THEME_VERSION, true );
 
 	// 3. Enqueue jQuery Core & Helper Scripts
@@ -153,7 +156,7 @@ function vasco_theme_script_loader_tag( $tag, $handle, $src ) {
 add_filter( 'script_loader_tag', 'vasco_theme_script_loader_tag', 10, 3 );
 
 /**
- * Add defer attribute to non-critical theme scripts.
+ * Add defer attribute to non-critical theme scripts and optimize loading.
  */
 function vasco_theme_defer_scripts( $tag, $handle, $src ) {
 	if ( is_admin() ) {
@@ -172,3 +175,26 @@ function vasco_theme_defer_scripts( $tag, $handle, $src ) {
 	return $tag;
 }
 add_filter( 'script_loader_tag', 'vasco_theme_defer_scripts', 10, 3 );
+
+/**
+ * Make non-critical module CSS load asynchronously (media="print" onload trick)
+ */
+function vasco_theme_async_styles( $html, $handle, $href, $media ) {
+	if ( is_admin() ) {
+		return $html;
+	}
+	$async_handles = array(
+		'vasco-css-6',
+		'vasco-css-7',
+		'vasco-css-8',
+		'vasco-css-9',
+		'vasco-css-10',
+		'vasco-css-11'
+	);
+	if ( in_array( $handle, $async_handles, true ) ) {
+		return '<link rel="stylesheet" id="' . esc_attr( $handle ) . '-css" href="' . esc_url( $href ) . '" media="print" onload="this.media=\'all\'" /><noscript><link rel="stylesheet" href="' . esc_url( $href ) . '" /></noscript>' . "\n";
+	}
+	return $html;
+}
+add_filter( 'style_loader_tag', 'vasco_theme_async_styles', 10, 4 );
+

@@ -84,7 +84,7 @@ return;
 <div class="product-flags js-product-flags">
 </div>
 <a class="product-link" content="../translators/vasco-translator-q1.html" href="<?php echo esc_url( home_url( "/product/vasco-translator-q1/" ) ); ?>" title="Vasco Translator Q1">
-<img alt="Vasco Translator Q1" data-full-size-image-url="./385-og_image/vasco-translator-q1.jpg" height="300" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/385-medium_default/vasco-translator-q1.jpg" ); ?>" width="300"/>
+<img alt="Vasco Translator Q1" data-full-size-image-url="./385-og_image/vasco-translator-q1.jpg" height="300" fetchpriority="high" decoding="async" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/images/products/385-medium_default/vasco-translator-q1.jpg" ); ?>" width="300"/>
 </a>
 <div class="loading-spinner">
 <svg fill="none" height="320" viewbox="0 0 320 320" width="320" xmlns="http://www.w3.org/2000/svg">
