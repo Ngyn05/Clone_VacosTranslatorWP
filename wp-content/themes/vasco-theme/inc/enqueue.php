@@ -184,6 +184,11 @@ function vasco_theme_async_styles( $html, $handle, $href, $media ) {
 		return $html;
 	}
 	$async_handles = array(
+		'vasco-css-0',
+		'vasco-css-1',
+		'vasco-css-2',
+		'vasco-css-3',
+		'vasco-css-4',
 		'vasco-css-6',
 		'vasco-css-7',
 		'vasco-css-8',

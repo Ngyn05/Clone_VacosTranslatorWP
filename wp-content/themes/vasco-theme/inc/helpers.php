@@ -143,17 +143,18 @@ function vasco_theme_render_product_card( $product, $context = array() ) {
 		return;
 	}
 
-	$context      = wp_parse_args( $context, array( 'show_description' => true, 'card_style' => 'horizontal' ) );
-	$product_id   = $product->get_id();
-	$title        = $product->get_name();
-	$permalink    = get_permalink( $product_id );
-	$image_url    = vasco_theme_get_wc_product_image_url( $product, 'woocommerce_single' );
-	$short_desc   = $product->get_short_description();
-	$description  = $product->get_description();
-	$price_html   = $product->get_price_html();
-	$is_in_stock  = $product->is_in_stock();
-	$is_grid_card = ( 'grid' === $context['card_style'] );
-	$badge_raw    = get_post_meta( $product_id, '_vasco_product_badge', true );
+	$context       = wp_parse_args( $context, array( 'show_description' => true, 'card_style' => 'horizontal', 'is_first_item' => false ) );
+	$product_id    = $product->get_id();
+	$title         = $product->get_name();
+	$permalink     = get_permalink( $product_id );
+	$image_url     = vasco_theme_get_wc_product_image_url( $product, 'woocommerce_single' );
+	$short_desc    = $product->get_short_description();
+	$description   = $product->get_description();
+	$price_html    = $product->get_price_html();
+	$is_in_stock   = $product->is_in_stock();
+	$is_grid_card  = ( 'grid' === $context['card_style'] );
+	$img_attr      = $context['is_first_item'] ? 'fetchpriority="high" decoding="async"' : 'loading="lazy" decoding="async"';
+	$badge_raw     = get_post_meta( $product_id, '_vasco_product_badge', true );
 	if ( 'new' === $badge_raw || 'Mới' === $badge_raw ) {
 		$flag_html = '<div class="product-flag-wrapper promotion-theme-orange"><div aria-label="Mới" class="body-base product-flag">Mới</div></div>';
 	} elseif ( 'bestseller' === $badge_raw || 'Bán chạy nhất' === $badge_raw ) {
@@ -191,7 +192,7 @@ function vasco_theme_render_product_card( $product, $context = array() ) {
 	if ( $is_grid_card ) {
 		// GIAO DIỆN GRID CARD (Dành cho Phụ kiện & Gói sản phẩm)
 		echo '<article class="product-miniature js-product-miniature product-grid-card" tabindex="0">';
-		echo '<div class="listing-product-head"><div class="product-thumb-wrapper js-variant-spinner-wrapper"><div class="product-flags js-product-flags">' . $flag_html . '</div><a class="product-link" href="' . esc_url( $permalink ) . '" title="' . esc_attr( $title ) . '"><img alt="' . esc_attr( $title ) . '" height="300" loading="lazy" src="' . esc_url( $image_url ) . '" width="300"/></a></div></div>';
+		echo '<div class="listing-product-head"><div class="product-thumb-wrapper js-variant-spinner-wrapper"><div class="product-flags js-product-flags">' . $flag_html . '</div><a class="product-link" href="' . esc_url( $permalink ) . '" title="' . esc_attr( $title ) . '"><img alt="' . esc_attr( $title ) . '" height="300" ' . $img_attr . ' src="' . esc_url( $image_url ) . '" width="300"/></a></div></div>';
 		echo '<div class="listing-product-body">';
 		echo '<div class="product-title-wrapper"><h3 class="product-title"><a class="product-link product-title-link" href="' . esc_url( $permalink ) . '" title="' . esc_attr( $title ) . '">' . esc_html( $title ) . '</a></h3></div>';
 		echo '<div class="trustpilot-mini"><img alt="Trustpilot" class="trustpilot-logo-img" src="' . esc_url( VASCO_THEME_URI . '/assets/img/trustpilot.svg' ) . '"/></div>';
@@ -209,7 +210,7 @@ function vasco_theme_render_product_card( $product, $context = array() ) {
 	} else {
 		// GIAO DIỆN HORIZONTAL CARD (Dành cho Máy dịch & Bộ sản phẩm)
 		echo '<article class="product-miniature js-product-miniature product-horizontal-card" tabindex="0">';
-		echo '<div class="listing-product-head"><div class="product-thumb-wrapper js-variant-spinner-wrapper"><div class="product-flags js-product-flags">' . $flag_html . '</div><a class="product-link" href="' . esc_url( $permalink ) . '" title="' . esc_attr( $title ) . '"><img alt="' . esc_attr( $title ) . '" height="380" loading="lazy" src="' . esc_url( $image_url ) . '" width="380"/></a></div></div>';
+		echo '<div class="listing-product-head"><div class="product-thumb-wrapper js-variant-spinner-wrapper"><div class="product-flags js-product-flags">' . $flag_html . '</div><a class="product-link" href="' . esc_url( $permalink ) . '" title="' . esc_attr( $title ) . '"><img alt="' . esc_attr( $title ) . '" height="380" ' . $img_attr . ' src="' . esc_url( $image_url ) . '" width="380"/></a></div></div>';
 		echo '<div class="listing-product-body">';
 		echo '<div class="product-description-head">';
 		echo '<h2 class="product-title"><a class="product-link product-title-link" href="' . esc_url( $permalink ) . '" title="' . esc_attr( $title ) . '">' . esc_html( $title ) . '</a></h2>';
@@ -267,8 +268,8 @@ function vasco_theme_render_catalog_page( $args = array() ) {
 	if ( empty( $products ) ) {
 		echo '<p>Chưa có sản phẩm nào trong danh mục này.</p>';
 	} else {
-		foreach ( $products as $product ) {
-			vasco_theme_render_product_card( $product, array( 'show_description' => ! $is_grid_cat, 'card_style' => $card_style ) );
+		foreach ( $products as $idx => $product ) {
+			vasco_theme_render_product_card( $product, array( 'show_description' => ! $is_grid_cat, 'card_style' => $card_style, 'is_first_item' => ( 0 === $idx ) ) );
 		}
 	}
 	echo '</div></div></div><div id="js-product-list-bottom"></div></section></section></div></div></section>';
