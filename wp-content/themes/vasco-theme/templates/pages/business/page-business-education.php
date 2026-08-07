@@ -59,7 +59,7 @@ get_header();
 <a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/all-products/" ) ); ?>">Khám phá giải pháp <span class="text-sr-only">Vasco</span></a>
 </div>
 <div class="si-image">
-<img alt="Học sinh quốc tế tự tin tiếp thu bài giảng lớp học" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/business_education_hero.png" ); ?>"/>
+<img alt="Học sinh quốc tế tự tin tiếp thu bài giảng lớp học" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/business_education_hero.webp" ); ?>"/>
 </div>
 </div>
 

@@ -59,7 +59,7 @@ get_header();
 <a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/all-products/" ) ); ?>">Khám phá giải pháp <span class="text-sr-only">Vasco</span></a>
 </div>
 <div class="si-image">
-<img alt="Sĩ quan cảnh sát an ninh hỗ trợ người dân nước ngoài bằng máy dịch Vasco" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/business_law_enforcement_hero.png" ); ?>"/>
+<img alt="Sĩ quan cảnh sát an ninh hỗ trợ người dân nước ngoài bằng máy dịch Vasco" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/business_law_enforcement_hero.webp" ); ?>"/>
 </div>
 </div>
 

@@ -9692,7 +9692,7 @@ Vasco Assistant nhận diện được các biểu tượng, ẩm thực vùng m
 </section>
 <div class="download-apps-icons container">
 <a alt="[Google Play Vasco Connect]" href="#" rel="nofollow" target="_blank">
-<img alt="" atia-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/store-badges/vasco-connect-google-en.png" ); ?>"/></a>
+<img alt="" atia-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/store-badges/vasco-connect-google-en.webp" ); ?>"/></a>
 <a alt="Download on the App Store" href="#" rel="nofollow" target="_blank">
 <img alt="" aria-hidden="true" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/store-badges/vasco-connect-apple-en.svg" ); ?>"/>
 </a>

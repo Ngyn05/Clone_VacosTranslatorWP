@@ -59,7 +59,7 @@ get_header();
 <a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/all-products/" ) ); ?>">Khám phá giải pháp <span class="text-sr-only">Vasco</span></a>
 </div>
 <div class="si-image">
-<img alt="Cán bộ một cửa tư vấn và dịch thuật biểu mẫu thủ tục cho cư dân quốc tế" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/business_local_government_hero.png" ); ?>"/>
+<img alt="Cán bộ một cửa tư vấn và dịch thuật biểu mẫu thủ tục cho cư dân quốc tế" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/landings/b2b/business_local_government_hero.webp" ); ?>"/>
 </div>
 </div>
 
