@@ -11,6 +11,23 @@ Text Domain: vasco-theme
 /* =============================================
    RESET TOP MARGIN & PADDING CHO CÁC TRANG CÓ KHOẢNG TRẮNG ĐẦU TRANG
    ============================================= */
+/* =============================================
+   FEATURED IMAGES AUTO FULL WIDTH & FIT (STRETCH FULL WIDTH)
+   ============================================= */
+.wp-post-image,
+.attachment-post-thumbnail,
+.article-card-img,
+.single-post-featured-img {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    display: block !important;
+    margin: 0 auto !important;
+}
+
 .screen-reader-text,
 a.screen-reader-text {
     position: absolute !important;

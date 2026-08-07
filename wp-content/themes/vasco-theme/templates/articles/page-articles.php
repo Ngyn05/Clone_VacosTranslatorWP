@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Clean Page page-articles.php
  *
@@ -64,13 +64,19 @@ get_header();
 .article-card-img-link {
     display: block;
     overflow: hidden;
-    height: 200px;
-    background: #eef2f5;
+    height: 220px;
+    width: 100%;
+    background: #f7f9fa;
+    position: relative;
+    padding: 0;
 }
 .article-card-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    display: block;
+    margin: 0 auto;
     transition: transform 0.3s ease;
 }
 .article-card:hover .article-card-img {
@@ -124,6 +130,99 @@ get_header();
 .article-card-more:hover {
     text-decoration: underline;
 }
+
+/* Modern Pagination Styling */
+.articles-pagination-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0 60px 0;
+    gap: 16px;
+}
+.articles-pagination-info {
+    font-size: 14px;
+    color: #666;
+    background: #f7f9fa;
+    padding: 6px 18px;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+    font-weight: 500;
+}
+.articles-pagination-info strong {
+    color: #e30613;
+}
+.articles-pagination-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.pagination-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.pagination-btn.pagination-prev, .pagination-btn.pagination-next {
+    background: #ffffff;
+    color: #1a1a1a;
+    border: 1px solid #e0e0e0;
+}
+.pagination-btn.pagination-prev:hover, .pagination-btn.pagination-next:hover {
+    background: #e30613;
+    color: #ffffff;
+    border-color: #e30613;
+    box-shadow: 0 6px 16px rgba(227,6,19,0.25);
+    transform: translateY(-2px);
+}
+.pagination-btn.pagination-disabled {
+    background: #f1f5f9;
+    color: #a0aec0;
+    border: 1px solid #e2e8f0;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+.pagination-numbers {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.pagination-numbers a, .pagination-numbers .current {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.pagination-numbers a {
+    background: #ffffff;
+    color: #4a5568;
+    border: 1px solid #e2e8f0;
+}
+.pagination-numbers a:hover {
+    background: #edf2f7;
+    color: #e30613;
+    border-color: #cbd5e0;
+}
+.pagination-numbers .current {
+    background: #e30613;
+    color: #ffffff;
+    border: 1px solid #e30613;
+    box-shadow: 0 4px 12px rgba(227,6,19,0.3);
+}
 </style>
 
 <div id="et-main-area">
@@ -138,12 +237,14 @@ get_header();
     <!-- Articles Grid dynamically loaded from Posts -->
     <div class="articles-grid-container">
         <?php
-        $args = array(
+        $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : ( ( get_query_var( 'page' ) ) ? get_query_var( 'page' ) : 1 );
+        $args  = array(
             'post_type'      => 'post',
-            'posts_per_page' => 12,
+            'posts_per_page' => 8,
             'post_status'    => 'publish',
             'orderby'        => 'date',
             'order'          => 'DESC',
+            'paged'          => $paged,
         );
         $articles_query = new WP_Query( $args );
 
@@ -197,12 +298,57 @@ get_header();
                 </article>
                 <?php
             endwhile;
-            wp_reset_postdata();
         else :
             ?>
-            <p>Chưa có bài viết nào.</p>
+            <p style="grid-column: 1/-1; text-align: center; color: #777; font-size: 16px; padding: 40px 0;">Chưa có bài viết nào.</p>
         <?php endif; ?>
     </div>
+
+    <!-- Pagination Section -->
+    <?php
+    $total_pages = $articles_query->max_num_pages;
+    if ( $total_pages > 1 ) :
+        ?>
+        <div class="articles-pagination-wrapper">
+            <div class="articles-pagination-info">
+                Trang <strong><?php echo esc_html( $paged ); ?></strong> / <strong><?php echo esc_html( $total_pages ); ?></strong>
+            </div>
+
+            <div class="articles-pagination-nav">
+                <?php if ( $paged > 1 ) : ?>
+                    <a href="<?php echo esc_url( get_pagenum_link( $paged - 1 ) ); ?>" class="pagination-btn pagination-prev">
+                        &larr; Trang trước
+                    </a>
+                <?php else : ?>
+                    <span class="pagination-btn pagination-disabled">&larr; Trang trước</span>
+                <?php endif; ?>
+
+                <div class="pagination-numbers">
+                    <?php
+                    echo paginate_links( array(
+                        'base'      => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
+                        'format'    => '?paged=%#%',
+                        'current'   => max( 1, $paged ),
+                        'total'     => $total_pages,
+                        'prev_next' => false,
+                        'type'      => 'plain',
+                    ) );
+                    ?>
+                </div>
+
+                <?php if ( $paged < $total_pages ) : ?>
+                    <a href="<?php echo esc_url( get_pagenum_link( $paged + 1 ) ); ?>" class="pagination-btn pagination-next">
+                        Trang sau &rarr;
+                    </a>
+                <?php else : ?>
+                    <span class="pagination-btn pagination-disabled">Trang sau &rarr;</span>
+                <?php endif; ?>
+            </div>
+        </div>
+        <?php
+    endif;
+    wp_reset_postdata();
+    ?>
 
 </div>
 </div>
@@ -225,3 +371,4 @@ get_header();
 
 <?php
 get_footer();
+
