@@ -569,9 +569,6 @@ function vascoSendPhoneConsult(btn, productName) {
 	if ( ! empty( $vasco_specs ) ) {
 		echo '<a class="product-tab-btn" href="#specs">Thông Số Kỹ Thuật</a>';
 	}
-	if ( ! empty( $languages ) ) {
-		echo '<a class="product-tab-btn" href="#languages">Ngôn ngữ hỗ trợ</a>';
-	}
 	if ( ! empty( $vasco_faq ) ) {
 		echo '<a class="product-tab-btn" href="#faq">FAQ</a>';
 	}

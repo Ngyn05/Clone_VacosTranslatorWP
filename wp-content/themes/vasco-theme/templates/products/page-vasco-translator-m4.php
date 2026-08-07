@@ -313,7 +313,6 @@ TƯ VẤN NGAY
 <nav class="tab-menu" id="tab-menu">
 <button aria-label="about" class="current menu-link" data-id="product-about">Về sản phẩm</button>
 <button aria-label="specification" class="menu-link" data-id="product-specification">Thông số kỹ thuật</button>
-<button aria-label="languages" class="menu-link" data-id="product-languages">Ngôn ngữ hỗ trợ</button>
 <button aria-label="faq" class="menu-link" data-id="product-faq">Hỏi đáp (FAQ)</button>
 </nav>
 </div>

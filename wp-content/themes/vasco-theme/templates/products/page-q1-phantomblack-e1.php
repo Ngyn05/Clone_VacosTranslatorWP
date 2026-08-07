@@ -215,7 +215,6 @@ return;
 	Q1
 </button>
 <button aria-label="specification" class="menu-link" data-id="product-specification">Thông số kỹ thuật</button>
-<button aria-label="languages" class="menu-link" data-id="product-languages">Ngôn ngữ hỗ trợ</button>
 <button aria-label="apps" class="menu-link" data-id="product-apps">
 	Ứng dụng
 </button>
