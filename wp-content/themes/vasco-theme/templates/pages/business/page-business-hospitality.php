@@ -99,7 +99,7 @@ get_header();
 <a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/all-products/" ) ); ?>">Tìm hiểu thêm <span class="text-sr-only">Vasco</span></a>
 </div>
 <div class="si-image">
-<img alt="Du khách du lịch tương tác với nhân viên dịch vụ" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/hitchhiker-travel.webp' ); ?>"/>
+<img alt="Du khách đeo balo vẫy xe quá độ trên đường (Hitchhiker travel)" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/hitchhiker-travel.webp' ); ?>"/>
 </div>
 </div>
 

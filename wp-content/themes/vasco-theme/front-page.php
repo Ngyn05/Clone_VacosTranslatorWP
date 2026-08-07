@@ -597,7 +597,7 @@ get_header();
 												tabindex="0">
 												<picture>
 													<source media="(min-width: 700px)" />
-													<img alt="A smiling couple takes a selfie in an airport terminal; the woman holds travel documents and a passport, while sunlight streams through large windows behind them."
+													<img alt="Người đàn ông đeo balo giơ ngón tay cái bắt xe đi quá độ trên đường (Hitchhiker travel)"
 														decoding="async" fetchpriority="low" height="129px"
 														loading="lazy"
 														width="300px" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/hitchhiker-travel.webp" ); ?>" >
