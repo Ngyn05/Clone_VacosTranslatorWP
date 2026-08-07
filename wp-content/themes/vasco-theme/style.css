@@ -38,7 +38,6 @@ Text Domain: vasco-theme
     font-variant: normal !important;
     text-transform: none !important;
     line-height: 1 !important;
-    speak: never;
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale !important;
 }
