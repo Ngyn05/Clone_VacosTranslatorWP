@@ -260,6 +260,8 @@ get_header();
 
                 $has_thumb = has_post_thumbnail( $post_id );
                 $thumb_src = $has_thumb ? get_the_post_thumbnail_url( $post_id, 'medium_large' ) : '';
+                $card_index = $articles_query->current_post;
+                $loading_attr = ( $card_index < 4 ) ? 'eager' : 'lazy';
                 ?>
                 <!-- Article Item with GEO / Schema Markup -->
                 <article class="article-card" itemscope itemtype="https://schema.org/BlogPosting">
@@ -268,7 +270,7 @@ get_header();
                     
                     <a class="article-card-img-link" href="<?php echo esc_url( $permalink ); ?>" title="<?php echo esc_attr( $title ); ?>">
                         <?php if ( $has_thumb && $thumb_src ) : ?>
-                            <img class="article-card-img" src="<?php echo esc_url( $thumb_src ); ?>" alt="<?php echo esc_attr( $title ); ?>" itemprop="image" loading="lazy" />
+                            <img class="article-card-img" src="<?php echo esc_url( $thumb_src ); ?>" alt="<?php echo esc_attr( $title ); ?>" itemprop="image" loading="<?php echo $loading_attr; ?>" />
                         <?php else : ?>
                             <div class="article-card-img-placeholder" style="width:100%;height:100%;background:#1a1a1a;display:flex;align-items:center;justify-content:center;color:#666;font-size:13px;">Chưa có ảnh</div>
                         <?php endif; ?>

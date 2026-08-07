@@ -37,7 +37,7 @@ function vasco_theme_enqueue_all_assets() {
 
 	// 3. Enqueue jQuery Core & Helper Scripts
 	wp_enqueue_script( 'jquery' );
-	wp_add_inline_script( 'jquery', 'window.$ = window.jQuery;' );
+	wp_add_inline_script( 'jquery', 'window.$ = window.jQuery; if(window.jQuery && window.jQuery.migrateMute !== undefined){ window.jQuery.migrateMute = true; }' );
 
 	// 4. Enqueue Active Theme JavaScript Assets
 	wp_enqueue_script( 'vasco-js-fancybox', VASCO_THEME_URI . '/assets/js/jquery/plugins/fancybox/jquery.fancybox.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
