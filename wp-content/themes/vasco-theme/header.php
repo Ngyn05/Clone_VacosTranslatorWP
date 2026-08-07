@@ -4,6 +4,9 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta content="ie=edge" http-equiv="x-ua-compatible" />
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com" />
 	<?php wp_head(); ?>
 </head>
 

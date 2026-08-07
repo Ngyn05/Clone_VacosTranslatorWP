@@ -44,6 +44,9 @@ function vasco_theme_enqueue_all_assets() {
 	wp_enqueue_script( 'vasco-js-carousel', VASCO_THEME_URI . '/assets/js/smooth-carousel.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
 	wp_enqueue_script( 'vasco-js-theme', VASCO_THEME_URI . '/assets/js/theme-xdI8XRYL.js', array( 'jquery' ), VASCO_THEME_VERSION, true );
 
+	// Add defer attribute to theme non-critical scripts
+	add_filter( 'script_loader_tag', 'vasco_theme_defer_scripts', 10, 3 );
+
 
 
 	// 5. Enqueue Standalone Vasco Cart Engine
@@ -148,3 +151,24 @@ function vasco_theme_script_loader_tag( $tag, $handle, $src ) {
 	return $tag;
 }
 add_filter( 'script_loader_tag', 'vasco_theme_script_loader_tag', 10, 3 );
+
+/**
+ * Add defer attribute to non-critical theme scripts.
+ */
+function vasco_theme_defer_scripts( $tag, $handle, $src ) {
+	if ( is_admin() ) {
+		return $tag;
+	}
+	$defer_handles = array(
+		'vasco-js-fancybox',
+		'vasco-js-carousel',
+		'vasco-js-theme',
+		'vasco-cart-engine',
+		'vasco-custom-fields-js'
+	);
+	if ( in_array( $handle, $defer_handles, true ) ) {
+		return str_replace( ' src=', ' defer src=', $tag );
+	}
+	return $tag;
+}
+add_filter( 'script_loader_tag', 'vasco_theme_defer_scripts', 10, 3 );
