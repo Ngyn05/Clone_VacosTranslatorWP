@@ -32,3 +32,4 @@ require_once VASCO_THEME_DIR . '/inc/wc-integration.php';
 require_once VASCO_THEME_DIR . '/inc/product-fields.php';
 require_once VASCO_THEME_DIR . '/inc/smtp.php';
 
+

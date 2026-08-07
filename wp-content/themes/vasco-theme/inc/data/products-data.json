@@ -19,7 +19,7 @@
         "specs": [
             {
                 "name": "Màn hình",
-                "value": "TFT 3.54 inch, pixel 640x960, PPI 326, IPS, 5 điểm chạm"
+                "value": "TFT 3.54 inch, pixel 640x960, PPI 326, IPS, cảm ứng 5 điểm, kính 7H Panda"
             },
             {
                 "name": "Bộ xử lý",
@@ -47,65 +47,77 @@
             },
             {
                 "name": "Kích thước",
-                "value": "4.52 x 2.40 x 0.66 in"
+                "value": "4.52 x 2.40 x 0.66 in (114.8 x 61.0 x 16.8 mm)"
             },
             {
                 "name": "Trọng lượng",
-                "value": "0.32 lb"
+                "value": "0.32 lb (145 g)"
             },
             {
                 "name": "Cổng kết nối",
                 "value": "USB Type-C"
             },
             {
-                "name": "Ngôn ngữ hỗ trợ",
-                "value": "95 ngôn ngữ dịch giọng nói, 121 ngôn ngữ dịch ảnh"
+                "name": "Ngôn ngữ dịch giọng nói",
+                "value": "95 ngôn ngữ"
+            },
+            {
+                "name": "Ngôn ngữ dịch ảnh",
+                "value": "121 ngôn ngữ"
+            },
+            {
+                "name": "Ngôn ngữ dịch văn bản",
+                "value": "116 ngôn ngữ"
+            },
+            {
+                "name": "Ngôn ngữ giao diện",
+                "value": "Tiếng Ả Rập, Bulgaria, Catalan, Trung (giản thể), Croatia, Séc, Đan Mạch, Hà Lan, Anh, Estonia, Phần Lan, Pháp, Đức, Hungary, Ý, Nhật, Latvia, Lithuania, Ba Lan, Bồ Đào Nha, Romania, Nga, Slovak, Tây Ban Nha, Thụy Điển, Thổ Nhĩ Kỳ, Ukraine"
             },
             {
                 "name": "Tài liệu hướng dẫn",
-                "value": "Có kèm theo hộp"
+                "value": "Tải tại manuals.vasco-electronics.com"
             }
         ],
         "faq": [
             {
-                "question": "Sản phẩm có hoạt động không cần kết nối internet không?",
-                "answer": "Vasco Translator Q1 đi kèm internet miễn phí trọn đời tại gần 200 quốc gia, không cần SIM hay WiFi riêng."
+                "question": "Vasco Translator Q1 có hoạt động không cần kết nối internet không?",
+                "answer": "Có. Q1 đi kèm SIM tích hợp cung cấp internet miễn phí và không giới hạn cho việc dịch tại gần 200 quốc gia – trọn đời. Không cần lo lắng về cước roaming hay thẻ trả trước."
             },
             {
-                "question": "Thiết bị hỗ trợ những ngôn ngữ nào?",
-                "answer": "Q1 hỗ trợ 95 ngôn ngữ dịch giọng nói, 121 ngôn ngữ dịch ảnh và 116 ngôn ngữ dịch văn bản."
+                "question": "Sự khác nhau giữa Vasco Translator Q1 và V4 là gì?",
+                "answer": "Q1 là thiết bị tiên tiến nhất, dành cho người dùng khó tính nhất. So với V4, Q1 có thêm nhân bản giọng nói, dịch cuộc gọi, chế độ tự động và bộ lọc ngôn từ tục tĩu. Q1 còn cho phép chọn giọng nam hoặc nữ, điều chỉnh tốc độ phát lại, và kích hoạt khóa màn hình."
             },
             {
-                "question": "Sản phẩm có hoạt động được ở nước ngoài không?",
-                "answer": "Có, Q1 hoạt động tại gần 200 quốc gia, không phụ thuộc SIM địa phương."
+                "question": "Vasco Translator Q1 hoạt động ở những quốc gia nào?",
+                "answer": "Nhờ internet không giới hạn tại gần 200 quốc gia, Q1 cho phép giao tiếp với gần 90% dân số thế giới."
             },
             {
-                "question": "Chất lượng dịch thuật có tốt hơn Google Translate không?",
-                "answer": "Q1 sử dụng nhiều engine AI song song, đạt độ chính xác cao hơn với phát âm tự nhiên hơn."
+                "question": "Q1 có tốt hơn Google Translate không?",
+                "answer": "Có. Q1 sử dụng hơn 10 engine dịch chuyên biệt, đạt độ chính xác 99%, nhờ dịch trực tiếp giữa các ngôn ngữ (không qua ngôn ngữ trung gian như Google), bảo tồn sắc thái ngôn ngữ, thuật ngữ chuyên ngành và ngữ cảnh văn hóa."
             },
             {
-                "question": "Sản phẩm có dễ sử dụng với người lớn tuổi không?",
-                "answer": "Có, giao diện đơn giản, nút bấm vật lý lớn và màn hình rõ nét, rất phù hợp với người lớn tuổi."
+                "question": "Q1 có dễ sử dụng với người lớn tuổi hoặc không rành công nghệ không?",
+                "answer": "Có. Q1 rất trực quan, thiết kế cho mọi lứa tuổi và mức độ thành thạo công nghệ. Có thể điều chỉnh cỡ chữ, đảo màu cho người khiếm thị, và điều chỉnh tốc độ phát lại."
             },
             {
-                "question": "Tôi có thể tùy chỉnh giọng nói không?",
-                "answer": "Có, Q1 hỗ trợ nhân bản giọng nói (Voice Cloning) trong 54 ngôn ngữ để nghe giọng nói của chính bạn."
+                "question": "Các tùy chọn cá nhân hóa giọng nói là gì?",
+                "answer": "Q1 là máy dịch duy nhất có công nghệ nhân bản giọng nói (Voice Cloning), tạo phiên bản số từ mẫu ghi âm ngắn trong 54 ngôn ngữ. Ngoài ra có thể chọn giọng nam hoặc nữ, và điều chỉnh tốc độ phát lại theo thang 5 cấp độ."
             },
             {
-                "question": "Thiết bị có hỗ trợ sạc nhanh không?",
-                "answer": "Q1 sạc qua cổng USB-C, thời gian sạc đầy khoảng 2 giờ."
+                "question": "Q1 có hỗ trợ sạc nhanh không?",
+                "answer": "Có. Q1 hỗ trợ sạc nhanh, luôn sẵn sàng khi bạn cần."
             },
             {
-                "question": "Tôi có thể sử dụng tai nghe Bluetooth với sản phẩm này không?",
-                "answer": "Có, Q1 hỗ trợ kết nối Bluetooth với tai nghe bất kỳ."
+                "question": "Q1 có đèn pin tích hợp không?",
+                "answer": "Có. Q1 tích hợp đèn pin thực dụng, đặc biệt hữu ích khi dịch ảnh trong môi trường ánh sáng yếu hoặc tình huống khẩn cấp."
             },
             {
-                "question": "Chính sách bảo hành của sản phẩm là gì?",
-                "answer": "Sản phẩm được bảo hành 12 tháng chính hãng."
+                "question": "Tôi có thể sử dụng tai nghe Bluetooth của mình với Q1 không?",
+                "answer": "Có. Q1 kết nối liền mạch với bất kỳ tai nghe Bluetooth nào. Để trải nghiệm tốt nhất, chúng tôi khuyến nghị kết hợp với tai nghe Vasco Translator E1, giúp mở khóa các tính năng bổ sung đặc biệt."
             },
             {
-                "question": "Tôi có thể mua thêm phụ kiện ở đâu?",
-                "answer": "Phụ kiện chính hãng (bao da, kính cường lực, bộ sạc) có bán tại website và các cửa hàng ủy quyền."
+                "question": "Thiết bị có những tùy chọn bảo mật nào để ngăn truy cập trái phép?",
+                "answer": "Thiết bị có khóa màn hình với 3 tùy chọn bảo mật: hình vẽ (pattern), mã PIN, và mật khẩu – đảm bảo bảo vệ hoàn toàn khỏi truy cập trái phép."
             }
         ]
     },
@@ -128,19 +140,19 @@
         "specs": [
             {
                 "name": "Màn hình",
-                "value": "3.5 inch, cảm ứng"
+                "value": "2.8 inch, 480x640, kính 7H"
             },
             {
                 "name": "Bộ xử lý",
-                "value": "Quad Core"
+                "value": "MediaTek Quad-Core Arm Cortex-A53"
             },
             {
                 "name": "RAM",
-                "value": "2 GB"
+                "value": "3 GB"
             },
             {
                 "name": "ROM / Bộ nhớ",
-                "value": "16 GB"
+                "value": "32 GB"
             },
             {
                 "name": "Modem",
@@ -148,7 +160,7 @@
             },
             {
                 "name": "WiFi",
-                "value": "2.4G + 5G Dual Band"
+                "value": "2.4G & 5G Dual Band"
             },
             {
                 "name": "Pin",
@@ -156,65 +168,85 @@
             },
             {
                 "name": "Kích thước",
-                "value": "4.2 x 2.1 x 0.55 in"
+                "value": "118.3 x 53.0 x 15.4 mm"
             },
             {
                 "name": "Trọng lượng",
-                "value": "0.28 lb"
+                "value": "106 g"
             },
             {
                 "name": "Cổng kết nối",
                 "value": "USB Type-C"
             },
             {
-                "name": "Ngôn ngữ hỗ trợ",
-                "value": "86 ngôn ngữ dịch giọng nói, 113 ngôn ngữ dịch ảnh"
+                "name": "Ngôn ngữ dịch giọng nói",
+                "value": "86 ngôn ngữ"
+            },
+            {
+                "name": "Ngôn ngữ dịch ảnh",
+                "value": "113 ngôn ngữ"
+            },
+            {
+                "name": "Ngôn ngữ dịch văn bản",
+                "value": "108 ngôn ngữ"
+            },
+            {
+                "name": "Ngôn ngữ giao diện",
+                "value": "Tiếng Ả Rập, Bulgaria, Catalan, Trung (giản thể), Croatia, Séc, Đan Mạch, Hà Lan, Anh, Estonia, Phần Lan, Pháp, Đức, Hungary, Ý, Nhật, Latvia, Lithuania, Ba Lan, Bồ Đào Nha, Romania, Nga, Slovak, Tây Ban Nha, Thụy Điển, Thổ Nhĩ Kỳ, Ukraine"
             },
             {
                 "name": "Tài liệu hướng dẫn",
-                "value": "Có kèm theo hộp"
+                "value": "Tải tại manuals.vasco-electronics.com"
             }
         ],
         "faq": [
             {
-                "question": "Sản phẩm có hoạt động không cần kết nối internet không?",
-                "answer": "M4 đi kèm internet miễn phí trọn đời tại gần 200 quốc gia."
+                "question": "Máy dịch cầm tay là gì và Vasco Translator M4 hoạt động như thế nào?",
+                "answer": "M4 là thiết bị nhỏ gọn, sẵn dùng ngay, dịch giọng nói, văn bản và ảnh tức thì với loa mạnh và nút bấm dễ sử dụng. Không cần cài đặt phức tạp."
             },
             {
-                "question": "Thiết bị hỗ trợ những ngôn ngữ nào?",
-                "answer": "M4 hỗ trợ 86 ngôn ngữ dịch giọng nói, 113 ngôn ngữ dịch ảnh và 108 ngôn ngữ dịch văn bản."
+                "question": "M4 có đáng tin cậy như một công cụ dịch thuật khi đi du lịch không?",
+                "answer": "Có. M4 dịch nhanh và chính xác theo thời gian thực, giúp bạn giao tiếp dễ dàng khi đi du lịch."
             },
             {
-                "question": "Sản phẩm có hoạt động được ở nước ngoài không?",
-                "answer": "Có, M4 hoạt động tại gần 200 quốc gia."
+                "question": "M4 có thể thay thế ứng dụng dịch thuật trên điện thoại không?",
+                "answer": "Có. M4 hoạt động hoàn toàn độc lập, không cần smartphone hay ứng dụng bổ sung."
             },
             {
-                "question": "Chất lượng dịch thuật có tốt hơn Google Translate không?",
-                "answer": "M4 sử dụng AI đa engine cho kết quả chính xác và tự nhiên hơn."
+                "question": "M4 có phù hợp để giao tiếp hàng ngày khi ra nước ngoài không?",
+                "answer": "Có. Với hơn 85 ngôn ngữ dịch giọng nói và kết quả tức thì, M4 lý tưởng cho mọi cuộc trò chuyện hàng ngày."
             },
             {
-                "question": "Sản phẩm có dễ sử dụng với người lớn tuổi không?",
-                "answer": "Có, thiết kế nhỏ gọn với phông chữ điều chỉnh được, rất phù hợp mọi lứa tuổi."
+                "question": "Thiết bị có hoạt động mà không cần cài đặt phức tạp không?",
+                "answer": "Có. M4 sẵn sàng sử dụng ngay sau khi bật máy, không cần cấu hình gì thêm."
             },
             {
-                "question": "Tôi có thể tùy chỉnh giọng nói không?",
-                "answer": "M4 hỗ trợ lựa chọn giọng đọc nam hoặc nữ."
+                "question": "M4 có thể dùng không cần smartphone không?",
+                "answer": "Có. M4 hoạt động hoàn toàn độc lập, không cần điện thoại hay ứng dụng bên ngoài."
             },
             {
-                "question": "Thiết bị có hỗ trợ sạc nhanh không?",
-                "answer": "M4 sạc qua cổng USB-C, thời gian sạc đầy khoảng 1.5-2 giờ."
+                "question": "Điều gì làm M4 trở thành thiết bị dịch tốt cho du khách?",
+                "answer": "Tốc độ dịch nhanh, thiết kế bền chắc, internet miễn phí tại gần 200 quốc gia và thao tác đơn giản là những yếu tố làm M4 lý tưởng cho du lịch."
             },
             {
-                "question": "Tôi có thể sử dụng tai nghe Bluetooth không?",
-                "answer": "Có, M4 hỗ trợ kết nối tai nghe Bluetooth."
+                "question": "M4 có phải là máy dịch cầm tay với khả năng dịch thời gian thực không?",
+                "answer": "Có. Dịch giọng nói chính xác 99% và gần như tức thì, chỉ khoảng 0.5 giây."
             },
             {
-                "question": "Chính sách bảo hành là gì?",
-                "answer": "Bảo hành 12 tháng chính hãng."
+                "question": "M4 hỗ trợ bao nhiêu ngôn ngữ?",
+                "answer": "Dịch giọng nói: 86 ngôn ngữ, dịch ảnh: 113 ngôn ngữ, dịch văn bản: 108 ngôn ngữ."
             },
             {
-                "question": "Tôi có thể mua thêm phụ kiện ở đâu?",
-                "answer": "Phụ kiện có tại website và cửa hàng ủy quyền Vasco."
+                "question": "M4 có phải là món quà tốt cho cha mẹ hoặc du khách không?",
+                "answer": "Có. M4 là món quà thực tế, cho phép tự do khám phá thế giới mà không cần đăng ký hay cài thêm ứng dụng."
+            },
+            {
+                "question": "M4 có hoạt động quốc tế, kể cả ngoài châu Âu không?",
+                "answer": "Có. M4 hoạt động tại gần 200 quốc gia trên toàn thế giới nhờ internet miễn phí tích hợp."
+            },
+            {
+                "question": "Tôi có thể dịch ảnh menu hoặc biển hiệu bằng M4 không?",
+                "answer": "Có. Tính năng dịch ảnh hỗ trợ 113 ngôn ngữ, lý tưởng để dịch menu nhà hàng, biển báo hoặc tài liệu bảo tàng."
             }
         ]
     },
@@ -239,11 +271,11 @@
         "specs": [
             {
                 "name": "Màn hình",
-                "value": "5 inch, Full HD, cảm ứng"
+                "value": "5 inch, 576x1440"
             },
             {
                 "name": "Bộ xử lý",
-                "value": "Octa Core 1.8 GHz"
+                "value": "Quad-core Mediatek"
             },
             {
                 "name": "RAM",
@@ -251,7 +283,7 @@
             },
             {
                 "name": "ROM / Bộ nhớ",
-                "value": "16 GB"
+                "value": "32 GB"
             },
             {
                 "name": "Modem",
@@ -259,73 +291,73 @@
             },
             {
                 "name": "WiFi",
-                "value": "2.4G + 5G Dual Band"
+                "value": "2.4 GHz"
             },
             {
                 "name": "Pin",
-                "value": "4000 mAh"
+                "value": "2400 mAh"
             },
             {
                 "name": "Kích thước",
-                "value": "5.98 x 2.80 x 0.43 in"
+                "value": "5.87 x 2.17 x 0.39 in (149.1 x 55.1 x 9.9 mm)"
             },
             {
                 "name": "Trọng lượng",
-                "value": "0.44 lb"
+                "value": "0.3 lb (136 g)"
             },
             {
-                "name": "Cổng kết nối",
+                "name": "Cổng tai nghe / Sạc",
                 "value": "USB Type-C"
             },
             {
-                "name": "Ngôn ngữ hỗ trợ",
-                "value": "82 ngôn ngữ dịch giọng nói, 112 ngôn ngữ dịch ảnh"
+                "name": "Ngôn ngữ dịch giọng nói",
+                "value": "82 ngôn ngữ"
+            },
+            {
+                "name": "Ngôn ngữ dịch ảnh",
+                "value": "112 ngôn ngữ"
+            },
+            {
+                "name": "Ngôn ngữ dịch văn bản",
+                "value": "107 ngôn ngữ"
+            },
+            {
+                "name": "Ngôn ngữ giao diện",
+                "value": "Tiếng Ả Rập, Bulgaria, Catalan, Trung (giản thể), Croatia, Séc, Đan Mạch, Hà Lan, Anh, Phần Lan, Pháp, Đức, Hungary, Ý, Nhật, Ba Lan, Bồ Đào Nha, Romania, Nga, Slovak, Tây Ban Nha, Thụy Điển, Ukraine"
             },
             {
                 "name": "Tài liệu hướng dẫn",
-                "value": "Có kèm theo hộp"
+                "value": "Tải tại manuals.vasco-electronics.com/v4"
             }
         ],
         "faq": [
             {
-                "question": "Sản phẩm có hoạt động không cần kết nối internet không?",
-                "answer": "V4 đi kèm kết nối internet miễn phí trọn đời tại gần 200 quốc gia."
+                "question": "Cách dịch ảnh với Vasco Translator V4?",
+                "answer": "Mở 'Dịch ảnh' từ menu chính. Chọn ngôn ngữ mục tiêu. Chụp ảnh văn bản cần dịch. Thiết bị sẽ tự động nhận diện và dịch, hiển thị bản dịch trên màn hình."
             },
             {
-                "question": "Thiết bị hỗ trợ những ngôn ngữ nào?",
-                "answer": "V4 hỗ trợ 82 ngôn ngữ dịch giọng nói, 112 ngôn ngữ dịch ảnh và 107 ngôn ngữ dịch văn bản."
+                "question": "Cách dịch giọng nói với Vasco Translator V4?",
+                "answer": "Mở tính năng 'Dịch giọng nói'. Chọn ngôn ngữ nguồn và đích. Nhấn và giữ nút micro (vật lý hoặc trên màn hình). Nói rõ ràng vào thiết bị rồi thả nút. Thiết bị sẽ hiển thị và đọc to bản dịch (nếu ngôn ngữ hỗ trợ phát âm)."
             },
             {
-                "question": "Sản phẩm có hoạt động được ở nước ngoài không?",
-                "answer": "Có, V4 hoạt động tại gần 200 quốc gia."
+                "question": "Cách dịch văn bản với Vasco Translator V4?",
+                "answer": "Mở tính năng 'Dịch văn bản'. Chọn cặp ngôn ngữ. Nhập hoặc nói văn bản cần dịch. Chờ thiết bị cung cấp bản dịch. Bạn cũng có thể nghe phát âm của câu dịch."
             },
             {
-                "question": "Chất lượng dịch thuật có tốt hơn Google Translate không?",
-                "answer": "V4 dùng AI tiên tiến với tốc độ dịch ~0.5 giây."
+                "question": "Cách trò chuyện có dịch thuật (MultiTalk) với V4?",
+                "answer": "Chọn ứng dụng MultiTalk từ menu chính. Tạo hoặc tham gia cuộc trò chuyện. Nhấn giữ nút micro và nói rõ ràng. Thiết bị dịch tin nhắn của bạn hiển thị trong giao diện chat. Tất cả thành viên có thể nhắn tin bằng ngôn ngữ ưa thích và đọc/nghe bản dịch của nhau."
             },
             {
-                "question": "Sản phẩm có dễ sử dụng với người lớn tuổi không?",
-                "answer": "Màn hình 5 inch lớn, chữ rõ nét, thao tác đơn giản."
+                "question": "Tại sao thiết bị có internet miễn phí trọn đời?",
+                "answer": "V4 được trang bị SIM tích hợp cung cấp internet miễn phí trọn đời tại gần 200 quốc gia. Không cần WiFi hay cước dữ liệu khi dùng để dịch, và không bao giờ phải nạp tiền thêm trong suốt thời gian sử dụng."
             },
             {
-                "question": "Tôi có thể tùy chỉnh giọng nói không?",
-                "answer": "V4 hỗ trợ chọn giọng nam hoặc nữ."
+                "question": "Tất cả ngôn ngữ có được hỗ trợ phát âm không?",
+                "answer": "V4 hỗ trợ phát âm cho hầu hết các ngôn ngữ. Một số ngôn ngữ như tiếng Bulgaria, Hebrew và Croatia có thể cần bổ sung phát âm thêm. Phát âm giúp học cách nói đúng với người bản ngữ."
             },
             {
-                "question": "Thiết bị có hỗ trợ sạc nhanh không?",
-                "answer": "Pin 4000 mAh, thời lượng pin lên tới 8 tiếng."
-            },
-            {
-                "question": "Tôi có thể sử dụng tai nghe Bluetooth không?",
-                "answer": "Có, V4 hỗ trợ tai nghe Bluetooth bất kỳ."
-            },
-            {
-                "question": "Chính sách bảo hành là gì?",
-                "answer": "Bảo hành 12 tháng chính hãng."
-            },
-            {
-                "question": "Tôi có thể mua thêm phụ kiện ở đâu?",
-                "answer": "Phụ kiện có tại website Vasco và đại lý ủy quyền."
+                "question": "Tại sao các tính năng khác nhau hỗ trợ số lượng ngôn ngữ khác nhau?",
+                "answer": "Do mức độ phức tạp và nguồn lực khác nhau cho từng tính năng. Ví dụ, dịch giọng nói cần công nghệ nhận dạng tiếng nói tiên tiến, không có sẵn cho tất cả ngôn ngữ. Do đó, một số tính năng hỗ trợ ít ngôn ngữ hơn các tính năng khác."
             }
         ]
     },
@@ -342,24 +374,40 @@
         "description": "<ul>\n<li>Ngôn ngữ: 51 - Số lượng cao nhất trên thị trường</li>\n<li>Công nghệ: 10 công cụ dịch sử dụng Trí tuệ nhân tạo</li>\n<li>Số người có thể tham gia cuộc trò chuyện qua ứng dụng di động: 10</li>\n<li>Thoải mái: Nói chuyện mà không cần liên tục nhìn vào thiết bị khác</li>\n<li>Thiết kế đa năng: Máy dịch của chúng tôi vừa vặn hoàn hảo với mọi tai</li>\n<li>Vệ sinh: Nhờ thiết kế đeo ngoài tai, tai nghe của chúng tôi có thể được chia sẻ an toàn với bất kỳ ai</li>\n<li>Sản phẩm đạt giải thưởng: Thiết kế trực quan và chất lượng cao</li>\n</ul>",
         "specs": [
             {
-                "name": "Loại sản phẩm",
-                "value": "Tai nghe phiên dịch"
+                "name": "Kích thước (kể cả hộp sạc)",
+                "value": "1.8 x 2.2 x 1 in (45.7 x 55.9 x 25.4 mm)"
             },
             {
-                "name": "Kết nối",
-                "value": "Bluetooth 5.0"
+                "name": "Trọng lượng",
+                "value": "0.44 oz (12.5 g)"
+            },
+            {
+                "name": "Bluetooth",
+                "value": "5.2"
+            },
+            {
+                "name": "Micro",
+                "value": "2 micro trong mỗi tai nghe"
+            },
+            {
+                "name": "Loa",
+                "value": "Dynamic Neodymium Iron Boron 117dBA"
+            },
+            {
+                "name": "Bộ xử lý",
+                "value": "Dual-Core, hai chip Arm® Cortex®-M33"
             },
             {
                 "name": "Pin tai nghe",
-                "value": "Khoảng 5 tiếng liên tục"
+                "value": "70 mAh (mỗi tai nghe)"
             },
             {
-                "name": "Hộp sạc",
-                "value": "Thêm 15 tiếng"
+                "name": "Pin hộp sạc",
+                "value": "400 mAh"
             },
             {
                 "name": "Cổng sạc",
-                "value": "USB Type-C"
+                "value": "USB Type-C (DC 5V, tối thiểu 0.5A)"
             },
             {
                 "name": "Ngôn ngữ hỗ trợ",
@@ -370,66 +418,46 @@
                 "value": "Tối đa 10 người (qua app)"
             },
             {
-                "name": "Công nghệ AI",
-                "value": "10 engine AI song song"
-            },
-            {
-                "name": "Thiết kế",
-                "value": "Đeo ngoài tai, phù hợp mọi tai"
-            },
-            {
-                "name": "Tương thích",
-                "value": "Android & iOS"
-            },
-            {
-                "name": "Màu sắc",
-                "value": "Đen"
+                "name": "Ngôn ngữ giao diện",
+                "value": "Tiếng Ả Rập, Albania, Bengali, Bulgaria, Catalan, Trung, Croatia, Séc, Đan Mạch, Hà Lan, Anh, Estonia, Phần Lan, Pháp, Đức, Hy Lạp, Hindi, Hebrew, Hungary, Ý, Nhật, Hàn, Latvia, Lithuania, Ba Lan, Bồ Đào Nha, Romania, Nga, Slovak, Tây Ban Nha, Thụy Điển, Ukraine, Thổ Nhĩ Kỳ"
             },
             {
                 "name": "Tài liệu hướng dẫn",
-                "value": "Có kèm theo hộp"
+                "value": "Tải tại manuals.vasco-electronics.com/e1"
             }
         ],
         "faq": [
             {
-                "question": "Tai nghe có hoạt động độc lập không cần điện thoại không?",
-                "answer": "E1 kết nối qua Bluetooth với điện thoại, cần app Vasco để dịch giọng nói."
+                "question": "Tại sao có 2 tai nghe đều dành cho tai phải?",
+                "answer": "Vì một tai nghe dành cho bạn và tai còn lại dành cho người đối diện trong cuộc trò chuyện."
             },
             {
-                "question": "Thiết bị hỗ trợ những ngôn ngữ nào?",
-                "answer": "E1 hỗ trợ 51 ngôn ngữ dịch giọng nói thời gian thực."
+                "question": "Tai nghe có cung cấp kết nối miễn phí trọn đời không?",
+                "answer": "Không. Bạn cần sử dụng dữ liệu di động hoặc WiFi từ điện thoại. E1 không có kết nối miễn phí trọn đời. Tính năng này chỉ có khi ghép nối E1 với Vasco Translator V4."
             },
             {
-                "question": "Sản phẩm có hoạt động được ở nước ngoài không?",
-                "answer": "Có, miễn là điện thoại kết nối internet."
+                "question": "Tôi có thể mua chỉ một tai nghe không?",
+                "answer": "Không. E1 được bán theo bộ gồm 2 tai nghe (đều cho tai phải) và hộp sạc."
             },
             {
-                "question": "Chất lượng dịch thuật có tốt hơn Google Translate không?",
-                "answer": "E1 sử dụng 10 engine AI song song, chọn kết quả tốt nhất."
+                "question": "Cách kích hoạt tai nghe dịch E1?",
+                "answer": "Tai nghe tự động kích hoạt khi lấy ra khỏi hộp và hoạt động trong 2 phút. Nếu không được dùng trong cuộc trò chuyện, tai nghe vào chế độ ngủ và khởi động lại khi bạn di chuyển."
             },
             {
-                "question": "Sản phẩm có dễ sử dụng không?",
-                "answer": "Rất đơn giản, chỉ cần đeo vào tai và nói."
+                "question": "Tôi có thể thay đổi cài đặt tai nghe ở đâu?",
+                "answer": "Bạn có thể thay đổi cài đặt trong ứng dụng Vasco Connect trên điện thoại, hoặc thông qua tính năng chuyên dụng trên Vasco Translator V4."
             },
             {
-                "question": "Tôi có thể chia sẻ tai nghe cho người khác không?",
-                "answer": "Có, thiết kế đeo ngoài tai đảm bảo vệ sinh."
+                "question": "Tôi có thể tải ứng dụng Vasco Connect ở đâu?",
+                "answer": "Tải Vasco Connect từ Google Play Store (Android) hoặc App Store (iOS)."
             },
             {
-                "question": "Pin dùng được bao lâu?",
-                "answer": "5 tiếng liên tục, hộp sạc thêm 15 tiếng."
+                "question": "Ứng dụng Vasco Connect có cần thiết để dùng E1 không?",
+                "answer": "Có. Với Vasco Connect, bạn có thể ghép nối tai nghe với điện thoại, thay đổi cài đặt, gán người dùng và ngôn ngữ cho từng tai nghe, chọn màu LED, điều chỉnh âm lượng và xem lịch sử dịch. App cũng có hướng dẫn từng bước chi tiết."
             },
             {
-                "question": "Tôi có thể kết nối E1 với Vasco Q1 không?",
-                "answer": "Có, cho phép tối đa 6 người tham gia hội thoại."
-            },
-            {
-                "question": "Chính sách bảo hành là gì?",
-                "answer": "Bảo hành 12 tháng chính hãng."
-            },
-            {
-                "question": "Tôi có thể mua thêm phụ kiện ở đâu?",
-                "answer": "Phụ kiện có tại website Vasco và đại lý ủy quyền."
+                "question": "Tôi có thể nghe nhạc và nhận cuộc gọi với E1 không?",
+                "answer": "Không. E1 được thiết kế chuyên dụng để dịch giọng nói và hỗ trợ giao tiếp đa ngôn ngữ, không dành cho nghe nhạc hay gọi điện."
             }
         ]
     },
@@ -442,7 +470,35 @@
         "image": "assets/images/products/426-medium_default/q1-phantomblack-e1.jpg",
         "excerpt": "Bộ sản phẩm hiện đại nhất với Internet miễn phí trọn đời cho việc dịch thuật.",
         "source_url": "/translators/q1-phantomblack-e1/",
-        "description": "<ul>\n<li>Mạnh mẽ hơn khi kết hợp: hỗ trợ 85 ngôn ngữ dịch giọng nói</li>\n<li>Dữ liệu miễn phí cho dịch thuật: truy cập trọn đời tại gần 200 quốc gia</li>\n<li>Tối đa 6 người có thể cùng tham gia hội thoại</li>\n<li>Tính năng bổ sung: công nghệ dịch ảnh, văn bản và nhân bản giọng nói</li>\n<li>Tính linh hoạt: chọn sử dụng riêng tai nghe hoặc bộ đầy đủ cùng Vasco Translator Q1</li>\n</ul>"
+        "description": "<ul>\n<li>Mạnh mẽ hơn khi kết hợp: hỗ trợ 85 ngôn ngữ dịch giọng nói</li>\n<li>Dữ liệu miễn phí cho dịch thuật: truy cập trọn đời tại gần 200 quốc gia</li>\n<li>Tối đa 6 người có thể cùng tham gia hội thoại</li>\n<li>Tính năng bổ sung: công nghệ dịch ảnh, văn bản và nhân bản giọng nói</li>\n<li>Tính linh hoạt: chọn sử dụng riêng tai nghe hoặc bộ đầy đủ cùng Vasco Translator Q1</li>\n</ul>",
+        "specs": [
+            { "name": "Loại sản phẩm", "value": "Bộ máy dịch + tai nghe dịch thuật" },
+            { "name": "[Tai nghe E1] Bluetooth", "value": "5.2" },
+            { "name": "[Tai nghe E1] Micro", "value": "2 micro trong mỗi tai nghe" },
+            { "name": "[Tai nghe E1] Loa", "value": "Dynamic Neodymium Iron Boron 117dBA" },
+            { "name": "[Tai nghe E1] Pin", "value": "70 mAh (tai nghe) + 400 mAh (hộp sạc)" },
+            { "name": "[Tai nghe E1] Cổng sạc", "value": "USB Type-C" },
+            { "name": "[Máy Q1] Màn hình", "value": "TFT 3.54 inch, 640x960, PPI 326, IPS, cảm ứng 5 điểm, 7H Panda" },
+            { "name": "[Máy Q1] Bộ xử lý", "value": "MT8766V/WBA 2.0 GHz, Quad Core A53" },
+            { "name": "[Máy Q1] RAM", "value": "3 GB" },
+            { "name": "[Máy Q1] ROM", "value": "32 GB" },
+            { "name": "[Máy Q1] Modem", "value": "4G" },
+            { "name": "[Máy Q1] WiFi", "value": "2.4G + 5G Dual Band" },
+            { "name": "[Máy Q1] Pin", "value": "2500 mAh" },
+            { "name": "[Máy Q1] Kích thước", "value": "4.52 x 2.40 x 0.66 in" },
+            { "name": "[Máy Q1] Trọng lượng", "value": "0.32 lb (145 g)" },
+            { "name": "[Máy Q1] Cổng kết nối", "value": "USB Type-C" },
+            { "name": "Ngôn ngữ khi kết hợp", "value": "85 ngôn ngữ dịch giọng nói" }
+        ],
+        "faq": [
+            { "question": "Kết nối Q1 và E1 có mở khóa tính năng mới không?", "answer": "Có! Khi ghép nối, E1 và Q1 tăng số ngôn ngữ từ 51 lên 85 ngôn ngữ. Ngoài ra, Q1 cung cấp internet miễn phí tại gần 200 quốc gia, loại bỏ chi phí roaming." },
+            { "question": "Hai thiết bị có thể hoạt động độc lập không?", "answer": "Hoàn toàn có thể! Mỗi thiết bị đều dùng được độc lập. Ghép nối mang lại lợi ích thêm nhưng hoàn toàn tùy chọn." },
+            { "question": "Bộ hỗ trợ bao nhiêu ngôn ngữ?", "answer": "Bộ Q1 + E1 hỗ trợ 85 ngôn ngữ khi kết hợp, còn E1 đơn lẻ hỗ trợ 51 ngôn ngữ." },
+            { "question": "Bộ sản phẩm bao gồm những gì?", "answer": "Bộ gồm tai nghe Vasco E1 và máy dịch Q1 với SIM tích hợp cho internet miễn phí trọn đời. Kèm theo: cáp USB-C, dây đeo, hộp sạc tai nghe và tài liệu hướng dẫn." },
+            { "question": "Internet miễn phí cho dịch thuật có trong bộ không?", "answer": "Có! Vasco Translator Q1 có SIM tích hợp cung cấp internet miễn phí trọn đời cho dịch thuật tại gần 200 quốc gia." },
+            { "question": "Xem danh sách quốc gia có internet miễn phí ở đâu?", "answer": "Bạn có thể xem đầy đủ danh sách tại trang Bản đồ phủ sóng trên website Vasco." },
+            { "question": "Bộ Q1+E1 khác bộ V4+E1 thế nào?", "answer": "Bộ này có Q1 – máy dịch tiên tiến nhất với các tính năng độc quyền như nhân bản giọng nói và dịch cuộc gọi điện thoại. Khi ghép với E1, hỗ trợ 85 ngôn ngữ – nhiều nhất trên thị trường." }
+        ]
     },
     {
         "slug": "q1-slateblue-e1",
@@ -453,7 +509,35 @@
         "image": "assets/images/products/428-medium_default/q1-slateblue-e1.jpg",
         "excerpt": "Bộ sản phẩm hiện đại nhất với Internet miễn phí trọn đời cho việc dịch thuật.",
         "source_url": "/translators/q1-slateblue-e1/",
-        "description": "<ul>\n<li>Mạnh mẽ hơn khi kết hợp: hỗ trợ 85 ngôn ngữ dịch giọng nói</li>\n<li>Dữ liệu miễn phí cho dịch thuật: truy cập trọn đời tại gần 200 quốc gia</li>\n<li>Tối đa 6 người có thể cùng tham gia hội thoại</li>\n<li>Tính năng bổ sung: công nghệ dịch ảnh, văn bản và nhân bản giọng nói</li>\n<li>Tính linh hoạt: chọn sử dụng riêng tai nghe hoặc bộ đầy đủ cùng Vasco Translator Q1</li>\n</ul>"
+        "description": "<ul>\n<li>Mạnh mẽ hơn khi kết hợp: hỗ trợ 85 ngôn ngữ dịch giọng nói</li>\n<li>Dữ liệu miễn phí cho dịch thuật: truy cập trọn đời tại gần 200 quốc gia</li>\n<li>Tối đa 6 người có thể cùng tham gia hội thoại</li>\n<li>Tính năng bổ sung: công nghệ dịch ảnh, văn bản và nhân bản giọng nói</li>\n<li>Tính linh hoạt: chọn sử dụng riêng tai nghe hoặc bộ đầy đủ cùng Vasco Translator Q1</li>\n</ul>",
+        "specs": [
+            { "name": "Loại sản phẩm", "value": "Bộ máy dịch + tai nghe dịch thuật" },
+            { "name": "[Tai nghe E1] Bluetooth", "value": "5.2" },
+            { "name": "[Tai nghe E1] Micro", "value": "2 micro trong mỗi tai nghe" },
+            { "name": "[Tai nghe E1] Loa", "value": "Dynamic Neodymium Iron Boron 117dBA" },
+            { "name": "[Tai nghe E1] Pin", "value": "70 mAh (tai nghe) + 400 mAh (hộp sạc)" },
+            { "name": "[Tai nghe E1] Cổng sạc", "value": "USB Type-C" },
+            { "name": "[Máy Q1] Màn hình", "value": "TFT 3.54 inch, 640x960, PPI 326, IPS, cảm ứng 5 điểm, 7H Panda" },
+            { "name": "[Máy Q1] Bộ xử lý", "value": "MT8766V/WBA 2.0 GHz, Quad Core A53" },
+            { "name": "[Máy Q1] RAM", "value": "3 GB" },
+            { "name": "[Máy Q1] ROM", "value": "32 GB" },
+            { "name": "[Máy Q1] Modem", "value": "4G" },
+            { "name": "[Máy Q1] WiFi", "value": "2.4G + 5G Dual Band" },
+            { "name": "[Máy Q1] Pin", "value": "2500 mAh" },
+            { "name": "[Máy Q1] Kích thước", "value": "4.52 x 2.40 x 0.66 in" },
+            { "name": "[Máy Q1] Trọng lượng", "value": "0.32 lb (145 g)" },
+            { "name": "[Máy Q1] Cổng kết nối", "value": "USB Type-C" },
+            { "name": "Ngôn ngữ khi kết hợp", "value": "85 ngôn ngữ dịch giọng nói" }
+        ],
+        "faq": [
+            { "question": "Kết nối Q1 và E1 có mở khóa tính năng mới không?", "answer": "Có! Khi ghép nối, E1 và Q1 tăng số ngôn ngữ từ 51 lên 85 ngôn ngữ. Ngoài ra, Q1 cung cấp internet miễn phí tại gần 200 quốc gia, loại bỏ chi phí roaming." },
+            { "question": "Hai thiết bị có thể hoạt động độc lập không?", "answer": "Hoàn toàn có thể! Mỗi thiết bị đều dùng được độc lập. Ghép nối mang lại lợi ích thêm nhưng hoàn toàn tùy chọn." },
+            { "question": "Bộ hỗ trợ bao nhiêu ngôn ngữ?", "answer": "Bộ Q1 + E1 hỗ trợ 85 ngôn ngữ khi kết hợp, còn E1 đơn lẻ hỗ trợ 51 ngôn ngữ." },
+            { "question": "Bộ sản phẩm bao gồm những gì?", "answer": "Bộ gồm tai nghe Vasco E1 và máy dịch Q1 với SIM tích hợp cho internet miễn phí trọn đời. Kèm theo: cáp USB-C, dây đeo, hộp sạc tai nghe và tài liệu hướng dẫn." },
+            { "question": "Internet miễn phí cho dịch thuật có trong bộ không?", "answer": "Có! Vasco Translator Q1 có SIM tích hợp cung cấp internet miễn phí trọn đời cho dịch thuật tại gần 200 quốc gia." },
+            { "question": "Xem danh sách quốc gia có internet miễn phí ở đâu?", "answer": "Bạn có thể xem đầy đủ danh sách tại trang Bản đồ phủ sóng trên website Vasco." },
+            { "question": "Bộ Q1+E1 khác bộ V4+E1 thế nào?", "answer": "Bộ này có Q1 – máy dịch tiên tiến nhất với các tính năng độc quyền như nhân bản giọng nói và dịch cuộc gọi điện thoại. Khi ghép với E1, hỗ trợ 85 ngôn ngữ – nhiều nhất trên thị trường." }
+        ]
     },
     {
         "slug": "q1-mysticplum-e1",
@@ -464,7 +548,25 @@
         "image": "assets/images/products/425-medium_default/q1-mysticplum-e1.jpg",
         "excerpt": "Bộ sản phẩm hiện đại nhất với Internet miễn phí trọn đời cho việc dịch thuật.",
         "source_url": "/translators/q1-mysticplum-e1/",
-        "description": "<ul>\n<li>Mạnh mẽ hơn khi kết hợp: hỗ trợ 85 ngôn ngữ dịch giọng nói</li>\n<li>Dữ liệu miễn phí cho dịch thuật: truy cập trọn đời tại gần 200 quốc gia</li>\n<li>Tối đa 6 người có thể cùng tham gia hội thoại</li>\n<li>Tính năng bổ sung: công nghệ dịch ảnh, văn bản và nhân bản giọng nói</li>\n<li>Tính linh hoạt: chọn sử dụng riêng tai nghe hoặc bộ đầy đủ cùng Vasco Translator Q1</li>\n</ul>"
+        "description": "<ul>\n<li>Mạnh mẽ hơn khi kết hợp: hỗ trợ 85 ngôn ngữ dịch giọng nói</li>\n<li>Dữ liệu miễn phí cho dịch thuật: truy cập trọn đời tại gần 200 quốc gia</li>\n<li>Tối đa 6 người có thể cùng tham gia hội thoại</li>\n<li>Tính năng bổ sung: công nghệ dịch ảnh, văn bản và nhân bản giọng nói</li>\n<li>Tính linh hoạt: chọn sử dụng riêng tai nghe hoặc bộ đầy đủ cùng Vasco Translator Q1</li>\n</ul>",
+        "specs": [
+            { "name": "Loại sản phẩm", "value": "Bộ máy dịch + tai nghe dịch thuật" },
+            { "name": "[Tai nghe E1] Bluetooth", "value": "5.2" },
+            { "name": "[Tai nghe E1] Pin", "value": "70 mAh (tai nghe) + 400 mAh (hộp sạc)" },
+            { "name": "[Tai nghe E1] Cổng sạc", "value": "USB Type-C" },
+            { "name": "[Máy Q1] Màn hình", "value": "TFT 3.54 inch, 640x960, PPI 326, IPS, cảm ứng 5 điểm, 7H Panda" },
+            { "name": "[Máy Q1] RAM / ROM", "value": "3 GB / 32 GB" },
+            { "name": "[Máy Q1] Modem / WiFi", "value": "4G / 2.4G + 5G Dual Band" },
+            { "name": "[Máy Q1] Pin", "value": "2500 mAh" },
+            { "name": "[Máy Q1] Cổng kết nối", "value": "USB Type-C" },
+            { "name": "Ngôn ngữ khi kết hợp", "value": "85 ngôn ngữ dịch giọng nói" }
+        ],
+        "faq": [
+            { "question": "Kết nối Q1 và E1 có mở khóa tính năng mới không?", "answer": "Có! Khi ghép nối, E1 và Q1 tăng số ngôn ngữ từ 51 lên 85 ngôn ngữ. Ngoài ra, Q1 cung cấp internet miễn phí tại gần 200 quốc gia." },
+            { "question": "Hai thiết bị có thể hoạt động độc lập không?", "answer": "Hoàn toàn có thể! Mỗi thiết bị đều dùng được độc lập. Ghép nối mang lại lợi ích thêm nhưng hoàn toàn tùy chọn." },
+            { "question": "Bộ sản phẩm bao gồm những gì?", "answer": "Bộ gồm tai nghe Vasco E1 và máy dịch Q1 với SIM tích hợp. Kèm theo: cáp USB-C, dây đeo, hộp sạc tai nghe và tài liệu hướng dẫn." },
+            { "question": "Internet miễn phí cho dịch thuật có trong bộ không?", "answer": "Có! Vasco Translator Q1 có SIM tích hợp cung cấp internet miễn phí trọn đời tại gần 200 quốc gia." }
+        ]
     },
     {
         "slug": "q1-scarletpulse-e1",
@@ -475,7 +577,25 @@
         "image": "assets/images/products/427-medium_default/q1-scarletpulse-e1.jpg",
         "excerpt": "Bộ sản phẩm hiện đại nhất với Internet miễn phí trọn đời cho việc dịch thuật.",
         "source_url": "/translators/q1-scarletpulse-e1/",
-        "description": "<ul>\n<li>Mạnh mẽ hơn khi kết hợp: hỗ trợ 85 ngôn ngữ dịch giọng nói</li>\n<li>Dữ liệu miễn phí cho dịch thuật: truy cập trọn đời tại gần 200 quốc gia</li>\n<li>Tối đa 6 người có thể cùng tham gia hội thoại</li>\n<li>Tính năng bổ sung: công nghệ dịch ảnh, văn bản và nhân bản giọng nói</li>\n<li>Tính linh hoạt: chọn sử dụng riêng tai nghe hoặc bộ đầy đủ cùng Vasco Translator Q1</li>\n</ul>"
+        "description": "<ul>\n<li>Mạnh mẽ hơn khi kết hợp: hỗ trợ 85 ngôn ngữ dịch giọng nói</li>\n<li>Dữ liệu miễn phí cho dịch thuật: truy cập trọn đời tại gần 200 quốc gia</li>\n<li>Tối đa 6 người có thể cùng tham gia hội thoại</li>\n<li>Tính năng bổ sung: công nghệ dịch ảnh, văn bản và nhân bản giọng nói</li>\n<li>Tính linh hoạt: chọn sử dụng riêng tai nghe hoặc bộ đầy đủ cùng Vasco Translator Q1</li>\n</ul>",
+        "specs": [
+            { "name": "Loại sản phẩm", "value": "Bộ máy dịch + tai nghe dịch thuật" },
+            { "name": "[Tai nghe E1] Bluetooth", "value": "5.2" },
+            { "name": "[Tai nghe E1] Pin", "value": "70 mAh (tai nghe) + 400 mAh (hộp sạc)" },
+            { "name": "[Tai nghe E1] Cổng sạc", "value": "USB Type-C" },
+            { "name": "[Máy Q1] Màn hình", "value": "TFT 3.54 inch, 640x960, PPI 326, IPS, cảm ứng 5 điểm, 7H Panda" },
+            { "name": "[Máy Q1] RAM / ROM", "value": "3 GB / 32 GB" },
+            { "name": "[Máy Q1] Modem / WiFi", "value": "4G / 2.4G + 5G Dual Band" },
+            { "name": "[Máy Q1] Pin", "value": "2500 mAh" },
+            { "name": "[Máy Q1] Cổng kết nối", "value": "USB Type-C" },
+            { "name": "Ngôn ngữ khi kết hợp", "value": "85 ngôn ngữ dịch giọng nói" }
+        ],
+        "faq": [
+            { "question": "Kết nối Q1 và E1 có mở khóa tính năng mới không?", "answer": "Có! Khi ghép nối, E1 và Q1 tăng số ngôn ngữ từ 51 lên 85 ngôn ngữ. Ngoài ra, Q1 cung cấp internet miễn phí tại gần 200 quốc gia." },
+            { "question": "Hai thiết bị có thể hoạt động độc lập không?", "answer": "Hoàn toàn có thể! Mỗi thiết bị đều dùng được độc lập. Ghép nối mang lại lợi ích thêm nhưng hoàn toàn tùy chọn." },
+            { "question": "Bộ sản phẩm bao gồm những gì?", "answer": "Bộ gồm tai nghe Vasco E1 và máy dịch Q1 với SIM tích hợp. Kèm theo: cáp USB-C, dây đeo, hộp sạc tai nghe và tài liệu hướng dẫn." },
+            { "question": "Internet miễn phí cho dịch thuật có trong bộ không?", "answer": "Có! Vasco Translator Q1 có SIM tích hợp cung cấp internet miễn phí trọn đời tại gần 200 quốc gia." }
+        ]
     },
     {
         "slug": "v4-blackonyx-e1",
@@ -486,7 +606,33 @@
         "image": "assets/images/products/330-medium_default/v4-blackonyx-e1.jpg",
         "excerpt": "Bộ sản phẩm tối ưu cho dịch giọng nói, ảnh và giao tiếp đa ngôn ngữ.",
         "source_url": "/translators/v4-blackonyx-e1/",
-        "description": "<ul>\n<li>Nhiều ngôn ngữ hơn: 64 ngôn ngữ dịch giọng nói</li>\n<li>Kết nối miễn phí vĩnh viễn: Bạn có quyền truy cập Internet không giới hạn cho việc dịch thuật</li>\n<li>Số người dùng: Tối đa 6 người có thể cùng tham gia hội thoại</li>\n<li>Tính năng bổ sung: Dịch ảnh, văn bản và tin nhắn trò chuyện</li>\n<li>Tự do lựa chọn: Bạn có thể sử dụng tai nghe độc lập hoặc ghép nối với Vasco Translator V4</li>\n</ul>"
+        "description": "<ul>\n<li>Nhiều ngôn ngữ hơn: 64 ngôn ngữ dịch giọng nói</li>\n<li>Kết nối miễn phí vĩnh viễn: Bạn có quyền truy cập Internet không giới hạn cho việc dịch thuật</li>\n<li>Số người dùng: Tối đa 6 người có thể cùng tham gia hội thoại</li>\n<li>Tính năng bổ sung: Dịch ảnh, văn bản và tin nhắn trò chuyện</li>\n<li>Tự do lựa chọn: Bạn có thể sử dụng tai nghe độc lập hoặc ghép nối với Vasco Translator V4</li>\n</ul>",
+        "specs": [
+            { "name": "Loại sản phẩm", "value": "Bộ máy dịch + tai nghe dịch thuật" },
+            { "name": "[Tai nghe E1] Bluetooth", "value": "5.2" },
+            { "name": "[Tai nghe E1] Micro", "value": "2 micro trong mỗi tai nghe" },
+            { "name": "[Tai nghe E1] Loa", "value": "Dynamic Neodymium Iron Boron 117dBA" },
+            { "name": "[Tai nghe E1] Pin", "value": "70 mAh (tai nghe) + 400 mAh (hộp sạc)" },
+            { "name": "[Tai nghe E1] Cổng sạc", "value": "USB Type-C" },
+            { "name": "[Máy V4] Màn hình", "value": "5 inch, 576x1440" },
+            { "name": "[Máy V4] Bộ xử lý", "value": "Quad-core Mediatek" },
+            { "name": "[Máy V4] RAM", "value": "2 GB" },
+            { "name": "[Máy V4] ROM", "value": "32 GB" },
+            { "name": "[Máy V4] Modem", "value": "4G" },
+            { "name": "[Máy V4] WiFi", "value": "2.4 GHz" },
+            { "name": "[Máy V4] Pin", "value": "2400 mAh" },
+            { "name": "[Máy V4] Kích thước", "value": "5.87 x 2.17 x 0.39 in" },
+            { "name": "[Máy V4] Trọng lượng", "value": "0.3 lb (136 g)" },
+            { "name": "[Máy V4] Cổng tai nghe / Sạc", "value": "USB Type-C" },
+            { "name": "Ngôn ngữ khi kết hợp", "value": "64 ngôn ngữ dịch giọng nói" }
+        ],
+        "faq": [
+            { "question": "Tại sao nên mua bộ thay vì thiết bị đơn lẻ?", "answer": "Bộ tăng số ngôn ngữ từ 51 lên 64 ngôn ngữ, đồng thời cung cấp internet miễn phí tại gần 200 quốc gia – không lo phí roaming." },
+            { "question": "Lợi ích tính năng dịch không chạm là gì?", "answer": "Dịch không chạm cho phép trò chuyện tự nhiên mà không cần cầm thiết bị hay mở app. Thiết bị tự động nhận diện ngôn ngữ và dịch, giao tiếp liền mạch và trực quan." },
+            { "question": "Bộ có thực tế để dùng hàng ngày không?", "answer": "Có. E1 và V4 được thiết kế để thuận tiện tối đa. Bạn có thể ghép tai nghe với điện thoại hoặc với V4, tùy theo sở thích." },
+            { "question": "Bộ bao gồm những gì?", "answer": "Bộ gồm Vasco Translator V4 với SIM tích hợp cho internet miễn phí, bộ sạc, cáp USB-C và Vasco Translator E1 cùng hộp sạc." },
+            { "question": "Lợi ích của kết nối không giới hạn trong bộ là gì?", "answer": "Internet không giới hạn cho phép dịch thuật tại gần 200 quốc gia mà không tốn phí roaming, giao tiếp đa ngôn ngữ mọi nơi mọi lúc." }
+        ]
     },
     {
         "slug": "v4-cobaltblue-e1",
@@ -497,7 +643,33 @@
         "image": "assets/images/products/331-medium_default/v4-cobaltblue-e1.jpg",
         "excerpt": "Bộ sản phẩm tối ưu cho dịch giọng nói, ảnh và giao tiếp đa ngôn ngữ.",
         "source_url": "/translators/v4-cobaltblue-e1/",
-        "description": "<ul>\n<li>Nhiều ngôn ngữ hơn: 64 ngôn ngữ dịch giọng nói</li>\n<li>Kết nối miễn phí vĩnh viễn: Bạn có quyền truy cập Internet không giới hạn cho việc dịch thuật</li>\n<li>Số người dùng: Tối đa 6 người có thể cùng tham gia hội thoại</li>\n<li>Tính năng bổ sung: Dịch ảnh, văn bản và tin nhắn trò chuyện</li>\n<li>Tự do lựa chọn: Bạn có thể sử dụng tai nghe độc lập hoặc ghép nối với Vasco Translator V4</li>\n</ul>"
+        "description": "<ul>\n<li>Nhiều ngôn ngữ hơn: 64 ngôn ngữ dịch giọng nói</li>\n<li>Kết nối miễn phí vĩnh viễn: Bạn có quyền truy cập Internet không giới hạn cho việc dịch thuật</li>\n<li>Số người dùng: Tối đa 6 người có thể cùng tham gia hội thoại</li>\n<li>Tính năng bổ sung: Dịch ảnh, văn bản và tin nhắn trò chuyện</li>\n<li>Tự do lựa chọn: Bạn có thể sử dụng tai nghe độc lập hoặc ghép nối với Vasco Translator V4</li>\n</ul>",
+        "specs": [
+            { "name": "Loại sản phẩm", "value": "Bộ máy dịch + tai nghe dịch thuật" },
+            { "name": "[Tai nghe E1] Bluetooth", "value": "5.2" },
+            { "name": "[Tai nghe E1] Micro", "value": "2 micro trong mỗi tai nghe" },
+            { "name": "[Tai nghe E1] Loa", "value": "Dynamic Neodymium Iron Boron 117dBA" },
+            { "name": "[Tai nghe E1] Pin", "value": "70 mAh (tai nghe) + 400 mAh (hộp sạc)" },
+            { "name": "[Tai nghe E1] Cổng sạc", "value": "USB Type-C" },
+            { "name": "[Máy V4] Màn hình", "value": "5 inch, 576x1440" },
+            { "name": "[Máy V4] Bộ xử lý", "value": "Quad-core Mediatek" },
+            { "name": "[Máy V4] RAM", "value": "2 GB" },
+            { "name": "[Máy V4] ROM", "value": "32 GB" },
+            { "name": "[Máy V4] Modem", "value": "4G" },
+            { "name": "[Máy V4] WiFi", "value": "2.4 GHz" },
+            { "name": "[Máy V4] Pin", "value": "2400 mAh" },
+            { "name": "[Máy V4] Kích thước", "value": "5.87 x 2.17 x 0.39 in" },
+            { "name": "[Máy V4] Trọng lượng", "value": "0.3 lb (136 g)" },
+            { "name": "[Máy V4] Cổng tai nghe / Sạc", "value": "USB Type-C" },
+            { "name": "Ngôn ngữ khi kết hợp", "value": "64 ngôn ngữ dịch giọng nói" }
+        ],
+        "faq": [
+            { "question": "Tại sao nên mua bộ thay vì thiết bị đơn lẻ?", "answer": "Bộ tăng số ngôn ngữ từ 51 lên 64 ngôn ngữ, đồng thời cung cấp internet miễn phí tại gần 200 quốc gia – không lo phí roaming." },
+            { "question": "Lợi ích tính năng dịch không chạm là gì?", "answer": "Dịch không chạm cho phép trò chuyện tự nhiên mà không cần cầm thiết bị hay mở app. Thiết bị tự động nhận diện ngôn ngữ và dịch, giao tiếp liền mạch và trực quan." },
+            { "question": "Bộ có thực tế để dùng hàng ngày không?", "answer": "Có. E1 và V4 được thiết kế để thuận tiện tối đa. Bạn có thể ghép tai nghe với điện thoại hoặc với V4, tùy theo sở thích." },
+            { "question": "Bộ bao gồm những gì?", "answer": "Bộ gồm Vasco Translator V4 với SIM tích hợp cho internet miễn phí, bộ sạc, cáp USB-C và Vasco Translator E1 cùng hộp sạc." },
+            { "question": "Lợi ích của kết nối không giới hạn trong bộ là gì?", "answer": "Internet không giới hạn cho phép dịch thuật tại gần 200 quốc gia mà không tốn phí roaming, giao tiếp đa ngôn ngữ mọi nơi mọi lúc." }
+        ]
     },
     {
         "slug": "v4-pearlwhite-e1",
@@ -508,7 +680,33 @@
         "image": "assets/images/products/332-medium_default/v4-pearlwhite-e1.jpg",
         "excerpt": "Bộ sản phẩm tối ưu cho dịch giọng nói, ảnh và giao tiếp đa ngôn ngữ.",
         "source_url": "/translators/v4-pearlwhite-e1/",
-        "description": "<ul>\n<li>Nhiều ngôn ngữ hơn: 64 ngôn ngữ dịch giọng nói</li>\n<li>Kết nối miễn phí vĩnh viễn: Bạn có quyền truy cập Internet không giới hạn cho việc dịch thuật</li>\n<li>Số người dùng: Tối đa 6 người có thể cùng tham gia hội thoại</li>\n<li>Tính năng bổ sung: Dịch ảnh, văn bản và tin nhắn trò chuyện</li>\n<li>Tự do lựa chọn: Bạn có thể sử dụng tai nghe độc lập hoặc ghép nối với Vasco Translator V4</li>\n</ul>"
+        "description": "<ul>\n<li>Nhiều ngôn ngữ hơn: 64 ngôn ngữ dịch giọng nói</li>\n<li>Kết nối miễn phí vĩnh viễn: Bạn có quyền truy cập Internet không giới hạn cho việc dịch thuật</li>\n<li>Số người dùng: Tối đa 6 người có thể cùng tham gia hội thoại</li>\n<li>Tính năng bổ sung: Dịch ảnh, văn bản và tin nhắn trò chuyện</li>\n<li>Tự do lựa chọn: Bạn có thể sử dụng tai nghe độc lập hoặc ghép nối với Vasco Translator V4</li>\n</ul>",
+        "specs": [
+            { "name": "Loại sản phẩm", "value": "Bộ máy dịch + tai nghe dịch thuật" },
+            { "name": "[Tai nghe E1] Bluetooth", "value": "5.2" },
+            { "name": "[Tai nghe E1] Micro", "value": "2 micro trong mỗi tai nghe" },
+            { "name": "[Tai nghe E1] Loa", "value": "Dynamic Neodymium Iron Boron 117dBA" },
+            { "name": "[Tai nghe E1] Pin", "value": "70 mAh (tai nghe) + 400 mAh (hộp sạc)" },
+            { "name": "[Tai nghe E1] Cổng sạc", "value": "USB Type-C" },
+            { "name": "[Máy V4] Màn hình", "value": "5 inch, 576x1440" },
+            { "name": "[Máy V4] Bộ xử lý", "value": "Quad-core Mediatek" },
+            { "name": "[Máy V4] RAM", "value": "2 GB" },
+            { "name": "[Máy V4] ROM", "value": "32 GB" },
+            { "name": "[Máy V4] Modem", "value": "4G" },
+            { "name": "[Máy V4] WiFi", "value": "2.4 GHz" },
+            { "name": "[Máy V4] Pin", "value": "2400 mAh" },
+            { "name": "[Máy V4] Kích thước", "value": "5.87 x 2.17 x 0.39 in" },
+            { "name": "[Máy V4] Trọng lượng", "value": "0.3 lb (136 g)" },
+            { "name": "[Máy V4] Cổng tai nghe / Sạc", "value": "USB Type-C" },
+            { "name": "Ngôn ngữ khi kết hợp", "value": "64 ngôn ngữ dịch giọng nói" }
+        ],
+        "faq": [
+            { "question": "Tại sao nên mua bộ thay vì thiết bị đơn lẻ?", "answer": "Bộ tăng số ngôn ngữ từ 51 lên 64 ngôn ngữ, đồng thời cung cấp internet miễn phí tại gần 200 quốc gia – không lo phí roaming." },
+            { "question": "Lợi ích tính năng dịch không chạm là gì?", "answer": "Dịch không chạm cho phép trò chuyện tự nhiên mà không cần cầm thiết bị hay mở app. Thiết bị tự động nhận diện ngôn ngữ và dịch, giao tiếp liền mạch và trực quan." },
+            { "question": "Bộ có thực tế để dùng hàng ngày không?", "answer": "Có. E1 và V4 được thiết kế để thuận tiện tối đa. Bạn có thể ghép tai nghe với điện thoại hoặc với V4, tùy theo sở thích." },
+            { "question": "Bộ bao gồm những gì?", "answer": "Bộ gồm Vasco Translator V4 với SIM tích hợp cho internet miễn phí, bộ sạc, cáp USB-C và Vasco Translator E1 cùng hộp sạc." },
+            { "question": "Lợi ích của kết nối không giới hạn trong bộ là gì?", "answer": "Internet không giới hạn cho phép dịch thuật tại gần 200 quốc gia mà không tốn phí roaming, giao tiếp đa ngôn ngữ mọi nơi mọi lúc." }
+        ]
     },
     {
         "slug": "v4-rubyred-e1",
@@ -519,7 +717,33 @@
         "image": "assets/images/products/333-medium_default/v4-rubyred-e1.jpg",
         "excerpt": "Bộ sản phẩm tối ưu cho dịch giọng nói, ảnh và giao tiếp đa ngôn ngữ.",
         "source_url": "/translators/v4-rubyred-e1/",
-        "description": "<ul>\n<li>Nhiều ngôn ngữ hơn: 64 ngôn ngữ dịch giọng nói</li>\n<li>Kết nối miễn phí vĩnh viễn: Bạn có quyền truy cập Internet không giới hạn cho việc dịch thuật</li>\n<li>Số người dùng: Tối đa 6 người có thể cùng tham gia hội thoại</li>\n<li>Tính năng bổ sung: Dịch ảnh, văn bản và tin nhắn trò chuyện</li>\n<li>Tự do lựa chọn: Bạn có thể sử dụng tai nghe độc lập hoặc ghép nối với Vasco Translator V4</li>\n</ul>"
+        "description": "<ul>\n<li>Nhiều ngôn ngữ hơn: 64 ngôn ngữ dịch giọng nói</li>\n<li>Kết nối miễn phí vĩnh viễn: Bạn có quyền truy cập Internet không giới hạn cho việc dịch thuật</li>\n<li>Số người dùng: Tối đa 6 người có thể cùng tham gia hội thoại</li>\n<li>Tính năng bổ sung: Dịch ảnh, văn bản và tin nhắn trò chuyện</li>\n<li>Tự do lựa chọn: Bạn có thể sử dụng tai nghe độc lập hoặc ghép nối với Vasco Translator V4</li>\n</ul>",
+        "specs": [
+            { "name": "Loại sản phẩm", "value": "Bộ máy dịch + tai nghe dịch thuật" },
+            { "name": "[Tai nghe E1] Bluetooth", "value": "5.2" },
+            { "name": "[Tai nghe E1] Micro", "value": "2 micro trong mỗi tai nghe" },
+            { "name": "[Tai nghe E1] Loa", "value": "Dynamic Neodymium Iron Boron 117dBA" },
+            { "name": "[Tai nghe E1] Pin", "value": "70 mAh (tai nghe) + 400 mAh (hộp sạc)" },
+            { "name": "[Tai nghe E1] Cổng sạc", "value": "USB Type-C" },
+            { "name": "[Máy V4] Màn hình", "value": "5 inch, 576x1440" },
+            { "name": "[Máy V4] Bộ xử lý", "value": "Quad-core Mediatek" },
+            { "name": "[Máy V4] RAM", "value": "2 GB" },
+            { "name": "[Máy V4] ROM", "value": "32 GB" },
+            { "name": "[Máy V4] Modem", "value": "4G" },
+            { "name": "[Máy V4] WiFi", "value": "2.4 GHz" },
+            { "name": "[Máy V4] Pin", "value": "2400 mAh" },
+            { "name": "[Máy V4] Kích thước", "value": "5.87 x 2.17 x 0.39 in" },
+            { "name": "[Máy V4] Trọng lượng", "value": "0.3 lb (136 g)" },
+            { "name": "[Máy V4] Cổng tai nghe / Sạc", "value": "USB Type-C" },
+            { "name": "Ngôn ngữ khi kết hợp", "value": "64 ngôn ngữ dịch giọng nói" }
+        ],
+        "faq": [
+            { "question": "Tại sao nên mua bộ thay vì thiết bị đơn lẻ?", "answer": "Bộ tăng số ngôn ngữ từ 51 lên 64 ngôn ngữ, đồng thời cung cấp internet miễn phí tại gần 200 quốc gia – không lo phí roaming." },
+            { "question": "Lợi ích tính năng dịch không chạm là gì?", "answer": "Dịch không chạm cho phép trò chuyện tự nhiên mà không cần cầm thiết bị hay mở app. Thiết bị tự động nhận diện ngôn ngữ và dịch, giao tiếp liền mạch và trực quan." },
+            { "question": "Bộ có thực tế để dùng hàng ngày không?", "answer": "Có. E1 và V4 được thiết kế để thuận tiện tối đa. Bạn có thể ghép tai nghe với điện thoại hoặc với V4, tùy theo sở thích." },
+            { "question": "Bộ bao gồm những gì?", "answer": "Bộ gồm Vasco Translator V4 với SIM tích hợp cho internet miễn phí, bộ sạc, cáp USB-C và Vasco Translator E1 cùng hộp sạc." },
+            { "question": "Lợi ích của kết nối không giới hạn trong bộ là gì?", "answer": "Internet không giới hạn cho phép dịch thuật tại gần 200 quốc gia mà không tốn phí roaming, giao tiếp đa ngôn ngữ mọi nơi mọi lúc." }
+        ]
     },
     {
         "slug": "v4-stonegray-e1",
@@ -530,7 +754,33 @@
         "image": "assets/images/products/334-medium_default/v4-stonegray-e1.jpg",
         "excerpt": "Bộ sản phẩm tối ưu cho dịch giọng nói, ảnh và giao tiếp đa ngôn ngữ.",
         "source_url": "/translators/v4-stonegray-e1/",
-        "description": "<ul>\n<li>Nhiều ngôn ngữ hơn: 64 ngôn ngữ dịch giọng nói</li>\n<li>Kết nối miễn phí vĩnh viễn: Bạn có quyền truy cập Internet không giới hạn cho việc dịch thuật</li>\n<li>Số người dùng: Tối đa 6 người có thể cùng tham gia hội thoại</li>\n<li>Tính năng bổ sung: Dịch ảnh, văn bản và tin nhắn trò chuyện</li>\n<li>Tự do lựa chọn: Bạn có thể sử dụng tai nghe độc lập hoặc ghép nối với Vasco Translator V4</li>\n</ul>"
+        "description": "<ul>\n<li>Nhiều ngôn ngữ hơn: 64 ngôn ngữ dịch giọng nói</li>\n<li>Kết nối miễn phí vĩnh viễn: Bạn có quyền truy cập Internet không giới hạn cho việc dịch thuật</li>\n<li>Số người dùng: Tối đa 6 người có thể cùng tham gia hội thoại</li>\n<li>Tính năng bổ sung: Dịch ảnh, văn bản và tin nhắn trò chuyện</li>\n<li>Tự do lựa chọn: Bạn có thể sử dụng tai nghe độc lập hoặc ghép nối với Vasco Translator V4</li>\n</ul>",
+        "specs": [
+            { "name": "Loại sản phẩm", "value": "Bộ máy dịch + tai nghe dịch thuật" },
+            { "name": "[Tai nghe E1] Bluetooth", "value": "5.2" },
+            { "name": "[Tai nghe E1] Micro", "value": "2 micro trong mỗi tai nghe" },
+            { "name": "[Tai nghe E1] Loa", "value": "Dynamic Neodymium Iron Boron 117dBA" },
+            { "name": "[Tai nghe E1] Pin", "value": "70 mAh (tai nghe) + 400 mAh (hộp sạc)" },
+            { "name": "[Tai nghe E1] Cổng sạc", "value": "USB Type-C" },
+            { "name": "[Máy V4] Màn hình", "value": "5 inch, 576x1440" },
+            { "name": "[Máy V4] Bộ xử lý", "value": "Quad-core Mediatek" },
+            { "name": "[Máy V4] RAM", "value": "2 GB" },
+            { "name": "[Máy V4] ROM", "value": "32 GB" },
+            { "name": "[Máy V4] Modem", "value": "4G" },
+            { "name": "[Máy V4] WiFi", "value": "2.4 GHz" },
+            { "name": "[Máy V4] Pin", "value": "2400 mAh" },
+            { "name": "[Máy V4] Kích thước", "value": "5.87 x 2.17 x 0.39 in" },
+            { "name": "[Máy V4] Trọng lượng", "value": "0.3 lb (136 g)" },
+            { "name": "[Máy V4] Cổng tai nghe / Sạc", "value": "USB Type-C" },
+            { "name": "Ngôn ngữ khi kết hợp", "value": "64 ngôn ngữ dịch giọng nói" }
+        ],
+        "faq": [
+            { "question": "Tại sao nên mua bộ thay vì thiết bị đơn lẻ?", "answer": "Bộ tăng số ngôn ngữ từ 51 lên 64 ngôn ngữ, đồng thời cung cấp internet miễn phí tại gần 200 quốc gia – không lo phí roaming." },
+            { "question": "Lợi ích tính năng dịch không chạm là gì?", "answer": "Dịch không chạm cho phép trò chuyện tự nhiên mà không cần cầm thiết bị hay mở app. Thiết bị tự động nhận diện ngôn ngữ và dịch, giao tiếp liền mạch và trực quan." },
+            { "question": "Bộ có thực tế để dùng hàng ngày không?", "answer": "Có. E1 và V4 được thiết kế để thuận tiện tối đa. Bạn có thể ghép tai nghe với điện thoại hoặc với V4, tùy theo sở thích." },
+            { "question": "Bộ bao gồm những gì?", "answer": "Bộ gồm Vasco Translator V4 với SIM tích hợp cho internet miễn phí, bộ sạc, cáp USB-C và Vasco Translator E1 cùng hộp sạc." },
+            { "question": "Lợi ích của kết nối không giới hạn trong bộ là gì?", "answer": "Internet không giới hạn cho phép dịch thuật tại gần 200 quốc gia mà không tốn phí roaming, giao tiếp đa ngôn ngữ mọi nơi mọi lúc." }
+        ]
     },
     {
         "slug": "tempered-glass-q1",
@@ -541,7 +791,23 @@
         "image": "assets/images/products/381-medium_default/tempered-glass-q1.jpg",
         "excerpt": "Kính cường lực dành cho Vasco Translator Q1.",
         "source_url": "/accessories/tempered-glass-q1/",
-        "description": "<ul>\n<li>Bảo vệ đẳng cấp cao nhất: độ cứng 9H, chống trầy xước từ chìa khóa hay tiền xu trong túi.</li>\n<li>Không dấu vân tay: lớp phủ chống dầu giữ màn hình trong suốt như pha lê.</li>\n<li>Siêu mỏng, siêu nhạy: độ dày chỉ 0.33 mm, giữ nguyên độ nhạy cảm ứng gốc.</li>\n<li>Lắp đặt dễ dàng: dán trong 60 giây, không bong bóng khí, đi kèm khăn lau mềm.</li>\n<li>Công nghệ cao cấp 6 lớp: kính AGC, lớp phủ chống dầu, màng PET và các lớp kết dính tiên tiến.</li>\n<li>Kính cường lực cong 3D: vừa khít hoàn hảo từ mép đến mép.</li>\n<li>Trong hộp: miếng dán kính cường lực, khăn lau mềm, bộ nhãn dán loại bỏ bụi và hướng dẫn lắp đặt.</li>\n</ul>"
+        "description": "<ul>\n<li>Bảo vệ đẳng cấp cao nhất: độ cứng 9H, chống trầy xước từ chìa khóa hay tiền xu trong túi.</li>\n<li>Không dấu vân tay: lớp phủ chống dầu giữ màn hình trong suốt như pha lê.</li>\n<li>Siêu mỏng, siêu nhạy: độ dày chỉ 0.33 mm, giữ nguyên độ nhạy cảm ứng gốc.</li>\n<li>Lắp đặt dễ dàng: dán trong 60 giây, không bong bóng khí, đi kèm khăn lau mềm.</li>\n<li>Công nghệ cao cấp 6 lớp: kính AGC, lớp phủ chống dầu, màng PET và các lớp kết dính tiên tiến.</li>\n<li>Kính cường lực cong 3D: vừa khít hoàn hảo từ mép đến mép.</li>\n<li>Trong hộp: miếng dán kính cường lực, khăn lau mềm, bộ nhãn dán loại bỏ bụi và hướng dẫn lắp đặt.</li>\n</ul>",
+        "specs": [
+            { "name": "Tương thích", "value": "Vasco Translator Q1" },
+            { "name": "Độ cứng", "value": "9H" },
+            { "name": "Độ dày", "value": "0.33 mm" },
+            { "name": "Chất liệu", "value": "Kính cường lực AGC" },
+            { "name": "Lớp phủ", "value": "Chống dầu, chống vân tay" },
+            { "name": "Thiết kế", "value": "Kính cong 3D vừa khít mép đến mép" },
+            { "name": "Cài đặt", "value": "Tự dán trong 60 giây, không bong bóng" },
+            { "name": "Công nghệ", "value": "6 lớp bảo vệ tiên tiến" }
+        ],
+        "faq": [
+            { "question": "Kính có vừa khít máy Q1 không?", "answer": "Có. Miếng kính được thiết kế riêng cho Vasco Translator Q1, vừa khít hoàn hảo từ mép đến mép." },
+            { "question": "Độ cứng 9H nghĩa là gì?", "answer": "9H là độ cứng cao nhất trên thang đo bút chì, gần như không thể bị trầy xước bởi chìa khóa hay tiền xu." },
+            { "question": "Kính có ảnh hưởng đến độ nhạy cảm ứng không?", "answer": "Không. Với độ dày chỉ 0.33 mm, kính giữ nguyên hoàn toàn độ nhạy cảm ứng gốc của thiết bị." },
+            { "question": "Lắp đặt có khó không?", "answer": "Rất dễ dàng. Bộ sản phẩm đi kèm hướng dẫn từng bước, khăn lau và nhãn dán loại bỏ bụi – hoàn tất trong 60 giây mà không có bong bóng khí." }
+        ]
     },
     {
         "slug": "tempered-glass-m4",
@@ -552,7 +818,22 @@
         "image": "assets/images/products/484-medium_default/tempered-glass-m4.jpg",
         "excerpt": "Kính cường lực dành cho Vasco Translator M4.",
         "source_url": "/accessories/tempered-glass-m4/",
-        "description": "<ul>\n<li>Bảo vệ đáng tin cậy hàng ngày: độ cứng 9H, chịu được va chạm bất ngờ.</li>\n<li>Sự tiện lợi hoàn toàn: độ mỏng chỉ 0.33 mm, giữ nguyên độ nhạy cảm ứng.</li>\n<li>Vẻ ngoài hoàn hảo: lớp phủ chống dầu giảm dấu vân tay và vết bẩn.</li>\n<li>Vừa khít hoàn hảo: kính cong 3D, cạnh nhẵn hòa hợp với thiết bị.</li>\n<li>Công nghệ cao cấp 6 lớp: kính cường lực, lớp phủ chống dầu, màng PET và lớp kết dính tiên tiến.</li>\n<li>Lắp đặt dễ dàng: không cần kinh nghiệm trước, không bong bóng khí.</li>\n<li>Trong hộp: miếng dán kính cường lực, khăn lau mềm, bộ nhãn dán loại bỏ bụi và hướng dẫn lắp đặt.</li>\n</ul>"
+        "description": "<ul>\n<li>Bảo vệ đáng tin cậy hàng ngày: độ cứng 9H, chịu được va chạm bất ngờ.</li>\n<li>Sự tiện lợi hoàn toàn: độ mỏng chỉ 0.33 mm, giữ nguyên độ nhạy cảm ứng.</li>\n<li>Vẻ ngoài hoàn hảo: lớp phủ chống dầu giảm dấu vân tay và vết bẩn.</li>\n<li>Vừa khít hoàn hảo: kính cong 3D, cạnh nhẵn hòa hợp với thiết bị.</li>\n<li>Công nghệ cao cấp 6 lớp: kính cường lực, lớp phủ chống dầu, màng PET và lớp kết dính tiên tiến.</li>\n<li>Lắp đặt dễ dàng: không cần kinh nghiệm trước, không bong bóng khí.</li>\n<li>Trong hộp: miếng dán kính cường lực, khăn lau mềm, bộ nhãn dán loại bỏ bụi và hướng dẫn lắp đặt.</li>\n</ul>",
+        "specs": [
+            { "name": "Tương thích", "value": "Vasco Translator M4" },
+            { "name": "Độ cứng", "value": "9H" },
+            { "name": "Độ dày", "value": "0.33 mm" },
+            { "name": "Chất liệu", "value": "Kính cường lực" },
+            { "name": "Lớp phủ", "value": "Chống dầu, chống vân tay" },
+            { "name": "Thiết kế", "value": "Kính cong 3D, cạnh nhẵn" },
+            { "name": "Cài đặt", "value": "Không cần kinh nghiệm, không bong bóng" },
+            { "name": "Công nghệ", "value": "6 lớp bảo vệ tiên tiến" }
+        ],
+        "faq": [
+            { "question": "Kính có vừa khít máy M4 không?", "answer": "Có. Miếng kính được thiết kế riêng cho Vasco Translator M4, vừa khít hoàn hảo." },
+            { "question": "Kính có ảnh hưởng đến độ nhạy cảm ứng không?", "answer": "Không. Với độ dày 0.33 mm, kính giữ nguyên hoàn toàn độ nhạy cảm ứng gốc." },
+            { "question": "Lắp đặt có khó không?", "answer": "Rất dễ. Không cần kinh nghiệm, đi kèm hướng dẫn chi tiết và dụng cụ lắp đặt. Kết quả không có bong bóng khí." }
+        ]
     },
     {
         "slug": "tempered-glass-v4",
@@ -563,7 +844,21 @@
         "image": "assets/images/products/287-medium_default/tempered-glass-v4.jpg",
         "excerpt": "Kính cường lực dành cho Vasco Translator V4.",
         "source_url": "/accessories/tempered-glass-v4/",
-        "description": "<ul>\n<li>Khả năng chống trầy xước tối đa: độ cứng bề mặt 9H, gần như không thể bị trầy xước.</li>\n<li>Chống dấu vân tay và vết bẩn: đẩy lùi dầu từ dấu vân tay, dễ dàng lau sạch.</li>\n<li>Trải nghiệm liền mạch: độ mỏng chỉ 0.33 mm, tương thích hoàn toàn với độ nhạy cảm ứng.</li>\n<li>Lắp đặt dễ dàng: dán nhanh chóng và sạch sẽ, không để lại vết dính.</li>\n<li>Công nghệ bảo vệ 6 lớp tiên tiến: lớp silicon bền chắc, màng PET và lớp màng tách chuyên dụng.</li>\n<li>Trong hộp: kính cường lực, khăn lau mềm dùng cho vệ sinh khô và ướt, bộ nhãn dán loại bỏ bụi.</li>\n</ul>"
+        "description": "<ul>\n<li>Khả năng chống trầy xước tối đa: độ cứng bề mặt 9H, gần như không thể bị trầy xước.</li>\n<li>Chống dấu vân tay và vết bẩn: đẩy lùi dầu từ dấu vân tay, dễ dàng lau sạch.</li>\n<li>Trải nghiệm liền mạch: độ mỏng chỉ 0.33 mm, tương thích hoàn toàn với độ nhạy cảm ứng.</li>\n<li>Lắp đặt dễ dàng: dán nhanh chóng và sạch sẽ, không để lại vết dính.</li>\n<li>Công nghệ bảo vệ 6 lớp tiên tiến: lớp silicon bền chắc, màng PET và lớp màng tách chuyên dụng.</li>\n<li>Trong hộp: kính cường lực, khăn lau mềm dùng cho vệ sinh khô và ướt, bộ nhãn dán loại bỏ bụi.</li>\n</ul>",
+        "specs": [
+            { "name": "Tương thích", "value": "Vasco Translator V4" },
+            { "name": "Độ cứng", "value": "9H" },
+            { "name": "Độ dày", "value": "0.33 mm" },
+            { "name": "Chất liệu", "value": "Kính cường lực silicon" },
+            { "name": "Lớp phủ", "value": "Chống dầu, chống vân tay" },
+            { "name": "Cài đặt", "value": "Dán nhanh, không để lại vết dính" },
+            { "name": "Công nghệ", "value": "6 lớp bảo vệ tiên tiến" }
+        ],
+        "faq": [
+            { "question": "Kính có vừa khít màn hình V4 không?", "answer": "Có. Thiết kế chuyên biệt cho Vasco Translator V4, phủ đầy màn hình." },
+            { "question": "Kính có ảnh hưởng đến độ nhạy cảm ứng không?", "answer": "Không. Với độ dày 0.33 mm, kính tương thích hoàn toàn với độ nhạy cảm ứng gốc." },
+            { "question": "Lắp đặt có khó không?", "answer": "Không. Dán nhanh và sạch sẽ, đi kèm khăn lau và nhãn dán loại bỏ bụi." }
+        ]
     },
     {
         "slug": "light-case-for-vasco-translator-q1",
@@ -574,7 +869,19 @@
         "image": "assets/images/products/466-medium_default/light-case-for-vasco-translator-q1.jpg",
         "excerpt": "Bao da nhẹ dành cho Vasco Translator Q1.",
         "source_url": "/accessories/light-case-for-vasco-translator-q1/",
-        "description": "<ul>\n<li>Máy dịch luôn được bảo vệ: độ vừa khít hoàn hảo, bảo vệ khỏi trầy xước và va rơi bất ngờ.</li>\n<li>Thiết kế tối giản: vật liệu chống trượt đảm bảo độ bám chắc chắn.</li>\n<li>Cấu trúc linh hoạt nhưng bền chắc: hấp thụ va đập, bảo vệ thiết bị khỏi trầy xước.</li>\n<li>Truy cập ngay lập tức: các lỗ cắt chính xác cho mọi nút và cổng sạc, không cần tháo túi đựng.</li>\n<li>Có sẵn trong 3 màu khác nhau: Đen Tuyền, Caramel Đậm và Trắng Sữa.</li>\n</ul>"
+        "description": "<ul>\n<li>Máy dịch luôn được bảo vệ: độ vừa khít hoàn hảo, bảo vệ khỏi trầy xước và va rơi bất ngờ.</li>\n<li>Thiết kế tối giản: vật liệu chống trượt đảm bảo độ bám chắc chắn.</li>\n<li>Cấu trúc linh hoạt nhưng bền chắc: hấp thụ va đập, bảo vệ thiết bị khỏi trầy xước.</li>\n<li>Truy cập ngay lập tức: các lỗ cắt chính xác cho mọi nút và cổng sạc, không cần tháo túi đựng.</li>\n<li>Có sẵn trong 3 màu khác nhau: Đen Tuyền, Caramel Đậm và Trắng Sữa.</li>\n</ul>",
+        "specs": [
+            { "name": "Tương thích", "value": "Vasco Translator Q1" },
+            { "name": "Chất liệu", "value": "Cao su linh hoạt, chống trượt" },
+            { "name": "Màu sắc", "value": "Đen Tuyền, Caramel Đậm, Trắng Sữa" },
+            { "name": "Lỗ cắt", "value": "Chính xác cho tất cả nút và cổng sạc" },
+            { "name": "Bảo vệ", "value": "Chống trầy xước và va đập nhẹ" }
+        ],
+        "faq": [
+            { "question": "Túi có vừa khít máy Q1 không?", "answer": "Có. Thiết kế riêng cho Vasco Translator Q1, vừa khít hoàn hảo bảo vệ toàn bộ thiết bị." },
+            { "question": "Tôi có thể sạc máy khi đang trong túi không?", "answer": "Có. Các lỗ cắt chính xác cho phép cắm cáp sạc và sử dụng các nút mà không cần tháo túi." },
+            { "question": "Có những màu nào?", "answer": "Túi có sẵn 3 màu: Đen Tuyền, Caramel Đậm và Trắng Sữa." }
+        ]
     },
     {
         "slug": "light-case-for-vasco-translator-m4",
@@ -585,7 +892,17 @@
         "image": "assets/images/products/524-medium_default/light-case-for-vasco-translator-m4.jpg",
         "excerpt": "Bao da nhẹ dành cho Vasco Translator M4.",
         "source_url": "/accessories/light-case-for-vasco-translator-m4/",
-        "description": "<ul>\n<li>Máy dịch luôn được bảo vệ: độ vừa khít hoàn hảo, bảo vệ khỏi trầy xước và va rơi bất ngờ.</li>\n<li>Thiết kế tối giản: vật liệu chống trượt đảm bảo độ bám chắc chắn.</li>\n<li>Cấu trúc linh hoạt nhưng bền chắc: hấp thụ va đập, giữ vẻ ngoài thanh lịch qua nhiều năm.</li>\n<li>Truy cập ngay lập tức: các lỗ cắt chính xác cho mọi nút và cổng sạc.</li>\n</ul>"
+        "description": "<ul>\n<li>Máy dịch luôn được bảo vệ: độ vừa khít hoàn hảo, bảo vệ khỏi trầy xước và va rơi bất ngờ.</li>\n<li>Thiết kế tối giản: vật liệu chống trượt đảm bảo độ bám chắc chắn.</li>\n<li>Cấu trúc linh hoạt nhưng bền chắc: hấp thụ va đập, giữ vẻ ngoài thanh lịch qua nhiều năm.</li>\n<li>Truy cập ngay lập tức: các lỗ cắt chính xác cho mọi nút và cổng sạc.</li>\n</ul>",
+        "specs": [
+            { "name": "Tương thích", "value": "Vasco Translator M4" },
+            { "name": "Chất liệu", "value": "Cao su linh hoạt, chống trượt" },
+            { "name": "Lỗ cắt", "value": "Chính xác cho tất cả nút và cổng sạc" },
+            { "name": "Bảo vệ", "value": "Chống trầy xước và va đập nhẹ" }
+        ],
+        "faq": [
+            { "question": "Túi có vừa khít máy M4 không?", "answer": "Có. Thiết kế riêng cho Vasco Translator M4, vừa khít hoàn hảo." },
+            { "question": "Tôi có thể sạc máy khi đang trong túi không?", "answer": "Có. Lỗ cắt chính xác cho phép cắm cáp sạc và dùng tất cả nút mà không cần tháo túi." }
+        ]
     },
     {
         "slug": "case-for-vasco-translator-q1",
@@ -596,7 +913,18 @@
         "image": "assets/images/products/438-medium_default/case-for-vasco-translator-q1.jpg",
         "excerpt": "Bao da bảo vệ dành cho Vasco Translator Q1.",
         "source_url": "/accessories/case-for-vasco-translator-q1/",
-        "description": "<ul>\n<li>Luôn sẵn sàng kết nối, luôn được bảo vệ: độ vừa khít hoàn hảo, vẻ ngoài thanh lịch, tối giản.</li>\n<li>Khóa kéo: cho phép truy cập nhanh, bảo vệ trước va đập bất ngờ.</li>\n<li>Nhỏ gọn nhưng thực tế: có thể chứa thêm các vật dụng nhỏ.</li>\n</ul>"
+        "description": "<ul>\n<li>Luôn sẵn sàng kết nối, luôn được bảo vệ: độ vừa khít hoàn hảo, vẻ ngoài thanh lịch, tối giản.</li>\n<li>Khóa kéo: cho phép truy cập nhanh, bảo vệ trước va đập bất ngờ.</li>\n<li>Nhỏ gọn nhưng thực tế: có thể chứa thêm các vật dụng nhỏ.</li>\n</ul>",
+        "specs": [
+            { "name": "Tương thích", "value": "Vasco Translator Q1" },
+            { "name": "Trọng lượng", "value": "0.19 oz" },
+            { "name": "Kích thước", "value": "6.5 x 3.35 in (165.1 x 85.1 mm)" },
+            { "name": "Chất liệu", "value": "Nhựa" },
+            { "name": "Đóng mở", "value": "Khóa kéo" }
+        ],
+        "faq": [
+            { "question": "Túi có đủ chỗ cho những thứ khác không?", "answer": "Có. Túi đủ lớn để chứa thêm các vật dụng nhỏ cùng với máy dịch." },
+            { "question": "Túi có bảo vệ được khi rơi không?", "answer": "Túi cung cấp lớp bảo vệ chắc chắn với khóa kéo, bảo vệ máy khỏi va đập và trầy xước." }
+        ]
     },
     {
         "slug": "case-for-vasco-translator-m4",
@@ -607,7 +935,18 @@
         "image": "assets/images/products/455-medium_default/case-for-vasco-translator-m4.jpg",
         "excerpt": "Bao da bảo vệ dành cho Vasco Translator M4.",
         "source_url": "/accessories/case-for-vasco-translator-m4/",
-        "description": "<ul>\n<li>Luôn sẵn sàng kết nối, luôn được bảo vệ: độ vừa khít hoàn hảo, vẻ ngoài thanh lịch, tối giản.</li>\n<li>Khóa kéo: cho phép truy cập nhanh, bảo vệ trước va đập bất ngờ.</li>\n<li>Nhỏ gọn nhưng thực tế: có thể chứa thêm các vật dụng nhỏ.</li>\n</ul>"
+        "description": "<ul>\n<li>Luôn sẵn sàng kết nối, luôn được bảo vệ: độ vừa khít hoàn hảo, vẻ ngoài thanh lịch, tối giản.</li>\n<li>Khóa kéo: cho phép truy cập nhanh, bảo vệ trước va đập bất ngờ.</li>\n<li>Nhỏ gọn nhưng thực tế: có thể chứa thêm các vật dụng nhỏ.</li>\n</ul>",
+        "specs": [
+            { "name": "Tương thích", "value": "Vasco Translator M4" },
+            { "name": "Trọng lượng", "value": "3.2 oz (91 g)" },
+            { "name": "Kích thước", "value": "6.5 x 3.3 in (165.1 x 83.8 mm)" },
+            { "name": "Chất liệu", "value": "Nhựa" },
+            { "name": "Đóng mở", "value": "Khóa kéo" }
+        ],
+        "faq": [
+            { "question": "Túi có đủ chỗ cho những thứ khác không?", "answer": "Có. Túi đủ lớn để chứa thêm các vật dụng nhỏ cùng với máy dịch M4." },
+            { "question": "Túi có bảo vệ được khi rơi không?", "answer": "Túi cung cấp lớp bảo vệ chắc chắn với khóa kéo, bảo vệ máy khỏi va đập và trầy xước." }
+        ]
     },
     {
         "slug": "case-for-vasco-translator-v4",
@@ -618,7 +957,18 @@
         "image": "assets/images/products/518-medium_default/case-for-vasco-translator-v4.jpg",
         "excerpt": "Bao da bảo vệ dành cho Vasco Translator V4.",
         "source_url": "/accessories/case-for-vasco-translator-v4/",
-        "description": "<ul>\n<li>Túi đựng chắc chắn cho mọi tình huống: vật liệu chắc chắn, chống trầy xước.</li>\n<li>Tay kéo khóa: truy cập Vasco của bạn nhanh chóng và dễ dàng.</li>\n<li>Vừa khít và bảo vệ hoàn hảo: thêm một lớp bảo vệ cho thiết bị dịch của bạn.</li>\n<li>Cũng dùng để cất giữ các vật dụng nhỏ.</li>\n</ul>"
+        "description": "<ul>\n<li>Túi đựng chắc chắn cho mọi tình huống: vật liệu chắc chắn, chống trầy xước.</li>\n<li>Tay kéo khóa: truy cập Vasco của bạn nhanh chóng và dễ dàng.</li>\n<li>Vừa khít và bảo vệ hoàn hảo: thêm một lớp bảo vệ cho thiết bị dịch của bạn.</li>\n<li>Cũng dùng để cất giữ các vật dụng nhỏ.</li>\n</ul>",
+        "specs": [
+            { "name": "Tương thích", "value": "Vasco Translator V4" },
+            { "name": "Trọng lượng", "value": "100 g" },
+            { "name": "Kích thước", "value": "180 x 90 x 40 mm" },
+            { "name": "Chất liệu", "value": "Nhựa" },
+            { "name": "Đóng mở", "value": "Khóa kéo" }
+        ],
+        "faq": [
+            { "question": "Túi có đủ chỗ cho những thứ khác không?", "answer": "Có. Túi đủ lớn để cất giữ các vật dụng nhỏ cùng với máy dịch V4." },
+            { "question": "Túi có bảo vệ được khi rơi không?", "answer": "Túi cung cấp lớp bảo vệ bổ sung với khóa kéo và chất liệu nhựa bền chắc." }
+        ]
     },
     {
         "slug": "power-adapter-us",
@@ -629,7 +979,24 @@
         "image": "assets/images/products/449-medium_default/power-adapter-us.jpg",
         "excerpt": "Bộ sạc chuẩn US dùng cho thiết bị Vasco.",
         "source_url": "/accessories/power-adapter-us/",
-        "description": "<ul>\n<li>Sạc nhanh, tiện lợi: giữ máy dịch Vasco luôn được sạc đầy và sẵn sàng qua cổng USB-C.</li>\n<li>Thiết kế nhỏ gọn: vừa hoàn hảo trong túi du lịch hoặc cặp công tác, kiểu dáng tối giản màu trắng.</li>\n<li>An toàn và đáng tin cậy: tích hợp bảo vệ chống quá nhiệt và đoản mạch.</li>\n<li>Đa năng: cũng cấp điện cho các thiết bị USB-C tương thích khác ngoài máy dịch Vasco.</li>\n</ul>"
+        "description": "<ul>\n<li>Sạc nhanh, tiện lợi: giữ máy dịch Vasco luôn được sạc đầy và sẵn sàng qua cổng USB-C.</li>\n<li>Thiết kế nhỏ gọn: vừa hoàn hảo trong túi du lịch hoặc cặp công tác, kiểu dáng tối giản màu trắng.</li>\n<li>An toàn và đáng tin cậy: tích hợp bảo vệ chống quá nhiệt và đoản mạch.</li>\n<li>Đa năng: cũng cấp điện cho các thiết bị USB-C tương thích khác ngoài máy dịch Vasco.</li>\n</ul>",
+        "specs": [
+            { "name": "Màu sắc", "value": "Trắng" },
+            { "name": "Tương thích", "value": "Tất cả máy dịch Vasco và thiết bị USB-C" },
+            { "name": "Loại cổng", "value": "USB-C" },
+            { "name": "Kích thước", "value": "2.6 x 1.6 x 0.6 in" },
+            { "name": "Trọng lượng", "value": "1.7 oz (48 g, không kèm cáp)" },
+            { "name": "Điện áp đầu vào", "value": "100–240 V" },
+            { "name": "Điện áp đầu ra", "value": "5V / 9V / 12V" },
+            { "name": "Dòng điện đầu ra", "value": "1.67A / 2.22A / 3A" },
+            { "name": "Bảo vệ", "value": "Chống quá nhiệt và đoản mạch" },
+            { "name": "Chuẩn phích cắm", "value": "US (phích cắm 2 chấu dẹt)" }
+        ],
+        "faq": [
+            { "question": "Bộ sạc có tương thích với tất cả máy dịch Vasco không?", "answer": "Có. Bộ sạc tương thích với tất cả máy dịch Vasco có cổng USB-C và cả các thiết bị USB-C khác." },
+            { "question": "Có thể dùng ở nước ngoài không?", "answer": "Có. Điện áp đầu vào 100-240V tương thích với hệ thống điện tại hầu hết các quốc gia. Lưu ý cần adapter đổi đầu phích cắm nếu dùng ngoài Mỹ." },
+            { "question": "Bộ sạc có an toàn không?", "answer": "Có. Tích hợp bảo vệ chống quá nhiệt và đoản mạch, đảm bảo an toàn cho thiết bị và người dùng." }
+        ]
     },
     {
         "slug": "call-translator",
@@ -640,6 +1007,21 @@
         "image": "assets/img/q1/call_translator_placeholder.webp",
         "excerpt": "Gói nạp thêm cho tính năng Dịch Cuộc Gọi Điện Thoại.",
         "source_url": "/call-translator/",
-        "description": "<ul>\n<li>Dịch cuộc gọi thời gian thực: hiểu hơn 50 ngôn ngữ ngay trong cuộc gọi điện thoại trên Vasco Translator Q1.</li>\n<li>160 quốc gia bạn có thể kết nối.</li>\n<li>53 ngôn ngữ được hỗ trợ bởi tính năng Dịch cuộc gọi.</li>\n<li>42 mã quốc gia cho phép sử dụng tính năng này.</li>\n<li>99% độ chính xác dịch thuật.</li>\n<li>Cả hai người trò chuyện đều nhận được bản dịch theo thời gian thực.</li>\n<li>Gói nạp thêm bổ sung phút gọi cho tính năng Dịch cuộc gọi điện thoại.</li>\n</ul>"
+        "description": "<ul>\n<li>Dịch cuộc gọi thời gian thực: hiểu hơn 50 ngôn ngữ ngay trong cuộc gọi điện thoại trên Vasco Translator Q1.</li>\n<li>160 quốc gia bạn có thể kết nối.</li>\n<li>53 ngôn ngữ được hỗ trợ bởi tính năng Dịch cuộc gọi.</li>\n<li>42 mã quốc gia cho phép sử dụng tính năng này.</li>\n<li>99% độ chính xác dịch thuật.</li>\n<li>Cả hai người trò chuyện đều nhận được bản dịch theo thời gian thực.</li>\n<li>Gói nạp thêm bổ sung phút gọi cho tính năng Dịch cuộc gọi điện thoại.</li>\n</ul>",
+        "specs": [
+            { "name": "Tương thích", "value": "Vasco Translator Q1 (bắt buộc)" },
+            { "name": "Ngôn ngữ hỗ trợ", "value": "53 ngôn ngữ" },
+            { "name": "Quốc gia kết nối", "value": "160 quốc gia" },
+            { "name": "Mã quốc gia sử dụng được", "value": "42 mã" },
+            { "name": "Độ chính xác", "value": "99%" },
+            { "name": "Loại dịch", "value": "Dịch cuộc gọi thời gian thực (cả 2 chiều)" },
+            { "name": "Nạp thêm", "value": "Bổ sung phút gọi cho tính năng Dịch cuộc gọi" }
+        ],
+        "faq": [
+            { "question": "Gói nạp này dùng để làm gì?", "answer": "Gói nạp bổ sung phút gọi cho tính năng Dịch cuộc gọi điện thoại trên Vasco Translator Q1 – dịch giọng nói theo thời gian thực trong cuộc gọi." },
+            { "question": "Cần có máy dịch nào để dùng tính năng này?", "answer": "Chỉ tương thích với Vasco Translator Q1. Cả hai người trong cuộc gọi đều nhận bản dịch theo thời gian thực." },
+            { "question": "Hỗ trợ bao nhiêu ngôn ngữ?", "answer": "53 ngôn ngữ dịch cuộc gọi, hoạt động tại 160 quốc gia với 42 mã quốc gia khác nhau." },
+            { "question": "Độ chính xác của tính năng này như thế nào?", "answer": "Đạt độ chính xác 99%, đảm bảo giao tiếp rõ ràng và đáng tin cậy qua cuộc gọi điện thoại." }
+        ]
     }
 ]
