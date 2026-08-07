@@ -191,6 +191,12 @@ get_header();
 				<span>⏱️ <?php echo esc_html( $read_time ); ?></span>
 			</div>
 
+			<?php if ( has_post_thumbnail( $post_id ) ) : ?>
+				<div class="single-post-featured-image-wrapper">
+					<?php the_post_thumbnail( 'full', array( 'class' => 'single-post-featured-img', 'itemprop' => 'image' ) ); ?>
+				</div>
+			<?php endif; ?>
+
 			<div class="single-post-content" itemprop="articleBody">
 				<?php the_content(); ?>
 			</div>

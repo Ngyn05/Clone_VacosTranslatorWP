@@ -1010,91 +1010,12 @@ get_header();
 				decoding="async" fetchpriority="low" height="400px" loading="lazy"
 				src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/home/join-us/map-section-2.webp" ); ?>" title="Vasco World Map" width="1200px" />
 		</section>
-		<style>
-		.blogs-dynamic-grid {
-			display: grid;
-			grid-template-columns: repeat(4, 1fr);
-			gap: 20px;
-			margin-top: 30px;
-		}
-		@media (max-width: 1024px) {
-			.blogs-dynamic-grid {
-				grid-template-columns: repeat(2, 1fr);
-			}
-		}
-		@media (max-width: 600px) {
-			.blogs-dynamic-grid {
-				grid-template-columns: 1fr;
-			}
-		}
-		.blogs-dynamic-grid .box {
-			background: #fff;
-			border-radius: 16px;
-			overflow: hidden;
-			display: flex;
-			flex-direction: column;
-			box-shadow: 0 4px 18px rgba(0,0,0,0.06);
-			transition: transform 0.25s ease, box-shadow 0.25s ease;
-			border: 1px solid #eaeaea;
-		}
-		.blogs-dynamic-grid .box:hover {
-			transform: translateY(-5px);
-			box-shadow: 0 12px 28px rgba(0,0,0,0.12);
-		}
-		.blogs-dynamic-grid .box img {
-			width: 100% !important;
-			height: 190px !important;
-			object-fit: cover !important;
-			border-radius: 16px 16px 0 0 !important;
-			display: block !important;
-		}
-		.blogs-dynamic-grid .blog-body {
-			padding: 14px 14px 12px;
-			display: flex;
-			flex-direction: column;
-		}
-		.blogs-dynamic-grid .blog-title {
-			font-size: 15.5px !important;
-			font-weight: 700 !important;
-			line-height: 1.35 !important;
-			margin: 0 0 4px 0 !important;
-			color: #1a1a1a !important;
-		}
-		.blogs-dynamic-grid .blog-meta {
-			font-size: 12px;
-			color: #888;
-			margin-bottom: 6px;
-			display: flex;
-			align-items: center;
-			gap: 6px;
-		}
-		.blogs-dynamic-grid .blog-text p {
-			font-size: 13.5px;
-			color: #555;
-			line-height: 1.45;
-			margin: 0 0 8px 0;
-		}
-		.blogs-dynamic-grid .blog-more-link {
-			font-size: 13.5px;
-			font-weight: 700;
-			color: #e30613;
-			text-decoration: none;
-			display: inline-flex;
-			align-items: center;
-			gap: 4px;
-			margin-top: 0;
-		}
-		.blogs-dynamic-grid .blog-more-link:hover {
-			text-decoration: underline;
-		}
-		</style>
-		<section class="blogs">
+		<section class="blogs" style="padding: 40px 0 60px 0;">
 			<div class="container">
-				<h2 class="h2-notosans">KHÁM PHÁ BÀI VIẾT CỦA CHÚNG TÔI</h2>
+				<h2 class="h2-notosans" style="margin-bottom: 30px;">KHÁM PHÁ BÀI VIẾT CỦA CHÚNG TÔI</h2>
 				
-				<div class="blogs-dynamic-grid">
+				<div class="articles-grid-container" style="margin-top: 0; margin-bottom: 30px;">
 					<?php
-					// Query 4 random posts from Database (post_type = 'post')
 					$random_posts = new WP_Query( array(
 						'post_type'      => 'post',
 						'posts_per_page' => 4,
@@ -1108,62 +1029,53 @@ get_header();
 							$p_link      = get_permalink();
 							$p_title     = get_the_title();
 							$p_excerpt   = get_the_excerpt();
-							if ( empty( $p_excerpt ) ) {
-								$p_excerpt = wp_strip_all_tags( get_the_content() );
-							}
-							$p_excerpt   = wp_trim_words( $p_excerpt, 20, '...' );
 							$author_name = get_post_meta( $p_id, '_vasco_author_name', true ) ?: get_the_author();
 							$read_time   = get_post_meta( $p_id, '_vasco_read_time', true ) ?: '10 phút đọc';
-
-							$p_has_thumb = has_post_thumbnail( $p_id );
-							$p_thumb     = '';
-							if ( $p_has_thumb ) {
-								$p_thumb = get_the_post_thumbnail_url( $p_id, 'medium_large' );
-							} else {
-								$post_content = get_the_content();
-								if ( preg_match( '/<img[^>]+src=["\']([^"\']+)["\']/i', $post_content, $matches ) ) {
-									$p_thumb = $matches[1];
-								}
-							}
+							$has_thumb   = has_post_thumbnail( $p_id );
+							$thumb_src   = $has_thumb ? get_the_post_thumbnail_url( $p_id, 'medium_large' ) : '';
 							?>
-							<div class="box">
-								<a class="link-blog" href="<?php echo esc_url( $p_link ); ?>" title="<?php echo esc_attr( $p_title ); ?>">
-									<?php if ( ! empty( $p_thumb ) ) : ?>
-										<img alt="<?php echo esc_attr( $p_title ); ?>" src="<?php echo esc_url( $p_thumb ); ?>" loading="lazy" />
+							<article class="article-card" itemscope itemtype="https://schema.org/BlogPosting">
+								<meta itemprop="mainEntityOfPage" content="<?php echo esc_url( $p_link ); ?>">
+								<meta itemprop="inLanguage" content="vi-VN">
+								
+								<a class="article-card-img-link" href="<?php echo esc_url( $p_link ); ?>" title="<?php echo esc_attr( $p_title ); ?>">
+									<?php if ( $has_thumb && $thumb_src ) : ?>
+										<img class="article-card-img" src="<?php echo esc_url( $thumb_src ); ?>" alt="<?php echo esc_attr( $p_title ); ?>" itemprop="image" loading="lazy" />
 									<?php else : ?>
-										<div style="width: 100%; height: 200px; background: #eef2f5; display: flex; align-items: center; justify-content: center; color: #888; font-size: 13px;">Chưa có ảnh</div>
+										<div class="article-card-img-placeholder" style="width:100%;height:100%;background:#1a1a1a;display:flex;align-items:center;justify-content:center;color:#666;font-size:13px;">Chưa có ảnh</div>
 									<?php endif; ?>
 								</a>
-								<div class="blog-body">
-									<h3 class="h2 blog-title">
-										<a href="<?php echo esc_url( $p_link ); ?>" style="color: inherit; text-decoration: none;"><?php echo esc_html( $p_title ); ?></a>
-									</h3>
-									
-									<div class="blog-meta">
-										<span><?php echo esc_html( $author_name ); ?></span>
+
+								<div class="article-card-body">
+									<h2 class="article-card-title" itemprop="headline">
+										<a href="<?php echo esc_url( $p_link ); ?>" itemprop="url"><?php echo esc_html( $p_title ); ?></a>
+									</h2>
+
+									<div class="article-card-meta">
+										<span itemprop="author" itemscope itemtype="https://schema.org/Person">
+											<span itemprop="name"><?php echo esc_html( $author_name ); ?></span>
+										</span>
 										<span>•</span>
 										<span><?php echo esc_html( $read_time ); ?></span>
 									</div>
 
-									<div class="blog-text">
-										<p><?php echo esc_html( $p_excerpt ); ?></p>
-									</div>
+									<p class="article-card-excerpt" itemprop="description">
+										<?php echo esc_html( wp_trim_words( $p_excerpt, 24, '...' ) ); ?>
+									</p>
 
-									<a class="blog-more-link" href="<?php echo esc_url( $p_link ); ?>">
+									<a class="article-card-more" href="<?php echo esc_url( $p_link ); ?>">
 										Đọc thêm &rarr;
 									</a>
 								</div>
-							</div>
+							</article>
 							<?php
 						endwhile;
 						wp_reset_postdata();
-					else :
-						?>
-						<p style="grid-column: 1 / -1; text-align: center; color: #666;">Chưa có bài viết nào trong CSDL.</p>
-					<?php endif; ?>
+					endif;
+					?>
 				</div>
-				
-				<div style="text-align: center; margin-top: 36px;">
+
+				<div style="text-align: center;">
 					<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( '/articles/' ) ); ?>" style="display: inline-flex; width: auto;">
 						Xem tất cả bài viết
 					</a>

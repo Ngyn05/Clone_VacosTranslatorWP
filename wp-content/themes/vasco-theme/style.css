@@ -50,11 +50,10 @@ Text Domain: vasco-theme
 .article-card-img,
 .single-post-featured-img {
     width: 100% !important;
-    height: 100% !important;
+    height: auto !important;
     max-width: 100% !important;
-    max-height: 100% !important;
-    object-fit: cover !important;
-    object-position: center center !important;
+    object-fit: contain !important;
+    object-position: center top !important;
     display: block !important;
     margin: 0 auto !important;
 }
@@ -5948,4 +5947,250 @@ body.home p, body.home span, body.home a, body.home button,
 .vasco-phone-submit:hover {
     background: #7f0000 !important;
 }
+
+/* =============================================
+   ABOUT VASCO SECTION (CARD 1 ON TOP, 2 CARDS BELOW)
+   ============================================= */
+.about-vasco-section {
+    background-color: #faede5 !important;
+    padding-block: 4rem !important;
+}
+
+.about-vasco-section .h2-notosans {
+    font-size: 1.5rem !important;
+    letter-spacing: 0.15em !important;
+    color: #2d3139 !important;
+    margin-bottom: 2.5rem !important;
+    text-transform: uppercase !important;
+}
+
+.about-vasco-section .about-vasco-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+}
+
+/* Card 1: Full Width Top */
+.about-vasco-section .content-box-big {
+    width: 100% !important;
+    background-color: #ffffff !important;
+    border-radius: 1.25rem !important;
+    padding: 2.5rem !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    border: 1px solid rgba(0, 0, 0, 0.04) !important;
+}
+
+.about-vasco-section .content-box-big:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Row 2: Double Wrapper 2 Columns */
+.about-vasco-section .double-wrapper {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    width: 100% !important;
+}
+
+@media (min-width: 700px) {
+    .about-vasco-section .double-wrapper {
+        grid-template-columns: repeat(2, 1fr) !important;
+        align-items: stretch !important;
+    }
+}
+
+/* Cards 2 & 3 Styling */
+.about-vasco-section .box-small-first,
+.about-vasco-section .box-small-second {
+    background-color: #ffffff !important;
+    border-radius: 1.25rem !important;
+    overflow: hidden !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    margin-top: 0 !important;
+    border: 1px solid rgba(0, 0, 0, 0.04) !important;
+}
+
+.about-vasco-section .box-small-first:hover,
+.about-vasco-section .box-small-second:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08) !important;
+}
+
+.about-vasco-section .box-small-first img,
+.about-vasco-section .box-small-second img {
+    width: 100% !important;
+    height: 220px !important;
+    object-fit: cover !important;
+    display: block !important;
+    margin: 0 !important;
+}
+
+/* Typography & Spacing */
+.about-vasco-section .h2 {
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    color: #2d3139 !important;
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+    line-height: 1.3 !important;
+}
+
+.about-vasco-section .box-small-first .h2,
+.about-vasco-section .box-small-first p,
+.about-vasco-section .box-small-second .h2,
+.about-vasco-section .box-small-second p {
+    margin-inline: 1.75rem !important;
+}
+
+.about-vasco-section .box-small-first .h2,
+.about-vasco-section .box-small-second .h2 {
+    margin-top: 1.5rem !important;
+}
+
+.about-vasco-section p.body-16 {
+    font-size: 0.95rem !important;
+    line-height: 1.65 !important;
+    color: #4a5568 !important;
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+}
+
+/* Button Alignment */
+.about-vasco-section .btn-wrapper {
+    margin-top: 1.5rem !important;
+}
+
+.about-vasco-section .box-small-first .btn-wrapper,
+.about-vasco-section .box-small-second .btn-wrapper {
+    margin-top: auto !important;
+    margin-inline: 1.75rem !important;
+    padding-bottom: 1.75rem !important;
+}
+
+.about-vasco-section .btn-wrapper a.btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0.6rem 1.4rem !important;
+    border-radius: 50px !important;
+    font-size: 0.875rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.05em !important;
+    transition: all 0.2s ease !important;
+}
+
+/* =============================================
+   ARTICLE CARD STYLES (FROM /ARTICLES/ TEMPLATE)
+   ============================================= */
+.articles-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+@media (max-width: 1100px) {
+    .articles-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .articles-grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.article-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: 1px solid #f0f0f0;
+}
+.article-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+.article-card-img-link {
+    display: block;
+    overflow: hidden;
+    height: 220px;
+    width: 100%;
+    background: #f7f9fa;
+    position: relative;
+    padding: 0;
+}
+.article-card-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+.article-card:hover .article-card-img {
+    transform: scale(1.05);
+}
+.article-card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.article-card-title {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+    min-height: 48px;
+}
+.article-card-title a {
+    color: inherit;
+    text-decoration: none;
+}
+.article-card-title a:hover {
+    color: #e30613;
+}
+.article-card-meta {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.article-card-excerpt {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+.article-card-more {
+    font-size: 14px;
+    font-weight: 600;
+    color: #e30613;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+.article-card-more:hover {
+    text-decoration: underline;
+}
+
+
+
+
 
