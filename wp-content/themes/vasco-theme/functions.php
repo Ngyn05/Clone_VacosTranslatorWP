@@ -15,9 +15,7 @@ if ( isset( $_SERVER['HTTP_X_FORWARDED_PROTO'] ) && strpos( $_SERVER['HTTP_X_FOR
 }
 
 $style_file = get_template_directory() . '/style.css';
-$theme_data = file_exists( $style_file ) ? get_file_data( $style_file, array( 'Version' => 'Version' ) ) : array();
-$theme_ver  = ! empty( $theme_data['Version'] ) ? $theme_data['Version'] : filemtime( $style_file );
-define( 'VASCO_THEME_VERSION', $theme_ver );
+define( 'VASCO_THEME_VERSION', file_exists( $style_file ) ? filemtime( $style_file ) : time() );
 define( 'VASCO_THEME_DIR', get_template_directory() );
 define( 'VASCO_THEME_URI', get_template_directory_uri() );
 

@@ -238,7 +238,33 @@ return;
 <!-- End TrustBox widget -->
 </div>
 </div>
-<div class="product-action-info-wrapper">
+<div class="product-variants js-product-variants" style="margin: 16px 0;">
+<div class="product-variants-items">
+<p id="legend-color-1" style="font-weight:600; font-size:15px; color:#1e293b; margin-bottom:8px;">Màu sắc:</p>
+<div aria-labelledby="legend-color-1" class="product-variants-list" id="group_1" role="radiogroup">
+<label aria-checked="true" aria-label="Phantom Black" class="input-container product-variants-item active" data-image="https://vasco-translator.com/385-medium_default/vasco-translator-q1.jpg" data-product-id="38" role="radio" tabindex="0">
+<div class="circle button circle-main phantom-black active" data-attribute-id="22" title="Phantom Black"></div>
+<input checked="checked" class="input-color" data-analytics-type="colour" data-attribute="22" data-color="phantom_black" data-has-quantity="1" data-omnibus-price="" data-product="38" data-product-attribute="1" data-quantity="1" name="group[1]" title="Phantom Black" type="radio" value="22"/>
+<span class="radio-label body-16 active" data-attribute-id="22">Phantom Black</span>
+</label>
+<label aria-checked="false" aria-label="Slate Blue" class="input-container product-variants-item" data-image="<?php echo esc_url( content_url( '/uploads/2026/08/vasco-translator-q1.jpg' ) ); ?>" data-product-id="38" role="radio" tabindex="0">
+<div class="circle button circle-main slate-blue" data-attribute-id="23" title="Slate Blue"></div>
+<input class="input-color" data-analytics-type="colour" data-attribute="23" data-color="slate_blue" data-has-quantity="1" data-omnibus-price="" data-product="38" data-product-attribute="1" data-quantity="1" name="group[1]" title="Slate Blue" type="radio" value="23"/>
+<span class="radio-label body-16" data-attribute-id="23">Slate Blue</span>
+</label>
+<label aria-checked="false" aria-label="Mystic Plum" class="input-container product-variants-item" data-image="<?php echo esc_url( content_url( '/uploads/2026/08/vasco-translator-q1 (1).jpg' ) ); ?>" data-product-id="38" role="radio" tabindex="0">
+<div class="circle button circle-main mystic-plum" data-attribute-id="24" title="Mystic Plum"></div>
+<input class="input-color" data-analytics-type="colour" data-attribute="24" data-color="mystic_plum" data-has-quantity="1" data-omnibus-price="" data-product="38" data-product-attribute="1" data-quantity="1" name="group[1]" title="Mystic Plum" type="radio" value="24"/>
+<span class="radio-label body-16" data-attribute-id="24">Mystic Plum</span>
+</label>
+<label aria-checked="false" aria-label="Scarlet Pulse" class="input-container product-variants-item" data-image="<?php echo esc_url( content_url( '/uploads/2026/08/vasco-translator-q1 (2).jpg' ) ); ?>" data-product-id="38" role="radio" tabindex="0">
+<div class="circle button circle-main scarlet-pulse" data-attribute-id="25" title="Scarlet Pulse"></div>
+<input class="input-color" data-analytics-type="colour" data-attribute="25" data-color="scarlet_pulse" data-has-quantity="1" data-omnibus-price="" data-product="38" data-product-attribute="1" data-quantity="1" name="group[1]" title="Scarlet Pulse" type="radio" value="25"/>
+<span class="radio-label body-16" data-attribute-id="25">Scarlet Pulse</span>
+</label>
+</div>
+</div>
+</div>
 <div class="product-extended-description">
 <div class="extended-description-icon">
 <img alt="Miễn phí giao hàng" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/description-icons/free-shipping.svg" ); ?>"/>
@@ -258,39 +284,12 @@ return;
 <input name="token" type="hidden" value="4d648adb0a3dc7ed67dce0366e2eb442"/>
 <input id="product_page_product_id" name="id_product" type="hidden" value="38"/>
 <input class="js-product-customization-id" id="product_customization_id" name="id_customization" type="hidden" value="0"/>
-<div class="product-variants js-product-variants">
-<div class="product-variants-items">
-<p id="legend-color-1">Màu sắc:</p>
-<div aria-labelledby="legend-color-1" class="product-variants-list" id="group_1" role="radiogroup">
-<label aria-checked="true" aria-label="Phantom Black" class="input-container product-variants-item" data-product-id="38" role="radio" tabindex="0">
-<div class="circle button circle-main phantom-black active" data-attribute-id="22" title="Phantom Black"></div>
-<input checked="checked" class="input-color" data-analytics-type="colour" data-attribute="22" data-color="phantom_black" data-has-quantity="1" data-omnibus-price="" data-product="38" data-product-attribute="1" data-quantity="1" name="group[1]" title="Phantom Black" type="radio" value="22"/>
-<span class="radio-label body-16 active" data-attribute-id="22">Đen Phantom</span>
-</label>
-<label aria-checked="false" aria-label="Slate Blue" class="input-container product-variants-item" data-product-id="38" role="radio" tabindex="0">
-<div class="circle button circle-main slate-blue" data-attribute-id="23" title="Slate Blue"></div>
-<input class="input-color" data-analytics-type="colour" data-attribute="23" data-color="slate_blue" data-has-quantity="1" data-omnibus-price="" data-product="38" data-product-attribute="1" data-quantity="1" name="group[1]" title="Slate Blue" type="radio" value="23"/>
-<span class="radio-label body-16" data-attribute-id="23">Xanh Slate</span>
-</label>
-<label aria-checked="false" aria-label="Mystic Plum" class="input-container product-variants-item" data-product-id="38" role="radio" tabindex="0">
-<div class="circle button circle-main mystic-plum" data-attribute-id="24" title="Mystic Plum"></div>
-<input class="input-color" data-analytics-type="colour" data-attribute="24" data-color="mystic_plum" data-has-quantity="1" data-omnibus-price="" data-product="38" data-product-attribute="1" data-quantity="1" name="group[1]" title="Mystic Plum" type="radio" value="24"/>
-<span class="radio-label body-16" data-attribute-id="24">Mận Mystic</span>
-</label>
-<label aria-checked="false" aria-label="Scarlet Pulse" class="input-container product-variants-item" data-product-id="38" role="radio" tabindex="0">
-<div class="circle button circle-main scarlet-pulse" data-attribute-id="25" title="Scarlet Pulse"></div>
-<input class="input-color" data-analytics-type="colour" data-attribute="25" data-color="scarlet_pulse" data-has-quantity="1" data-omnibus-price="" data-product="38" data-product-attribute="1" data-quantity="1" name="group[1]" title="Scarlet Pulse" type="radio" value="25"/>
-<span class="radio-label body-16" data-attribute-id="25">Đỏ Scarlet</span>
-</label>
-</div>
-</div>
-</div>
 <div class="product-prices-section">
 <div class="product-prices js-product-prices">
 <div class="product-price">
 <div class="current-price">
-<p aria-label="Giá $549" class="current-price-value product-price" content="549">
-																		$549											</p>
+<p aria-label="Giá 13.990.000 đ" class="current-price-value product-price" content="13990000">
+																		13.990.000 <u>đ</u>											</p>
 </div>
 </div>
 <div class="tax-shipping-delivery-label">

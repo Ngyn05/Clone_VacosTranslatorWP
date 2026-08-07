@@ -167,6 +167,7 @@
 			var cart = [{
 				id: product.id || 'prod-' + Date.now(),
 				name: product.name || 'Máy phiên dịch Vasco',
+				color: product.color || '',
 				price: product.price || 0,
 				priceText: product.priceText || '',
 				image: product.image || '',
@@ -184,10 +185,19 @@
 			var pId = parseInt(product.id, 10) || 0;
 			if (window.VASCO_AJAX_URL && window.VASCO_WC_NONCE) {
 				var fd = new FormData();
+				// Get selected color from active color label
+				var activeColorEl = document.querySelector('.product-variants-item.active .radio-label, .product-variants-item.active, .input-container.active .radio-label');
+				var selectedColor = '';
+				if (activeColorEl) {
+					var radioLabel = activeColorEl.querySelector ? activeColorEl.querySelector('.radio-label') : null;
+					selectedColor = (radioLabel ? radioLabel.innerText.trim() : activeColorEl.innerText.trim()) || '';
+				}
+
 				fd.append('action', 'vasco_wc_add_to_cart');
 				fd.append('nonce', window.VASCO_WC_NONCE);
 				fd.append('product_id', pId);
 				fd.append('product_name', product.name || '');
+				fd.append('product_color', selectedColor);
 				fd.append('quantity', product.quantity || 1);
 
 				fetch(window.VASCO_AJAX_URL, { method: 'POST', body: fd })
@@ -310,11 +320,39 @@
 		var pImg = btn.getAttribute('data-product-image');
 
 		var container = btn.closest('.product-miniature, .product-detail, .product-container, .product-single, .js-product-container, #content, #main, section, body') || document;
-		var nameEl = container.querySelector('.product-title a, .product-name, .product-title, h1, [itemprop="name"]');
+		var nameEl = container.querySelector('.product-name, h1#product-name, .product-title a, .product-title, h1, [itemprop="name"]');
 		var priceEl = container.querySelector('.current-price-value, .current-price, .price, .product-price, .price-new, [itemprop="price"]');
 		var imgEl = container.querySelector('.swiper-slide-active img, .product-cover img, .product-thumb-wrapper img, .product-main-image img, .gallery img, img[itemprop="image"]');
 
-		var productName = pName || (nameEl ? nameEl.textContent.trim() : 'Vasco Translator Q1');
+		var productName = (nameEl ? nameEl.textContent.trim() : '') || pName || 'Vasco Translator Q1';
+
+		// Always include selected color in product name
+		// 1. Find active color label
+		var activeVariant = document.querySelector('.product-variants-list .product-variants-item.active, .product-variants-list .input-container.active');
+		var activeLabelEl = activeVariant ? activeVariant.querySelector('.radio-label') : null;
+		var activeLabelText = activeLabelEl ? activeLabelEl.innerText.trim() : '';
+
+		if (activeLabelText) {
+			// 2. Strip any previously appended color from the name (use data-base-title if set, else raw)
+			var nameEl2 = container.querySelector('[data-base-title]');
+			var baseName = nameEl2 ? nameEl2.getAttribute('data-base-title') : productName;
+
+			// Also strip color from raw name if no base-title yet
+			if (!nameEl2) {
+				var knownColors = ['Phantom Black','Slate Blue','Mystic Plum','Scarlet Pulse','Black Onyx','Stone Gray','Cobalt Blue','Ruby Red','Pearl White','Matte Black','Frosty Turquoise','Misty Purple'];
+				knownColors.forEach(function(c) {
+					baseName = baseName.replace(new RegExp('\\s*\\(?\\b' + c + '\\b\\)?', 'gi'), '').trim();
+				});
+			}
+
+			// 3. Rebuild name with color
+			if (baseName.indexOf('+') !== -1) {
+				var parts = baseName.split('+');
+				productName = parts[0].trim() + ' ' + activeLabelText + ' +' + parts.slice(1).join('+').trim();
+			} else {
+				productName = baseName + ' ' + activeLabelText;
+			}
+		}
 		var priceText = priceEl ? priceEl.textContent.trim() : '13.990.000 đ';
 		var imgUrl = pImg || (imgEl ? imgEl.src : '');
 		var priceNum = pPrice ? parseFloat(pPrice) : (parseFloat(priceText.replace(/[^0-9]/g, '')) || 13990000);
@@ -322,6 +360,7 @@
 		var productItem = {
 			id: pId ? pId : ('prod-' + productName.toLowerCase().replace(/[^a-z0-9]/gi, '-')),
 			name: productName,
+			color: activeLabelText || '',
 			price: priceNum,
 			priceText: window.VascoCart.formatMoney(priceNum),
 			image: imgUrl,

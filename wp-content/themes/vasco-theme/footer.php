@@ -1566,6 +1566,60 @@
 })();
 </script>
 
+<!-- Interactive Product Variant Color Picker JS -->
+<script>
+(function() {
+	function initColorPicker() {
+		document.addEventListener('click', function(e) {
+			var item = e.target.closest('.product-variants-item');
+			if (!item) return;
+
+			var card = item.closest('.product-miniature, .js-product-miniature, #content, .product-detail, body');
+			if (!card) return;
+
+			// Active state toggle cho các nút màu
+			var container = item.closest('.product-variants-list, .product-variants-items') || card;
+			var siblingItems = container.querySelectorAll('.product-variants-item');
+			siblingItems.forEach(function(el) {
+				el.classList.remove('active');
+				var circle = el.querySelector('.circle');
+				if (circle) circle.classList.remove('active');
+				var label = el.querySelector('.radio-label');
+				if (label) label.classList.remove('active');
+			});
+
+			item.classList.add('active');
+			var currentCircle = item.querySelector('.circle');
+			if (currentCircle) currentCircle.classList.add('active');
+			var currentLabel = item.querySelector('.radio-label');
+			if (currentLabel) currentLabel.classList.add('active');
+
+			// Đổi ảnh sản phẩm tương ứng với màu (nếu có data-image)
+			var newImgSrc = item.getAttribute('data-image') || (currentCircle ? currentCircle.getAttribute('data-image') : null);
+			if (newImgSrc) {
+				var head = card.querySelector('.listing-product-head, .thumbnail-container, .thumbnail-top, .product-cover, .swiper-cover');
+				var mainImg = head ? head.querySelector('img') : card.querySelector('.product-cover img, .swiper-cover img, img');
+				if (mainImg) {
+					mainImg.src = newImgSrc;
+					if (mainImg.hasAttribute('srcset')) {
+						mainImg.removeAttribute('srcset');
+					}
+				}
+			}
+		});
+	}
+
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', initColorPicker);
+	} else {
+		initColorPicker();
+	}
+})();
+</script>
+
+
+
 <?php wp_footer(); ?>
+
 </body>
 </html>

@@ -258,6 +258,56 @@ function vasco_theme_sync_products() {
 				update_post_meta( $product_id, '_vasco_faq', $clean_faqs );
 			}
 		}
+
+		// ── Đồng bộ Thuộc tính Màu sắc (pa_color) vào WooCommerce Database ──
+		if ( ! empty( $product['colors'] ) && is_array( $product['colors'] ) ) {
+			$taxonomy = 'pa_color';
+			if ( ! taxonomy_exists( $taxonomy ) ) {
+				register_taxonomy( $taxonomy, array( 'product' ), array(
+					'label'        => 'Color',
+					'public'       => false,
+					'hierarchical' => false,
+					'show_ui'      => false,
+				) );
+			}
+
+			$term_slugs = array();
+			foreach ( $product['colors'] as $c ) {
+				$c_slug = sanitize_title( $c['slug'] ?? '' );
+				$c_name = sanitize_text_field( $c['name'] ?? '' );
+				if ( ! empty( $c_slug ) && ! empty( $c_name ) ) {
+					$term = get_term_by( 'slug', $c_slug, $taxonomy );
+					if ( ! $term ) {
+						$inserted = wp_insert_term( $c_name, $taxonomy, array( 'slug' => $c_slug ) );
+						if ( ! is_wp_error( $inserted ) ) {
+							$term_slugs[] = $c_slug;
+						}
+					} else {
+						$term_slugs[] = $c_slug;
+					}
+				}
+			}
+
+			if ( ! empty( $term_slugs ) ) {
+				wp_set_object_terms( $product_id, $term_slugs, $taxonomy, false );
+
+				$existing_attributes = get_post_meta( $product_id, '_product_attributes', true );
+				if ( ! is_array( $existing_attributes ) ) {
+					$existing_attributes = array();
+				}
+
+				$existing_attributes['pa_color'] = array(
+					'name'         => 'pa_color',
+					'value'        => '',
+					'position'     => 0,
+					'is_visible'   => 1,
+					'is_variation' => 0,
+					'is_taxonomy'  => 1,
+				);
+
+				update_post_meta( $product_id, '_product_attributes', $existing_attributes );
+			}
+		}
 	} // end foreach $products
 
 	flush_rewrite_rules();

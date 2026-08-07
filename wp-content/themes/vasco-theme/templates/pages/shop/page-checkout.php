@@ -473,6 +473,15 @@ get_header();
         btn.disabled = true;
         btn.style.background = '#A0AEC0';
 
+        // Đọc màu sắc từ localStorage để đảm bảo luôn có màu
+        var selectedColor = '';
+        try {
+            var localCart = JSON.parse(localStorage.getItem('vasco_cart')) || [];
+            if (localCart.length > 0 && localCart[0].color) {
+                selectedColor = localCart[0].color;
+            }
+        } catch(e) {}
+
         var fd = new FormData();
         fd.append('action', 'vasco_wc_place_order');
         fd.append('nonce', nonce);
@@ -483,6 +492,7 @@ get_header();
         fd.append('billing_country', 'VN');
         fd.append('payment_method', payment);
         fd.append('order_notes', notes);
+        fd.append('selected_color', selectedColor);
 
         fetch(ajaxUrl, { method: 'POST', body: fd })
             .then(function(r) { return r.json(); })

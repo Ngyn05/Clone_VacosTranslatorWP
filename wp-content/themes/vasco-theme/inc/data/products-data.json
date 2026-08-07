@@ -6,6 +6,12 @@
         "price": "549",
         "sku": "5906516647508",
         "badge": "new",
+        "colors": [
+            { "slug": "phantom-black", "name": "Phantom Black" },
+            { "slug": "slate-blue", "name": "Slate Blue" },
+            { "slug": "mystic-plum", "name": "Mystic Plum" },
+            { "slug": "scarlet-pulse", "name": "Scarlet Pulse" }
+        ],
         "image": "assets/images/products/385-medium_default/vasco-translator-q1.jpg",
         "excerpt": "Máy phiên dịch chủ lực hỗ trợ nhiều ngôn ngữ và các chế độ dịch thông minh.",
         "source_url": "/translators/vasco-translator-q1/",
@@ -110,6 +116,11 @@
         "price": "429",
         "sku": "5906516647645",
         "badge": "new",
+        "colors": [
+            { "slug": "matte-black", "name": "Matte Black" },
+            { "slug": "frosty-turquoise", "name": "Frosty Turquoise" },
+            { "slug": "misty-purple", "name": "Misty Purple" }
+        ],
         "image": "assets/images/products/488-medium_default/vasco-translator-m4.jpg",
         "excerpt": "Thiết bị phiên dịch nhỏ gọn cho nhu cầu di chuyển và sử dụng hàng ngày.",
         "source_url": "/translators/vasco-translator-m4/",
@@ -214,6 +225,13 @@
         "price": "449",
         "sku": "5903111339920",
         "badge": "bestseller",
+        "colors": [
+            { "slug": "black-onyx", "name": "Black Onyx" },
+            { "slug": "stone-gray", "name": "Stone Gray" },
+            { "slug": "cobalt-blue", "name": "Cobalt Blue" },
+            { "slug": "ruby-red", "name": "Ruby Red" },
+            { "slug": "pearl-white", "name": "Pearl White" }
+        ],
         "image": "assets/images/products/343-medium_default/vasco-translator-v4.jpg",
         "excerpt": "Máy phiên dịch cầm tay cho trải nghiệm giao tiếp nhanh và trực quan.",
         "source_url": "/translators/vasco-translator-v4/",

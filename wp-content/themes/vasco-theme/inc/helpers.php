@@ -163,31 +163,85 @@ function vasco_theme_render_product_card( $product, $context = array() ) {
 		$flag_html = '';
 	}
 
-	// Lấy danh sách màu sắc biến thể động từ WooCommerce Database
+	// Lấy danh sách màu sắc biến thể từ WooCommerce hoặc cài đặt mặc định cho các dòng sản phẩm Vasco
 	$colors_html = '';
+	$uploads_url = content_url( '/uploads/2026/08/' );
+	$colors_map  = array(
+		'vasco-translator-q1' => array(
+			array( 'slug' => 'phantom-black', 'name' => 'Phantom Black', 'image' => 'https://vasco-translator.com/385-medium_default/vasco-translator-q1.jpg' ),
+			array( 'slug' => 'slate-blue', 'name' => 'Slate Blue', 'image' => $uploads_url . 'vasco-translator-q1.jpg' ),
+			array( 'slug' => 'mystic-plum', 'name' => 'Mystic Plum', 'image' => $uploads_url . 'vasco-translator-q1 (1).jpg' ),
+			array( 'slug' => 'scarlet-pulse', 'name' => 'Scarlet Pulse', 'image' => $uploads_url . 'vasco-translator-q1 (2).jpg' ),
+		),
+
+		'vasco-translator-m4' => array(
+			array( 'slug' => 'matte-black', 'name' => 'Matte Black', 'image' => 'https://vasco-translator.com/488-medium_default/vasco-translator-m4.jpg' ),
+			array( 'slug' => 'frosty-turquoise', 'name' => 'Frosty Turquoise', 'image' => $uploads_url . 'vasco-translator-m4.jpg' ),
+			array( 'slug' => 'misty-purple', 'name' => 'Misty Purple', 'image' => $uploads_url . 'vasco-translator-m4 (1).jpg' ),
+		),
+		'vasco-translator-v4' => array(
+			array( 'slug' => 'black-onyx', 'name' => 'Black Onyx', 'image' => 'https://vasco-translator.com/343-medium_default/vasco-translator-v4.jpg' ),
+			array( 'slug' => 'stone-gray', 'name' => 'Stone Gray', 'image' => $uploads_url . 'vasco-translator-v4.jpg' ),
+			array( 'slug' => 'cobalt-blue', 'name' => 'Cobalt Blue', 'image' => $uploads_url . 'vasco-translator-v4 (1).jpg' ),
+			array( 'slug' => 'ruby-red', 'name' => 'Ruby Red', 'image' => $uploads_url . 'vasco-translator-v4 (2).jpg' ),
+			array( 'slug' => 'pearl-white', 'name' => 'Pearl White', 'image' => $uploads_url . 'vasco-translator-v4 (3).jpg' ),
+		),
+		'q1-phantomblack-e1' => array(
+			array( 'slug' => 'phantom-black', 'name' => 'Phantom Black', 'image' => $uploads_url . 'q1-phantomblack-e1.webp' ),
+			array( 'slug' => 'slate-blue', 'name' => 'Slate Blue', 'image' => $uploads_url . 'q1-slateblue-e1.jpg' ),
+			array( 'slug' => 'mystic-plum', 'name' => 'Mystic Plum', 'image' => $uploads_url . 'q1-mysticplum-e1.jpg' ),
+			array( 'slug' => 'scarlet-pulse', 'name' => 'Scarlet Pulse', 'image' => $uploads_url . 'q1-scarletpulse-e1.jpg' ),
+		),
+		'v4-blackonyx-e1' => array(
+			array( 'slug' => 'black-onyx', 'name' => 'Black Onyx', 'image' => $uploads_url . 'v4-blackonyx-e1.webp' ),
+			array( 'slug' => 'stone-gray', 'name' => 'Stone Gray', 'image' => $uploads_url . 'v4-stonegray-e1.jpg' ),
+			array( 'slug' => 'cobalt-blue', 'name' => 'Cobalt Blue', 'image' => $uploads_url . 'v4-cobaltblue-e1.jpg' ),
+			array( 'slug' => 'ruby-red', 'name' => 'Ruby Red', 'image' => $uploads_url . 'v4-rubyred-e1.jpg' ),
+			array( 'slug' => 'pearl-white', 'name' => 'Pearl White', 'image' => $uploads_url . 'v4-pearlwhite-e1.jpg' ),
+		),
+	);
+
+
+
+	$product_slug = $product->get_slug();
+	$colors = array();
+
 	if ( $product->is_type( 'variable' ) ) {
 		$attributes = $product->get_variation_attributes();
 		if ( isset( $attributes['pa_color'] ) || isset( $attributes['pa_mau-sac'] ) || isset( $attributes['color'] ) ) {
 			$color_terms = reset( $attributes );
 			if ( ! empty( $color_terms ) ) {
-				$colors_html .= '<div class="product-variants-items combination-variants-item">' . ( $is_grid_card ? '' : '<p id="legend-color">Màu sắc:</p>' ) . '<div class="product-variants-list" role="radiogroup">';
-				foreach ( $color_terms as $idx => $term_slug ) {
+				foreach ( $color_terms as $term_slug ) {
 					$term = get_term_by( 'slug', $term_slug, 'pa_color' );
 					if ( ! $term ) {
 						$term = get_term_by( 'slug', $term_slug, 'pa_mau-sac' );
 					}
 					$color_name = $term ? $term->name : ucwords( str_replace( array( '-', '_' ), ' ', $term_slug ) );
-					$active_class = ( 0 === $idx ) ? ' active' : '';
-					if ( $is_grid_card ) {
-						$colors_html .= '<label class="input-container product-variants-item' . $active_class . '" title="' . esc_attr( $color_name ) . '"><div class="circle ' . esc_attr( $term_slug ) . '"></div></label>';
-					} else {
-						$colors_html .= '<label class="input-container product-variants-item' . $active_class . '" role="radio"><div class="circle ' . esc_attr( $term_slug ) . '"></div><span class="radio-label">' . esc_html( $color_name ) . '</span></label>';
-					}
+					$colors[]   = array( 'slug' => $term_slug, 'name' => $color_name, 'image' => '' );
 				}
-				$colors_html .= '</div></div>';
 			}
 		}
 	}
+
+	if ( empty( $colors ) && isset( $colors_map[ $product_slug ] ) ) {
+		$colors = $colors_map[ $product_slug ];
+	}
+
+	if ( ! empty( $colors ) ) {
+		$colors_html .= '<div class="product-variants-items combination-variants-item">' . ( $is_grid_card ? '' : '<p id="legend-color">Màu sắc:</p>' ) . '<div class="product-variants-list" role="radiogroup">';
+		foreach ( $colors as $idx => $c ) {
+			$active_class = ( 0 === $idx ) ? ' active' : '';
+			$img_attr     = ! empty( $c['image'] ) ? ' data-image="' . esc_url( $c['image'] ) . '"' : '';
+			if ( $is_grid_card ) {
+				$colors_html .= '<label class="input-container product-variants-item' . $active_class . '"' . $img_attr . ' title="' . esc_attr( $c['name'] ) . '"><div class="circle ' . esc_attr( $c['slug'] ) . '"' . $img_attr . '></div></label>';
+			} else {
+				$colors_html .= '<label class="input-container product-variants-item' . $active_class . '"' . $img_attr . ' role="radio"><div class="circle ' . esc_attr( $c['slug'] ) . '"' . $img_attr . '></div><span class="radio-label">' . esc_html( $c['name'] ) . '</span></label>';
+			}
+		}
+		$colors_html .= '</div></div>';
+	}
+
+
 
 	if ( $is_grid_card ) {
 		// GIAO DIỆN GRID CARD (Dành cho Phụ kiện & Gói sản phẩm)
@@ -254,7 +308,7 @@ function vasco_theme_render_catalog_page( $args = array() ) {
 		$products = vasco_theme_get_wc_products_for_category( '', -1 );
 	}
 
-	$is_grid_cat = ( 'translators' !== $args['active_tab'] );
+	$is_grid_cat   = ( 'translators' !== $args['active_tab'] && 'bundles' !== $args['active_tab'] );
 	$wrapper_class = $is_grid_cat ? 'products products-grid-listing' : 'products products-horizontal-listing';
 	$card_style    = $is_grid_cat ? 'grid' : 'horizontal';
 
@@ -337,34 +391,66 @@ function vasco_theme_render_product_detail_page( $slug = '' ) {
 		echo '<h2 class="product-subtitle">' . esc_html( wp_strip_all_tags( $short_desc ) ) . '</h2>';
 	}
 	echo '<div class="product-review-wrapper"><div class="trustpilot-top trustpilot-top--product"><img alt="Trustpilot" class="trustpilot-logo-img" src="' . esc_url( VASCO_THEME_URI . '/assets/img/trustpilot.svg' ) . '"/></div></div>';
-	// Variable color pills logic
+	// Color pills logic (works for both simple and variable WooCommerce products)
 	$colors_html = '';
-	if ( $product->is_type( 'variable' ) ) {
-		$attributes = $product->get_variation_attributes();
-		if ( isset( $attributes['pa_color'] ) || isset( $attributes['pa_mau-sac'] ) || isset( $attributes['color'] ) ) {
-			$color_terms = reset( $attributes );
-			if ( ! empty( $color_terms ) ) {
-				$colors_html .= '<div class="product-variants-items combination-variants-item"><p id="legend-color">Màu sắc:</p><div class="product-variants-list" role="radiogroup">';
-				foreach ( $color_terms as $idx => $term_slug ) {
-					$term = get_term_by( 'slug', $term_slug, 'pa_color' );
-					if ( ! $term ) {
-						$term = get_term_by( 'slug', $term_slug, 'pa_mau-sac' );
-					}
-					$color_name = $term ? $term->name : ucwords( str_replace( array( '-', '_' ), ' ', $term_slug ) );
-					$active_class = ( 0 === $idx ) ? ' active' : '';
-					$colors_html .= '<label class="input-container product-variants-item' . $active_class . '" role="radio"><div class="circle ' . esc_attr( $term_slug ) . '"></div><span class="radio-label">' . esc_html( $color_name ) . '</span></label>';
-				}
-				$colors_html .= '</div></div>';
-			}
+	$uploads_url = content_url( '/uploads/2026/08/' );
+	$colors_map  = array(
+		'vasco-translator-q1' => array(
+			'phantom-black'  => 'https://vasco-translator.com/385-medium_default/vasco-translator-q1.jpg',
+			'slate-blue'     => $uploads_url . 'vasco-translator-q1.jpg',
+			'mystic-plum'    => $uploads_url . 'vasco-translator-q1 (1).jpg',
+			'scarlet-pulse'  => $uploads_url . 'vasco-translator-q1 (2).jpg',
+		),
+		'vasco-translator-m4' => array(
+			'matte-black'       => 'https://vasco-translator.com/488-medium_default/vasco-translator-m4.jpg',
+			'frosty-turquoise'  => $uploads_url . 'vasco-translator-m4.jpg',
+			'misty-purple'      => $uploads_url . 'vasco-translator-m4 (1).jpg',
+		),
+		'vasco-translator-v4' => array(
+			'black-onyx'   => 'https://vasco-translator.com/343-medium_default/vasco-translator-v4.jpg',
+			'stone-gray'   => $uploads_url . 'vasco-translator-v4.jpg',
+			'cobalt-blue'  => $uploads_url . 'vasco-translator-v4 (1).jpg',
+			'ruby-red'     => $uploads_url . 'vasco-translator-v4 (2).jpg',
+			'pearl-white'  => $uploads_url . 'vasco-translator-v4 (3).jpg',
+		),
+		'q1-phantomblack-e1' => array(
+			'phantom-black'  => $uploads_url . 'q1-phantomblack-e1.webp',
+			'slate-blue'     => $uploads_url . 'q1-slateblue-e1.jpg',
+			'mystic-plum'    => $uploads_url . 'q1-mysticplum-e1.jpg',
+			'scarlet-pulse'  => $uploads_url . 'q1-scarletpulse-e1.jpg',
+		),
+		'v4-blackonyx-e1' => array(
+			'black-onyx'   => $uploads_url . 'v4-blackonyx-e1.webp',
+			'stone-gray'   => $uploads_url . 'v4-stonegray-e1.jpg',
+			'cobalt-blue'  => $uploads_url . 'v4-cobaltblue-e1.jpg',
+			'ruby-red'     => $uploads_url . 'v4-rubyred-e1.jpg',
+			'pearl-white'  => $uploads_url . 'v4-pearlwhite-e1.jpg',
+		),
+	);
+	$prod_slug = $product->get_slug();
+
+	$terms = get_the_terms( $product->get_id(), 'pa_color' );
+	if ( ! $terms || is_wp_error( $terms ) ) {
+		$terms = get_the_terms( $product->get_id(), 'pa_mau-sac' );
+	}
+	if ( $terms && ! is_wp_error( $terms ) ) {
+		$colors_html .= '<div class="product-variants-items combination-variants-item" style="margin: 16px 0;"><p id="legend-color" style="font-weight:600; font-size:15px; color:#1e293b; margin-bottom:8px;">Màu sắc:</p><div class="product-variants-list" role="radiogroup">';
+		foreach ( $terms as $idx => $term ) {
+			$active_class = ( 0 === $idx ) ? ' active' : '';
+			$img_src      = isset( $colors_map[ $prod_slug ][ $term->slug ] ) ? $colors_map[ $prod_slug ][ $term->slug ] : '';
+			$img_attr     = $img_src ? ' data-image="' . esc_url( $img_src ) . '"' : '';
+			$colors_html .= '<label class="input-container product-variants-item' . $active_class . '"' . $img_attr . ' role="radio"><div class="circle ' . esc_attr( $term->slug ) . '"' . $img_attr . '></div><span class="radio-label body-16">' . esc_html( $term->name ) . '</span></label>';
 		}
+		$colors_html .= '</div></div>';
 	}
 
-	echo '<div class="product-action-info-wrapper"><div class="product-extended-description">';
+	echo $colors_html;
+
+	echo '<div class="product-extended-description" style="margin-bottom: 20px;">';
 	echo '<div class="extended-description-icon"><img alt="Miễn phí giao hàng" loading="lazy" src="' . esc_url( VASCO_THEME_URI . '/assets/img/description-icons/free-shipping.svg' ) . '"/><p>Miễn phí giao hàng</p></div>';
 	echo '<div class="extended-description-icon"><img alt="30-day return policy" loading="lazy" src="' . esc_url( VASCO_THEME_URI . '/assets/img/description-icons/return-icon.svg' ) . '"/><p>Chính sách đổi trả trong 30 ngày</p></div>';
 	echo '<div class="extended-description-icon"><img alt="24-hour delivery" loading="lazy" src="' . esc_url( VASCO_THEME_URI . '/assets/img/description-icons/delivery-icon.svg' ) . '"/><p>Giao hàng trong 24 giờ</p></div>';
 	echo '</div>';
-	echo $colors_html;
 	echo '<div class="product-actions js-product-actions">';
 	echo '<div class="product-prices-section"><div class="product-prices js-product-prices"><div class="product-price"><div class="current-price"><p class="current-price-value product-price">' . wp_kses_post( $product->get_price_html() ) . '</p></div></div></div></div>';
 
@@ -382,7 +468,7 @@ function vasco_theme_render_product_detail_page( $slug = '' ) {
 	echo '<p class="vasco-phone-consult-text">📞 Hãy để lại <strong class="highlight-orange">số điện thoại</strong>, chúng tôi sẽ gọi ngay cho bạn <strong class="highlight-yellow">tư vấn miễn phí!</strong></p>';
 	echo '<div class="vasco-phone-consult-form">';
 	echo '<input type="tel" class="vasco-phone-input" id="vasco-phone-input-' . esc_attr( (string) $product->get_id() ) . '" placeholder="Nhập sđt tư vấn miễn phí..." maxlength="12" />';
-	echo '<button type="button" class="vasco-phone-submit" onclick="vascoSendPhoneConsult(this, \'' . esc_js( $product->get_name() ) . '\')">GỬI ĐI</button>';
+	echo '<button type="button" class="vasco-phone-submit" onclick="vascoSendPhoneConsult(this, (document.querySelector(\'h1#product-name, .product-name\') ? document.querySelector(\'h1#product-name, .product-name\').innerText.trim() : \'' . esc_js( $product->get_name() ) . '\'))">GỬI ĐI</button>';
 	echo '</div>';
 	echo '<div class="vasco-phone-consult-msg" style="display:none; margin-top:8px; font-size:13px; font-weight:600; color:#fff;"></div>';
 	echo '</div>';

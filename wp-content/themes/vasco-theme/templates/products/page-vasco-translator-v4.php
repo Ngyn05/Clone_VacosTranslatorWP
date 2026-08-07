@@ -254,8 +254,38 @@ return;
 </button>
 <!-- End TrustBox widget -->
 </div>
+<div class="product-variants js-product-variants" style="margin: 16px 0;">
+<div class="product-variants-items">
+<p id="legend-color-1" style="font-weight:600; font-size:15px; color:#1e293b; margin-bottom:8px;">Màu sắc:</p>
+<div aria-labelledby="legend-color-1" class="product-variants-list" id="group_1" role="radiogroup">
+<label aria-checked="true" aria-label="Black Onyx" class="input-container product-variants-item active" data-image="https://vasco-translator.com/343-medium_default/vasco-translator-v4.jpg" data-product-id="14" role="radio" tabindex="0">
+<div class="circle button circle-main black-onyx active" data-attribute-id="7" title="Black Onyx"></div>
+<input checked="checked" class="input-color" data-analytics-type="colour" data-attribute="7" data-color="black_onyx" data-has-quantity="1" data-omnibus-price="" data-product="14" data-product-attribute="1" data-quantity="1" name="group[1]" title="Black Onyx" type="radio" value="7"/>
+<span class="radio-label body-16 active" data-attribute-id="7">Black Onyx</span>
+</label>
+<label aria-checked="false" aria-label="Stone Gray" class="input-container product-variants-item" data-image="<?php echo esc_url( content_url( '/uploads/2026/08/vasco-translator-v4.jpg' ) ); ?>" data-product-id="14" role="radio" tabindex="0">
+<div class="circle button circle-main stone-gray" data-attribute-id="8" title="Stone Gray"></div>
+<input class="input-color" data-analytics-type="colour" data-attribute="8" data-color="stone_gray" data-has-quantity="1" data-omnibus-price="" data-product="14" data-product-attribute="1" data-quantity="1" name="group[1]" title="Stone Gray" type="radio" value="8"/>
+<span class="radio-label body-16" data-attribute-id="8">Stone Gray</span>
+</label>
+<label aria-checked="false" aria-label="Cobalt Blue" class="input-container product-variants-item" data-image="<?php echo esc_url( content_url( '/uploads/2026/08/vasco-translator-v4 (1).jpg' ) ); ?>" data-product-id="14" role="radio" tabindex="0">
+<div class="circle button circle-main cobalt-blue" data-attribute-id="9" title="Cobalt Blue"></div>
+<input class="input-color" data-analytics-type="colour" data-attribute="9" data-color="cobalt_blue" data-has-quantity="1" data-omnibus-price="" data-product="14" data-product-attribute="1" data-quantity="1" name="group[1]" title="Cobalt Blue" type="radio" value="9"/>
+<span class="radio-label body-16" data-attribute-id="9">Cobalt Blue</span>
+</label>
+<label aria-checked="false" aria-label="Ruby Red" class="input-container product-variants-item" data-image="<?php echo esc_url( content_url( '/uploads/2026/08/vasco-translator-v4 (2).jpg' ) ); ?>" data-product-id="14" role="radio" tabindex="0">
+<div class="circle button circle-main ruby-red" data-attribute-id="10" title="Ruby Red"></div>
+<input class="input-color" data-analytics-type="colour" data-attribute="10" data-color="ruby_red" data-has-quantity="1" data-omnibus-price="" data-product="14" data-product-attribute="1" data-quantity="1" name="group[1]" title="Ruby Red" type="radio" value="10"/>
+<span class="radio-label body-16" data-attribute-id="10">Ruby Red</span>
+</label>
+<label aria-checked="false" aria-label="Pearl White" class="input-container product-variants-item" data-image="<?php echo esc_url( content_url( '/uploads/2026/08/vasco-translator-v4 (3).jpg' ) ); ?>" data-product-id="14" role="radio" tabindex="0">
+<div class="circle button circle-main pearl-white" data-attribute-id="11" title="Pearl White"></div>
+<input class="input-color" data-analytics-type="colour" data-attribute="11" data-color="pearl_white" data-has-quantity="1" data-omnibus-price="" data-product="14" data-product-attribute="1" data-quantity="1" name="group[1]" title="Pearl White" type="radio" value="11"/>
+<span class="radio-label body-16" data-attribute-id="11">Pearl White</span>
+</label>
 </div>
-<div class="product-action-info-wrapper">
+</div>
+</div>
 <div class="product-extended-description">
 <div class="extended-description-icon">
 <img alt="Miễn phí giao hàng" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/description-icons/free-shipping.svg" ); ?>"/>
@@ -270,49 +300,18 @@ return;
 <p>Giao hàng trong 24 giờ</p>
 </div>
 </div>
+</div>
 <div class="product-actions js-product-actions">
 <form action="./cart" aria-labelledby="product-name" id="add-to-cart-or-refresh" method="post">
 <input name="token" type="hidden" value="4d648adb0a3dc7ed67dce0366e2eb442"/>
 <input id="product_page_product_id" name="id_product" type="hidden" value="14"/>
 <input class="js-product-customization-id" id="product_customization_id" name="id_customization" type="hidden" value="0"/>
-<div class="product-variants js-product-variants">
-<div class="product-variants-items">
-<p id="legend-color-1">Màu sắc:</p>
-<div aria-labelledby="legend-color-1" class="product-variants-list" id="group_1" role="radiogroup">
-<label aria-checked="true" aria-label="Black Onyx" class="input-container product-variants-item" data-product-id="14" role="radio" tabindex="0">
-<div class="circle button circle-main black-onyx active" data-attribute-id="7" title="Black Onyx"></div>
-<input checked="checked" class="input-color" data-analytics-type="colour" data-attribute="7" data-color="black_onyx" data-has-quantity="1" data-omnibus-price="" data-product="14" data-product-attribute="1" data-quantity="1" name="group[1]" title="Black Onyx" type="radio" value="7"/>
-<span class="radio-label body-16 active" data-attribute-id="7">Đen Onyx</span>
-</label>
-<label aria-checked="false" aria-label="Stone Gray" class="input-container product-variants-item" data-product-id="14" role="radio" tabindex="0">
-<div class="circle button circle-main stone-gray" data-attribute-id="8" title="Stone Gray"></div>
-<input class="input-color" data-analytics-type="colour" data-attribute="8" data-color="stone_gray" data-has-quantity="1" data-omnibus-price="" data-product="14" data-product-attribute="1" data-quantity="1" name="group[1]" title="Stone Gray" type="radio" value="8"/>
-<span class="radio-label body-16" data-attribute-id="8">Xám Stone</span>
-</label>
-<label aria-checked="false" aria-label="Cobalt Blue" class="input-container product-variants-item" data-product-id="14" role="radio" tabindex="0">
-<div class="circle button circle-main cobalt-blue" data-attribute-id="9" title="Cobalt Blue"></div>
-<input class="input-color" data-analytics-type="colour" data-attribute="9" data-color="cobalt_blue" data-has-quantity="1" data-omnibus-price="" data-product="14" data-product-attribute="1" data-quantity="1" name="group[1]" title="Cobalt Blue" type="radio" value="9"/>
-<span class="radio-label body-16" data-attribute-id="9">Xanh Cobalt</span>
-</label>
-<label aria-checked="false" aria-label="Ruby Red" class="input-container product-variants-item" data-product-id="14" role="radio" tabindex="0">
-<div class="circle button circle-main ruby-red" data-attribute-id="10" title="Ruby Red"></div>
-<input class="input-color" data-analytics-type="colour" data-attribute="10" data-color="ruby_red" data-has-quantity="1" data-omnibus-price="" data-product="14" data-product-attribute="1" data-quantity="1" name="group[1]" title="Ruby Red" type="radio" value="10"/>
-<span class="radio-label body-16" data-attribute-id="10">Đỏ Ruby</span>
-</label>
-<label aria-checked="false" aria-label="Pearl White" class="input-container product-variants-item" data-product-id="14" role="radio" tabindex="0">
-<div class="circle button circle-main pearl-white" data-attribute-id="11" title="Pearl White"></div>
-<input class="input-color" data-analytics-type="colour" data-attribute="11" data-color="pearl_white" data-has-quantity="1" data-omnibus-price="" data-product="14" data-product-attribute="1" data-quantity="1" name="group[1]" title="Pearl White" type="radio" value="11"/>
-<span class="radio-label body-16" data-attribute-id="11">Trắng Ngọc Trai</span>
-</label>
-</div>
-</div>
-</div>
 <div class="product-prices-section">
 <div class="product-prices js-product-prices">
 <div class="product-price">
 <div class="current-price">
-<p aria-label="Price $449" class="current-price-value product-price" content="449">
-																		$449											</p>
+<p aria-label="Giá 11.490.000 đ" class="current-price-value product-price" content="11490000">
+																		11.490.000 <u>đ</u>											</p>
 </div>
 </div>
 <div class="tax-shipping-delivery-label">

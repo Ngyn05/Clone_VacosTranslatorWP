@@ -105,6 +105,16 @@ function vasco_wc_add_to_cart() {
 	$product_name_input = isset( $_POST['product_name'] ) ? sanitize_text_field( $_POST['product_name'] ) : '';
 	$quantity           = isset( $_POST['quantity'] ) ? absint( $_POST['quantity'] ) : 1;
 	$variation_id       = isset( $_POST['variation_id'] ) ? absint( $_POST['variation_id'] ) : 0;
+	$product_color      = isset( $_POST['product_color'] ) ? sanitize_text_field( $_POST['product_color'] ) : '';
+
+	// DEBUG: log all POST data to see what JS sends
+	$log_data = array(
+		'product_id'    => $product_id_input,
+		'product_name'  => $product_name_input,
+		'product_color' => $product_color,
+		'all_post_keys' => implode( ', ', array_keys( $_POST ) ),
+	);
+	error_log( '[VASCO CART DEBUG] POST data: ' . wp_json_encode( $log_data ) );
 
 	$product_id = vasco_wc_find_product_id( $product_id_input, $product_name_input );
 
@@ -115,7 +125,18 @@ function vasco_wc_add_to_cart() {
 	// Xóa toàn bộ sản phẩm cũ trong giỏ hàng trước khi mua sản phẩm mới (chỉ giữ 1 sản phẩm mua ngay)
 	WC()->cart->empty_cart();
 
-	$result = WC()->cart->add_to_cart( $product_id, $quantity, $variation_id );
+	// Build cart item data to carry color info
+	$cart_item_data = array();
+	if ( $product_color ) {
+		$cart_item_data['vasco_selected_color'] = $product_color;
+	}
+
+	// Save selected color to WC session for easy retrieval
+	if ( $product_color && function_exists('WC') && WC()->session ) {
+		WC()->session->set( 'vasco_selected_color', $product_color );
+	}
+
+	$result = WC()->cart->add_to_cart( $product_id, $quantity, $variation_id, array(), $cart_item_data );
 
 	if ( $result ) {
 		WC()->cart->calculate_totals();
@@ -144,6 +165,79 @@ function vasco_redirect_cart_to_checkout() {
 add_action( 'template_redirect', 'vasco_redirect_cart_to_checkout' );
 add_action( 'wp_ajax_nopriv_vasco_add_to_wc_cart', 'vasco_wc_add_to_cart' );
 
+// ── Hiển thị Màu sắc đã chọn trong giỏ hàng & email đơn hàng ──────
+
+/**
+ * Nối tên màu vào tên sản phẩm trên trang checkout (order review table).
+ * Đây là cách đáng tin cậy nhất để hiện màu trên checkout.
+ */
+add_filter( 'woocommerce_cart_item_name', function ( $product_name, $cart_item, $cart_item_key ) {
+	$color = '';
+
+	// 1. Ưu tiên từ cart_item_data
+	if ( ! empty( $cart_item['vasco_selected_color'] ) ) {
+		$color = wc_clean( $cart_item['vasco_selected_color'] );
+	}
+
+	// 2. Fallback từ WC session nếu cart_item_data không có
+	if ( ! $color && function_exists('WC') && WC()->session ) {
+		$session_color = WC()->session->get( 'vasco_selected_color' );
+		if ( $session_color ) {
+			$color = wc_clean( $session_color );
+		}
+	}
+
+	if ( $color ) {
+		// Thêm tên màu vào tên sản phẩm (tránh trùng nếu đã có)
+		if ( strpos( $product_name, $color ) === false ) {
+			$product_name = $product_name . ' <span class="vasco-color-label" style="color:#6b7280;font-size:0.9em;">(' . esc_html( $color ) . ')</span>';
+		}
+	}
+
+	return $product_name;
+}, 10, 3 );
+
+/**
+ * Hiển thị "Màu sắc" dạng item meta trong giỏ hàng / trang thanh toán.
+ */
+add_filter( 'woocommerce_get_item_data', function ( $item_data, $cart_item ) {
+	$color = '';
+
+	if ( ! empty( $cart_item['vasco_selected_color'] ) ) {
+		$color = wc_clean( $cart_item['vasco_selected_color'] );
+	} elseif ( function_exists('WC') && WC()->session ) {
+		$color = wc_clean( (string) WC()->session->get( 'vasco_selected_color' ) );
+	}
+
+	if ( $color ) {
+		$item_data[] = array(
+			'key'   => 'Màu sắc',
+			'value' => $color,
+		);
+	}
+
+	return $item_data;
+}, 10, 2 );
+
+/**
+ * Lưu màu sắc vào order item meta (dùng cho email & trang đơn hàng).
+ * Có fallback từ WC session nếu cart_item_data không có.
+ */
+add_action( 'woocommerce_checkout_create_order_line_item', function ( $item, $cart_item_key, $values ) {
+	$color = '';
+
+	if ( ! empty( $values['vasco_selected_color'] ) ) {
+		$color = wc_clean( $values['vasco_selected_color'] );
+	} elseif ( function_exists('WC') && WC()->session ) {
+		$color = wc_clean( (string) WC()->session->get( 'vasco_selected_color' ) );
+	}
+
+	if ( $color ) {
+		$item->add_meta_data( 'Màu sắc', $color, true );
+	}
+}, 10, 3 );
+
+
 // ─────────────────────────────────────────────
 // 1.1. AJAX: Đồng bộ hàng loạt sản phẩm từ LocalStorage vào WC Cart (1 Request duy nhất)
 // ─────────────────────────────────────────────
@@ -162,13 +256,21 @@ function vasco_wc_sync_cart() {
 	if ( ! empty( $items ) && is_array( $items ) ) {
 		WC()->cart->empty_cart();
 		foreach ( $items as $item ) {
-			$raw_id = isset( $item['id'] ) ? absint( $item['id'] ) : 0;
-			$p_name = isset( $item['name'] ) ? sanitize_text_field( $item['name'] ) : '';
-			$qty    = isset( $item['quantity'] ) ? absint( $item['quantity'] ) : 1;
+			$raw_id  = isset( $item['id'] ) ? absint( $item['id'] ) : 0;
+			$p_name  = isset( $item['name'] ) ? sanitize_text_field( $item['name'] ) : '';
+			$qty     = isset( $item['quantity'] ) ? absint( $item['quantity'] ) : 1;
+			$color   = isset( $item['color'] ) ? sanitize_text_field( $item['color'] ) : '';
 
 			$p_id = vasco_wc_find_product_id( $raw_id, $p_name );
 			if ( $p_id ) {
-				WC()->cart->add_to_cart( $p_id, $qty );
+				$cart_item_data = array();
+				if ( $color ) {
+					$cart_item_data['vasco_selected_color'] = $color;
+					if ( WC()->session ) {
+						WC()->session->set( 'vasco_selected_color', $color );
+					}
+				}
+				WC()->cart->add_to_cart( $p_id, $qty, 0, array(), $cart_item_data );
 			}
 		}
 		WC()->cart->calculate_totals();
@@ -196,10 +298,23 @@ function vasco_wc_get_cart() {
 		$image_id = $product->get_image_id();
 		$image    = $image_id ? wp_get_attachment_image_url( $image_id, 'thumbnail' ) : wc_placeholder_img_src( 'thumbnail' );
 
+		// Lấy màu sắc từ cart_item_data hoặc WC session
+		$color = '';
+		if ( ! empty( $cart_item['vasco_selected_color'] ) ) {
+			$color = wc_clean( $cart_item['vasco_selected_color'] );
+		} elseif ( WC()->session ) {
+			$color = wc_clean( (string) WC()->session->get( 'vasco_selected_color' ) );
+		}
+
+		$display_name = $product->get_name();
+		if ( $color ) {
+			$display_name .= ' (' . $color . ')';
+		}
+
 		$items[] = array(
 			'cart_item_key' => $cart_item_key,
 			'product_id'    => $cart_item['product_id'],
-			'name'          => $product->get_name(),
+			'name'          => $display_name,
 			'price'         => (float) $product->get_price(),
 			'price_fmt'     => vasco_wc_clean_price( wc_price( $product->get_price() ) ),
 			'quantity'      => $cart_item['quantity'],
@@ -382,6 +497,8 @@ function vasco_wc_place_order() {
 	$country        = sanitize_text_field( $_POST['billing_country'] ?? 'VN' );
 	$payment_method = sanitize_text_field( $_POST['payment_method'] ?? 'cod' );
 	$order_notes    = sanitize_textarea_field( $_POST['order_notes'] ?? '' );
+	// Màu sắc được JS gửi trực tiếp từ localStorage (đảm bảo không bị mất khi session hết hạn)
+	$post_color     = sanitize_text_field( $_POST['selected_color'] ?? '' );
 
 	// Phân tách họ và tên nếu khách nhập ô Họ và tên gộp
 	if ( ! empty( $full_name ) && empty( $last_name ) ) {
@@ -437,13 +554,38 @@ function vasco_wc_place_order() {
 	}
 
 	// Thêm sản phẩm từ cart vào order
+	$all_colors = array();
 	foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
 		$product  = $cart_item['data'];
 		$quantity = $cart_item['quantity'];
-		$order->add_product( $product, $quantity, array(
-			'subtotal'     => $product->get_price() * $quantity,
-			'total'        => $product->get_price() * $quantity,
+
+		// Lấy màu sắc từ cart_item_data → WC session → POST (3 nguồn fallback)
+		$color = '';
+		if ( ! empty( $cart_item['vasco_selected_color'] ) ) {
+			$color = wc_clean( $cart_item['vasco_selected_color'] );
+		} elseif ( WC()->session && WC()->session->get( 'vasco_selected_color' ) ) {
+			$color = wc_clean( (string) WC()->session->get( 'vasco_selected_color' ) );
+		} elseif ( ! empty( $post_color ) ) {
+			$color = wc_clean( $post_color );
+		}
+
+		$item_id = $order->add_product( $product, $quantity, array(
+			'subtotal' => $product->get_price() * $quantity,
+			'total'    => $product->get_price() * $quantity,
 		) );
+
+		// Lưu màu sắc vào order item meta (hiện trong email & admin)
+		if ( $color && $item_id ) {
+			wc_add_order_item_meta( $item_id, 'Màu sắc', $color );
+			$all_colors[] = $product->get_name() . ': ' . $color;
+		}
+	}
+
+	// Thêm ghi chú màu sắc vào đơn hàng để admin thấy ngay
+	if ( ! empty( $all_colors ) ) {
+		$color_note = '🎨 Màu sắc đã chọn - ' . implode( ' | ', $all_colors );
+		$order->add_order_note( $color_note, 0 ); // 0 = ghi chú nội bộ (chỉ admin thấy)
+		$order->add_order_note( $color_note, 1 ); // 1 = gửi cho khách hàng trong email
 	}
 
 	// Set billing address

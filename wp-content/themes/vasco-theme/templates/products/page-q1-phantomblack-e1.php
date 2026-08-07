@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Product Page Template page-q1-phantomblack-e1.php
  *
@@ -104,6 +104,29 @@ return;
 </div>
 </div>
 <div class="product-action-info-wrapper">
+<div class="product-variants js-product-variants" style="margin-bottom: 16px;">
+<div class="product-variants-items">
+<p id="legend-color-1" style="font-weight:600; font-size:15px; color:#1e293b; margin-bottom:8px;">Color:</p>
+<div aria-labelledby="legend-color-1" class="product-variants-list" id="group_1" role="radiogroup">
+<label aria-checked="true" aria-label="Phantom Black" class="input-container product-variants-item active" data-image="https://vasco-translator.com/426-medium_default/q1-phantomblack-e1.jpg" role="radio" tabindex="0">
+<div class="circle button circle-main phantom-black active" title="Phantom Black"></div>
+<span class="radio-label body-16 active">Phantom Black</span>
+</label>
+<label aria-checked="false" aria-label="Slate Blue" class="input-container product-variants-item" data-image="<?php echo esc_url( content_url( '/uploads/2026/08/vasco-translator-q1.jpg' ) ); ?>" role="radio" tabindex="0">
+<div class="circle button circle-main slate-blue" title="Slate Blue"></div>
+<span class="radio-label body-16">Slate Blue</span>
+</label>
+<label aria-checked="false" aria-label="Mystic Plum" class="input-container product-variants-item" data-image="<?php echo esc_url( content_url( '/uploads/2026/08/vasco-translator-q1 (1).jpg' ) ); ?>" role="radio" tabindex="0">
+<div class="circle button circle-main mystic-plum" title="Mystic Plum"></div>
+<span class="radio-label body-16">Mystic Plum</span>
+</label>
+<label aria-checked="false" aria-label="Scarlet Pulse" class="input-container product-variants-item" data-image="<?php echo esc_url( content_url( '/uploads/2026/08/vasco-translator-q1 (2).jpg' ) ); ?>" role="radio" tabindex="0">
+<div class="circle button circle-main scarlet-pulse" title="Scarlet Pulse"></div>
+<span class="radio-label body-16">Scarlet Pulse</span>
+</label>
+</div>
+</div>
+</div>
 <div class="product-extended-description">
 <div class="extended-description-icon">
 <img alt="Miễn phí giao hàng" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/description-icons/free-shipping.svg" ); ?>"/>
@@ -123,47 +146,14 @@ return;
 <input name="token" type="hidden" value="4d648adb0a3dc7ed67dce0366e2eb442"/>
 <input id="product_page_product_id" name="id_product" type="hidden" value="43"/>
 <input class="js-product-customization-id" id="product_customization_id" name="id_customization" type="hidden" value="0"/>
-<div class="product-variants js-product-variants">
-<div class="product-variants-items">
-<p class="body-16" id="pack-bundle-color">Màu sắc:</p>
-<div aria-labelledby="pack-bundle-color" class="product-variants-list" role="radiogroup">
-<a href="<?php echo esc_url( home_url( '/product/q1-phantomblack-e1/' ) ); ?>">
-<label aria-checked="true" aria-label="Vasco Translator Q1 Phantom Black + E1" class="input-container product-variants-item product-variants-item-bundle" data-product-id="43" role="radio">
-<div class="circle circle-main phantom-black active" title="Phantom Black"></div>
-<input class="input-color active" data-analytics-type="colour" data-attribute="0" data-product-id="43" name="bundle_color" title="Phantom Black" type="button" value="43"/>
-<span class="radio-label body-16 active">Đen Phantom</span>
-</label>
-</a>
-<a href="<?php echo esc_url( home_url( '/product/q1-slateblue-e1/' ) ); ?>">
-<label aria-checked="false" aria-label="Vasco Translator Q1 Slate Blue + E1" class="input-container product-variants-item product-variants-item-bundle" data-product-id="44" role="radio">
-<div class="circle circle-main slate-blue" title="Slate Blue"></div>
-<input class="input-color" data-analytics-type="colour" data-attribute="0" data-product-id="44" name="bundle_color" title="Slate Blue" type="button" value="44"/>
-<span class="radio-label body-16">Xanh Slate</span>
-</label>
-</a>
-<a href="<?php echo esc_url( home_url( '/product/q1-mysticplum-e1/' ) ); ?>">
-<label aria-checked="false" aria-label="Vasco Translator Q1 Mystic Plum + E1" class="input-container product-variants-item product-variants-item-bundle" data-product-id="45" role="radio">
-<div class="circle circle-main mystic-plum" title="Mystic Plum"></div>
-<input class="input-color" data-analytics-type="colour" data-attribute="0" data-product-id="45" name="bundle_color" title="Mystic Plum" type="button" value="45"/>
-<span class="radio-label body-16">Mận Mystic</span>
-</label>
-</a>
-<a href="<?php echo esc_url( home_url( '/product/q1-scarletpulse-e1/' ) ); ?>">
-<label aria-checked="false" aria-label="Vasco Translator Q1 Scarlet Pulse + E1" class="input-container product-variants-item product-variants-item-bundle" data-product-id="46" role="radio">
-<div class="circle circle-main scarlet-pulse" title="Scarlet Pulse"></div>
-<input class="input-color" data-analytics-type="colour" data-attribute="0" data-product-id="46" name="bundle_color" title="Scarlet Pulse" type="button" value="46"/>
-<span class="radio-label body-16">Đỏ Scarlet</span>
-</label>
-</a>
-</div>
-</div>
-</div>
 <div class="product-prices-section">
 <div class="product-prices js-product-prices">
 <div class="product-price">
 <div class="current-price">
-<p aria-label="Price $799" class="current-price-value product-price" content="799">
-																		$799											</p>
+<p aria-label="Giá 19.990.000 đ" class="current-price-value product-price" content="19990000">
+																		19.990.000 <u>đ</u>											</p>
+</div>
+</div>
 </div>
 </div>
 <div class="tax-shipping-delivery-label">

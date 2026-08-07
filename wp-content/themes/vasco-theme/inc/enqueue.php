@@ -18,16 +18,17 @@ function vasco_theme_enqueue_all_assets() {
 		wp_enqueue_style( 'dashicons' );
 	}
 
-	// 1. Enqueue CSS files from source
-	wp_enqueue_style( 'vasco-css-5', VASCO_THEME_URI . '/assets/css/theme-DXqo8zvY.css', array(), VASCO_THEME_VERSION );
-	wp_enqueue_style( 'vasco-custom-fields', VASCO_THEME_URI . '/assets/css/vasco-custom-fields.css', array(), VASCO_THEME_VERSION );
-	wp_enqueue_style( 'vasco-main-style', VASCO_THEME_URI . '/style.css', array( 'vasco-css-5', 'vasco-custom-fields' ), VASCO_THEME_VERSION );
+	// 1. Enqueue CSS files with strict cache buster timestamp
+	$cache_ver = time();
+	wp_enqueue_style( 'vasco-css-5', VASCO_THEME_URI . '/assets/css/theme-DXqo8zvY.css', array(), $cache_ver );
+	wp_enqueue_style( 'vasco-custom-fields', VASCO_THEME_URI . '/assets/css/vasco-custom-fields.css', array(), $cache_ver );
+	wp_enqueue_style( 'vasco-main-style', VASCO_THEME_URI . '/style.css', array( 'vasco-css-5', 'vasco-custom-fields' ), $cache_ver );
 
 	// Non-critical page-specific or module stylesheets
-	wp_enqueue_style( 'vasco-css-0', VASCO_THEME_URI . '/assets/css/category-BkrAaUZX.css', array(), VASCO_THEME_VERSION );
-	wp_enqueue_style( 'vasco-css-1', VASCO_THEME_URI . '/assets/css/index-BdfBdicE.css', array(), VASCO_THEME_VERSION );
-	wp_enqueue_style( 'vasco-css-2', VASCO_THEME_URI . '/assets/css/landing-Dc8GznoV.css', array(), VASCO_THEME_VERSION );
-	wp_enqueue_style( 'vasco-css-3', VASCO_THEME_URI . '/assets/css/product-Dcv3kZVH.css', array(), VASCO_THEME_VERSION );
+	wp_enqueue_style( 'vasco-css-0', VASCO_THEME_URI . '/assets/css/category-BkrAaUZX.css', array(), $cache_ver );
+	wp_enqueue_style( 'vasco-css-1', VASCO_THEME_URI . '/assets/css/index-BdfBdicE.css', array(), $cache_ver );
+	wp_enqueue_style( 'vasco-css-2', VASCO_THEME_URI . '/assets/css/landing-Dc8GznoV.css', array(), $cache_ver );
+	wp_enqueue_style( 'vasco-css-3', VASCO_THEME_URI . '/assets/css/product-Dcv3kZVH.css', array(), $cache_ver );
 	wp_enqueue_style( 'vasco-css-4', VASCO_THEME_URI . '/assets/css/smooth-carousel.css', array(), VASCO_THEME_VERSION );
 	wp_enqueue_style( 'vasco-css-6', VASCO_THEME_URI . '/assets/js/jquery/plugins/fancybox/jquery.fancybox.css', array(), VASCO_THEME_VERSION );
 	wp_enqueue_style( 'vasco-css-7', VASCO_THEME_URI . '/assets/modules/amazonpay/views/css/front.css', array(), VASCO_THEME_VERSION );
@@ -36,7 +37,7 @@ function vasco_theme_enqueue_all_assets() {
 	wp_enqueue_style( 'vasco-css-10', VASCO_THEME_URI . '/assets/modules/ve_gdpr_info/views/css/ve_gdpr.css', array(), VASCO_THEME_VERSION );
 	wp_enqueue_style( 'vasco-css-11', VASCO_THEME_URI . '/assets/modules/ve_notifyproducts/views/assets/css/notifyproduct.css', array(), VASCO_THEME_VERSION );
 
-	wp_enqueue_script( 'vasco-custom-fields-js', VASCO_THEME_URI . '/assets/js/vasco-custom-fields.js', array(), VASCO_THEME_VERSION, true );
+	wp_enqueue_script( 'vasco-custom-fields-js', VASCO_THEME_URI . '/assets/js/vasco-custom-fields.js', array(), $cache_ver, true );
 
 	// 3. Enqueue jQuery Core & Helper Scripts
 	wp_enqueue_script( 'jquery' );

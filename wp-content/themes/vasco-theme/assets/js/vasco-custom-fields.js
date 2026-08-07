@@ -1,6 +1,6 @@
 /**
  * Custom Product Fields JavaScript for Vasco Theme
- * Handles Star Rating Interactive & FAQ Accordion Toggles
+ * Handles Star Rating Interactive, FAQ Accordion Toggles & Dynamic Color Variant Image/Title Switcher
  */
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -134,7 +134,94 @@ document.addEventListener("DOMContentLoaded", function() {
 			lastScrollTop = scrollTop;
 		}, { passive: true });
 	}
+
+	// ── 4. Dynamic Color Variant Image & Title Switcher ──────────────────
+	document.addEventListener("click", function(e) {
+		var item = e.target.closest(".product-variants-item, .input-container, .circle.button, .circle, [data-image]");
+		if (!item) return;
+
+		var labelContainer = item.closest(".product-variants-item, .input-container") || item;
+
+		var newImg = item.getAttribute("data-image");
+		if (!newImg && labelContainer) {
+			newImg = labelContainer.getAttribute("data-image");
+		}
+
+		// Update active class on color items in the same container
+		var list = item.closest(".product-variants-list, .product-variants-items");
+		if (list) {
+			list.querySelectorAll(".product-variants-item, .circle, .input-container").forEach(function(el) {
+				el.classList.remove("active");
+				if (el.hasAttribute("aria-checked")) {
+					el.setAttribute("aria-checked", "false");
+				}
+			});
+		}
+		labelContainer.classList.add("active");
+		if (labelContainer.hasAttribute("aria-checked")) {
+			labelContainer.setAttribute("aria-checked", "true");
+		}
+		var innerCircle = labelContainer.querySelector(".circle");
+		if (innerCircle) {
+			innerCircle.classList.add("active");
+		}
+
+		var colorName = labelContainer.getAttribute("aria-label") || (labelContainer.querySelector(".radio-label") ? labelContainer.querySelector(".radio-label").innerText.trim() : "");
+		var productCard = item.closest("article.product-miniature, .product-container, #main, body");
+
+		// Update Product Title Name & Color Legend Text
+		if (colorName && productCard) {
+			// 1. Keep Legend Text static as 'Màu sắc:'
+			var legend = productCard.querySelector("#legend-color, #legend-color-1, .color-label-title");
+			if (legend) {
+				legend.innerHTML = "Màu sắc:";
+			}
+
+			// 2. Update Product Name H1 only
+			var titleEls = document.querySelectorAll(".product-name, h1#product-name, .product-header-section .product-name");
+			titleEls.forEach(function(titleEl) {
+				if (!titleEl.hasAttribute("data-base-title")) {
+					var raw = titleEl.innerText.trim();
+					var colorList = ["Phantom Black", "Slate Blue", "Mystic Plum", "Scarlet Pulse", "Black Onyx", "Stone Gray", "Cobalt Blue", "Ruby Red", "Pearl White", "Matte Black", "Frosty Turquoise", "Misty Purple"];
+					colorList.forEach(function(c) {
+						raw = raw.replace(new RegExp("\\s*\\(?\\b" + c + "\\b\\)?", "gi"), "").trim();
+					});
+					titleEl.setAttribute("data-base-title", raw);
+				}
+
+				var baseTitle = titleEl.getAttribute("data-base-title");
+				if (baseTitle.indexOf("+") !== -1) {
+					// Bundle product format: Vasco Translator Q1 Slate Blue + E1
+					var parts = baseTitle.split("+");
+					var mainName = parts[0].trim();
+					var rest = parts.slice(1).join("+").trim();
+					titleEl.innerText = mainName + " " + colorName + " +" + rest;
+				} else {
+					// Single product format: Vasco Translator Q1 Slate Blue
+					titleEl.innerText = baseTitle + " " + colorName;
+				}
+			});
+		}
+
+		// Update main product image / Swiper slide
+		if (newImg && productCard) {
+			// 1. Swiper Cover slide image (Detail pages)
+			var swiperImg = productCard.querySelector(".swiper-cover .swiper-slide-active img, .swiper-cover img, .product-cover img");
+			if (swiperImg) {
+				swiperImg.src = newImg;
+				if (swiperImg.hasAttribute("srcset")) {
+					swiperImg.removeAttribute("srcset");
+				}
+			}
+
+			// 2. Listing Card Thumbnail (Catalog pages / Horizontal cards)
+			var cardImg = productCard.querySelector(".product-thumb-wrapper img, .product-link img");
+			if (cardImg) {
+				cardImg.src = newImg;
+				if (cardImg.hasAttribute("srcset")) {
+					cardImg.removeAttribute("srcset");
+				}
+			}
+		}
+	});
 });
-
-
-

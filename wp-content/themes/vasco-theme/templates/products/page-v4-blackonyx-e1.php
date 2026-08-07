@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Product Page Template page-v4-blackonyx-e1.php
  *
@@ -104,6 +104,33 @@ return;
 </div>
 </div>
 <div class="product-action-info-wrapper">
+<div class="product-variants js-product-variants" style="margin-bottom: 16px;">
+<div class="product-variants-items">
+<p id="legend-color-1" style="font-weight:600; font-size:15px; color:#1e293b; margin-bottom:8px;">Color:</p>
+<div aria-labelledby="legend-color-1" class="product-variants-list" id="group_1" role="radiogroup">
+<label aria-checked="true" aria-label="Black Onyx" class="input-container product-variants-item active" data-image="https://vasco-translator.com/343-medium_default/vasco-translator-v4.jpg" role="radio" tabindex="0">
+<div class="circle button circle-main black-onyx active" title="Black Onyx"></div>
+<span class="radio-label body-16 active">Black Onyx</span>
+</label>
+<label aria-checked="false" aria-label="Stone Gray" class="input-container product-variants-item" data-image="<?php echo esc_url( content_url( '/uploads/2026/08/vasco-translator-v4.jpg' ) ); ?>" role="radio" tabindex="0">
+<div class="circle button circle-main stone-gray" title="Stone Gray"></div>
+<span class="radio-label body-16">Stone Gray</span>
+</label>
+<label aria-checked="false" aria-label="Cobalt Blue" class="input-container product-variants-item" data-image="<?php echo esc_url( content_url( '/uploads/2026/08/vasco-translator-v4 (1).jpg' ) ); ?>" role="radio" tabindex="0">
+<div class="circle button circle-main cobalt-blue" title="Cobalt Blue"></div>
+<span class="radio-label body-16">Cobalt Blue</span>
+</label>
+<label aria-checked="false" aria-label="Ruby Red" class="input-container product-variants-item" data-image="<?php echo esc_url( content_url( '/uploads/2026/08/vasco-translator-v4 (2).jpg' ) ); ?>" role="radio" tabindex="0">
+<div class="circle button circle-main ruby-red" title="Ruby Red"></div>
+<span class="radio-label body-16">Ruby Red</span>
+</label>
+<label aria-checked="false" aria-label="Pearl White" class="input-container product-variants-item" data-image="<?php echo esc_url( content_url( '/uploads/2026/08/vasco-translator-v4 (3).jpg' ) ); ?>" role="radio" tabindex="0">
+<div class="circle button circle-main pearl-white" title="Pearl White"></div>
+<span class="radio-label body-16">Pearl White</span>
+</label>
+</div>
+</div>
+</div>
 <div class="product-extended-description">
 <div class="extended-description-icon">
 <img alt="Miễn phí giao hàng" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/description-icons/free-shipping.svg" ); ?>"/>
@@ -123,54 +150,14 @@ return;
 <input name="token" type="hidden" value="4d648adb0a3dc7ed67dce0366e2eb442"/>
 <input id="product_page_product_id" name="id_product" type="hidden" value="31"/>
 <input class="js-product-customization-id" id="product_customization_id" name="id_customization" type="hidden" value="0"/>
-<div class="product-variants js-product-variants">
-<div class="product-variants-items">
-<p class="body-16" id="pack-bundle-color">Màu sắc:</p>
-<div aria-labelledby="pack-bundle-color" class="product-variants-list" role="radiogroup">
-<a href="<?php echo esc_url( home_url( '/product/v4-blackonyx-e1/' ) ); ?>">
-<label aria-checked="true" aria-label="Vasco Translator V4 Black Onyx + E1" class="input-container product-variants-item product-variants-item-bundle" data-product-id="31" role="radio">
-<div class="circle circle-main black-onyx active" title="Black Onyx"></div>
-<input class="input-color active" data-analytics-type="colour" data-attribute="0" data-product-id="31" name="bundle_color" title="Black Onyx" type="button" value="31"/>
-<span class="radio-label body-16 active">Đen Onyx</span>
-</label>
-</a>
-<a href="<?php echo esc_url( home_url( '/product/v4-stonegray-e1/' ) ); ?>">
-<label aria-checked="false" aria-label="Vasco Translator V4 Stone Gray + E1" class="input-container product-variants-item product-variants-item-bundle" data-product-id="32" role="radio">
-<div class="circle circle-main stone-gray" title="Stone Gray"></div>
-<input class="input-color" data-analytics-type="colour" data-attribute="0" data-product-id="32" name="bundle_color" title="Stone Gray" type="button" value="32"/>
-<span class="radio-label body-16">Xám Stone</span>
-</label>
-</a>
-<a href="<?php echo esc_url( home_url( '/product/v4-cobaltblue-e1/' ) ); ?>">
-<label aria-checked="false" aria-label="Vasco Translator V4 Cobalt Blue + E1" class="input-container product-variants-item product-variants-item-bundle" data-product-id="33" role="radio">
-<div class="circle circle-main cobalt-blue" title="Cobalt Blue"></div>
-<input class="input-color" data-analytics-type="colour" data-attribute="0" data-product-id="33" name="bundle_color" title="Cobalt Blue" type="button" value="33"/>
-<span class="radio-label body-16">Xanh Cobalt</span>
-</label>
-</a>
-<a href="<?php echo esc_url( home_url( '/product/v4-rubyred-e1/' ) ); ?>">
-<label aria-checked="false" aria-label="Vasco Translator V4 Ruby Red + E1" class="input-container product-variants-item product-variants-item-bundle" data-product-id="34" role="radio">
-<div class="circle circle-main ruby-red" title="Ruby Red"></div>
-<input class="input-color" data-analytics-type="colour" data-attribute="0" data-product-id="34" name="bundle_color" title="Ruby Red" type="button" value="34"/>
-<span class="radio-label body-16">Đỏ Ruby</span>
-</label>
-</a>
-<a href="<?php echo esc_url( home_url( '/product/v4-pearlwhite-e1/' ) ); ?>">
-<label aria-checked="false" aria-label="Vasco Translator V4 Pearl White + E1" class="input-container product-variants-item product-variants-item-bundle" data-product-id="35" role="radio">
-<div class="circle circle-main pearl-white" title="Pearl White"></div>
-<input class="input-color" data-analytics-type="colour" data-attribute="0" data-product-id="35" name="bundle_color" title="Pearl White" type="button" value="35"/>
-<span class="radio-label body-16">Trắng Ngọc Trai</span>
-</label>
-</a>
-</div>
-</div>
-</div>
 <div class="product-prices-section">
 <div class="product-prices js-product-prices">
 <div class="product-price">
 <div class="current-price">
-<p aria-label="Giá $715" class="current-price-value product-price" content="715">
-																		$715											</p>
+<p aria-label="Giá 17.990.000 đ" class="current-price-value product-price" content="17990000">
+																		17.990.000 <u>đ</u>											</p>
+</div>
+</div>
 </div>
 </div>
 <div class="tax-shipping-delivery-label">

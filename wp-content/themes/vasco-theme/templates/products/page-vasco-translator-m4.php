@@ -215,8 +215,28 @@ return;
 </button>
 <!-- End TrustBox widget -->
 </div>
+<div class="product-variants js-product-variants" style="margin: 16px 0;">
+<div class="product-variants-items">
+<p id="legend-color-1" style="font-weight:600; font-size:15px; color:#1e293b; margin-bottom:8px;">Màu sắc:</p>
+<div aria-labelledby="legend-color-1" class="product-variants-list" id="group_1" role="radiogroup">
+<label aria-checked="true" aria-label="Matte Black" class="input-container product-variants-item active" data-image="https://vasco-translator.com/488-medium_default/vasco-translator-m4.jpg" data-product-id="62" role="radio" tabindex="0">
+<div class="circle button circle-main matte-black active" data-attribute-id="30" title="Matte Black"></div>
+<input checked="checked" class="input-color" data-analytics-type="colour" data-attribute="30" data-color="matte_black" data-has-quantity="1" data-omnibus-price="" data-product="62" data-product-attribute="1" data-quantity="1" name="group[1]" title="Matte Black" type="radio" value="30"/>
+<span class="radio-label body-16 active" data-attribute-id="30">Matte Black</span>
+</label>
+<label aria-checked="false" aria-label="Frosty Turquoise" class="input-container product-variants-item" data-image="<?php echo esc_url( content_url( '/uploads/2026/08/vasco-translator-m4.jpg' ) ); ?>" data-product-id="62" role="radio" tabindex="0">
+<div class="circle button circle-main frosty-turquoise" data-attribute-id="31" title="Frosty Turquoise"></div>
+<input class="input-color" data-analytics-type="colour" data-attribute="31" data-color="frosty_turquoise" data-has-quantity="1" data-omnibus-price="" data-product="62" data-product-attribute="1" data-quantity="1" name="group[1]" title="Frosty Turquoise" type="radio" value="31"/>
+<span class="radio-label body-16" data-attribute-id="31">Frosty Turquoise</span>
+</label>
+<label aria-checked="false" aria-label="Misty Purple" class="input-container product-variants-item" data-image="<?php echo esc_url( content_url( '/uploads/2026/08/vasco-translator-m4 (1).jpg' ) ); ?>" data-product-id="62" role="radio" tabindex="0">
+<div class="circle button circle-main misty-purple" data-attribute-id="32" title="Misty Purple"></div>
+<input class="input-color" data-analytics-type="colour" data-attribute="32" data-color="misty_purple" data-has-quantity="1" data-omnibus-price="" data-product="62" data-product-attribute="1" data-quantity="1" name="group[1]" title="Misty Purple" type="radio" value="32"/>
+<span class="radio-label body-16" data-attribute-id="32">Misty Purple</span>
+</label>
 </div>
-<div class="product-action-info-wrapper">
+</div>
+</div>
 <div class="product-extended-description">
 <div class="extended-description-icon">
 <img alt="Miễn phí giao hàng" loading="lazy" src="<?php echo esc_url( VASCO_THEME_URI . "/assets/img/description-icons/free-shipping.svg" ); ?>"/>
@@ -231,45 +251,18 @@ return;
 <p>Giao hàng trong 24 giờ</p>
 </div>
 </div>
+</div>
 <div class="product-actions js-product-actions">
 <form action="./cart" aria-labelledby="product-name" id="add-to-cart-or-refresh" method="post">
 <input name="token" type="hidden" value="4d648adb0a3dc7ed67dce0366e2eb442"/>
 <input id="product_page_product_id" name="id_product" type="hidden" value="62"/>
 <input class="js-product-customization-id" id="product_customization_id" name="id_customization" type="hidden" value="0"/>
-<div class="product-variants js-product-variants">
-<div class="product-variants-items">
-<p id="legend-color-1">Màu sắc:</p>
-<div aria-labelledby="legend-color-1" class="product-variants-list" id="group_1" role="radiogroup">
-<label aria-checked="true" aria-label="Matte Black" class="input-container product-variants-item out-of-stock" data-product-id="62" role="radio" tabindex="0">
-<div class="circle button circle-main matte-black active" data-attribute-id="30" title="Matte Black"></div>
-<input checked="checked" class="input-color" data-analytics-type="colour" data-attribute="30" data-color="matte_black" data-has-quantity="0" data-omnibus-price="" data-product="62" data-product-attribute="1" data-quantity="0" name="group[1]" title="Matte Black" type="radio" value="30"/>
-<span class="radio-label body-16 active" data-attribute-id="30">
-									Đen Matte
-								</span>
-</label>
-<label aria-checked="false" aria-label="Frosty Turquoise" class="input-container product-variants-item" data-product-id="62" role="radio" tabindex="0">
-<div class="circle button circle-main frosty-turquoise" data-attribute-id="31" title="Frosty Turquoise"></div>
-<input class="input-color" data-analytics-type="colour" data-attribute="31" data-color="frosty_turquoise" data-has-quantity="1" data-omnibus-price="" data-product="62" data-product-attribute="1" data-quantity="1" name="group[1]" title="Frosty Turquoise" type="radio" value="31"/>
-<span class="radio-label body-16" data-attribute-id="31">
-									Ngọc Lam Frosty
-								</span>
-</label>
-<label aria-checked="false" aria-label="Misty Purple" class="input-container product-variants-item" data-product-id="62" role="radio" tabindex="0">
-<div class="circle button circle-main misty-purple" data-attribute-id="32" title="Misty Purple"></div>
-<input class="input-color" data-analytics-type="colour" data-attribute="32" data-color="misty_purple" data-has-quantity="1" data-omnibus-price="" data-product="62" data-product-attribute="1" data-quantity="1" name="group[1]" title="Misty Purple" type="radio" value="32"/>
-<span class="radio-label body-16" data-attribute-id="32">
-									Tím Misty
-								</span>
-</label>
-</div>
-</div>
-</div>
 <div class="product-prices-section">
 <div class="product-prices js-product-prices">
 <div class="product-price">
 <div class="current-price">
-<p aria-label="Price $429" class="current-price-value product-price" content="429">
-																		$429											</p>
+<p aria-label="Giá 10.990.000 đ" class="current-price-value product-price" content="10990000">
+																		10.990.000 <u>đ</u>											</p>
 </div>
 </div>
 <div class="tax-shipping-delivery-label">

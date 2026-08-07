@@ -2503,36 +2503,43 @@ h2.product-title {
 }
 
 .product-variants-item.active,
-.product-variants-item[aria-checked="true"],
-.product-variants-item:first-child {
+.product-variants-item[aria-checked="true"] {
     border-color: #0f172a !important;
     box-shadow: 0 0 0 1px #0f172a !important;
 }
 
 .product-variants-item .circle,
-.circle {
-    width: 12px !important;
-    height: 12px !important;
+.circle,
+.circle.button {
+    width: 14px !important;
+    height: 14px !important;
     border-radius: 50% !important;
     display: inline-block !important;
     flex-shrink: 0 !important;
+    vertical-align: middle !important;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15) !important;
 }
 
-.circle.phantom-black {
-    background-color: #1a1a1a !important;
-}
+/* Vasco Q1 Colors */
+.circle.phantom-black, .circle.phantom_black, div.phantom-black, div.phantom_black { background: #1a1a1a !important; background-color: #1a1a1a !important; }
+.circle.slate-blue, .circle.slate_blue, div.slate-blue, div.slate_blue { background: #4a6fa5 !important; background-color: #4a6fa5 !important; }
+.circle.mystic-plum, .circle.mystic_plum, div.mystic-plum, div.mystic_plum { background: #7b435b !important; background-color: #7b435b !important; }
+.circle.scarlet-pulse, .circle.scarlet_pulse, div.scarlet-pulse, div.scarlet_pulse { background: #c0392b !important; background-color: #c0392b !important; }
 
-.circle.slate-blue {
-    background-color: #4a6fa5 !important;
-}
+/* Vasco M4 Colors */
+.circle.matte-black, .circle.matte_black, div.matte-black, div.matte_black { background: #222222 !important; background-color: #222222 !important; }
+.circle.frosty-turquoise, .circle.frosty_turquoise, div.frosty-turquoise, div.frosty_turquoise { background: #62a388 !important; background-color: #62a388 !important; }
+.circle.misty-purple, .circle.misty_purple, div.misty-purple, div.misty_purple { background: #7862a3 !important; background-color: #7862a3 !important; }
 
-.circle.mystic-plum {
-    background-color: #7b435b !important;
-}
+/* Vasco V4 Colors */
+.circle.black-onyx, .circle.black_onyx, div.black-onyx, div.black_onyx { background: #22252a !important; background-color: #22252a !important; }
+.circle.stone-gray, .circle.stone_gray, div.stone-gray, div.stone_gray { background: #5a626a !important; background-color: #5a626a !important; }
+.circle.cobalt-blue, .circle.cobalt_blue, div.cobalt-blue, div.cobalt_blue { background: #1f4277 !important; background-color: #1f4277 !important; }
+.circle.ruby-red, .circle.ruby_red, div.ruby-red, div.ruby_red { background: #a81c24 !important; background-color: #a81c24 !important; }
+.circle.pearl-white, .circle.pearl_white, div.pearl-white, div.pearl_white { background: #f8fafc !important; background-color: #f8fafc !important; border: 1px solid #cbd5e1 !important; }
 
-.circle.scarlet-pulse {
-    background-color: #c0392b !important;
-}
+
+
 
 /* Bottom Action Bar (Price + Circular Mô Tả + Blue Add to Cart / Notify Button) */
 .product-description-body,
@@ -5355,12 +5362,31 @@ article.product-horizontal-card .product-variants-item.active {
 
 .products-translators .circle,
 article.product-horizontal-card .circle {
-    width: 16px !important;
-    height: 16px !important;
+    width: 14px !important;
+    height: 14px !important;
     border-radius: 50% !important;
+    display: inline-block !important;
     flex-shrink: 0 !important;
     box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15) !important;
 }
+
+/* Force exact color fill on all product cards */
+.circle.phantom-black, .circle.phantom_black, [class*="phantom"] { background: #1a1a1a !important; background-color: #1a1a1a !important; }
+.circle.slate-blue, .circle.slate_blue, [class*="slate"] { background: #4a6fa5 !important; background-color: #4a6fa5 !important; }
+.circle.mystic-plum, .circle.mystic_plum, [class*="mystic"] { background: #7b435b !important; background-color: #7b435b !important; }
+.circle.scarlet-pulse, .circle.scarlet_pulse, [class*="scarlet"] { background: #c0392b !important; background-color: #c0392b !important; }
+
+.circle.matte-black, .circle.matte_black, [class*="matte"] { background: #22252a !important; background-color: #22252a !important; }
+.circle.frosty-turquoise, .circle.frosty_turquoise, [class*="frosty"] { background: #62a388 !important; background-color: #62a388 !important; }
+.circle.misty-purple, .circle.misty_purple, [class*="misty"] { background: #7862a3 !important; background-color: #7862a3 !important; }
+
+.circle.black-onyx, .circle.black_onyx, [class*="onyx"] { background: #22252a !important; background-color: #22252a !important; }
+.circle.stone-gray, .circle.stone_gray, [class*="stone"] { background: #5a626a !important; background-color: #5a626a !important; }
+.circle.cobalt-blue, .circle.cobalt_blue, [class*="cobalt"] { background: #1f4277 !important; background-color: #1f4277 !important; }
+.circle.ruby-red, .circle.ruby_red, [class*="ruby"] { background: #a81c24 !important; background-color: #a81c24 !important; }
+.circle.pearl-white, .circle.pearl_white, [class*="pearl"] { background: #f8fafc !important; background-color: #f8fafc !important; border: 1px solid #cbd5e1 !important; }
+
+
 
 .products-translators .radio-label,
 article.product-horizontal-card .radio-label {
