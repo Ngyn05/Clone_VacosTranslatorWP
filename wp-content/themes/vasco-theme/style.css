@@ -9,8 +9,40 @@ Text Domain: vasco-theme
 */
 
 /* =============================================
-   RESET TOP MARGIN & PADDING CHO CÁC TRANG CÓ KHOẢNG TRẮNG ĐẦU TRANG
+   FIX WORDPRESS ADMIN BAR & DASHICONS DISPLAY
    ============================================= */
+#wpadminbar {
+    z-index: 9999999 !important;
+}
+#wpadminbar .ab-sub-wrapper,
+#wpadminbar ul,
+#wpadminbar .menupop .ab-sub-wrapper {
+    z-index: 99999999 !important;
+}
+
+#wpadminbar .ab-icon,
+#wpadminbar .ab-icon:before,
+#wpadminbar .ab-item:before,
+#wpadminbar a.ab-item:before,
+#wpadminbar #wp-admin-bar-wp-logo > .ab-item .ab-icon:before,
+#wpadminbar #wp-admin-bar-updates .ab-icon:before,
+#wpadminbar #wp-admin-bar-comments .ab-icon:before,
+#wpadminbar #wp-admin-bar-new-content .ab-icon:before,
+#wpadminbar #wp-admin-bar-edit .ab-icon:before,
+#wpadminbar #wp-admin-bar-site-name > a:before,
+.dashicons,
+.dashicons-before:before {
+    font-family: dashicons, sans-serif !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    line-height: 1 !important;
+    speak: never;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
 /* =============================================
    FEATURED IMAGES AUTO FULL WIDTH & FIT (STRETCH FULL WIDTH)
    ============================================= */

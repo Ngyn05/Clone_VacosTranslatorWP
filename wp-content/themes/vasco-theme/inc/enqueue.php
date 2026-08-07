@@ -13,6 +13,9 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Enqueue Frontend Styles and Scripts
  */
 function vasco_theme_enqueue_all_assets() {
+	// 0. Enqueue Core WordPress Dashicons for Admin Bar icons
+	wp_enqueue_style( 'dashicons' );
+
 	// 1. Enqueue CSS files from source
 	wp_enqueue_style( 'vasco-css-0', VASCO_THEME_URI . '/assets/css/category-BkrAaUZX.css', array(), VASCO_THEME_VERSION );
 	wp_enqueue_style( 'vasco-css-1', VASCO_THEME_URI . '/assets/css/index-BdfBdicE.css', array(), VASCO_THEME_VERSION );
