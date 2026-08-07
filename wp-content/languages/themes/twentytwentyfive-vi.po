@@ -671,25 +671,6 @@ msgctxt "Pattern description"
 msgid "A list of posts, 1 column, with featured image and post date."
 msgstr "Danh sách bài đăng, 1 cột, với ảnh nổi bật và ngày đăng."
 
-#: patterns/hidden-sidebar.php:38 patterns/page-portfolio-home.php:65
-#: patterns/page-portfolio-home.php:87 patterns/page-portfolio-home.php:121
-#: patterns/page-portfolio-home.php:154 patterns/page-portfolio-home.php:176
-#: patterns/page-portfolio-home.php:203 patterns/template-home-news-blog.php:40
-#: patterns/template-home-posts-grid-news-blog.php:35
-#: patterns/template-home-posts-grid-news-blog.php:60
-#: patterns/template-home-posts-grid-news-blog.php:78
-#: patterns/template-home-posts-grid-news-blog.php:103
-#: patterns/template-home-with-sidebar-news-blog.php:62
-#: patterns/template-home-with-sidebar-news-blog.php:119
-#: patterns/template-query-loop-news-blog.php:55
-#: patterns/template-query-loop-photo-blog.php:22
-#: patterns/template-query-loop-text-blog.php:19
-#: patterns/template-query-loop-vertical-header-blog.php:47
-#: patterns/template-query-loop.php:31
-msgctxt "Message explaining that there are no results returned from a search."
-msgid "Sorry, but nothing was found. Please try a search with different keywords."
-msgstr "Xin lỗi, không tìm thấy gì. Vui lòng thử tìm kiếm bằng các từ khóa khác."
-
 #: patterns/template-query-loop-photo-blog.php
 msgctxt "Pattern description"
 msgid "A list of posts, 3 columns, with only featured images."
@@ -717,6 +698,25 @@ msgstr "Viết bởi"
 msgctxt "Pattern title"
 msgid "News blog query loop"
 msgstr "Vòng lặp truy vấn blog tin tức"
+
+#: patterns/hidden-sidebar.php:38 patterns/page-portfolio-home.php:65
+#: patterns/page-portfolio-home.php:87 patterns/page-portfolio-home.php:121
+#: patterns/page-portfolio-home.php:154 patterns/page-portfolio-home.php:176
+#: patterns/page-portfolio-home.php:203 patterns/template-home-news-blog.php:40
+#: patterns/template-home-posts-grid-news-blog.php:35
+#: patterns/template-home-posts-grid-news-blog.php:60
+#: patterns/template-home-posts-grid-news-blog.php:78
+#: patterns/template-home-posts-grid-news-blog.php:103
+#: patterns/template-home-with-sidebar-news-blog.php:62
+#: patterns/template-home-with-sidebar-news-blog.php:119
+#: patterns/template-query-loop-news-blog.php:55
+#: patterns/template-query-loop-photo-blog.php:22
+#: patterns/template-query-loop-text-blog.php:19
+#: patterns/template-query-loop-vertical-header-blog.php:47
+#: patterns/template-query-loop.php:31
+msgctxt "Message explaining that there are no results returned from a search."
+msgid "Sorry, but nothing was found. Please try a search with different keywords."
+msgstr "Xin lỗi, không tìm thấy gì. Vui lòng thử tìm kiếm bằng các từ khóa khác."
 
 #: patterns/template-page-photo-blog.php
 msgctxt "Pattern title"
@@ -1081,11 +1081,6 @@ msgstr "LinkedIn"
 msgid "Woman on beach, splashing water."
 msgstr "Người phụ nữ trên bãi biển, té nước."
 
-#: patterns/page-cv-bio.php:31
-msgctxt "Pattern placeholder text."
-msgid "My name is Nora Winslow Keene, and I’m a committed public interest attorney. Living in Denver, Colorado, I’ve spent years championing the rights of underrepresented workers. A graduate of Stanford University, I played a key role in securing critical protections for agricultural laborers, ensuring better wages and access to healthcare. My work has focused on advocating for environmental justice and improving the quality of life for rural communities. Every case I take on is driven by the belief that everyone deserves dignity and fair treatment in the workplace."
-msgstr "Tên tôi là Nora Winslow Keene, và tôi là một luật sư tận tâm vì lợi ích cộng đồng. Sống ở Denver, Colorado, tôi đã dành nhiều năm đấu tranh cho quyền lợi của những người lao động không được đại diện. Tốt nghiệp Đại học Stanford, tôi đóng một vai trò quan trọng trong việc đảm bảo sự bảo vệ quan trọng cho người lao động nông nghiệp, đảm bảo mức lương tốt hơn và tiếp cận với chăm sóc sức khỏe. Công việc của tôi tập trung vào việc vận động cho công bằng môi trường và cải thiện chất lượng cuộc sống cho cộng đồng nông thôn. Mọi trường hợp tôi đảm nhận đều xuất phát từ niềm tin rằng mọi người đều xứng đáng được đối xử công bằng và có nhân phẩm tại nơi làm việc."
-
 #: patterns/page-cv-bio.php:28
 msgctxt "Example heading in pattern."
 msgid "Hey,"
@@ -1108,6 +1103,11 @@ msgstr "Đăng ký để được thông báo khi trang web của chúng tôi s�
 #: patterns/page-coming-soon.php:29
 msgid "Something great is coming soon"
 msgstr "Điều gì đó tuyệt vời sắp ra mắt"
+
+#: patterns/page-cv-bio.php:31
+msgctxt "Pattern placeholder text."
+msgid "My name is Nora Winslow Keene, and I’m a committed public interest attorney. Living in Denver, Colorado, I’ve spent years championing the rights of underrepresented workers. A graduate of Stanford University, I played a key role in securing critical protections for agricultural laborers, ensuring better wages and access to healthcare. My work has focused on advocating for environmental justice and improving the quality of life for rural communities. Every case I take on is driven by the belief that everyone deserves dignity and fair treatment in the workplace."
+msgstr "Tên tôi là Nora Winslow Keene, và tôi là một luật sư tận tâm vì lợi ích cộng đồng. Sống ở Denver, Colorado, tôi đã dành nhiều năm đấu tranh cho quyền lợi của những người lao động không được đại diện. Tốt nghiệp Đại học Stanford, tôi đóng một vai trò quan trọng trong việc đảm bảo sự bảo vệ quan trọng cho người lao động nông nghiệp, đảm bảo mức lương tốt hơn và tiếp cận với chăm sóc sức khỏe. Công việc của tôi tập trung vào việc vận động cho công bằng môi trường và cải thiện chất lượng cuộc sống cho cộng đồng nông thôn. Mọi trường hợp tôi đảm nhận đều xuất phát từ niềm tin rằng mọi người đều xứng đáng được đối xử công bằng và có nhân phẩm tại nơi làm việc."
 
 #: patterns/page-coming-soon.php:24
 msgid "Event"
@@ -1333,11 +1333,6 @@ msgctxt "Alt text for Overview picture."
 msgid "Cliff Palace, Colorado"
 msgstr "Cliff Palace, Colorado"
 
-#: patterns/heading-and-paragraph-with-image.php:27
-msgctxt "Event Overview Text."
-msgid "Held over a weekend, the event is structured around a series of exhibitions, workshops, and panel discussions. The exhibitions showcase a curated selection of photographs that tell compelling stories from various corners of the globe, each image accompanied by detailed narratives that provide context and deeper insight into the historical significance of the scenes depicted. These photographs are drawn from the archives of renowned photographers, as well as emerging talents, ensuring a blend of both classical and contemporary perspectives."
-msgstr "Được tổ chức vào cuối tuần, sự kiện được 구성 xung quanh một loạt các triển lãm, hội thảo và thảo luận nhóm. Các triển lãm giới thiệu tuyển chọn các bức ảnh được tuyển chọn kỹ lưỡng, kể những câu chuyện hấp dẫn từ khắp nơi trên thế giới, mỗi bức ảnh kèm theo những câu chuyện chi tiết cung cấp bối cảnh và cái nhìn sâu sắc hơn về ý nghĩa lịch sử của những cảnh được mô tả. Những bức ảnh này được lấy từ kho lưu trữ của các nhiếp ảnh gia nổi tiếng, cũng như các tài năng mới nổi, đảm bảo sự pha trộn giữa cả quan điểm cổ điển và đương đại."
-
 #: patterns/heading-and-paragraph-with-image.php
 msgctxt "Pattern description"
 msgid "A two-column section with a heading and paragraph on the left, and an image on the right."
@@ -1376,6 +1371,11 @@ msgstr "Phần lưới với các danh mục khác nhau."
 msgctxt "Pattern title"
 msgid "Grid with categories"
 msgstr "Lưới với danh mục"
+
+#: patterns/heading-and-paragraph-with-image.php:27
+msgctxt "Event Overview Text."
+msgid "Held over a weekend, the event is structured around a series of exhibitions, workshops, and panel discussions. The exhibitions showcase a curated selection of photographs that tell compelling stories from various corners of the globe, each image accompanied by detailed narratives that provide context and deeper insight into the historical significance of the scenes depicted. These photographs are drawn from the archives of renowned photographers, as well as emerging talents, ensuring a blend of both classical and contemporary perspectives."
+msgstr "Được tổ chức vào cuối tuần, sự kiện được 구성 xung quanh một loạt các triển lãm, hội thảo và thảo luận nhóm. Các triển lãm giới thiệu tuyển chọn các bức ảnh được tuyển chọn kỹ lưỡng, kể những câu chuyện hấp dẫn từ khắp nơi trên thế giới, mỗi bức ảnh kèm theo những câu chuyện chi tiết cung cấp bối cảnh và cái nhìn sâu sắc hơn về ý nghĩa lịch sử của những cảnh được mô tả. Những bức ảnh này được lấy từ kho lưu trữ của các nhiếp ảnh gia nổi tiếng, cũng như các tài năng mới nổi, đảm bảo sự pha trộn giữa cả quan điểm cổ điển và đương đại."
 
 #: patterns/grid-videos.php
 msgctxt "Pattern description"

@@ -1533,15 +1533,15 @@ msgctxt "Question in the FAQ pattern"
 msgid "I'd like to get to meet fellow architects, how can I do that?"
 msgstr "Tôi muốn gặp gỡ các kiến trúc sư đồng nghiệp, tôi có thể làm điều đó như thế nào?"
 
+#: patterns/text-centered-statement.php:21
+msgid "<em>Études</em> is not confined to the past—we are passionate about the cutting edge designs shaping our world today."
+msgstr "<em>Études</em> không bị giới hạn bởi quá khứ—chúng tôi đam mê những thiết kế tiên tiến đang định hình thế giới ngày nay."
+
 #: patterns/text-faq.php:27 patterns/text-faq.php:38 patterns/text-faq.php:49
 #: patterns/text-faq.php:60
 msgctxt "Answer in the FAQ pattern"
 msgid "Études offers comprehensive consulting, management, design, and research solutions. Our vision is to be at the forefront of architectural innovation, fostering a global community of architects and enthusiasts united by a passion for creating spaces. Every architectural endeavor is an opportunity to shape the future."
 msgstr "Études cung cấp các giải pháp tư vấn, quản lý, thiết kế và nghiên cứu toàn diện. Tầm nhìn của chúng tôi là đi đầu trong đổi mới kiến trúc, thúc đẩy một cộng đồng kiến trúc sư và những người đam mê toàn cầu, đoàn kết bởi niềm đam mê tạo ra không gian. Mỗi nỗ lực kiến trúc là một cơ hội để định hình tương lai."
-
-#: patterns/text-centered-statement.php:21
-msgid "<em>Études</em> is not confined to the past—we are passionate about the cutting edge designs shaping our world today."
-msgstr "<em>Études</em> không bị giới hạn bởi quá khứ—chúng tôi đam mê những thiết kế tiên tiến đang định hình thế giới ngày nay."
 
 #: patterns/text-centered-statement.php
 msgctxt "Pattern title"
