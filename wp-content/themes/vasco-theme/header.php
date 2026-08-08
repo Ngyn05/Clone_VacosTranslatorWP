@@ -20,6 +20,91 @@
 </a>
 <main>
 <header id="header">
+			<style>
+			/* Thiet ke Header co xu huong co ve giua tren cac man hinh lon */
+			@media (min-width: 992px) {
+				#header .header-container {
+					max-width: 1440px !important;
+					width: 95% !important;
+					margin: 0 auto !important;
+					padding-left: 20px !important;
+					padding-right: 20px !important;
+					display: flex !important;
+					justify-content: space-between !important;
+					align-items: center !important;
+					position: relative !important;
+				}
+
+				#header .header-box {
+					position: static !important;
+					display: flex !important;
+					align-items: center !important;
+					margin: 0 !important;
+					padding: 0 !important;
+					flex-shrink: 0 !important;
+					flex: 1 !important;
+					justify-content: flex-start !important;
+				}
+
+				#header .logo {
+					position: static !important;
+					margin: 0 !important;
+					padding: 0 !important;
+					display: flex !important;
+					align-items: center !important;
+				}
+
+				#header .desktop-nav {
+					display: flex !important;
+					align-items: center !important;
+					justify-content: center !important;
+					flex: 2 !important;
+					position: static !important;
+				}
+
+				#header .right-nav {
+					display: flex !important;
+					align-items: center !important;
+					justify-content: flex-end !important;
+					flex: 1 !important;
+				}
+
+				/* Dan trai megamenu Rong ra dua tren parent */
+				#header .megamenu-childs-wrapper {
+					position: absolute !important;
+					left: 0 !important;
+					right: 0 !important;
+					width: 100% !important;
+					max-width: 100% !important;
+					box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12) !important;
+				}
+
+				#header .megamenu-container {
+					max-width: 1440px !important;
+					width: 100% !important;
+					margin: 0 auto !important;
+					padding-left: 20px !important;
+					padding-right: 20px !important;
+					box-sizing: border-box !important;
+				}
+
+				/* Can giua cac cot noi dung Megamenu gan nhau hon o trung tam */
+				#header .megamenu-grid-section {
+					display: flex !important;
+					justify-content: center !important;
+					gap: clamp(30px, 4vw, 60px) !important;
+					width: 100% !important;
+					align-items: start !important;
+					max-width: 1200px !important;
+					margin: 0 auto !important;
+				}
+
+				#header .megamenu-column-wrapper {
+					flex: none !important;
+					width: auto !important;
+				}
+			}
+			</style>
 			<div id="banners-wrapper">
 				<a href="<?php echo esc_url( home_url( "/translators/vasco-translator-m4/" ) ); ?>">
 					<div class="banner promotion-theme-orange">

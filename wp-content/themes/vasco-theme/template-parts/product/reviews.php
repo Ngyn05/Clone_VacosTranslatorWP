@@ -73,6 +73,89 @@ if ( ! empty( $comments ) ) {
 
 		<!-- Form viết đánh giá tiếng Việt -->
 		<div class="custom-review-form-box mt-4">
+			<style>
+			.custom-review-form-box {
+				background: #ffffff;
+				border: 1px solid #e2e8f0;
+				border-radius: 16px;
+				padding: 28px;
+				box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+			}
+			.custom-review-form-box .form-title {
+				font-size: 20px;
+				color: #0f172a;
+				font-weight: 700;
+				margin-bottom: 20px;
+			}
+			.custom-review-form-box label {
+				font-size: 14px;
+				font-weight: 600;
+				color: #475569;
+				margin-bottom: 6px;
+				display: block;
+			}
+			.custom-review-form-box textarea,
+			.custom-review-form-box input[type="text"],
+			.custom-review-form-box input[type="email"] {
+				width: 100%;
+				padding: 12px 16px;
+				border: 1px solid #cbd5e1;
+				border-radius: 10px;
+				font-size: 15px;
+				color: #0f172a;
+				background-color: #f8fafc;
+				transition: all 0.2s ease-in-out;
+				box-sizing: border-box;
+			}
+			.custom-review-form-box textarea:focus,
+			.custom-review-form-box input[type="text"]:focus,
+			.custom-review-form-box input[type="email"]:focus {
+				background-color: #ffffff;
+				border-color: #2563eb;
+				box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+				outline: none;
+			}
+			.custom-review-form-box .vasco-star-rating {
+				font-size: 24px;
+				color: #cbd5e1;
+				cursor: pointer;
+				display: inline-flex;
+				gap: 4px;
+			}
+			.custom-review-form-box .vasco-star-rating .star {
+				transition: color 0.15s ease-in-out;
+			}
+			.custom-review-form-box .vasco-star-rating .star.selected,
+			.custom-review-form-box .vasco-star-rating .star:hover,
+			.custom-review-form-box .vasco-star-rating .star:hover ~ .star {
+				color: #eab308;
+			}
+			.custom-review-form-box .btn-submit-review {
+				background-color: #2563eb;
+				color: #ffffff;
+				font-weight: 700;
+				font-size: 16px;
+				padding: 14px 36px;
+				border: none;
+				border-radius: 30px;
+				cursor: pointer;
+				box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+				transition: all 0.2s ease-in-out;
+				display: inline-block;
+				text-align: center;
+				width: auto;
+				line-height: 1.2;
+				text-transform: none;
+			}
+			.custom-review-form-box .btn-submit-review:hover {
+				background-color: #1d4ed8;
+				box-shadow: 0 6px 14px rgba(37, 99, 235, 0.35);
+				transform: translateY(-1px);
+			}
+			.custom-review-form-box .btn-submit-review:active {
+				transform: translateY(0);
+			}
+			</style>
 			<h4 class="form-title mb-3 font-weight-bold">Viết đánh giá của bạn</h4>
 			<form action="<?php echo esc_url( home_url( '/wp-comments-post.php' ) ); ?>" method="post" id="commentform" class="comment-form">
 				<div class="rating-select-wrapper mb-3">
@@ -96,8 +179,57 @@ if ( ! empty( $comments ) ) {
 				</div>
 				<input type="hidden" name="comment_post_ID" value="<?php echo esc_attr( $product->get_id() ); ?>" />
 				<input type="hidden" name="comment_type" value="review" />
-				<button type="submit" class="btn btn-primary font-weight-bold">Gửi đánh giá</button>
+				<button type="submit" class="btn-submit-review">Gửi đánh giá</button>
 			</form>
 		</div>
 	</div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+	var starContainer = document.getElementById('vasco-star-rating');
+	if (!starContainer) return;
+	var stars = starContainer.querySelectorAll('.star');
+	var ratingInput = document.getElementById('rating');
+
+	function highlightStars(val) {
+		stars.forEach(function(s) {
+			var sVal = parseInt(s.getAttribute('data-value'));
+			if (sVal <= val) {
+				s.classList.add('selected');
+			} else {
+				s.classList.remove('selected');
+			}
+		});
+	}
+
+	highlightStars(parseInt(ratingInput.value));
+
+	stars.forEach(function(star) {
+		star.addEventListener('click', function() {
+			var val = parseInt(this.getAttribute('data-value'));
+			ratingInput.value = val;
+			highlightStars(val);
+		});
+
+		star.addEventListener('mouseover', function() {
+			var val = parseInt(this.getAttribute('data-value'));
+			stars.forEach(function(s) {
+				var sVal = parseInt(s.getAttribute('data-value'));
+				if (sVal <= val) {
+					s.style.color = '#eab308';
+				} else {
+					s.style.color = '#cbd5e1';
+				}
+			});
+		});
+
+		star.addEventListener('mouseout', function() {
+			stars.forEach(function(s) {
+				s.style.color = '';
+			});
+			highlightStars(parseInt(ratingInput.value));
+		});
+	});
+});
+</script>
