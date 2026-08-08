@@ -867,6 +867,54 @@ h6,
         align-items: center !important;
         gap: 10px !important;
     }
+
+    /* Mobile Megamenu Spacing and Layout Fix */
+    .megamenu-column-image {
+        display: none !important;
+    }
+    
+    #header .megamenu-grid-section {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        align-items: stretch !important;
+    }
+    
+    #header .megamenu-column-wrapper {
+        width: 100% !important;
+        flex: none !important;
+    }
+    
+    #header .megamenu-container {
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    #header .megamenu-childs-wrapper {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        max-height: none !important;
+        box-shadow: none !important;
+        padding: 15px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Hide the dropdown arrow and submenu for Shop/Cửa Hàng on mobile */
+    #nav-title-shop .arrow-rotate {
+        display: none !important;
+    }
+    #submenu-shop {
+        display: none !important;
+    }
 }
 
 /* Hide Default Dialog & Page List Modal Overlay */

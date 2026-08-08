@@ -33,6 +33,11 @@
                 submenu.style.setProperty('opacity', '1', 'important');
                 wrapper.classList.add('open', 'is-open');
                 if (link) link.setAttribute('aria-expanded', 'true');
+                if (window.innerWidth < 992) {
+                    setTimeout(function() {
+                        wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
             }
 
             function scheduleClose() {

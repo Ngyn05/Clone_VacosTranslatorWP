@@ -607,20 +607,17 @@ function vascoSendPhoneConsult(btn, productName) {
 
 	echo '<div class="container"><div class="product-tabs-nav">';
 	echo '<a class="product-tab-btn active" href="#about">Về sản phẩm</a>';
-	echo '<a class="product-tab-btn" href="#reviews">Đánh giá sản phẩm (' . esc_html( (string) $review_count ) . ')</a>';
 	if ( ! empty( $vasco_specs ) ) {
 		echo '<a class="product-tab-btn" href="#specs">Thông Số Kỹ Thuật</a>';
 	}
 	if ( ! empty( $vasco_faq ) ) {
 		echo '<a class="product-tab-btn" href="#faq">FAQ</a>';
 	}
+	echo '<a class="product-tab-btn" href="#reviews">Đánh giá sản phẩm (' . esc_html( (string) $review_count ) . ')</a>';
 	echo '</div></div>';
 
 	echo '<div class="product-description container py-3">';
 	echo '<div id="about" class="tab-content-block">' . wp_kses_post( wpautop( $description ) ) . '</div>';
-	
-	// Khối Đánh giá sản phẩm (Modular Template Part)
-	get_template_part( 'template-parts/product/reviews', null, array( 'product' => $product ) );
 
 	if ( ! empty( $vasco_specs ) && is_array( $vasco_specs ) ) {
 		echo '<div id="specs" class="tab-content-block py-4">';
@@ -659,6 +656,10 @@ function vascoSendPhoneConsult(btn, productName) {
 		}
 		echo '</div></div>';
 	}
+
+	// Khối Đánh giá sản phẩm (Modular Template Part) - Đưa xuống dưới cùng
+	get_template_part( 'template-parts/product/reviews', null, array( 'product' => $product ) );
+
 	echo '</div>';
 	echo '<script>
 	document.addEventListener("DOMContentLoaded", function() {

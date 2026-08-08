@@ -104,6 +104,103 @@
 					width: auto !important;
 				}
 			}
+
+			@media (max-width: 1023px) {
+				#header .desktop-nav,
+				#header #desktop-nav {
+					overflow-x: hidden !important;
+				}
+				#header .megamenu-childs-wrapper {
+					position: relative !important;
+					top: auto !important;
+					left: auto !important;
+					right: auto !important;
+					width: 100% !important;
+					max-width: 100% !important;
+					height: auto !important;
+					max-height: none !important;
+					box-shadow: none !important;
+					padding: 12px 16px !important;
+					box-sizing: border-box !important;
+					background: #f4f6fa !important;
+					border-radius: 12px !important;
+					margin-top: 8px !important;
+					overflow-x: hidden !important;
+				}
+				#header .megamenu-childs-wrapper:not([hidden]) {
+					display: block !important;
+				}
+				#header .megamenu-column-image {
+					display: block !important;
+					width: 100% !important;
+					margin-top: 15px !important;
+					position: relative !important;
+				}
+				#header .megamenu-column-image a {
+					display: block !important;
+					position: relative !important;
+					width: 100% !important;
+					border-radius: 12px !important;
+					overflow: hidden !important;
+				}
+				#header .megamenu-column-image .img-wrapper {
+					width: 100% !important;
+					height: 180px !important;
+					overflow: hidden !important;
+					position: relative !important;
+				}
+				#header .megamenu-column-image img {
+					width: 100% !important;
+					height: 100% !important;
+					object-fit: cover !important;
+					display: block !important;
+				}
+				#header .megamenu-column-image .text-absolute {
+					position: absolute !important;
+					bottom: 0 !important;
+					left: 0 !important;
+					right: 0 !important;
+					padding: 15px !important;
+					background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0)) !important;
+					color: #ffffff !important;
+					display: flex !important;
+					flex-direction: column !important;
+					justify-content: flex-end !important;
+					z-index: 2 !important;
+					box-sizing: border-box !important;
+				}
+				#header .megamenu-column-image .text-absolute p {
+					margin: 0 !important;
+					color: #ffffff !important;
+					font-weight: bold !important;
+					font-size: 14px !important;
+				}
+				#header .megamenu-grid-section {
+					display: flex !important;
+					flex-direction: column !important;
+					gap: 12px !important;
+					width: 100% !important;
+					max-width: 100% !important;
+					margin: 0 !important;
+					align-items: stretch !important;
+				}
+				#header .megamenu-column-wrapper {
+					width: 100% !important;
+					flex: none !important;
+				}
+				#header .megamenu-container {
+					padding: 0 !important;
+					width: 100% !important;
+					max-width: 100% !important;
+					background: transparent !important;
+				}
+				#header #nav-title-shop .arrow-rotate {
+					display: none !important;
+				}
+				#header #submenu-shop {
+					display: none !important;
+				}
+			}
 			</style>
 			<div id="banners-wrapper">
 				<a href="<?php echo esc_url( home_url( "/translators/vasco-translator-m4/" ) ); ?>">

@@ -916,6 +916,10 @@
 				var linkEl = hasChildTarget.closest('.has-child') || hasChildTarget;
 				var parentWrapper = linkEl.closest('.menu-item-wrapper');
 				if (parentWrapper) {
+					var href = linkEl ? linkEl.getAttribute('href') : '';
+					if (linkEl && (linkEl.id === 'nav-title-shop' || (href && href.indexOf('/translators/') !== -1))) {
+						return; // Let default link click handle navigation directly
+					}
 					var submenu = parentWrapper.querySelector('.megamenu-childs-wrapper');
 					if (submenu) {
 						e.preventDefault();
@@ -926,6 +930,9 @@
 							submenu.style.setProperty('display', 'block', 'important');
 							if (linkEl) linkEl.setAttribute('aria-expanded', 'true');
 							parentWrapper.classList.add('open', 'is-open');
+							setTimeout(function() {
+								parentWrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+							}, 100);
 						} else {
 							submenu.setAttribute('hidden', '');
 							submenu.style.setProperty('display', 'none', 'important');
