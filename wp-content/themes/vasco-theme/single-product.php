@@ -6,7 +6,7 @@
  */
 
 global $post;
-$slug = $post ? $post->post_name : '';
+$slug = ! empty( $GLOBALS['vasco_current_product_slug'] ) ? sanitize_title( $GLOBALS['vasco_current_product_slug'] ) : ( $post ? $post->post_name : '' );
 $slug = preg_replace( '/\.html$/', '', $slug );
 
 $aliases = array(
@@ -53,21 +53,8 @@ $template_in_dir  = VASCO_THEME_DIR . '/templates/products/page-' . $slug . '.ph
 $template_in_root = VASCO_THEME_DIR . '/page-' . $slug . '.php';
 $default_template = VASCO_THEME_DIR . '/templates/products/page-vasco-translator-q1.php';
 
-if ( file_exists( $template_in_dir ) ) {
-	include $template_in_dir;
-} elseif ( file_exists( $template_in_root ) ) {
-	include $template_in_root;
-} elseif ( function_exists( 'vasco_theme_render_product_detail_page' ) && vasco_theme_get_wc_product_by_slug( $slug ) ) {
-	get_header();
-	vasco_theme_render_product_detail_page( $slug );
-	get_footer();
-} elseif ( file_exists( $default_template ) ) {
-	include $default_template;
-} else {
-	get_header();
-	if ( function_exists( 'vasco_theme_render_product_detail_page' ) ) {
-		vasco_theme_render_product_detail_page( $slug );
-	}
-	get_footer();
-}
+get_header();
+vasco_theme_render_product_detail_page( $slug );
+get_footer();
+
 

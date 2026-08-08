@@ -174,17 +174,10 @@ add_action( 'wp_ajax_nopriv_vasco_add_to_wc_cart', 'vasco_wc_add_to_cart' );
 add_filter( 'woocommerce_cart_item_name', function ( $product_name, $cart_item, $cart_item_key ) {
 	$color = '';
 
-	// 1. Ưu tiên từ cart_item_data
+	// Chỉ lấy màu từ cart_item_data - không fallback session
+	// (tránh hiện màu cũ của sản phẩm khác cho sản phẩm không có màu)
 	if ( ! empty( $cart_item['vasco_selected_color'] ) ) {
 		$color = wc_clean( $cart_item['vasco_selected_color'] );
-	}
-
-	// 2. Fallback từ WC session nếu cart_item_data không có
-	if ( ! $color && function_exists('WC') && WC()->session ) {
-		$session_color = WC()->session->get( 'vasco_selected_color' );
-		if ( $session_color ) {
-			$color = wc_clean( $session_color );
-		}
 	}
 
 	if ( $color ) {
@@ -203,10 +196,9 @@ add_filter( 'woocommerce_cart_item_name', function ( $product_name, $cart_item, 
 add_filter( 'woocommerce_get_item_data', function ( $item_data, $cart_item ) {
 	$color = '';
 
+	// Chỉ lấy màu từ cart_item_data - không fallback session
 	if ( ! empty( $cart_item['vasco_selected_color'] ) ) {
 		$color = wc_clean( $cart_item['vasco_selected_color'] );
-	} elseif ( function_exists('WC') && WC()->session ) {
-		$color = wc_clean( (string) WC()->session->get( 'vasco_selected_color' ) );
 	}
 
 	if ( $color ) {
@@ -298,12 +290,10 @@ function vasco_wc_get_cart() {
 		$image_id = $product->get_image_id();
 		$image    = $image_id ? wp_get_attachment_image_url( $image_id, 'thumbnail' ) : wc_placeholder_img_src( 'thumbnail' );
 
-		// Lấy màu sắc từ cart_item_data hoặc WC session
+		// Lấy màu sắc chỉ từ cart_item_data - không fallback session
 		$color = '';
 		if ( ! empty( $cart_item['vasco_selected_color'] ) ) {
 			$color = wc_clean( $cart_item['vasco_selected_color'] );
-		} elseif ( WC()->session ) {
-			$color = wc_clean( (string) WC()->session->get( 'vasco_selected_color' ) );
 		}
 
 		$display_name = $product->get_name();
@@ -559,14 +549,10 @@ function vasco_wc_place_order() {
 		$product  = $cart_item['data'];
 		$quantity = $cart_item['quantity'];
 
-		// Lấy màu sắc từ cart_item_data → WC session → POST (3 nguồn fallback)
+		// Lấy màu sắc chỉ từ cart_item_data - không fallback session
 		$color = '';
 		if ( ! empty( $cart_item['vasco_selected_color'] ) ) {
 			$color = wc_clean( $cart_item['vasco_selected_color'] );
-		} elseif ( WC()->session && WC()->session->get( 'vasco_selected_color' ) ) {
-			$color = wc_clean( (string) WC()->session->get( 'vasco_selected_color' ) );
-		} elseif ( ! empty( $post_color ) ) {
-			$color = wc_clean( $post_color );
 		}
 
 		$item_id = $order->add_product( $product, $quantity, array(

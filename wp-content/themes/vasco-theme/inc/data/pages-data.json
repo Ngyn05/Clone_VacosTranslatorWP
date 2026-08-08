@@ -110,8 +110,8 @@
     },
     {
         "title": "Dịch cuộc gọi",
-        "slug": "call-translator",
-        "template": "page-call-translator.php"
+        "slug": "page_call_translator",
+        "template": "page-page_call_translator.php"
     },
     {
         "title": "Bộ sản phẩm",

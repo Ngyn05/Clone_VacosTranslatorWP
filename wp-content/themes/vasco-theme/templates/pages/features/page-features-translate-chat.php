@@ -127,7 +127,7 @@ Tìm hiểu thêm
 
 <!-- Bottom Navigation Links -->
 <div class="feature-navigation-bottom container">
-	<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( "/call-translator/" ) ); ?>">&larr; TÍNH NĂNG TRƯỚC</a>
+	<a class="btn btn-md btn-secondary" href="<?php echo esc_url( home_url( "/page_call_translator/" ) ); ?>">&larr; TÍNH NĂNG TRƯỚC</a>
 </div>
 
 </div><!-- .socialimpact-pages -->

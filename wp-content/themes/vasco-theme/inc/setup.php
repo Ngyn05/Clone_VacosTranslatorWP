@@ -194,7 +194,12 @@ function vasco_theme_document_title_parts( $title_parts ) {
 		'media-about-us'         => 'Truyen Thong',
 	);
 
-	if ( is_page() ) {
+	if ( ! empty( $GLOBALS['vasco_current_product_slug'] ) ) {
+		$prod = vasco_theme_get_wc_product_by_slug( $GLOBALS['vasco_current_product_slug'] );
+		if ( $prod ) {
+			$title_parts['title'] = $prod->get_name();
+		}
+	} elseif ( is_page() ) {
 		$page = get_queried_object();
 		if ( $page && isset( $page->post_name ) && isset( $vietnamese_map[ $page->post_name ] ) ) {
 			$title_parts['title'] = $vietnamese_map[ $page->post_name ];
@@ -204,6 +209,17 @@ function vasco_theme_document_title_parts( $title_parts ) {
 	return $title_parts;
 }
 add_filter( 'document_title_parts', 'vasco_theme_document_title_parts', 999 );
+
+function vasco_theme_pre_get_document_title( $title ) {
+	if ( ! empty( $GLOBALS['vasco_current_product_slug'] ) ) {
+		$prod = vasco_theme_get_wc_product_by_slug( $GLOBALS['vasco_current_product_slug'] );
+		if ( $prod ) {
+			return $prod->get_name();
+		}
+	}
+	return $title;
+}
+add_filter( 'pre_get_document_title', 'vasco_theme_pre_get_document_title', 9999 );
 
 /**
  * Universal Template Include Resolver
@@ -236,6 +252,15 @@ function vasco_theme_universal_template_include( $template ) {
 	$aliases = vasco_get_product_slug_aliases();
 	if ( isset( $aliases[ $slug ] ) ) {
 		$slug = $aliases[ $slug ];
+	}
+
+	// Neu URL la trang san pham WooCommerce (/product/slug) -> tra ve single-product.php
+	if ( ! empty( $parts[0] ) && 'product' === $parts[0] ) {
+		$single_prod_template = VASCO_THEME_DIR . '/single-product.php';
+		if ( file_exists( $single_prod_template ) ) {
+			$GLOBALS['vasco_current_product_slug'] = $slug;
+			return $single_prod_template;
+		}
 	}
 
 	$product_file = VASCO_THEME_DIR . '/templates/products/page-' . $slug . '.php';

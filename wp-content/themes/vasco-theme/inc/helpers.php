@@ -71,6 +71,27 @@ function vasco_theme_get_wc_product_by_slug( $slug ) {
 	return null;
 }
 
+/**
+ * Custom Product Permalink Filter
+ * Maps WooCommerce product permalinks to source template URLs stored in post meta (_vasco_wc_source_url).
+ */
+function vasco_theme_product_permalink_filter( $link, $post ) {
+	$post_id = is_object( $post ) ? $post->ID : (int) $post;
+	if ( ! $post_id ) {
+		return $link;
+	}
+
+	$source_url = get_post_meta( $post_id, '_vasco_wc_source_url', true );
+	if ( ! empty( $source_url ) ) {
+		return home_url( $source_url );
+	}
+
+	return $link;
+}
+add_filter( 'post_type_link', 'vasco_theme_product_permalink_filter', 10, 2 );
+add_filter( 'woocommerce_product_get_permalink', 'vasco_theme_product_permalink_filter', 10, 2 );
+
+
 function vasco_theme_get_wc_products_for_category( $category_slug = '', $limit = -1 ) {
 	if ( ! function_exists( 'wc_get_products' ) ) {
 		return array();
@@ -253,10 +274,9 @@ function vasco_theme_render_product_card( $product, $context = array() ) {
 		echo $colors_html;
 		echo '<div class="product-price-and-actions">';
 		echo '<div class="product-price">' . wp_kses_post( $price_html ) . '</div>';
-		echo '<div class="product-description-button-wrapper"><a class="btn btn-pill-desc" href="' . esc_url( $permalink ) . '">MÔ TẢ</a></div>';
 		echo '<div class="product-add-to-cart js-product-add-to-cart">';
 		if ( $is_in_stock ) {
-			echo '<button type="button" class="btn add-to-cart-btn-full btn-add-to-cart" data-product-id="' . esc_attr( (string) $product_id ) . '" data-product-name="' . esc_attr( $title ) . '" data-product-price="' . esc_attr( (string) $product->get_price() ) . '" data-product-image="' . esc_url( $image_url ) . '"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> MUA NGAY</button>';
+			echo '<a href="' . esc_url( $permalink ) . '" class="btn add-to-cart-btn-full"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> VÀO MUA</a>';
 		} else {
 			echo '<a class="btn btn-notify-me-full" href="' . esc_url( $permalink ) . '">THÔNG BÁO CHO TÔI</a>';
 		}
@@ -278,12 +298,11 @@ function vasco_theme_render_product_card( $product, $context = array() ) {
 		}
 		echo $colors_html;
 		echo '<div class="product-description-body">';
-		echo '<a class="btn-circle-desc" href="' . esc_url( $permalink ) . '">MÔ TẢ</a>';
-		echo '<div class="price-and-buy-wrapper">';
+		echo '<div class="price-and-buy-wrapper" style="margin-left: auto;">';
 		echo '<div class="product-price">' . wp_kses_post( $price_html ) . '</div>';
 		echo '<div class="product-add-to-cart js-product-add-to-cart">';
 		if ( $is_in_stock ) {
-			echo '<button type="button" class="btn add-to-cart-btn-primary btn-add-to-cart" data-product-id="' . esc_attr( (string) $product_id ) . '" data-product-name="' . esc_attr( $title ) . '" data-product-price="' . esc_attr( (string) $product->get_price() ) . '" data-product-image="' . esc_url( $image_url ) . '"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> MUA NGAY</button>';
+			echo '<a href="' . esc_url( $permalink ) . '" class="btn add-to-cart-btn-primary"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> VÀO MUA</a>';
 		} else {
 			echo '<a class="btn btn-notify-me" href="' . esc_url( $permalink ) . '">THÔNG BÁO CHO TÔI</a>';
 		}

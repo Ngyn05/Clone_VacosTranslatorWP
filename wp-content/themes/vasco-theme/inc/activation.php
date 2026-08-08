@@ -28,6 +28,7 @@ function vasco_theme_sync_pages( $clean_old = false ) {
 			'page-articles-languages-oldest-known-language.php',
 			'page-articles-languages-how-many-people-speak-more-than-one-language.php',
 			'page-articles-languages-spanish-speaking-countries.php',
+			'page-call-translator.php',
 		);
 
 		foreach ( $theme_files as $file ) {

@@ -1,15 +1,11 @@
 <?php
 /**
- * Template Name: Clean Page page-call-translator.php
+ * Template Name: Clean Page page_call_translator.php
  *
  * @package VascoTheme
  */
 
 get_header();
-
-vasco_theme_render_product_detail_page();
-get_footer();
-return;
 ?>
 
 <section class="relative" id="wrapper">
@@ -57,7 +53,7 @@ return;
 <li>Không yêu cầu người nhận cuộc gọi phải cài đặt ứng dụng</li>
 <li>Hỗ trợ dịch giọng nói chuẩn xác 2 chiều thời gian thực</li>
 </ul>
-<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/product/vasco-translator-q1/" ) ); ?>">Khám phá thiết bị <span class="text-sr-only">Vasco</span></a>
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>">Khám phá thiết bị <span class="text-sr-only">Vasco</span></a>
 </div>
 <div class="si-image">
 <img alt="Dịch Cuộc Gọi 2 Chiều Trực Tiếp" src="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/q1/group.webp' ); ?>"/>
@@ -80,7 +76,7 @@ return;
 <li>Tăng tính bảo mật và sự tin tưởng khi đàm phán</li>
 <li>Tính năng độc quyền duy nhất có trên Vasco Translator Q1</li>
 </ul>
-<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/product/vasco-translator-q1/" ) ); ?>">Trải nghiệm tính năng <span class="text-sr-only">Vasco</span></a>
+<a class="btn btn-md btn-black" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>">Trải nghiệm tính năng <span class="text-sr-only">Vasco</span></a>
 </div>
 </div>
 
@@ -117,14 +113,16 @@ return;
 <div style="display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;">
 <div style="flex: 1; min-width: 260px; max-width: 360px; background: #ffffff; border: 2px solid #e2e8f0; border-radius: 20px; padding: 32px 24px; box-shadow: 0 10px 25px rgba(0,0,0,0.05);">
 <h3 style="font-size: 1.3rem; font-weight: 700; color: #0f172a; margin-bottom: 8px;">Gói Cơ Bản</h3>
-<p style="font-size: 2.2rem; font-weight: 800; color: #2563eb; margin-bottom: 16px;">$7 <span style="font-size: 0.9rem; color: #64748b; font-weight: 400;">/ 10 phút</span></p>
-<p style="color: #475569; font-size: 0.92rem; line-height: 1.5;">Thích hợp cho các cuộc gọi khẩn cấp hoặc liên hệ ngắn với đối tác.</p>
+<p style="font-size: 2.2rem; font-weight: 800; color: #2563eb; margin-bottom: 16px;">180.000 ₫ <span style="font-size: 0.9rem; color: #64748b; font-weight: 400;">/ 10 phút</span></p>
+<p style="color: #475569; font-size: 0.92rem; line-height: 1.5; margin-bottom: 20px;">Thích hợp cho các cuộc gọi khẩn cấp hoặc liên hệ ngắn với đối tác.</p>
+<a href="<?php echo esc_url( home_url( '/product/call-translator/' ) ); ?>" class="btn btn-primary" style="display:inline-block; padding:10px 24px; border-radius:25px; background:#2563eb; color:#fff; text-decoration:none; font-weight:600;">MUA GÓI NẠP</a>
 </div>
 <div style="flex: 1; min-width: 260px; max-width: 360px; background: #ffffff; border: 2px solid #2563eb; border-radius: 20px; padding: 32px 24px; box-shadow: 0 12px 30px rgba(37,99,235,0.12); position: relative;">
 <span style="position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: #2563eb; color: #fff; padding: 4px 16px; border-radius: 20px; font-size: 0.78rem; font-weight: 700; text-transform: uppercase;">Phổ Biến Nhất</span>
 <h3 style="font-size: 1.3rem; font-weight: 700; color: #0f172a; margin-bottom: 8px;">Gói Nâng Cao</h3>
-<p style="font-size: 2.2rem; font-weight: 800; color: #2563eb; margin-bottom: 16px;">$19 <span style="font-size: 0.9rem; color: #64748b; font-weight: 400;">/ 30 phút</span></p>
-<p style="color: #475569; font-size: 0.92rem; line-height: 1.5;">Lựa chọn lý tưởng cho các chuyến du lịch hoặc trao đổi công việc thường xuyên.</p>
+<p style="font-size: 2.2rem; font-weight: 800; color: #2563eb; margin-bottom: 16px;">490.000 ₫ <span style="font-size: 0.9rem; color: #64748b; font-weight: 400;">/ 30 phút</span></p>
+<p style="color: #475569; font-size: 0.92rem; line-height: 1.5; margin-bottom: 20px;">Lựa chọn lý tưởng cho các chuyến du lịch hoặc trao đổi công việc thường xuyên.</p>
+<a href="<?php echo esc_url( home_url( '/product/call-translator/' ) ); ?>" class="btn btn-primary" style="display:inline-block; padding:10px 24px; border-radius:25px; background:#2563eb; color:#fff; text-decoration:none; font-weight:600;">MUA GÓI NẠP</a>
 </div>
 </div>
 </section>
@@ -139,7 +137,7 @@ return;
 <div class="product-description">
 <h3>Vasco Translator Q1</h3>
 <p>Máy dịch duy nhất có tính năng nhân bản giọng nói AI và dịch cuộc gọi điện thoại 2 chiều trực tiếp.</p>
-<a class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/product/vasco-translator-q1/" ) ); ?>">
+<a class="btn btn-md btn-white" href="<?php echo esc_url( home_url( "/translators/vasco-translator-q1/" ) ); ?>">
 Tìm hiểu thêm
 </a>
 </div>

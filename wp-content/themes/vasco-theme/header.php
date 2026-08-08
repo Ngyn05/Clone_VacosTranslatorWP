@@ -360,7 +360,7 @@
 														</a>
 													</li>
 													<li>
-														<a href="<?php echo esc_url( home_url( "/call-translator/" ) ); ?>" role="menuitem">
+														<a href="<?php echo esc_url( home_url( "/page_call_translator/" ) ); ?>" role="menuitem">
 															Dịch cuộc gọi
 														</a>
 													</li>
@@ -1614,7 +1614,7 @@
 															</a>
 														</li>
 														<li>
-															<a href="<?php echo esc_url( home_url( "/call-translator/" ) ); ?>" role="menuitem">
+															<a href="<?php echo esc_url( home_url( "/page_call_translator/" ) ); ?>" role="menuitem">
 																Dịch cuộc gọi
 															</a>
 														</li>

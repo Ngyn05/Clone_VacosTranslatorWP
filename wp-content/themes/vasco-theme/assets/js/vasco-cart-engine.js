@@ -292,7 +292,7 @@
 			return;
 		}
 
-		var btn = ev.target.closest('.btn-add-to-cart, .add-to-cart, [data-button-action="add-to-cart"], .add_to_cart_button, .product-add-to-cart button.btn-mua-ngay-orange, .add-to-cart-btn-full, .add-to-cart-btn-primary, .btn-buy-now, .buy-now, [data-button-action="buy-now"]');
+		var btn = ev.target.closest('.btn-add-to-cart, .add-to-cart, [data-button-action="add-to-cart"], .add_to_cart_button, .product-add-to-cart button.btn-mua-ngay-orange, .btn-buy-now, .buy-now, [data-button-action="buy-now"]');
 		if (!btn) {
 			var potentialBtn = ev.target.closest('button, a.btn, a.button, a');
 			if (potentialBtn && !potentialBtn.closest('.vasco-phone-consult-box, .consultation-quick-form')) {
