@@ -193,14 +193,17 @@
 					selectedColor = (radioLabel ? radioLabel.innerText.trim() : activeColorEl.innerText.trim()) || '';
 				}
 
+				var varId = activeColorEl ? (activeColorEl.dataset.variationId || activeColorEl.getAttribute('data-variation-id') || 0) : 0;
+
 				fd.append('action', 'vasco_wc_add_to_cart');
 				fd.append('nonce', window.VASCO_WC_NONCE);
 				fd.append('product_id', pId);
+				fd.append('variation_id', varId);
 				fd.append('product_name', product.name || '');
 				fd.append('product_color', selectedColor);
 				fd.append('quantity', product.quantity || 1);
 
-				fetch(window.VASCO_AJAX_URL, { method: 'POST', body: fd })
+				fetch(window.VASCO_AJAX_URL, { method: 'POST', body: fd, credentials: 'same-origin' })
 					.then(function (r) { return r.json(); })
 					.then(function (res) {
 						if (res.success && res.data) {

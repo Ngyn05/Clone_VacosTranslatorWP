@@ -93,6 +93,10 @@ function vasco_wc_find_product_id( $product_id = 0, $product_name = '' ) {
 // 1. AJAX: Thêm sản phẩm vào giỏ WooCommerce
 // ─────────────────────────────────────────────
 function vasco_wc_add_to_cart() {
+	if ( function_exists( 'WC' ) && WC()->session && ! WC()->session->has_session() ) {
+		WC()->session->set_customer_session_cookie( true );
+	}
+
 	if ( ! check_ajax_referer( 'vasco_cart_nonce', 'nonce', false ) && ! check_ajax_referer( 'vasco_wc_nonce', 'nonce', false ) ) {
 		// Cho phép bổ sung xử lý an toàn nếu nonce hết hạn hoặc chưa khởi tạo
 	}
@@ -136,7 +140,20 @@ function vasco_wc_add_to_cart() {
 		WC()->session->set( 'vasco_selected_color', $product_color );
 	}
 
-	$result = WC()->cart->add_to_cart( $product_id, $quantity, $variation_id, array(), $cart_item_data );
+	// Tự động lấy các attribute của variation từ database để WooCommerce không từ chối add-to-cart
+	$variation_data = array();
+	if ( $variation_id > 0 ) {
+		$variation_product = wc_get_product( $variation_id );
+		if ( $variation_product && $variation_product->is_type( 'variation' ) ) {
+			$variation_attributes = $variation_product->get_attributes();
+			foreach ( $variation_attributes as $attr_name => $attr_value ) {
+				$key = ( strpos( $attr_name, 'attribute_' ) === 0 ) ? $attr_name : 'attribute_' . $attr_name;
+				$variation_data[ $key ] = $attr_value;
+			}
+		}
+	}
+
+	$result = WC()->cart->add_to_cart( $product_id, $quantity, $variation_id, $variation_data, $cart_item_data );
 
 	if ( $result ) {
 		WC()->cart->calculate_totals();
@@ -848,6 +865,14 @@ function vasco_disable_email_product_images( $args ) {
 }
 add_filter( 'woocommerce_email_order_items_args', 'vasco_disable_email_product_images', 99 );
 add_filter( 'woocommerce_email_order_item_thumbnail', '__return_empty_string', 99 );
+
+// Tự động khởi tạo WooCommerce session cookie cho khách (guest) ngay khi truy cập trang (sửa lỗi tab ẩn danh)
+add_action( 'init', function() {
+	if ( ! is_admin() && function_exists( 'WC' ) && isset( WC()->session ) && ! WC()->session->has_session() ) {
+		WC()->session->set_customer_session_cookie( true );
+	}
+} );
+
 
 
 

@@ -9,6 +9,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+if ( ! function_exists( 'vasco_get_attachment_id_by_filename' ) ) {
+	function vasco_get_attachment_id_by_filename( $filename ) {
+		global $wpdb;
+		$filename = sanitize_file_name( basename( $filename ) );
+		if ( empty( $filename ) ) {
+			return 0;
+		}
+		$attachment_id = $wpdb->get_var( $wpdb->prepare(
+			"SELECT post_id FROM $wpdb->postmeta WHERE meta_key = '_wp_attached_file' AND meta_value LIKE %s LIMIT 1",
+			'%' . $wpdb->esc_like( $filename )
+		) );
+		return $attachment_id ? (int) $attachment_id : 0;
+	}
+}
+
 if ( ! function_exists( 'vasco_theme_product_category_map' ) ) {
 	function vasco_theme_product_category_map() {
 		return array(
@@ -151,7 +166,21 @@ function vasco_theme_sync_products() {
 			}
 		}
 
-		$wc_product = $product_id ? wc_get_product( $product_id ) : new WC_Product_Simple();
+		$is_variable = ! empty( $product['colors'] ) && is_array( $product['colors'] );
+
+		if ( $product_id ) {
+			$wc_product = wc_get_product( $product_id );
+			if ( $is_variable && ! $wc_product->is_type( 'variable' ) ) {
+				wp_set_object_terms( $product_id, 'variable', 'product_type' );
+				$wc_product = new WC_Product_Variable( $product_id );
+			} elseif ( ! $is_variable && ! $wc_product->is_type( 'simple' ) ) {
+				wp_set_object_terms( $product_id, 'simple', 'product_type' );
+				$wc_product = new WC_Product_Simple( $product_id );
+			}
+		} else {
+			$wc_product = $is_variable ? new WC_Product_Variable() : new WC_Product_Simple();
+		}
+
 		if ( ! $wc_product ) {
 			continue;
 		}
@@ -301,11 +330,98 @@ function vasco_theme_sync_products() {
 					'value'        => '',
 					'position'     => 0,
 					'is_visible'   => 1,
-					'is_variation' => 0,
+					'is_variation' => 1,
 					'is_taxonomy'  => 1,
 				);
 
 				update_post_meta( $product_id, '_product_attributes', $existing_attributes );
+
+				// ── Tự động tạo các Variations thực sự trong Database ──────────────────
+				if ( $is_variable && $product_id ) {
+					$existing_variations = get_posts( array(
+						'post_parent' => $product_id,
+						'post_type'   => 'product_variation',
+						'numberposts' => -1,
+						'fields'      => 'ids',
+					) );
+
+					foreach ( $product['colors'] as $c ) {
+						$c_slug = sanitize_title( $c['slug'] ?? '' );
+						$c_name = sanitize_text_field( $c['name'] ?? '' );
+						if ( empty( $c_slug ) ) {
+							continue;
+						}
+
+						$found_var_id = 0;
+						foreach ( $existing_variations as $ev_id ) {
+							$saved_color = get_post_meta( $ev_id, 'attribute_pa_color', true );
+							if ( $saved_color === $c_slug ) {
+								$found_var_id = $ev_id;
+								break;
+							}
+						}
+
+						$variation = $found_var_id ? new WC_Product_Variation( $found_var_id ) : new WC_Product_Variation();
+						$variation->set_parent_id( $product_id );
+						$variation->set_status( 'publish' );
+						$variation->set_attributes( array( 'pa_color' => $c_slug ) );
+						$variation->set_regular_price( $price );
+						$variation->set_price( $price );
+						$variation->set_manage_stock( false );
+						$variation->set_stock_status( 'instock' );
+
+						// Bản đồ ánh xạ tên file ảnh cho từng màu sắc variation của sản phẩm
+						$var_image_map = array(
+							'vasco-translator-q1' => array(
+								'phantom-black' => 'vasco-translator-q1-3.png',
+								'slate-blue'    => 'vasco-translator-q1.webp',
+								'mystic-plum'   => 'vasco-translator-q1 (1).jpg',
+								'scarlet-pulse' => 'vasco-translator-q1 (2).jpg',
+							),
+							'vasco-translator-m4' => array(
+								'matte-black'      => 'vasco-translator-m4.jpg',
+								'frosty-turquoise' => 'vasco-translator-m4.jpg',
+								'misty-purple'     => 'vasco-translator-m4 (1).jpg',
+							),
+							'vasco-translator-v4' => array(
+								'black-onyx'  => 'vasco-translator-v4.jpg',
+								'stone-gray'  => 'vasco-translator-v4 (1).jpg',
+								'cobalt-blue' => 'vasco-translator-v4 (2).jpg',
+								'ruby-red'    => 'vasco-translator-v4 (3).jpg',
+								'pearl-white' => 'vasco-translator-v4.jpg',
+							),
+							'q1-phantomblack-e1' => array(
+								'phantom-black' => 'q1-phantomblack-e1.webp',
+								'slate-blue'    => 'q1-slateblue-e1.webp',
+								'mystic-plum'   => 'q1-mysticplum-e1.webp',
+								'scarlet-pulse' => 'q1-scarletpulse-e1.webp',
+							),
+							'v4-blackonyx-e1' => array(
+								'black-onyx'  => 'v4-blackonyx-e1.webp',
+								'stone-gray'  => 'v4-stonegray-e1.webp',
+								'cobalt-blue' => 'v4-cobaltblue-e1.webp',
+								'ruby-red'    => 'v4-rubyred-e1.webp',
+								'pearl-white' => 'v4-pearlwhite-e1.webp',
+							),
+						);
+
+						$target_filename = isset( $var_image_map[ $slug ][ $c_slug ] ) ? $var_image_map[ $slug ][ $c_slug ] : '';
+						$var_img_id = 0;
+						if ( ! empty( $target_filename ) ) {
+							$var_img_id = vasco_get_attachment_id_by_filename( $target_filename );
+						}
+
+						if ( ! $var_img_id && ! empty( $product['image'] ) ) {
+							$var_img_id = vasco_theme_import_product_image( $product['image'], $title );
+						}
+
+						if ( $var_img_id ) {
+							$variation->set_image_id( $var_img_id );
+						}
+
+						$variation->save();
+					}
+				}
 			}
 		}
 	} // end foreach $products
