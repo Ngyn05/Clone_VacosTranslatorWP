@@ -108,13 +108,9 @@ return;
 <div class="product-variants-items">
 <p id="legend-color-1" style="font-weight:600; font-size:15px; color:#1e293b; margin-bottom:8px;">Color:</p>
 <div aria-labelledby="legend-color-1" class="product-variants-list" id="group_1" role="radiogroup">
-<label aria-checked="true" aria-label="Phantom Black" class="input-container product-variants-item active" data-image="https://vasco-translator.com/426-medium_default/q1-phantomblack-e1.jpg" role="radio" tabindex="0">
-<div class="circle button circle-main phantom-black active" title="Phantom Black"></div>
-<span class="radio-label body-16 active">Phantom Black</span>
-</label>
-<label aria-checked="false" aria-label="Slate Blue" class="input-container product-variants-item" data-image="<?php echo esc_url( content_url( '/uploads/2026/08/vasco-translator-q1.jpg' ) ); ?>" role="radio" tabindex="0">
-<div class="circle button circle-main slate-blue" title="Slate Blue"></div>
-<span class="radio-label body-16">Slate Blue</span>
+<label aria-checked="false" aria-label="Phantom Black" class="input-container product-variants-item" data-image="https://vasco-translator.com/426-medium_default/q1-phantomblack-e1.jpg" role="radio" tabindex="0">
+<div class="circle button circle-main phantom-black" title="Phantom Black"></div>
+<span class="radio-label body-16">Phantom Black</span>
 </label>
 <label aria-checked="false" aria-label="Mystic Plum" class="input-container product-variants-item" data-image="<?php echo esc_url( content_url( '/uploads/2026/08/vasco-translator-q1 (1).jpg' ) ); ?>" role="radio" tabindex="0">
 <div class="circle button circle-main mystic-plum" title="Mystic Plum"></div>
@@ -123,6 +119,10 @@ return;
 <label aria-checked="false" aria-label="Scarlet Pulse" class="input-container product-variants-item" data-image="<?php echo esc_url( content_url( '/uploads/2026/08/vasco-translator-q1 (2).jpg' ) ); ?>" role="radio" tabindex="0">
 <div class="circle button circle-main scarlet-pulse" title="Scarlet Pulse"></div>
 <span class="radio-label body-16">Scarlet Pulse</span>
+</label>
+<label aria-checked="false" aria-label="Slate Blue" class="input-container product-variants-item" data-image="<?php echo esc_url( content_url( '/uploads/2026/08/vasco-translator-q1.jpg' ) ); ?>" role="radio" tabindex="0">
+<div class="circle button circle-main slate-blue" title="Slate Blue"></div>
+<span class="radio-label body-16">Slate Blue</span>
 </label>
 </div>
 </div>

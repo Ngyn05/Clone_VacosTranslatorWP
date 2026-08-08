@@ -8,14 +8,14 @@
         "badge": "new",
         "colors": [
             {
-                "slug": "mystic-plum",
-                "name": "Mystic Plum",
-                "image": "wp-content/uploads/2026/08/vasco-translator-q1-1.jpg"
-            },
-            {
                 "slug": "phantom-black",
                 "name": "Phantom Black",
                 "image": "wp-content/uploads/2026/08/vasco-translator-q1-3.png"
+            },
+            {
+                "slug": "mystic-plum",
+                "name": "Mystic Plum",
+                "image": "wp-content/uploads/2026/08/vasco-translator-q1-1.jpg"
             },
             {
                 "slug": "scarlet-pulse",
@@ -146,13 +146,13 @@
         "badge": "new",
         "colors": [
             {
-                "slug": "frosty-turquoise",
-                "name": "Frosty Turquoise",
+                "slug": "matte-black",
+                "name": "Matte Black",
                 "image": "wp-content/uploads/2026/08/vasco-translator-m4-1.jpg"
             },
             {
-                "slug": "matte-black",
-                "name": "Matte Black",
+                "slug": "frosty-turquoise",
+                "name": "Frosty Turquoise",
                 "image": "wp-content/uploads/2026/08/vasco-translator-m4-1.jpg"
             },
             {
@@ -517,14 +517,14 @@
         "sku": "Q1-E1-CB",
         "colors": [
             {
-                "slug": "mystic-plum",
-                "name": "Mystic Plum",
-                "image": "wp-content/uploads/2026/08/q1-mysticplum-e1.webp"
-            },
-            {
                 "slug": "phantom-black",
                 "name": "Phantom Black",
                 "image": "wp-content/uploads/2026/08/q1-phantomblack-e1.webp"
+            },
+            {
+                "slug": "mystic-plum",
+                "name": "Mystic Plum",
+                "image": "wp-content/uploads/2026/08/q1-mysticplum-e1.webp"
             },
             {
                 "slug": "scarlet-pulse",

@@ -258,10 +258,10 @@ return;
 <div class="product-variants-items">
 <p id="legend-color-1" style="font-weight:600; font-size:15px; color:#1e293b; margin-bottom:8px;">Màu sắc:</p>
 <div aria-labelledby="legend-color-1" class="product-variants-list" id="group_1" role="radiogroup">
-<label aria-checked="true" aria-label="Black Onyx" class="input-container product-variants-item active" data-image="https://vasco-translator.com/343-medium_default/vasco-translator-v4.jpg" data-product-id="14" role="radio" tabindex="0">
-<div class="circle button circle-main black-onyx active" data-attribute-id="7" title="Black Onyx"></div>
-<input checked="checked" class="input-color" data-analytics-type="colour" data-attribute="7" data-color="black_onyx" data-has-quantity="1" data-omnibus-price="" data-product="14" data-product-attribute="1" data-quantity="1" name="group[1]" title="Black Onyx" type="radio" value="7"/>
-<span class="radio-label body-16 active" data-attribute-id="7">Black Onyx</span>
+<label aria-checked="false" aria-label="Black Onyx" class="input-container product-variants-item" data-image="https://vasco-translator.com/343-medium_default/vasco-translator-v4.jpg" data-product-id="14" role="radio" tabindex="0">
+<div class="circle button circle-main black-onyx" data-attribute-id="7" title="Black Onyx"></div>
+<input class="input-color" data-analytics-type="colour" data-attribute="7" data-color="black_onyx" data-has-quantity="1" data-omnibus-price="" data-product="14" data-product-attribute="1" data-quantity="1" name="group[1]" title="Black Onyx" type="radio" value="7"/>
+<span class="radio-label body-16" data-attribute-id="7">Black Onyx</span>
 </label>
 <label aria-checked="false" aria-label="Stone Gray" class="input-container product-variants-item" data-image="<?php echo esc_url( content_url( '/uploads/2026/08/vasco-translator-v4.jpg' ) ); ?>" data-product-id="14" role="radio" tabindex="0">
 <div class="circle button circle-main stone-gray" data-attribute-id="8" title="Stone Gray"></div>

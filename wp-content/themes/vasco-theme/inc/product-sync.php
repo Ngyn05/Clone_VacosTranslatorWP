@@ -345,6 +345,7 @@ function vasco_theme_sync_products() {
 						'fields'      => 'ids',
 					) );
 
+					$menu_order = 0;
 					foreach ( $product['colors'] as $c ) {
 						$c_slug = sanitize_title( $c['slug'] ?? '' );
 						$c_name = sanitize_text_field( $c['name'] ?? '' );
@@ -369,6 +370,8 @@ function vasco_theme_sync_products() {
 						$variation->set_price( $price );
 						$variation->set_manage_stock( false );
 						$variation->set_stock_status( 'instock' );
+						$variation->set_menu_order( $menu_order );
+						$menu_order++;
 
 						// Bản đồ ánh xạ tên file ảnh cho từng màu sắc variation của sản phẩm
 						$var_image_map = array(

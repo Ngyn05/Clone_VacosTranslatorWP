@@ -108,9 +108,9 @@ return;
 <div class="product-variants-items">
 <p id="legend-color-1" style="font-weight:600; font-size:15px; color:#1e293b; margin-bottom:8px;">Color:</p>
 <div aria-labelledby="legend-color-1" class="product-variants-list" id="group_1" role="radiogroup">
-<label aria-checked="true" aria-label="Black Onyx" class="input-container product-variants-item active" data-image="https://vasco-translator.com/343-medium_default/vasco-translator-v4.jpg" role="radio" tabindex="0">
-<div class="circle button circle-main black-onyx active" title="Black Onyx"></div>
-<span class="radio-label body-16 active">Black Onyx</span>
+<label aria-checked="false" aria-label="Black Onyx" class="input-container product-variants-item" data-image="https://vasco-translator.com/343-medium_default/vasco-translator-v4.jpg" role="radio" tabindex="0">
+<div class="circle button circle-main black-onyx" title="Black Onyx"></div>
+<span class="radio-label body-16">Black Onyx</span>
 </label>
 <label aria-checked="false" aria-label="Stone Gray" class="input-container product-variants-item" data-image="<?php echo esc_url( content_url( '/uploads/2026/08/vasco-translator-v4.jpg' ) ); ?>" role="radio" tabindex="0">
 <div class="circle button circle-main stone-gray" title="Stone Gray"></div>

@@ -219,10 +219,10 @@ return;
 <div class="product-variants-items">
 <p id="legend-color-1" style="font-weight:600; font-size:15px; color:#1e293b; margin-bottom:8px;">Màu sắc:</p>
 <div aria-labelledby="legend-color-1" class="product-variants-list" id="group_1" role="radiogroup">
-<label aria-checked="true" aria-label="Matte Black" class="input-container product-variants-item active" data-image="https://vasco-translator.com/488-medium_default/vasco-translator-m4.jpg" data-product-id="62" role="radio" tabindex="0">
-<div class="circle button circle-main matte-black active" data-attribute-id="30" title="Matte Black"></div>
-<input checked="checked" class="input-color" data-analytics-type="colour" data-attribute="30" data-color="matte_black" data-has-quantity="1" data-omnibus-price="" data-product="62" data-product-attribute="1" data-quantity="1" name="group[1]" title="Matte Black" type="radio" value="30"/>
-<span class="radio-label body-16 active" data-attribute-id="30">Matte Black</span>
+<label aria-checked="false" aria-label="Matte Black" class="input-container product-variants-item" data-image="https://vasco-translator.com/488-medium_default/vasco-translator-m4.jpg" data-product-id="62" role="radio" tabindex="0">
+<div class="circle button circle-main matte-black" data-attribute-id="30" title="Matte Black"></div>
+<input class="input-color" data-analytics-type="colour" data-attribute="30" data-color="matte_black" data-has-quantity="1" data-omnibus-price="" data-product="62" data-product-attribute="1" data-quantity="1" name="group[1]" title="Matte Black" type="radio" value="30"/>
+<span class="radio-label body-16" data-attribute-id="30">Matte Black</span>
 </label>
 <label aria-checked="false" aria-label="Frosty Turquoise" class="input-container product-variants-item" data-image="<?php echo esc_url( content_url( '/uploads/2026/08/vasco-translator-m4.jpg' ) ); ?>" data-product-id="62" role="radio" tabindex="0">
 <div class="circle button circle-main frosty-turquoise" data-attribute-id="31" title="Frosty Turquoise"></div>

@@ -472,7 +472,7 @@ function vasco_theme_render_product_detail_page( $slug = '' ) {
 	if ( $terms && ! is_wp_error( $terms ) ) {
 		$colors_html .= '<div class="product-variants-items combination-variants-item" style="margin: 16px 0;"><p id="legend-color" style="font-weight:600; font-size:15px; color:#1e293b; margin-bottom:8px;">Màu sắc:</p><div class="product-variants-list" role="radiogroup">';
 		foreach ( $terms as $idx => $term ) {
-			$active_class = ( 0 === $idx ) ? ' active' : '';
+			$active_class = '';
 			$img_src      = isset( $variation_images[ $term->slug ] ) ? $variation_images[ $term->slug ] : '';
 			$img_attr     = $img_src ? ' data-image="' . esc_url( $img_src ) . '"' : '';
 			$var_id       = isset( $variation_map[ $term->slug ] ) ? $variation_map[ $term->slug ] : 0;
