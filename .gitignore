@@ -1,0 +1,12 @@
+# WordPress Core
+wp-config.php
+
+# Uploads & Temp Exports
+wp-content/uploads/prime-mover-export-files/
+wp-content/uploads/prime-mover-lock-files/
+wp-content/uploads/prime-mover-tmp-downloads/
+wp-content/uploads/wc-logs/
+
+# IDEs
+.idea/
+.vscode/
