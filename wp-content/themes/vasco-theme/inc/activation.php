@@ -10,6 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 function vasco_theme_sync_pages( $clean_old = false ) {
+	return false; // Disabled sync pages
 	$json_file = get_template_directory() . '/inc/data/pages-data.json';
 	$pages_data = file_exists( $json_file ) ? json_decode( file_get_contents( $json_file ), true ) : array();
 	$pages_data = is_array( $pages_data ) ? $pages_data : array();
@@ -388,6 +389,7 @@ function vasco_theme_admin_sync_page_html() {
  * Synchronize 4 sample blog posts into WordPress Database
  */
 function vasco_sync_sample_posts() {
+	return; // Disabled sync sample posts
 	$posts_data = array(
 		array(
 			'slug'          => 'ngon-ngu-it-nguoi-noi-nhat-tren-the-gioi-la-gi',

@@ -125,6 +125,7 @@ function vasco_theme_import_product_image( $relative_image_path, $product_title 
 }
 
 function vasco_theme_sync_products() {
+	return false; // Disabled sync products
 	if ( ! function_exists( 'wc_get_product' ) ) {
 		return false;
 	}

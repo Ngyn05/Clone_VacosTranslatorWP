@@ -9,6 +9,7 @@
 	<link rel="dns-prefetch" href="//fonts.googleapis.com" />
 	<link rel="preload" as="style" href="<?php echo esc_url( VASCO_THEME_URI . '/style.css?ver=' . VASCO_THEME_VERSION ); ?>" />
 	<link rel="preload" as="style" href="<?php echo esc_url( VASCO_THEME_URI . '/assets/css/theme-DXqo8zvY.css?ver=' . VASCO_THEME_VERSION ); ?>" />
+	<link rel="icon" href="<?php echo esc_url( VASCO_THEME_URI . '/assets/img/favicon.svg' ); ?>" type="image/svg+xml" />
 	<?php wp_head(); ?>
 </head>
 

@@ -24,8 +24,44 @@ get_header();
 .articles-sub-title {
     font-size: 15px;
     color: #666;
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
+}
+
+/* Category filter styles */
+.category-filter-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 10px auto 30px auto;
+    max-width: 900px;
+    padding: 0 10px;
+}
+.category-filter-item {
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4a5568;
+    background-color: #f7fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+.category-filter-item:hover {
+    color: #e30613;
+    border-color: #e30613;
+    background-color: #fff;
+    transform: translateY(-1px);
+}
+.category-filter-item.active {
+    color: #ffffff;
+    background-color: #e30613;
+    border-color: #e30613;
+    box-shadow: 0 4px 12px rgba(227,6,19,0.25);
 }
 
 /* Grid layout 4 columns desktop / 2 columns tablet / 1 column mobile */
@@ -234,6 +270,25 @@ get_header();
         <p class="articles-sub-title">Cập nhật tin tức, kiến thức ngôn ngữ học và kinh nghiệm du lịch toàn cầu với máy dịch thông minh Vasco.</p>
     </div>
 
+    <?php
+    $categories = get_categories( array(
+        'orderby'    => 'name',
+        'order'      => 'ASC',
+        'hide_empty' => true,
+    ) );
+    $current_category = isset( $_GET['category'] ) ? sanitize_text_field( $_GET['category'] ) : '';
+    ?>
+    <div class="category-filter-row">
+        <a href="<?php echo esc_url( remove_query_arg( 'category' ) ); ?>" class="category-filter-item <?php echo empty( $current_category ) ? 'active' : ''; ?>">
+            Tất cả
+        </a>
+        <?php foreach ( $categories as $cat ) : ?>
+            <a href="<?php echo esc_url( add_query_arg( 'category', $cat->slug ) ); ?>" class="category-filter-item <?php echo ( $current_category === $cat->slug ) ? 'active' : ''; ?>">
+                <?php echo esc_html( $cat->name ); ?>
+            </a>
+        <?php endforeach; ?>
+    </div>
+
     <!-- Articles Grid dynamically loaded from Posts -->
     <div class="articles-grid-container">
         <?php
@@ -246,6 +301,9 @@ get_header();
             'order'          => 'DESC',
             'paged'          => $paged,
         );
+        if ( ! empty( $current_category ) ) {
+            $args['category_name'] = $current_category;
+        }
         $articles_query = new WP_Query( $args );
 
         if ( $articles_query->have_posts() ) :
@@ -318,7 +376,7 @@ get_header();
 
             <div class="articles-pagination-nav">
                 <?php if ( $paged > 1 ) : ?>
-                    <a href="<?php echo esc_url( get_pagenum_link( $paged - 1 ) ); ?>" class="pagination-btn pagination-prev">
+                    <a href="<?php echo esc_url( empty( $current_category ) ? get_pagenum_link( $paged - 1 ) : add_query_arg( 'category', $current_category, get_pagenum_link( $paged - 1 ) ) ); ?>" class="pagination-btn pagination-prev">
                         &larr; Trang trước
                     </a>
                 <?php else : ?>
@@ -327,19 +385,23 @@ get_header();
 
                 <div class="pagination-numbers">
                     <?php
-                    echo paginate_links( array(
+                    $paginate_args = array(
                         'base'      => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
                         'format'    => '?paged=%#%',
                         'current'   => max( 1, $paged ),
                         'total'     => $total_pages,
                         'prev_next' => false,
                         'type'      => 'plain',
-                    ) );
+                    );
+                    if ( ! empty( $current_category ) ) {
+                        $paginate_args['add_args'] = array( 'category' => $current_category );
+                    }
+                    echo paginate_links( $paginate_args );
                     ?>
                 </div>
 
                 <?php if ( $paged < $total_pages ) : ?>
-                    <a href="<?php echo esc_url( get_pagenum_link( $paged + 1 ) ); ?>" class="pagination-btn pagination-next">
+                    <a href="<?php echo esc_url( empty( $current_category ) ? get_pagenum_link( $paged + 1 ) : add_query_arg( 'category', $current_category, get_pagenum_link( $paged + 1 ) ) ); ?>" class="pagination-btn pagination-next">
                         Trang sau &rarr;
                     </a>
                 <?php else : ?>
